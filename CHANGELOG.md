@@ -6,6 +6,11 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.10.2] - 2026-10-11
+
+### 改善
+- 導覽頁網址統一為不含副檔名的 `/guide`；`/guide/` 會轉址過去，舊的 `guide.html` 連結仍可使用
+
 ## [1.10.1] - 2026-10-11
 
 ### 改善
@@ -160,6 +165,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.10.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.1...v1.10.2
 [1.10.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.0...v1.10.1
 [1.10.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.3...v1.10.0
 [1.9.3]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.2...v1.9.3
