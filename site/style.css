@@ -899,3 +899,4 @@ body[data-view="chain"] .card .card-main { padding-top: 8px; }
 .fcard .f-ph { margin: 6px 0 10px; }
 .fcard .rank { position: static; margin-bottom: -2px; }
 @media (max-width: 899px) { .feat-row { margin: -6px -16px 0; padding: 8px 16px 14px; } }
+.pc-n { padding-right: 0; }

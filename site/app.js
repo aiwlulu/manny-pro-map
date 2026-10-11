@@ -191,9 +191,9 @@ const isIv = (p) => p.roles.some((r) => r.interviewed);
 const pplMatch = (p, id = col) => (id === 'all' ? true : id === '巨人之聲' ? isIv(p) : p.roles.some((r) => inCol(r.c, id)));
 const roleChips = (p, max = 3) => p.roles.slice(0, max).map((r) => `<span class="rc">${avatar(r.c, 'xs')}<b>${esc(r.c.name)}</b>${r.role ? `<i>${esc(r.role)}</i>` : ''}</span>`).join('') + (p.roles.length > max ? `<span class="rc more">+${p.roles.length - max}</span>` : '');
 function personCard(p) {
-  return `<a class="pcard${isIv(p) ? ' iv' : ''}" href="#/p/${p.id}">${face(p, 'pc-ph')}
+  return `<a class="pcard" href="#/p/${p.id}">${face(p, 'pc-ph')}
     <span class="pc-b"><span class="pc-n">${esc(p.name)}${p.zh ? `<small>${esc(p.zh)}</small>` : ''}</span><span class="pc-r">${roleChips(p)}</span></span>
-    ${isIv(p) ? '<em class="pc-tag" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</a>`;
+</a>`;
 }
 function renderPeople() {
   const all = [...people.values()].sort((a, b) => a.name.localeCompare(b.name, 'en'));

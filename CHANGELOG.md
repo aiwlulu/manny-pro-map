@@ -6,6 +6,11 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.9.3] - 2026-10-11
+
+### 改善
+- 人物列表卡片移除「巨人之聲」標籤與強調邊框，改由欄目篩選呈現（公司與人物詳細資訊中仍保留說明）
+
 ## [1.9.2] - 2026-10-11
 
 ### 修正
@@ -139,6 +144,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.9.3]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.2...v1.9.3
 [1.9.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.1...v1.9.2
 [1.9.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.8.0...v1.9.0
