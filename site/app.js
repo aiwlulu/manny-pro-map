@@ -461,9 +461,10 @@ new ResizeObserver(() => document.documentElement.style.setProperty('--hdr', `${
 for (const [sel2, ic] of [['[data-z="in"]', 'plus'], ['[data-z="out"]', 'minus'], ['[data-z="fit"]', 'reset']]) $(sel2).innerHTML = icon(ic);
 for (const el of document.querySelectorAll('[data-ic]')) el.outerHTML = icon(el.dataset.ic, el.className);
 $('#promo-code')?.addEventListener('click', async (e) => {
-  const btn = e.currentTarget, label = btn.querySelector('span');
-  try { await navigator.clipboard.writeText('love250'); label.textContent = '已複製'; } catch { label.textContent = '請手動複製'; }
-  setTimeout(() => (label.textContent = '複製'), 1800);
+  const cp = e.currentTarget.querySelector('.cp');
+  const set = (ic, text, done) => { cp.innerHTML = `${icon(ic)}<em>${text}</em>`; cp.classList.toggle('done', done); };
+  try { await navigator.clipboard.writeText('love250'); set('check', '已複製', true); } catch { set('copy', '請手動複製', false); }
+  clearTimeout(cp._t); cp._t = setTimeout(() => set('copy', '複製', false), 1800);
 });
 renderStats(); renderFilters(); renderViews();
 if (!store.get('pm-coach', false)) {

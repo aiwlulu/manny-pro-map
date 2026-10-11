@@ -6,6 +6,11 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.9.1] - 2026-10-11
+
+### 改善
+- 折扣碼複製按鈕加上 Lucide 圖示：複製時顯示 copy 圖示，成功後切換為綠色勾勾與「已複製」
+
 ## [1.9.0] - 2026-10-11
 
 ### 新增
@@ -129,6 +134,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.9.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.6.0...v1.7.0
