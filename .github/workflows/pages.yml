@@ -29,7 +29,7 @@ jobs:
       # Validates every YAML file; PRs with bad data fail here
       - run: npm run build
       - if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
