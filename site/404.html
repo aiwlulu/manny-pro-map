@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>找不到頁面 · Pro Map</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,600;0,700;1,700;1,800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%237cc6e4'/%3E%3Cstop offset='1' stop-color='%23ee6a55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3Ccircle cx='11' cy='13' r='5' fill='%23fff' fill-opacity='.85'/%3E%3Ccircle cx='20' cy='19' r='3.5' fill='%23fff' fill-opacity='.7'/%3E%3C/svg%3E">
+  <script>try { const t = JSON.parse(localStorage.getItem('pm-theme')); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}</script>
+  <style>
+    :root { --paper: #fafaf8; --surface: #fff; --ink: #2b2b2b; --body: #4a4a4a; --muted: #74726d; --line: #e4e2dc; --pale: #f0efea;
+      --accent: #b8433a; --blue-a: #6fc3e6; --blue-b: #86a7ea; --red-a: #ee6a55; --red-b: #c79ad8; --link: #2f6fd0;
+      --shadow: 0 24px 48px -16px rgb(20 20 10 / .18); --sans: "Noto Sans TC", "PingFang TC", sans-serif; --latin: "Figtree", "Noto Sans TC", sans-serif;
+      --ease: cubic-bezier(.2, .8, .2, 1); color-scheme: light; }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #161615; --surface: #1f1f1d; --ink: #f0eee9; --body: #cfccc6; --muted: #9b9891; --line: #34332f; --pale: #292825; --accent: #ef8478; --link: #8fb4ff; --shadow: 0 24px 60px -16px rgb(0 0 0 / .6); color-scheme: dark; } }
+    :root[data-theme="dark"] { --paper: #161615; --surface: #1f1f1d; --ink: #f0eee9; --body: #cfccc6; --muted: #9b9891; --line: #34332f; --pale: #292825; --accent: #ef8478; --link: #8fb4ff; --shadow: 0 24px 60px -16px rgb(0 0 0 / .6); color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100dvh; display: flex; flex-direction: column; background: var(--paper); color: var(--ink); font: 16px/1.7 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden;
+      background-image: radial-gradient(color-mix(in srgb, var(--ink) 6%, transparent) 1px, transparent 1.2px); background-size: 22px 22px; }
+    a { color: inherit; }
+    .top { display: flex; align-items: center; height: 60px; padding: 0 24px; border-bottom: 1px solid var(--line); background: var(--paper); }
+    .wordmark { text-decoration: none; font: italic 700 24px/1 var(--latin); letter-spacing: -.02em; display: flex; gap: 5px; }
+    .wordmark .b1 { background: linear-gradient(120deg, var(--blue-a), var(--blue-b)); -webkit-background-clip: text; background-clip: text; color: transparent; padding-right: 2px; }
+    .wordmark .b2 { background: linear-gradient(120deg, var(--red-a), var(--red-b)); -webkit-background-clip: text; background-clip: text; color: transparent; padding-right: 3px; }
+    main { flex: 1; display: grid; place-items: center; padding: 40px 20px 56px; position: relative; }
+    .card { position: relative; z-index: 1; width: min(560px, 100%); text-align: center; }
+    .code404 { font: italic 800 clamp(96px, 22vw, 168px)/1 var(--latin); letter-spacing: -.05em; margin: 0; padding-right: .06em;
+      background: linear-gradient(115deg, var(--blue-a), var(--blue-b) 35%, var(--red-b) 65%, var(--red-a)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    h1 { margin: 10px 0 6px; font-size: clamp(22px, 4vw, 28px); font-weight: 900; }
+    .lede { margin: 0 0 22px; color: var(--body); }
+    .lede code { font: 600 13px var(--latin); padding: 1px 6px; border-radius: 6px; background: var(--pale); color: var(--muted); word-break: break-all; }
+    .sugg { margin: 0 0 18px; display: none; }
+    .sugg.on { display: block; }
+    .sugg p { margin: 0 0 8px; font-size: 14px; color: var(--muted); }
+    .sugg div { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .sugg a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 6px 14px 6px 6px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; font-size: 14px; transition: border-color .2s, transform .2s var(--ease); }
+    .sugg a:hover { border-color: var(--ink); transform: translateY(-1px); }
+    .sugg img, .sugg .ini { width: 26px; height: 26px; border-radius: 50%; object-fit: contain; background: #fff; box-shadow: inset 0 0 0 1px var(--line); display: grid; place-items: center; font: 700 10px var(--latin); color: #fff; }
+    .sugg small { font-weight: 400; color: var(--muted); }
+    form { display: flex; gap: 8px; margin: 0 0 18px; }
+    input { flex: 1; min-width: 0; height: 46px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; outline: none; }
+    input:focus { border-color: var(--blue-b); box-shadow: 0 0 0 4px color-mix(in srgb, var(--blue-a) 22%, transparent); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; height: 46px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 600 15px var(--sans); text-decoration: none; cursor: pointer; transition: transform .2s var(--ease), border-color .2s; }
+    .btn:hover { transform: translateY(-1px); border-color: var(--ink); }
+    .btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .btn svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .promo { margin: 32px 0 0; padding: 20px; border-radius: 18px; text-align: left; border: 1px solid color-mix(in srgb, var(--red-a) 35%, var(--line));
+      background: linear-gradient(120deg, color-mix(in srgb, var(--blue-a) 12%, var(--surface)), color-mix(in srgb, var(--red-a) 12%, var(--surface))); }
+    .promo-row { display: flex; gap: 14px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .promo h2 { margin: 0; font-size: 16px; }
+    .promo p { margin: 2px 0 0; font-size: 14px; color: var(--body); }
+    .promo .tour { margin-top: 12px; padding-top: 10px; border-top: 1px dashed color-mix(in srgb, var(--red-a) 30%, var(--line)); font-size: 13px; color: var(--muted); }
+    .promo .tour a { color: var(--link); text-underline-offset: 3px; }
+    .pr-act { display: flex; gap: 8px; align-items: center; }
+    .copy { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 6px 0 14px; border-radius: 999px; border: 1.5px dashed var(--red-a); background: var(--surface); color: var(--ink); cursor: pointer; font: inherit; }
+    .copy b { font: 700 15px var(--latin); letter-spacing: .08em; }
+    .copy span { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--pale); color: var(--muted); }
+    .copy span svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .copy.done span { background: color-mix(in srgb, #3aa76d 18%, var(--surface)); color: #2f8f5b; }
+    .pr-act .btn { height: 38px; padding: 0 16px; font-size: 14px; }
+    .bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .bubbles i { position: absolute; border-radius: 50%; opacity: .5; animation: drift 14s ease-in-out infinite alternate; }
+    @keyframes drift { to { transform: translate(var(--dx), var(--dy)); } }
+    @media (prefers-reduced-motion: reduce) { .bubbles i { animation: none; } }
+    footer { padding: 0 20px 28px; text-align: center; font-size: 12px; color: var(--muted); }
+    .copy em { font-style: normal; }
+    @media (max-width: 520px) { form { flex-direction: column; } input { flex: none; } .bubbles i { opacity: .22; } .bubbles i:nth-child(1), .bubbles i:nth-child(2) { display: none; } .promo-row { flex-direction: column; align-items: stretch; } .pr-act { justify-content: space-between; } }
+  </style>
+</head>
+<body>
+  <header class="top"><a class="wordmark" href="/manny-pro-map/" aria-label="Pro Map 首頁"><span class="b1">Pro</span><span class="b2">Map</span></a></header>
+  <main>
+    <div class="bubbles" aria-hidden="true">
+      <i style="left:8%;top:18%;width:120px;height:120px;background:#6fc3e6;--dx:30px;--dy:40px"></i>
+      <i style="left:78%;top:12%;width:70px;height:70px;background:#ee6a55;--dx:-30px;--dy:30px;animation-delay:-4s"></i>
+      <i style="left:84%;top:62%;width:150px;height:150px;background:#c79ad8;--dx:-40px;--dy:-30px;animation-delay:-8s"></i>
+      <i style="left:4%;top:70%;width:60px;height:60px;background:#86a7ea;--dx:40px;--dy:-20px;animation-delay:-2s"></i>
+      <i style="left:60%;top:84%;width:40px;height:40px;background:#e486a0;--dx:-20px;--dy:-40px;animation-delay:-6s"></i>
+    </div>
+    <div class="card">
+      <p class="code404">404</p>
+      <h1>這個角落還沒畫進地圖</h1>
+      <p class="lede">找不到 <code id="path"></code>。可能是網址打錯了，或這家公司還沒收錄。</p>
+
+      <div class="sugg" id="sugg"><p>你要找的是不是：</p><div id="sugg-list"></div></div>
+
+      <form id="f" role="search">
+        <input id="q" type="search" placeholder="搜尋公司、人物或文章" aria-label="搜尋公司、人物或文章" autocomplete="off">
+        <button class="btn primary" type="submit"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>搜尋</button>
+      </form>
+      <div class="actions">
+        <a class="btn" href="/manny-pro-map/"><svg viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/></svg>回到產業地圖</a>
+        <a class="btn" href="/manny-pro-map/guide"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>使用導覽</a>
+      </div>
+
+      <section class="promo">
+        <div class="promo-row">
+          <div><h2>想讀完整分析？</h2><p>訂閱曼報 Pro 時輸入折扣碼，首年即可折抵 250 元。</p></div>
+          <div class="pr-act">
+            <button class="copy" id="copy" type="button" aria-label="複製折扣碼 love250"><b>love250</b><span><svg viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><em>複製</em></span></button>
+            <a class="btn primary" href="https://pro.manny-li.com/join" target="_blank" rel="noopener">前往訂閱</a>
+          </div>
+        </div>
+        <p class="tour">還在猶豫？先逛逛 Manny 做的 <a href="https://tour.manny-li.com/index.html" target="_blank" rel="noopener">免費導覽版</a>。</p>
+      </section>
+    </div>
+  </main>
+  <footer>Pro Map 是讀者自行整理的非官方索引，與曼報（Manny Li）無隸屬關係。</footer>
+  <script>
+    const BASE = '/manny-pro-map/';
+    const raw = decodeURIComponent(location.pathname.replace(BASE, '').replace(/\/+$/, ''));
+    document.getElementById('path').textContent = '/' + (raw || '');
+    const go = (hash) => (location.href = BASE + hash);
+    document.getElementById('f').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const v = document.getElementById('q').value.trim();
+      // The map has no search route, so land on the best match, else on the map
+      if (!v) return go('');
+      const hit = best(v);
+      go(hit ? hit.href : '');
+    });
+    document.getElementById('copy').addEventListener('click', async (e) => {
+      const b = e.currentTarget, em = b.querySelector('em');
+      try { await navigator.clipboard.writeText('love250'); em.textContent = '已複製'; b.classList.add('done'); } catch { em.textContent = '請手動複製'; }
+      setTimeout(() => { em.textContent = '複製'; b.classList.remove('done'); }, 1800);
+    });
+
+    // Suggest companies or people that look like the missing path
+    const norm = (s) => (s || '').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu, '');
+    let items = [];
+    function score(q, it) {
+      const k = it.key;
+      if (!q) return 0;
+      if (k === q) return 100;
+      // Short keys ("x", "on") only count as exact matches
+      if (Math.min(k.length, q.length) < 3) return 0;
+      if (k.startsWith(q) || q.startsWith(k)) return 70 - Math.abs(k.length - q.length);
+      if (k.includes(q) || q.includes(k)) return 50 - Math.abs(k.length - q.length);
+      // Edit distance for typos like "nvdia"
+      const d = lev(q, k);
+      return d <= Math.max(1, Math.floor(k.length / 4)) ? 40 - d * 5 : 0;
+    }
+    function lev(a, b) {
+      if (Math.abs(a.length - b.length) > 3) return 99;
+      const m = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+      for (let j = 1; j <= b.length; j++) m[0][j] = j;
+      for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
+        m[i][j] = Math.min(m[i - 1][j] + 1, m[i][j - 1] + 1, m[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      return m[a.length][b.length];
+    }
+    function ranked(text) {
+      const qs = text.split(/[\/#?._-]+/).map(norm).filter((x) => x.length >= 2);
+      const whole = norm(text);
+      if (whole && !qs.includes(whole)) qs.push(whole);
+      return items.map((it) => ({ it, s: Math.max(0, ...qs.map((q) => score(q, it))) })).filter((x) => x.s > 0).sort((a, b) => b.s - a.s || b.it.w - a.it.w);
+    }
+    const best = (text) => ranked(text)[0]?.it;
+    fetch(BASE + 'data.json').then((r) => r.json()).then((d) => {
+      const seen = new Set();
+      for (const c of d.companies) {
+        const logo = c.logo?.file ? `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(c.logo.file)}?width=80` : c.icon ? BASE + c.icon : '';
+        for (const k of [c.id, c.name, c.zh, ...(c.aliases ?? [])].filter(Boolean)) items.push({ key: norm(k), name: c.name, sub: c.zh || '', href: '#/c/' + c.id, logo, w: (c.sources ?? []).length });
+        for (const p of c.people ?? []) {
+          const id = p.name.toLowerCase().normalize('NFKD').replace(/[^\w]+/g, '-').replace(/^-|-$/g, '');
+          if (seen.has(id)) continue; seen.add(id);
+          for (const k of [p.name, p.zh].filter(Boolean)) items.push({ key: norm(k), name: p.name, sub: c.name, href: '#/p/' + id, logo: '', w: 0 });
+        }
+      }
+      if (!raw) return;
+      const out = [], names = new Set();
+      for (const { it } of ranked(raw)) { if (names.has(it.name)) continue; names.add(it.name); out.push(it); if (out.length === 4) break; }
+      if (!out.length) return;
+      document.getElementById('sugg-list').innerHTML = out.map((it) => {
+        const ini = it.name.split(/\s+/).map((w) => w[0]).slice(0, 2).join('').toUpperCase();
+        const pic = it.logo ? `<img src="${it.logo}" alt="">` : `<span class="ini" style="background:linear-gradient(120deg,#86a7ea,#ee6a55)">${ini}</span>`;
+        return `<a href="${BASE}${it.href}">${pic}${it.name.replace(/</g, '&lt;')}${it.sub && it.sub !== it.name ? ` <small>${it.sub.replace(/</g, '&lt;')}</small>` : ''}</a>`;
+      }).join('');
+      document.getElementById('sugg').classList.add('on');
+      document.getElementById('q').value = raw.split('/').pop();
+    }).catch(() => {});
+  </script>
+</body>
+</html>

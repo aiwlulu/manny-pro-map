@@ -6,6 +6,11 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.11.0] - 2026-10-11
+
+### 新增
+- 自訂 404 頁：依打錯的網址推薦最接近的公司或人物（可容錯拼字，例如 /nvdia → NVIDIA），附搜尋框、回到地圖、使用導覽，以及訂閱連結與折扣碼
+
 ## [1.10.2] - 2026-10-11
 
 ### 改善
@@ -165,6 +170,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.11.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.2...v1.11.0
 [1.10.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.1...v1.10.2
 [1.10.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.0...v1.10.1
 [1.10.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.3...v1.10.0
