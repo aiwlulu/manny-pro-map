@@ -893,3 +893,9 @@ body[data-view="chain"] .card .card-main { padding-top: 8px; }
 .code .cp em { font-style: normal; }
 .code .cp.done { background: color-mix(in srgb, #3aa76d 18%, var(--surface)); color: #2f8f5b; }
 :root[data-theme="dark"] .code .cp.done { color: #6fd39c; }
+/* Featured cards: room for hover lift and spacing between photo and name */
+.feat-row { padding: 8px 4px 14px; margin: -6px -4px 0; }
+.fcard { gap: 4px; padding: 14px 10px 16px; }
+.fcard .f-ph { margin: 6px 0 10px; }
+.fcard .rank { position: static; margin-bottom: -2px; }
+@media (max-width: 899px) { .feat-row { margin: -6px -16px 0; padding: 8px 16px 14px; } }
