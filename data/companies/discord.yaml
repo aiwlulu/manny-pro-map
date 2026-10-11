@@ -4,6 +4,7 @@ segment: social
 summary: "美國即時通訊與社群平台，提供私人及社群聊天室中的文字訊息、語音和視訊通話。"
 founded: 2012
 hq: 舊金山
+logo: { file: "Discord colour textlogo (2021).svg", license: Public domain, author: "™/®Discord Inc." }
 links:
   website: "https://discordapp.com/company"
   wikipedia: "https://en.wikipedia.org/wiki/Discord_Inc."

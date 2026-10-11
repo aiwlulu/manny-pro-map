@@ -4,6 +4,7 @@ segment: research
 summary: "美國基因科技公司，透過唾液樣本提供個人基因檢測，產出祖源與健康相關遺傳傾向報告。"
 founded: 2006
 hq: 南舊金山
+logo: { file: 23andMe logo.svg, license: Public domain, author: 23andMe }
 links:
   wikipedia: "https://en.wikipedia.org/wiki/23andMe"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/23andMe"

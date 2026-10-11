@@ -11,7 +11,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Coinbase"
 people:
   - { name: Brian Armstrong, role: 執行長, photo: { file: Brian Armstrong - TechCrunch Disrupt 2018 01.jpg, license: CC BY 2.0, author: TechCrunch } }
-  - { name: Fred Ehrsam, role: 創辦人 }
+  - { name: Fred Ehrsam, role: 創辦人, photo: { file: F Ehrsam.jpg, license: CC BY-SA 4.0, author: Robyn Selman } }
 sources:
   - "pro:68ezcucry26v"
   - "pro:52gjqz2bbj2p"

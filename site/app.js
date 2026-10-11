@@ -41,7 +41,12 @@ const kinds = new Set(store.get('pm-kinds', KIND_ORDER).filter((k) => KIND[k]));
 if (!kinds.size) KIND_ORDER.forEach((k) => kinds.add(k));
 let onlyUnread = false;
 
+// Images fade in once decoded; broken ones disappear instead of showing an icon
+document.addEventListener('load', (e) => { if (e.target.tagName === 'IMG') e.target.classList.add('ok'); }, true);
+document.addEventListener('error', (e) => { if (e.target.tagName === 'IMG') e.target.classList.add('bad'); }, true);
+
 const data = await fetch('data.json').then((r) => r.json());
+document.body.classList.add('ready');
 const src = new Map(data.sources.map((s) => [s.id, s]));
 const cos = new Map(data.companies.map((c) => [c.id, c]));
 
@@ -314,7 +319,9 @@ function search(v) {
   $('#results').hidden = false;
   views.setFocus({ match: new Set(hits.flatMap((h) => h.ids)) });
 }
-q.addEventListener('input', () => search(q.value));
+const qClear = $('#q-clear');
+q.addEventListener('input', () => { qClear.hidden = !q.value; search(q.value); });
+qClear.addEventListener('click', () => { q.value = ''; qClear.hidden = true; search(''); q.focus(); });
 q.addEventListener('focus', () => q.value && search(q.value));
 q.addEventListener('keydown', (e) => {
   if ((e.key === 'ArrowDown' || e.key === 'ArrowUp') && hits.length) {
@@ -323,7 +330,7 @@ q.addEventListener('keydown', (e) => {
     $('#results').children[sel]?.scrollIntoView({ block: 'nearest' });
   }
   if (e.key === 'Enter' && hits[sel]) pick(hits[sel]);
-  if (e.key === 'Escape') { q.value = ''; search(''); q.blur(); }
+  if (e.key === 'Escape') { q.value = ''; qClear.hidden = true; search(''); q.blur(); }
 });
 $('#results').addEventListener('click', (e) => { const n = e.target.closest('button')?.dataset.n; if (n) pick(hits[n]); });
 function pick(h) { $('#results').hidden = true; q.blur(); go(h.go); }

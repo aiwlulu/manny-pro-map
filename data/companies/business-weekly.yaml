@@ -4,6 +4,7 @@ industry: publishing
 segment: news
 summary: "台灣財經週刊，以財經相關新聞報導為主要內容，定期出版《商業周刊》。"
 founded: 1987
+logo: { file: Business Weekly Logo.svg, license: Public domain, author: 商業周刊 }
 links:
   website: "http://www.businessweekly.com.tw"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/商業周刊_(臺灣)"

@@ -6,6 +6,6 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Waabi"
   website: "https://waabi.ai"
 people:
-  - { name: Raquel Urtasun, role: 創辦人 }
+  - { name: Raquel Urtasun, role: 創辦人, photo: { file: Raquel Urtasun.jpg, license: CC BY-SA 4.0, author: Raquel Urtasun } }
 sources:
   - "pro:tdzgzbsctptw"

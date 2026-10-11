@@ -5,6 +5,6 @@ summary: "Ben Thompson 撰寫的科技與商業分析訂閱制電子報。"
 links:
   website: "https://stratechery.com"
 people:
-  - { name: Ben Thompson }
+  - { name: Ben Thompson, photo: { file: "Ben Thompson - Innholdprodusentens død og mulige gjenoppstandelse - NMD 2016 (26890581672) (cropped).jpg", license: CC BY-SA 2.0, author: "Thor Brødreskift  /  Nordiske Mediedager" } }
 sources:
   - "propod:cms5foq5v0qu601sihqdm73ul"

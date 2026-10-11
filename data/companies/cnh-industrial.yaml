@@ -3,6 +3,7 @@ industry: industrial
 segment: machinery
 summary: "農業與營建機械製造商，旗下品牌包括 Case IH 與 New Holland。"
 hq: 倫敦
+logo: { file: CNH Industrial.svg, license: Public domain, author: Unknown authorUnknown author }
 links:
   website: "http://www.cnh.com"
 sources:
