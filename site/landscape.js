@@ -6,13 +6,13 @@ const STAGES = [
 ];
 const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
-export function createLandscape(root, { industries, logo, onHover }) {
+export function createLandscape(root, { industries, logo, onHover, chainBtn = () => '' }) {
   let focus = null, hoverId = null, last = [];
 
   function tile(c) {
     const cls = ['tile', c.proN >= 4 ? 'big' : '', c.done ? 'done' : '', c.proN ? '' : 'lite'].filter(Boolean).join(' ');
     return `<a class="${cls}" href="#/c/${c.id}" data-id="${c.id}" title="${esc(c.name)}">
-      <span class="tl">${logo(c)}</span><span class="tn">${esc(c.name)}</span>${c.proN ? `<em class="tb" aria-label="${c.proN} 篇 Pro">${c.proN}</em>` : ''}</a>`;
+      <span class="tl">${logo(c)}</span><span class="tn">${esc(c.name)}</span>${c.proN ? `<em class="tb" aria-label="${c.proN} 篇 Pro">${c.proN}</em>` : ''}${chainBtn(c)}</a>`;
   }
 
   function render(companies) {
@@ -42,6 +42,16 @@ export function createLandscape(root, { industries, logo, onHover }) {
     watchLanes();
   }
 
+  // Tile shortcut straight into the supply-chain explorer
+  const openChain = (e) => {
+    const t = e.target.closest('.tchain');
+    if (!t) return false;
+    e.preventDefault(); e.stopPropagation();
+    location.hash = `#/chain/${t.dataset.chain}`;
+    return true;
+  };
+  root.addEventListener('click', openChain, true);
+  root.addEventListener('keydown', (e) => { if ((e.key === 'Enter' || e.key === ' ') && e.target.closest('.tchain')) openChain(e); });
   // Quick nav: smooth jump without touching the hash router, and mark the lane in view
   root.addEventListener('click', (e) => {
     const a = e.target.closest('.jump a');

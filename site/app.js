@@ -122,6 +122,7 @@ const land = createLandscape($('#lanes'), {
   industries,
   logo: (c) => (c.logo?.url ? `<img src="${esc(c.logo.url)}" alt="" loading="lazy" decoding="async">` : `<span class="mono" style="--g:${gOf(c)}">${esc(initials(c.name))}</span>`),
   onHover: (id) => new Set(cos.get(id)?.rels.map((r) => r.id)),
+  chainBtn: (c) => (chain.up(c.id).length || chain.down(c.id).length ? `<span class="tchain" role="button" tabindex="0" data-chain="${c.id}" title="看 ${esc(c.name)} 的產業鏈" aria-label="看 ${esc(c.name)} 的產業鏈">${icon('link')}</span>` : ''),
 });
 const views = { setFocus: (f) => { map.setFocus(f); land.setFocus(f); } };
 function renderViews() {
@@ -216,6 +217,11 @@ function focusCompany(c) {
   if (curView === 'map') requestAnimationFrame(() => map.zoomTo(c.id));
   else land.reveal(c.id);
 }
+function chainCta(c) {
+  const u = chain.up(c.id).length, d = chain.down(c.id).length;
+  const sub = u || d ? [u && `上游 ${u} 家`, d && `下游 ${d} 家`].filter(Boolean).join(' · ') : `同區段 ${peers(c).length} 家同業`;
+  return `<a class="chain-cta" href="#/chain/${c.id}"><span class="cc-ic">${icon('link')}</span><span class="cc-t"><b>查看產業鏈</b><em>${sub}，可跨產業往上下游探索</em></span>${icon('arrow', 'cc-go')}</a>`;
+}
 function showCompany(c) {
   const i = ind.get(c.industry) ?? industries.at(-1);
   const seg = i.segments?.find((g) => g.id === c.segment);
@@ -237,8 +243,9 @@ function showCompany(c) {
     ${meta ? `<p class="meta">${esc(meta)}</p>` : ''}
     <p class="sum">${esc(c.summary)}</p>
     ${links ? `<div class="links">${links}</div>` : ''}
+    ${chainCta(c)}
     <dl class="pstats">${stats}</dl>
-    <h3>${icon('map')}產業鏈<a class="h3-btn" href="#/chain/${c.id}">展開${icon('fit')}</a></h3>
+    <h3>${icon('link')}上下游<a class="h3-btn" href="#/chain/${c.id}">展開${icon('fit')}</a></h3>
     ${segmentTrail(c, i)}
     ${miniChain(c, chain, { avatar })}
     ${ppl ? `<h3>${icon('user')}創辦人與關鍵人物</h3><ul class="ppl">${ppl}</ul>` : ''}
@@ -399,5 +406,11 @@ const hdr = $('.top');
 new ResizeObserver(() => document.documentElement.style.setProperty('--hdr', `${hdr.offsetHeight}px`)).observe(hdr);
 for (const [sel2, ic] of [['[data-z="in"]', 'plus'], ['[data-z="out"]', 'minus'], ['[data-z="fit"]', 'reset']]) $(sel2).innerHTML = icon(ic);
 renderStats(); renderFilters(); renderViews();
+if (!store.get('pm-coach', false)) {
+  const el = $('#coach');
+  el.innerHTML = `<span class="co-ic">${icon('link')}</span><p><b>新功能：產業鏈</b>點任一家公司可以看它的上下游；地圖卡片右下角的 ${icon('link')} 也能直接打開。</p><button class="iconbtn" aria-label="知道了">${icon('x')}</button>`;
+  el.hidden = false;
+  el.querySelector('button').onclick = () => { el.hidden = true; store.set('pm-coach', true); };
+}
 countUp($('#n-co'), cos.size);
 route();

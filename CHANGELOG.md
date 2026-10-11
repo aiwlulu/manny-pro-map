@@ -6,6 +6,13 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.4.0] - 2026-10-11
+
+### 新增
+- 公司卡在簡介下方加上「查看產業鏈」入口，顯示上下游家數
+- 產業地圖卡片右下角的產業鏈按鈕，可直接打開全螢幕產業鏈
+- 第一次造訪時的產業鏈功能提示（可關閉，不再出現）
+
 ## [1.3.2] - 2026-10-11
 
 ### 修正
@@ -63,6 +70,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.4.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.3.2...v1.4.0
 [1.3.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.2.0...v1.3.0

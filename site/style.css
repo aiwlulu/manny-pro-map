@@ -700,3 +700,30 @@ html[data-boot="people"] #view-people[hidden], html[data-boot="about"] #view-abo
 @media (max-width: 899px) { .bm-sk { padding: 120px 0 0; } .bm-sk-box { width: 86vw; } }
 html[data-boot]:not([data-boot="chain"]) .tabs button.on { background: none; box-shadow: none; color: var(--muted); font-weight: 400; }
 html[data-boot="map"] .tabs [data-view="map"], html[data-boot="people"] .tabs [data-view="people"], html[data-boot="about"] .tabs [data-view="about"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-sm); font-weight: 500; }
+
+/* ---------- Supply-chain discoverability ---------- */
+.chain-cta { display: flex; align-items: center; gap: 12px; margin: 16px 0 2px; padding: 12px 14px; border-radius: 14px; text-decoration: none;
+  background: linear-gradient(120deg, color-mix(in srgb, var(--blue-a) 16%, var(--surface)), color-mix(in srgb, var(--red-a) 14%, var(--surface)));
+  border: 1px solid color-mix(in srgb, var(--blue-b) 35%, var(--line)); transition: transform .2s var(--spring), box-shadow .2s; }
+.chain-cta:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+.cc-ic { flex: none; width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; color: #fff; font-size: 18px; background: linear-gradient(120deg, var(--blue-b), var(--red-a)); }
+.cc-t { display: flex; flex-direction: column; min-width: 0; line-height: 1.35; }
+.cc-t b { font-size: 15px; }
+.cc-t em { font-style: normal; font-size: 12.5px; color: var(--muted); }
+.cc-go { margin-left: auto; font-size: 18px; color: var(--ink); transition: transform .2s var(--spring); }
+.chain-cta:hover .cc-go { transform: translateX(3px); }
+.tchain { position: absolute; right: 4px; bottom: 4px; width: 22px; height: 22px; border-radius: 7px; display: grid; place-items: center; font-size: 12px;
+  color: #fff; background: linear-gradient(120deg, var(--blue-b), var(--red-a)); opacity: 0; transform: scale(.8); transition: opacity .15s, transform .2s var(--spring); }
+.tile:hover .tchain, .tile:focus-within .tchain, .tchain:focus-visible { opacity: 1; transform: none; }
+.tchain:hover { transform: scale(1.12); }
+@media (hover: none) { .tchain { opacity: .9; transform: none; width: 20px; height: 20px; } }
+.coach { position: fixed; z-index: 55; left: 50%; bottom: 24px; transform: translateX(-50%); width: min(520px, calc(100vw - 24px));
+  display: flex; align-items: center; gap: 12px; padding: 12px 12px 12px 14px; border-radius: 16px; background: var(--ink); color: var(--paper); box-shadow: var(--shadow);
+  animation: rise .5s var(--ease) 1.2s both; }
+.coach p { margin: 0; font-size: 13.5px; line-height: 1.6; }
+.coach p b { display: block; font-size: 14px; }
+.coach p .i { vertical-align: -0.15em; color: var(--blue-a); }
+.coach .co-ic { flex: none; width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(120deg, var(--blue-b), var(--red-a)); color: #fff; font-size: 17px; }
+.coach .iconbtn { flex: none; background: transparent; border-color: color-mix(in srgb, var(--paper) 25%, transparent); color: var(--paper); width: 32px; height: 32px; }
+body.open .coach, body.cx-open .coach { display: none; }
+@media (max-width: 520px) { .coach { bottom: calc(76px + env(safe-area-inset-bottom)); } }
