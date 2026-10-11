@@ -1,0 +1,56 @@
+// Validate data/*.yaml and compile to site/data.json. Exit 1 on any error.
+import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { parse } from 'yaml';
+
+const load = (p) => parse(readFileSync(p, 'utf8'));
+const industries = load('data/industries.yaml');
+const sources = load('data/sources.yaml') ?? [];
+const errors = [];
+const err = (f, m) => errors.push(`${f}: ${m}`);
+
+const MANNY_HOSTS = ['pro.manny-li.com', 'manny-li.com', 'www.manny-li.com', 'eepurl.com', 'open.firstory.fm', 'podcasts.apple.com'];
+const RELATION_TYPES = ['acquired', 'invested', 'competitor', 'partner', 'supplier', 'customer', 'spinoff', 'parent'];
+const indIds = new Set(industries.map((i) => i.id));
+const srcIds = new Set();
+for (const s of sources) {
+  if (srcIds.has(s.id)) err('sources.yaml', `duplicate id ${s.id}`);
+  srcIds.add(s.id);
+  if (!MANNY_HOSTS.includes(new URL(s.url).hostname)) err('sources.yaml', `${s.id} url must point to Manny's own site`);
+}
+
+const companies = [];
+for (const f of readdirSync('data/companies').filter((f) => f.endsWith('.yaml')).sort()) {
+  const c = load(`data/companies/${f}`);
+  c.id = f.replace(/\.yaml$/, '');
+  const at = `companies/${f}`;
+  if (!/^[a-z0-9-]+$/.test(c.id)) err(at, 'file name must be kebab-case');
+  if (!c.name) err(at, 'name is required');
+  if (!indIds.has(c.industry)) err(at, `unknown industry "${c.industry}"`);
+  if (!c.summary) err(at, 'summary is required');
+  else if ([...c.summary].length > 90) err(at, `summary too long (${[...c.summary].length} > 90 chars)`);
+  for (const s of c.sources ?? []) if (!srcIds.has(s)) err(at, `unknown source ${s}`);
+  if (!c.sources?.length) err(at, 'at least one Manny source is required');
+  for (const [k, u] of Object.entries(c.links ?? {})) {
+    try { new URL(u); } catch { err(at, `links.${k} is not a URL`); }
+  }
+  companies.push(c);
+}
+const ids = new Set(companies.map((c) => c.id));
+for (const c of companies)
+  for (const r of c.relations ?? []) {
+    if (!RELATION_TYPES.includes(r.type)) err(`companies/${c.id}.yaml`, `unknown relation type ${r.type}`);
+    if (!ids.has(r.target)) err(`companies/${c.id}.yaml`, `relation target ${r.target} not found`);
+  }
+
+if (errors.length) {
+  console.error(errors.join('\n'));
+  process.exit(1);
+}
+const used = new Set(companies.flatMap((c) => c.sources));
+writeFileSync('site/data.json', JSON.stringify({
+  builtAt: new Date().toISOString().slice(0, 10),
+  industries,
+  sources: sources.filter((s) => used.has(s.id)),
+  companies,
+}));
+console.log(`ok: ${companies.length} companies, ${used.size} sources`);

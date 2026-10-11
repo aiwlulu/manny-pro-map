@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pro Map 公司地圖</title>
+  <meta name="description" content="非官方的讀者索引：把曼報 Pro 談過的公司、創辦人與文章、Podcast 整理成一張可互動的產業地圖。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;1,500;1,600&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%237cc6e4'/%3E%3Cstop offset='1' stop-color='%23ee6a55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cellipse cx='16' cy='14' rx='14' ry='10' fill='url(%23g)'/%3E%3Cpath d='M9 21l-2 8 8-6z' fill='%237cc6e4'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <a href="#/" class="wordmark"><span class="b1">Pro</span> <span class="b2">Map</span></a>
+      <span class="tag">曼報讀者的公司地圖 · 非官方</span>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="搜尋公司、人物、文章…（按 / 聚焦）" autocomplete="off" aria-label="搜尋">
+      <div id="results" class="results" hidden></div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button data-view="map" class="on">產業地圖</button>
+      <button data-view="people">人物</button>
+      <button data-view="about">關於</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="bubble blue"><span>Who built it</span></div>
+    <div class="hero-text">
+      <h1>曼報談過的公司，一張圖找齊。</h1>
+      <p id="stats"></p>
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="bubble red"><span>Where to read</span></div>
+  </section>
+
+  <main>
+    <div id="view-map" class="view"><div id="map" class="map"></div></div>
+    <div id="view-people" class="view" hidden><div id="people" class="people"></div></div>
+    <div id="view-about" class="view about" hidden>
+      <h2>關於這張地圖</h2>
+      <p>這是讀者自行整理的<strong>非官方索引</strong>，與曼報（Manny Li）無隸屬關係。地圖只記錄「哪篇文章、哪一集談到哪家公司」，加上依公開資料撰寫的公司簡介；文章與節目內容的著作權屬於原作者，請到曼報 Pro 訂閱閱讀。</p>
+      <ul>
+        <li><strong>連結以曼報 Pro 為主</strong>：Pro 文章與 Pro Podcast 優先列出，免費電子報與公開 Podcast 作為補充。</li>
+        <li><strong>公司簡介</strong>：依官網、維基百科、財報等公開資料撰寫，不轉述曼報的分析。</li>
+        <li><strong>閱讀進度</strong>：勾選「已讀」只存在你這台裝置的瀏覽器裡，不會上傳。</li>
+      </ul>
+      <p>發現錯漏？歡迎到 <a id="repo-link" href="https://github.com/aiwlulu/manny-pro-map">GitHub</a> 開 issue 或送 PR，每家公司是一個 YAML 檔，格式說明見 CONTRIBUTING.md。</p>
+      <p class="muted">程式碼以 MIT 授權；社群撰寫的資料以 CC BY 4.0 授權。</p>
+    </div>
+  </main>
+
+  <aside id="panel" class="panel" hidden aria-live="polite"></aside>
+  <div id="scrim" class="scrim" hidden></div>
+
+  <footer class="foot">
+    非官方讀者專案 · 內容著作權屬曼報 · 資料更新於 <span id="built"></span>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

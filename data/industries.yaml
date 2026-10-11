@@ -1,0 +1,19 @@
+# Map regions. `id` is referenced by companies/*.yaml; order = display order.
+- { id: ai, name: AI, en: Artificial Intelligence }
+- { id: semis, name: 半導體, en: Semiconductors }
+- { id: software, name: 雲端與軟體, en: Cloud & Software }
+- { id: platforms, name: 網路平台與社群, en: Platforms & Social }
+- { id: commerce, name: 電商與零售, en: Commerce & Retail }
+- { id: payments, name: 支付與金融科技, en: Payments & Fintech }
+- { id: finance, name: 金融與投資, en: Finance & Investing }
+- { id: media, name: 媒體與娛樂, en: Media & Entertainment }
+- { id: gaming, name: 遊戲, en: Gaming }
+- { id: consumer, name: 運動與消費品牌, en: Sports & Consumer Brands }
+- { id: health, name: 醫療與生技, en: Health & Biotech }
+- { id: industrial, name: 能源與工業, en: Energy & Industrials }
+- { id: mobility, name: 交通與太空, en: Mobility & Space }
+- { id: hardware, name: 硬體與消費電子, en: Hardware & Devices }
+- { id: publishing, name: 教育與出版, en: Education & Publishing }
+- { id: services, name: 餐飲與服務, en: Food & Services }
+- { id: telecom, name: 電信, en: Telecom }
+- { id: other, name: 其他, en: Other }
