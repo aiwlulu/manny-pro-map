@@ -12,7 +12,7 @@ export function createLandscape(root, { industries, logo, onHover, chainBtn = ()
   function tile(c) {
     const cls = ['tile', c.proN >= 4 ? 'big' : '', c.done ? 'done' : '', c.proN ? '' : 'lite'].filter(Boolean).join(' ');
     return `<a class="${cls}" href="#/c/${c.id}" data-id="${c.id}" title="${esc(c.name)}">
-      <span class="tl">${logo(c)}</span><span class="tn">${esc(c.name)}</span>${c.proN ? `<em class="tb" aria-label="${c.proN} 篇 Pro">${c.proN}</em>` : ''}${chainBtn(c)}</a>`;
+      <span class="tl">${logo(c)}</span><span class="tn">${esc(c.name)}</span>${c.proN >= 2 ? `<em class="tb" title="曼報 Pro 談過 ${c.proN} 篇" aria-label="曼報 Pro 談過 ${c.proN} 篇"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>${c.proN}</em>` : ''}${chainBtn(c)}</a>`;
   }
 
   function render(companies) {
@@ -36,7 +36,7 @@ export function createLandscape(root, { industries, logo, onHover, chainBtn = ()
     }).join('');
     const shown = industries.filter((ind) => (byInd.get(ind.id) ?? []).length);
     root.innerHTML = `<nav class="jump" aria-label="跳到產業">${shown.map((ind) => `<a href="#lane-${ind.id}" data-lane="${ind.id}" style="--c1:${ind.c1}"><i></i>${esc(ind.name)}<span>${byInd.get(ind.id).length}</span></a>`).join('')}</nav>
-      <div class="chain-cols" aria-hidden="true"><span></span>${STAGES.map((s) => `<span class="col-${s.id}"><b>${s.name}</b><i>${s.en}</i></span>`).join('')}</div>
+      <div class="chain-cols" aria-hidden="true"><span></span>${STAGES.map((s) => `<span class="col-${s.id}"><b>${s.name}</b><i>${s.en}</i></span>`).join('')}<em class="legend-n"><em class="tb"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>8</em>＝曼報 Pro 談過的篇數</em></div>
       <div class="lanes">${lanes || '<p class="empty">目前的篩選條件下沒有公司</p>'}</div>`;
     apply();
     watchLanes();

@@ -6,6 +6,12 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.10.1] - 2026-10-11
+
+### 改善
+- 產業地圖的 Pro 篇數改為卡片內的低調小標（文件圖示＋數字），只標 2 篇以上，避免滿版的「1」
+- 上中下游標題列右側加上圖例「＝曼報 Pro 談過的篇數」，滑鼠移上數字也有說明
+
 ## [1.10.0] - 2026-10-11
 
 ### 新增
@@ -154,6 +160,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.10.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.0...v1.10.1
 [1.10.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.3...v1.10.0
 [1.9.3]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.2...v1.9.3
 [1.9.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.1...v1.9.2
