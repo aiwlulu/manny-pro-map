@@ -47,6 +47,7 @@ document.addEventListener('error', (e) => { if (e.target.tagName === 'IMG') e.ta
 
 const data = await fetch('data.json').then((r) => r.json());
 document.body.classList.add('ready');
+delete document.documentElement.dataset.boot;
 const src = new Map(data.sources.map((s) => [s.id, s]));
 const cos = new Map(data.companies.map((c) => [c.id, c]));
 

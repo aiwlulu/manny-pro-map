@@ -681,3 +681,22 @@ span.ph { opacity: 1; }
 .q-clear { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 26px; height: 26px; border: 0; border-radius: 50%; background: var(--pale); color: var(--muted); display: grid; place-items: center; font-size: 13px; }
 .q-clear:hover { color: var(--ink); background: var(--line); }
 .search:has(.q-clear:not([hidden])) kbd { display: none; }
+
+/* Boot: show the skeleton of the view being restored */
+html[data-boot="map"] #view-chain, html[data-boot="people"] #view-chain, html[data-boot="about"] #view-chain { display: none; }
+html[data-boot="map"] #view-map[hidden] { display: block !important; }
+html[data-boot="people"] #view-people[hidden], html[data-boot="about"] #view-about[hidden] { display: block !important; }
+.bm-sk { position: absolute; inset: 0; display: grid; place-items: center; padding-left: 400px; pointer-events: none; }
+.bm-sk-box { position: relative; width: min(78vh, 60vw); aspect-ratio: 1; }
+.bm-sk i { position: absolute; transform: translate(-50%, -50%); border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--surface) 60%, transparent), transparent 60%), var(--pale);
+  box-shadow: inset 0 0 0 1px var(--line); animation: breathe 1.8s var(--ease) infinite alternate; animation-delay: var(--d); }
+@keyframes breathe { from { opacity: .45; transform: translate(-50%, -50%) scale(.96); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
+.sk-person { display: flex; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--line); break-inside: avoid; }
+.sk-person span { display: flex; flex-direction: column; gap: 6px; }
+.sk-av { width: 30px; height: 30px; border-radius: 50%; }
+.sk-name { width: 140px; height: 14px; }
+.sk-role { width: 100px; height: 11px; }
+@media (max-width: 899px) { .bm-sk { padding: 120px 0 0; } .bm-sk-box { width: 86vw; } }
+html[data-boot]:not([data-boot="chain"]) .tabs button.on { background: none; box-shadow: none; color: var(--muted); font-weight: 400; }
+html[data-boot="map"] .tabs [data-view="map"], html[data-boot="people"] .tabs [data-view="people"], html[data-boot="about"] .tabs [data-view="about"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-sm); font-weight: 500; }
