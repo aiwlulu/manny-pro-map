@@ -139,7 +139,6 @@ export function createMap(root, { industries, weight, onPick, onHover, safeArea,
       cl.toggle('cur', focus?.cur === id);
       cl.toggle('rel', !!focus?.rel?.has(id));
       cl.toggle('hit', !!focus?.match?.has(id));
-      cl.toggle('done', !!n.c.done);
     }
     buildLines();
   }

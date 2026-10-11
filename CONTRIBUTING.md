@@ -66,6 +66,10 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
   url: https://pro.manny-li.com/posts/...
 ```
 
+## 頁面裡的 inline script
+
+頁面有 Content-Security-Policy。改了 `index.html`、`guide.html`、`404.html` 裡的 `<script>` 之後，執行 `npm run csp` 更新雜湊，否則 CI 會失敗。
+
 ## 版本
 
 發佈新版時更新 `package.json` 的 `version` 與 `CHANGELOG.md`，並打上 `vX.Y.Z` tag。版本號規則見 CHANGELOG 開頭。

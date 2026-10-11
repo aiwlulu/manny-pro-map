@@ -23,6 +23,7 @@ const REL = {
 };
 const LINK_LABEL = { website: '官網', wikipedia: 'Wikipedia', wikipedia_zh: '維基百科', investor: '投資人關係' };
 const COMMONS = (file, w = 160) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=${w}`;
+const safeUrl = (u) => { try { return ['http:', 'https:'].includes(new URL(u, location.href).protocol) ? u : '#'; } catch { return '#'; } };
 
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -36,7 +37,8 @@ const store = {
   get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
 };
-const read = new Set(store.get('pm-read', []));
+// Reading progress was removed; clear what older versions stored
+try { localStorage.removeItem('pm-read'); } catch {}
 // Content filter: one Pro column, or a podcast feed
 const COLS = [
   { id: 'all', label: '全部' },
@@ -49,11 +51,16 @@ const COLS = [
 ];
 let col = COLS.some((x) => x.id === store.get('pm-col', 'all')) ? store.get('pm-col', 'all') : 'all';
 const colTest = () => COLS.find((x) => x.id === col)?.test;
-let onlyUnread = false;
 
 // Images fade in once decoded; broken ones disappear instead of showing an icon
 document.addEventListener('load', (e) => { if (e.target.tagName === 'IMG') e.target.classList.add('ok'); }, true);
-document.addEventListener('error', (e) => { if (e.target.tagName === 'IMG') e.target.classList.add('bad'); }, true);
+document.addEventListener('error', (e) => {
+  const img = e.target;
+  if (img.tagName !== 'IMG') return;
+  // Thumbnail sizes larger than the original fail; fall back to the redirecting URL once
+  if (img.dataset.alt && img.src !== img.dataset.alt) { img.src = img.dataset.alt; delete img.dataset.alt; return; }
+  img.classList.add('bad');
+}, true);
 
 const data = await fetch('data.json').then((r) => r.json());
 document.body.classList.add('ready');
@@ -76,7 +83,7 @@ for (const c of cos.values()) {
   c.proN = c.src.filter((s) => PRO_KINDS.has(s.kind)).length;
   c.rels = [];
   // Commons logo first; official-site icon as fallback
-  if (c.logo?.file) c.logo.url = COMMONS(c.logo.file, 250);
+  if (c.logo?.file) { c.logo.url = c.logo.thumb ?? COMMONS(c.logo.file, 250); c.logo.alt = COMMONS(c.logo.file, 250); }
   else if (c.icon) c.logo = { url: c.icon, site: true };
 }
 for (const c of cos.values())
@@ -105,19 +112,15 @@ for (const c of cos.values())
 for (const p of people.values()) p.roles.sort((a, b) => b.c.proN - a.c.proN);
 for (const p of people.values()) p.mentions = (data.peopleSources?.[p.name] ?? []).map((id) => src.get(id)).filter(Boolean);
 
-const keySrc = (c) => (c.proN ? c.src.filter((s) => PRO_KINDS.has(s.kind)) : c.src);
-const isDone = (c) => { const k = keySrc(c); return k.length > 0 && k.every((s) => read.has(s.id)); };
 const inCol = (c, id = col) => { const t = COLS.find((x) => x.id === id)?.test; return !t || c.src.some(t); };
-const visible = (c) => inCol(c) && !(onlyUnread && isDone(c));
+const visible = (c) => inCol(c);
 const weight = (c) => 1 + c.proN * 2.2 + (c.src.length - c.proN) * 0.6;
 const countBy = (c) => KIND_ORDER.map((k) => [k, c.src.filter((s) => s.kind === k).length]).filter(([, n]) => n);
 const initials = (name) => { const w = name.replace(/[^\p{L}\p{N}& ]/gu, ' ').split(/\s+/).filter(Boolean); return (w.length > 1 && !/^\p{Script=Han}/u.test(w[0]) ? w[0][0] + w[1][0] : [...(w[0] ?? '?')].slice(0, 2).join('')).toUpperCase(); };
 const gOf = (c) => grad(ind.get(c.industry) ?? industries.at(-1));
-const avatar = (c, cls = '') => `<span class="av ${cls}${c.logo?.url ? ' img' : ''}" style="--g:${gOf(c)}">${esc(initials(c.name))}${c.logo?.url ? `<img src="${esc(c.logo.url)}" alt="" loading="lazy" decoding="async">` : ''}</span>`;
+const avatar = (c, cls = '') => `<span class="av ${cls}${c.logo?.url ? ' img' : ''}" style="--g:${gOf(c)}">${esc(initials(c.name))}${c.logo?.url ? `<img src="${esc(c.logo.url)}"${c.logo.alt ? ` data-alt="${esc(c.logo.alt)}"` : ''} alt="" loading="lazy" decoding="async">` : ''}</span>`;
 // Initials sit underneath; the photo fades in over them once decoded
-const face = (p, cls = '', w = 120) => `<span class="ph ini ${cls}${p.photo?.file ? ' has-img' : ''}">${esc(initials(p.name))}${p.photo?.file ? `<img src="${esc(COMMONS(p.photo.file, w))}" alt="" loading="lazy" decoding="async">` : ''}</span>`;
-const markDone = () => { for (const c of cos.values()) c.done = isDone(c); };
-markDone();
+const face = (p, cls = '', w = 120) => `<span class="ph ini ${cls}${p.photo?.file ? ' has-img' : ''}">${esc(initials(p.name))}${p.photo?.file ? `<img src="${esc((w > 120 ? p.photo.big : p.photo.thumb) ?? COMMONS(p.photo.file, w))}" data-alt="${esc(COMMONS(p.photo.file, w))}" alt="" loading="lazy" decoding="async">` : ''}</span>`;
 
 /* ---------- Views: value-chain landscape + bubble map ---------- */
 const panelW = () => ($('#panel').hidden || !wide() ? 0 : $('#panel').offsetWidth);
@@ -158,9 +161,7 @@ function countUp(el, to) {
 }
 function renderStats() {
   const pro = data.sources.filter((s) => PRO_KINDS.has(s.kind));
-  const done = pro.filter((s) => read.has(s.id)).length;
-  $('#kpis').innerHTML = `<div><dt>Pro 文章與節目</dt><dd>${pro.length}</dd></div><div><dt>人物</dt><dd>${people.size}</dd></div>
-    <div class="prog"><dt>你已讀 Pro</dt><dd>${done}<small>/${pro.length}</small></dd><span class="bar"><i style="width:${pro.length ? (done / pro.length) * 100 : 0}%"></i></span></div>`;
+  $('#kpis').innerHTML = `<div><dt>Pro 文章與節目</dt><dd>${pro.length}</dd></div><div><dt>人物</dt><dd>${people.size}</dd></div>`;
   $('#built').textContent = data.builtAt;
   if (data.version) $('#ver').lastChild.textContent = `v${data.version} 更新紀錄`;
 }
@@ -171,7 +172,7 @@ const colChips = (count) => `<div class="fgroup"><span class="flabel">欄目</sp
 const toggle = (key, label, on, n) => `<label class="tgl"><input type="checkbox" data-tgl="${key}" ${on ? 'checked' : ''}><span class="sw"></span>${label}${n != null ? `<em>${n}</em>` : ''}</label>`;
 function renderFilters() {
   $('#filters').innerHTML = colChips((id) => [...cos.values()].filter((c) => inCol(c, id)).length)
-    + `<div class="fgroup"><span class="flabel">條件</span>${toggle('unread', '只看未讀', onlyUnread)}</div>`;
+;
 }
 function setCol(id) {
   col = id; store.set('pm-col', id);
@@ -183,7 +184,6 @@ $('#filters').onclick = (e) => {
   if (!b) return;
   if (b.dataset.col) return setCol(b.dataset.col);
 };
-$('#filters').onchange = (e) => { if (e.target.dataset.tgl === 'unread') { onlyUnread = e.target.checked; renderViews(); } };
 
 /* ---------- People ---------- */
 const roleLine = (p, max = 3) => p.roles.slice(0, max).map((r) => `${esc(r.c.name)}${r.role ? ` ${esc(r.role)}` : ''}`).join('　·　') + (p.roles.length > max ? `　+${p.roles.length - max}` : '');
@@ -206,8 +206,9 @@ function renderPeople() {
   const bar = $('#people-bar');
   if (!bar.dataset.ready) {
     bar.dataset.ready = 1;
-    bar.innerHTML = `<div class="pf"></div><label class="pq">${icon('search')}<input type="search" placeholder="過濾人名或公司" aria-label="過濾人名或公司"></label><nav class="az" aria-label="依字母跳轉"></nav>`;
-    bar.querySelector('input').addEventListener('input', (e) => { pplQuery = e.target.value; renderPeople(); });
+    bar.innerHTML = `<div class="pf"></div><label class="pq">${icon('search')}<input type="search" maxlength="60" placeholder="過濾人名或公司" aria-label="過濾人名或公司"></label><nav class="az" aria-label="依字母跳轉"></nav>`;
+    let t = 0;
+    bar.querySelector('input').addEventListener('input', (e) => { clearTimeout(t); t = setTimeout(() => { pplQuery = e.target.value.slice(0, 60); renderPeople(); }, 90); });
   }
   bar.querySelector('.pf').innerHTML = colChips((id) => all.filter((p) => pplMatch(p, id)).length)
     + `<div class="fgroup"><span class="flabel">條件</span>${toggle('multi', '跨多家公司', pplMulti, all.filter((p) => p.roles.length > 1).length)}</div>`;
@@ -242,18 +243,17 @@ $('#people-bar').addEventListener('click', (e) => {
 
 /* ---------- Panel ---------- */
 const credits = [];
-function credit(img, what) { if (img?.file) credits.push(`${what}：<a href="https://commons.wikimedia.org/wiki/File:${encodeURIComponent(img.file)}" target="_blank" rel="noopener">${esc(img.author || 'Wikimedia Commons')}</a>${img.license ? `，${esc(img.license)}` : ''}`); }
+function credit(img, what) { if (img?.file) credits.push(`${esc(what)}：<a href="https://commons.wikimedia.org/wiki/File:${encodeURIComponent(img.file)}" target="_blank" rel="noopener">${esc(img.author || 'Wikimedia Commons')}</a>${img.license ? `，${esc(img.license)}` : ''}`); }
 function srcList(list, withKind = false) {
-  return `<ul class="src">${list.map((s) => `<li class="${read.has(s.id) ? 'read' : ''}">
-    <label class="ck"><input type="checkbox" data-src="${esc(s.id)}" ${read.has(s.id) ? 'checked' : ''}><span>${icon('check')}</span><b class="sr">標記已讀</b></label>
-    <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>
+  return `<ul class="src">${list.map((s) => `<li>
+    <a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>
     <span class="sm">${withKind ? `<b class="sk-kind">${KIND[s.kind].short}</b>` : ''}${s.date}${s.column ? ` · ${esc(s.column)}` : ''}</span></li>`).join('')}</ul>`;
 }
 function openPanel(html, extra = '') {
   const p = $('#panel');
   p.innerHTML = `<button class="close iconbtn" aria-label="關閉">${icon('x')}</button><div class="pin">${html}
     ${credits.length ? `<p class="note">圖片來源：${credits.join('；')}</p>` : ''}${extra}
-    <p class="note">連結皆指向曼報原站，內容著作權屬原作者。已讀紀錄只存在這台裝置。</p>
+    <p class="note">連結皆指向曼報原站，內容著作權屬原作者。</p>
     <p class="note">還沒訂閱？<a href="https://pro.manny-li.com/join" target="_blank" rel="noopener">訂閱曼報 Pro</a>，輸入折扣碼 <b>love250</b> 首年折抵 250 元。</p></div>`;
   credits.length = 0;
   const was = p.hidden;
@@ -280,7 +280,7 @@ function showCompany(c) {
   const i = ind.get(c.industry) ?? industries.at(-1);
   const seg = i.segments?.find((g) => g.id === c.segment);
   const meta = [c.founded && `${c.founded} 年成立`, c.hq].filter(Boolean).join(' · ');
-  const links = Object.entries(c.links ?? {}).map(([k, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${LINK_LABEL[k] ?? k}${icon('external')}</a>`).join('');
+  const links = Object.entries(c.links ?? {}).map(([k, u]) => `<a href="${esc(safeUrl(u))}" target="_blank" rel="noopener noreferrer">${esc(LINK_LABEL[k] ?? k)}${icon('external')}</a>`).join('');
   credit(c.logo, `${c.name} logo`);
   const ppl = (c.people ?? []).map((p) => {
     credit(p.photo, p.name);
@@ -333,13 +333,6 @@ function showSource(s) {
   else if (list[0]) land.reveal(list[0].id);
 }
 $('#panel').addEventListener('click', (e) => { if (e.target.closest('.close')) go(mapView === 'map' ? '#/bubbles' : '#/'); });
-$('#panel').addEventListener('change', (e) => {
-  const id = e.target.dataset.src;
-  if (!id) return;
-  e.target.checked ? read.add(id) : read.delete(id);
-  e.target.closest('li').classList.toggle('read', e.target.checked);
-  store.set('pm-read', [...read]); markDone(); renderStats(); map.refresh(); land.refresh();
-});
 $('#scrim').onclick = () => go(mapView === 'map' ? '#/bubbles' : '#/');
 
 /* ---------- Supply-chain explorer ---------- */
@@ -376,7 +369,7 @@ const TI = { c: 'building', p: 'user', s: 'file' };
 let hits = [], sel = 0;
 const q = $('#q');
 function search(v) {
-  const k = norm(v);
+  const k = norm(v.slice(0, 60)).replace(/[\u0000-\u001f]/g, '');
   if (!k) { $('#results').hidden = true; if (!location.hash.match(/^#\/[csp]\//)) views.setFocus(null); return; }
   hits = index.filter((x) => x.key.includes(k)).sort((a, b) => (a.key.startsWith(k) ? 0 : 1) - (b.key.startsWith(k) ? 0 : 1) || 'cps'.indexOf(a.t) - 'cps'.indexOf(b.t)).slice(0, 30);
   sel = 0;
@@ -385,7 +378,8 @@ function search(v) {
   views.setFocus({ match: new Set(hits.flatMap((h) => h.ids)) });
 }
 const qClear = $('#q-clear');
-q.addEventListener('input', () => { qClear.hidden = !q.value; search(q.value); });
+let qTimer = 0;
+q.addEventListener('input', () => { qClear.hidden = !q.value; clearTimeout(qTimer); qTimer = setTimeout(() => search(q.value), 70); });
 qClear.addEventListener('click', () => { q.value = ''; qClear.hidden = true; search(''); q.focus(); });
 q.addEventListener('focus', () => q.value && search(q.value));
 q.addEventListener('keydown', (e) => {

@@ -1,5 +1,6 @@
 // Validate data/*.yaml and compile to site/data.json. Exit 1 on any error.
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { parse } from 'yaml';
 
 const load = (p) => parse(readFileSync(p, 'utf8'));
@@ -19,6 +20,14 @@ for (const s of sources) {
   if (!MANNY_HOSTS.includes(new URL(s.url).hostname)) err('sources.yaml', `${s.id} url must point to Manny's own site`);
 }
 
+// Direct Commons thumbnail URL; saves the two redirects of Special:FilePath
+function thumb(file, w) {
+  const f = file.replace(/ /g, '_');
+  const h = createHash('md5').update(f).digest('hex');
+  const e = encodeURIComponent(f);
+  const ext = /\.(svg|tiff?|pdf)$/i.test(f) ? '.png' : '';
+  return `https://upload.wikimedia.org/wikipedia/commons/thumb/${h[0]}/${h.slice(0, 2)}/${e}/${w}px-${e}${ext}`;
+}
 const companies = [];
 for (const f of readdirSync('data/companies').filter((f) => f.endsWith('.yaml')).sort()) {
   const c = load(`data/companies/${f}`);
@@ -33,8 +42,14 @@ for (const f of readdirSync('data/companies').filter((f) => f.endsWith('.yaml'))
   for (const s of c.sources ?? []) if (!srcIds.has(s)) err(at, `unknown source ${s}`);
   if (!c.sources?.length) err(at, 'at least one Manny source is required');
   for (const [k, u] of Object.entries(c.links ?? {})) {
-    try { new URL(u); } catch { err(at, `links.${k} is not a URL`); }
+    // Only http(s): a javascript: URL here would run on click
+    let ok = false;
+    try { ok = ['http:', 'https:'].includes(new URL(u).protocol); } catch {}
+    if (!ok) err(at, `links.${k} must be an http(s) URL`);
+    if (!/^[a-z_]+$/.test(k)) err(at, `links key "${k}" must be lowercase letters`);
   }
+  if (c.logo?.file) c.logo.thumb = thumb(c.logo.file, 250);
+  for (const p of c.people ?? []) if (p.photo?.file) { p.photo.thumb = thumb(p.photo.file, 120); p.photo.big = thumb(p.photo.file, 250); }
   if (!c.logo && existsSync(`site/logos/${c.id}.png`)) c.icon = `logos/${c.id}.png`;
   companies.push(c);
 }

@@ -2,6 +2,8 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-vRG5Z2s2xoAxIY5jFfBg2wEMbd3eWqfTBqnuTBzd9Gw=' 'sha256-lbBRkS96KASAI8SkYHfITGUZwgR6xIJSNd/qKQND4/0='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Pro Map 使用導覽</title>
   <meta name="description" content="三分鐘看懂 Pro Map：用產業地圖、產業鏈與人物索引，找到曼報 Pro 談過的公司與文章。">
@@ -155,7 +157,7 @@
     <section class="why wrap">
       <div class="why-grid">
         <div class="reveal"><p class="q">「這家公司在做什麼？」</p><h3>一句話產品簡介</h3><p>依公開資料撰寫，附官網與維基百科，不用另外 Google。</p></div>
-        <div class="reveal"><p class="q">「曼報哪一篇講過它？」</p><h3>文章與節目一次列出</h3><p>Pro 文章、Pro Podcast、曼報 Podcast，按時間排好，還能勾選已讀。</p></div>
+        <div class="reveal"><p class="q">「曼報哪一篇講過它？」</p><h3>文章與節目一次列出</h3><p>Pro 文章、Pro Podcast、曼報 Podcast，按時間排好，點了直接到原文。</p></div>
         <div class="reveal"><p class="q">「它跟誰有關？」</p><h3>上下游與人物</h3><p>供應商、客戶、競爭者、創辦人，點一下就能跳過去。</p></div>
       </div>
     </section>
@@ -185,9 +187,8 @@
             <li>成立年、總部、產品簡介與官網連結</li>
             <li>創辦人與關鍵人物，附照片</li>
             <li>收購、競爭、母子公司等關係</li>
-            <li>談到它的 Pro 文章與 Podcast，勾選就記成已讀</li>
+            <li>談到它的 Pro 文章與 Podcast，點標題直接到曼報原站</li>
           </ul>
-          <p class="tip">已讀紀錄只存在你自己的瀏覽器，不會上傳。</p>
         </div>
         <div class="frame"><div class="bar"><i></i><i></i><i></i><span>公司資料</span></div>
           <video data-src="guide/company.mp4" poster="guide/company.jpg" muted loop playsinline preload="none"></video></div>
@@ -231,7 +232,6 @@
           <p>按 <kbd>/</kbd> 就能開始搜尋，公司、人物、文章標題都可以，中文名也行，例如「黃仁勳」「台積電」。</p>
           <ul>
             <li>用欄目篩選只看商業解碼、科技曼讀、巨人之聲或 Podcast</li>
-            <li>打開「只看未讀」，追蹤自己還沒讀的公司</li>
           </ul>
         </div>
         <div class="frame"><div class="bar"><i></i><i></i><i></i><span>搜尋</span></div>

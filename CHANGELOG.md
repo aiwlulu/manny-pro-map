@@ -6,6 +6,24 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.12.0] - 2026-10-11
+
+### 移除
+- 已讀追蹤：文章勾選框、閱讀進度、「只看未讀」、已讀標記；地圖定位為索引與導覽，舊版存在瀏覽器的已讀紀錄會自動清除
+
+### 資安
+- 社群資料的 `links` 只接受 http(s) 網址（CI 驗證，前端也再擋一次），避免 `javascript:` 連結
+- 圖片作者標示與連結名稱補上跳脫；404 推薦清單改用完整跳脫
+- 三個頁面加上 Content-Security-Policy（inline script 以 sha256 雜湊白名單，CI 檢查是否過期）與 Referrer-Policy
+- 外部文章連結加上 `noreferrer`
+
+### 效能
+- Commons 圖片改用 build 時算好的直連縮圖網址，省去每張兩次轉址；縮圖不存在時自動退回原網址
+- 搜尋與人物過濾加上 60 字上限與輸入防抖
+
+### 改善
+- 導覽短片重新錄製，關於頁與文件移除已讀相關說明
+
 ## [1.11.0] - 2026-10-11
 
 ### 新增
@@ -170,6 +188,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.12.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.11.0...v1.12.0
 [1.11.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.2...v1.11.0
 [1.10.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.1...v1.10.2
 [1.10.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.0...v1.10.1

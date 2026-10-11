@@ -10,7 +10,7 @@ export function createLandscape(root, { industries, logo, onHover, chainBtn = ()
   let focus = null, hoverId = null, last = [];
 
   function tile(c) {
-    const cls = ['tile', c.proN >= 4 ? 'big' : '', c.done ? 'done' : '', c.proN ? '' : 'lite'].filter(Boolean).join(' ');
+    const cls = ['tile', c.proN >= 4 ? 'big' : '', c.proN ? '' : 'lite'].filter(Boolean).join(' ');
     return `<a class="${cls}" href="#/c/${c.id}" data-id="${c.id}" title="${esc(c.name)}">
       <span class="tl">${logo(c)}</span><span class="tn">${esc(c.name)}</span>${c.proN >= 2 ? `<em class="tb" title="曼報 Pro 談過 ${c.proN} 篇" aria-label="曼報 Pro 談過 ${c.proN} 篇"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>${c.proN}</em>` : ''}${chainBtn(c)}</a>`;
   }
