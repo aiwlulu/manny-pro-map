@@ -6,6 +6,12 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.4.1] - 2026-10-11
+
+### 改善
+- 關於頁改為 2×2 卡片並加上圖示，結尾新增「一起維護」區塊與 GitHub、更新紀錄按鈕
+- 產業鏈提示只在地圖頁出現
+
 ## [1.4.0] - 2026-10-11
 
 ### 新增
@@ -70,6 +76,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.4.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.3.2...v1.4.0
 [1.3.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.3.0...v1.3.1

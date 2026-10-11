@@ -727,3 +727,22 @@ html[data-boot="map"] .tabs [data-view="map"], html[data-boot="people"] .tabs [d
 .coach .iconbtn { flex: none; background: transparent; border-color: color-mix(in srgb, var(--paper) 25%, transparent); color: var(--paper); width: 32px; height: 32px; }
 body.open .coach, body.cx-open .coach { display: none; }
 @media (max-width: 520px) { .coach { bottom: calc(76px + env(safe-area-inset-bottom)); } }
+
+/* About */
+.about-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.about-grid div { position: relative; padding: 18px 20px 18px 66px; }
+.about-grid .ab-ic { position: absolute; left: 18px; top: 18px; width: 34px; height: 34px; padding: 8px; border-radius: 10px; color: #fff; background: linear-gradient(120deg, var(--blue-b), var(--red-a)); box-sizing: border-box; }
+.about-grid h3 { margin-top: 4px; }
+.about-cta { display: flex; gap: 20px; align-items: center; justify-content: space-between; margin: 8px 0 24px; padding: 20px 22px; border-radius: 16px;
+  background: linear-gradient(120deg, color-mix(in srgb, var(--blue-a) 14%, var(--surface)), color-mix(in srgb, var(--red-a) 12%, var(--surface))); border: 1px solid var(--line); }
+.about-cta h3 { margin: 0 0 4px; font-size: 16px; color: var(--ink); }
+.about-cta p { margin: 0; font-size: 14px; line-height: 1.7; }
+.about-btns { display: flex; flex-direction: column; gap: 8px; flex: none; }
+.about-btns .cx-btn { justify-content: center; white-space: nowrap; }
+@media (max-width: 640px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-cta { flex-direction: column; align-items: stretch; }
+  .about-btns { flex-direction: row; }
+  .about-btns .cx-btn { flex: 1; }
+}
+body[data-view="people"] .coach, body[data-view="about"] .coach { display: none; }
