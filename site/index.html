@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-57WKcOYYfySh6dqnc17mnhbnDYeew8vBwk+OtWVyFMg=' 'sha256-/fdSMrrtaBDgq2AZvEcJ1W5Iv7gaZtUKdYy6luyCR3k='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-57WKcOYYfySh6dqnc17mnhbnDYeew8vBwk+OtWVyFMg=' 'sha256-ghG/IUKppdm+LTBfPtFdM5JZDTrbgiL9h/pKsc1ZEGI='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Pro Map 公司地圖</title>
@@ -32,12 +32,12 @@
     if (h.startsWith('#/bubbles')) boot = 'map';
     else if (h.startsWith('#/people')) boot = 'people';
     else if (h.startsWith('#/about')) boot = 'about';
-    else if (!h || /^#\/(c|p|s|chain)\//.test(h)) boot = v === 'map' ? 'map' : 'chain';
+    else if (/^#\/(c|p|s|chain)\//.test(h)) boot = v === 'map' ? 'map' : 'chain';
     document.body.dataset.view = boot; document.documentElement.dataset.boot = boot;
   } catch {}</script>
   <a class="skip" href="#lanes">跳到產業地圖</a>
   <header class="top">
-    <a href="#/" class="wordmark" aria-label="Pro Map 首頁"><span class="b1">Pro</span><span class="b2">Map</span></a>
+    <a href="./" class="wordmark" aria-label="Pro Map 首頁"><span class="b1">Pro</span><span class="b2">Map</span></a>
     <div class="search">
       <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
       <input id="q" type="search" maxlength="60" enterkeyhint="search" placeholder="搜尋公司、人物、文章" autocomplete="off" aria-label="搜尋公司、人物、文章" aria-controls="results">

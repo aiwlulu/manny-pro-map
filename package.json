@@ -1,6 +1,6 @@
 {
   "name": "manny-pro-map",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "description": "",
   "scripts": {
     "build": "node scripts/csp.mjs --check && node scripts/build.mjs",

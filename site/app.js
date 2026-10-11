@@ -333,8 +333,8 @@ function showSource(s) {
   if (curView === 'map') requestAnimationFrame(() => map.zoomToSet(list.map((c) => c.id)));
   else if (list[0]) land.reveal(list[0].id);
 }
-$('#panel').addEventListener('click', (e) => { if (e.target.closest('.close')) go(mapView === 'map' ? '#/bubbles' : '#/'); });
-$('#scrim').onclick = () => go(mapView === 'map' ? '#/bubbles' : '#/');
+$('#panel').addEventListener('click', (e) => { if (e.target.closest('.close')) go(mapView === 'map' ? '#/bubbles' : ''); });
+$('#scrim').onclick = () => go(mapView === 'map' ? '#/bubbles' : '');
 
 /* ---------- Supply-chain explorer ---------- */
 let cxCleanup = null;
@@ -411,9 +411,24 @@ function setView(v) {
   for (const x of ['chain', 'map', 'people', 'about']) $(`#view-${x}`).hidden = x !== v;
   document.body.dataset.view = v;
 }
-const HASH = { chain: '#/', map: '#/bubbles', people: '#/people', about: '#/about' };
-document.querySelector('.tabs').onclick = (e) => { const v = e.target.closest('button')?.dataset.view; if (v) go(HASH[v]); };
-function go(h) { if (location.hash !== h) location.hash = h; else route(); }
+const HASH = { chain: '', map: '#/bubbles', people: '#/people', about: '#/about' };
+document.querySelector('.tabs').onclick = (e) => {
+  const v = e.target.closest('button')?.dataset.view;
+  if (!v) return;
+  if (v === 'chain') { mapView = 'chain'; store.set('pm-view', 'chain'); }
+  go(HASH[v]);
+};
+// Home is the bare path (no "#/"); everything else stays a hash route so links work on static hosting
+function go(h) {
+  if (!h || h === '#/') {
+    if (location.hash) history.pushState(null, '', location.pathname + location.search);
+    return route();
+  }
+  if (location.hash !== h) location.hash = h; else route();
+}
+addEventListener('popstate', () => { if (!location.hash) route(); });
+$('.wordmark').addEventListener('click', (e) => { e.preventDefault(); mapView = 'chain'; go(''); scrollTo({ top: 0 }); });
+if (location.hash === '#/' || location.hash === '#') history.replaceState(null, '', location.pathname + location.search);
 function route() {
   const [, a, b] = location.hash.split('/');
   if (a !== 'chain') closeExplorer();
@@ -427,7 +442,7 @@ function route() {
   if (a === 'people') { setView('people'); renderPeople(); }
   else if (a === 'about') setView('about');
   else if (a === 'bubbles') { setView('map'); if (hadPanel) map.fitAll(); }
-  else setView(location.hash ? 'chain' : mapView);
+  else setView('chain');
 }
 addEventListener('hashchange', route);
 

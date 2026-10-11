@@ -6,6 +6,16 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.13.1] - 2026-10-11
+
+### 改善
+- 首頁網址不再顯示 `#/`：回到首頁、關閉公司卡、切回產業地圖時網址為乾淨的 `/manny-pro-map/`；公司、人物等深層連結仍用 `#/c/…` 以便在靜態主機上分享
+- `/` 固定為產業地圖、`#/bubbles` 為氣泡圖，同一網址永遠是同一畫面；點 Logo 改為站內切換，不重新載入
+
+### 維護
+- GitHub Actions 升級：checkout v7、setup-node v7、upload-pages-artifact v5、deploy-pages v5
+- CI 改為每個分支獨立的 concurrency 群組，PR 檢查不再互相取消
+
 ## [1.13.0] - 2026-10-11
 
 ### 改善
@@ -204,6 +214,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.13.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.13.0...v1.13.1
 [1.13.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.12.0...v1.13.0
 [1.12.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.11.0...v1.12.0
 [1.11.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.2...v1.11.0
