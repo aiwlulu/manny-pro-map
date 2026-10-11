@@ -900,3 +900,5 @@ body[data-view="chain"] .card .card-main { padding-top: 8px; }
 .fcard .rank { position: static; margin-bottom: -2px; }
 @media (max-width: 899px) { .feat-row { margin: -6px -16px 0; padding: 8px 16px 14px; } }
 .pc-n { padding-right: 0; }
+.iconbtn.help { text-decoration: none; }
+@media (max-width: 520px) { .iconbtn.help { display: none; } }

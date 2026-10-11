@@ -86,6 +86,8 @@ for (const c of cos.values())
     c.rels.push({ id: t.id, label: REL[r.type][0], note: r.note });
     t.rels.push({ id: c.id, label: REL[r.type][1], note: r.note });
   }
+// The same pair can come from both sides; show it once
+for (const c of cos.values()) { const seen = new Set(); c.rels = c.rels.filter((r) => !seen.has(r.id + r.label) && seen.add(r.id + r.label)); }
 const chain = buildChain([...cos.values()]);
 const bySrc = new Map();
 for (const c of cos.values()) for (const s of c.src) (bySrc.get(s.id) ?? bySrc.set(s.id, []).get(s.id)).push(c);

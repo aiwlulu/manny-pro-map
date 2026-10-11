@@ -22,7 +22,6 @@ relations:
   - { type: supplier, target: meta, note: GPU }
   - { type: supplier, target: nintendo, note: 遊戲機晶片 }
   - { type: competitor, target: amd }
-  - { type: customer, target: tsmc }
 sources:
   - "pro:dwcrddrmu86k"
   - "pro:x29tt82u4h4q"

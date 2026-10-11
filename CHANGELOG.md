@@ -6,6 +6,16 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.10.0] - 2026-10-11
+
+### 新增
+- 使用導覽頁 `guide.html`：7 段實際操作短片（產業地圖、公司資料、產業鏈、氣泡圖、搜尋、人物、手機版），捲到才載入與播放
+- 主站頂部與關於頁加上「使用導覽」入口
+- `scripts/record-guide.mjs`：用 Playwright 重新錄製導覽短片
+
+### 修正
+- 同一組關係從兩邊都有記錄時只顯示一次；移除方向標錯的 NVIDIA ↔ TSMC 客戶關係
+
 ## [1.9.3] - 2026-10-11
 
 ### 改善
@@ -144,6 +154,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.10.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.3...v1.10.0
 [1.9.3]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.2...v1.9.3
 [1.9.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.1...v1.9.2
 [1.9.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.9.0...v1.9.1

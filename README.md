@@ -2,7 +2,7 @@
 
 把[曼報 Pro](https://pro.manny-li.com/join) 談過的公司整理成一張可互動的產業地圖：點一家公司，就能看到它的產品簡介、創辦人與關鍵人物、和其他公司的關係，以及曼報 Pro 文章、Pro Podcast 與曼報 Podcast 裡談到它的每一篇。
 
-**網站：<https://aiwlulu.github.io/manny-pro-map/>**
+**網站：<https://aiwlulu.github.io/manny-pro-map/>**　·　**使用導覽：<https://aiwlulu.github.io/manny-pro-map/guide.html>**
 
 - **找文章**：想起某家公司，直接搜尋就能找到曼報寫過的所有相關內容
 - **看關係**：收購、投資、競爭、供應鏈，點了就會在地圖上亮起來

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pro Map 使用導覽</title>
+  <meta name="description" content="三分鐘看懂 Pro Map：用產業地圖、產業鏈與人物索引，找到曼報 Pro 談過的公司與文章。">
+  <meta property="og:title" content="Pro Map 使用導覽：曼報談過的公司，一張圖找齊">
+  <meta property="og:description" content="產業地圖、產業鏈、氣泡圖、人物與搜尋，三分鐘看懂怎麼用。非官方讀者索引。">
+  <meta property="og:image" content="guide/landscape.jpg">
+  <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161615" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;0,700;1,600;1,700;1,800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%237cc6e4'/%3E%3Cstop offset='1' stop-color='%23ee6a55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3Ccircle cx='11' cy='13' r='5' fill='%23fff' fill-opacity='.85'/%3E%3Ccircle cx='20' cy='19' r='3.5' fill='%23fff' fill-opacity='.7'/%3E%3C/svg%3E">
+  <script>try { const t = localStorage.getItem('pm-theme'); if (t === '"light"' || t === '"dark"') document.documentElement.dataset.theme = JSON.parse(t); } catch {}</script>
+  <style>
+    :root {
+      --paper: #fafaf8; --surface: #fff; --ink: #2b2b2b; --body: #4a4a4a; --muted: #74726d; --line: #e4e2dc; --pale: #f0efea;
+      --accent: #b8433a; --blue-a: #6fc3e6; --blue-b: #86a7ea; --red-a: #ee6a55; --red-b: #c79ad8; --link: #2f6fd0;
+      --shadow: 0 1px 2px rgb(20 20 10 / .04), 0 24px 48px -16px rgb(20 20 10 / .18);
+      --sans: "Noto Sans TC", "PingFang TC", "Helvetica Neue", sans-serif; --latin: "Figtree", "Noto Sans TC", sans-serif;
+      --ease: cubic-bezier(.2, .8, .2, 1); color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+      --paper: #161615; --surface: #1f1f1d; --ink: #f0eee9; --body: #cfccc6; --muted: #9b9891; --line: #34332f; --pale: #292825;
+      --accent: #ef8478; --link: #8fb4ff; --shadow: 0 24px 60px -16px rgb(0 0 0 / .6); color-scheme: dark; } }
+    :root[data-theme="dark"] {
+      --paper: #161615; --surface: #1f1f1d; --ink: #f0eee9; --body: #cfccc6; --muted: #9b9891; --line: #34332f; --pale: #292825;
+      --accent: #ef8478; --link: #8fb4ff; --shadow: 0 24px 60px -16px rgb(0 0 0 / .6); color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.75 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    .grad { background: linear-gradient(115deg, var(--blue-a), var(--blue-b) 35%, var(--red-b) 65%, var(--red-a)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+    .top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .top .wrap { display: flex; align-items: center; gap: 16px; height: 60px; }
+    .wordmark { text-decoration: none; font: italic 700 24px/1 var(--latin); letter-spacing: -.02em; display: flex; gap: 5px; }
+    .wordmark .b1 { background: linear-gradient(120deg, var(--blue-a), var(--blue-b)); -webkit-background-clip: text; background-clip: text; color: transparent; padding-right: 2px; }
+    .wordmark .b2 { background: linear-gradient(120deg, var(--red-a), var(--red-b)); -webkit-background-clip: text; background-clip: text; color: transparent; padding-right: 3px; }
+    .toc { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+    .toc::-webkit-scrollbar { display: none; }
+    .toc a { white-space: nowrap; text-decoration: none; font-size: 14px; color: var(--muted); padding: 6px 10px; border-radius: 999px; }
+    .toc a:hover { color: var(--ink); background: var(--pale); }
+    .btn { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; text-decoration: none; font-weight: 600; font-size: 15px; padding: 11px 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); transition: transform .2s var(--ease), border-color .2s, box-shadow .2s; }
+    .btn:hover { transform: translateY(-1px); border-color: var(--ink); }
+    .btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: var(--shadow); }
+    .btn.sm { padding: 7px 14px; font-size: 14px; }
+    .btn svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    .hero { padding-top: 64px; padding-bottom: 24px; text-align: center; }
+    .eyebrow { display: inline-flex; gap: 8px; align-items: center; font-size: 13px; letter-spacing: .14em; color: var(--muted); }
+    .eyebrow span { font: italic 600 12px var(--latin); letter-spacing: .04em; color: var(--accent); border: 1px solid currentColor; border-radius: 999px; padding: 0 8px; }
+    .hero h1 { margin: 14px 0 0; font-size: clamp(34px, 6vw, 64px); line-height: 1.15; font-weight: 900; letter-spacing: -.01em; }
+    .hero h1 .num { font: italic 800 1.1em/1 var(--latin); letter-spacing: -.04em; padding-right: .06em; }
+    .hero .lede { max-width: 640px; margin: 18px auto 28px; color: var(--body); font-size: 18px; }
+    .cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .stats { display: flex; justify-content: center; gap: 40px; margin: 32px 0 0; flex-wrap: wrap; }
+    .stats div { text-align: center; }
+    .stats b { display: block; font: italic 800 34px/1.1 var(--latin); }
+    .stats span { font-size: 13px; color: var(--muted); }
+    .hero-media { margin: 40px auto 0; max-width: 1100px; animation: rise .9s var(--ease) .2s both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(24px); } }
+
+    .frame { position: relative; border-radius: 16px; overflow: hidden; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); }
+    .frame .bar { display: flex; gap: 6px; align-items: center; height: 30px; padding: 0 12px; border-bottom: 1px solid var(--line); background: var(--pale); }
+    .frame .bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+    .frame .bar span { margin-left: 10px; font: 500 12px var(--latin); color: var(--muted); }
+    .frame video { display: block; width: 100%; height: auto; aspect-ratio: 1280 / 800; background: var(--pale); }
+    .phone { width: min(300px, 80vw); margin: 0 auto; border-radius: 36px; padding: 10px; background: #111; box-shadow: var(--shadow); }
+    .phone video { display: block; width: 100%; aspect-ratio: 390 / 780; border-radius: 28px; background: #222; }
+
+    .why { padding: 56px 0 16px; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .why-grid div { padding: 22px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); }
+    .why-grid h3 { margin: 0 0 6px; font-size: 17px; }
+    .why-grid p { margin: 0; color: var(--body); font-size: 15px; line-height: 1.7; }
+    .why-grid .q { font: italic 700 13px var(--latin); color: var(--accent); letter-spacing: .04em; }
+
+    .step { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 48px; align-items: center; padding: 64px 0; border-top: 1px dashed var(--line); }
+    .step.flip { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+    .step.flip .text { order: 2; }
+    .step .n { font: italic 800 15px var(--latin); letter-spacing: .06em; }
+    .step h2 { margin: 6px 0 12px; font-size: clamp(24px, 3vw, 34px); line-height: 1.25; font-weight: 900; }
+    .step p { margin: 0 0 14px; color: var(--body); }
+    .step ul { margin: 0 0 18px; padding: 0; list-style: none; display: grid; gap: 8px; }
+    .step li { position: relative; padding-left: 22px; color: var(--body); font-size: 15px; }
+    .step li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(120deg, var(--blue-b), var(--red-a)); }
+    kbd { font: 600 12px var(--latin); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 1px 6px; background: var(--surface); }
+    .tip { font-size: 14px; color: var(--muted); }
+    .tip a, .foot a, .promo a.txt { color: var(--link); text-underline-offset: 3px; }
+
+    .promo { margin: 40px 0 0; padding: 32px; border-radius: 22px; text-align: center; border: 1px solid color-mix(in srgb, var(--red-a) 35%, var(--line));
+      background: linear-gradient(120deg, color-mix(in srgb, var(--blue-a) 14%, var(--surface)), color-mix(in srgb, var(--red-a) 14%, var(--surface))); }
+    .promo h2 { margin: 0 0 6px; font-size: 26px; font-weight: 900; }
+    .promo p { margin: 0 0 18px; color: var(--body); }
+    .code { display: inline-flex; align-items: center; gap: 10px; padding: 8px 10px 8px 18px; border-radius: 999px; border: 1.5px dashed var(--red-a); background: var(--surface); color: var(--ink); cursor: pointer; font: inherit; }
+    .code b { font: 700 18px var(--latin); letter-spacing: .08em; }
+    .code em { font-style: normal; font-size: 13px; padding: 3px 10px; border-radius: 999px; background: var(--pale); color: var(--muted); }
+    .code.done em { background: color-mix(in srgb, #3aa76d 18%, var(--surface)); color: #2f8f5b; }
+
+    .foot { padding: 48px 0 64px; text-align: center; color: var(--muted); font-size: 13px; line-height: 1.9; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+    @media (max-width: 860px) {
+      .toc { display: none; }
+      .top .btn { margin-left: auto; }
+      .hero { padding-top: 36px; padding-bottom: 8px; }
+      .hero .lede { font-size: 16px; }
+      .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 12px; max-width: 320px; margin-left: auto; margin-right: auto; }
+      .why-grid { grid-template-columns: 1fr; }
+      .step, .step.flip { grid-template-columns: 1fr; gap: 20px; padding: 44px 0; }
+      .step.flip .text { order: 0; }
+      .frame .bar { display: none; }
+      .promo { padding: 24px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <a class="wordmark" href="./" aria-label="Pro Map"><span class="b1">Pro</span><span class="b2">Map</span></a>
+    <nav class="toc" aria-label="導覽目錄">
+      <a href="#landscape">產業地圖</a><a href="#company">公司資料</a><a href="#chain">產業鏈</a><a href="#bubbles">氣泡圖</a><a href="#search">搜尋</a><a href="#people">人物</a><a href="#mobile">手機</a>
+    </nav>
+    <a class="btn sm primary" href="./">開啟地圖</a>
+  </div></header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">使用導覽<span>Unofficial</span></p>
+      <h1>讀曼報時，<br>不再被<span class="grad">陌生公司</span>卡住。</h1>
+      <p class="lede">Pro Map 把曼報 Pro 談過的公司、創辦人與文章整理成一張地圖。想起一家公司，就能看到它是做什麼的、誰創辦的、上下游是誰，以及曼報在哪幾篇談過它。</p>
+      <div class="cta">
+        <a class="btn primary" href="./">開啟 Pro Map<svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a class="btn" href="#landscape">先看怎麼用</a>
+      </div>
+      <div class="stats" id="stats">
+        <div><b class="grad">322</b><span>家公司</span></div>
+        <div><b class="grad">395</b><span>位人物</span></div>
+        <div><b class="grad">136</b><span>篇 Pro 文章與節目</span></div>
+        <div><b class="grad">203</b><span>條公司關係</span></div>
+      </div>
+      <div class="hero-media">
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span>aiwlulu.github.io/manny-pro-map</span></div>
+          <video src="guide/landscape.mp4" poster="guide/landscape.jpg" autoplay muted loop playsinline preload="metadata" aria-label="產業地圖操作示範"></video></div>
+      </div>
+    </section>
+
+    <section class="why wrap">
+      <div class="why-grid">
+        <div class="reveal"><p class="q">「這家公司在做什麼？」</p><h3>一句話產品簡介</h3><p>依公開資料撰寫，附官網與維基百科，不用另外 Google。</p></div>
+        <div class="reveal"><p class="q">「曼報哪一篇講過它？」</p><h3>文章與節目一次列出</h3><p>Pro 文章、Pro Podcast、曼報 Podcast，按時間排好，還能勾選已讀。</p></div>
+        <div class="reveal"><p class="q">「它跟誰有關？」</p><h3>上下游與人物</h3><p>供應商、客戶、競爭者、創辦人，點一下就能跳過去。</p></div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="step reveal" id="landscape">
+        <div class="text">
+          <p class="n grad">01 · 產業地圖</p>
+          <h2>一頁看完所有公司</h2>
+          <p>預設畫面依產業排成一列一列，每列再分<b>上游、中游、下游</b>。</p>
+          <ul>
+            <li>卡片右上角的數字是曼報 Pro 談過的篇數，越多卡片越大</li>
+            <li>滑鼠移到公司上，有供應或競爭關係的公司會加框</li>
+            <li>頂部的產業列可以直接跳到想看的產業</li>
+          </ul>
+        </div>
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span>產業地圖</span></div>
+          <video data-src="guide/landscape.mp4" poster="guide/landscape.jpg" muted loop playsinline preload="none"></video></div>
+      </section>
+
+      <section class="step flip reveal" id="company">
+        <div class="text">
+          <p class="n grad">02 · 公司資料</p>
+          <h2>點一下，整家公司攤開</h2>
+          <p>右側會滑出公司卡，從簡介一路看到曼報的每一篇。</p>
+          <ul>
+            <li>成立年、總部、產品簡介與官網連結</li>
+            <li>創辦人與關鍵人物，附照片</li>
+            <li>收購、競爭、母子公司等關係</li>
+            <li>談到它的 Pro 文章與 Podcast，勾選就記成已讀</li>
+          </ul>
+          <p class="tip">已讀紀錄只存在你自己的瀏覽器，不會上傳。</p>
+        </div>
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span>公司資料</span></div>
+          <video data-src="guide/company.mp4" poster="guide/company.jpg" muted loop playsinline preload="none"></video></div>
+      </section>
+
+      <section class="step reveal" id="chain">
+        <div class="text">
+          <p class="n grad">03 · 產業鏈</p>
+          <h2>沿著供應鏈一路點下去</h2>
+          <p>在公司卡按「<b>查看產業鏈</b>」，會打開全螢幕的上下游圖，往外延伸兩層，可以跨產業。</p>
+          <ul>
+            <li>每條線標出供應內容，例如晶圓代工、GPU、雲端算力</li>
+            <li>點任何一家，畫面就以它為中心重新展開</li>
+            <li>下方列出同一區段的同業，方便比較</li>
+          </ul>
+          <p class="tip">例如：ASML → TSMC → NVIDIA → OpenAI → Duolingo。</p>
+        </div>
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span>產業鏈</span></div>
+          <video data-src="guide/chain.mp4" poster="guide/chain.jpg" muted loop playsinline preload="none"></video></div>
+      </section>
+
+      <section class="step flip reveal" id="bubbles">
+        <div class="text">
+          <p class="n grad">04 · 氣泡圖</p>
+          <h2>換個角度看產業的份量</h2>
+          <p>切到「<b>氣泡圖</b>」，每個產業是一顆大氣泡，曼報談越多的公司氣泡越大。</p>
+          <ul>
+            <li>滾輪縮放、拖曳移動，右下角按鈕可以重設視角</li>
+            <li>點一家公司，相關公司會用曲線連起來</li>
+            <li>網站會記住你上次用的是產業地圖還是氣泡圖</li>
+          </ul>
+        </div>
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span>氣泡圖</span></div>
+          <video data-src="guide/bubbles.mp4" poster="guide/bubbles.jpg" muted loop playsinline preload="none"></video></div>
+      </section>
+
+      <section class="step reveal" id="search">
+        <div class="text">
+          <p class="n grad">05 · 搜尋與篩選</p>
+          <h2>中英文都找得到</h2>
+          <p>按 <kbd>/</kbd> 就能開始搜尋，公司、人物、文章標題都可以，中文名也行，例如「黃仁勳」「台積電」。</p>
+          <ul>
+            <li>用欄目篩選只看商業解碼、科技曼讀、巨人之聲或 Podcast</li>
+            <li>打開「只看未讀」，追蹤自己還沒讀的公司</li>
+          </ul>
+        </div>
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span>搜尋</span></div>
+          <video data-src="guide/search.mp4" poster="guide/search.jpg" muted loop playsinline preload="none"></video></div>
+      </section>
+
+      <section class="step flip reveal" id="people">
+        <div class="text">
+          <p class="n grad">06 · 人物</p>
+          <h2>人名和公司對得起來</h2>
+          <p>「<b>人物</b>」頁列出曼報談過的執行長、創辦人與關鍵人物。</p>
+          <ul>
+            <li>最上方是最常被曼報提及的前 8 名</li>
+            <li>同一人在多家公司會合併成一張卡</li>
+            <li>點進去可以看到提到他的每一篇文章與節目</li>
+          </ul>
+        </div>
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span>人物</span></div>
+          <video data-src="guide/people.mp4" poster="guide/people.jpg" muted loop playsinline preload="none"></video></div>
+      </section>
+
+      <section class="step reveal" id="mobile">
+        <div class="text">
+          <p class="n grad">07 · 手機也好用</p>
+          <h2>通勤時也能查</h2>
+          <p>手機版的分頁在底部，公司資料從下方彈出，搜尋是全寬面板。支援亮色與暗色模式，右上角可以切換。</p>
+          <p class="tip">想放到主畫面？用瀏覽器的「加入主畫面」，就能像 App 一樣打開。</p>
+        </div>
+        <div class="phone"><video data-src="guide/mobile.mp4" poster="guide/mobile.jpg" muted loop playsinline preload="none"></video></div>
+      </section>
+
+      <section class="promo reveal">
+        <h2>內容在曼報 Pro</h2>
+        <p>Pro Map 只是索引，文章與節目請到曼報 Pro 閱讀。訂閱時輸入折扣碼，首年即可折抵 250 元。</p>
+        <div class="cta">
+          <button class="code" id="code" type="button" aria-label="複製折扣碼 love250"><b>love250</b><em>點我複製</em></button>
+          <a class="btn primary" href="https://pro.manny-li.com/join" target="_blank" rel="noopener">前往訂閱</a>
+        </div>
+        <p style="margin:16px 0 0;font-size:14px">還在猶豫？先逛逛 Manny 做的 <a class="txt" href="https://tour.manny-li.com/index.html" target="_blank" rel="noopener">免費導覽版</a>。</p>
+      </section>
+
+      <div class="cta" style="margin-top:40px"><a class="btn primary" href="./">開啟 Pro Map<svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+    </div>
+  </main>
+
+  <footer class="foot wrap">
+    讀者自行整理的<b>非官方索引</b>，與曼報（Manny Li）無隸屬關係；文章與節目著作權屬原作者。<br>
+    <a href="https://github.com/aiwlulu/manny-pro-map" target="_blank" rel="noopener">GitHub</a> · 程式碼 MIT · 社群資料 CC BY 4.0
+  </footer>
+
+  <script>
+    // Lazy-load and only play clips while visible
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const io = new IntersectionObserver((es) => {
+      for (const e of es) {
+        const el = e.target;
+        if (el.tagName === 'VIDEO') {
+          if (e.isIntersecting) { if (el.dataset.src && !el.src) el.src = el.dataset.src; if (!reduce) el.play().catch(() => {}); }
+          else el.pause();
+        } else if (e.isIntersecting) { el.classList.add('in'); io.unobserve(el); }
+      }
+    }, { rootMargin: '0px 0px -10% 0px', threshold: .15 });
+    document.querySelectorAll('video, .reveal').forEach((el) => io.observe(el));
+    if (reduce) document.querySelectorAll('video[autoplay]').forEach((v) => { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
+
+    // Live counts from the map data
+    fetch('data.json').then((r) => r.json()).then((d) => {
+      const ppl = new Set(d.companies.flatMap((c) => (c.people ?? []).map((p) => p.name))).size;
+      const pro = d.sources.filter((s) => s.kind === 'pro' || s.kind === 'pro-podcast').length;
+      const rels = d.companies.reduce((a, c) => a + (c.relations ?? []).length, 0);
+      const b = document.querySelectorAll('#stats b');
+      [d.companies.length, ppl, pro, rels].forEach((n, i) => (b[i].textContent = n));
+    }).catch(() => {});
+
+    document.getElementById('code').addEventListener('click', async (e) => {
+      const btn = e.currentTarget, em = btn.querySelector('em');
+      try { await navigator.clipboard.writeText('love250'); em.textContent = '已複製'; btn.classList.add('done'); } catch { em.textContent = '請手動複製'; }
+      setTimeout(() => { em.textContent = '點我複製'; btn.classList.remove('done'); }, 1800);
+    });
+  </script>
+</body>
+</html>

@@ -70,6 +70,10 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
 
 發佈新版時更新 `package.json` 的 `version` 與 `CHANGELOG.md`，並打上 `vX.Y.Z` tag。版本號規則見 CHANGELOG 開頭。
 
+## 重新錄製導覽短片
+
+介面有明顯改動時，在本機起伺服器（`python3 -m http.server 4174 -d site`）後執行 `node scripts/record-guide.mjs`，需要 Playwright 與 ffmpeg。
+
 ## 本機預覽
 
 ```bash
