@@ -1,6 +1,7 @@
 name: HBO
 zh: 家庭票房
 industry: media
+segment: streaming
 summary: "美國付費電視網，主要播出電影、原創影集、紀錄片與特別節目。"
 founded: 1972
 hq: 紐約
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/HBO"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/HBO"
 people:
-  - { name: Charles Dolan, role: 創辦人 }
+  - { name: Charles Dolan, role: 創辦人, photo: { file: Charles Dolan.jpg, license: CC BY 3.0, author: Fairfield University } }
   - { name: Casey Bloys, role: 領導人 }
 sources:
   - "pro:ueyj98gmbgxn"

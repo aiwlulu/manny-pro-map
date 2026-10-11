@@ -1,5 +1,6 @@
 name: Digital Science
 industry: software
+segment: serial
 summary: "英國科技公司，總部設於倫敦，專注投資支持研究生命週期的初創公司，旗下有 Overleaf。"
 founded: 2010
 hq: 倫敦
@@ -7,6 +8,6 @@ links:
   website: "https://www.digital-science.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Digital_Science"
 people:
-  - { name: Timo Hannay, role: 創辦人 }
+  - { name: Timo Hannay, role: 創辦人, photo: { file: TimoHannayJI1.jpg, license: CC BY 2.0, author: Joi Ito } }
 sources:
   - "pro:w8n34nnkw3d4"

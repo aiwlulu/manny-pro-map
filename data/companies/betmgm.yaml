@@ -1,5 +1,8 @@
 name: BetMGM
 industry: gaming
+segment: betting
 summary: "美國線上運動博彩與線上賭場平台，由 MGM Resorts 與 Entain 合資經營。"
+links:
+  website: "https://www.betmgm.com"
 sources:
   - "pro:jtpkdq4kt63v"

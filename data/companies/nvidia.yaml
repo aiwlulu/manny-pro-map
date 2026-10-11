@@ -1,6 +1,7 @@
 name: NVIDIA
 zh: 輝達
 industry: semis
+segment: chips
 summary: "設計並銷售圖形處理器（GPU）與系統單晶片，產品應用於遊戲、資料科學、高效能運算與人工智慧，並供應遊戲機圖形處理器。"
 founded: 1993
 hq: 聖塔克拉拉
@@ -11,7 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/英伟达"
 people:
   - { name: Jensen Huang, zh: 黃仁勳, role: 執行長, photo: { file: Jen-Hsun Huang 2025.jpg, license: Public domain, author: The White House } }
-  - { name: Chris Malachowsky, role: 創辦人 }
+  - { name: Chris Malachowsky, role: 創辦人, photo: { file: "Chris Malachowsky (54986972670).jpg", license: CC BY 4.0, author: Maryland GovPics } }
   - { name: Curtis Priem, role: 創辦人 }
 relations:
   - { type: competitor, target: amd }

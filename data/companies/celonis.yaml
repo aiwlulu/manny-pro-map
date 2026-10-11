@@ -1,5 +1,6 @@
 name: Celonis
 industry: software
+segment: apps
 summary: "德國資料處理公司，提供軟體即服務，協助企業改善業務流程。"
 hq: 慕尼黑
 logo: { file: Celonis Logo.png, license: CC BY-SA 4.0, author: Celonis }

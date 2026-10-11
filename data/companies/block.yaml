@@ -1,5 +1,6 @@
 name: Block
 industry: payments
+segment: processing
 summary: "美國的支付服務與金融科技公司，為商家與消費者提供 Square 行動支付與銷售端刷卡系統。"
 founded: 2009
 hq: 舊金山
@@ -10,7 +11,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Block公司"
 people:
   - { name: Jack Dorsey, role: 創辦人, photo: { file: Jack Dorsey 2014.jpg, license: CC BY-SA 2.0, author: cellanr } }
-  - { name: Jim McKelvey, role: 創辦人 }
+  - { name: Jim McKelvey, role: 創辦人, photo: { file: Jim Studio Headshow.jpeg, license: CC BY-SA 3.0, author: Jessica Kopitske } }
 sources:
   - "pro:k8w9aqudktnu"
   - "pro:52gjqz2bbj2p"

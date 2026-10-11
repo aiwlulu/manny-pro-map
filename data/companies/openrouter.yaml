@@ -1,5 +1,6 @@
 name: OpenRouter
 industry: ai
+segment: aiinfra
 summary: "美國的 AI 路由服務商，提供統一 API，讓開發者存取多家廠商的大型語言模型。"
 hq: 紐約
 links:

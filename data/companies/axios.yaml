@@ -1,5 +1,6 @@
 name: Axios
-industry: media
+industry: publishing
+segment: news
 summary: "總部位於美國維吉尼亞州的新聞網站，透過網站提供新聞報導。"
 founded: 2017
 hq: 阿靈頓郡
@@ -9,9 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Axios_(website)"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/阿克西奥斯"
 people:
-  - { name: Jim VandeHei, role: 創辦人 }
-  - { name: Michael Allen, role: 創辦人 }
-  - { name: Mike Allen, role: 創辦人 }
+  - { name: Jim VandeHei, role: 創辦人, photo: { file: Jim VandeHei on Morning Joe.jpg, license: CC BY 3.0, author: MSNBC } }
+  - { name: Mike Allen, role: 創辦人, photo: { file: Mike Allen.jpg, license: Public domain, author: "United States government, Department of State" } }
   - { name: Roy Schwartz, role: 創辦人 }
 sources:
   - "podcast:2024-07-29-sp4"

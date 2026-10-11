@@ -1,5 +1,6 @@
 name: Inflection AI
 industry: ai
+segment: models
 summary: "美國人工智慧科技公司，開發機器學習與生成式人工智慧相關的硬體及應用程式。"
 founded: 2022
 hq: 帕羅奧圖
@@ -9,7 +10,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Inflection_AI"
 people:
   - { name: Karén Simonyan, role: 共同創辦人 }
-  - { name: Reid Hoffman, role: 創辦人 }
+  - { name: Reid Hoffman, role: 創辦人, photo: { file: "2022 Reid Hoffman (cropped).jpg", license: CC BY 2.0, author: U.S. Secretary of Defense } }
   - { name: Mustafa Suleyman, role: 共同創辦人暨執行長, photo: { file: "Mustafa Suleyman (29099346447).jpg", license: CC BY 2.0, author: "Joi Ito from Cambridge, MA, USA" } }
 sources:
   - "pro:xub3t2c88p2t"

@@ -1,5 +1,6 @@
 name: Pinterest
 industry: platforms
+segment: social
 summary: "圖片分享與視覺探索社群平台，讓使用者依主題收藏、管理及分享圖片，尋找創作靈感。"
 founded: 2010
 hq: 帕羅奧圖
@@ -9,8 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Pinterest"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Pinterest"
 people:
-  - { name: Ben Silbermann, role: 創辦人 }
-  - { name: Evan Sharp, role: 創辦人 }
+  - { name: Ben Silbermann, role: 創辦人, photo: { file: Silbermann face.jpg, license: CC BY 2.0, author: Anya } }
+  - { name: Evan Sharp, role: 創辦人, photo: { file: Evan Sharp 2025.jpg, license: CC BY 4.0, author: Web Summit } }
   - { name: Paul Sciarra, role: 創辦人 }
 sources:
   - "pro:6tdws32g4rwp"

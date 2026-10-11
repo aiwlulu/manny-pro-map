@@ -1,5 +1,6 @@
 name: Meta
 industry: platforms
+segment: social
 summary: "經營 Facebook、Instagram、Messenger、WhatsApp 與 Threads 等社群與通訊應用，並投入虛擬實境裝置、智慧眼鏡及人工智慧研發。"
 founded: 2004
 hq: 门洛帕克
@@ -10,12 +11,12 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Meta_Platforms"
 people:
   - { name: Mark Zuckerberg, zh: 祖克柏, role: 執行長, photo: { file: "Mark Zuckerberg F8 2019 Keynote (32830578717) (cropped).jpg", license: CC BY 2.0, author: "Anthony Quintano from Westminster, United States" } }
-  - { name: Eduardo Saverin, role: 創辦人 }
-  - { name: Dustin Moskovitz, role: 創辦人 }
-  - { name: Chris Hughes, role: 創辦人 }
+  - { name: Eduardo Saverin, role: 創辦人, photo: { file: Eduardo Saverin CHINICT.JPG, license: CC BY-SA 3.0, author: Gravesv38 } }
+  - { name: Dustin Moskovitz, role: 創辦人, photo: { file: "Web Summit 2017 - Centre Stage Day 2 DF2 5495 (24396886968).jpg", license: CC BY 2.0, author: Web Summit } }
+  - { name: Chris Hughes, role: 創辦人, photo: { file: "Chris Hughes (cropped).jpg", license: CC BY 2.0, author: USV } }
   - { name: Andrew McCollum, role: 創辦人 }
-  - { name: Sheryl Sandberg, role: 創辦人 }
-  - { name: Michael Abrash, role: 首席科學家 }
+  - { name: Sheryl Sandberg, role: 創辦人, photo: { file: Sheryl Sandberg Moet Hennessy Financial Times Club Dinner 2011.jpg, license: CC BY 2.0, author: Financial Times } }
+  - { name: Michael Abrash, role: 首席科學家, photo: { file: Michael Abrash at Facebook's F8 2015.jpg, license: CC BY 2.0, author: Maurizio Pesce } }
 sources:
   - "pro:kudnr9rb2r56"
   - "pro:x29tt82u4h4q"

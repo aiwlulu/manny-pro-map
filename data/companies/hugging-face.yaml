@@ -1,5 +1,6 @@
 name: Hugging Face
 industry: ai
+segment: aiinfra
 summary: "美國人工智慧公司，開發機器學習與自然語言處理工具，並提供模型及資料集分享平台。"
 founded: 2016
 hq: 巴黎
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Hugging_Face"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Hugging_Face"
 people:
-  - { name: Clement Delangue, role: 創辦人 }
-  - { name: Thomas Wolf, role: 創辦人 }
+  - { name: Clement Delangue, role: 創辦人, photo: { file: Clément Delangue on SiliconANGLE theCUBE.jpg, license: CC BY 3.0, author: SiliconANGLE theCUBE } }
+  - { name: Thomas Wolf, role: 創辦人, photo: { file: Thomas Wolf at Slush 2024.jpg, license: CC BY 3.0, author: Slush } }
 sources:
   - "podcast:2023-03-06-ep37"

@@ -1,5 +1,8 @@
 name: Breef
-industry: other
+industry: platforms
+segment: marketplace
 summary: "媒合企業與廣告、行銷代理商的線上平台。"
+links:
+  website: "https://www.breef.com"
 sources:
   - "podcast:2023-02-14-ep35"

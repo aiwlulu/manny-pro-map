@@ -1,5 +1,6 @@
 name: Agility Robotics
 industry: hardware
+segment: robotics
 summary: "美國機器人公司，開發工業自動化用人形機器人，旗下 Digit 用於倉庫與工業設施作業。"
 hq: 奧勒岡州
 logo: { file: Agility Robotics logo.svg, license: Public domain, author: Agility Robotics }

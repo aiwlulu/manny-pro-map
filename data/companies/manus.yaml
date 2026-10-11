@@ -1,5 +1,8 @@
 name: Manus
 industry: ai
+segment: aiapps
 summary: "通用型 AI 代理產品，能自主規劃並執行研究、撰寫程式等多步驟任務。"
+links:
+  website: "https://manus.im"
 sources:
   - "pro:xub3t2c88p2t"

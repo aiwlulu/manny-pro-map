@@ -1,6 +1,9 @@
 name: Decathlon
 zh: 迪卡儂
 industry: consumer
+segment: stores
 summary: "法國運動用品零售商，以自有品牌與大型門市銷售各類運動裝備。"
+links:
+  website: "https://www.decathlon.com"
 sources:
   - "pro:3ra5g3yjyez4"

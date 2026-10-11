@@ -1,6 +1,7 @@
 name: KKR
 zh: "科爾伯格－克拉維斯－羅伯茨"
 industry: finance
+segment: capital
 summary: "美國投資公司，為機構、家族辦公室及企業等客戶提供資產管理、保險與策略持股相關業務。"
 founded: 1976
 hq: 紐約
@@ -11,7 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/科尔伯格-克拉维斯-罗伯茨"
 people:
   - { name: Scott Nuttall, role: 執行長, interviewed: true }
-  - { name: Henry Kravis, role: 創辦人 }
+  - { name: Henry Kravis, role: 創辦人, photo: { file: Henry Kravis.png, license: CC BY-SA 2.0, author: World Economic Forum } }
   - { name: "Jerome Kohlberg, Jr.", role: 創辦人 }
   - { name: George R. Roberts, role: 創辦人 }
 sources:

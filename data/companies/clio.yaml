@@ -1,5 +1,8 @@
 name: Clio
 industry: software
+segment: apps
 summary: "加拿大的法律事務所管理軟體公司，提供案件管理、計費與客戶溝通等雲端工具。"
+links:
+  website: "https://www.clio.com"
 sources:
   - "podcast:2024-08-05-ep76"

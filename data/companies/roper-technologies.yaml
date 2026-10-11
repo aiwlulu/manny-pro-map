@@ -1,6 +1,7 @@
 name: Roper Technologies
 aliases: [Roper]
 industry: software
+segment: serial
 summary: "是一家控股公司，主要持有並經營科技領域的多家公司。"
 founded: 1808
 hq: 薩拉索塔
@@ -10,7 +11,6 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Roper_Technologies"
 people:
   - { name: Brian Jellison, role: 執行長 }
-  - { name: Jellison, role: 執行長 }
 relations:
   - { type: parent, target: neptune }
   - { type: parent, target: transcore }

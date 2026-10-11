@@ -1,6 +1,7 @@
 name: Microsoft
 zh: 微軟
 industry: software
+segment: apps
 summary: "開發 Windows 作業系統與 Office 辦公軟體，業務涵蓋個人電腦、網際網路服務、雲端運算、人工智慧與遊戲等領域。"
 founded: 1975
 hq: 雷德蒙德
@@ -11,7 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/微软"
 people:
   - { name: Bill Gates, role: 創辦人, photo: { file: "Bill Gates at the European Commission - 2025 - P067383-987995 (cropped).jpg", license: CC BY 4.0, author: "Bogdan Hoyaux / European Union" } }
-  - { name: Paul Allen, role: 創辦人 }
+  - { name: Paul Allen, role: 創辦人, photo: { file: "Paul G. Allen (cropped).jpg", license: CC BY-SA 3.0, author: Miles Harris } }
   - { name: Satya Nadella, role: 執行長, photo: { file: "MS-Exec-Nadella-Satya-2017-08-31-22 (cropped).jpg", license: CC BY-SA 4.0, author: Brian Smale and Microsoft } }
   - { name: Phil Spencer, photo: { file: Phil Spencer Xbox.jpg, license: CC0, author: eVRydayVR } }
   - { name: Mustafa Suleyman, role: Inflection AI 共同創辦人, photo: { file: "Mustafa Suleyman (29099346447).jpg", license: CC BY 2.0, author: "Joi Ito from Cambridge, MA, USA" } }

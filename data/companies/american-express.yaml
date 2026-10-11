@@ -1,6 +1,7 @@
 name: American Express
 zh: 美國運通
 industry: payments
+segment: networks
 summary: "美國金融服務公司，以信用卡、簽帳卡與旅行支票等支付相關業務為主要服務。"
 founded: 1850
 hq: 紐約
@@ -10,9 +11,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/American_Express"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/美國運通"
 people:
-  - { name: William Fargo, role: 創辦人 }
-  - { name: Henry Wells, role: 創辦人 }
-  - { name: John Warren Butterfield, role: 創辦人 }
+  - { name: William Fargo, role: 創辦人, photo: { file: 1862fargos.jpg, license: Public domain, author: "Chuck LaChiusa, lach@roadrunner.com" } }
+  - { name: Henry Wells, role: 創辦人, photo: { file: "Lithograph portrait of Henry Wells of Wells, Fargo & Co.'s Express (c. 1878) (cropped).jpg", license: Public domain, author: "Henry Steinegger / Britton &amp; Rey" } }
+  - { name: John Warren Butterfield, role: 創辦人, photo: { file: JohnButterfield.jpg, license: Public domain, author: See below } }
 sources:
   - "pro:k8w9aqudktnu"
   - "pro:yb9cs6kekxas"

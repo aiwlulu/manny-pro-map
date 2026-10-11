@@ -1,6 +1,7 @@
 name: Chipotle
 zh: 奇波雷墨西哥燒烤
 industry: services
+segment: restaurants
 summary: "美國墨西哥風味連鎖餐廳，提供現點現做的碗餐、墨西哥夾餅與捲餅。"
 founded: 1993
 hq: 丹佛
@@ -10,6 +11,6 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/奇波雷墨西哥燒烤"
 people:
   - { name: Steve Ells, role: 創辦人 }
-  - { name: Brian Niccol, role: 執行長 }
+  - { name: Brian Niccol, role: 執行長, photo: { file: Brian Niccol.jpg, license: CC BY 2.0, author: Phi Delta Theta } }
 sources:
   - "podcast:2024-11-04-ep86"

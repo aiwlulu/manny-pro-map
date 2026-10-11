@@ -1,5 +1,6 @@
 name: PayPal
 industry: payments
+segment: wallets
 summary: "美國金融科技公司，經營線上支付系統，提供收付款與轉帳服務。"
 founded: 1998
 logo: { file: Paypal.svg, license: Public domain, author: unbekanntPaypal }
@@ -8,12 +9,12 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/PayPal"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/PayPal"
 people:
-  - { name: Ken Howery, role: 創辦人 }
-  - { name: Max Levchin, role: 創辦人 }
-  - { name: Luke Nosek, role: 創辦人 }
-  - { name: Peter Thiel, role: 創辦人 }
+  - { name: Ken Howery, role: 創辦人, photo: { file: United States Ambassador to Denmark Kenneth Alan Howery.jpg, license: Public domain, author: United States Department of State } }
+  - { name: Max Levchin, role: 創辦人, photo: { file: Max Levchin.jpg, license: CC BY 2.0, author: "Morgan Sherwood (flawedartist) from San Francisco (CA), USA" } }
+  - { name: Luke Nosek, role: 創辦人, photo: { file: "Graphing Social Patterns 07 - IMG 9586 (1527725262).jpg", license: CC BY 2.0, author: Brian Solis } }
+  - { name: Peter Thiel, role: 創辦人, photo: { file: Peter Thiel by Gage Skidmore.jpg, license: CC BY-SA 3.0, author: Gage Skidmore } }
   - { name: Yu Pan, role: 創辦人 }
-  - { name: Elon Musk, role: 創辦人 }
+  - { name: Elon Musk, role: 創辦人, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
 sources:
   - "pro:wvdcaes6auhw"
   - "pro:qnjkum4j8g4u"

@@ -1,6 +1,7 @@
 name: Equitable Life Assurance
 zh: 公平人壽保險公司
 industry: finance
+segment: banks
 summary: "美國金融服務與保險公司，主要業務涵蓋金融服務及保險。"
 founded: 1859
 hq: 紐約
@@ -8,6 +9,6 @@ links:
   website: "http://www.axa-equitable.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Equitable_Holdings"
 people:
-  - { name: Henry Baldwin Hyde, role: 創辦人 }
+  - { name: Henry Baldwin Hyde, role: 創辦人, photo: { file: "Henry Baldwin Hyde (New York City Insurance Executive).jpg", license: Public domain, author: "Moses King (1853-1909), author.  Bartlett &amp; Company, the Orr Press (New York" } }
 sources:
   - "pro:vzej66cff3bh"

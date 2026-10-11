@@ -1,5 +1,8 @@
 name: Exa
 industry: ai
+segment: aiinfra
 summary: "為 AI 應用設計的搜尋引擎與 API，讓模型能檢索網路內容。"
+links:
+  website: "https://exa.ai"
 sources:
   - "podcast:2026-07-02-ep129"

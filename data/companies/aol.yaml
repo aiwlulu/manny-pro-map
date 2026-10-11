@@ -1,6 +1,7 @@
 name: AOL
 zh: 美國線上
 industry: platforms
+segment: search
 summary: "美國的網路入口網站，早期為線上服務供應商，提供上網、電子郵件與內容等服務。"
 founded: 1983
 hq: 紐約
@@ -11,7 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/美国在线"
 people:
   - { name: Marc Seriff, role: 創辦人 }
-  - { name: Steve Case, role: 創辦人 }
+  - { name: Steve Case, role: 創辦人, photo: { file: "Testimony of Steve Case before the U.S. Senate Committee on the Judiciary Hearing On 'Comprehensive Immigration Reform' February 13, 2013.jpg", license: Public domain, author: U.S. Senate hearing } }
   - { name: Jim Kimsey, role: 創辦人 }
 sources:
   - "podcast:2026-07-17-ep131"

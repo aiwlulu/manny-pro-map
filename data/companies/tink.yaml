@@ -1,5 +1,8 @@
 name: Tink
 industry: payments
+segment: processing
 summary: "瑞典的開放銀行平台，提供串接銀行帳戶資料與付款的 API，隸屬 Visa。"
+links:
+  website: "https://tink.com"
 sources:
   - "pro:zvsevsgssyap"

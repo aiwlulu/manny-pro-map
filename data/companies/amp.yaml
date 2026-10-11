@@ -1,7 +1,10 @@
 name: AMP
 industry: industrial
+segment: automation
 summary: "以 AI 與機器人自動分揀回收物的回收科技公司。"
 hq: 路易維爾
+links:
+  website: "https://www.amprobotics.com"
 people:
   - { name: Tim Stewart, role: 執行長 }
 sources:

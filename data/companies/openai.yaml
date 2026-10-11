@@ -1,5 +1,6 @@
 name: OpenAI
 industry: ai
+segment: models
 summary: "開發 GPT 系列大型語言模型與 ChatGPT 等生成式人工智慧產品，並推出影像生成模型與 AI 程式開發代理工具 Codex。"
 founded: 2015
 hq: 舊金山
@@ -10,10 +11,10 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/OpenAI"
 people:
   - { name: Sam Altman, role: 執行長, photo: { file: "Sam Altman speaking at TED (cropped).jpg", license: CC BY 2.0, author: Steve Jurvetson } }
-  - { name: Ilya Sutskever, role: 創辦人 }
-  - { name: Greg Brockman, role: 創辦人 }
+  - { name: Ilya Sutskever, role: 創辦人, photo: { file: "Ilya Sutskever and Sam Altman in TAU (cropped).jpg", license: CC BY-SA 4.0, author: Eladkarmel } }
+  - { name: Greg Brockman, role: 創辦人, photo: { file: "Disrupt SF TechCrunch Disrupt San Francisco 2019 - Day 2 (48838200316) (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
   - { name: Wojciech Zaremba, role: 創辦人 }
-  - { name: Andrej Karpathy, role: 創辦人 }
+  - { name: Andrej Karpathy, role: 創辦人, photo: { file: "Andrej Karpathy, OpenAI.png", license: CC BY 3.0, author: Gladwin Analytics } }
   - { name: John Schulman, role: 創辦人 }
   - { name: Fidji Simo, role: 應用程式執行長, photo: { file: "Facebook F8 Developer's Conference 2017 Fidji Simo (33324521813).jpg", license: CC BY 2.0, author: "Anthony Quintano from Westminster, United States" } }
   - { name: Sarah Friar, role: 財務長, photo: { file: Sarah Friar MoneyConf 2018.jpg, license: CC BY 2.0, author: MoneyConf } }

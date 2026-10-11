@@ -1,6 +1,9 @@
 name: Unlearn
 industry: health
+segment: research
 summary: "以 AI 建立病患數位分身，協助縮減藥物臨床試驗對照組規模的新創。"
+links:
+  website: "https://www.unlearn.ai"
 people:
   - { name: Charles Fisher, role: 執行長 }
 sources:

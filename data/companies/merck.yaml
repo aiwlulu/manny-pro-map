@@ -1,6 +1,7 @@
 name: Merck
 zh: 默克藥廠
 industry: health
+segment: research
 summary: "美國跨國製藥公司，在美加以外以默沙東為名，研發與銷售各類藥品。"
 founded: 1891
 hq: 肯納爾沃斯堡
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Merck_&_Co."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/默克藥廠"
 people:
-  - { name: George Merck, role: 創辦人 }
+  - { name: George Merck, role: 創辦人, photo: { file: George Merck 01.jpg, license: Public domain, author: Unknown authorUnknown author } }
   - { name: Dean Li, role: Merck Research Laboratories 總裁 }
 sources:
   - "propod:cmu2elxeu0g2k01wz36fg1kja"

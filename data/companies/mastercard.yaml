@@ -1,6 +1,7 @@
 name: Mastercard
 zh: 萬事達卡
 industry: payments
+segment: networks
 summary: "美國跨國支付公司，處理商家銀行與發卡銀行間的交易，並發行信用卡與簽帳卡。"
 founded: 1966
 hq: 普切斯

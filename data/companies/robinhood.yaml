@@ -1,5 +1,6 @@
 name: Robinhood
 industry: finance
+segment: markets
 summary: "美國金融服務公司，提供股票、ETF、選擇權與加密貨幣等線上交易服務。"
 founded: 2013
 hq: 帕羅奧圖
@@ -9,8 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Robinhood_Markets"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/羅賓漢_(公司)"
 people:
-  - { name: Vlad Tenev, role: 創辦人 }
-  - { name: Baiju Bhatt, role: 創辦人 }
+  - { name: Vlad Tenev, role: 創辦人, photo: { file: "TechCrunch Disrupt NY 2016 - Day 2 (26902081436) (2).jpg", license: CC BY 2.0, author: TechCrunch } }
+  - { name: Baiju Bhatt, role: 創辦人, photo: { file: "TechCrunch Disrupt San Francisco 2018 - day 2 (43802635144).jpg", license: CC BY 2.0, author: TechCrunch } }
 sources:
   - "pro:68ezcucry26v"
   - "podcast:2022-03-27-ep06"

@@ -1,6 +1,9 @@
 name: Ondas Holdings
 industry: mobility
+segment: defense
 summary: "美國無人機與工業無線網路技術公司，提供自主無人機系統與專用網路方案。"
+links:
+  website: "https://www.ondas.com"
 people:
   - { name: Eric Brock, interviewed: true }
 sources:

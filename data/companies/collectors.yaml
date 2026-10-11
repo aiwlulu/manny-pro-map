@@ -1,9 +1,11 @@
 name: Collectors
 industry: other
+segment: auctions
 summary: "美國的收藏品第三方認證與鑑定公司，服務涵蓋硬幣、集換式卡牌、運動紀念品與簽名。"
 founded: 1986
 hq: 聖塔安娜
 links:
   wikipedia: "https://en.wikipedia.org/wiki/Collectors_Universe"
+  website: "https://www.collectors.com"
 sources:
   - "pro:2cw32kpzmnpy"

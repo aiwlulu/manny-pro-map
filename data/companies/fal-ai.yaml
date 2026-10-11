@@ -1,5 +1,8 @@
 name: fal.ai
 industry: ai
+segment: aiinfra
 summary: "生成式媒體 AI 平台，提供開發者呼叫圖像與影片生成模型的 API。"
+links:
+  website: "https://fal.ai"
 sources:
   - "podcast:2025-12-15-ep116"

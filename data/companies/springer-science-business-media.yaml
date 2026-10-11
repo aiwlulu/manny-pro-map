@@ -1,6 +1,7 @@
 name: Springer Science+Business Media
 zh: 施普林格科學+商業媒體
 industry: publishing
+segment: academic
 summary: "德國跨國出版公司，出版科學、技術、數學與醫學領域的書籍與同儕審查期刊，隸屬 Springer Nature。"
 founded: 1842
 hq: 盧森堡
@@ -9,6 +10,6 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Springer_Science+Business_Media"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/施普林格科学+商业媒体"
 people:
-  - { name: Julius Springer, role: 創辦人 }
+  - { name: Julius Springer, role: 創辦人, photo: { file: Porträtfoto von Julius Springer.jpg, license: Public domain, author: AnonymousUnknown author } }
 sources:
   - "pro:w8n34nnkw3d4"

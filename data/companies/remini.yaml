@@ -1,5 +1,8 @@
 name: Remini
 industry: software
+segment: apps
 summary: "以 AI 修復與提升照片畫質的手機應用程式。"
+links:
+  website: "https://remini.ai"
 sources:
   - "pro:wuw9hfu5buhb"

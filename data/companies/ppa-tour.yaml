@@ -1,6 +1,9 @@
 name: PPA Tour
 industry: consumer
+segment: leagues
 summary: "美國的職業匹克球巡迴賽事。"
+links:
+  website: "https://www.ppatour.com"
 sources:
   - "propod:cms7o9zv5001q01vxhppq11y1"
   - "pro:rhyvggwtrxqh"

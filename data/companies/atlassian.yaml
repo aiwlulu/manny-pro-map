@@ -1,5 +1,6 @@
 name: Atlassian
 industry: software
+segment: devtools
 summary: "澳洲企業軟體公司，提供 Jira 問題追蹤與 Confluence 團隊協作等開發及專案管理工具。"
 founded: 2002
 hq: "341 George Street, Sydney"
@@ -10,7 +11,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Atlassian"
 people:
   - { name: Mike Cannon-Brookes, role: 執行長, photo: { file: Mike Cannon-Brookes Australian businessman.jpg, license: CC0, author: Atlassian } }
-  - { name: Scott Farquhar, role: 創辦人 }
+  - { name: Scott Farquhar, role: 創辦人, photo: { file: Scott Farquhar.png, license: CC0, author: Atlassian } }
 sources:
   - "propod:cmtj74mw500lp01y46usd2blj"
   - "pro:drwymxex2ytn"

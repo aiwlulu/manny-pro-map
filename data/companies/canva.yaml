@@ -1,5 +1,6 @@
 name: Canva
 industry: software
+segment: apps
 summary: "線上平面設計平台，提供簡報、海報、社群媒體圖文等設計模板，並具備照片與影片編輯功能。"
 founded: 2013
 links:
@@ -7,7 +8,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Canva"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Canva"
 people:
-  - { name: Melanie Perkins, role: 創辦人 }
+  - { name: Melanie Perkins, role: 創辦人, photo: { file: M Perkins.jpg, license: CC BY-SA 2.0, author: Melanie Perkins } }
   - { name: Cliff Obrecht, role: 創辦人 }
 sources:
   - "pro:za5znb6ngne6"

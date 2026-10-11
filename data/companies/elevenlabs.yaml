@@ -1,5 +1,6 @@
 name: ElevenLabs
 industry: ai
+segment: aiapps
 summary: "人工智慧語音軟體公司，運用深度學習開發自然語音合成，並提供語音與文字轉換技術。"
 logo: { file: ElevenLabs Logo 03.svg, license: Public domain, author: ElevenLabs }
 links:

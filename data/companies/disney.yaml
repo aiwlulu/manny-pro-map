@@ -1,6 +1,7 @@
 name: Disney
 zh: 迪士尼
 industry: media
+segment: production
 summary: "美國跨國媒體與娛樂集團，業務涵蓋影視製作、主題樂園與串流媒體等。"
 founded: 1923
 hq: 柏班克
@@ -10,8 +11,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/The_Walt_Disney_Company"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/华特迪士尼公司"
 people:
-  - { name: Walt Disney, role: 創辦人 }
-  - { name: Roy O. Disney, role: 創辦人 }
+  - { name: Walt Disney, role: 創辦人, photo: { file: Walt Disney 1946.JPG, license: Public domain, author: Boy Scouts of America } }
+  - { name: Roy O. Disney, role: 創辦人, photo: { file: Roy O. Disney with Company at Press Conference.jpg, license: Public domain, author: Florida Development Commission } }
 sources:
   - "propod:cms7or6d0077o01ymcffj7gbb"
   - "pro:tn4vjnb9dbtb"

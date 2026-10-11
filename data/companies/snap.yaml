@@ -1,6 +1,7 @@
 name: Snap
 zh: 色拉布
 industry: platforms
+segment: social
 summary: "美國科技公司，開發與維護 Snapchat、Bitmoji 等產品，並推出智慧眼鏡 Spectacles。"
 founded: 2011
 hq: 聖塔莫尼卡
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Snap_Inc."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/色拉布"
 people:
-  - { name: Evan Spiegel, role: 創辦人 }
-  - { name: Bobby Murphy, role: 創辦人 }
+  - { name: Evan Spiegel, role: 創辦人, photo: { file: "Evan Spiegel, founder of Snapchat.jpg", license: CC BY-SA 2.0, author: cellanr } }
+  - { name: Bobby Murphy, role: 創辦人, photo: { file: "Robert (Bobby) Murphy.jpg", license: CC BY-SA 4.0, author: Leandroapbatista } }
 sources:
   - "pro:erw26rvsctcr"

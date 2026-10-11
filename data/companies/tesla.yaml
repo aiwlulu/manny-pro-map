@@ -1,6 +1,7 @@
 name: Tesla
 zh: 特斯拉公司
 industry: mobility
+segment: vehicles
 summary: "美國跨國汽車與清潔能源公司，設計並製造電池電動車、太陽能板與儲能設備。"
 founded: 2003
 hq: 帕羅奧圖
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Tesla,_Inc."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/特斯拉公司"
 people:
-  - { name: Martin Eberhard, role: 創辦人 }
+  - { name: Martin Eberhard, role: 創辦人, photo: { file: "Martin Eberhard (cropped).jpg", license: CC BY-SA 2.0, author: Nicki Dugan } }
   - { name: Marc Tarpenning, role: 創辦人 }
   - { name: Elon Musk, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
 relations:

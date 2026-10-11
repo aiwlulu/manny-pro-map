@@ -1,6 +1,9 @@
 name: Gamma
 industry: ai
+segment: aiapps
 summary: "以 AI 自動生成簡報、文件與網頁的線上工具。"
+links:
+  website: "https://gamma.app"
 people:
   - { name: Grant Lee, role: 共同創辦人 }
 sources:

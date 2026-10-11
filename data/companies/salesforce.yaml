@@ -1,5 +1,6 @@
 name: Salesforce
 industry: software
+segment: apps
 summary: "美國企業軟體公司，以訂閱方式提供客戶關係管理軟體，以及銷售、客服與行銷等應用。"
 founded: 1999
 hq: Salesforce塔
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Salesforce"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/赛富时"
 people:
-  - { name: Marc Benioff, role: 創辦人 }
+  - { name: Marc Benioff, role: 創辦人, photo: { file: Marc Benioff.jpg, license: CC BY-SA 2.0, author: Salesforce. } }
 relations:
   - { type: parent, target: slack }
 sources:

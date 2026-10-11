@@ -1,5 +1,6 @@
 name: Proprio
 industry: health
+segment: devices
 summary: "外科手術導航新創，以影像與電腦視覺輔助脊椎手術。"
 people:
   - { name: Gabriel Jones, role: 共同創辦人兼執行長 }

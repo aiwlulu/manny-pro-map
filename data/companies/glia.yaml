@@ -1,7 +1,8 @@
 name: Glia
-industry: payments
+industry: software
+segment: apps
 summary: "金融業的數位客服平台，整合語音、視訊與文字等客服管道。"
-people:
-  - { name: Dan, role: 創辦人 }
+links:
+  website: "https://www.glia.com"
 sources:
   - "podcast:2023-02-23-ep36"

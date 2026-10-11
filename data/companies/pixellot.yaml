@@ -1,7 +1,9 @@
 name: Pixellot
 industry: media
+segment: production
 summary: "專注運動市場的軟體公司，提供自動化影片製作與分析服務，服務運動組織及轉播業者。"
 links:
   wikipedia: "https://en.wikipedia.org/wiki/Pixellot"
+  website: "https://www.pixellot.tv"
 sources:
   - "podcast:2023-11-13-ep56"

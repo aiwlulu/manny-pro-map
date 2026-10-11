@@ -9,19 +9,33 @@ const initials = (name) => {
 };
 
 export function createMap(root, { industries, weight, onPick, onHover, safeArea, prefersReduced }) {
-  root.innerHTML = `<div class="bm-ind"></div><svg class="bm-labels" aria-hidden="true"></svg><svg class="bm-lines" aria-hidden="true"><defs>
+  root.innerHTML = `<div class="bm-world"><div class="bm-ind"></div><svg class="bm-labels" aria-hidden="true"></svg><svg class="bm-lines" aria-hidden="true"><defs>
       <linearGradient id="bm-lg" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="var(--red-a)"/><stop offset="1" stop-color="var(--blue-b)"/></linearGradient></defs><g></g></svg>
-    <div class="bm-nodes" role="list"></div><div class="bm-tip" hidden></div>
+    <div class="bm-nodes" role="list"></div></div><div class="bm-tip" hidden></div>
     <div class="bm-ctl"><button data-z="in" aria-label="放大"></button><button data-z="out" aria-label="縮小"></button><button data-z="fit" aria-label="顯示全部"></button></div>`;
   const indEl = root.querySelector('.bm-ind');
   const nodesEl = root.querySelector('.bm-nodes');
   const lines = root.querySelector('.bm-lines g');
   const tip = root.querySelector('.bm-tip');
   const labels = root.querySelector('.bm-labels');
+  const world = root.querySelector('.bm-world');
   const queue = [];
   let W = 0, H = 0, t = zoomIdentity, nodes = [], groups = [], byId = new Map(), focus = null, raf = 0, first = true;
 
-  const z = zoom().scaleExtent([0.4, 14]).on('zoom', (e) => { t = e.transform; schedule(); });
+  let mix = 1; // 0..1 interpolation between old and new layout
+  let td = zoomIdentity; // transform the DOM was last laid out with
+  let settle = 0;
+  const z = zoom().scaleExtent([0.4, 14])
+    .on('start', () => { tip.hidden = true; root.classList.add('moving'); })
+    .on('zoom', (e) => {
+      t = e.transform;
+      if (!W || mix < 1) return schedule();
+      const s = t.k / td.k;
+      world.style.transform = `translate(${t.x - td.x * s}px, ${t.y - td.y * s}px) scale(${s})`;
+      clearTimeout(settle);
+      settle = setTimeout(() => schedule(), 180);
+    })
+    .on('end', () => { clearTimeout(settle); root.classList.remove('moving'); schedule(); });
   const sel = select(root).call(z).on('dblclick.zoom', null);
 
   function layout(companies) {
@@ -61,9 +75,10 @@ export function createMap(root, { industries, weight, onPick, onHover, safeArea,
   }
 
   function schedule() { if (!raf) raf = requestAnimationFrame(draw); }
-  let mix = 1; // 0..1 interpolation between old and new layout
   function draw() {
     raf = 0;
+    td = t;
+    world.style.transform = '';
     const k = t.k;
     for (const g of groups) {
       const r = g.r * k, s = g.el.style;

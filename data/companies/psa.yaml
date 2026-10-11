@@ -1,7 +1,9 @@
 name: PSA
 industry: other
+segment: auctions
 summary: "美國的運動卡與集換式卡牌鑑定公司，提供卡片真偽認證與品相評級服務。"
 links:
   wikipedia: "https://en.wikipedia.org/wiki/Professional_Sports_Authenticator"
+  website: "https://www.psacard.com"
 sources:
   - "pro:2cw32kpzmnpy"

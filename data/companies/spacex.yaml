@@ -1,6 +1,7 @@
 name: SpaceX
 zh: 太空X
 industry: mobility
+segment: vehicles
 summary: "開發獵鷹系列可重複使用運載火箭、龍系列太空船與星艦，經營星鏈衛星寬頻網路，並投入人工智慧業務。"
 founded: 2002
 hq: 霍桑
@@ -14,7 +15,6 @@ people:
 relations:
   - { type: acquired, target: xai, note: 2026 年 }
   - { type: parent, target: x }
-  - { type: parent, target: xai }
   - { type: competitor, target: rocket-lab }
   - { type: competitor, target: ula }
 sources:

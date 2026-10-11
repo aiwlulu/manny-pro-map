@@ -1,5 +1,6 @@
 name: YouTube
 industry: platforms
+segment: creator
 summary: "源自美國的線上影片分享平台，提供使用者上傳、觀看及分享影片的服務。"
 founded: 2005
 hq: 圣布鲁诺
@@ -9,8 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/YouTube"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/YouTube"
 people:
-  - { name: Steve Chen, role: 創辦人 }
-  - { name: Jawed Karim, role: 創辦人 }
-  - { name: Chad Hurley, role: 創辦人 }
+  - { name: Steve Chen, role: 創辦人, photo: { file: "Steve Chen (2022) 03 (cropped).png", license: CC BY 3.0, author: TaiwanPlus } }
+  - { name: Jawed Karim, role: 創辦人, photo: { file: Jawed Karim 2008.jpg, license: Public domain, author: "Picture taken by Robin BrownOriginal uploaded by Jawed (Transfered by Quibik)" } }
+  - { name: Chad Hurley, role: 創辦人, photo: { file: "Streamy Awards Photo 1214 (4513304983).jpg", license: CC BY-SA 2.0, author: The Bui Brothers } }
 sources:
   - "pro:mxtxvxnbnc88"

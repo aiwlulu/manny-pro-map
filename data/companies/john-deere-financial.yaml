@@ -1,5 +1,6 @@
 name: John Deere Financial
 industry: payments
+segment: wallets
 summary: "Deere & Company 旗下的金融服務部門，為購買農業與營建設備的客戶提供融資與租賃。"
 sources:
   - "pro:mcesz5fk85wy"

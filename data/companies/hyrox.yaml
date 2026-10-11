@@ -1,5 +1,6 @@
 name: Hyrox
 industry: consumer
+segment: leagues
 summary: "舉辦標準化健身競賽的運動賽事公司，比賽結合跑步與多個功能性訓練站。"
 founded: 2017
 logo: { file: HYROX logo.svg, license: Public domain, author: Unknown authorUnknown author }
@@ -7,8 +8,6 @@ links:
   website: "https://hyrox.com"
   wikipedia: "https://en.wikipedia.org/wiki/Hyrox"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Hyrox"
-people:
-  - { name: Fürste, role: 共同創辦人 }
 sources:
   - "propod:cms7o9zv5001q01vxhppq11y1"
   - "pro:rhyvggwtrxqh"

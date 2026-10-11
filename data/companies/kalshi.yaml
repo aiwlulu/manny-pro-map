@@ -1,5 +1,6 @@
 name: Kalshi
 industry: finance
+segment: markets
 summary: "美國的預測市場平台，讓使用者對體育、經濟指標、天氣與政治等未來事件下注。"
 founded: 2018
 hq: 紐約
@@ -8,7 +9,7 @@ links:
   website: "https://kalshi.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Kalshi"
 people:
-  - { name: Tarek Mansour, role: 創辦人 }
+  - { name: Tarek Mansour, role: 創辦人, photo: { file: "Tarek Mansour, Web Summit 2021 - 4.jpg", license: CC BY 2.0, author: "Web Summit, Diarmuid Greene" } }
   - { name: Luana Lara Lopes, role: 創辦人 }
 relations:
   - { type: competitor, target: polymarket }

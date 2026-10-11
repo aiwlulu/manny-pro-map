@@ -1,6 +1,7 @@
 name: AMD
 zh: 超微半導體
 industry: semis
+segment: chips
 summary: "美國半導體設計公司，開發 CPU、GPU、FPGA 與系統單晶片等運算產品。"
 founded: 1969
 hq: 森尼韋爾
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/AMD"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/AMD"
 people:
-  - { name: Jack Gifford, role: 創辦人 }
+  - { name: Jack Gifford, role: 創辦人, photo: { file: JackGifford.jpg, license: CC0, author: Wiki4me99 } }
   - { name: Jerry Sanders, role: 創辦人 }
   - { name: Edwin Turney, role: 創辦人 }
 sources:

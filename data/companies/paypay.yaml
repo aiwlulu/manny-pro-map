@@ -1,5 +1,6 @@
 name: PayPay
 industry: payments
+segment: wallets
 summary: "日本的行動支付服務，以 QR Code 掃碼付款為主，並延伸至其他金融服務。"
 founded: 2018
 hq: 千代田區

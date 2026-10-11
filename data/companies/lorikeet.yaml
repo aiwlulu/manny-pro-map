@@ -1,6 +1,9 @@
 name: Lorikeet
 industry: ai
+segment: aiapps
 summary: "澳洲的 AI 客服新創，以 AI 代理處理企業的客戶服務案件。"
+links:
+  website: "https://www.lorikeetcx.ai"
 people:
   - { name: Steve Hine, role: 創辦人 }
   - { name: Jamie Ho, role: CTO }

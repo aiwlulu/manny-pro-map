@@ -1,6 +1,7 @@
 name: Moody's
 zh: 穆迪
 industry: finance
+segment: data
 summary: "透過旗下事業提供信用評等服務，以及金融分析軟體與相關服務。"
 founded: 1909
 hq: 紐約
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Moody's_Corporation"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/穆迪"
 people:
-  - { name: John Moody, role: 創辦人 }
+  - { name: John Moody, role: 創辦人, photo: { file: "John Moody (financial analyst) 1903.jpg", license: Public domain, author: "Scherer, New York" } }
   - { name: Vladimir Ronin, role: 醫藥產業資深評級分析師暨副總 }
 relations:
   - { type: competitor, target: s-p-global }

@@ -1,5 +1,6 @@
 name: Databricks
 industry: software
+segment: infra
 summary: "美國資料軟體公司，提供以雲端運算為基礎的資料分析服務，可在多種雲端平台上運作。"
 founded: 2013
 hq: 舊金山
@@ -9,8 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Databricks"
 people:
   - { name: Ali Ghodsi, role: 執行長, interviewed: true, photo: { file: "Wake up People- AI is eating at all of your jobs (39392994925) (cropped).jpg", license: CC BY 2.0, author: "Steve Jurvetson from Menlo Park, USA" } }
-  - { name: Ion Stoica, role: 創辦人 }
+  - { name: Ion Stoica, role: 創辦人, photo: { file: Ion Stoica by Glenn Ricart.jpg, license: CC BY-SA 2.0, author: Glenn Ricart } }
   - { name: Reynold Xin, role: 創辦人 }
-  - { name: Matei Zaharia, role: 創辦人 }
+  - { name: Matei Zaharia, role: 創辦人, photo: { file: "Matei Zaharia at the 2004 ACM-ICPC World Finals in Prague (cropped).jpg", license: CC BY 2.0, author: ICPCNews } }
 sources:
   - "pro:sg2sthu6aaak"

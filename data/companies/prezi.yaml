@@ -1,5 +1,6 @@
 name: Prezi
 industry: software
+segment: apps
 summary: "匈牙利簡報軟體公司，開發基於雲端的非線性簡報工具，可用於會議、商務與教學，並推出 Prezi Video。"
 founded: 2009
 hq: 舊金山
@@ -9,8 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Prezi"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Prezi"
 people:
-  - { name: Peter Arvai, role: 創辦人 }
+  - { name: Peter Arvai, role: 創辦人, photo: { file: "Plugg 2010 Peter Arvai (4424705694).jpg", license: CC BY 2.0, author: Robin Wauters } }
   - { name: Peter Halacsy, role: 創辦人 }
-  - { name: Adam Somlai-Fischer, role: 創辦人 }
+  - { name: Adam Somlai-Fischer, role: 創辦人, photo: { file: "TNW Conference 2015 - Day 3 (17065730568) (cropped).jpg", license: CC BY-SA 2.0, author: "Julia de Boer / The Next Web" } }
 sources:
   - "pro:za5znb6ngne6"

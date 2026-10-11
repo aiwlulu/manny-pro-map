@@ -1,6 +1,7 @@
 name: Qualcomm
 zh: 高通
 industry: semis
+segment: chips
 summary: "美國的半導體與無線通訊技術公司，開發行動處理器、AI 晶片與 5G 等行動通訊技術。"
 founded: 1985
 hq: 聖地牙哥
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Qualcomm"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/高通"
 people:
-  - { name: Irwin M. Jacobs, role: 創辦人 }
-  - { name: Andrew Viterbi, role: 創辦人 }
+  - { name: Irwin M. Jacobs, role: 創辦人, photo: { file: "Irwin Jacobs (2005).jpg", license: Public domain, author: Dananderson at English Wikipedia } }
+  - { name: Andrew Viterbi, role: 創辦人, photo: { file: 10-08ViterbiBIG.jpg, license: CC BY-SA 4.0, author: Canyigitozen } }
 sources:
   - "pro:jq8rpf6p2f59"

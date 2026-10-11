@@ -1,6 +1,7 @@
 name: Apollo
 zh: 阿波羅管理
 industry: finance
+segment: capital
 summary: "美國另類投資管理公司，為機構及個人投資人管理資產，投資信貸、私募股權與實物資產。"
 founded: 1990
 hq: Solow大樓
@@ -10,10 +11,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Apollo_Global_Management"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/阿波羅全球管理"
 people:
-  - { name: Mark Rowan, role: 執行長, interviewed: true }
+  - { name: Marc Rowan, role: 執行長, interviewed: true }
   - { name: Leon Black, role: 創辦人 }
-  - { name: Josh Harris, role: 創辦人 }
-  - { name: Marc Rowan, role: 創辦人 }
+  - { name: Josh Harris, role: 創辦人, photo: { file: "Josh Harris WAS-NYG NOV2023 (cropped).jpg", license: CC BY 2.0, author: Josh Harris } }
   - { name: Antony Ressler, role: 創辦人 }
 sources:
   - "pro:pxkj26b9zjj5"

@@ -1,5 +1,6 @@
 name: Google
 industry: platforms
+segment: search
 summary: "開發網路搜尋引擎，並經營線上廣告、雲端運算、電子郵件與人工智慧等網際網路產品與服務，主要收入來自廣告。"
 founded: 1998
 hq: 山景城
@@ -9,8 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Google"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Google"
 people:
-  - { name: Sergey Brin, role: 創辦人 }
-  - { name: Larry Page, role: 創辦人 }
+  - { name: Sergey Brin, role: 創辦人, photo: { file: "Sergey Brin Ted 2010 (cropped).jpg", license: CC BY 2.0, author: Steve Jurvetson } }
+  - { name: Larry Page, role: 創辦人, photo: { file: "Larry Page in the European Parliament, 17.06.2009.jpg", license: CC BY-SA 4.0, author: "Marcin Mycielski, European Parliament (Stansfield)" } }
   - { name: Sundar Pichai, photo: { file: "Sundar Pichai - 2023 (cropped).jpg", license: CC BY 4.0, author: "Photographer: Lukasz Kobus (European Commission)" } }
 relations:
   - { type: parent, target: boston-dynamics }

@@ -1,6 +1,7 @@
 name: Deere & Company
 zh: 強鹿
 industry: industrial
+segment: machinery
 summary: "生產農業、建築與森林機械設備，以及重型設備用柴油引擎、傳動系統與草坪養護設備，並提供金融及相關服務。"
 founded: 1868
 hq: 莫林
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/John_Deere"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/约翰迪尔"
 people:
-  - { name: John Deere, role: 創辦人 }
+  - { name: John Deere, role: 創辦人, photo: { file: John Deere portrait.jpg, license: Public domain, author: "Wilson, James Grant, 1832-1914; Fiske, John, 1842-1901; Dick, Charles, 1858-; Ho" } }
 relations:
   - { type: parent, target: john-deere-financial }
   - { type: competitor, target: agco }

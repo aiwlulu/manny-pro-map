@@ -1,6 +1,7 @@
 name: Barnes & Noble
 zh: 巴諾書店
 industry: commerce
+segment: retail
 summary: "美國零售連鎖書店，在美國擁有數量最多的零售門市。"
 founded: 1873
 hq: 紐約
@@ -11,9 +12,9 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/巴諾書店"
 people:
   - { name: James Daunt, role: 執行長, interviewed: true }
-  - { name: Leonard Riggio, role: 創辦人 }
+  - { name: Leonard Riggio, role: 創辦人, photo: { file: Leonard Riggio.jpg, license: Public domain, author: Brooklyn Technical High School } }
   - { name: William Robbins Barnes, role: 創辦人 }
-  - { name: Gilbert Clifford Noble, role: 創辦人 }
+  - { name: Gilbert Clifford Noble, role: 創辦人, photo: { file: Gilbert Clifford Noble - Universities and their sons - 1900.jpg, license: Public domain, author: Unknown photographerUnknown photographer } }
 sources:
   - "propod:cmuoqjicj0bhf01tlh9qsafqq"
   - "pro:w8sgypnhcpp9"

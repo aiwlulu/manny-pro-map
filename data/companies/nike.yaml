@@ -1,6 +1,7 @@
 name: Nike
 zh: 耐吉
 industry: consumer
+segment: brands
 summary: "美國運動用品公司，設計生產運動鞋、服飾與運動器材，為全球主要供應商。"
 founded: 1964
 hq: 比弗頓
@@ -10,8 +11,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Nike,_Inc."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/耐克"
 people:
-  - { name: Phil Knight, role: 創辦人 }
-  - { name: Bill Bowerman, role: 創辦人 }
+  - { name: Phil Knight, role: 創辦人, photo: { file: Philknightfootball.jpg, license: CC BY-SA 2.0, author: Neon Tommy } }
+  - { name: Bill Bowerman, role: 創辦人, photo: { file: Bill Bowerman.jpg, license: Public domain, author: University of Oregon } }
 relations:
   - { type: competitor, target: hoka }
   - { type: competitor, target: on }

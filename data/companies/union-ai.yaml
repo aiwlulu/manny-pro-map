@@ -1,5 +1,8 @@
 name: Union AI
 industry: ai
+segment: aiinfra
 summary: "開源工作流程平台 Flyte 背後的公司，提供機器學習與資料流程的部署工具。"
+links:
+  website: "https://www.union.ai"
 sources:
   - "podcast:2022-04-17-ep09"

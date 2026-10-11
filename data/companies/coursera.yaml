@@ -1,5 +1,6 @@
 name: Coursera
 industry: publishing
+segment: learning
 summary: "美國線上學習平台，與大學及其他機構合作，提供各領域的線上課程、證書與學位。"
 founded: 2012
 hq: 山景城
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Coursera"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Coursera"
 people:
-  - { name: Andrew Y. Ng, role: 創辦人 }
-  - { name: Daphne Koller, role: 創辦人 }
+  - { name: Andrew Y. Ng, role: 創辦人, photo: { file: Andrew Ng at TechCrunch Disrupt SF 2017.jpg, license: CC BY 2.0, author: TechCrunch } }
+  - { name: Daphne Koller, role: 創辦人, photo: { file: "The Future of Higher Education Daphne Koller (8411917358).jpg", license: CC BY-SA 2.0, author: "World Economic Forum from Cologny, Switzerland" } }
 sources:
   - "pro:99c45rxf5864"

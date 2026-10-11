@@ -1,19 +1,130 @@
-# Map regions. `id` is referenced by companies/*.yaml; order = display order.
-- { id: ai, name: AI, en: Artificial Intelligence }
-- { id: semis, name: 半導體, en: Semiconductors }
-- { id: software, name: 雲端與軟體, en: Cloud & Software }
-- { id: platforms, name: 網路平台與社群, en: Platforms & Social }
-- { id: commerce, name: 電商與零售, en: Commerce & Retail }
-- { id: payments, name: 支付與金融科技, en: Payments & Fintech }
-- { id: finance, name: 金融與投資, en: Finance & Investing }
-- { id: media, name: 媒體與娛樂, en: Media & Entertainment }
-- { id: gaming, name: 遊戲, en: Gaming }
-- { id: consumer, name: 運動與消費品牌, en: Sports & Consumer Brands }
-- { id: health, name: 醫療與生技, en: Health & Biotech }
-- { id: industrial, name: 能源與工業, en: Energy & Industrials }
-- { id: mobility, name: 交通與太空, en: Mobility & Space }
-- { id: hardware, name: 硬體與消費電子, en: Hardware & Devices }
-- { id: publishing, name: 教育與出版, en: Education & Publishing }
-- { id: services, name: 餐飲與服務, en: Food & Services }
-- { id: telecom, name: 電信, en: Telecom }
-- { id: other, name: 其他, en: Other }
+# Map regions, ordered along the broad value chain (energy → chips → software → platforms → consumers → capital).
+# `segments` split each industry by value-chain stage: up = upstream, mid = midstream, down = downstream.
+# companies/*.yaml reference `industry` by id and `segment` by segment id.
+- id: industrial
+  name: 能源與工業
+  en: Energy & Industrials
+  segments:
+    - { id: energy, name: 能源與電力, stage: up }
+    - { id: machinery, name: 工業與農業機械, stage: mid }
+    - { id: automation, name: 自動化與農業科技, stage: down }
+- id: semis
+  name: 半導體
+  en: Semiconductors
+  segments:
+    - { id: equipment, name: 設備與材料, stage: up }
+    - { id: foundry, name: 晶圓代工, stage: mid }
+    - { id: chips, name: 晶片設計, stage: down }
+- id: hardware
+  name: 硬體與機器人
+  en: Hardware & Robotics
+  segments:
+    - { id: robotics, name: 機器人, stage: mid }
+    - { id: devices, name: 消費電子, stage: down }
+- id: software
+  name: 雲端與軟體
+  en: Cloud & Software
+  segments:
+    - { id: infra, name: 雲端與資料基礎設施, stage: up }
+    - { id: devtools, name: 開發與資安, stage: mid }
+    - { id: serial, name: 軟體併購集團, stage: mid }
+    - { id: apps, name: 企業應用 SaaS, stage: down }
+- id: ai
+  name: AI
+  en: Artificial Intelligence
+  segments:
+    - { id: aiinfra, name: AI 基礎設施與工具, stage: up }
+    - { id: models, name: 基礎模型, stage: mid }
+    - { id: aiapps, name: AI 應用, stage: down }
+- id: platforms
+  name: 網路平台與社群
+  en: Platforms & Social
+  segments:
+    - { id: search, name: 搜尋與入口, stage: mid }
+    - { id: social, name: 社群網路, stage: mid }
+    - { id: creator, name: 創作者與內容平台, stage: down }
+    - { id: marketplace, name: 媒合與共享平台, stage: down }
+- id: payments
+  name: 支付與金融科技
+  en: Payments & Fintech
+  segments:
+    - { id: networks, name: 卡組織與支付網路, stage: up }
+    - { id: processing, name: 支付處理與金融基礎設施, stage: mid }
+    - { id: wallets, name: 錢包、分期與消費金融, stage: down }
+- id: commerce
+  name: 電商與零售
+  en: Commerce & Retail
+  segments:
+    - { id: ecommerce, name: 電商平台與外送, stage: mid }
+    - { id: retail, name: 實體零售, stage: down }
+- id: media
+  name: 媒體與娛樂
+  en: Media & Entertainment
+  segments:
+    - { id: production, name: 內容製作, stage: up }
+    - { id: streaming, name: 發行與串流, stage: mid }
+    - { id: live, name: 現場娛樂與票務, stage: down }
+- id: gaming
+  name: 遊戲與博弈
+  en: Gaming & Betting
+  segments:
+    - { id: engines, name: 引擎與運動數據, stage: up }
+    - { id: studios, name: 遊戲開發與平台, stage: mid }
+    - { id: betting, name: 博弈與運彩, stage: down }
+- id: consumer
+  name: 運動與消費品牌
+  en: Sports & Consumer Brands
+  segments:
+    - { id: leagues, name: 賽事與聯盟, stage: up }
+    - { id: brands, name: 品牌, stage: mid }
+    - { id: stores, name: 品牌零售, stage: down }
+- id: services
+  name: 餐飲與旅宿
+  en: Food & Hospitality
+  segments:
+    - { id: owners, name: 物業與加盟體系, stage: up }
+    - { id: hotels, name: 飯店品牌, stage: mid }
+    - { id: restaurants, name: 餐飲連鎖, stage: down }
+- id: mobility
+  name: 交通、航太與國防
+  en: Mobility, Space & Defense
+  segments:
+    - { id: parts, name: 零組件與製造, stage: up }
+    - { id: vehicles, name: 車輛、航太與國防, stage: mid }
+    - { id: autonomy, name: 自動駕駛, stage: mid }
+    - { id: defense, name: 國防與無人機, stage: mid }
+    - { id: transport, name: 出行與物流服務, stage: down }
+    - { id: micromobility, name: 微移動, stage: down }
+- id: health
+  name: 醫療與生技
+  en: Health & Biotech
+  segments:
+    - { id: research, name: 藥物與基因檢測, stage: up }
+    - { id: devices, name: 醫療器材, stage: mid }
+    - { id: care, name: 醫療服務, stage: down }
+- id: publishing
+  name: 教育與出版
+  en: Education & Publishing
+  segments:
+    - { id: academic, name: 學術出版, stage: up }
+    - { id: news, name: 新聞與電子報, stage: mid }
+    - { id: learning, name: 線上教育, stage: down }
+- id: finance
+  name: 金融與投資
+  en: Finance & Investing
+  segments:
+    - { id: data, name: 評級與金融資料, stage: up }
+    - { id: markets, name: 交易所與預測市場, stage: mid }
+    - { id: capital, name: 投資與資產管理, stage: down }
+    - { id: banks, name: 銀行與保險, stage: down }
+- id: telecom
+  name: 電信
+  en: Telecom
+  segments:
+    - { id: carriers, name: 電信業者, stage: mid }
+- id: other
+  name: 其他
+  en: Other
+  segments:
+    - { id: auctions, name: 拍賣與收藏, stage: mid }
+    - { id: misc, name: 其他, stage: mid }

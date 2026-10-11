@@ -17,6 +17,7 @@ name: Stripe                    # 必填，通用英文名稱
 zh: ""                          # 常見中文名，沒有就省略
 aliases: [Stripe Inc]           # 選填，搜尋用的別名
 industry: payments              # 必填，見 data/industries.yaml 的 id
+segment: processing             # 選填，該產業底下 segments 的 id（產業地圖的上中下游位置）
 summary: 線上支付基礎設施公司，提供商家收款 API、訂閱計費與企業金融服務。  # 必填，≤ 90 字，自己寫
 founded: 2010                   # 選填
 hq: 舊金山                      # 選填
@@ -47,6 +48,10 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
 | `spinoff` | 分拆出 target | 分拆自 |
 
 只寫公開可查證的關係，同一組關係只要寫在其中一家就好。
+
+## Logo
+
+優先用 Wikimedia Commons 的自由授權圖片（`logo: { file, license, author }`）。沒有的話，維護者會把官網圖示放在 `site/logos/<id>.png`，只用於識別。
 
 ## 新增曼報的新文章或新集數
 

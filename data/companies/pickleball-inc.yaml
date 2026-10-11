@@ -1,9 +1,8 @@
 name: Pickleball Inc.
 zh: 匹克球公司
 industry: consumer
+segment: leagues
 summary: "經營美國職業匹克球賽事的公司。"
-people:
-  - { name: Pardoe, role: 執行長 }
 sources:
   - "propod:cms7o9zv5001q01vxhppq11y1"
   - "pro:rhyvggwtrxqh"

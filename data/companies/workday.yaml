@@ -1,5 +1,6 @@
 name: Workday
 industry: software
+segment: apps
 summary: "美國雲端軟體供應商，提供財務管理、人力資本管理與學生資訊系統，支援組織管理作業。"
 founded: 2005
 hq: 普萊森頓
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Workday,_Inc."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Workday"
 people:
-  - { name: David Duffield, role: 創辦人 }
-  - { name: Aneel Bhusri, role: 創辦人 }
+  - { name: David Duffield, role: 創辦人, photo: { file: "Dave Duffield addressing Peoplesoft, 2005.jpg", license: Public domain, author: Him121 at English Wikipedia } }
+  - { name: Aneel Bhusri, role: 創辦人, photo: { file: "Aneel Bhusri (8518025145) (cropped).jpg", license: CC BY 2.0, author: Loic Le Meur from France } }
 sources:
   - "pro:drwymxex2ytn"

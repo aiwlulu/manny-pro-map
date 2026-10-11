@@ -1,6 +1,7 @@
 name: Digital Domain
 zh: 數字領域公司
 industry: media
+segment: production
 summary: "美國數位製作公司，主要提供視覺特效、電腦動畫及電影相關的數位製作服務。"
 founded: 1993
 hq: "普拉亞-維斯塔 (洛杉磯)"
@@ -11,7 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/數字王國3.0"
 people:
   - { name: Scott Ross, role: 創辦人, interviewed: true }
-  - { name: James Cameron, role: 創辦人 }
+  - { name: James Cameron, role: 創辦人, photo: { file: "James Cameron at 53rd Saturn Awards 2026-01 (cropped).jpg", license: CC BY 4.0, author: Kevin Paul } }
   - { name: Stan Winston, role: 創辦人 }
 sources:
   - "pro:qj3wwurtndbm"

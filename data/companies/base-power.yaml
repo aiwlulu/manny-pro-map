@@ -1,8 +1,10 @@
 name: Base Power
 industry: industrial
+segment: energy
 summary: "美國儲能公司，開發與安裝家用電池儲能系統，提供停電備援及電網高需求時的供電。"
 links:
   wikipedia: "https://en.wikipedia.org/wiki/Base_Power_(company)"
+  website: "https://www.basepowercompany.com"
 people:
   - { name: Zach Dell, role: 創辦人暨執行長 }
   - { name: Justin Lopas, role: 營運長 }

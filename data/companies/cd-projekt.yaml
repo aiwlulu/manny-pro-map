@@ -1,5 +1,6 @@
 name: CD Projekt
 industry: gaming
+segment: studios
 summary: "波蘭遊戲公司，從事遊戲開發、發行與分銷，作品包括《巫師》系列與《電馭叛客2077》。"
 founded: 1994
 hq: 華沙
@@ -9,7 +10,6 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/CD_Projekt_Red"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/CD_Projekt"
 people:
-  - { name: Marcin Iwiński, role: 創辦人 }
-  - { name: Michał, role: 共同創辦人 }
+  - { name: Marcin Iwiński, role: 創辦人, photo: { file: Marcin Iwiński.jpg, license: CC BY 2.0, author: AdamLiwinski } }
 sources:
   - "podcast:2024-08-26-ep79"

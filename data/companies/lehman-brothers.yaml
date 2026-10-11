@@ -1,6 +1,7 @@
 name: Lehman Brothers
 zh: 雷曼兄弟
 industry: finance
+segment: banks
 summary: "曾經營投資銀行業務的美國金融服務公司，提供證券交易、投資管理及私人銀行服務。"
 founded: 1850
 hq: 紐約
@@ -11,7 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/雷曼兄弟"
 people:
   - { name: Henry Lehman, role: 創辦人 }
-  - { name: Emanuel Lehman, role: 創辦人 }
-  - { name: Mayer Lehman, role: 創辦人 }
+  - { name: Emanuel Lehman, role: 創辦人, photo: { file: Emanuel Lehman Trim.jpg, license: Public domain, author: Unknown authorUnknown author } }
+  - { name: Mayer Lehman, role: 創辦人, photo: { file: "Mayer Lehman (1830–1897).png", license: Public domain, author: Unknown authorUnknown author } }
 sources:
   - "pro:9pj32ujkxanq"

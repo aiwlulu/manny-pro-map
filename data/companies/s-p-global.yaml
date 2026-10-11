@@ -1,6 +1,7 @@
 name: S&P Global
 zh: 標普
 industry: finance
+segment: data
 summary: "提供金融資訊、分析及能源與大宗商品情報服務，旗下涵蓋信用評等、市場財智等事業，並持有指數合資公司的多數股權。"
 hq: 紐約
 logo: { file: S&P Global logo.svg, license: Public domain, author: "S&amp;P Global" }

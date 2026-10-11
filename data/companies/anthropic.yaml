@@ -1,5 +1,6 @@
 name: Anthropic
 industry: ai
+segment: models
 summary: "開發 Claude 系列大型語言模型等前沿人工智慧產品，由前 OpenAI 研究人員創立，以促進人工智慧安全為目標。"
 founded: 2021
 hq: 舊金山
@@ -12,7 +13,7 @@ people:
   - { name: Dario Amodei, role: 執行長, photo: { file: "Dario Amodei at TechCrunch Disrupt 2023 02 (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
   - { name: Daniela Amodei, role: 創辦人 }
   - { name: Chris Olah, role: 創辦人 }
-  - { name: Jared Kaplan, role: 創辦人 }
+  - { name: Jared Kaplan, role: 創辦人, photo: { file: "Jared Kaplan (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
 sources:
   - "propod:cmuti5uau06di01v1f935gjyi"
   - "pro:dwcrddrmu86k"

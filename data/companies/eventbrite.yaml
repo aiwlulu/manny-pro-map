@@ -1,5 +1,6 @@
 name: Eventbrite
 industry: platforms
+segment: marketplace
 summary: "美國的線上活動平台，讓使用者瀏覽、建立與宣傳各類活動，並可免費發布活動資訊。"
 founded: 2006
 hq: 舊金山
@@ -8,7 +9,7 @@ links:
   website: "https://www.eventbrite.com"
   wikipedia: "https://en.wikipedia.org/wiki/Eventbrite"
 people:
-  - { name: Julia Hartz, role: 創辦人 }
+  - { name: Julia Hartz, role: 創辦人, photo: { file: "Julia Hartz (portrait).jpg", license: CC BY-SA 3.0, author: Stefan Wieland } }
 sources:
   - "podcast:2026-07-17-ep131"
   - "pro:wuw9hfu5buhb"

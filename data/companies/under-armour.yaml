@@ -1,5 +1,6 @@
 name: Under Armour
 industry: consumer
+segment: brands
 summary: "美國運動用品公司，生產與販售運動服、鞋類及配件。"
 founded: 1996
 hq: 巴爾的摩
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Under_Armour"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/安德玛"
 people:
-  - { name: Kevin Plank, role: 創辦人 }
+  - { name: Kevin Plank, role: 創辦人, photo: { file: Kevin Plank headshot 2018.png, license: CC BY 4.0, author: Under Armour } }
 sources:
   - "propod:cmtel5mvw12jk01wy4ok92ldx"
   - "pro:23jwvufhmrsw"

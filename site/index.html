@@ -18,7 +18,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%237cc6e4'/%3E%3Cstop offset='1' stop-color='%23ee6a55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3Ccircle cx='11' cy='13' r='5' fill='%23fff' fill-opacity='.85'/%3E%3Ccircle cx='20' cy='19' r='3.5' fill='%23fff' fill-opacity='.7'/%3E%3C/svg%3E">
 </head>
 <body>
-  <a class="skip" href="#/list">跳到清單檢視</a>
+  <a class="skip" href="#lanes">跳到產業地圖</a>
   <header class="top">
     <a href="#/" class="wordmark" aria-label="Pro Map 首頁"><span class="b1">Pro</span><span class="b2">Map</span></a>
     <div class="search">
@@ -28,8 +28,8 @@
       <div id="results" class="results" role="listbox" hidden></div>
     </div>
     <nav class="tabs" aria-label="檢視">
-      <button data-view="map" class="on">地圖</button>
-      <button data-view="list">清單</button>
+      <button data-view="chain" class="on">產業地圖</button>
+      <button data-view="map">氣泡圖</button>
       <button data-view="people">人物</button>
       <button data-view="about">關於</button>
     </nav>
@@ -37,21 +37,23 @@
   </header>
 
   <main>
-    <section id="view-map" class="view stage" aria-label="產業氣泡地圖">
-      <div id="bubble" class="bm"></div>
-      <div class="card" id="card">
+    <div class="card" id="card">
+      <div class="card-main">
         <p class="eyebrow">曼報讀者的公司地圖<span>Unofficial</span></p>
         <h1><span class="num" id="n-co">0</span> 家公司，<br>一張圖找齊。</h1>
-        <p class="lede">曼報 Pro 談過的公司依產業排成氣泡。<span class="hint-wide">滾輪縮放、拖曳移動，</span>點一顆氣泡，看它的創辦人、關係與每一篇文章。</p>
-        <dl class="kpis" id="kpis"></dl>
-        <div class="filters" id="filters" role="group" aria-label="來源篩選"></div>
+        <p class="lede"><span class="for-chain">曼報 Pro 談過的公司，依產業與上中下游排開。</span><span class="for-map">依產業排成氣泡，<span class="hint-wide">滾輪縮放、拖曳移動，</span></span>點一家公司，看它的創辦人、關係與每一篇文章。</p>
       </div>
+      <dl class="kpis" id="kpis"></dl>
+      <div class="filters" id="filters" role="group" aria-label="來源篩選"></div>
+    </div>
+    <section id="view-chain" class="view chain-page" aria-label="產業鏈地圖"><div id="lanes" class="chain"></div></section>
+    <section id="view-map" class="view stage" hidden aria-label="產業氣泡地圖">
+      <div id="bubble" class="bm"></div>
       <div class="legend" aria-hidden="true">
         <span><i class="lg-size"></i>氣泡大小＝曼報 Pro 篇數</span>
         <span><i class="lg-done"></i>已讀完</span>
       </div>
     </section>
-    <section id="view-list" class="view page" hidden><div id="list" class="map"></div></section>
     <section id="view-people" class="view page" hidden><div id="people" class="people"></div></section>
     <section id="view-about" class="view page about" hidden>
       <p class="eyebrow">About</p>
@@ -61,8 +63,9 @@
         <div><h3>連結以 Pro 為主</h3><p>Pro 文章與 Pro Podcast 優先，公開的曼報 Podcast 作為補充。</p></div>
         <div><h3>簡介來自公開資料</h3><p>依官網、維基百科、Wikidata 撰寫，不轉述曼報的分析。</p></div>
         <div><h3>進度只存在你這裡</h3><p>勾選的已讀紀錄存在這台裝置的瀏覽器，不會上傳。</p></div>
-        <div><h3>圖片附授權</h3><p>Logo 與人物照片只用 Wikimedia Commons 的自由授權圖片，並標示作者與授權。</p></div>
+        <div><h3>圖片與商標</h3><p>Logo 與人物照片優先使用 Wikimedia Commons 的自由授權圖片並標示作者與授權；其餘 logo 取自各公司官網圖示，僅用於識別，商標權屬各公司。</p></div>
       </div>
+      <p>產業地圖的上中下游分類為讀者整理的參考框架，同一家公司常橫跨多段，地圖只標主要業務。</p>
       <p>發現錯漏？歡迎到 <a href="https://github.com/aiwlulu/manny-pro-map" target="_blank" rel="noopener">GitHub</a> 開 issue 或送 PR，每家公司是一個 YAML 檔，格式說明見 CONTRIBUTING.md。</p>
       <p class="muted small">程式碼 MIT · 社群資料 CC BY 4.0 · 圖示 Lucide（ISC）· 資料更新於 <span id="built"></span></p>
     </section>

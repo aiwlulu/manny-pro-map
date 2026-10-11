@@ -1,6 +1,7 @@
 name: ASML
 zh: 艾司摩爾
 industry: semis
+segment: equipment
 summary: "荷蘭半導體設備公司，研發與製造用於生產積體電路的微影設備，包括極紫外光微影機。"
 founded: 1984
 hq: 費爾德霍芬
@@ -12,6 +13,6 @@ links:
 people:
   - { name: Martin van den Brink, role: 共同執行長 }
   - { name: Peter Wennink, role: 共同執行長 }
-  - { name: Christophe Fouquet, role: 執行長 }
+  - { name: Christophe Fouquet, role: 執行長, photo: { file: Ursula von der Leyen & Christophe Fouquet - 2025.jpg, license: CC BY 4.0, author: "Dati Bendo / European Union, 2025 / EC - Audiovisual Service" } }
 sources:
   - "podcast:2025-12-18-sp10"

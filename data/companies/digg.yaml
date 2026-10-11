@@ -1,5 +1,6 @@
 name: Digg
 industry: platforms
+segment: search
 summary: "美國新聞彙整與社群書籤平台，讓使用者提交新聞，並呈現最新與熱門網路內容。"
 founded: 2004
 hq: 舊金山
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Digg"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Digg"
 people:
-  - { name: Jay Adelson, role: 創辦人 }
-  - { name: Kevin Rose, role: 創辦人 }
+  - { name: Jay Adelson, role: 創辦人, photo: { file: JayAdelson2011.jpg, license: CC BY 2.0, author: Jay Adelson } }
+  - { name: Kevin Rose, role: 創辦人, photo: { file: Kevin Rose 2025.jpg, license: CC BY 4.0, author: TechCrunch } }
 sources:
   - "pro:9bqny83p92n5"

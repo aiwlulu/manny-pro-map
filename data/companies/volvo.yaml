@@ -1,6 +1,7 @@
 name: Volvo
 zh: 富豪汽車
 industry: mobility
+segment: vehicles
 summary: "瑞典豪華汽車製造商，主要生產休旅車、旅行車與轎車，並以安全及瑞典設計為訴求。"
 founded: 1927
 hq: 哥特堡
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Volvo_Cars"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/富豪汽車"
 people:
-  - { name: Assar Gabrielsson, role: 創辦人 }
-  - { name: Gustaf Larson, role: 創辦人 }
+  - { name: Assar Gabrielsson, role: 創辦人, photo: { file: Assar Gabrielsson Volvo 1960.jpg, license: Public domain, author: Lidingo } }
+  - { name: Gustaf Larson, role: 創辦人, photo: { file: Gustav Larson Volvo 1962.jpg, license: Public domain, author: Lidingo } }
 sources:
   - "pro:tdzgzbsctptw"

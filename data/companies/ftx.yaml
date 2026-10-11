@@ -1,5 +1,6 @@
 name: FTX
 industry: finance
+segment: markets
 summary: "曾經營加密貨幣交易所與加密資產避險基金，提供數位資產現貨及衍生品交易服務。"
 founded: 2019
 hq: 聖約翰斯
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/FTX"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/FTX"
 people:
-  - { name: Sam Bankman-Fried, role: 創辦人 }
+  - { name: Sam Bankman-Fried, role: 創辦人, photo: { file: MIT Bitcoin Expo 2022 - Sam Bankman.png, license: CC BY 3.0, author: MIT Bitcoin Club } }
   - { name: Gary Wang, role: 創辦人 }
 sources:
   - "podcast:2024-08-12-ep77"

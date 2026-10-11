@@ -1,5 +1,8 @@
 name: Artificial Analysis
 industry: ai
+segment: aiinfra
 summary: "獨立評測 AI 模型與 API 服務效能、價格的分析平台。"
+links:
+  website: "https://artificialanalysis.ai"
 sources:
   - "propod:cmtxjkl5v0cdb01tp0meieabe"

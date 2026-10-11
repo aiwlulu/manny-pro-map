@@ -1,6 +1,7 @@
 name: Zhipu AI
 zh: 智譜 AI
 industry: ai
+segment: models
 summary: "中國北京的人工智慧公司，開發 GLM 系列開源權重的大型語言模型。"
 hq: 北京市
 logo: { file: Zhipu AI.png, license: Public domain, author: Zhipu AI }

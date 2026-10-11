@@ -1,5 +1,6 @@
 name: Polymarket
 industry: finance
+segment: markets
 summary: "美國的加密貨幣預測市場平台，使用者可存入加密貨幣並對未來事件下注。"
 founded: 2020
 logo: { file: Company Logo Polymarket.png, license: Public domain, author: 1924848uejdjfik }

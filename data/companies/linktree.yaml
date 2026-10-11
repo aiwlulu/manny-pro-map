@@ -1,5 +1,6 @@
 name: Linktree
 industry: platforms
+segment: creator
 summary: "澳洲社群連結頁面服務商，提供免費及付費方案，讓使用者透過單一頁面呈現社群連結。"
 founded: 2016
 logo: { file: Linktree.svg, license: Public domain, author: Linktree }

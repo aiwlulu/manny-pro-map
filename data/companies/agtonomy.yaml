@@ -1,6 +1,9 @@
 name: Agtonomy
-industry: mobility
+industry: industrial
+segment: automation
 summary: "農業自動化新創，讓既有拖拉機能遠端或自動運作。"
+links:
+  website: "https://www.agtonomy.com"
 people:
   - { name: Tim Bucher, role: 創辦人 }
 sources:

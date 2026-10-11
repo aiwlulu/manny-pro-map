@@ -1,5 +1,6 @@
 name: Bending Spoons
 industry: software
+segment: serial
 summary: "義大利科技集團，收購已具市場需求的產品並長期經營，擅長以 AI 重寫既有程式碼。"
 founded: 2013
 hq: 米蘭
@@ -12,7 +13,6 @@ people:
   - { name: Matteo Danieli, role: 共同創辦人 }
   - { name: Francesco Patarnello, role: 共同創辦人 }
 relations:
-  - { type: parent, target: vimeo }
   - { type: acquired, target: evernote, note: 2022 年 }
   - { type: acquired, target: vimeo }
   - { type: acquired, target: aol }

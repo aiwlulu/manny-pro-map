@@ -1,6 +1,7 @@
 name: Hyundai
 zh: 現代汽車
 industry: mobility
+segment: vehicles
 summary: "韓國跨國汽車製造商，從事汽車生產，並透過旗下豪華汽車品牌經營相關業務。"
 founded: 1967
 hq: 首爾
@@ -10,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Hyundai_Motor_Company"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/現代汽車"
 people:
-  - { name: Jeong Ju-yung, role: 創辦人 }
+  - { name: Jeong Ju-yung, role: 創辦人, photo: { file: Chung Ju-yung.jpg, license: Public domain, author: "Technical Sergeant Renee` Sitler" } }
 relations:
   - { type: parent, target: boston-dynamics }
 sources:

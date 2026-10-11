@@ -1,12 +1,11 @@
 name: Hinge Health
 industry: health
+segment: care
 summary: "位於美國舊金山的醫療保健機構，從事醫療保健相關業務。"
 founded: 2016
 links:
   website: "http://hingehealth.com/"
 people:
-  - { name: Daniel, role: 共同創辦人 }
-  - { name: Gabriel, role: 共同創辦人 }
   - { name: Lex Anderson, role: 前執行長 }
   - { name: Jim Pursley, role: 總裁 }
   - { name: James Budge, role: 財務長 }

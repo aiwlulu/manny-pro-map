@@ -1,8 +1,11 @@
 name: Angelalign
 zh: 時代天使
 industry: health
+segment: devices
 summary: "中國的隱形牙套品牌與製造商，提供透明牙套矯正方案。"
 founded: 2022
 hq: 巴黎
+links:
+  website: "https://www.angelalign.com"
 sources:
   - "pro:wt4bbtb2kex3"

@@ -1,5 +1,6 @@
 name: TomTom
 industry: hardware
+segment: devices
 summary: "荷蘭定位技術與消費電子公司，主要提供地圖、導航服務及衛星導航設備。"
 founded: 1991
 hq: 阿姆斯特丹
@@ -10,7 +11,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/TomTom"
 people:
   - { name: Harold Goddijn, role: 創辦人 }
-  - { name: Corinne Vigreux, role: 創辦人 }
+  - { name: Corinne Vigreux, role: 創辦人, photo: { file: "TNW Conference 2015 - Day 3 (17251820732) (cropped).jpg", license: CC BY-SA 2.0, author: "Julia de Boer / The Next Web" } }
   - { name: Peter-Frans Pauwels, role: 創辦人 }
   - { name: Pieter Geelen, role: 創辦人 }
 sources:

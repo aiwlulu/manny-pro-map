@@ -1,5 +1,6 @@
 name: Patreon
 industry: platforms
+segment: creator
 summary: "創作者收入平台，提供付費訂閱與數位商品銷售功能，讓創作者透過作品及會員回饋取得收入。"
 founded: 2013
 logo: { file: Patreon logo with wordmark.svg, license: Public domain, author: "Original:  PatreonVectorization:  Benedikt Aron at English Wikipedia" }
@@ -8,7 +9,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Patreon"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Patreon"
 people:
-  - { name: Jack Conte, role: 創辦人 }
-  - { name: Sam Yam, role: 創辦人 }
+  - { name: Jack Conte, role: 創辦人, photo: { file: Jack Conte 2014.jpg, license: CC BY 2.0, author: "https://www.flickr.com/photos/ninja-bear/" } }
+  - { name: Sam Yam, role: 創辦人, photo: { file: "Web Summit 2018 - Centre Stage - Day 3, November 8 SD5 8874 (43964941240).jpg", license: CC BY 2.0, author: Web Summit } }
 sources:
   - "podcast:2022-04-10-ep08"

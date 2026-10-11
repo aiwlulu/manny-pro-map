@@ -1,6 +1,9 @@
 name: Stratechery
-industry: media
+industry: publishing
+segment: news
 summary: "Ben Thompson 撰寫的科技與商業分析訂閱制電子報。"
+links:
+  website: "https://stratechery.com"
 people:
   - { name: Ben Thompson }
 sources:

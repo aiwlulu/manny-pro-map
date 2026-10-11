@@ -1,5 +1,6 @@
 name: Substack
-industry: media
+industry: platforms
+segment: creator
 summary: "訂閱內容發布平台，提供電子報、Podcast與影片的發布、收款及分析工具。"
 founded: 2017
 logo: { file: Substack logo.png, license: Public domain, author: Substack Inc. }

@@ -1,5 +1,8 @@
 name: Windsurf
 industry: ai
+segment: aiapps
 summary: "AI 程式碼編輯器，內建能協助撰寫與修改程式的 AI 代理。"
+links:
+  website: "https://windsurf.com"
 sources:
   - "pro:xub3t2c88p2t"

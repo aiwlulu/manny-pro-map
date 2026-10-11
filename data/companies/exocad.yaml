@@ -1,5 +1,8 @@
 name: exocad
 industry: health
+segment: devices
 summary: "牙科 CAD/CAM 設計軟體開發商，讓牙技所與診所以數位方式設計假牙與修復物。"
+links:
+  website: "https://exocad.com"
 sources:
   - "pro:88jxuzxku3eu"

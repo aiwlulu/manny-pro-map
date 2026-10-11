@@ -1,6 +1,7 @@
 name: Apple
 zh: 蘋果
 industry: hardware
+segment: devices
 summary: "設計、研發與銷售 iPhone、個人電腦等消費電子產品，以及電腦軟體與線上服務。"
 founded: 1976
 hq: 庫比蒂諾
@@ -10,8 +11,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Apple_Inc."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/蘋果公司"
 people:
-  - { name: Steve Wozniak, role: 創辦人 }
-  - { name: Steve Jobs, role: 創辦人 }
+  - { name: Steve Wozniak, role: 創辦人, photo: { file: Steve Wozniak by Gage Skidmore.jpg, license: CC BY-SA 3.0, author: Gage Skidmore } }
+  - { name: Steve Jobs, role: 創辦人, photo: { file: Steve Jobs Headshot 2010-CROP2.jpg, license: CC BY-SA 3.0, author: "MetalGearLiquid, based on File:Steve_Jobs_Headshot_2010-CROP.jpg made by Matt Yo" } }
 sources:
   - "pro:rtqwsk3m4mxk"
   - "pro:wvdcaes6auhw"

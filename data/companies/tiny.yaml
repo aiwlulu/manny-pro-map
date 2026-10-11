@@ -1,11 +1,9 @@
 name: Tiny
 industry: finance
+segment: capital
 summary: "從事創業投資與企業控股的公司，主要業務涵蓋新創投資及持有企業股權。"
 hq: 維多利亞
 links:
   website: "https://www.tinycapital.com/"
-people:
-  - { name: Andrew, role: 創辦人 }
-  - { name: Chris, role: 共同創辦人 }
 sources:
   - "podcast:2025-07-28-ep108"

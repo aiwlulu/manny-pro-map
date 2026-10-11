@@ -1,5 +1,6 @@
 name: Evernote
 industry: software
+segment: apps
 summary: "記事與任務管理應用程式，可跨裝置同步筆記，讓使用者整理文字、圖片與網頁內容。"
 founded: 2008
 logo: { file: Evernote.svg, license: Public domain, author: "User:ZyMOS" }

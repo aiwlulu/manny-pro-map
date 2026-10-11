@@ -1,5 +1,6 @@
 name: LinkedIn
 industry: platforms
+segment: social
 summary: "職涯與商務導向的社群平台，讓使用者建立專業人脈、刊登履歷，並供企業發布職缺。"
 founded: 2003
 hq: 森尼韋爾
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/LinkedIn"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/領英"
 people:
-  - { name: Reid Hoffman, role: 創辦人 }
+  - { name: Reid Hoffman, role: 創辦人, photo: { file: "2022 Reid Hoffman (cropped).jpg", license: CC BY 2.0, author: U.S. Secretary of Defense } }
   - { name: Konstantin Guericke, role: 創辦人 }
 sources:
   - "pro:99c45rxf5864"

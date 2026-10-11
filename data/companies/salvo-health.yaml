@@ -1,7 +1,10 @@
 name: Salvo Health
 industry: health
+segment: care
 summary: "專注慢性腸胃疾病的數位醫療診所，提供線上看診與飲食照護。"
+links:
+  website: "https://www.salvohealth.com"
 people:
-  - { name: Jeff Glueck, role: 創辦人 }
+  - { name: Jeff Glueck, role: 創辦人, photo: { file: "TechCrunch Disrupt NY 2016 - Day 1 (26313301273).jpg", license: CC BY 2.0, author: TechCrunch } }
 sources:
   - "podcast:2024-03-11-ep63"

@@ -1,5 +1,5 @@
 // Validate data/*.yaml and compile to site/data.json. Exit 1 on any error.
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { parse } from 'yaml';
 
 const load = (p) => parse(readFileSync(p, 'utf8'));
@@ -11,6 +11,7 @@ const err = (f, m) => errors.push(`${f}: ${m}`);
 const MANNY_HOSTS = ['pro.manny-li.com', 'manny-li.com', 'www.manny-li.com', 'eepurl.com', 'open.firstory.fm', 'podcasts.apple.com'];
 const RELATION_TYPES = ['acquired', 'invested', 'competitor', 'partner', 'supplier', 'customer', 'spinoff', 'parent'];
 const indIds = new Set(industries.map((i) => i.id));
+const segIds = new Map(industries.map((i) => [i.id, new Set((i.segments ?? []).map((g) => g.id))]));
 const srcIds = new Set();
 for (const s of sources) {
   if (srcIds.has(s.id)) err('sources.yaml', `duplicate id ${s.id}`);
@@ -26,6 +27,7 @@ for (const f of readdirSync('data/companies').filter((f) => f.endsWith('.yaml'))
   if (!/^[a-z0-9-]+$/.test(c.id)) err(at, 'file name must be kebab-case');
   if (!c.name) err(at, 'name is required');
   if (!indIds.has(c.industry)) err(at, `unknown industry "${c.industry}"`);
+  else if (c.segment && !segIds.get(c.industry).has(c.segment)) err(at, `segment "${c.segment}" is not in industry ${c.industry}`);
   if (!c.summary) err(at, 'summary is required');
   else if ([...c.summary].length > 90) err(at, `summary too long (${[...c.summary].length} > 90 chars)`);
   for (const s of c.sources ?? []) if (!srcIds.has(s)) err(at, `unknown source ${s}`);
@@ -33,6 +35,7 @@ for (const f of readdirSync('data/companies').filter((f) => f.endsWith('.yaml'))
   for (const [k, u] of Object.entries(c.links ?? {})) {
     try { new URL(u); } catch { err(at, `links.${k} is not a URL`); }
   }
+  if (!c.logo && existsSync(`site/logos/${c.id}.png`)) c.icon = `logos/${c.id}.png`;
   companies.push(c);
 }
 const ids = new Set(companies.map((c) => c.id));

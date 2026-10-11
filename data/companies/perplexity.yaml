@@ -1,5 +1,6 @@
 name: Perplexity
 industry: ai
+segment: aiapps
 summary: "美國軟體公司，提供以大型語言模型驅動的對話式搜尋引擎，會引用網路來源作答。"
 founded: 2022
 hq: 舊金山
@@ -9,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Perplexity_AI"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Perplexity"
 people:
-  - { name: Aravind Srinivas, role: 老闆, interviewed: true }
+  - { name: Aravind Srinivas, role: 老闆, interviewed: true, photo: { file: Aravind Srinivas 2024.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Denis Yarats, role: 創辦人 }
   - { name: Andrew Konwinski, role: 創辦人 }
 sources:
