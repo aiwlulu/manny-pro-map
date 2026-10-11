@@ -161,10 +161,13 @@ function renderStats() {
   if (data.version) $('#ver').lastChild.textContent = `v${data.version} 更新紀錄`;
 }
 const COLS_SHOWN = COLS.filter((x) => !x.test || data.sources.some(x.test));
-const colChips = (count) => COLS_SHOWN.map((x) => `<button class="chipbtn ${col === x.id ? 'on' : ''}" data-col="${x.id}" aria-pressed="${col === x.id}">${x.label}${count ? `<span>${count(x.id)}</span>` : ''}</button>`).join('');
+// Single-select column = radio pills; independent conditions = switches
+const colChips = (count) => `<div class="fgroup"><span class="flabel">欄目</span><div class="radios" role="radiogroup" aria-label="欄目">${COLS_SHOWN.map((x) =>
+  `<button class="radio ${col === x.id ? 'on' : ''}" role="radio" data-col="${x.id}" aria-checked="${col === x.id}"><i></i>${x.label}${count ? `<span>${count(x.id)}</span>` : ''}</button>`).join('')}</div></div>`;
+const toggle = (key, label, on, n) => `<label class="tgl"><input type="checkbox" data-tgl="${key}" ${on ? 'checked' : ''}><span class="sw"></span>${label}${n != null ? `<em>${n}</em>` : ''}</label>`;
 function renderFilters() {
   $('#filters').innerHTML = colChips((id) => [...cos.values()].filter((c) => inCol(c, id)).length)
-    + `<button class="chipbtn ghost ${onlyUnread ? 'on' : ''}" data-k="unread" aria-pressed="${onlyUnread}">只看未讀</button>`;
+    + `<div class="fgroup"><span class="flabel">條件</span>${toggle('unread', '只看未讀', onlyUnread)}</div>`;
 }
 function setCol(id) {
   col = id; store.set('pm-col', id);
@@ -175,8 +178,8 @@ $('#filters').onclick = (e) => {
   const b = e.target.closest('button');
   if (!b) return;
   if (b.dataset.col) return setCol(b.dataset.col);
-  if (b.dataset.k === 'unread') { onlyUnread = !onlyUnread; renderFilters(); renderViews(); }
 };
+$('#filters').onchange = (e) => { if (e.target.dataset.tgl === 'unread') { onlyUnread = e.target.checked; renderViews(); } };
 
 /* ---------- People ---------- */
 const roleLine = (p, max = 3) => p.roles.slice(0, max).map((r) => `${esc(r.c.name)}${r.role ? ` ${esc(r.role)}` : ''}`).join('　·　') + (p.roles.length > max ? `　+${p.roles.length - max}` : '');
@@ -203,7 +206,7 @@ function renderPeople() {
     bar.querySelector('input').addEventListener('input', (e) => { pplQuery = e.target.value; renderPeople(); });
   }
   bar.querySelector('.pf').innerHTML = colChips((id) => all.filter((p) => pplMatch(p, id)).length)
-    + `<button class="chipbtn ghost ${pplMulti ? 'on' : ''}" data-multi aria-pressed="${pplMulti}">跨多家公司<span>${all.filter((p) => p.roles.length > 1).length}</span></button>`;
+    + `<div class="fgroup"><span class="flabel">條件</span>${toggle('multi', '跨多家公司', pplMulti, all.filter((p) => p.roles.length > 1).length)}</div>`;
   bar.querySelector('.az').innerHTML = [...groups.keys()].map((L) => `<a href="#L-${L}" data-l="${L}">${L}</a>`).join('');
   const featured = col === 'all' && !pplMulti && !nq ? all.filter(isIv).sort((a, b) => !!b.photo - !!a.photo) : [];
   $('#people-head').innerHTML = `<p class="eyebrow">People</p><h2>創辦人與關鍵人物</h2>
@@ -220,10 +223,11 @@ function renderPeople() {
     || `<p class="empty">${icon('user', 'lg')}<br>沒有符合的人物</p>`;
 }
 
+$('#people-bar').addEventListener('change', (e) => { if (e.target.dataset.tgl === 'multi') { pplMulti = e.target.checked; renderPeople(); } });
 $('#people-bar').addEventListener('click', (e) => {
   const cb = e.target.closest('[data-col]');
   if (cb) return setCol(cb.dataset.col);
-  if (e.target.closest('[data-multi]')) { pplMulti = !pplMulti; renderPeople(); return; }
+
   const L = e.target.closest('.az a')?.dataset.l;
   if (!L) return;
   e.preventDefault();

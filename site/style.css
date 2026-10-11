@@ -851,3 +851,38 @@ span.ph.has-img:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg,
 .panel .note b { color: var(--ink); }
 @media (max-width: 640px) { .promo { flex-direction: column; align-items: stretch; } .promo-act { justify-content: space-between; } }
 .promo .cx-btn, .about-cta .cx-btn { display: inline-flex; }
+
+/* Filters: radio pills (single choice) vs switches (independent conditions) */
+.filters, .people-bar .pf { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
+.fgroup { display: flex; gap: 8px 10px; align-items: flex-start; }
+.flabel { flex: none; width: 2.6em; padding-top: 6px; font-size: 11.5px; letter-spacing: .1em; color: var(--muted); }
+.radios { display: flex; flex-wrap: wrap; gap: 6px; }
+.radio { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px 4px 8px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--body); font-size: 13px; transition: border-color .2s, background .2s; }
+.radio i { width: 13px; height: 13px; border-radius: 50%; border: 1.5px solid var(--muted); flex: none; transition: all .2s var(--spring); }
+.radio span { font: 600 11px var(--latin); color: var(--muted); }
+.radio:hover { border-color: var(--ink); }
+.radio.on { border-color: var(--ink); color: var(--ink); font-weight: 600; background: color-mix(in srgb, var(--ink) 6%, var(--surface)); }
+.radio.on i { border-color: var(--ink); box-shadow: inset 0 0 0 2.5px var(--surface); background: var(--ink); }
+.tgl { display: inline-flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 13px; color: var(--body); cursor: pointer; user-select: none; }
+.tgl input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.tgl .sw { position: relative; width: 32px; height: 18px; border-radius: 999px; background: var(--line); transition: background .2s; flex: none; }
+.tgl .sw::after { content: ""; position: absolute; left: 2px; top: 2px; width: 14px; height: 14px; border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgb(0 0 0 / .25); transition: transform .2s var(--spring); }
+.tgl input:checked + .sw { background: linear-gradient(120deg, var(--blue-b), var(--red-a)); }
+.tgl input:checked + .sw::after { transform: translateX(14px); }
+.tgl input:focus-visible + .sw { outline: 2px solid var(--blue-b); outline-offset: 2px; }
+.tgl em { font: 600 11px var(--latin); font-style: normal; color: var(--muted); }
+.promo { flex-wrap: wrap; }
+.promo-tour { flex-basis: 100%; margin: 4px 0 0 !important; padding-top: 12px; border-top: 1px dashed color-mix(in srgb, var(--red-a) 30%, var(--line)); font-size: 13.5px !important; }
+.promo-tour a { margin: 0 2px; }
+@media (min-width: 900px) { .people-bar .pf { flex: 1 1 100%; } }
+@media (max-width: 899px) {
+  .card .filters { flex-direction: column; flex-wrap: nowrap; overflow: visible; -webkit-mask: none; padding-right: 0 !important; margin: 0; }
+  .card .fgroup:last-child { display: none; }
+  .fgroup .radios { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-mask: linear-gradient(90deg, #000 calc(100% - 24px), transparent); padding-right: 24px; }
+  .fgroup .radios::-webkit-scrollbar { display: none; }
+  .radio { flex: none; }
+  .flabel { display: none; }
+  .people-bar .pf { width: 100%; }
+}
+body[data-view="chain"] .card { align-items: start; }
+body[data-view="chain"] .card .card-main { padding-top: 8px; }
