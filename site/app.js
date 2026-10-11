@@ -244,7 +244,8 @@ function openPanel(html, extra = '') {
   const p = $('#panel');
   p.innerHTML = `<button class="close iconbtn" aria-label="關閉">${icon('x')}</button><div class="pin">${html}
     ${credits.length ? `<p class="note">圖片來源：${credits.join('；')}</p>` : ''}${extra}
-    <p class="note">連結皆指向曼報原站，內容著作權屬原作者。已讀紀錄只存在這台裝置。</p></div>`;
+    <p class="note">連結皆指向曼報原站，內容著作權屬原作者。已讀紀錄只存在這台裝置。</p>
+    <p class="note">還沒訂閱？<a href="https://pro.manny-li.com/join" target="_blank" rel="noopener">訂閱曼報 Pro</a>，輸入折扣碼 <b>love250</b> 首年折抵 250 元。</p></div>`;
   credits.length = 0;
   const was = p.hidden;
   p.hidden = false; $('#scrim').hidden = false; p.scrollTop = 0;
@@ -451,6 +452,11 @@ const hdr = $('.top');
 new ResizeObserver(() => document.documentElement.style.setProperty('--hdr', `${hdr.offsetHeight}px`)).observe(hdr);
 for (const [sel2, ic] of [['[data-z="in"]', 'plus'], ['[data-z="out"]', 'minus'], ['[data-z="fit"]', 'reset']]) $(sel2).innerHTML = icon(ic);
 for (const el of document.querySelectorAll('[data-ic]')) el.outerHTML = icon(el.dataset.ic, el.className);
+$('#promo-code')?.addEventListener('click', async (e) => {
+  const btn = e.currentTarget, label = btn.querySelector('span');
+  try { await navigator.clipboard.writeText('love250'); label.textContent = '已複製'; } catch { label.textContent = '請手動複製'; }
+  setTimeout(() => (label.textContent = '複製'), 1800);
+});
 renderStats(); renderFilters(); renderViews();
 if (!store.get('pm-coach', false)) {
   const el = $('#coach');

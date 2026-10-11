@@ -838,3 +838,16 @@ span.ph.has-img:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg,
 .about p a:hover, .panel .note a:hover { text-decoration-color: currentColor; }
 .letter.flat h3 { font: 600 14px var(--sans); color: var(--muted); letter-spacing: .04em; }
 .about p a { white-space: nowrap; }
+.promo { display: flex; gap: 20px; align-items: center; justify-content: space-between; margin: 20px 0 8px; padding: 18px 22px; border-radius: 16px; border: 1px solid color-mix(in srgb, var(--red-a) 35%, var(--line));
+  background: linear-gradient(120deg, color-mix(in srgb, var(--red-a) 12%, var(--surface)), color-mix(in srgb, var(--red-b) 10%, var(--surface))); }
+.promo h3 { margin: 0 0 2px; font-size: 16px; color: var(--ink); }
+.promo p { margin: 0; font-size: 14px; }
+.promo-act { display: flex; gap: 8px; align-items: center; flex: none; }
+.code { display: inline-flex; align-items: center; gap: 10px; padding: 6px 8px 6px 14px; border-radius: 999px; border: 1.5px dashed var(--red-a); background: var(--surface); color: var(--ink); cursor: pointer; }
+.code b { font: 700 15px var(--latin); letter-spacing: .08em; }
+.code span { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--pale); color: var(--muted); }
+.code:hover span { color: var(--ink); }
+.cx-btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.panel .note b { color: var(--ink); }
+@media (max-width: 640px) { .promo { flex-direction: column; align-items: stretch; } .promo-act { justify-content: space-between; } }
+.promo .cx-btn, .about-cta .cx-btn { display: inline-flex; }
