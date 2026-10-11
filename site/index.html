@@ -2,64 +2,74 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Pro Map 公司地圖</title>
   <meta name="description" content="非官方的讀者索引：把曼報 Pro 談過的公司、創辦人與文章、Podcast 整理成一張可互動的產業地圖。">
+  <meta property="og:title" content="Pro Map：曼報談過的公司，一張圖找齊">
+  <meta property="og:description" content="點一家公司，看它的產品、創辦人、關係，以及曼報 Pro 談到它的每一篇文章與 Podcast。非官方讀者索引。">
+  <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161615" media="(prefers-color-scheme: dark)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;1,500;1,600&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%237cc6e4'/%3E%3Cstop offset='1' stop-color='%23ee6a55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cellipse cx='16' cy='14' rx='14' ry='10' fill='url(%23g)'/%3E%3Cpath d='M9 21l-2 8 8-6z' fill='%237cc6e4'/%3E%3C/svg%3E">
+  <script>try { const t = localStorage.getItem('pm-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%237cc6e4'/%3E%3Cstop offset='1' stop-color='%23ee6a55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3Ccircle cx='11' cy='13' r='5' fill='%23fff' fill-opacity='.85'/%3E%3Ccircle cx='20' cy='19' r='3.5' fill='%23fff' fill-opacity='.7'/%3E%3C/svg%3E">
 </head>
 <body>
+  <a class="skip" href="#/list">跳到清單檢視</a>
   <header class="top">
-    <div class="brand">
-      <a href="#/" class="wordmark"><span class="b1">Pro</span> <span class="b2">Map</span></a>
-      <span class="tag">曼報讀者的公司地圖 · 非官方</span>
-    </div>
+    <a href="#/" class="wordmark" aria-label="Pro Map 首頁"><span class="b1">Pro</span><span class="b2">Map</span></a>
     <div class="search">
-      <input id="q" type="search" placeholder="搜尋公司、人物、文章…（按 / 聚焦）" autocomplete="off" aria-label="搜尋">
-      <div id="results" class="results" hidden></div>
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="search" placeholder="搜尋公司、人物、文章" autocomplete="off" aria-label="搜尋公司、人物、文章" aria-controls="results">
+      <kbd>/</kbd>
+      <div id="results" class="results" role="listbox" hidden></div>
     </div>
-    <nav class="tabs" role="tablist">
-      <button data-view="map" class="on">產業地圖</button>
+    <nav class="tabs" aria-label="檢視">
+      <button data-view="map" class="on">地圖</button>
+      <button data-view="list">清單</button>
       <button data-view="people">人物</button>
       <button data-view="about">關於</button>
     </nav>
+    <button id="theme" class="iconbtn" type="button" aria-label="切換亮暗模式"></button>
   </header>
 
-  <section class="hero">
-    <div class="bubble blue"><span>Who built it</span></div>
-    <div class="hero-text">
-      <h1>曼報談過的公司，一張圖找齊。</h1>
-      <p id="stats"></p>
-      <div class="filters" id="filters"></div>
-    </div>
-    <div class="bubble red"><span>Where to read</span></div>
-  </section>
-
   <main>
-    <div id="view-map" class="view"><div id="map" class="map"></div></div>
-    <div id="view-people" class="view" hidden><div id="people" class="people"></div></div>
-    <div id="view-about" class="view about" hidden>
-      <h2>關於這張地圖</h2>
-      <p>這是讀者自行整理的<strong>非官方索引</strong>，與曼報（Manny Li）無隸屬關係。地圖只記錄「哪篇文章、哪一集談到哪家公司」，加上依公開資料撰寫的公司簡介；文章與節目內容的著作權屬於原作者，請到曼報 Pro 訂閱閱讀。</p>
-      <ul>
-        <li><strong>連結以曼報 Pro 為主</strong>：Pro 文章與 Pro Podcast 優先列出，免費電子報與公開 Podcast 作為補充。</li>
-        <li><strong>公司簡介</strong>：依官網、維基百科、財報等公開資料撰寫，不轉述曼報的分析。</li>
-        <li><strong>閱讀進度</strong>：勾選「已讀」只存在你這台裝置的瀏覽器裡，不會上傳。</li>
-      </ul>
-      <p>發現錯漏？歡迎到 <a id="repo-link" href="https://github.com/aiwlulu/manny-pro-map">GitHub</a> 開 issue 或送 PR，每家公司是一個 YAML 檔，格式說明見 CONTRIBUTING.md。</p>
-      <p class="muted">程式碼以 MIT 授權；社群撰寫的資料以 CC BY 4.0 授權。</p>
-    </div>
+    <section id="view-map" class="view stage" aria-label="產業氣泡地圖">
+      <div id="bubble" class="bm"></div>
+      <div class="card" id="card">
+        <p class="eyebrow">曼報讀者的公司地圖<span>Unofficial</span></p>
+        <h1><span class="num" id="n-co">0</span> 家公司，<br>一張圖找齊。</h1>
+        <p class="lede">曼報 Pro 談過的公司依產業排成氣泡。<span class="hint-wide">滾輪縮放、拖曳移動，</span>點一顆氣泡，看它的創辦人、關係與每一篇文章。</p>
+        <dl class="kpis" id="kpis"></dl>
+        <div class="filters" id="filters" role="group" aria-label="來源篩選"></div>
+      </div>
+      <div class="legend" aria-hidden="true">
+        <span><i class="lg-size"></i>氣泡大小＝曼報 Pro 篇數</span>
+        <span><i class="lg-done"></i>已讀完</span>
+      </div>
+    </section>
+    <section id="view-list" class="view page" hidden><div id="list" class="map"></div></section>
+    <section id="view-people" class="view page" hidden><div id="people" class="people"></div></section>
+    <section id="view-about" class="view page about" hidden>
+      <p class="eyebrow">About</p>
+      <h2>一張給讀者自己用的索引</h2>
+      <p>這是讀者自行整理的<strong>非官方索引</strong>，與曼報（Manny Li）無隸屬關係。地圖只記錄「哪篇文章、哪一集談到哪家公司」，加上依公開資料撰寫的公司簡介；文章與節目內容的著作權屬於原作者，請到<a href="https://pro.manny-li.com/" target="_blank" rel="noopener">曼報 Pro</a> 訂閱閱讀。</p>
+      <div class="about-grid">
+        <div><h3>連結以 Pro 為主</h3><p>Pro 文章與 Pro Podcast 優先，公開的曼報 Podcast 作為補充。</p></div>
+        <div><h3>簡介來自公開資料</h3><p>依官網、維基百科、Wikidata 撰寫，不轉述曼報的分析。</p></div>
+        <div><h3>進度只存在你這裡</h3><p>勾選的已讀紀錄存在這台裝置的瀏覽器，不會上傳。</p></div>
+        <div><h3>圖片附授權</h3><p>Logo 與人物照片只用 Wikimedia Commons 的自由授權圖片，並標示作者與授權。</p></div>
+      </div>
+      <p>發現錯漏？歡迎到 <a href="https://github.com/aiwlulu/manny-pro-map" target="_blank" rel="noopener">GitHub</a> 開 issue 或送 PR，每家公司是一個 YAML 檔，格式說明見 CONTRIBUTING.md。</p>
+      <p class="muted small">程式碼 MIT · 社群資料 CC BY 4.0 · 圖示 Lucide（ISC）· 資料更新於 <span id="built"></span></p>
+    </section>
   </main>
 
   <aside id="panel" class="panel" hidden aria-live="polite"></aside>
   <div id="scrim" class="scrim" hidden></div>
-
-  <footer class="foot">
-    非官方讀者專案 · 內容著作權屬曼報 · 資料更新於 <span id="built"></span>
-  </footer>
   <script src="app.js" type="module"></script>
 </body>
 </html>

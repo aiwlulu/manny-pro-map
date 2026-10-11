@@ -54,7 +54,7 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
 
 ```yaml
 - id: pro:<網址最後一段的短 id>
-  kind: pro            # pro | pro-podcast | newsletter | podcast
+  kind: pro            # pro | pro-podcast | podcast
   column: 科技曼讀
   title: 支付巨頭 Stripe 為什麼花 80 億美元買一家 AI 模型路由公司？
   date: 2026-08-23
