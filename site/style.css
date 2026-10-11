@@ -823,3 +823,18 @@ span.ph.has-img:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg,
 @keyframes avpulse { from { opacity: .55; } to { opacity: 1; } }
 .tile .tl:has(img:not(.ok):not(.bad)) { background: var(--pale); }
 .feat h3 small { font-size: 12px; letter-spacing: 0; font-weight: 400; margin-left: 4px; }
+@media (min-width: 900px) {
+  .people-bar { flex-wrap: wrap; }
+  .people-bar .pf { flex: 1 1 100%; flex-wrap: wrap; }
+  .pq { flex: 0 0 280px; }
+  .az { flex: 1; justify-content: flex-end; }
+}
+@media (max-width: 899px) { .feat h3 small { display: none; } }
+/* Inline links in prose */
+:root { --link: #2f6fd0; }
+:root[data-theme="dark"] { --link: #8fb4ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --link: #8fb4ff; } }
+.about p a, .panel .note a, .cx-note a { color: var(--link); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--link) 40%, transparent); text-underline-offset: 3px; transition: text-decoration-color .2s; }
+.about p a:hover, .panel .note a:hover { text-decoration-color: currentColor; }
+.letter.flat h3 { font: 600 14px var(--sans); color: var(--muted); letter-spacing: .04em; }
+.about p a { white-space: nowrap; }

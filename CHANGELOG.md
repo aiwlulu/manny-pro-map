@@ -6,6 +6,17 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.6.0] - 2026-10-11
+
+### 新增
+- 依欄目篩選：全部、商業解碼、科技曼讀、巨人之聲、曼報俱樂部、Pro Podcast、曼報 Podcast；產業地圖、氣泡圖與人物頁共用，並記住上次的選擇
+
+### 改善
+- 人物頁移除「有照片」篩選；「跨多家公司」改為可與欄目併用的開關
+- 篩選結果在 24 人以內時改為單一網格，不再拆成很多字母段
+- 桌機人物頁工具列改為兩行，搜尋框不再被擠壓
+- 內文超連結改用藍色並加底線；「請到 曼報 Pro」補上空格
+
 ## [1.5.1] - 2026-10-11
 
 ### 修正
@@ -93,6 +104,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.6.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.5.1...v1.6.0
 [1.5.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.4.1...v1.5.0
 [1.4.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.4.0...v1.4.1

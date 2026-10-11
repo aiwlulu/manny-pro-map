@@ -37,8 +37,18 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
 };
 const read = new Set(store.get('pm-read', []));
-const kinds = new Set(store.get('pm-kinds', KIND_ORDER).filter((k) => KIND[k]));
-if (!kinds.size) KIND_ORDER.forEach((k) => kinds.add(k));
+// Content filter: one Pro column, or a podcast feed
+const COLS = [
+  { id: 'all', label: '全部' },
+  { id: '商業解碼', label: '商業解碼', test: (s) => s.column === '商業解碼' },
+  { id: '科技曼讀', label: '科技曼讀', test: (s) => s.column === '科技曼讀' },
+  { id: '巨人之聲', label: '巨人之聲', test: (s) => s.column === '巨人之聲' },
+  { id: '曼報俱樂部', label: '曼報俱樂部', test: (s) => s.column === '曼報俱樂部' },
+  { id: 'pro-podcast', label: 'Pro Podcast', test: (s) => s.kind === 'pro-podcast' },
+  { id: 'podcast', label: '曼報 Podcast', test: (s) => s.kind === 'podcast' },
+];
+let col = COLS.some((x) => x.id === store.get('pm-col', 'all')) ? store.get('pm-col', 'all') : 'all';
+const colTest = () => COLS.find((x) => x.id === col)?.test;
 let onlyUnread = false;
 
 // Images fade in once decoded; broken ones disappear instead of showing an icon
@@ -93,7 +103,8 @@ for (const c of cos.values())
 
 const keySrc = (c) => (c.proN ? c.src.filter((s) => PRO_KINDS.has(s.kind)) : c.src);
 const isDone = (c) => { const k = keySrc(c); return k.length > 0 && k.every((s) => read.has(s.id)); };
-const visible = (c) => c.src.some((s) => kinds.has(s.kind)) && !(onlyUnread && isDone(c));
+const inCol = (c, id = col) => { const t = COLS.find((x) => x.id === id)?.test; return !t || c.src.some(t); };
+const visible = (c) => inCol(c) && !(onlyUnread && isDone(c));
 const weight = (c) => 1 + c.proN * 2.2 + (c.src.length - c.proN) * 0.6;
 const countBy = (c) => KIND_ORDER.map((k) => [k, c.src.filter((s) => s.kind === k).length]).filter(([, n]) => n);
 const initials = (name) => { const w = name.replace(/[^\p{L}\p{N}& ]/gu, ' ').split(/\s+/).filter(Boolean); return (w.length > 1 && !/^\p{Script=Han}/u.test(w[0]) ? w[0][0] + w[1][0] : [...(w[0] ?? '?')].slice(0, 2).join('')).toUpperCase(); };
@@ -149,24 +160,30 @@ function renderStats() {
   $('#built').textContent = data.builtAt;
   if (data.version) $('#ver').lastChild.textContent = `v${data.version} 更新紀錄`;
 }
-const PRESENT = KIND_ORDER.filter((k) => data.sources.some((s) => s.kind === k));
+const COLS_SHOWN = COLS.filter((x) => !x.test || data.sources.some(x.test));
+const colChips = (count) => COLS_SHOWN.map((x) => `<button class="chipbtn ${col === x.id ? 'on' : ''}" data-col="${x.id}" aria-pressed="${col === x.id}">${x.label}${count ? `<span>${count(x.id)}</span>` : ''}</button>`).join('');
 function renderFilters() {
-  $('#filters').innerHTML = PRESENT.map((k) => `<button class="chipbtn ${kinds.has(k) ? 'on' : ''}" data-k="${k}" aria-pressed="${kinds.has(k)}"><span class="dot ${k}"></span>${KIND[k].label}</button>`).join('')
+  $('#filters').innerHTML = colChips((id) => [...cos.values()].filter((c) => inCol(c, id)).length)
     + `<button class="chipbtn ghost ${onlyUnread ? 'on' : ''}" data-k="unread" aria-pressed="${onlyUnread}">只看未讀</button>`;
 }
-$('#filters').onclick = (e) => {
-  const k = e.target.closest('button')?.dataset.k;
-  if (!k) return;
-  if (k === 'unread') onlyUnread = !onlyUnread;
-  else { kinds.has(k) ? kinds.delete(k) : kinds.add(k); if (!kinds.size) kinds.add(k); store.set('pm-kinds', [...kinds]); }
+function setCol(id) {
+  col = id; store.set('pm-col', id);
   renderFilters(); renderViews();
+  if (curView === 'people') renderPeople();
+}
+$('#filters').onclick = (e) => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  if (b.dataset.col) return setCol(b.dataset.col);
+  if (b.dataset.k === 'unread') { onlyUnread = !onlyUnread; renderFilters(); renderViews(); }
 };
 
 /* ---------- People ---------- */
 const roleLine = (p, max = 3) => p.roles.slice(0, max).map((r) => `${esc(r.c.name)}${r.role ? ` ${esc(r.role)}` : ''}`).join('　·　') + (p.roles.length > max ? `　+${p.roles.length - max}` : '');
-let pplFilter = 'all', pplQuery = '';
+let pplMulti = false, pplQuery = '';
 const isIv = (p) => p.roles.some((r) => r.interviewed);
-const pplMatch = (p, f) => f === 'all' || (f === 'iv' ? isIv(p) : f === 'multi' ? p.roles.length > 1 : !!p.photo?.file);
+// 巨人之聲 lists the people that column featured; other columns follow the person's companies
+const pplMatch = (p, id = col) => (id === 'all' ? true : id === '巨人之聲' ? isIv(p) : p.roles.some((r) => inCol(r.c, id)));
 const roleChips = (p, max = 3) => p.roles.slice(0, max).map((r) => `<span class="rc">${avatar(r.c, 'xs')}<b>${esc(r.c.name)}</b>${r.role ? `<i>${esc(r.role)}</i>` : ''}</span>`).join('') + (p.roles.length > max ? `<span class="rc more">+${p.roles.length - max}</span>` : '');
 function personCard(p) {
   return `<a class="pcard${isIv(p) ? ' iv' : ''}" href="#/p/${p.id}">${face(p, 'pc-ph')}
@@ -176,30 +193,37 @@ function personCard(p) {
 function renderPeople() {
   const all = [...people.values()].sort((a, b) => a.name.localeCompare(b.name, 'en'));
   const nq = norm(pplQuery);
-  const list = all.filter((p) => pplMatch(p, pplFilter) && (!nq || norm(`${p.name} ${p.zh} ${p.roles.map((r) => r.c.name).join(' ')}`).includes(nq)));
+  const list = all.filter((p) => pplMatch(p) && (!pplMulti || p.roles.length > 1) && (!nq || norm(`${p.name} ${p.zh} ${p.roles.map((r) => r.c.name).join(' ')}`).includes(nq)));
   const groups = new Map();
   for (const p of list) { const L = /[a-z]/i.test(p.name[0]) ? p.name[0].toUpperCase() : '#'; (groups.get(L) ?? groups.set(L, []).get(L)).push(p); }
-  const tabs = [['all', '全部'], ['iv', '巨人之聲'], ['multi', '跨多家公司'], ['photo', '有照片']];
   const bar = $('#people-bar');
   if (!bar.dataset.ready) {
     bar.dataset.ready = 1;
     bar.innerHTML = `<div class="pf"></div><label class="pq">${icon('search')}<input type="search" placeholder="過濾人名或公司" aria-label="過濾人名或公司"></label><nav class="az" aria-label="依字母跳轉"></nav>`;
     bar.querySelector('input').addEventListener('input', (e) => { pplQuery = e.target.value; renderPeople(); });
   }
-  bar.querySelector('.pf').innerHTML = tabs.map(([k, l]) => `<button class="chipbtn ${pplFilter === k ? 'on' : ''}" data-pf="${k}">${l}<span>${all.filter((p) => pplMatch(p, k)).length}</span></button>`).join('');
+  bar.querySelector('.pf').innerHTML = colChips((id) => all.filter((p) => pplMatch(p, id)).length)
+    + `<button class="chipbtn ghost ${pplMulti ? 'on' : ''}" data-multi aria-pressed="${pplMulti}">跨多家公司<span>${all.filter((p) => p.roles.length > 1).length}</span></button>`;
   bar.querySelector('.az').innerHTML = [...groups.keys()].map((L) => `<a href="#L-${L}" data-l="${L}">${L}</a>`).join('');
-  const featured = pplFilter === 'all' && !nq ? all.filter(isIv).sort((a, b) => !!b.photo - !!a.photo) : [];
+  const featured = col === 'all' && !pplMulti && !nq ? all.filter(isIv).sort((a, b) => !!b.photo - !!a.photo) : [];
   $('#people-head').innerHTML = `<p class="eyebrow">People</p><h2>創辦人與關鍵人物</h2>
     <p class="lede">曼報談過的 ${all.length} 位執行長、創辦人與關鍵人物。點一個人，看他在哪些公司、擔任什麼角色。</p>
     ${featured.length ? `<section class="feat"><h3>${icon('file')}巨人之聲<span>${featured.length}</span><small>Pro「巨人之聲」專欄整理過訪談或演講的人物</small></h3><div class="feat-row">${featured.map((p) =>
       `<a class="fcard" href="#/p/${p.id}">${face(p, 'f-ph')}<b>${esc(p.name)}</b><span>${esc(p.roles[0].c.name)}${p.roles[0].role ? ` · ${esc(p.roles[0].role)}` : ''}</span></a>`).join('')}</div></section>` : ''}`;
+  // Short results read better as one grid than as many one-card letter sections
+  if (list.length && list.length <= 24) {
+    bar.querySelector('.az').innerHTML = '';
+    $('#people').innerHTML = `<section class="letter flat"><h3>${list.length} 位人物</h3><div class="pgrid">${list.map(personCard).join('')}</div></section>`;
+    return;
+  }
   $('#people').innerHTML = [...groups].map(([L, ps]) => `<section class="letter" id="L-${L}"><h3>${L}<span>${ps.length}</span></h3><div class="pgrid">${ps.map(personCard).join('')}</div></section>`).join('')
     || `<p class="empty">${icon('user', 'lg')}<br>沒有符合的人物</p>`;
 }
 
 $('#people-bar').addEventListener('click', (e) => {
-  const f = e.target.closest('[data-pf]')?.dataset.pf;
-  if (f) { pplFilter = f; renderPeople(); return; }
+  const cb = e.target.closest('[data-col]');
+  if (cb) return setCol(cb.dataset.col);
+  if (e.target.closest('[data-multi]')) { pplMulti = !pplMulti; renderPeople(); return; }
   const L = e.target.closest('.az a')?.dataset.l;
   if (!L) return;
   e.preventDefault();
