@@ -15,8 +15,13 @@ people:
   - { name: Chris Malachowsky, role: 創辦人, photo: { file: "Chris Malachowsky (54986972670).jpg", license: CC BY 4.0, author: Maryland GovPics } }
   - { name: Curtis Priem, role: 創辦人 }
 relations:
+  - { type: supplier, target: openai, note: GPU }
+  - { type: supplier, target: microsoft, note: GPU }
+  - { type: supplier, target: coreweave, note: GPU }
+  - { type: supplier, target: aws, note: GPU }
+  - { type: supplier, target: meta, note: GPU }
+  - { type: supplier, target: nintendo, note: 遊戲機晶片 }
   - { type: competitor, target: amd }
-  - { type: supplier, target: openai }
   - { type: customer, target: tsmc }
 sources:
   - "pro:dwcrddrmu86k"

@@ -15,6 +15,11 @@ people:
   - { name: Peter Thiel, role: 創辦人, photo: { file: Peter Thiel by Gage Skidmore.jpg, license: CC BY-SA 3.0, author: Gage Skidmore } }
   - { name: Yu Pan, role: 創辦人 }
   - { name: Elon Musk, role: 創辦人, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
+relations:
+  - { type: supplier, target: ebay, note: 支付服務 }
+  - { type: supplier, target: shopify, note: 支付服務 }
+  - { type: supplier, target: uber, note: 支付服務 }
+  - { type: supplier, target: airbnb, note: 支付服務 }
 sources:
   - "pro:wvdcaes6auhw"
   - "pro:qnjkum4j8g4u"

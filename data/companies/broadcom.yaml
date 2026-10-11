@@ -9,5 +9,8 @@ links:
   website: "https://www.broadcom.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Broadcom"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/博通有限"
+relations:
+  - { type: supplier, target: apple, note: 無線通訊晶片 }
+  - { type: supplier, target: google, note: 客製AI晶片 }
 sources:
   - "pro:dwcrddrmu86k"

@@ -31,12 +31,37 @@ export function createLandscape(root, { industries, logo, onHover }) {
         }).join('');
         return `<div class="cell s-${st.id}${html ? "" : " empty"}"><span class="stage-tag">${st.name}</span>${html}</div>`;
       }).join('');
-      return `<section class="lane" style="--c1:${ind.c1};--c2:${ind.c2};--n:${n}" aria-label="${esc(ind.name)}">
+      return `<section class="lane" id="lane-${ind.id}" data-lane="${ind.id}" style="--c1:${ind.c1};--c2:${ind.c2};--n:${n}" aria-label="${esc(ind.name)}">
         <header class="lane-name"><b>${esc(ind.name)}</b><i>${esc(ind.en)}</i><span>${list.length} 家</span></header>${cells}</section>`;
     }).join('');
-    root.innerHTML = `<div class="chain-cols" aria-hidden="true"><span></span>${STAGES.map((s) => `<span class="col-${s.id}"><b>${s.name}</b><i>${s.en}</i></span>`).join('')}</div>
+    const shown = industries.filter((ind) => (byInd.get(ind.id) ?? []).length);
+    root.innerHTML = `<nav class="jump" aria-label="跳到產業">${shown.map((ind) => `<a href="#lane-${ind.id}" data-lane="${ind.id}" style="--c1:${ind.c1}"><i></i>${esc(ind.name)}<span>${byInd.get(ind.id).length}</span></a>`).join('')}</nav>
+      <div class="chain-cols" aria-hidden="true"><span></span>${STAGES.map((s) => `<span class="col-${s.id}"><b>${s.name}</b><i>${s.en}</i></span>`).join('')}</div>
       <div class="lanes">${lanes || '<p class="empty">目前的篩選條件下沒有公司</p>'}</div>`;
     apply();
+    watchLanes();
+  }
+
+  // Quick nav: smooth jump without touching the hash router, and mark the lane in view
+  root.addEventListener('click', (e) => {
+    const a = e.target.closest('.jump a');
+    if (!a) return;
+    e.preventDefault();
+    const lane = root.querySelector(`#lane-${CSS.escape(a.dataset.lane)}`);
+    const off = (document.querySelector('.top')?.offsetHeight ?? 60) + (root.querySelector('.jump')?.offsetHeight ?? 0) + 12;
+    scrollTo({ top: lane.getBoundingClientRect().top + scrollY - off, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  });
+  let io = null;
+  function watchLanes() {
+    io?.disconnect();
+    io = new IntersectionObserver((es) => {
+      for (const e of es) if (e.isIntersecting) {
+        const id = e.target.dataset.lane;
+        for (const a of root.querySelectorAll('.jump a')) a.classList.toggle('on', a.dataset.lane === id);
+        root.querySelector(`.jump a[data-lane="${CSS.escape(id)}"]`)?.scrollIntoView({ inline: 'center', block: 'nearest' });
+      }
+    }, { rootMargin: '-35% 0px -60% 0px' });
+    for (const l of root.querySelectorAll('.lane')) io.observe(l);
   }
 
   function apply() {
@@ -64,13 +89,13 @@ export function createLandscape(root, { industries, logo, onHover }) {
   });
 
   let pending = null;
-  function scrollTo(smooth) {
+  function recenter(smooth) {
     if (!pending || performance.now() > pending.until) return (pending = null);
     const el = root.querySelector(`.tile[data-id="${CSS.escape(pending.id)}"]`);
     const calm = !smooth || matchMedia('(prefers-reduced-motion: reduce)').matches;
     el?.scrollIntoView({ block: 'center', behavior: calm ? 'auto' : 'smooth' });
   }
-  new ResizeObserver(() => scrollTo(false)).observe(root);
+  new ResizeObserver(() => recenter(false)).observe(root);
   addEventListener('wheel', () => (pending = null), { passive: true });
   addEventListener('touchmove', () => (pending = null), { passive: true });
 
@@ -81,7 +106,7 @@ export function createLandscape(root, { industries, logo, onHover }) {
     reveal(id) {
       // Lanes reflow when the panel opens or logos load; keep re-centering until layout settles
       pending = { id, until: performance.now() + 1200 };
-      requestAnimationFrame(() => scrollTo(true));
+      requestAnimationFrame(() => recenter(true));
     },
   };
 }

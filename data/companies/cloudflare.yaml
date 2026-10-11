@@ -13,6 +13,11 @@ people:
   - { name: Matthew Prince, role: 執行長, interviewed: true, photo: { file: 577181505RR106 TechCrunch D.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Lee Holloway, role: 創辦人 }
   - { name: Michelle Zatlyn, role: 創辦人, photo: { file: "Collision 2019 - Toronto - ENX 9646 (47894937341).jpg", license: CC BY 2.0, author: "Collision Conf from New Orleans, Louisiana, USA" } }
+relations:
+  - { type: supplier, target: discord, note: 網路資安 }
+  - { type: supplier, target: openai, note: 網路資安 }
+  - { type: supplier, target: shopify, note: 內容傳遞網路 }
+  - { type: supplier, target: canva, note: 內容傳遞網路 }
 sources:
   - "pro:52gjqz2bbj2p"
   - "pro:sfddnjkgm59b"

@@ -9,5 +9,11 @@ links:
   website: "https://sportradar.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Sportradar"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Sportradar"
+relations:
+  - { type: supplier, target: draftkings, note: 運動數據 }
+  - { type: supplier, target: fanduel, note: 運動數據 }
+  - { type: supplier, target: betmgm, note: 運動數據 }
+  - { type: supplier, target: bet365, note: 運動數據 }
+  - { type: supplier, target: entain, note: 運動數據 }
 sources:
   - "pro:zma3sf389tbr"

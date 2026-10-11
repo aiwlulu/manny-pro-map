@@ -14,5 +14,9 @@ people:
   - { name: Corinne Vigreux, role: 創辦人, photo: { file: "TNW Conference 2015 - Day 3 (17251820732) (cropped).jpg", license: CC BY-SA 2.0, author: "Julia de Boer / The Next Web" } }
   - { name: Peter-Frans Pauwels, role: 創辦人 }
   - { name: Pieter Geelen, role: 創辦人 }
+relations:
+  - { type: supplier, target: apple, note: 地圖數據 }
+  - { type: supplier, target: microsoft, note: 地圖數據 }
+  - { type: supplier, target: uber, note: 地圖數據 }
 sources:
   - "podcast:2023-02-07-ep34"

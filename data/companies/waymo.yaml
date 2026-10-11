@@ -12,6 +12,8 @@ links:
 people:
   - { name: Sebastian Thrun, role: 創辦人, photo: { file: Sebastian Thrun at IAA 2019 IMG 0893.jpg, license: CC BY-SA 4.0, author: Alexander Migl } }
   - { name: Anthony Levandowski, role: 創辦人, photo: { file: Anthony Levandowski Headshot.jpg, license: CC BY-SA 4.0, author: Kaxelrod } }
+relations:
+  - { type: supplier, target: uber, note: 自駕載客服務 }
 sources:
   - "pro:ufwby4nxpxtv"
   - "podcast:2025-02-10-ep92"

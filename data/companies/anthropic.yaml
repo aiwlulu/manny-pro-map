@@ -14,6 +14,13 @@ people:
   - { name: Daniela Amodei, role: 創辦人 }
   - { name: Chris Olah, role: 創辦人 }
   - { name: Jared Kaplan, role: 創辦人, photo: { file: "Jared Kaplan (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
+relations:
+  - { type: supplier, target: amazon, note: AI模型 }
+  - { type: supplier, target: google, note: AI模型 }
+  - { type: supplier, target: microsoft, note: AI模型 }
+  - { type: supplier, target: anysphere, note: AI模型 }
+  - { type: supplier, target: perplexity, note: AI模型 }
+  - { type: supplier, target: openrouter, note: AI模型 }
 sources:
   - "propod:cmuti5uau06di01v1f935gjyi"
   - "pro:dwcrddrmu86k"

@@ -13,6 +13,12 @@ people:
   - { name: John Collison, role: 共同創辦人, photo: { file: "Sportsfile (Web Summit) (15088695584).jpg", license: CC BY 2.0, author: Web Summit } }
   - { name: Patrick Collison, role: 創辦人, photo: { file: Patrick Collison.jpg, license: CC BY 2.0, author: JD Lasica } }
 relations:
+  - { type: supplier, target: shopify, note: 支付處理 }
+  - { type: supplier, target: amazon, note: 支付處理 }
+  - { type: supplier, target: substack, note: 支付處理 }
+  - { type: supplier, target: openai, note: 支付處理 }
+  - { type: supplier, target: airbnb, note: 支付處理 }
+  - { type: supplier, target: patreon, note: 支付處理 }
   - { type: competitor, target: paypal }
   - { type: competitor, target: block }
 sources:

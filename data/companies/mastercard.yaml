@@ -10,6 +10,11 @@ links:
   website: "https://www.mastercard.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Mastercard"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/万事达卡"
+relations:
+  - { type: supplier, target: stripe, note: 卡組織網路 }
+  - { type: supplier, target: paypal, note: 卡組織網路 }
+  - { type: supplier, target: block, note: 卡組織網路 }
+  - { type: supplier, target: klarna, note: 卡組織網路 }
 sources:
   - "pro:k8w9aqudktnu"
   - "pro:yb9cs6kekxas"

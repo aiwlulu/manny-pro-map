@@ -13,6 +13,9 @@ people:
   - { name: Jay Flatley }
   - { name: Francis deSouza, role: 執行長, photo: { file: Francis deSouza.jpg, license: CC BY-SA 4.0, author: CDBeckwith } }
   - { name: Jacob Thaysen, role: 執行長 }
+relations:
+  - { type: supplier, target: natera, note: 基因定序設備 }
+  - { type: supplier, target: 23andme, note: 基因分型晶片 }
 sources:
   - "podcast:2024-09-26-ep82"
   - "podcast:2024-04-29-ep67"

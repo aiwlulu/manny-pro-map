@@ -8,6 +8,10 @@ links:
   website: "https://www.coreweave.com/"
   wikipedia: "https://en.wikipedia.org/wiki/CoreWeave"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/CoreWeave"
+relations:
+  - { type: supplier, target: openai, note: 雲端算力 }
+  - { type: supplier, target: microsoft, note: 雲端算力 }
+  - { type: supplier, target: nvidia, note: 雲端算力 }
 sources:
   - "propod:cmtum2ac1123m01w6ehj8b2tu"
   - "pro:dzcqdpceapkv"

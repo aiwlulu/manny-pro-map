@@ -12,6 +12,12 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/台積電"
 people:
   - { name: Morris Chang, role: 創辦人, photo: { file: Morris Chang 2021APEC.jpg, license: CC BY 2.0, author: 總統府 } }
+relations:
+  - { type: supplier, target: nvidia, note: 晶圓代工 }
+  - { type: supplier, target: apple, note: 晶圓代工 }
+  - { type: supplier, target: amd, note: 晶圓代工 }
+  - { type: supplier, target: qualcomm, note: 晶圓代工 }
+  - { type: supplier, target: broadcom, note: 晶圓代工 }
 sources:
   - "pro:3ss5znuzunbe"
   - "podcast:2025-11-06-sp9"

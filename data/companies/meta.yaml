@@ -17,6 +17,8 @@ people:
   - { name: Andrew McCollum, role: 創辦人 }
   - { name: Sheryl Sandberg, role: 創辦人, photo: { file: Sheryl Sandberg Moet Hennessy Financial Times Club Dinner 2011.jpg, license: CC BY 2.0, author: Financial Times } }
   - { name: Michael Abrash, role: 首席科學家, photo: { file: Michael Abrash at Facebook's F8 2015.jpg, license: CC BY 2.0, author: Maurizio Pesce } }
+relations:
+  - { type: supplier, target: coursera, note: 課程內容 }
 sources:
   - "pro:kudnr9rb2r56"
   - "pro:x29tt82u4h4q"

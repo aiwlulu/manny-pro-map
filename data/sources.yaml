@@ -29,6 +29,12 @@
   title: "Amazon 為什麼要封鎖 Meta Muse？談 AI 代理人發起的電商整合與拆分之爭"
   date: 2026-09-27
   url: https://pro.manny-li.com/posts/why-amazon-blocks-muse-kudnr9rb2r56
+- id: "pro:ta8afrymmmcj"
+  kind: pro
+  column: 商業解碼
+  title: "名利雙收 III：學術聲望與出版量如何兼得？"
+  date: 2026-09-25
+  url: https://pro.manny-li.com/posts/academic-publishing-growth-strategy-ta8afrymmmcj
 - id: "pro:du9cp8u5u3vg"
   kind: pro
   column: 商業解碼
@@ -41,12 +47,6 @@
   title: "名利雙收 II：學術出版業為何越來越集中化？"
   date: 2026-09-25
   url: https://pro.manny-li.com/posts/academic-publishing-g25ebdxu3cu6
-- id: "pro:ta8afrymmmcj"
-  kind: pro
-  column: 商業解碼
-  title: "名利雙收 III：學術聲望與出版量如何兼得？"
-  date: 2026-09-25
-  url: https://pro.manny-li.com/posts/academic-publishing-growth-strategy-ta8afrymmmcj
 - id: "pro:w8n34nnkw3d4"
   kind: pro
   column: 商業解碼
@@ -59,18 +59,18 @@
   title: "售票平台這麼好賺，為什麼還要花重金蓋場館？（Live Nation 總裁 Joe Berchtold）"
   date: 2026-09-18
   url: https://pro.manny-li.com/posts/live-nation-joe-berchtold-y3ajdu6pbwwx
-- id: "propod:cmu2elxeu0g2k01wz36fg1kja"
-  kind: pro-podcast
-  column: 巨人之聲
-  title: "從一支藥到一個平台（Moderna 執行長 Stéphane Bancel）"
-  date: 2026-09-17
-  url: https://pro.manny-li.com/episodes/cmu2elxeu0g2k01wz36fg1kja
 - id: "pro:x29tt82u4h4q"
   kind: pro
   column: 科技曼讀
   title: "AI 的三種速度，以及為什麼監管這麼難"
   date: 2026-09-17
   url: https://pro.manny-li.com/posts/pacing-ai-is-hard-x29tt82u4h4q
+- id: "propod:cmu2elxeu0g2k01wz36fg1kja"
+  kind: pro-podcast
+  column: 巨人之聲
+  title: "從一支藥到一個平台（Moderna 執行長 Stéphane Bancel）"
+  date: 2026-09-17
+  url: https://pro.manny-li.com/episodes/cmu2elxeu0g2k01wz36fg1kja
 - id: "propod:cmtun4x3w008401xv63ot6ae5"
   kind: pro-podcast
   column: 商業解碼
@@ -83,18 +83,18 @@
   title: 2026 年 8 月你問我答
   date: 2026-09-13
   url: https://pro.manny-li.com/posts/ama-august-2026-r9fgagndpvde
-- id: "propod:cmtxjkl5v0cdb01tp0meieabe"
-  kind: pro-podcast
-  column: 科技曼讀
-  title: "Stripe 為什麼花 80 億美元買 OpenRouter？"
-  date: 2026-09-12
-  url: https://pro.manny-li.com/episodes/cmtxjkl5v0cdb01tp0meieabe
 - id: "pro:w8sgypnhcpp9"
   kind: pro
   column: 巨人之聲
   title: "實體書店還沒死，甚至能活得更好（Barnes & Noble 執行長 James Daunt）"
   date: 2026-09-12
   url: https://pro.manny-li.com/posts/james-daunt-barnes-and-noble-w8sgypnhcpp9
+- id: "propod:cmtxjkl5v0cdb01tp0meieabe"
+  kind: pro-podcast
+  column: 科技曼讀
+  title: "Stripe 為什麼花 80 億美元買 OpenRouter？"
+  date: 2026-09-12
+  url: https://pro.manny-li.com/episodes/cmtxjkl5v0cdb01tp0meieabe
 - id: "propod:cmtum2ac1123m01w6ehj8b2tu"
   kind: pro-podcast
   column: 巨人之聲
@@ -119,24 +119,24 @@
   title: "Claudeforce：當頂尖 AI 遇上頂尖 CRM"
   date: 2026-09-02
   url: https://pro.manny-li.com/episodes/cmtj74mw500lp01y46usd2blj
-- id: "pro:m2yjx2xzuqcu"
-  kind: pro
-  column: 商業解碼
-  title: "因貨得福 I：把別人的失算做成生意"
-  date: 2026-08-29
-  url: https://pro.manny-li.com/posts/tjx-business-model-m2yjx2xzuqcu
-- id: "pro:bpvzaq5abb4y"
-  kind: pro
-  column: 商業解碼
-  title: "因貨得福 III：TJX 為什麼能越贏越多？"
-  date: 2026-08-29
-  url: https://pro.manny-li.com/posts/tjx-ross-burlington-bpvzaq5abb4y
 - id: "pro:wzwbvczbu6tb"
   kind: pro
   column: 商業解碼
   title: "因貨得福 II：TJX 領先同業的獨家配方"
   date: 2026-08-29
   url: https://pro.manny-li.com/posts/tjx-buying-organization-wzwbvczbu6tb
+- id: "pro:bpvzaq5abb4y"
+  kind: pro
+  column: 商業解碼
+  title: "因貨得福 III：TJX 為什麼能越贏越多？"
+  date: 2026-08-29
+  url: https://pro.manny-li.com/posts/tjx-ross-burlington-bpvzaq5abb4y
+- id: "pro:m2yjx2xzuqcu"
+  kind: pro
+  column: 商業解碼
+  title: "因貨得福 I：把別人的失算做成生意"
+  date: 2026-08-29
+  url: https://pro.manny-li.com/posts/tjx-business-model-m2yjx2xzuqcu
 - id: "pro:grs9prj89rgd"
   kind: pro
   column: 商業解碼
@@ -197,42 +197,42 @@
   title: "Airtable 折價八成出售：SaaS 獨角獸如何被重新定價"
   date: 2026-08-06
   url: https://pro.manny-li.com/posts/airtable-acquisitions-j3kbjjzwdjzd
-- id: "pro:yb9cs6kekxas"
-  kind: pro
-  column: 商業解碼
-  title: "過路財神 I：不扛風險的過路財神"
-  date: 2026-07-31
-  url: https://pro.manny-li.com/posts/visa-business-model-yb9cs6kekxas
 - id: "pro:zvsevsgssyap"
   kind: pro
   column: 商業解碼
   title: "過路財神 Ⅴ：如何正確估值一門優異的生意"
   date: 2026-07-31
   url: https://pro.manny-li.com/posts/visa-financial-analysis-zvsevsgssyap
-- id: "pro:hzz5fkvrxg5x"
-  kind: pro
-  column: 商業解碼
-  title: "過路財神 II：不再只是信用卡"
-  date: 2026-07-31
-  url: https://pro.manny-li.com/posts/visa-beyond-cards-hzz5fkvrxg5x
 - id: "pro:rtqwsk3m4mxk"
   kind: pro
   column: 商業解碼
   title: "過路財神 IV：最具破壞力的兩個新趨勢"
   date: 2026-07-31
   url: https://pro.manny-li.com/posts/alternative-payment-rails-rtqwsk3m4mxk
-- id: "pro:wvdcaes6auhw"
-  kind: pro
-  column: 商業解碼
-  title: "過路財神 III：新業者如何分一杯羹？"
-  date: 2026-07-31
-  url: https://pro.manny-li.com/posts/payments-value-capture-wvdcaes6auhw
 - id: "pro:hxdkrud95vd8"
   kind: pro
   column: 巨人之聲
   title: "美國科技業為何押注開放權重 AI 模型？"
   date: 2026-07-31
   url: https://pro.manny-li.com/posts/open-weights-and-american-ai-hxdkrud95vd8
+- id: "pro:yb9cs6kekxas"
+  kind: pro
+  column: 商業解碼
+  title: "過路財神 I：不扛風險的過路財神"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/visa-business-model-yb9cs6kekxas
+- id: "pro:hzz5fkvrxg5x"
+  kind: pro
+  column: 商業解碼
+  title: "過路財神 II：不再只是信用卡"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/visa-beyond-cards-hzz5fkvrxg5x
+- id: "pro:wvdcaes6auhw"
+  kind: pro
+  column: 商業解碼
+  title: "過路財神 III：新業者如何分一杯羹？"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/payments-value-capture-wvdcaes6auhw
 - id: "propod:cms7nzjxu000001022aj05v08"
   kind: pro-podcast
   column: 商業解碼
@@ -269,18 +269,18 @@
   title: "預測市場能從博弈走向金融創新嗎？"
   date: 2026-07-23
   url: https://pro.manny-li.com/posts/prediction-markets-68ezcucry26v
-- id: "pro:rhyvggwtrxqh"
-  kind: pro
-  column: 巨人之聲
-  title: "新體育淘金潮：Hyrox、匹克球、Banana Ball"
-  date: 2026-07-17
-  url: https://pro.manny-li.com/posts/hyrox-ppatour-pickleball-bananaball-rhyvggwtrxqh
 - id: "podcast:2026-07-17-ep131"
   kind: podcast
   column: 曼報 Podcast
   title: "EP131｜收購老公司收到 IPO：Bending Spoons"
   date: 2026-07-17
   url: https://open.firstory.fm/story/cmrodup5h0xxg01w2c6qj5d3s
+- id: "pro:rhyvggwtrxqh"
+  kind: pro
+  column: 巨人之聲
+  title: "新體育淘金潮：Hyrox、匹克球、Banana Ball"
+  date: 2026-07-17
+  url: https://pro.manny-li.com/posts/hyrox-ppatour-pickleball-bananaball-rhyvggwtrxqh
 - id: "pro:wuw9hfu5buhb"
   kind: pro
   column: 科技曼讀
@@ -305,30 +305,30 @@
   title: "EP129｜AI 搜尋（AI Search）的時代開啟了"
   date: 2026-07-02
   url: https://open.firstory.fm/story/cmr1tz2n2012x01vmbr29e26w
-- id: "pro:rm4zgfgjfpc2"
-  kind: pro
-  column: 商業解碼
-  title: "出乎義料 II：重資產的投資其實更賺錢"
-  date: 2026-06-28
-  url: https://pro.manny-li.com/posts/restaurant-chains-business-model-rm4zgfgjfpc2
-- id: "pro:cscagbwsrcnb"
-  kind: pro
-  column: 商業解碼
-  title: "出乎義料 I：橫跨五十年的低價秘訣"
-  date: 2026-06-28
-  url: https://pro.manny-li.com/posts/saizeriya-business-model-cscagbwsrcnb
 - id: "pro:5hk42uvhcs2t"
   kind: pro
   column: 巨人之聲
   title: "AI 開放模型崛起後，誰還握有定價權？"
   date: 2026-06-28
   url: https://pro.manny-li.com/posts/open-source-ai-models-5hk42uvhcs2t
+- id: "pro:rm4zgfgjfpc2"
+  kind: pro
+  column: 商業解碼
+  title: "出乎義料 II：重資產的投資其實更賺錢"
+  date: 2026-06-28
+  url: https://pro.manny-li.com/posts/restaurant-chains-business-model-rm4zgfgjfpc2
 - id: "pro:dq883qwwkcv2"
   kind: pro
   column: 商業解碼
   title: "出乎義料 III：薩莉亞不只是一門「中等」餐飲生意"
   date: 2026-06-28
   url: https://pro.manny-li.com/posts/saizeriya-financial-analysis-dq883qwwkcv2
+- id: "pro:cscagbwsrcnb"
+  kind: pro
+  column: 商業解碼
+  title: "出乎義料 I：橫跨五十年的低價秘訣"
+  date: 2026-06-28
+  url: https://pro.manny-li.com/posts/saizeriya-business-model-cscagbwsrcnb
 - id: "pro:cjww9vu45utm"
   kind: pro
   column: 科技曼讀
@@ -371,12 +371,6 @@
   title: "AI 裁員潮是真的趨勢，還是企業的遮羞布？"
   date: 2026-05-31
   url: https://pro.manny-li.com/posts/ai-layoff-wave-52gjqz2bbj2p
-- id: "pro:cuxbwar4cvth"
-  kind: pro
-  column: 商業解碼
-  title: "一字千金 IV：賺錢與成長兼具的信評巨頭——Moody's Corporation"
-  date: 2026-05-31
-  url: https://pro.manny-li.com/posts/moodys-financial-analysis-cuxbwar4cvth
 - id: "pro:ta8h85jcrrrf"
   kind: pro
   column: 商業解碼
@@ -389,6 +383,12 @@
   title: "一字千金 I：信用評級是一門怎樣的生意？"
   date: 2026-05-31
   url: https://pro.manny-li.com/posts/moodys-investors-service-business-model-y3v4hgf4gbmf
+- id: "pro:cuxbwar4cvth"
+  kind: pro
+  column: 商業解碼
+  title: "一字千金 IV：賺錢與成長兼具的信評巨頭——Moody's Corporation"
+  date: 2026-05-31
+  url: https://pro.manny-li.com/posts/moodys-financial-analysis-cuxbwar4cvth
 - id: "pro:tdzgzbsctptw"
   kind: pro
   column: 巨人之聲
@@ -437,30 +437,30 @@
   title: "DoorDash、Uber、Booking 這些「平台」的時代是否要結束了？"
   date: 2026-04-30
   url: https://pro.manny-li.com/posts/ai-replace-platforms-hez389wzm44g
-- id: "pro:ngsbqxnadchn"
-  kind: pro
-  column: 商業解碼
-  title: "矯正回歸 IV：跌落神壇的估值保衛戰——Align Technology"
-  date: 2026-04-28
-  url: https://pro.manny-li.com/posts/align-financial-analysis-ngsbqxnadchn
-- id: "pro:wyym9cue2crw"
-  kind: pro
-  column: 商業解碼
-  title: "矯正回歸 III：創新者的困境"
-  date: 2026-04-28
-  url: https://pro.manny-li.com/posts/align-category-creator-dilemma-wyym9cue2crw
-- id: "pro:tyy9rqctxpkh"
-  kind: pro
-  column: 商業解碼
-  title: "矯正回歸 I：革命性品牌「隱適美」"
-  date: 2026-04-28
-  url: https://pro.manny-li.com/posts/align-business-model-tyy9rqctxpkh
 - id: "pro:wt4bbtb2kex3"
   kind: pro
   column: 商業解碼
   title: "矯正回歸 II：沒有對手的黃金十年"
   date: 2026-04-28
   url: https://pro.manny-li.com/posts/align-competitive-advantage-wt4bbtb2kex3
+- id: "pro:tyy9rqctxpkh"
+  kind: pro
+  column: 商業解碼
+  title: "矯正回歸 I：革命性品牌「隱適美」"
+  date: 2026-04-28
+  url: https://pro.manny-li.com/posts/align-business-model-tyy9rqctxpkh
+- id: "pro:wyym9cue2crw"
+  kind: pro
+  column: 商業解碼
+  title: "矯正回歸 III：創新者的困境"
+  date: 2026-04-28
+  url: https://pro.manny-li.com/posts/align-category-creator-dilemma-wyym9cue2crw
+- id: "pro:ngsbqxnadchn"
+  kind: pro
+  column: 商業解碼
+  title: "矯正回歸 IV：跌落神壇的估值保衛戰——Align Technology"
+  date: 2026-04-28
+  url: https://pro.manny-li.com/posts/align-financial-analysis-ngsbqxnadchn
 - id: "pro:sfddnjkgm59b"
   kind: pro
   column: 科技曼讀
@@ -497,24 +497,6 @@
   title: 為什麼 3.5 兆美元的私募信貸贖回風暴不會是下一個 2008 金融海嘯
   date: 2026-03-30
   url: https://pro.manny-li.com/posts/private-credit-apollo-blackstone-ares-kkr-goldman-pxkj26b9zjj5
-- id: "pro:g88uv4p93amw"
-  kind: pro
-  column: 商業解碼
-  title: "複利引擎 IV：精密拆解 Roper Technologies"
-  date: 2026-03-28
-  url: https://pro.manny-li.com/posts/roper-technologies-financial-analysis-g88uv4p93amw
-- id: "pro:2cukhad2j6dq"
-  kind: pro
-  column: 商業解碼
-  title: "複利引擎 I：買到翻身的秘訣"
-  date: 2026-03-28
-  url: https://pro.manny-li.com/posts/roper-business-model-2cukhad2j6dq
-- id: "pro:33q9heffxzna"
-  kind: pro
-  column: 商業解碼
-  title: "複利引擎 III：「我比巴菲特更厲害」"
-  date: 2026-03-28
-  url: https://pro.manny-li.com/posts/roper-brian-jellison-33q9heffxzna
 - id: "pro:nqtk4h6ntusm"
   kind: pro
   column: 巨人之聲
@@ -527,6 +509,24 @@
   title: "複利引擎 II：連續併購者的宿命"
   date: 2026-03-28
   url: https://pro.manny-li.com/posts/roper-constellation-berkshire-serial-acquirer-9e2jqsm9y5bj
+- id: "pro:33q9heffxzna"
+  kind: pro
+  column: 商業解碼
+  title: "複利引擎 III：「我比巴菲特更厲害」"
+  date: 2026-03-28
+  url: https://pro.manny-li.com/posts/roper-brian-jellison-33q9heffxzna
+- id: "pro:g88uv4p93amw"
+  kind: pro
+  column: 商業解碼
+  title: "複利引擎 IV：精密拆解 Roper Technologies"
+  date: 2026-03-28
+  url: https://pro.manny-li.com/posts/roper-technologies-financial-analysis-g88uv4p93amw
+- id: "pro:2cukhad2j6dq"
+  kind: pro
+  column: 商業解碼
+  title: "複利引擎 I：買到翻身的秘訣"
+  date: 2026-03-28
+  url: https://pro.manny-li.com/posts/roper-business-model-2cukhad2j6dq
 - id: "pro:g6q855r8jky9"
   kind: pro
   column: 巨人之聲
@@ -557,30 +557,30 @@
   title: "AI 會毀掉經濟嗎？一套好用的思考框架"
   date: 2026-03-06
   url: https://pro.manny-li.com/posts/ai-apocalypse-or-not-cj5j4nkzkjc5
-- id: "pro:mcesz5fk85wy"
-  kind: pro
-  column: 商業解碼
-  title: "鹿遙知馬力 Ⅳ：中上到優秀的距離——Deere & Company"
-  date: 2026-02-27
-  url: https://pro.manny-li.com/posts/john-deere-financial-analysis-mcesz5fk85wy
-- id: "pro:9bazcddtrbc6"
-  kind: pro
-  column: 商業解碼
-  title: "鹿遙知馬力 Ⅱ：稱霸業界的秘訣——自營金融"
-  date: 2026-02-27
-  url: https://pro.manny-li.com/posts/john-deere-financial-9bazcddtrbc6
-- id: "pro:wmste5rh4s2q"
-  kind: pro
-  column: 商業解碼
-  title: "鹿遙知馬力 Ⅲ：王者為何仍需轉型？"
-  date: 2026-02-27
-  url: https://pro.manny-li.com/posts/john-deere-smart-industrial-wmste5rh4s2q
 - id: "pro:d95qtaqsfsck"
   kind: pro
   column: 商業解碼
   title: "鹿遙知馬力 Ⅰ：從賣產品到建生態"
   date: 2026-02-27
   url: https://pro.manny-li.com/posts/john-deere-business-model-d95qtaqsfsck
+- id: "pro:9bazcddtrbc6"
+  kind: pro
+  column: 商業解碼
+  title: "鹿遙知馬力 Ⅱ：稱霸業界的秘訣——自營金融"
+  date: 2026-02-27
+  url: https://pro.manny-li.com/posts/john-deere-financial-9bazcddtrbc6
+- id: "pro:mcesz5fk85wy"
+  kind: pro
+  column: 商業解碼
+  title: "鹿遙知馬力 Ⅳ：中上到優秀的距離——Deere & Company"
+  date: 2026-02-27
+  url: https://pro.manny-li.com/posts/john-deere-financial-analysis-mcesz5fk85wy
+- id: "pro:wmste5rh4s2q"
+  kind: pro
+  column: 商業解碼
+  title: "鹿遙知馬力 Ⅲ：王者為何仍需轉型？"
+  date: 2026-02-27
+  url: https://pro.manny-li.com/posts/john-deere-smart-industrial-wmste5rh4s2q
 - id: "pro:mxtxvxnbnc88"
   kind: pro
   column: 巨人之聲
@@ -629,48 +629,48 @@
   title: "KR Sridhar (Bloom Energy）：燃料電池的歷史性時刻"
   date: 2026-01-29
   url: https://pro.manny-li.com/posts/null-x4dmsg59wxpe
-- id: "pro:xyacaqc5ex9p"
-  kind: pro
-  column: 科技曼讀
-  title: Meta 的世紀豪賭還沒結束
-  date: 2026-01-27
-  url: https://pro.manny-li.com/posts/null-xyacaqc5ex9p
 - id: "podcast:2026-01-27-ep120"
   kind: podcast
   column: 曼報 Podcast
   title: "EP120｜蘋果在中國（Apple in China）"
   date: 2026-01-27
   url: https://open.firstory.fm/story/cmkvc1wsr008501xmb7a24xla
-- id: "pro:vzej66cff3bh"
+- id: "pro:xyacaqc5ex9p"
   kind: pro
-  column: 商業解碼
-  title: "舉重若輕 Ⅲ：從飲料攤變飯店業龍頭的求生之路"
-  date: 2026-01-26
-  url: https://pro.manny-li.com/posts/null-vzej66cff3bh
-- id: "pro:tvjpcgcpfym3"
-  kind: pro
-  column: 商業解碼
-  title: "舉重若輕 Ⅳ：卓越的商業模式典範——Marriott"
-  date: 2026-01-26
-  url: https://pro.manny-li.com/posts/null-tvjpcgcpfym3
+  column: 科技曼讀
+  title: Meta 的世紀豪賭還沒結束
+  date: 2026-01-27
+  url: https://pro.manny-li.com/posts/null-xyacaqc5ex9p
 - id: "pro:t43v6uuxx3tp"
   kind: pro
   column: 商業解碼
   title: "舉重若輕 Ⅱ：讓會員離不開的萬有引力"
   date: 2026-01-26
   url: https://pro.manny-li.com/posts/null-t43v6uuxx3tp
-- id: "pro:duukfut6958f"
-  kind: pro
-  column: 商業解碼
-  title: "舉重若輕 Ⅰ：不蓋飯店的飯店集團"
-  date: 2026-01-26
-  url: https://pro.manny-li.com/posts/null-duukfut6958f
 - id: "pro:zppaa3v8qrtw"
   kind: pro
   column: 巨人之聲
   title: "CJ Desai (MongoDB)：SaaS 真的要被 AI 消滅？"
   date: 2026-01-26
   url: https://pro.manny-li.com/posts/null-zppaa3v8qrtw
+- id: "pro:vzej66cff3bh"
+  kind: pro
+  column: 商業解碼
+  title: "舉重若輕 Ⅲ：從飲料攤變飯店業龍頭的求生之路"
+  date: 2026-01-26
+  url: https://pro.manny-li.com/posts/null-vzej66cff3bh
+- id: "pro:duukfut6958f"
+  kind: pro
+  column: 商業解碼
+  title: "舉重若輕 Ⅰ：不蓋飯店的飯店集團"
+  date: 2026-01-26
+  url: https://pro.manny-li.com/posts/null-duukfut6958f
+- id: "pro:tvjpcgcpfym3"
+  kind: pro
+  column: 商業解碼
+  title: "舉重若輕 Ⅳ：卓越的商業模式典範——Marriott"
+  date: 2026-01-26
+  url: https://pro.manny-li.com/posts/null-tvjpcgcpfym3
 - id: "pro:xub3t2c88p2t"
   kind: pro
   column: 科技曼讀
@@ -785,12 +785,6 @@
   title: "人性套利 V：深度解析網路博弈巨頭 Flutter Entertainment"
   date: 2025-11-29
   url: https://pro.manny-li.com/posts/null-avmqs55nnqwj
-- id: "pro:jtpkdq4kt63v"
-  kind: pro
-  column: 商業解碼
-  title: "人性套利 Ⅲ：博弈市場的競爭終局"
-  date: 2025-11-28
-  url: https://pro.manny-li.com/posts/null-jtpkdq4kt63v
 - id: "pro:jmtvz5xwptwb"
   kind: pro
   column: 商業解碼
@@ -803,6 +797,12 @@
   title: "人性套利 Ⅰ：賭盤賠率的秘密"
   date: 2025-11-28
   url: https://pro.manny-li.com/posts/null-zma3sf389tbr
+- id: "pro:jtpkdq4kt63v"
+  kind: pro
+  column: 商業解碼
+  title: "人性套利 Ⅲ：博弈市場的競爭終局"
+  date: 2025-11-28
+  url: https://pro.manny-li.com/posts/null-jtpkdq4kt63v
 - id: "pro:r432czr8q5bk"
   kind: pro
   column: 科技曼讀

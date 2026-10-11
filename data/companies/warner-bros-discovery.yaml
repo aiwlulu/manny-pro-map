@@ -11,6 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Warner_Bros._Discovery"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/华纳兄弟探索"
 relations:
+  - { type: supplier, target: netflix, note: 影視內容 }
   - { type: parent, target: hbo }
 sources:
   - "pro:ueyj98gmbgxn"

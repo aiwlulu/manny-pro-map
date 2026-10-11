@@ -12,5 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/派拉蒙天空之舞"
 people:
   - { name: David Ellison, role: 創辦人 }
+relations:
+  - { type: supplier, target: netflix, note: 影視內容 }
 sources:
   - "pro:ueyj98gmbgxn"

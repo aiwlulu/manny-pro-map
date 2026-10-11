@@ -10,6 +10,13 @@ links:
   website: "https://aws.amazon.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/亚马逊云计算服务"
+relations:
+  - { type: supplier, target: netflix, note: 雲端算力 }
+  - { type: supplier, target: anthropic, note: 雲端算力 }
+  - { type: supplier, target: airbnb, note: 雲端算力 }
+  - { type: supplier, target: stripe, note: 雲端算力 }
+  - { type: supplier, target: snowflake, note: 雲端算力 }
+  - { type: supplier, target: coinbase, note: 雲端算力 }
 sources:
   - "pro:sfddnjkgm59b"
   - "pro:sg2sthu6aaak"

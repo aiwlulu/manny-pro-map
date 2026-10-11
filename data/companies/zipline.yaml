@@ -11,5 +11,7 @@ people:
   - { name: Keller Rinaudo Cliffton, role: 創辦人, photo: { file: Keller Rinaudo.jpg, license: CC BY-SA 4.0, author: Akrasia25 } }
   - { name: Keenan Wyrobek, role: 創辦人 }
   - { name: William Hetzler, role: 創辦人 }
+relations:
+  - { type: supplier, target: walmart, note: 無人機配送 }
 sources:
   - "podcast:2025-06-09-ep102"

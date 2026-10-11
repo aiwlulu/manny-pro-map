@@ -12,5 +12,8 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Levi's"
 people:
   - { name: Levi Strauss, role: 創辦人, photo: { file: Levi Strauss 1.jpg, license: Public domain, author: Unknown authorUnknown author } }
+relations:
+  - { type: supplier, target: amazon, note: 服飾 }
+  - { type: supplier, target: walmart, note: 服飾 }
 sources:
   - "pro:m2yjx2xzuqcu"

@@ -13,6 +13,7 @@ links:
 people:
   - { name: Jeong Ju-yung, role: 創辦人, photo: { file: Chung Ju-yung.jpg, license: Public domain, author: "Technical Sergeant Renee` Sitler" } }
 relations:
+  - { type: supplier, target: waymo, note: 電動車 }
   - { type: parent, target: boston-dynamics }
 sources:
   - "pro:j8f4gchrfeb5"

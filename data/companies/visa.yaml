@@ -13,6 +13,10 @@ people:
   - { name: Dee Hock, role: 創辦人 }
 relations:
   - { type: acquired, target: tink, note: 2022 年 }
+  - { type: supplier, target: stripe, note: 卡組織網路 }
+  - { type: supplier, target: paypal, note: 卡組織網路 }
+  - { type: supplier, target: block, note: 卡組織網路 }
+  - { type: supplier, target: klarna, note: 卡組織網路 }
   - { type: competitor, target: mastercard }
 sources:
   - "pro:b2r32qpe3jna"

@@ -64,7 +64,7 @@ export function createMap(root, { industries, weight, onPick, onHover, safeArea,
     nodesEl.innerHTML = nodes.map((n) => {
       const c = n.c, d = Math.round(Math.hypot(n.x - SIZE / 2, n.y - SIZE / 2) * 1.1);
       const logo = c.logo?.url ? `<img src="${esc(c.logo.url)}" alt="" loading="lazy" decoding="async">` : '';
-      return `<button class="bm-n${logo ? ' has-logo' : ''}${c.proN ? '' : ' lite'}" role="listitem" data-id="${c.id}" aria-label="${esc(c.name)}${c.zh ? ` ${esc(c.zh)}` : ''}" style="--c1:${n.g.c1};--c2:${n.g.c2};--d:${d}ms">
+      return `<button class="bm-n${logo ? ' has-logo' : ''}${c.proN ? '' : ' lite'}" role="listitem" data-id="${c.id}" data-name="${esc(c.name)}" aria-label="${esc(c.name)}${c.zh ? ` ${esc(c.zh)}` : ''}" style="--c1:${n.g.c1};--c2:${n.g.c2};--d:${d}ms">
         <span class="bm-in">${logo}<span class="bm-ini">${esc(initials(c.name))}</span><span class="bm-nm">${esc(c.name)}</span><span class="bm-zh">${esc(c.zh && c.zh !== c.name ? c.zh : '')}</span></span></button>`;
     }).join('');
     for (const el of nodesEl.children) byId.get(el.dataset.id).el = el;
@@ -110,6 +110,9 @@ export function createMap(root, { industries, weight, onPick, onHover, safeArea,
       const tier = r < 7 ? 0 : r >= 16 && fs >= 8.5 ? (r >= 46 ? 3 : 2) : 1;
       if (n.tier !== tier) { n.el.dataset.t = tier; n.tier = tier; }
       if (Math.abs((n.fs ?? 0) - fs) > 0.25) { s.setProperty('--fs', `${fs}px`); n.fs = fs; }
+      // Focused bubbles grow to a readable size whatever the zoom
+      const boost = Math.max(1, 22 / Math.max(r, 1));
+      if (n.boost !== boost) { s.setProperty('--boost', boost.toFixed(2)); n.boost = boost; }
     }
     drawLines();
   }

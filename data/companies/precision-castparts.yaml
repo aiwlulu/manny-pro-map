@@ -10,5 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Precision_Castparts_Corp."
 people:
   - { name: Mark Donegan, role: 執行長 }
+relations:
+  - { type: supplier, target: boeing, note: 航太零組件 }
 sources:
   - "pro:9e2jqsm9y5bj"

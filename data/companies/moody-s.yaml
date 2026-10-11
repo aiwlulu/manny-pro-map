@@ -14,10 +14,10 @@ people:
   - { name: John Moody, role: 創辦人, photo: { file: "John Moody (financial analyst) 1903.jpg", license: Public domain, author: "Scherer, New York" } }
   - { name: Vladimir Ronin, role: 醫藥產業資深評級分析師暨副總 }
 relations:
-  - { type: competitor, target: s-p-global }
-  - { type: competitor, target: fitch-group }
   - { type: acquired, target: regulatory-datacorp, note: 2020 年 }
   - { type: acquired, target: bureau-van-dijk, note: 2017 年 }
+  - { type: competitor, target: s-p-global }
+  - { type: competitor, target: fitch-group }
 sources:
   - "propod:cmumopubf03dc01w1ggiw1vrk"
   - "pro:du9cp8u5u3vg"

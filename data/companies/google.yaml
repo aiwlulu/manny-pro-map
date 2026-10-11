@@ -14,6 +14,12 @@ people:
   - { name: Larry Page, role: 創辦人, photo: { file: "Larry Page in the European Parliament, 17.06.2009.jpg", license: CC BY-SA 4.0, author: "Marcin Mycielski, European Parliament (Stansfield)" } }
   - { name: Sundar Pichai, photo: { file: "Sundar Pichai - 2023 (cropped).jpg", license: CC BY 4.0, author: "Photographer: Lukasz Kobus (European Commission)" } }
 relations:
+  - { type: supplier, target: spotify, note: 雲端算力 }
+  - { type: supplier, target: snap, note: 雲端算力 }
+  - { type: supplier, target: apple, note: 雲端算力 }
+  - { type: supplier, target: shopify, note: 雲端算力 }
+  - { type: supplier, target: anthropic, note: 雲端算力 }
+  - { type: supplier, target: coursera, note: 課程內容 }
   - { type: parent, target: boston-dynamics }
   - { type: parent, target: waymo }
   - { type: parent, target: youtube }

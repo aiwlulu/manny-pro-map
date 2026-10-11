@@ -6,5 +6,10 @@ hq: 倫敦
 links:
   website: "https://geniussports.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Genius_Sports"
+relations:
+  - { type: supplier, target: draftkings, note: 運動數據 }
+  - { type: supplier, target: fanduel, note: 運動數據 }
+  - { type: supplier, target: betmgm, note: 運動數據 }
+  - { type: supplier, target: bet365, note: 運動數據 }
 sources:
   - "pro:zma3sf389tbr"

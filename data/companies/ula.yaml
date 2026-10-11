@@ -9,5 +9,7 @@ links:
   website: "http://www.ulalaunch.com/"
   wikipedia: "https://en.wikipedia.org/wiki/United_Launch_Alliance"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/聯合發射聯盟"
+relations:
+  - { type: supplier, target: amazon, note: 火箭發射 }
 sources:
   - "pro:tvqqj5aqhcr3"

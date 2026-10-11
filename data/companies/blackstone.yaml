@@ -14,8 +14,8 @@ people:
   - { name: Peter George Peterson, role: 創辦人, photo: { file: PeterGeorgePeterson.jpg, license: Public domain } }
   - { name: Stephen A. Schwarzman, role: 創辦人, photo: { file: "Stephen Schwarzman, 19 March 2024.jpg", license: CC BY-SA 2.0, author: UKinUSA } }
 relations:
-  - { type: parent, target: hilton }
   - { type: acquired, target: qts, note: 2021 年 }
+  - { type: parent, target: hilton }
 sources:
   - "pro:dwcrddrmu86k"
   - "pro:pxkj26b9zjj5"

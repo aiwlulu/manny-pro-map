@@ -13,5 +13,9 @@ links:
 people:
   - { name: Irwin M. Jacobs, role: 創辦人, photo: { file: "Irwin Jacobs (2005).jpg", license: Public domain, author: Dananderson at English Wikipedia } }
   - { name: Andrew Viterbi, role: 創辦人, photo: { file: 10-08ViterbiBIG.jpg, license: CC BY-SA 4.0, author: Canyigitozen } }
+relations:
+  - { type: supplier, target: apple, note: 行動通訊晶片 }
+  - { type: supplier, target: microsoft, note: 運算晶片 }
+  - { type: supplier, target: meta, note: 運算晶片 }
 sources:
   - "pro:jq8rpf6p2f59"

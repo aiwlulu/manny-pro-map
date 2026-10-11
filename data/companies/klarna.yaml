@@ -11,5 +11,10 @@ links:
 people:
   - { name: Sebastian Siemiatkowski, role: 創辦人, photo: { file: Sebastian Siemiatkowski.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Niklas Adalberth, role: 創辦人, photo: { file: "TNW Conference 2013 - Day 2 (8679712475) (cropped).jpg", license: CC BY-SA 2.0, author: "Julia de Boer / The Next Web" } }
+relations:
+  - { type: supplier, target: shopify, note: 先買後付 }
+  - { type: supplier, target: walmart, note: 先買後付 }
+  - { type: supplier, target: nike, note: 先買後付 }
+  - { type: supplier, target: airbnb, note: 先買後付 }
 sources:
   - "pro:52gjqz2bbj2p"

@@ -14,5 +14,12 @@ people:
   - { name: Jack Gifford, role: 創辦人, photo: { file: JackGifford.jpg, license: CC0, author: Wiki4me99 } }
   - { name: Jerry Sanders, role: 創辦人 }
   - { name: Edwin Turney, role: 創辦人 }
+relations:
+  - { type: supplier, target: microsoft, note: 運算晶片 }
+  - { type: supplier, target: aws, note: 運算晶片 }
+  - { type: supplier, target: google, note: 運算晶片 }
+  - { type: supplier, target: sony, note: 運算晶片 }
+  - { type: supplier, target: valve, note: 運算晶片 }
+  - { type: supplier, target: tesla, note: 運算晶片 }
 sources:
   - "pro:hxdkrud95vd8"

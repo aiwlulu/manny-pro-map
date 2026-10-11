@@ -1,6 +1,7 @@
 import { icon } from './icons.js';
 import { createMap } from './map.js';
 import { createLandscape } from './landscape.js';
+import { buildChain, miniChain, renderExplorer, segmentTrail } from './chain.js';
 
 const KIND = {
   pro: { label: '曼報 Pro', short: 'Pro', ic: 'file' },
@@ -69,6 +70,7 @@ for (const c of cos.values())
     c.rels.push({ id: t.id, label: REL[r.type][0], note: r.note });
     t.rels.push({ id: c.id, label: REL[r.type][1], note: r.note });
   }
+const chain = buildChain([...cos.values()]);
 const bySrc = new Map();
 for (const c of cos.values()) for (const s of c.src) (bySrc.get(s.id) ?? bySrc.set(s.id, []).get(s.id)).push(c);
 
@@ -153,14 +155,29 @@ $('#filters').onclick = (e) => {
 
 /* ---------- People ---------- */
 const roleLine = (p, max = 3) => p.roles.slice(0, max).map((r) => `${esc(r.c.name)}${r.role ? ` ${esc(r.role)}` : ''}`).join('　·　') + (p.roles.length > max ? `　+${p.roles.length - max}` : '');
+let pplFilter = 'all';
 function renderPeople() {
-  const list = [...people.values()].sort((a, b) => a.name.localeCompare(b.name, 'en'));
+  const all = [...people.values()].sort((a, b) => a.name.localeCompare(b.name, 'en'));
+  const list = all.filter((p) => pplFilter === 'all' || (pplFilter === 'iv' ? p.roles.some((r) => r.interviewed) : p.roles.length > 1));
   const groups = new Map();
   for (const p of list) { const L = /[a-z]/i.test(p.name[0]) ? p.name[0].toUpperCase() : '#'; (groups.get(L) ?? groups.set(L, []).get(L)).push(p); }
-  $('#people').innerHTML = [...groups].map(([L, ps]) => `<div class="letter"><h3>${L}</h3>${ps.map((p) =>
+  const count = (f) => all.filter((p) => f === 'all' || (f === 'iv' ? p.roles.some((r) => r.interviewed) : p.roles.length > 1)).length;
+  $('#people-bar').innerHTML = `<div class="pf">${[['all', '全部'], ['iv', '曼報訪談過'], ['multi', '跨多家公司']].map(([k, l]) => `<button class="chipbtn ${pplFilter === k ? 'on' : ''}" data-pf="${k}">${l}<span>${count(k)}</span></button>`).join('')}</div>
+    <nav class="az" aria-label="依字母跳轉">${[...groups.keys()].map((L) => `<a href="#L-${L}" data-l="${L}">${L}</a>`).join('')}</nav>`;
+  $('#people').innerHTML = [...groups].map(([L, ps]) => `<div class="letter" id="L-${L}"><h3>${L}</h3>${ps.map((p) =>
     `<a class="person" href="#/p/${p.id}">${face(p)}<span class="pw"><span class="pn">${esc(p.name)}${p.zh ? ` <span class="muted">${esc(p.zh)}</span>` : ''}${p.roles.length > 1 ? `<em class="multi">${p.roles.length} 家公司</em>` : ''}</span><span class="pc">${roleLine(p)}</span></span></a>`).join('')}</div>`).join('')
     || `<p class="empty">${icon('user', 'lg')}<br>資料整理中</p>`;
 }
+
+$('#people-bar').addEventListener('click', (e) => {
+  const f = e.target.closest('[data-pf]')?.dataset.pf;
+  if (f) { pplFilter = f; renderPeople(); return; }
+  const L = e.target.closest('.az a')?.dataset.l;
+  if (!L) return;
+  e.preventDefault();
+  const off = $('.top').offsetHeight + $('#people-bar').offsetHeight + 8;
+  scrollTo({ top: $(`#L-${L}`).getBoundingClientRect().top + scrollY - off, behavior: reduced() ? 'auto' : 'smooth' });
+});
 
 /* ---------- Panel ---------- */
 const credits = [];
@@ -214,6 +231,9 @@ function showCompany(c) {
     <p class="sum">${esc(c.summary)}</p>
     ${links ? `<div class="links">${links}</div>` : ''}
     <dl class="pstats">${stats}</dl>
+    <h3>${icon('map')}產業鏈<a class="h3-btn" href="#/chain/${c.id}">展開${icon('fit')}</a></h3>
+    ${segmentTrail(c, i)}
+    ${miniChain(c, chain, { avatar })}
     ${ppl ? `<h3>${icon('user')}創辦人與關鍵人物</h3><ul class="ppl">${ppl}</ul>` : ''}
     ${rels ? `<h3>${icon('building')}關係</h3><div class="rels">${rels}</div>` : ''}
     ${sections}`, c.logo?.site ? '<p class="note">Logo 取自該公司官網圖示，僅用於識別。</p>' : '');
@@ -253,6 +273,29 @@ $('#panel').addEventListener('change', (e) => {
 });
 $('#scrim').onclick = () => go(mapView === 'map' ? '#/bubbles' : '#/');
 
+/* ---------- Supply-chain explorer ---------- */
+let cxCleanup = null;
+const peers = (c) => [...cos.values()].filter((x) => x.id !== c.id && x.industry === c.industry && x.segment === c.segment).sort((a, b) => b.proN - a.proN).slice(0, 12);
+function openExplorer(c) {
+  const el = $('#cx');
+  cxCleanup?.();
+  const was = el.hidden;
+  el.hidden = false;
+  document.body.classList.add('cx-open');
+  cxCleanup = renderExplorer(el, c, chain, { avatar, icon, peers, industryOf: (x) => ind.get(x.industry) ?? industries.at(-1) });
+  el.scrollTop = 0;
+  if (!reduced()) el.querySelector('.cx-grid').animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: was ? 360 : 260, easing: 'cubic-bezier(.2,.8,.2,1)' });
+  if (!['chain', 'map'].includes(curView)) setView(mapView);
+  views.setFocus({ cur: c.id, rel: new Set([...chain.up(c.id), ...chain.down(c.id)].map((x) => x.c.id)) });
+}
+function closeExplorer() {
+  if ($('#cx').hidden) return;
+  cxCleanup?.(); cxCleanup = null;
+  $('#cx').hidden = true;
+  document.body.classList.remove('cx-open');
+}
+$('#cx').addEventListener('click', (e) => { if (e.target.closest('.cx-close')) go(`#/c/${location.hash.split('/')[2]}`); });
+
 /* ---------- Search ---------- */
 const index = [];
 for (const c of cos.values()) index.push({ t: 'c', key: norm(`${c.name} ${c.zh ?? ''} ${(c.aliases ?? []).join(' ')}`), label: c.name, sub: c.zh ?? '', go: `#/c/${c.id}`, ids: [c.id] });
@@ -286,6 +329,7 @@ $('#results').addEventListener('click', (e) => { const n = e.target.closest('but
 function pick(h) { $('#results').hidden = true; q.blur(); go(h.go); }
 document.addEventListener('keydown', (e) => {
   if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); q.focus(); }
+  if (e.key === 'Escape' && !$('#cx').hidden) return go(`#/c/${location.hash.split('/')[2]}`);
   if (e.key === 'Escape' && !$('#panel').hidden && document.activeElement !== q) $('#scrim').onclick();
 });
 document.addEventListener('click', (e) => { if (!e.target.closest('.search')) $('#results').hidden = true; });
@@ -305,9 +349,11 @@ document.querySelector('.tabs').onclick = (e) => { const v = e.target.closest('b
 function go(h) { if (location.hash !== h) location.hash = h; else route(); }
 function route() {
   const [, a, b] = location.hash.split('/');
+  if (a !== 'chain') closeExplorer();
   if (a === 'c' && cos.has(b)) return showCompany(cos.get(b));
   if (a === 'p' && people.has(b)) return showPerson(people.get(b));
   if (a === 's' && src.has(decodeURIComponent(b ?? ''))) return showSource(src.get(decodeURIComponent(b)));
+  if (a === 'chain' && cos.has(b)) return openExplorer(cos.get(b));
   const hadPanel = !$('#panel').hidden;
   closePanel();
   views.setFocus(null);
@@ -339,6 +385,7 @@ sysDark.addEventListener('change', applyTheme);
 applyTheme();
 
 /* ---------- Boot ---------- */
+if (!wide()) q.placeholder = '搜尋公司、人物';
 const hdr = $('.top');
 new ResizeObserver(() => document.documentElement.style.setProperty('--hdr', `${hdr.offsetHeight}px`)).observe(hdr);
 for (const [sel2, ic] of [['[data-z="in"]', 'plus'], ['[data-z="out"]', 'minus'], ['[data-z="fit"]', 'fit']]) $(sel2).innerHTML = icon(ic);
