@@ -27,12 +27,12 @@ export function createLandscape(root, { industries, logo, onHover, chainBtn = ()
       const cells = STAGES.map((st) => {
         const html = segs.filter((g) => g.stage === st.id).map((g) => {
           const cs = list.filter((c) => (c.segment ?? segs.at(-1)?.id) === g.id).sort(rank);
-          return cs.length ? `<div class="seg"><h4>${esc(g.name)}<span>${cs.length}</span></h4><div class="tiles">${cs.map(tile).join('')}</div></div>` : '';
+          return cs.length ? `<div class="seg"><h3>${esc(g.name)}<span>${cs.length}</span></h3><div class="tiles">${cs.map(tile).join('')}</div></div>` : '';
         }).join('');
         return `<div class="cell s-${st.id}${html ? "" : " empty"}"><span class="stage-tag">${st.name}</span>${html}</div>`;
       }).join('');
       return `<section class="lane" id="lane-${ind.id}" data-lane="${ind.id}" style="--c1:${ind.c1};--c2:${ind.c2};--n:${n}" aria-label="${esc(ind.name)}">
-        <header class="lane-name"><b>${esc(ind.name)}</b><i>${esc(ind.en)}</i><span>${list.length} 家</span></header>${cells}</section>`;
+        <header class="lane-name"><h2>${esc(ind.name)}</h2><i>${esc(ind.en)}</i><span>${list.length} 家</span></header>${cells}</section>`;
     }).join('');
     const shown = industries.filter((ind) => (byInd.get(ind.id) ?? []).length);
     root.innerHTML = `<nav class="jump" aria-label="跳到產業">${shown.map((ind) => `<a href="#lane-${ind.id}" data-lane="${ind.id}" style="--c1:${ind.c1}"><i></i>${esc(ind.name)}<span>${byInd.get(ind.id).length}</span></a>`).join('')}</nav>

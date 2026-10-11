@@ -1,0 +1,4 @@
+/* Self-hosted, subset to the site's characters (scripts/subset-fonts.py). OFL-1.1, see site/fonts/OFL.txt */
+@font-face { font-family: "Noto Sans TC"; src: url("NotoSansTC-subset.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("Figtree.woff2") format("woff2"); font-weight: 300 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("Figtree-Italic.woff2") format("woff2"); font-weight: 300 900; font-style: italic; font-display: swap; }

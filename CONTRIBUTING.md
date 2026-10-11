@@ -66,6 +66,10 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
   url: https://pro.manny-li.com/posts/...
 ```
 
+## 字型
+
+字型只包含網站用到的字。build 提示缺字時，從 [google/fonts](https://github.com/google/fonts) 取得 `NotoSansTC[wght].ttf`、`Figtree[wght].ttf`、`Figtree-Italic[wght].ttf`，執行 `python3 scripts/subset-fonts.py <字型資料夾>`（需要 `pip install fonttools brotli`）。
+
 ## 頁面裡的 inline script
 
 頁面有 Content-Security-Policy。改了 `index.html`、`guide.html`、`404.html` 裡的 `<script>` 之後，執行 `npm run csp` 更新雜湊，否則 CI 會失敗。

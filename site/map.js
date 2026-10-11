@@ -63,7 +63,7 @@ export function createMap(root, { industries, weight, onPick, onHover, safeArea,
     groups.forEach((g, i) => { g.lab = labels.children[i]; g.gl.forEach((x, j) => (x.el = g.lab.children[j])); });
     nodesEl.innerHTML = nodes.map((n) => {
       const c = n.c, d = Math.round(Math.hypot(n.x - SIZE / 2, n.y - SIZE / 2) * 1.1);
-      const logo = c.logo?.url ? `<img src="${esc(c.logo.url)}" alt="" loading="lazy" decoding="async">` : '';
+      const logo = c.logo?.url ? `<img crossorigin="anonymous" src="${esc(c.logo.url)}" alt="" loading="lazy" decoding="async">` : '';
       return `<button class="bm-n${logo ? ' has-logo' : ''}${c.proN ? '' : ' lite'}" role="listitem" data-id="${c.id}" data-name="${esc(c.name)}" aria-label="${esc(c.name)}${c.zh ? ` ${esc(c.zh)}` : ''}" style="--c1:${n.g.c1};--c2:${n.g.c2};--d:${d}ms">
         <span class="bm-in">${logo}<span class="bm-ini">${esc(initials(c.name))}</span><span class="bm-nm">${esc(c.name)}</span><span class="bm-zh">${esc(c.zh && c.zh !== c.name ? c.zh : '')}</span></span></button>`;
     }).join('');

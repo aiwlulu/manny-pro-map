@@ -6,6 +6,22 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.13.0] - 2026-10-11
+
+### 改善
+- 字型改為自行託管：Noto Sans TC 與 Figtree 子集化為網站實際用到的字（1,479 個中文字），三檔共 532KB，不再連線 Google Fonts；`scripts/subset-fonts.py` 可重新產生，build 會提醒缺字
+- Lighthouse（手機、慢速 4G）：無障礙、最佳實踐、SEO 皆達 100，版面位移 CLS 由 0.105 降為 0
+  - 骨架畫面與實際版面等高（產業導覽列、欄目篩選）
+  - 標題層級改為 h1 → h2（產業）→ h3（區段）
+  - 篇數小標提高對比；產業鏈按鈕加大為 26px；手機最小字級提高到 12px
+  - 移除標題數字的跳動動畫，避免拖慢 LCP
+  - 預先載入 data.json 與 JS 模組；第一個產業列的 logo 優先載入
+
+### 資安
+- Wikimedia 圖片以 `crossorigin="anonymous"` 載入，不再帶上或寫入第三方 cookie
+- CSP 收緊：字型只允許本站
+- 新增 SECURITY.md、啟用 GitHub 私密漏洞回報、Dependabot 每月檢查套件與 Actions
+
 ## [1.12.0] - 2026-10-11
 
 ### 移除
@@ -188,6 +204,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.13.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.12.0...v1.13.0
 [1.12.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.11.0...v1.12.0
 [1.11.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.2...v1.11.0
 [1.10.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.10.1...v1.10.2

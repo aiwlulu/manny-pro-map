@@ -11,8 +11,8 @@ for (const f of PAGES) {
   const policy = [
     "default-src 'self'",
     `script-src 'self' ${hashes.join(' ')}`.trim(),
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-    "font-src https://fonts.gstatic.com",
+    "style-src 'self' 'unsafe-inline'",
+    "font-src 'self'",
     "img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org",
     "media-src 'self'",
     "connect-src 'self'",

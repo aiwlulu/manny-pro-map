@@ -80,4 +80,10 @@ writeFileSync('site/data.json', JSON.stringify({
   companies,
   peopleSources,
 }));
+// Characters outside the font subset render in the system font; remind to rerun the subsetter
+if (existsSync('site/fonts/chars.txt')) {
+  const have = new Set(readFileSync('site/fonts/chars.txt', 'utf8'));
+  const missing = new Set([...JSON.stringify(companies) + JSON.stringify(sources)].filter((ch) => ch.codePointAt(0) > 0x2e7f && !have.has(ch)));
+  if (missing.size) console.warn(`note: ${missing.size} characters not in the font subset; run scripts/subset-fonts.py`);
+}
 console.log(`ok: ${companies.length} companies, ${used.size} sources`);

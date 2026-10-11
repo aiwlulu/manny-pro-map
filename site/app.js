@@ -118,9 +118,9 @@ const weight = (c) => 1 + c.proN * 2.2 + (c.src.length - c.proN) * 0.6;
 const countBy = (c) => KIND_ORDER.map((k) => [k, c.src.filter((s) => s.kind === k).length]).filter(([, n]) => n);
 const initials = (name) => { const w = name.replace(/[^\p{L}\p{N}& ]/gu, ' ').split(/\s+/).filter(Boolean); return (w.length > 1 && !/^\p{Script=Han}/u.test(w[0]) ? w[0][0] + w[1][0] : [...(w[0] ?? '?')].slice(0, 2).join('')).toUpperCase(); };
 const gOf = (c) => grad(ind.get(c.industry) ?? industries.at(-1));
-const avatar = (c, cls = '') => `<span class="av ${cls}${c.logo?.url ? ' img' : ''}" style="--g:${gOf(c)}">${esc(initials(c.name))}${c.logo?.url ? `<img src="${esc(c.logo.url)}"${c.logo.alt ? ` data-alt="${esc(c.logo.alt)}"` : ''} alt="" loading="lazy" decoding="async">` : ''}</span>`;
+const avatar = (c, cls = '') => `<span class="av ${cls}${c.logo?.url ? ' img' : ''}" style="--g:${gOf(c)}">${esc(initials(c.name))}${c.logo?.url ? `<img crossorigin="anonymous" src="${esc(c.logo.url)}"${c.logo.alt ? ` data-alt="${esc(c.logo.alt)}"` : ''} alt="" loading="lazy" decoding="async">` : ''}</span>`;
 // Initials sit underneath; the photo fades in over them once decoded
-const face = (p, cls = '', w = 120) => `<span class="ph ini ${cls}${p.photo?.file ? ' has-img' : ''}">${esc(initials(p.name))}${p.photo?.file ? `<img src="${esc((w > 120 ? p.photo.big : p.photo.thumb) ?? COMMONS(p.photo.file, w))}" data-alt="${esc(COMMONS(p.photo.file, w))}" alt="" loading="lazy" decoding="async">` : ''}</span>`;
+const face = (p, cls = '', w = 120) => `<span class="ph ini ${cls}${p.photo?.file ? ' has-img' : ''}">${esc(initials(p.name))}${p.photo?.file ? `<img crossorigin="anonymous" src="${esc((w > 120 ? p.photo.big : p.photo.thumb) ?? COMMONS(p.photo.file, w))}" data-alt="${esc(COMMONS(p.photo.file, w))}" alt="" loading="lazy" decoding="async">` : ''}</span>`;
 
 /* ---------- Views: value-chain landscape + bubble map ---------- */
 const panelW = () => ($('#panel').hidden || !wide() ? 0 : $('#panel').offsetWidth);
@@ -139,7 +139,8 @@ const map = createMap($('#bubble'), {
 });
 const land = createLandscape($('#lanes'), {
   industries,
-  logo: (c) => (c.logo?.url ? `<img src="${esc(c.logo.url)}" alt="" loading="lazy" decoding="async">` : `<span class="mono" style="--g:${gOf(c)}">${esc(initials(c.name))}</span>`),
+  // First lane is above the fold: load its logos right away
+  logo: (c) => (c.logo?.url ? `<img crossorigin="anonymous" src="${esc(c.logo.url)}" alt=""${c.industry === industries[0].id ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">` : `<span class="mono" style="--g:${gOf(c)}">${esc(initials(c.name))}</span>`),
   onHover: (id) => new Set(cos.get(id)?.rels.map((r) => r.id)),
   chainBtn: (c) => (chain.up(c.id).length || chain.down(c.id).length ? `<span class="tchain" role="button" tabindex="0" data-chain="${c.id}" title="看 ${esc(c.name)} 的產業鏈" aria-label="看 ${esc(c.name)} 的產業鏈">${icon('link')}</span>` : ''),
 });
@@ -473,5 +474,5 @@ if (!store.get('pm-coach', false)) {
 function dismissCoach() { const el = $('#coach'); if (!el.hidden) { el.hidden = true; store.set('pm-coach', true); } }
 {
 }
-countUp($('#n-co'), cos.size);
+$('#n-co').textContent = cos.size;
 route();
