@@ -11,8 +11,9 @@ permissions:
   pages: write
   id-token: write
 
+# One group per branch so PR checks (e.g. Dependabot) don't cancel each other
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
