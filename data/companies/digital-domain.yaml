@@ -11,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Digital_Domain"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/數字王國3.0"
 people:
-  - { name: Scott Ross, role: 創辦人, interviewed: true }
+  - { name: Scott Ross, role: 創辦人 }
   - { name: James Cameron, role: 創辦人, photo: { file: "James Cameron at 53rd Saturn Awards 2026-01 (cropped).jpg", license: CC BY 4.0, author: Kevin Paul } }
   - { name: Stan Winston, role: 創辦人 }
 sources:

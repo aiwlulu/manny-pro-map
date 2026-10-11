@@ -11,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Apollo_Global_Management"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/阿波羅全球管理"
 people:
-  - { name: Marc Rowan, role: 執行長, interviewed: true, photo: { file: "Marc Rowan in Mercatus Center interview 2024 (cropped).png", license: CC BY 3.0, author: Mercatus Center } }
+  - { name: Marc Rowan, role: 執行長, photo: { file: "Marc Rowan in Mercatus Center interview 2024 (cropped).png", license: CC BY 3.0, author: Mercatus Center } }
   - { name: Leon Black, role: 創辦人 }
   - { name: Josh Harris, role: 創辦人, photo: { file: "Josh Harris WAS-NYG NOV2023 (cropped).jpg", license: CC BY 2.0, author: Josh Harris } }
   - { name: Antony Ressler, role: 創辦人 }

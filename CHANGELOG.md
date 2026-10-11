@@ -6,6 +6,12 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.5.1] - 2026-10-11
+
+### 修正
+- 「曼報訪談過」與「受訪」標籤改為「巨人之聲」：這些人物是 Pro「巨人之聲」專欄整理過其訪談或演講，並非曼報本人訪問
+- 只有名字出現在巨人之聲文章標題的人才標記（26 → 14 位），僅被引用的不再算入
+
 ## [1.5.0] - 2026-10-11
 
 ### 新增
@@ -87,6 +93,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.5.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.4.1...v1.5.0
 [1.4.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.3.2...v1.4.0

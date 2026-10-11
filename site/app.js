@@ -171,7 +171,7 @@ const roleChips = (p, max = 3) => p.roles.slice(0, max).map((r) => `<span class=
 function personCard(p) {
   return `<a class="pcard${isIv(p) ? ' iv' : ''}" href="#/p/${p.id}">${face(p, 'pc-ph')}
     <span class="pc-b"><span class="pc-n">${esc(p.name)}${p.zh ? `<small>${esc(p.zh)}</small>` : ''}</span><span class="pc-r">${roleChips(p)}</span></span>
-    ${isIv(p) ? '<em class="pc-tag">受訪</em>' : ''}</a>`;
+    ${isIv(p) ? '<em class="pc-tag" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</a>`;
 }
 function renderPeople() {
   const all = [...people.values()].sort((a, b) => a.name.localeCompare(b.name, 'en'));
@@ -179,7 +179,7 @@ function renderPeople() {
   const list = all.filter((p) => pplMatch(p, pplFilter) && (!nq || norm(`${p.name} ${p.zh} ${p.roles.map((r) => r.c.name).join(' ')}`).includes(nq)));
   const groups = new Map();
   for (const p of list) { const L = /[a-z]/i.test(p.name[0]) ? p.name[0].toUpperCase() : '#'; (groups.get(L) ?? groups.set(L, []).get(L)).push(p); }
-  const tabs = [['all', '全部'], ['iv', '曼報訪談過'], ['multi', '跨多家公司'], ['photo', '有照片']];
+  const tabs = [['all', '全部'], ['iv', '巨人之聲'], ['multi', '跨多家公司'], ['photo', '有照片']];
   const bar = $('#people-bar');
   if (!bar.dataset.ready) {
     bar.dataset.ready = 1;
@@ -190,8 +190,8 @@ function renderPeople() {
   bar.querySelector('.az').innerHTML = [...groups.keys()].map((L) => `<a href="#L-${L}" data-l="${L}">${L}</a>`).join('');
   const featured = pplFilter === 'all' && !nq ? all.filter(isIv).sort((a, b) => !!b.photo - !!a.photo) : [];
   $('#people-head').innerHTML = `<p class="eyebrow">People</p><h2>創辦人與關鍵人物</h2>
-    <p class="lede">曼報談過的 ${all.length} 位執行長、創辦人與受訪來賓。點一個人，看他在哪些公司、擔任什麼角色。</p>
-    ${featured.length ? `<section class="feat"><h3>${icon('headphones')}曼報訪談過<span>${featured.length}</span></h3><div class="feat-row">${featured.map((p) =>
+    <p class="lede">曼報談過的 ${all.length} 位執行長、創辦人與關鍵人物。點一個人，看他在哪些公司、擔任什麼角色。</p>
+    ${featured.length ? `<section class="feat"><h3>${icon('file')}巨人之聲<span>${featured.length}</span><small>Pro「巨人之聲」專欄整理過訪談或演講的人物</small></h3><div class="feat-row">${featured.map((p) =>
       `<a class="fcard" href="#/p/${p.id}">${face(p, 'f-ph')}<b>${esc(p.name)}</b><span>${esc(p.roles[0].c.name)}${p.roles[0].role ? ` · ${esc(p.roles[0].role)}` : ''}</span></a>`).join('')}</div></section>` : ''}`;
   $('#people').innerHTML = [...groups].map(([L, ps]) => `<section class="letter" id="L-${L}"><h3>${L}<span>${ps.length}</span></h3><div class="pgrid">${ps.map(personCard).join('')}</div></section>`).join('')
     || `<p class="empty">${icon('user', 'lg')}<br>沒有符合的人物</p>`;
@@ -252,7 +252,7 @@ function showCompany(c) {
     credit(p.photo, p.name);
     const pe = people.get(slugify(p.name));
     const also = pe?.roles.filter((r) => r.c.id !== c.id) ?? [];
-    return `<li>${face(p)}<span><a class="pn" href="#/p/${pe?.id}">${esc(p.name)}</a>${p.zh ? ` <span class="muted">${esc(p.zh)}</span>` : ''}<span class="role">${esc(p.role ?? '')}${p.interviewed ? '<em class="iv">受訪</em>' : ''}</span>
+    return `<li>${face(p)}<span><a class="pn" href="#/p/${pe?.id}">${esc(p.name)}</a>${p.zh ? ` <span class="muted">${esc(p.zh)}</span>` : ''}<span class="role">${esc(p.role ?? '')}${p.interviewed ? '<em class="iv" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</span>
       ${also.length ? `<span class="also">也在 ${also.map((r) => `<a href="#/c/${r.c.id}">${esc(r.c.name)}</a>`).join('、')}</span>` : ''}</span></li>`;
   }).join('');
   const rels = c.rels.map((r) => `<a href="#/c/${r.id}" title="${esc(r.note ?? '')}">${avatar(cos.get(r.id), 'xs')}<span class="rt">${r.label}</span>${esc(cos.get(r.id).name)}</a>`).join('');
@@ -277,9 +277,9 @@ function showPerson(p) {
   credit(p.photo, p.name);
   const ivs = p.roles.filter((r) => r.interviewed).length;
   openPanel(`<header class="ph-head" style="--g:linear-gradient(120deg,var(--blue-a),var(--red-b))">${face(p, 'xl', 250)}
-      <div><span class="ind">人物${ivs ? ' · 曼報訪談過' : ''}</span><h2>${esc(p.name)}</h2>${p.zh ? `<p class="zhn">${esc(p.zh)}</p>` : ''}</div></header>
+      <div><span class="ind">人物${ivs ? ' · 巨人之聲專欄' : ''}</span><h2>${esc(p.name)}</h2>${p.zh ? `<p class="zhn">${esc(p.zh)}</p>` : ''}</div></header>
     <h3>${icon('building')}公司與身分<span class="c">${p.roles.length}</span></h3>
-    <ul class="roles">${p.roles.map((r) => `<li><a href="#/c/${r.c.id}">${avatar(r.c, 'sm')}<span><b>${esc(r.c.name)}</b><span class="role">${esc(r.role || '—')}${r.interviewed ? '<em class="iv">受訪</em>' : ''}</span></span>${icon('external', 'go')}</a></li>`).join('')}</ul>`);
+    <ul class="roles">${p.roles.map((r) => `<li><a href="#/c/${r.c.id}">${avatar(r.c, 'sm')}<span><b>${esc(r.c.name)}</b><span class="role">${esc(r.role || '—')}${r.interviewed ? '<em class="iv" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</span></span>${icon('external', 'go')}</a></li>`).join('')}</ul>`);
   if (!['chain', 'map'].includes(curView)) setView(mapView);
   views.setFocus({ match: new Set(p.roles.map((r) => r.c.id)) });
   if (curView === 'map') requestAnimationFrame(() => map.zoomToSet(p.roles.map((r) => r.c.id)));

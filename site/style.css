@@ -822,3 +822,4 @@ span.ph.has-img:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg,
 .av:has(img:not(.ok):not(.bad)) { background: var(--g); animation: avpulse 1.2s ease-in-out infinite alternate; }
 @keyframes avpulse { from { opacity: .55; } to { opacity: 1; } }
 .tile .tl:has(img:not(.ok):not(.bad)) { background: var(--pale); }
+.feat h3 small { font-size: 12px; letter-spacing: 0; font-weight: 400; margin-left: 4px; }

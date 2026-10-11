@@ -10,9 +10,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Boston_Dynamics"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/波士頓動力"
 people:
-  - { name: Zachary Jacowski, role: 人形機器人部門總負責人, interviewed: true }
-  - { name: Alberto Rodriguez, role: 機器人行為團隊負責人, interviewed: true }
-  - { name: Aya Durban, role: 產品策略負責人, interviewed: true }
   - { name: Marc Raibert, role: 創辦人, photo: { file: Marc raibert cebit hannover 2018.jpg, license: CC BY-SA 4.0, author: Alexander Altenhof } }
+  - { name: Zachary Jacowski, role: 人形機器人部門總負責人 }
+  - { name: Alberto Rodriguez, role: 機器人行為團隊負責人 }
+  - { name: Aya Durban, role: 產品策略負責人 }
 sources:
   - "pro:j8f4gchrfeb5"

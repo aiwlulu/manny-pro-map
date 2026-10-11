@@ -24,7 +24,7 @@ hq: 舊金山                      # 選填
 links:                          # 選填，公開資料
   website: https://stripe.com
   wikipedia: https://en.wikipedia.org/wiki/Stripe,_Inc.
-people:                         # 選填，創辦人、執行長、曼報訪談過的人
+people:                         # 選填，創辦人、執行長等關鍵人物；interviewed: true 代表 Pro「巨人之聲」專欄標題介紹過此人
   - { name: Patrick Collison, role: 共同創辦人暨執行長 }
   - { name: John Collison, role: 共同創辦人暨總裁 }
 relations:                      # 選填，target 是另一家公司的檔名

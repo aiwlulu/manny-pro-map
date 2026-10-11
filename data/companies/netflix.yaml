@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Netflix"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Netflix"
 people:
-  - { name: Ted Sarandos, role: 共同執行長, interviewed: true, photo: { file: Ted Sarandos 2024.jpg, license: CC BY-SA 2.0, author: UKinUSA } }
+  - { name: Ted Sarandos, role: 共同執行長, photo: { file: Ted Sarandos 2024.jpg, license: CC BY-SA 2.0, author: UKinUSA } }
   - { name: Reed Hastings, role: 共同創辦人, photo: { file: "Reed Hastings, Web 2.0 Conference.jpg", license: CC BY 2.0 } }
 sources:
   - "propod:cms7or6d0077o01ymcffj7gbb"
