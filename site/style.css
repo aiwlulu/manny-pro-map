@@ -746,3 +746,79 @@ body.open .coach, body.cx-open .coach { display: none; }
   .about-btns .cx-btn { flex: 1; }
 }
 body[data-view="people"] .coach, body[data-view="about"] .coach { display: none; }
+
+/* ---------- People page ---------- */
+.people-head h2 { margin: 0; font-size: clamp(26px, 3vw, 36px); font-weight: 900; }
+.people-head .lede { margin: 8px 0 22px; color: var(--body); max-width: 640px; }
+.feat { margin: 0 0 22px; }
+.feat h3 { margin: 0 0 10px; font-size: 13px; letter-spacing: .1em; color: var(--muted); font-weight: 600; display: flex; gap: 8px; align-items: center; }
+.feat h3 span { font: 600 12px var(--latin); }
+.feat-row { display: grid; grid-auto-flow: column; grid-auto-columns: 132px; gap: 10px; overflow-x: auto; padding: 2px 2px 10px; scrollbar-width: thin; scroll-snap-type: x proximity; }
+.fcard { scroll-snap-align: start; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 14px 10px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); text-decoration: none; transition: transform .2s var(--spring), border-color .2s, box-shadow .2s; }
+.fcard:hover { transform: translateY(-3px); border-color: var(--ink); box-shadow: var(--shadow); }
+.fcard .f-ph { width: 76px; height: 76px; font-size: 20px; box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px color-mix(in srgb, var(--red-a) 50%, var(--blue-b)); }
+.fcard b { font: 700 13.5px/1.25 var(--latin), var(--sans); }
+.fcard span { font-size: 11.5px; color: var(--muted); line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.people-bar { gap: 10px 14px; margin: 0 0 8px; }
+.pq { position: relative; display: flex; align-items: center; flex: 0 1 240px; }
+.pq .i { position: absolute; left: 11px; color: var(--muted); font-size: 14px; pointer-events: none; }
+.pq input { width: 100%; height: 32px; padding: 0 12px 0 32px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: 13.5px; outline: none; }
+.pq input:focus { border-color: var(--blue-b); }
+.people { columns: auto; }
+.letter { margin: 0 0 26px; }
+.letter h3 { display: flex; align-items: baseline; gap: 8px; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.letter h3 span { font: 600 12px var(--latin); color: var(--muted); }
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
+.pcard { position: relative; display: flex; gap: 12px; align-items: flex-start; padding: 12px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); text-decoration: none; min-width: 0; transition: border-color .2s, transform .2s var(--spring), box-shadow .2s; }
+.pcard:hover { border-color: var(--ink); transform: translateY(-2px); box-shadow: var(--shadow); }
+.pcard .pc-ph { width: 44px; height: 44px; font-size: 14px; }
+.pc-b { display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1; }
+.pc-n { font: 700 15px/1.3 var(--latin), var(--sans); padding-right: 34px; }
+.pc-n small { margin-left: 6px; font-weight: 500; font-size: 13px; color: var(--muted); }
+.pc-r { display: flex; flex-wrap: wrap; gap: 4px; }
+.rc { display: inline-flex; align-items: center; gap: 5px; max-width: 100%; padding: 2px 8px 2px 2px; border-radius: 999px; background: var(--pale); font-size: 12px; }
+.rc b { font-weight: 600; white-space: nowrap; }
+.rc i { font-style: normal; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rc.more { padding: 2px 8px; color: var(--muted); font-weight: 600; }
+.pc-tag { position: absolute; top: 10px; right: 10px; font-style: normal; font-size: 10.5px; color: var(--accent); border: 1px solid currentColor; border-radius: 5px; padding: 0 5px; }
+.pcard.iv { border-color: color-mix(in srgb, var(--accent) 30%, var(--line)); }
+body[data-view="people"] .coach, body[data-view="about"] .coach { display: none; }
+@media (max-width: 899px) {
+  .pq { flex: 1 1 100%; order: 2; }
+  .az { order: 3; }
+  .pgrid { grid-template-columns: 1fr; }
+  .feat-row { grid-auto-columns: 112px; margin: 0 -16px; padding: 2px 16px 10px; }
+  .fcard .f-ph { width: 64px; height: 64px; }
+}
+.people-bar { background: var(--paper); box-shadow: 0 0 0 100vmax var(--paper); clip-path: inset(0 -100vmax); }
+.az { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+.az::-webkit-scrollbar { display: none; }
+@media (min-width: 900px) { .people-bar { flex-wrap: nowrap; } .people-bar .pf { flex: none; } .az { min-width: 0; } }
+@media (max-width: 899px) {
+  .people-bar { gap: 8px; padding: 8px 16px; }
+  .people-bar .pf { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; width: 100%; }
+  .people-bar .pf::-webkit-scrollbar { display: none; }
+  .people-bar .chipbtn { flex: none; }
+  .pq input { height: 34px; }
+  .az a { width: 28px; height: 26px; }
+}
+/* Photo placeholder: initials + shimmer until the image decodes */
+span.ph { position: relative; overflow: hidden; }
+span.ph > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .35s var(--ease); }
+span.ph > img.ok { opacity: 1; }
+span.ph.has-img:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg, var(--pale) 0 40%, color-mix(in srgb, var(--pale) 40%, var(--surface)) 50%, var(--pale) 60% 100%) 0 0 / 300% 100%; animation: shimmer 1.4s linear infinite; }
+.av { position: relative; }
+.av > img { position: absolute; inset: 0; }
+.av.img { background: var(--g); box-shadow: none; }
+.av.img:has(img.ok) { background: #fff; box-shadow: inset 0 0 0 1px var(--line); }
+.coach { flex-wrap: wrap; }
+.coach p { flex: 1; min-width: 200px; }
+.co-act { display: flex; gap: 8px; flex: none; margin-left: auto; }
+.co-act a, .co-act button { font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 999px; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.co-try { background: linear-gradient(120deg, var(--blue-b), var(--red-a)); color: #fff; }
+.co-ok { background: transparent; color: var(--paper); border: 1px solid color-mix(in srgb, var(--paper) 30%, transparent); }
+.co-ok:hover { border-color: var(--paper); }
+@media (max-width: 520px) { .co-act { width: 100%; } .co-act > * { flex: 1; text-align: center; } }
+.av:has(img:not(.ok):not(.bad)) { background: var(--g); animation: avpulse 1.2s ease-in-out infinite alternate; }
+@keyframes avpulse { from { opacity: .55; } to { opacity: 1; } }
+.tile .tl:has(img:not(.ok):not(.bad)) { background: var(--pale); }

@@ -98,8 +98,9 @@ const weight = (c) => 1 + c.proN * 2.2 + (c.src.length - c.proN) * 0.6;
 const countBy = (c) => KIND_ORDER.map((k) => [k, c.src.filter((s) => s.kind === k).length]).filter(([, n]) => n);
 const initials = (name) => { const w = name.replace(/[^\p{L}\p{N}& ]/gu, ' ').split(/\s+/).filter(Boolean); return (w.length > 1 && !/^\p{Script=Han}/u.test(w[0]) ? w[0][0] + w[1][0] : [...(w[0] ?? '?')].slice(0, 2).join('')).toUpperCase(); };
 const gOf = (c) => grad(ind.get(c.industry) ?? industries.at(-1));
-const avatar = (c, cls = '') => `<span class="av ${cls}${c.logo?.url ? ' img' : ''}" style="--g:${gOf(c)}">${c.logo?.url ? `<img src="${esc(c.logo.url)}" alt="" loading="lazy" decoding="async">` : esc(initials(c.name))}</span>`;
-const face = (p, cls = '') => (p.photo?.file ? `<img class="ph ${cls}" src="${esc(COMMONS(p.photo.file, 120))}" alt="" loading="lazy" decoding="async">` : `<span class="ph ini ${cls}">${esc(initials(p.name))}</span>`);
+const avatar = (c, cls = '') => `<span class="av ${cls}${c.logo?.url ? ' img' : ''}" style="--g:${gOf(c)}">${esc(initials(c.name))}${c.logo?.url ? `<img src="${esc(c.logo.url)}" alt="" loading="lazy" decoding="async">` : ''}</span>`;
+// Initials sit underneath; the photo fades in over them once decoded
+const face = (p, cls = '', w = 120) => `<span class="ph ini ${cls}${p.photo?.file ? ' has-img' : ''}">${esc(initials(p.name))}${p.photo?.file ? `<img src="${esc(COMMONS(p.photo.file, w))}" alt="" loading="lazy" decoding="async">` : ''}</span>`;
 const markDone = () => { for (const c of cos.values()) c.done = isDone(c); };
 markDone();
 
@@ -163,18 +164,37 @@ $('#filters').onclick = (e) => {
 
 /* ---------- People ---------- */
 const roleLine = (p, max = 3) => p.roles.slice(0, max).map((r) => `${esc(r.c.name)}${r.role ? ` ${esc(r.role)}` : ''}`).join('　·　') + (p.roles.length > max ? `　+${p.roles.length - max}` : '');
-let pplFilter = 'all';
+let pplFilter = 'all', pplQuery = '';
+const isIv = (p) => p.roles.some((r) => r.interviewed);
+const pplMatch = (p, f) => f === 'all' || (f === 'iv' ? isIv(p) : f === 'multi' ? p.roles.length > 1 : !!p.photo?.file);
+const roleChips = (p, max = 3) => p.roles.slice(0, max).map((r) => `<span class="rc">${avatar(r.c, 'xs')}<b>${esc(r.c.name)}</b>${r.role ? `<i>${esc(r.role)}</i>` : ''}</span>`).join('') + (p.roles.length > max ? `<span class="rc more">+${p.roles.length - max}</span>` : '');
+function personCard(p) {
+  return `<a class="pcard${isIv(p) ? ' iv' : ''}" href="#/p/${p.id}">${face(p, 'pc-ph')}
+    <span class="pc-b"><span class="pc-n">${esc(p.name)}${p.zh ? `<small>${esc(p.zh)}</small>` : ''}</span><span class="pc-r">${roleChips(p)}</span></span>
+    ${isIv(p) ? '<em class="pc-tag">受訪</em>' : ''}</a>`;
+}
 function renderPeople() {
   const all = [...people.values()].sort((a, b) => a.name.localeCompare(b.name, 'en'));
-  const list = all.filter((p) => pplFilter === 'all' || (pplFilter === 'iv' ? p.roles.some((r) => r.interviewed) : p.roles.length > 1));
+  const nq = norm(pplQuery);
+  const list = all.filter((p) => pplMatch(p, pplFilter) && (!nq || norm(`${p.name} ${p.zh} ${p.roles.map((r) => r.c.name).join(' ')}`).includes(nq)));
   const groups = new Map();
   for (const p of list) { const L = /[a-z]/i.test(p.name[0]) ? p.name[0].toUpperCase() : '#'; (groups.get(L) ?? groups.set(L, []).get(L)).push(p); }
-  const count = (f) => all.filter((p) => f === 'all' || (f === 'iv' ? p.roles.some((r) => r.interviewed) : p.roles.length > 1)).length;
-  $('#people-bar').innerHTML = `<div class="pf">${[['all', '全部'], ['iv', '曼報訪談過'], ['multi', '跨多家公司']].map(([k, l]) => `<button class="chipbtn ${pplFilter === k ? 'on' : ''}" data-pf="${k}">${l}<span>${count(k)}</span></button>`).join('')}</div>
-    <nav class="az" aria-label="依字母跳轉">${[...groups.keys()].map((L) => `<a href="#L-${L}" data-l="${L}">${L}</a>`).join('')}</nav>`;
-  $('#people').innerHTML = [...groups].map(([L, ps]) => `<div class="letter" id="L-${L}"><h3>${L}</h3>${ps.map((p) =>
-    `<a class="person" href="#/p/${p.id}">${face(p)}<span class="pw"><span class="pn">${esc(p.name)}${p.zh ? ` <span class="muted">${esc(p.zh)}</span>` : ''}${p.roles.length > 1 ? `<em class="multi">${p.roles.length} 家公司</em>` : ''}</span><span class="pc">${roleLine(p)}</span></span></a>`).join('')}</div>`).join('')
-    || `<p class="empty">${icon('user', 'lg')}<br>資料整理中</p>`;
+  const tabs = [['all', '全部'], ['iv', '曼報訪談過'], ['multi', '跨多家公司'], ['photo', '有照片']];
+  const bar = $('#people-bar');
+  if (!bar.dataset.ready) {
+    bar.dataset.ready = 1;
+    bar.innerHTML = `<div class="pf"></div><label class="pq">${icon('search')}<input type="search" placeholder="過濾人名或公司" aria-label="過濾人名或公司"></label><nav class="az" aria-label="依字母跳轉"></nav>`;
+    bar.querySelector('input').addEventListener('input', (e) => { pplQuery = e.target.value; renderPeople(); });
+  }
+  bar.querySelector('.pf').innerHTML = tabs.map(([k, l]) => `<button class="chipbtn ${pplFilter === k ? 'on' : ''}" data-pf="${k}">${l}<span>${all.filter((p) => pplMatch(p, k)).length}</span></button>`).join('');
+  bar.querySelector('.az').innerHTML = [...groups.keys()].map((L) => `<a href="#L-${L}" data-l="${L}">${L}</a>`).join('');
+  const featured = pplFilter === 'all' && !nq ? all.filter(isIv).sort((a, b) => !!b.photo - !!a.photo) : [];
+  $('#people-head').innerHTML = `<p class="eyebrow">People</p><h2>創辦人與關鍵人物</h2>
+    <p class="lede">曼報談過的 ${all.length} 位執行長、創辦人與受訪來賓。點一個人，看他在哪些公司、擔任什麼角色。</p>
+    ${featured.length ? `<section class="feat"><h3>${icon('headphones')}曼報訪談過<span>${featured.length}</span></h3><div class="feat-row">${featured.map((p) =>
+      `<a class="fcard" href="#/p/${p.id}">${face(p, 'f-ph')}<b>${esc(p.name)}</b><span>${esc(p.roles[0].c.name)}${p.roles[0].role ? ` · ${esc(p.roles[0].role)}` : ''}</span></a>`).join('')}</div></section>` : ''}`;
+  $('#people').innerHTML = [...groups].map(([L, ps]) => `<section class="letter" id="L-${L}"><h3>${L}<span>${ps.length}</span></h3><div class="pgrid">${ps.map(personCard).join('')}</div></section>`).join('')
+    || `<p class="empty">${icon('user', 'lg')}<br>沒有符合的人物</p>`;
 }
 
 $('#people-bar').addEventListener('click', (e) => {
@@ -256,7 +276,7 @@ function showCompany(c) {
 function showPerson(p) {
   credit(p.photo, p.name);
   const ivs = p.roles.filter((r) => r.interviewed).length;
-  openPanel(`<header class="ph-head" style="--g:linear-gradient(120deg,var(--blue-a),var(--red-b))">${p.photo?.file ? `<img class="ph xl" src="${esc(COMMONS(p.photo.file, 250))}" alt="">` : `<span class="ph ini xl">${esc(initials(p.name))}</span>`}
+  openPanel(`<header class="ph-head" style="--g:linear-gradient(120deg,var(--blue-a),var(--red-b))">${face(p, 'xl', 250)}
       <div><span class="ind">人物${ivs ? ' · 曼報訪談過' : ''}</span><h2>${esc(p.name)}</h2>${p.zh ? `<p class="zhn">${esc(p.zh)}</p>` : ''}</div></header>
     <h3>${icon('building')}公司與身分<span class="c">${p.roles.length}</span></h3>
     <ul class="roles">${p.roles.map((r) => `<li><a href="#/c/${r.c.id}">${avatar(r.c, 'sm')}<span><b>${esc(r.c.name)}</b><span class="role">${esc(r.role || '—')}${r.interviewed ? '<em class="iv">受訪</em>' : ''}</span></span>${icon('external', 'go')}</a></li>`).join('')}</ul>`);
@@ -291,6 +311,7 @@ $('#scrim').onclick = () => go(mapView === 'map' ? '#/bubbles' : '#/');
 let cxCleanup = null;
 const peers = (c) => [...cos.values()].filter((x) => x.id !== c.id && x.industry === c.industry && x.segment === c.segment).sort((a, b) => b.proN - a.proN).slice(0, 12);
 function openExplorer(c) {
+  dismissCoach();
   const el = $('#cx');
   cxCleanup?.();
   const was = el.hidden;
@@ -409,9 +430,13 @@ for (const el of document.querySelectorAll('[data-ic]')) el.outerHTML = icon(el.
 renderStats(); renderFilters(); renderViews();
 if (!store.get('pm-coach', false)) {
   const el = $('#coach');
-  el.innerHTML = `<span class="co-ic">${icon('link')}</span><p><b>新功能：產業鏈</b>點任一家公司可以看它的上下游；地圖卡片右下角的 ${icon('link')} 也能直接打開。</p><button class="iconbtn" aria-label="知道了">${icon('x')}</button>`;
+  el.innerHTML = `<span class="co-ic">${icon('link')}</span><p><b>新功能：產業鏈</b>點任一家公司可以看它的上下游；地圖卡片右下角的 ${icon('link')} 也能直接打開。</p>
+    <span class="co-act"><a class="co-try" href="#/chain/nvidia" data-co="try">試試看</a><button class="co-ok" data-co="ok">知道了，不再顯示</button></span>`;
   el.hidden = false;
-  el.querySelector('button').onclick = () => { el.hidden = true; store.set('pm-coach', true); };
+  el.onclick = (e) => { if (e.target.closest('[data-co]')) dismissCoach(); };
+}
+function dismissCoach() { const el = $('#coach'); if (!el.hidden) { el.hidden = true; store.set('pm-coach', true); } }
+{
 }
 countUp($('#n-co'), cos.size);
 route();
