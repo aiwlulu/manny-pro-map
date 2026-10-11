@@ -100,6 +100,8 @@ for (const c of cos.values())
     e.photo ||= p.photo ?? null;
     e.roles.push({ c, role: p.role ?? '', interviewed: !!p.interviewed });
   }
+for (const p of people.values()) p.roles.sort((a, b) => b.c.proN - a.c.proN);
+for (const p of people.values()) p.mentions = (data.peopleSources?.[p.name] ?? []).map((id) => src.get(id)).filter(Boolean);
 
 const keySrc = (c) => (c.proN ? c.src.filter((s) => PRO_KINDS.has(s.kind)) : c.src);
 const isDone = (c) => { const k = keySrc(c); return k.length > 0 && k.every((s) => read.has(s.id)); };
@@ -208,11 +210,12 @@ function renderPeople() {
   bar.querySelector('.pf').innerHTML = colChips((id) => all.filter((p) => pplMatch(p, id)).length)
     + `<div class="fgroup"><span class="flabel">條件</span>${toggle('multi', '跨多家公司', pplMulti, all.filter((p) => p.roles.length > 1).length)}</div>`;
   bar.querySelector('.az').innerHTML = [...groups.keys()].map((L) => `<a href="#L-${L}" data-l="${L}">${L}</a>`).join('');
-  const featured = col === 'all' && !pplMulti && !nq ? all.filter(isIv).sort((a, b) => !!b.photo - !!a.photo) : [];
+  // Most-mentioned people: something the filters cannot show
+  const featured = col === 'all' && !pplMulti && !nq ? all.filter((p) => p.mentions.length >= 2).sort((a, b) => b.mentions.length - a.mentions.length || !!b.photo - !!a.photo).slice(0, 8) : [];
   $('#people-head').innerHTML = `<p class="eyebrow">People</p><h2>創辦人與關鍵人物</h2>
     <p class="lede">曼報談過的 ${all.length} 位執行長、創辦人與關鍵人物。點一個人，看他在哪些公司、擔任什麼角色。</p>
-    ${featured.length ? `<section class="feat"><h3>${icon('file')}巨人之聲<span>${featured.length}</span><small>Pro「巨人之聲」專欄整理過訪談或演講的人物</small></h3><div class="feat-row">${featured.map((p) =>
-      `<a class="fcard" href="#/p/${p.id}">${face(p, 'f-ph')}<b>${esc(p.name)}</b><span>${esc(p.roles[0].c.name)}${p.roles[0].role ? ` · ${esc(p.roles[0].role)}` : ''}</span></a>`).join('')}</div></section>` : ''}`;
+    ${featured.length ? `<section class="feat"><h3>${icon('file')}最常被曼報提及<small>依提到此人的文章與節目篇數排序</small></h3><div class="feat-row">${featured.map((p, i) =>
+      `<a class="fcard" href="#/p/${p.id}"><em class="rank">${i + 1}</em>${face(p, 'f-ph')}<b>${esc(p.name)}</b><span>${esc(p.roles[0].c.name)}${p.roles[0].role ? ` · ${esc(p.roles[0].role)}` : ''}</span><i class="mcount">提及 ${p.mentions.length} 篇</i></a>`).join('')}</div></section>` : ''}`;
   // Short results read better as one grid than as many one-card letter sections
   if (list.length && list.length <= 24) {
     bar.querySelector('.az').innerHTML = '';
@@ -238,11 +241,11 @@ $('#people-bar').addEventListener('click', (e) => {
 /* ---------- Panel ---------- */
 const credits = [];
 function credit(img, what) { if (img?.file) credits.push(`${what}：<a href="https://commons.wikimedia.org/wiki/File:${encodeURIComponent(img.file)}" target="_blank" rel="noopener">${esc(img.author || 'Wikimedia Commons')}</a>${img.license ? `，${esc(img.license)}` : ''}`); }
-function srcList(list) {
+function srcList(list, withKind = false) {
   return `<ul class="src">${list.map((s) => `<li class="${read.has(s.id) ? 'read' : ''}">
     <label class="ck"><input type="checkbox" data-src="${esc(s.id)}" ${read.has(s.id) ? 'checked' : ''}><span>${icon('check')}</span><b class="sr">標記已讀</b></label>
     <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>
-    <span class="sm">${s.date}${s.column ? ` · ${esc(s.column)}` : ''}</span></li>`).join('')}</ul>`;
+    <span class="sm">${withKind ? `<b class="sk-kind">${KIND[s.kind].short}</b>` : ''}${s.date}${s.column ? ` · ${esc(s.column)}` : ''}</span></li>`).join('')}</ul>`;
 }
 function openPanel(html, extra = '') {
   const p = $('#panel');
@@ -308,7 +311,8 @@ function showPerson(p) {
   openPanel(`<header class="ph-head" style="--g:linear-gradient(120deg,var(--blue-a),var(--red-b))">${face(p, 'xl', 250)}
       <div><span class="ind">人物${ivs ? ' · 巨人之聲專欄' : ''}</span><h2>${esc(p.name)}</h2>${p.zh ? `<p class="zhn">${esc(p.zh)}</p>` : ''}</div></header>
     <h3>${icon('building')}公司與身分<span class="c">${p.roles.length}</span></h3>
-    <ul class="roles">${p.roles.map((r) => `<li><a href="#/c/${r.c.id}">${avatar(r.c, 'sm')}<span><b>${esc(r.c.name)}</b><span class="role">${esc(r.role || '—')}${r.interviewed ? '<em class="iv" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</span></span>${icon('external', 'go')}</a></li>`).join('')}</ul>`);
+    <ul class="roles">${p.roles.map((r) => `<li><a href="#/c/${r.c.id}">${avatar(r.c, 'sm')}<span><b>${esc(r.c.name)}</b><span class="role">${esc(r.role || '—')}${r.interviewed ? '<em class="iv" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</span></span>${icon('external', 'go')}</a></li>`).join('')}</ul>
+    ${p.mentions.length ? `<h3>${icon('file')}提到他的文章與節目<span class="c">${p.mentions.length}</span></h3>${srcList(p.mentions, true)}` : ''}`);
   if (!['chain', 'map'].includes(curView)) setView(mapView);
   views.setFocus({ match: new Set(p.roles.map((r) => r.c.id)) });
   if (curView === 'map') requestAnimationFrame(() => map.zoomToSet(p.roles.map((r) => r.c.id)));

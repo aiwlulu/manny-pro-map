@@ -6,6 +6,16 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.9.0] - 2026-10-11
+
+### 新增
+- 人物頁精選區改為「最常被曼報提及」前 8 名，依提到此人的文章與節目篇數排序（巨人之聲改由欄目篩選查看，避免重複）
+- 人物卡新增「提到他的文章與節目」清單，並標示 Pro／Pro Podcast／Podcast 類型
+- 新增 `data/people-sources.json`：每位人物被哪些文章提及（僅書目 id）
+
+### 改善
+- 人物的主要身分改為顯示曼報談最多的那家公司
+
 ## [1.8.0] - 2026-10-11
 
 ### 新增
@@ -119,6 +129,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.9.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.7.0...v1.8.0
 [1.7.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.6.0...v1.7.0
 [1.6.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.5.1...v1.6.0

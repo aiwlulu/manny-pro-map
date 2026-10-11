@@ -886,3 +886,6 @@ span.ph.has-img:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg,
 }
 body[data-view="chain"] .card { align-items: start; }
 body[data-view="chain"] .card .card-main { padding-top: 8px; }
+.fcard .mcount { font: 600 11px var(--latin), var(--sans); font-style: normal; }
+.fcard .rank { font-size: 16px; }
+.sk-kind { font-weight: 600; font-size: 11px; color: var(--accent); border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; margin-right: 6px; }
