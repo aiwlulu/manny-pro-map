@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-28aSBS5DpF0TGrD0TiDhH2wF7/a11FhQl43uHGHfiXg=' 'sha256-PcCsWT4i0t/QHp0AzoNzg8k4e3FE5XOtOgRc3/ypnSo='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-28aSBS5DpF0TGrD0TiDhH2wF7/a11FhQl43uHGHfiXg=' 'sha256-Fnk7l/+kmPCBBdkJiCcmcXSStAcvihGKNrFcaQGuZg8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>找不到頁面 · Pro Map</title>
@@ -164,7 +164,7 @@
     fetch(BASE + 'data.json').then((r) => r.json()).then((d) => {
       const seen = new Set();
       for (const c of d.companies) {
-        const logo = c.logo?.file ? `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(c.logo.file)}?width=80` : c.icon ? BASE + c.icon : '';
+        const logo = c.logo?.thumb ?? (c.icon ? BASE + c.icon : '');
         for (const k of [c.id, c.name, c.zh, ...(c.aliases ?? [])].filter(Boolean)) items.push({ key: norm(k), name: c.name, sub: c.zh || '', href: '#/c/' + c.id, logo, w: (c.sources ?? []).length });
         for (const p of c.people ?? []) {
           const id = p.name.toLowerCase().normalize('NFKD').replace(/[^\w]+/g, '-').replace(/^-|-$/g, '');
