@@ -1,0 +1,16 @@
+name: LinkedIn
+industry: platforms
+summary: "職涯與商務導向的社群平台，讓使用者建立專業人脈、刊登履歷，並供企業發布職缺。"
+founded: 2003
+hq: 森尼韋爾
+logo: { file: LinkedIn Logo.svg, license: Public domain, author: LinkedIn }
+links:
+  website: "https://www.linkedin.com"
+  wikipedia: "https://en.wikipedia.org/wiki/LinkedIn"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/領英"
+people:
+  - { name: Reid Hoffman, role: 創辦人 }
+  - { name: Konstantin Guericke, role: 創辦人 }
+sources:
+  - "pro:99c45rxf5864"
+  - "pro:ufwby4nxpxtv"

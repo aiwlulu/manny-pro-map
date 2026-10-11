@@ -1,0 +1,12 @@
+name: BOOKOFF
+industry: commerce
+summary: "日本最大的二手書連鎖店，除二手書外也販售漫畫、CD、DVD 與電子遊戲等。"
+founded: 1991
+hq: 相模原市
+logo: { file: Bookoff Corporation Logo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "https://www.bookoff.co.jp"
+  wikipedia: "https://en.wikipedia.org/wiki/Book_Off"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Book_Off"
+sources:
+  - "pro:r9fgagndpvde"

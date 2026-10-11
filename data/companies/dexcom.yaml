@@ -1,0 +1,13 @@
+name: Dexcom
+industry: health
+summary: "美國醫療公司，研發、製造與銷售連續血糖監測系統，供糖尿病管理使用。"
+founded: 1999
+hq: 聖地牙哥
+links:
+  website: "http://dexcom.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Dexcom"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/德康医疗"
+people:
+  - { name: Kevin Sayer }
+sources:
+  - "podcast:2024-11-21-ep87"

@@ -1,0 +1,21 @@
+name: Nike
+zh: 耐吉
+industry: consumer
+summary: "美國運動用品公司，設計生產運動鞋、服飾與運動器材，為全球主要供應商。"
+founded: 1964
+hq: 比弗頓
+logo: { file: Logo NIKE.svg, license: Public domain, author: "Carolyn Davidson, Nike" }
+links:
+  website: "https://www.nike.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Nike,_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/耐克"
+people:
+  - { name: Phil Knight, role: 創辦人 }
+  - { name: Bill Bowerman, role: 創辦人 }
+relations:
+  - { type: competitor, target: hoka }
+  - { type: competitor, target: on }
+  - { type: competitor, target: under-armour }
+sources:
+  - "propod:cmtel5mvw12jk01wy4ok92ldx"
+  - "pro:23jwvufhmrsw"

@@ -1,0 +1,15 @@
+name: Live Nation
+industry: media
+summary: "美國娛樂公司，舉辦與管理現場演出、擁有場館與音樂節，並經營票務銷售。"
+founded: 2005
+hq: 比佛利山
+links:
+  website: "http://www.livenationentertainment.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Live_Nation_Entertainment"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/理想國演藝"
+people:
+  - { name: Joe Berchtold, role: 總裁兼財務長, interviewed: true }
+relations:
+  - { type: parent, target: ticketmaster, note: 2010 年 }
+sources:
+  - "pro:y3ajdu6pbwwx"

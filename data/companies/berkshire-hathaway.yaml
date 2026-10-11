@@ -1,0 +1,24 @@
+name: Berkshire Hathaway
+zh: 波克夏
+industry: finance
+summary: "為一家多元控股公司，前身為紡織公司，旗下掌管保險、物業與再保險等多家子公司。"
+founded: 1955
+hq: 奧馬哈
+logo: { file: Berkshire-Hathaway-Logo.svg, license: Public domain, author: Berkshire Hathaway }
+links:
+  website: "https://www.berkshirehathaway.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Berkshire_Hathaway"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/波克夏·哈薩威"
+people:
+  - { name: Oliver Chace, role: 創辦人 }
+  - { name: Warren Buffett, zh: 巴菲特, photo: { file: Warren Buffett KU Visit.jpg, license: CC BY-SA 2.0, author: Mark Hirschey } }
+  - { name: Todd Combs }
+  - { name: Ted Weschler }
+sources:
+  - "propod:cmswaraeg0bmx01zd1ymybtom"
+  - "pro:k8w9aqudktnu"
+  - "pro:xdqzqvzyyzb8"
+  - "pro:33q9heffxzna"
+  - "pro:9e2jqsm9y5bj"
+  - "pro:bg89rvnhstnm"
+  - "podcast:2024-07-01-ep73"

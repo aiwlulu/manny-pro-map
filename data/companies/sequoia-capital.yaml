@@ -1,0 +1,16 @@
+name: Sequoia Capital
+zh: 紅杉資本
+industry: finance
+summary: "美國創業投資公司，主要投資科技領域未上市企業的種子期、早期與成長階段。"
+founded: 1972
+hq: 门洛帕克
+logo: { file: Sequoia Capital logo.svg, license: Public domain, author: Sequoia Capital }
+links:
+  website: "http://www.sequoiacap.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Sequoia_Capital"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/紅杉資本"
+people:
+  - { name: Roelof Botha, role: 管理合夥人, interviewed: true, photo: { file: Roelof Botha.jpg, license: CC BY 2.0, author: TechCrunch. Photo by Dave Getzschman. } }
+  - { name: Don Valentine, role: 創辦人 }
+sources:
+  - "pro:qnjkum4j8g4u"

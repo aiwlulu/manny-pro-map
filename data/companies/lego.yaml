@@ -1,0 +1,15 @@
+name: LEGO
+zh: 樂高
+industry: consumer
+summary: "丹麥玩具製造與媒體公司，主要生產可互相拼接的樂高積木，並經營主題樂園與零售店。"
+founded: 1932
+hq: 比隆
+logo: { file: LEGO logo.svg, license: Public domain, author: The Lego Group }
+links:
+  website: "https://www.lego.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/The_Lego_Group"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/樂高集團"
+people:
+  - { name: Ole Kirk Christiansen, role: 創辦人 }
+sources:
+  - "podcast:2022-05-21-ep12"

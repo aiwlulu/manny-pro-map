@@ -1,0 +1,14 @@
+name: Exotec
+industry: industrial
+summary: "法國倉儲自動化公司，為倉庫與訂單履行中心開發機器人及軟體，提供貨到人的機器人系統。"
+founded: 2015
+hq: 瓦斯卡勒
+logo: { file: Exotec Logo.png, license: CC BY-SA 4.0, author: Exotec }
+links:
+  website: "https://www.exotec.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Exotec"
+people:
+  - { name: Romain Moulin, role: 創辦人 }
+  - { name: Renaud Heitz, role: 創辦人 }
+sources:
+  - "podcast:2025-06-16-ep103"

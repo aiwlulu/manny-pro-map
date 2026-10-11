@@ -1,0 +1,10 @@
+name: Rad Power Bikes
+industry: hardware
+summary: "美國西雅圖的電動自行車品牌，主要向北美市場銷售電動自行車。"
+hq: 西雅圖
+links:
+  website: "https://www.radpowerbikes.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Rad_Life_Mobility"
+sources:
+  - "podcast:2023-08-07-ep48"
+  - "podcast:2023-06-19-ep44"

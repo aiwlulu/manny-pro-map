@@ -1,0 +1,14 @@
+name: Wanda Group
+zh: 萬達
+industry: media
+summary: "中國企業集團，主要經營房地產開發與娛樂業務，旗下擁有電影院線。"
+founded: 1988
+hq: 北京市
+links:
+  website: "https://www.wanda-group.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Wanda_Group"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/万达集团"
+people:
+  - { name: Wang Jianlin, role: 創辦人 }
+sources:
+  - "propod:cms7or6d0077o01ymcffj7gbb"

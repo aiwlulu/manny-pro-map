@@ -1,0 +1,11 @@
+name: Hindawi
+industry: publishing
+summary: "開放取用學術期刊出版商，後被 Wiley 收購。"
+hq: 開羅
+links:
+  website: "https://www.hindawi.org"
+people:
+  - { name: Ahmed Hindawi, role: 創辦人 }
+  - { name: Nagwa Abdelmottaleb, role: 創辦人 }
+sources:
+  - "pro:ta8afrymmmcj"

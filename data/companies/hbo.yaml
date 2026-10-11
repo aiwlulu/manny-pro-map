@@ -1,0 +1,17 @@
+name: HBO
+zh: 家庭票房
+industry: media
+summary: "美國付費電視網，主要播出電影、原創影集、紀錄片與特別節目。"
+founded: 1972
+hq: 紐約
+logo: { file: HBO logo.svg, license: Public domain, author: Gerard Huerta }
+links:
+  website: "https://hbo.com"
+  wikipedia: "https://en.wikipedia.org/wiki/HBO"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/HBO"
+people:
+  - { name: Charles Dolan, role: 創辦人 }
+  - { name: Casey Bloys, role: 領導人 }
+sources:
+  - "pro:ueyj98gmbgxn"
+  - "podcast:2023-04-17-ep40"

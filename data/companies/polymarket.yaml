@@ -1,0 +1,16 @@
+name: Polymarket
+industry: finance
+summary: "美國的加密貨幣預測市場平台，使用者可存入加密貨幣並對未來事件下注。"
+founded: 2020
+logo: { file: Company Logo Polymarket.png, license: Public domain, author: 1924848uejdjfik }
+links:
+  website: "https://polymarket.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Polymarket"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Polymarket"
+people:
+  - { name: Shayne Coplan, role: 創辦人 }
+sources:
+  - "pro:68ezcucry26v"
+  - "pro:edpjc5mshdka"
+  - "pro:ufwby4nxpxtv"
+  - "pro:t8dntpyvdeyp"

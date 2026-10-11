@@ -1,0 +1,27 @@
+name: Anthropic
+industry: ai
+summary: "開發 Claude 系列大型語言模型等前沿人工智慧產品，由前 OpenAI 研究人員創立，以促進人工智慧安全為目標。"
+founded: 2021
+hq: 舊金山
+logo: { file: Anthropic logo.svg, license: Public domain, author: Anthropic }
+links:
+  website: "https://www.anthropic.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Anthropic"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Anthropic"
+people:
+  - { name: Dario Amodei, role: 執行長, photo: { file: "Dario Amodei at TechCrunch Disrupt 2023 02 (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
+  - { name: Daniela Amodei, role: 創辦人 }
+  - { name: Chris Olah, role: 創辦人 }
+  - { name: Jared Kaplan, role: 創辦人 }
+sources:
+  - "propod:cmuti5uau06di01v1f935gjyi"
+  - "pro:dwcrddrmu86k"
+  - "pro:x29tt82u4h4q"
+  - "propod:cmtj74mw500lp01y46usd2blj"
+  - "pro:hxdkrud95vd8"
+  - "pro:5hk42uvhcs2t"
+  - "pro:b8mnrda6dvcj"
+  - "pro:rdnwj3ty26j9"
+  - "pro:zppaa3v8qrtw"
+  - "podcast:2025-04-07-ep99"
+  - "podcast:2024-12-06-sp7"

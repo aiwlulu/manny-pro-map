@@ -1,0 +1,8 @@
+name: Lorikeet
+industry: ai
+summary: "澳洲的 AI 客服新創，以 AI 代理處理企業的客戶服務案件。"
+people:
+  - { name: Steve Hine, role: 創辦人 }
+  - { name: Jamie Ho, role: CTO }
+sources:
+  - "podcast:2025-11-20-ep115"

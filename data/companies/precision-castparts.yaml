@@ -1,0 +1,13 @@
+name: Precision Castparts
+industry: mobility
+summary: "美國金屬零組件製造商，生產供航太、工業燃氣渦輪與國防產業使用的精密鑄件及鍛件。"
+founded: 1953
+hq: 波特蘭
+logo: { file: Precision Castparts logo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "http://www.precast.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Precision_Castparts_Corp."
+people:
+  - { name: Mark Donegan, role: 執行長 }
+sources:
+  - "pro:9e2jqsm9y5bj"

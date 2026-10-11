@@ -1,0 +1,23 @@
+name: Visa
+industry: payments
+summary: "經營 Visa 品牌的支付卡業務，透過全球電子資金轉帳網路連結金融機構，提供信用卡、金融卡與預付卡等支付產品。"
+founded: 1958
+hq: 舊金山
+logo: { file: "Visa Inc. logo (1992–1999).svg", license: Public domain, author: Visa Inc. }
+links:
+  website: "https://corporate.visa.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Visa_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Visa公司"
+people:
+  - { name: Dee Hock, role: 創辦人 }
+relations:
+  - { type: acquired, target: tink, note: 2022 年 }
+  - { type: competitor, target: mastercard }
+sources:
+  - "pro:b2r32qpe3jna"
+  - "pro:k8w9aqudktnu"
+  - "pro:zvsevsgssyap"
+  - "pro:rtqwsk3m4mxk"
+  - "pro:wvdcaes6auhw"
+  - "pro:hzz5fkvrxg5x"
+  - "pro:yb9cs6kekxas"

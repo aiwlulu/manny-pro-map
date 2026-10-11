@@ -1,0 +1,13 @@
+name: Trimble
+zh: 天寶導航
+industry: hardware
+summary: "美國科技公司，開發建築工程、測繪、運輸與物流使用的軟硬體，並生產定位相關產品。"
+founded: 1978
+hq: 威斯敏斯特
+logo: { file: Trimble Logo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "http://www.trimble.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Trimble_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/天宝导航"
+sources:
+  - "pro:wmste5rh4s2q"

@@ -1,0 +1,20 @@
+name: xAI
+industry: ai
+summary: "美國人工智慧公司，由 Elon Musk 創立，主要產品為 Grok 系列語言、圖像與影片模型，並經營 X 社群平台與 Cursor 開發環境。"
+founded: 2023
+hq: 舊金山灣區
+logo: { file: SpaceXAI logo.svg, license: Public domain, author: Space Exploration Technologies Corp. }
+links:
+  website: "https://x.ai"
+  wikipedia: "https://en.wikipedia.org/wiki/SpaceX_Super_Intelligence"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/SpaceXAI"
+people:
+  - { name: Elon Musk, role: 創辦人 }
+  - { name: Tony Wu, role: 創辦人 }
+  - { name: Igor Babuschkin, role: 創辦人 }
+relations:
+  - { type: parent, target: x }
+sources:
+  - "pro:3wwyhabrfgca"
+  - "pro:tvqqj5aqhcr3"
+  - "podcast:2025-04-07-ep99"

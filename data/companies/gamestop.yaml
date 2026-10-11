@@ -1,0 +1,12 @@
+name: GameStop
+industry: commerce
+summary: "美國的電子遊戲、消費電子與周邊商品零售商，在美國、澳洲與歐洲經營多家門市。"
+founded: 1980
+hq: 格雷普韋恩
+logo: { file: "GameStop Logo (2000–2012).svg", license: Public domain, author: GameStop }
+links:
+  website: "https://www.gamestop.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/GameStop"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/GameStop"
+sources:
+  - "pro:2cw32kpzmnpy"

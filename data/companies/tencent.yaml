@@ -1,0 +1,19 @@
+name: Tencent
+zh: 騰訊
+industry: gaming
+summary: "中國跨國科技與控股企業，提供社群、網路遊戲及數位閱讀等服務，產品包括微信與騰訊QQ。"
+founded: 1998
+hq: 麻岭社区
+logo: { file: Tencent logo 2017.svg, license: Public domain, author: Tencent. }
+links:
+  website: "https://www.tencent.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Tencent"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/腾讯"
+people:
+  - { name: Ma Huateng, role: 創辦人 }
+  - { name: Zhang Zhidong, role: 創辦人 }
+  - { name: Chen Yidan, role: 創辦人 }
+  - { name: Daniel Xu, role: 創辦人 }
+  - { name: Zeng Liqing, role: 創辦人 }
+sources:
+  - "podcast:2025-08-27-ep111"

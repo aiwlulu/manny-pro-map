@@ -1,0 +1,16 @@
+name: Alibaba
+zh: 阿里巴巴集團控股
+industry: software
+summary: "中國的跨國科技集團，經營電子商務與零售平台，並提供雲端運算、數位媒體與物流等服務。"
+founded: 1999
+hq: 濱江區
+logo: { file: Alibaba en logo.svg, license: Public domain, author: Alibaba Group Holding Limited }
+links:
+  website: "https://www.alibaba.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Alibaba_Group"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/阿里巴巴集团"
+people:
+  - { name: Jack Ma, role: 創辦人 }
+  - { name: Joseph Tsai, role: 創辦人 }
+sources:
+  - "pro:5hk42uvhcs2t"

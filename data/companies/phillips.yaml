@@ -1,0 +1,14 @@
+name: Phillips
+zh: 富藝斯
+industry: other
+summary: "英國拍賣行，主要拍賣藝術品、設計作品、珠寶與鐘錶，並在多地設有拍賣中心。"
+founded: 1796
+hq: 倫敦
+links:
+  website: "http://www.phillips.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Phillips_(auctioneers)"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/富艺斯"
+people:
+  - { name: Harry Phillips, role: 創辦人 }
+sources:
+  - "pro:pqn8u2pyqzdq"

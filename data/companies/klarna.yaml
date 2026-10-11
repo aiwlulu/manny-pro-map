@@ -1,0 +1,15 @@
+name: Klarna
+industry: payments
+summary: "瑞典的金融科技公司與數位銀行，提供數位支付與「先買後付」等短期消費信貸服務。"
+founded: 2007
+hq: 斯德哥爾摩
+logo: { file: Klarna logo blue.png, license: Public domain, author: Klarna }
+links:
+  website: "https://www.klarna.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Klarna"
+people:
+  - { name: Sebastian Siemiatkowski, role: 創辦人 }
+  - { name: Niklas Adalberth, role: 創辦人 }
+  - { name: Sebastian, role: 執行長 }
+sources:
+  - "pro:52gjqz2bbj2p"

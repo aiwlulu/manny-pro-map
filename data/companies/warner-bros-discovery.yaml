@@ -1,0 +1,15 @@
+name: Warner Bros. Discovery
+zh: 華納兄弟探索
+industry: media
+summary: "總部位於紐約的美國跨國企業集團，主要從事大眾媒體與娛樂業務。"
+founded: 2022
+hq: 紐約
+logo: { file: Warner Bros. Discovery.svg, license: Public domain, author: "Warner Bros. Entertainment (Warner Bros. Discovery)" }
+links:
+  website: "https://www.wbd.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Warner_Bros._Discovery"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/华纳兄弟探索"
+relations:
+  - { type: parent, target: hbo }
+sources:
+  - "pro:ueyj98gmbgxn"

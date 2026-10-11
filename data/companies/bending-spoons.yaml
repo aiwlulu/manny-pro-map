@@ -1,0 +1,27 @@
+name: Bending Spoons
+industry: software
+summary: "義大利科技集團，收購已具市場需求的產品並長期經營，擅長以 AI 重寫既有程式碼。"
+founded: 2013
+hq: 米蘭
+logo: { file: Bending Spoons.svg, license: Public domain, author: Bending Spoons Operations S.p.A. }
+links:
+  website: "https://bendingspoons.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Bending_Spoons"
+people:
+  - { name: Luca Ferrari, role: 共同創辦人 }
+  - { name: Matteo Danieli, role: 共同創辦人 }
+  - { name: Francesco Patarnello, role: 共同創辦人 }
+relations:
+  - { type: parent, target: vimeo }
+  - { type: acquired, target: evernote, note: 2022 年 }
+  - { type: acquired, target: vimeo }
+  - { type: acquired, target: aol }
+  - { type: parent, target: remini }
+sources:
+  - "propod:cmtb4yr9o01pp01zcgnpahydb"
+  - "propod:cmt8nclvm0xmv01xi8eex5ue8"
+  - "propod:cmswaraeg0bmx01zd1ymybtom"
+  - "pro:j3kbjjzwdjzd"
+  - "podcast:2026-07-17-ep131"
+  - "pro:wuw9hfu5buhb"
+  - "podcast:2022-11-27-ep29"

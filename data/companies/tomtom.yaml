@@ -1,0 +1,17 @@
+name: TomTom
+industry: hardware
+summary: "荷蘭定位技術與消費電子公司，主要提供地圖、導航服務及衛星導航設備。"
+founded: 1991
+hq: 阿姆斯特丹
+logo: { file: TomTom logo.svg, license: Public domain, author: TomTom International BV }
+links:
+  website: "https://www.tomtom.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/TomTom"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/TomTom"
+people:
+  - { name: Harold Goddijn, role: 創辦人 }
+  - { name: Corinne Vigreux, role: 創辦人 }
+  - { name: Peter-Frans Pauwels, role: 創辦人 }
+  - { name: Pieter Geelen, role: 創辦人 }
+sources:
+  - "podcast:2023-02-07-ep34"

@@ -1,0 +1,17 @@
+name: Illumina
+industry: health
+summary: "美國生技公司，開發與製造基因分析系統，提供定序、基因分型、基因表現及蛋白質體分析產品與服務。"
+founded: 1998
+hq: 聖地牙哥
+logo: { file: Illumina logo.svg, license: Public domain, author: Illumina }
+links:
+  website: "https://www.illumina.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Illumina,_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/因美纳"
+people:
+  - { name: Jay Flatley }
+  - { name: Francis deSouza, role: 執行長 }
+  - { name: Jacob Thaysen, role: 執行長 }
+sources:
+  - "podcast:2024-09-26-ep82"
+  - "podcast:2024-04-29-ep67"

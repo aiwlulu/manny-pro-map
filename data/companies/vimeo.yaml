@@ -1,0 +1,15 @@
+name: Vimeo
+industry: platforms
+summary: "美國的影片託管與分享平台，讓使用者上傳、儲存與分享影片，並提供企業影音解決方案。"
+founded: 2004
+hq: 紐約州
+logo: { file: Vimeo Logo.svg, license: Public domain, author: Vimeo }
+links:
+  website: "https://vimeo.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Vimeo"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Vimeo"
+people:
+  - { name: Jake Lodwick, role: 創辦人 }
+  - { name: Zach Klein, role: 創辦人 }
+sources:
+  - "pro:wuw9hfu5buhb"

@@ -1,0 +1,12 @@
+name: ClickUp
+industry: software
+summary: "專案管理軟體公司，提供整合任務、聊天、白板與文件協作等功能的一站式工作平台。"
+founded: 2016
+hq: 聖地牙哥
+links:
+  website: "https://clickup.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/ClickUp"
+people:
+  - { name: Zeb Evans, role: 執行長 }
+sources:
+  - "pro:52gjqz2bbj2p"

@@ -1,0 +1,15 @@
+name: DJI
+zh: 大疆創新
+industry: hardware
+summary: "中國科技公司，研發製造民用無人機與航拍設備，產品也涵蓋相機系統、穩定器及飛行控制系統。"
+founded: 2006
+hq: 深圳市
+logo: { file: DJI Innovations logo.svg, license: Public domain, author: DJI Innovations }
+links:
+  website: "https://www.dji.com"
+  wikipedia: "https://en.wikipedia.org/wiki/DJI"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/大疆创新"
+people:
+  - { name: Frank Wang, role: 創辦人 }
+sources:
+  - "pro:p8ytfvhbvbgy"

@@ -1,0 +1,20 @@
+name: Saizeriya
+zh: 薩莉亞
+industry: services
+summary: "經營以中央廚房為核心的平價義大利菜家庭餐廳連鎖，為源自日本的餐飲品牌。"
+founded: 1973
+hq: 埼玉縣
+links:
+  website: "https://www.saizeriya.co.jp"
+  wikipedia: "https://en.wikipedia.org/wiki/Saizeriya"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/萨莉亚"
+people:
+  - { name: Yasuhiko Shōgaki, role: 創辦人 }
+  - { name: Yasuhiko Shogaki, zh: 正垣泰彥, role: 創辦人 }
+sources:
+  - "pro:b2r32qpe3jna"
+  - "pro:3ra5g3yjyez4"
+  - "pro:nrjggjnrfetu"
+  - "pro:dq883qwwkcv2"
+  - "pro:rm4zgfgjfpc2"
+  - "pro:cscagbwsrcnb"

@@ -1,0 +1,16 @@
+name: Walmart
+zh: 沃爾瑪
+industry: commerce
+summary: "美國跨國零售企業，經營大型超市、折扣百貨、雜貨店、藥局與加油站，並擁有 Sam's Club 倉儲會員店。"
+founded: 1962
+hq: 本頓維
+logo: { file: "Walmart logo (2025).svg", license: Public domain, author: Walmart }
+links:
+  website: "https://www.walmart.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Walmart"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/沃尔玛"
+people:
+  - { name: Sam Walton, role: 創辦人 }
+sources:
+  - "pro:kudnr9rb2r56"
+  - "podcast:2025-06-09-ep102"

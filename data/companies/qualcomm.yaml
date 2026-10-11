@@ -1,0 +1,16 @@
+name: Qualcomm
+zh: 高通
+industry: semis
+summary: "美國的半導體與無線通訊技術公司，開發行動處理器、AI 晶片與 5G 等行動通訊技術。"
+founded: 1985
+hq: 聖地牙哥
+logo: { file: Qualcomm-Logo.svg, license: Public domain, author: "Original:  Qualcomm" }
+links:
+  website: "https://consumerrights.wiki/w/Qualcomm"
+  wikipedia: "https://en.wikipedia.org/wiki/Qualcomm"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/高通"
+people:
+  - { name: Irwin M. Jacobs, role: 創辦人 }
+  - { name: Andrew Viterbi, role: 創辦人 }
+sources:
+  - "pro:jq8rpf6p2f59"

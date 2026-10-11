@@ -1,0 +1,17 @@
+name: S&P Global
+zh: 標普
+industry: finance
+summary: "提供金融資訊、分析及能源與大宗商品情報服務，旗下涵蓋信用評等、市場財智等事業，並持有指數合資公司的多數股權。"
+hq: 紐約
+logo: { file: S&P Global logo.svg, license: Public domain, author: "S&amp;P Global" }
+links:
+  website: "https://www.spglobal.com/en"
+  wikipedia: "https://en.wikipedia.org/wiki/S&P_Global"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/标普全球"
+sources:
+  - "propod:cmumopubf03dc01w1ggiw1vrk"
+  - "pro:cuxbwar4cvth"
+  - "pro:9pj32ujkxanq"
+  - "pro:ta8h85jcrrrf"
+  - "pro:y3v4hgf4gbmf"
+  - "pro:edpjc5mshdka"

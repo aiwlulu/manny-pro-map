@@ -1,0 +1,11 @@
+name: BC Partners
+industry: finance
+summary: "英國國際投資公司，總部設於倫敦，在歐洲與北美從事私募股權、信貸與不動產投資。"
+founded: 1986
+hq: 倫敦
+logo: { file: BC Partners logo.svg, license: Public domain, author: BC Partners }
+links:
+  website: "http://www.bcpartners.com"
+  wikipedia: "https://en.wikipedia.org/wiki/BC_Partners"
+sources:
+  - "pro:w8n34nnkw3d4"

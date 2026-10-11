@@ -1,0 +1,11 @@
+name: Zoox
+industry: mobility
+summary: "美國自動駕駛科技公司，開發無人駕駛車輛，主要用於提供交通出行服務。"
+founded: 2014
+hq: 福斯特城
+logo: { file: Zoox logo.svg, license: Public domain, author: "Zoox, Inc." }
+links:
+  website: "https://zoox.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Zoox"
+sources:
+  - "podcast:2025-02-10-ep92"

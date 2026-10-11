@@ -1,0 +1,15 @@
+name: Ford
+zh: 福特汽車
+industry: mobility
+summary: "美國跨國汽車製造商，銷售福特品牌汽車與商用車，以及林肯品牌豪華汽車。"
+founded: 1903
+hq: 迪爾伯恩
+logo: { file: Ford logo flat.svg, license: Public domain, author: Ford Motor Company }
+links:
+  website: "https://www.ford.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Ford_Motor_Company"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/福特汽车"
+people:
+  - { name: Henry Ford, role: 創辦人 }
+sources:
+  - "pro:wmste5rh4s2q"

@@ -1,0 +1,15 @@
+name: Mitsubishi Heavy Industries
+zh: 三菱重工
+industry: industrial
+summary: "日本綜合機械製造商，為三菱集團核心企業，生產船舶、航空、鐵路車輛、能源與空調等各類機械設備。"
+founded: 1934
+hq: 港區
+logo: { file: Mitsubishi heavyindustries mhi logo.svg, license: Public domain, author: Mitsubishi }
+links:
+  website: "https://www.mhi.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Mitsubishi_Heavy_Industries"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/三菱重工业"
+people:
+  - { name: Iwasaki Yatarō, role: 創辦人 }
+sources:
+  - "pro:frbpkafhxw3p"

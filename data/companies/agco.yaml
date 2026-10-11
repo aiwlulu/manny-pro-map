@@ -1,0 +1,14 @@
+name: AGCO
+industry: industrial
+summary: "美國農業機械製造商，生產與銷售曳引機、聯合收穫機、噴藥機與耕作設備等。"
+founded: 1990
+hq: 德盧斯
+logo: { file: AGCO-Logo.svg, license: Public domain, author: AGCO }
+links:
+  website: "http://www.agcocorp.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/AGCO"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/爱科_(美国公司)"
+sources:
+  - "propod:cms7nzjxu000001022aj05v08"
+  - "pro:m5pergwrjrrp"
+  - "pro:wmste5rh4s2q"

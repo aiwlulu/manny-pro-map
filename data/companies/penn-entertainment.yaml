@@ -1,0 +1,11 @@
+name: Penn Entertainment
+industry: gaming
+summary: "美國娛樂公司，經營綜合娛樂設施、賭場與運動內容，並持有數位媒體公司。"
+founded: 1972
+hq: 懷奧米辛
+logo: { file: Penn Entertainment logo.svg, license: Public domain, author: Penn Entertainment }
+links:
+  website: "http://www.pngaming.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Penn_Entertainment"
+sources:
+  - "pro:ufwby4nxpxtv"

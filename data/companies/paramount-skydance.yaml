@@ -1,0 +1,15 @@
+name: Paramount Skydance
+zh: 派拉蒙天舞
+industry: media
+summary: "美國跨國媒體與娛樂集團，經營大眾傳媒及娛樂業務，旗下資產包括 CBS。"
+founded: 2025
+hq: 洛杉磯
+logo: { file: Paramount Skydance Logo.svg, license: Public domain, author: Paramount Skydance Corporation }
+links:
+  website: "https://www.paramount.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Paramount_Skydance"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/派拉蒙天空之舞"
+people:
+  - { name: David Ellison, role: 創辦人 }
+sources:
+  - "pro:ueyj98gmbgxn"

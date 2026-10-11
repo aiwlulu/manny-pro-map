@@ -1,0 +1,17 @@
+name: Booking Holdings
+industry: commerce
+summary: "美國旅遊科技公司，經營 Booking.com、Agoda、KAYAK 與 OpenTable 等訂房與比價平台。"
+founded: 1997
+hq: 諾沃克
+logo: { file: "Logo of Booking Holdings Inc,(lock up, stacked with Brands, full color).PNG", license: Public domain, author: Booking Holdings Inc. }
+links:
+  website: "https://bookingholdings.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Booking_Holdings"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Booking_Holdings"
+people:
+  - { name: Jay S. Walker, role: 創辦人 }
+  - { name: Glenn Fogel, role: 執行長 }
+sources:
+  - "pro:kudnr9rb2r56"
+  - "podcast:2026-05-11-ep127"
+  - "pro:hez389wzm44g"

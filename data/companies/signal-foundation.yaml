@@ -1,0 +1,15 @@
+name: Signal Foundation
+industry: platforms
+summary: "美國非營利組織，透過開放原始碼隱私技術支持安全通訊，旗下團隊開發 Signal 通訊軟體。"
+founded: 2018
+hq: 山景城
+logo: { file: "Signal logo (2020).svg", license: Public domain, author: Signal }
+links:
+  website: "https://signalfoundation.org"
+  wikipedia: "https://en.wikipedia.org/wiki/Signal_Foundation"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Signal基金會"
+people:
+  - { name: Moxie Marlinspike, role: 創辦人 }
+  - { name: Brian Acton, role: 創辦人 }
+sources:
+  - "podcast:2023-12-11-ep58"

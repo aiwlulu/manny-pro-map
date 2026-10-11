@@ -1,0 +1,15 @@
+name: CrowdStrike
+industry: software
+summary: "美國資安技術公司，提供端點防護、威脅情資及網路攻擊事件應變服務。"
+founded: 2011
+hq: 奧斯汀
+logo: { file: CrowdStrike logo.svg, license: Public domain, author: "™/®CrowdStrike" }
+links:
+  website: "https://www.crowdstrike.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/CrowdStrike"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/CrowdStrike"
+people:
+  - { name: George Kurtz, role: 執行長, photo: { file: "Web Summit 2018 - SaaS Monster - Day 2, November 7 SD5 7630 (44852025415).jpg", license: CC BY 2.0, author: Web Summit } }
+  - { name: Dmitri Alperovitch, role: 創辦人 }
+sources:
+  - "pro:g6q855r8jky9"

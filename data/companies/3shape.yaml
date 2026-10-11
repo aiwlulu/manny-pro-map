@@ -1,0 +1,13 @@
+name: 3Shape
+industry: health
+summary: "丹麥掃描器與軟體開發製造商，為牙科及音訊產業提供三維掃描器與電腦輔助設計製造軟體。"
+founded: 2000
+hq: Holmens Kanal
+links:
+  website: "https://www.3shape.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/3Shape"
+people:
+  - { name: Nikolaj Hoffmann Deichmann, role: 創辦人 }
+  - { name: Tais Clausen, role: 創辦人 }
+sources:
+  - "pro:88jxuzxku3eu"

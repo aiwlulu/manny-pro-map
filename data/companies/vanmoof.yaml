@@ -1,0 +1,14 @@
+name: VanMoof
+industry: hardware
+summary: "總部位於荷蘭的自行車製造商，主要業務為製造自行車，服務範圍涵蓋全球。"
+founded: 2008
+hq: 阿姆斯特丹
+logo: { file: VanMoof-Logo.png, license: Public domain, author: VanMoof }
+links:
+  website: "https://www.vanmoof.com"
+  wikipedia: "https://en.wikipedia.org/wiki/VanMoof"
+people:
+  - { name: Taco Carlier, role: 創辦人 }
+  - { name: Ties Carlier, role: 創辦人 }
+sources:
+  - "podcast:2023-08-07-ep48"

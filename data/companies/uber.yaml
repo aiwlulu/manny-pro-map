@@ -1,0 +1,18 @@
+name: Uber
+industry: mobility
+summary: "美國交通網路公司，透過應用程式提供叫車、外送與貨運媒合等服務。"
+founded: 2009
+hq: 舊金山
+logo: { file: Uber logo 2018.svg, license: Public domain, author: "Wolff Olins, in collaboration with Uber's Brand Team [1]" }
+links:
+  website: "https://www.uber.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Uber"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/優步"
+people:
+  - { name: Garrett Camp, role: 創辦人 }
+  - { name: Travis Kalanick, role: 創辦人 }
+  - { name: Dara Khosrowshahi, role: 執行長, photo: { file: "CEO of Uber Technologies Dara Khosrowshahi in New York - 2019 (cropped).jpg", license: CC BY 4.0, author: The Presidential Office of Ukraine. } }
+sources:
+  - "pro:zbbg828wt3aa"
+  - "podcast:2026-05-11-ep127"
+  - "pro:hez389wzm44g"

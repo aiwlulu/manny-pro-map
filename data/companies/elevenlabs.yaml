@@ -1,0 +1,12 @@
+name: ElevenLabs
+industry: ai
+summary: "人工智慧語音軟體公司，運用深度學習開發自然語音合成，並提供語音與文字轉換技術。"
+logo: { file: ElevenLabs Logo 03.svg, license: Public domain, author: ElevenLabs }
+links:
+  website: "https://elevenlabs.io/"
+  wikipedia: "https://en.wikipedia.org/wiki/ElevenLabs"
+people:
+  - { name: Mati Staniszewski, role: 共同創辦人, interviewed: true, photo: { file: "Mati Staniszewski (2022).jpg", license: CC BY-SA 4.0, author: Rafał Masłow } }
+  - { name: Piotr Dąbkowski, role: 創辦人 }
+sources:
+  - "pro:j9mt5hwzd9pn"

@@ -1,0 +1,14 @@
+name: GoDaddy
+industry: software
+summary: "美國網際網路服務公司，主要為小型與微型企業提供網域註冊及網站代管服務。"
+founded: 1997
+hq: 坦佩
+logo: { file: GoDaddy logo.svg, license: Public domain, author: GoDaddy }
+links:
+  website: "https://www.godaddy.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/GoDaddy"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/GoDaddy"
+people:
+  - { name: Bob Parsons, role: 創辦人 }
+sources:
+  - "pro:sfddnjkgm59b"

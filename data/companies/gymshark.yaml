@@ -1,0 +1,12 @@
+name: Gymshark
+industry: consumer
+summary: "英國運動服飾品牌，透過線上平台在全球銷售健身服飾與配件。"
+founded: 2012
+hq: 索利哈尔
+links:
+  website: "https://www.gymshark.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Gymshark"
+people:
+  - { name: Ben Francis, role: 創辦人, photo: { file: Ben Francis.jpg, license: CC BY-SA 4.0, author: JamesDPerrett } }
+sources:
+  - "pro:23jwvufhmrsw"

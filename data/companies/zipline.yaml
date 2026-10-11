@@ -1,0 +1,15 @@
+name: Zipline
+industry: mobility
+summary: "美國無人機配送公司，設計、製造並營運配送無人機，提供醫療物資等貨品的運送服務。"
+founded: 2011
+hq: 半月灣
+links:
+  website: "http://www.flyzipline.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Zipline_(drone_delivery_company)"
+people:
+  - { name: Keller Rinaudo Cliffton, role: 創辦人 }
+  - { name: Keenan Wyrobek, role: 創辦人 }
+  - { name: William Hetzler, role: 創辦人 }
+  - { name: Keller, role: 創辦人 }
+sources:
+  - "podcast:2025-06-09-ep102"

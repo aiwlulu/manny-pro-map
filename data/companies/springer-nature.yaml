@@ -1,0 +1,19 @@
+name: Springer Nature
+industry: publishing
+summary: "為英德合資的學術出版公司，發行科學與技術領域的期刊及書籍，由 Springer Science+Business Media 等出版單位合併成立。"
+founded: 2015
+hq: 柏林
+logo: { file: Springer Nature Logo.svg, license: Public domain, author: Springer Nature }
+links:
+  website: "http://www.springernature.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Springer_Nature"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/施普林格·自然"
+relations:
+  - { type: parent, target: springer-science-business-media, note: 2015 年 }
+  - { type: competitor, target: elsevier }
+  - { type: competitor, target: wiley }
+sources:
+  - "pro:w8n34nnkw3d4"
+  - "pro:ta8afrymmmcj"
+  - "pro:g25ebdxu3cu6"
+  - "pro:du9cp8u5u3vg"

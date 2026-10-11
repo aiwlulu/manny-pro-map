@@ -1,0 +1,30 @@
+name: Amazon
+zh: 亞馬遜
+industry: commerce
+summary: "經營電子商務與雲端運算，從線上書店起家，逐步擴展為涵蓋幾乎所有零售品類的綜合線上零售平台，並開放第三方賣家進駐。"
+founded: 1994
+hq: 西雅圖
+logo: { file: Amazon logo.svg, license: Public domain, author: "Amazon.com, Inc." }
+links:
+  website: "https://www.amazon.it/"
+  wikipedia: "https://en.wikipedia.org/wiki/Amazon_(company)"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/亞馬遜公司"
+people:
+  - { name: Jeff Bezos, role: 創辦人, photo: { file: "Jeff Bezos at Amazon Spheres Grand Opening in Seattle - 2018 (39074799225) (cropped).jpg", license: CC BY 2.0, author: Seattle City Council from Seattle } }
+  - { name: Andy Jassy, role: 執行長, photo: { file: Andy Jassy.jpg, license: CC BY-SA 4.0, author: Lisi Mezistrano Wolf } }
+relations:
+  - { type: parent, target: aws }
+  - { type: parent, target: zoox }
+  - { type: competitor, target: walmart }
+sources:
+  - "propod:cmuoqjicj0bhf01tlh9qsafqq"
+  - "pro:kudnr9rb2r56"
+  - "pro:w8sgypnhcpp9"
+  - "pro:zbbg828wt3aa"
+  - "pro:tvqqj5aqhcr3"
+  - "pro:xub3t2c88p2t"
+  - "podcast:2025-06-16-ep103"
+  - "podcast:2025-06-09-ep102"
+  - "podcast:2025-02-10-ep92"
+  - "podcast:2022-11-06-ep27"
+  - "podcast:2022-05-29-ep13"

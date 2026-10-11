@@ -1,0 +1,16 @@
+name: Moderna
+zh: 莫德納
+industry: health
+summary: "美國製藥與生物技術公司，以 mRNA 技術開發疫苗與 RNA 療法。"
+founded: 2010
+hq: 劍橋
+logo: { file: Moderna logo.svg, license: Public domain, author: Moderna }
+links:
+  website: "https://www.modernatx.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Moderna"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/莫德纳"
+people:
+  - { name: Stéphane Bancel, role: 執行長, interviewed: true, photo: { file: Stephane Bancel.png, license: GFDL, author: Brenda Bancel } }
+sources:
+  - "propod:cmu2elxeu0g2k01wz36fg1kja"
+  - "pro:nkjkkq9yvgt9"

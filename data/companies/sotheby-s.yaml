@@ -1,0 +1,18 @@
+name: Sotheby's
+zh: 蘇富比
+industry: other
+summary: "跨國拍賣行，主要提供藝術品、裝飾藝術、珠寶與收藏品的拍賣及交易服務。"
+founded: 1744
+hq: 紐約
+logo: { file: Sothebys Logo.svg, license: Public domain, author: Sotheby's }
+links:
+  website: "https://www.sothebys.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Sotheby's"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/蘇富比"
+people:
+  - { name: Nathan Drahi }
+sources:
+  - "pro:yfj6rhppp5rt"
+  - "pro:g3k2wuk5aasv"
+  - "pro:sd5nackg984j"
+  - "pro:pqn8u2pyqzdq"

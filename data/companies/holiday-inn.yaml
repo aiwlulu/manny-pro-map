@@ -1,0 +1,15 @@
+name: Holiday Inn
+zh: 假日酒店
+industry: services
+summary: "源自美國的連鎖飯店品牌，經營假日飯店、快捷飯店及度假村等住宿業務。"
+founded: 1952
+hq: 吉恩-邁克爾·克萊爾
+logo: { file: Holiday Inn by IHG logo.svg, license: Public domain, author: Holiday Inn }
+links:
+  website: "https://www.holidayinn.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Holiday_Inn"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/假日酒店"
+people:
+  - { name: Kemmons Wilson, role: 創辦人 }
+sources:
+  - "pro:vzej66cff3bh"

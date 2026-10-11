@@ -1,0 +1,11 @@
+name: SafetyCulture
+industry: software
+summary: "職場營運軟體公司，主要提供用於工作場所營運的軟體產品。"
+founded: 2004
+hq: Surry Hills
+links:
+  website: "https://mitti.com/"
+people:
+  - { name: Luke Anear, role: 創辦人 }
+sources:
+  - "podcast:2024-01-22-ep59"

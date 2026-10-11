@@ -1,0 +1,30 @@
+name: Marriott
+zh: 萬豪
+industry: services
+summary: "經營、授權與加盟飯店、住宅及分時度假等住宿品牌，在全球管理多個飯店品牌與大量據點。"
+founded: 1993
+hq: 貝塞斯達
+logo: { file: Marriott International.svg, license: Public domain, author: "Marriott International, www.marriott.com (history)" }
+links:
+  website: "https://www.marriott.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Marriott_International"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/萬豪國際"
+people:
+  - { name: J. Willard Marriott, role: 創辦人 }
+  - { name: J. Willard Marriott Jr., role: 第二代接班人 }
+  - { name: J.W. Marriott, role: 創辦人 }
+  - { name: Bill Marriott Jr., role: 第二代接班人 }
+  - { name: Stephen Bollenbach, role: "財務長（CFO）" }
+relations:
+  - { type: parent, target: starwood }
+  - { type: acquired, target: starwood, note: 2016 年 }
+  - { type: competitor, target: hilton }
+  - { type: competitor, target: hyatt }
+sources:
+  - "pro:bg89rvnhstnm"
+  - "podcast:2026-02-24-ep122"
+  - "pro:uh6ys6nwfnc5"
+  - "pro:tvjpcgcpfym3"
+  - "pro:vzej66cff3bh"
+  - "pro:t43v6uuxx3tp"
+  - "pro:duukfut6958f"

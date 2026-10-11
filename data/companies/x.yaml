@@ -1,0 +1,21 @@
+name: X
+industry: platforms
+summary: "美國科技公司，為 Twitter 的後繼者，旗下經營社群平台 X，並規劃整合 xAI 的 Grok 模型。"
+founded: 2023
+hq: 巴斯特羅普
+logo: { file: X logo 2023.svg, license: Public domain, author: "Sawyer Merritt on Twitter" }
+links:
+  website: "https://about.x.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/X_Corp."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/X_(2023年公司)"
+people:
+  - { name: Elon Musk, role: 創辦人, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
+sources:
+  - "pro:erw26rvsctcr"
+  - "pro:6tdws32g4rwp"
+  - "pro:9bqny83p92n5"
+  - "podcast:2023-07-10-ep45"
+  - "podcast:2022-11-17-ep28"
+  - "podcast:2022-10-24-sp-pick-a-side"
+  - "podcast:2022-04-24-ep10"
+  - "podcast:2022-04-10-ep08"

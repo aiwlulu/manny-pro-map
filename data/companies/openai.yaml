@@ -1,0 +1,45 @@
+name: OpenAI
+industry: ai
+summary: "開發 GPT 系列大型語言模型與 ChatGPT 等生成式人工智慧產品，並推出影像生成模型與 AI 程式開發代理工具 Codex。"
+founded: 2015
+hq: 舊金山
+logo: { file: "OpenAI logo 2025 (wordmark).svg", license: Public domain, author: OpenAI }
+links:
+  website: "https://openai.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/OpenAI"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/OpenAI"
+people:
+  - { name: Sam Altman, role: 執行長, photo: { file: "Sam Altman speaking at TED (cropped).jpg", license: CC BY 2.0, author: Steve Jurvetson } }
+  - { name: Ilya Sutskever, role: 創辦人 }
+  - { name: Greg Brockman, role: 創辦人 }
+  - { name: Wojciech Zaremba, role: 創辦人 }
+  - { name: Andrej Karpathy, role: 創辦人 }
+  - { name: John Schulman, role: 創辦人 }
+  - { name: Fidji Simo, role: 應用程式執行長, photo: { file: "Facebook F8 Developer's Conference 2017 Fidji Simo (33324521813).jpg", license: CC BY 2.0, author: "Anthony Quintano from Westminster, United States" } }
+  - { name: Sarah Friar, role: 財務長, photo: { file: Sarah Friar MoneyConf 2018.jpg, license: CC BY 2.0, author: MoneyConf } }
+relations:
+  - { type: competitor, target: anthropic }
+  - { type: competitor, target: xai }
+  - { type: partner, target: microsoft }
+sources:
+  - "propod:cmuti5uau06di01v1f935gjyi"
+  - "pro:kudnr9rb2r56"
+  - "pro:x29tt82u4h4q"
+  - "propod:cmtum2ac1123m01w6ehj8b2tu"
+  - "pro:dzcqdpceapkv"
+  - "pro:cjww9vu45utm"
+  - "pro:b8mnrda6dvcj"
+  - "pro:hez389wzm44g"
+  - "pro:sfddnjkgm59b"
+  - "pro:rdnwj3ty26j9"
+  - "pro:6tdws32g4rwp"
+  - "pro:j9mt5hwzd9pn"
+  - "pro:frbpkafhxw3p"
+  - "podcast:2025-04-14-sp8"
+  - "podcast:2025-04-07-ep99"
+  - "podcast:2023-11-13-ep56"
+  - "podcast:2023-06-05-ep42"
+  - "podcast:2023-03-06-ep37"
+  - "podcast:2023-02-14-ep35"
+  - "podcast:2023-01-31-ep33"
+  - "podcast:2022-04-17-ep09"

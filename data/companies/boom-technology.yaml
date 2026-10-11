@@ -1,0 +1,16 @@
+name: Boom Technology
+industry: mobility
+summary: "美國航空科技公司，研發 Overture 超音速客機，並以 XB-1 進行飛行測試。"
+founded: 2014
+hq: 奧克蘭
+logo: { file: "Boom Technology logo (black).svg", license: Public domain, author: Manual }
+links:
+  website: "https://boomsupersonic.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Boom_Technology"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Boom_Technology"
+people:
+  - { name: Blake Scholl, role: 創辦人 }
+  - { name: Josh Krall, role: 創辦人 }
+  - { name: Joe Wilding, role: 創辦人 }
+sources:
+  - "podcast:2025-02-24-ep94"

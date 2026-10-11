@@ -1,0 +1,26 @@
+name: Deere & Company
+zh: 強鹿
+industry: industrial
+summary: "生產農業、建築與森林機械設備，以及重型設備用柴油引擎、傳動系統與草坪養護設備，並提供金融及相關服務。"
+founded: 1868
+hq: 莫林
+logo: { file: John Deere text only.png, license: Public domain, author: John Deere }
+links:
+  website: "https://www.deere.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/John_Deere"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/约翰迪尔"
+people:
+  - { name: John Deere, role: 創辦人 }
+relations:
+  - { type: parent, target: john-deere-financial }
+  - { type: competitor, target: agco }
+  - { type: competitor, target: cnh-industrial }
+sources:
+  - "pro:k8w9aqudktnu"
+  - "propod:cms7nzjxu000001022aj05v08"
+  - "pro:bg89rvnhstnm"
+  - "pro:m5pergwrjrrp"
+  - "pro:mcesz5fk85wy"
+  - "pro:wmste5rh4s2q"
+  - "pro:9bazcddtrbc6"
+  - "pro:d95qtaqsfsck"

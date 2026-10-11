@@ -1,0 +1,11 @@
+name: Alo
+industry: consumer
+summary: "美國高階運動服飾零售商，設計與銷售瑜伽及運動服飾。"
+founded: 2007
+hq: 比佛利山
+logo: { file: Alo Yoga logo.svg, license: Public domain, author: Alo Yoga }
+links:
+  website: "https://www.aloyoga.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Alo_Yoga"
+sources:
+  - "pro:23jwvufhmrsw"

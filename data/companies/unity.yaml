@@ -1,0 +1,13 @@
+name: Unity
+zh: 聯合技術
+industry: gaming
+summary: "美國遊戲軟體公司，開發Unity遊戲引擎，供開發者製作電子遊戲與其他應用程式。"
+founded: 2004
+hq: 舊金山
+logo: { file: Unity Technologies logo.svg, license: Public domain, author: Unity Technologies }
+links:
+  website: "https://unity.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Unity_Technologies"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Unity_Technologies"
+sources:
+  - "podcast:2022-07-17-ep18"

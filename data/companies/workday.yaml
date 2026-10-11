@@ -1,0 +1,15 @@
+name: Workday
+industry: software
+summary: "美國雲端軟體供應商，提供財務管理、人力資本管理與學生資訊系統，支援組織管理作業。"
+founded: 2005
+hq: 普萊森頓
+logo: { file: Workday logo.svg, license: Public domain, author: Workday }
+links:
+  website: "https://www.workday.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Workday,_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Workday"
+people:
+  - { name: David Duffield, role: 創辦人 }
+  - { name: Aneel Bhusri, role: 創辦人 }
+sources:
+  - "pro:drwymxex2ytn"

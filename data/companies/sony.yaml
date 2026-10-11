@@ -1,0 +1,18 @@
+name: Sony
+zh: 索尼
+industry: gaming
+summary: "日本綜合企業，生產消費電子與半導體產品，並經營遊戲、音樂、影視及金融服務。"
+founded: 1946
+hq: 港區
+logo: { file: Sony Group logo.svg, license: Public domain, author: Sony Group Corporation }
+links:
+  website: "https://www.sony.com/en/"
+  wikipedia: "https://en.wikipedia.org/wiki/Sony"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/索尼"
+people:
+  - { name: Masaru Ibuka, role: 創辦人 }
+  - { name: Akio Morita, role: 創辦人 }
+sources:
+  - "pro:r432czr8q5bk"
+  - "podcast:2024-10-21-sp5"
+  - "podcast:2023-07-18-ep46-2"

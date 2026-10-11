@@ -1,0 +1,14 @@
+name: GE Vernova
+industry: industrial
+summary: "美國能源設備與服務公司，提供發電設備、風力機組，以及電網、電力轉換與儲能方案。"
+founded: 2023
+hq: 劍橋
+logo: { file: GE Vernova logo.svg, license: Public domain, author: GE Vernova }
+links:
+  website: "https://www.gevernova.com"
+  wikipedia: "https://en.wikipedia.org/wiki/GE_Vernova"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/奇異維諾瓦"
+people:
+  - { name: Scott Strazik, role: 執行長, interviewed: true }
+sources:
+  - "pro:frbpkafhxw3p"

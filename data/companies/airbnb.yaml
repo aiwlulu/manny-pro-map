@@ -1,0 +1,17 @@
+name: Airbnb
+industry: platforms
+summary: "美國線上住宿媒合公司，提供短期與長期民宿、體驗及服務預訂，並收取訂單佣金。"
+founded: 2008
+hq: 紐約
+logo: { file: Airbnb Logo Bélo.svg, license: Public domain, author: DesignStudio }
+links:
+  website: "https://www.airbnb.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Airbnb"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/爱彼迎"
+people:
+  - { name: Brian Chesky, role: 創辦人暨執行長, interviewed: true, photo: { file: Brian Chesky 2025.jpg, license: CC BY-SA 4.0, author: Celeste Sloman } }
+  - { name: Joe Gebbia, role: 創辦人 }
+  - { name: Nathan Blecharczyk, role: 創辦人 }
+sources:
+  - "pro:t43v6uuxx3tp"
+  - "pro:gfz2tt5jz22e"

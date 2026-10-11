@@ -1,0 +1,14 @@
+name: Mastercard
+zh: 萬事達卡
+industry: payments
+summary: "美國跨國支付公司，處理商家銀行與發卡銀行間的交易，並發行信用卡與簽帳卡。"
+founded: 1966
+hq: 普切斯
+logo: { file: Mastercard 2019 logo.svg, license: Public domain, author: Mastercard Incorporated }
+links:
+  website: "https://www.mastercard.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Mastercard"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/万事达卡"
+sources:
+  - "pro:k8w9aqudktnu"
+  - "pro:yb9cs6kekxas"

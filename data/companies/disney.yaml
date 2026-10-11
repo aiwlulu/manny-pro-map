@@ -1,0 +1,18 @@
+name: Disney
+zh: 迪士尼
+industry: media
+summary: "美國跨國媒體與娛樂集團，業務涵蓋影視製作、主題樂園與串流媒體等。"
+founded: 1923
+hq: 柏班克
+logo: { file: The Walt Disney Company Logo.svg, license: Public domain, author: First file vector graphics logo by TutterMouse }
+links:
+  website: "https://thewaltdisneycompany.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/The_Walt_Disney_Company"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/华特迪士尼公司"
+people:
+  - { name: Walt Disney, role: 創辦人 }
+  - { name: Roy O. Disney, role: 創辦人 }
+sources:
+  - "propod:cms7or6d0077o01ymcffj7gbb"
+  - "pro:tn4vjnb9dbtb"
+  - "pro:ueyj98gmbgxn"

@@ -1,0 +1,19 @@
+name: Andreessen Horowitz
+zh: 安德森·霍羅威茨
+industry: finance
+summary: "美國私人風險投資公司，又名 a16z，投資早期與成長期科技新創企業。"
+founded: 2009
+hq: 门洛帕克
+logo: { file: Andreessen Horowitz new logo.svg, license: Public domain, author: Unknown designer }
+links:
+  website: "https://a16z.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Andreessen_Horowitz"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/安德里森·霍罗威茨"
+people:
+  - { name: Marc Andreessen, role: 創辦人 }
+  - { name: Ben Horowitz, role: 創辦人 }
+sources:
+  - "pro:edpjc5mshdka"
+  - "pro:za5znb6ngne6"
+  - "podcast:2024-04-23-ep66"
+  - "podcast:2022-04-24-ep10"

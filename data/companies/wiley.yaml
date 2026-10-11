@@ -1,0 +1,19 @@
+name: Wiley
+zh: 約翰威立
+industry: publishing
+summary: "以學術出版為核心的跨國出版社，發行書籍、期刊與百科全書，並提供教育訓練教材與線上服務。"
+founded: 1807
+hq: 霍博肯
+logo: { file: Wiley logo old.svg, license: Public domain, author: "John Wiley &amp; Sons" }
+links:
+  website: "https://www.wiley.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Wiley_(publisher)"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/約翰威立"
+people:
+  - { name: Charles Wiley, role: 創辦人 }
+relations:
+  - { type: acquired, target: hindawi, note: 2021 年 }
+sources:
+  - "pro:w8n34nnkw3d4"
+  - "pro:ta8afrymmmcj"
+  - "pro:du9cp8u5u3vg"

@@ -1,0 +1,13 @@
+name: International Harvester
+zh: 萬國收割機公司
+industry: industrial
+summary: "曾製造農業與工程設備的美國工業公司，產品也涵蓋汽車、商用卡車及園藝設備。"
+founded: 1902
+hq: 芝加哥
+logo: { file: International Harvester logo.png, license: Public domain, author: International Harvester Company }
+links:
+  wikipedia: "https://en.wikipedia.org/wiki/International_Harvester"
+people:
+  - { name: Cyrus McCormick, role: 創辦人 }
+sources:
+  - "pro:wmste5rh4s2q"

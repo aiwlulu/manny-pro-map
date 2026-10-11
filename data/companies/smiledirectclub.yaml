@@ -1,0 +1,11 @@
+name: SmileDirectClub
+industry: health
+summary: "曾提供遠距牙科服務的美國公司，現已停止營運並完成清算。"
+founded: 2014
+logo: { file: Smile Direct Club logo.svg, license: Public domain, author: Smile Direct Club }
+links:
+  website: "https://www.smiledirectclub.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/SmileDirectClub"
+sources:
+  - "propod:cmtun4x3w008401xv63ot6ae5"
+  - "pro:wt4bbtb2kex3"

@@ -1,0 +1,12 @@
+name: CoreWeave
+industry: software
+summary: "美國 AI 雲端運算公司，營運以 GPU 為核心的資料中心，提供高效能運算服務。"
+founded: 2017
+hq: 羅斯蘭
+links:
+  website: "https://www.coreweave.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/CoreWeave"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/CoreWeave"
+sources:
+  - "propod:cmtum2ac1123m01w6ehj8b2tu"
+  - "pro:dzcqdpceapkv"

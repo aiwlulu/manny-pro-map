@@ -1,0 +1,17 @@
+name: TSMC
+zh: 台積電
+industry: semis
+summary: "台灣的半導體晶圓代工公司，專為客戶製造晶片，不設計或銷售自有品牌產品。"
+founded: 1987
+hq: 新竹科學園區
+logo: { file: TSMC wordmark.svg, license: Public domain, author: Taiwan Semiconductor Manufacturing Company Limited }
+links:
+  website: "https://www.tsmc.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/TSMC"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/台積電"
+people:
+  - { name: Morris Chang, role: 創辦人 }
+  - { name: 余振華 }
+sources:
+  - "pro:3ss5znuzunbe"
+  - "podcast:2025-11-06-sp9"

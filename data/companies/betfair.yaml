@@ -1,0 +1,13 @@
+name: Betfair
+industry: gaming
+summary: "英國博弈公司，提供投注交易平台、運動投注及線上賭場、撲克與賓果遊戲。"
+founded: 2000
+hq: 倫敦
+logo: { file: Betfair logo.png, license: Public domain, author: betfair.com }
+links:
+  website: "https://www.betfair.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Betfair"
+people:
+  - { name: Andrew Black, role: 創辦人 }
+sources:
+  - "pro:t8dntpyvdeyp"

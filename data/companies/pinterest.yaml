@@ -1,0 +1,16 @@
+name: Pinterest
+industry: platforms
+summary: "圖片分享與視覺探索社群平台，讓使用者依主題收藏、管理及分享圖片，尋找創作靈感。"
+founded: 2010
+hq: 帕羅奧圖
+logo: { file: Pinterest Logo 3.svg, license: Public domain, author: "Grilli Type, Pinterest  (Andreas Helin, Michelle Van Houten and Simon Blockley) " }
+links:
+  website: "https://www.pinterest.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Pinterest"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Pinterest"
+people:
+  - { name: Ben Silbermann, role: 創辦人 }
+  - { name: Evan Sharp, role: 創辦人 }
+  - { name: Paul Sciarra, role: 創辦人 }
+sources:
+  - "pro:6tdws32g4rwp"

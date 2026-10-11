@@ -1,0 +1,15 @@
+name: StarCloud
+aliases: [Starcloud]
+industry: mobility
+summary: "美國的太空科技公司，設計、打造並部署採用自有技術的太空資料中心。"
+founded: 2023
+hq: 雷德蒙德
+links:
+  website: "https://www.starcloud.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Starcloud"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Starcloud"
+people:
+  - { name: Johnston, role: 執行長 }
+sources:
+  - "pro:3ss5znuzunbe"
+  - "podcast:2026-05-05-ep126"

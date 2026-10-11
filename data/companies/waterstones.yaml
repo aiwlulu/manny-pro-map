@@ -1,0 +1,15 @@
+name: Waterstones
+industry: commerce
+summary: "英國連鎖書店，在英國等地經營實體門市，販售書籍、文具及相關商品。"
+founded: 1982
+hq: 倫敦
+logo: { file: Waterstone's.png, license: Public domain, author: "Waterstone's\n\nUploaded by Cloudbound at en.wikipedia" }
+links:
+  website: "https://www.waterstones.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Waterstones"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/水石書店"
+people:
+  - { name: Tim Waterstone, role: 創辦人 }
+sources:
+  - "propod:cmuoqjicj0bhf01tlh9qsafqq"
+  - "pro:w8sgypnhcpp9"

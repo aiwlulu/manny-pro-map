@@ -1,0 +1,16 @@
+name: Intuit
+industry: software
+summary: "美國的金融軟體公司，開發 TurboTax 報稅軟體與 QuickBooks 會計軟體等產品。"
+founded: 1983
+hq: 山景城
+logo: { file: Intuit logo 2022.svg, license: Public domain, author: Intuit Inc. }
+links:
+  website: "https://www.intuit.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Intuit"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Intuit"
+people:
+  - { name: Scott Cook, role: 創辦人 }
+  - { name: Thomas Proulx, role: 創辦人 }
+  - { name: Sasan Goodarzi, role: 董事長暨執行長 }
+sources:
+  - "pro:52gjqz2bbj2p"

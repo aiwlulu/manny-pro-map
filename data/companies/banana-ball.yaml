@@ -1,0 +1,12 @@
+name: Banana Ball
+industry: consumer
+summary: "位於美國喬治亞州的職業棒球聯盟，以自家規則 Banana Ball 進行比賽，旗下共有六支球隊。"
+founded: 2023
+links:
+  website: "https://bananaball.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Banana_Ball"
+people:
+  - { name: Jesse Cole, role: 創辦人 }
+sources:
+  - "propod:cms7o9zv5001q01vxhppq11y1"
+  - "pro:rhyvggwtrxqh"

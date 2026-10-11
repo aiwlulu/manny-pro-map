@@ -1,0 +1,19 @@
+name: Goldman Sachs
+zh: 高盛
+industry: finance
+summary: "美國跨國投資銀行與金融服務公司，提供投資管理、證券、資產管理與承銷等服務。"
+founded: 1869
+hq: 韦斯特街200号
+logo: { file: Goldman Sachs logo.svg, license: Public domain, author: "Goldman Sachs &amp; Co. LLC" }
+links:
+  website: "https://www.goldmansachs.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Goldman_Sachs"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/高盛"
+people:
+  - { name: Vivek Bantwal, role: 全球私募信貸業務共同主管, interviewed: true }
+  - { name: Marcus Goldman, role: 創辦人 }
+  - { name: Samuel Sachs, role: 創辦人 }
+sources:
+  - "pro:dzcqdpceapkv"
+  - "pro:9pj32ujkxanq"
+  - "pro:pxkj26b9zjj5"

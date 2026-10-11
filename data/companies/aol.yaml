@@ -1,0 +1,18 @@
+name: AOL
+zh: 美國線上
+industry: platforms
+summary: "美國的網路入口網站，早期為線上服務供應商，提供上網、電子郵件與內容等服務。"
+founded: 1983
+hq: 紐約
+logo: { file: "AOL logo (2024).svg", license: Public domain, author: "Yahoo! Inc." }
+links:
+  website: "https://aol.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/AOL"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/美国在线"
+people:
+  - { name: Marc Seriff, role: 創辦人 }
+  - { name: Steve Case, role: 創辦人 }
+  - { name: Jim Kimsey, role: 創辦人 }
+sources:
+  - "podcast:2026-07-17-ep131"
+  - "pro:wuw9hfu5buhb"

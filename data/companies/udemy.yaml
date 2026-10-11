@@ -1,0 +1,15 @@
+name: Udemy
+industry: publishing
+summary: "美國教育科技公司，經營線上課程平台，讓講師製作與分享課程，供學員隨選觀看。"
+founded: 2010
+hq: 舊金山
+logo: { file: Udemy logo.svg, license: Public domain, author: Udemy }
+links:
+  website: "https://www.udemy.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Udemy"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Udemy"
+people:
+  - { name: Eren Bali, role: 創辦人 }
+  - { name: Gagan Biyani, role: 創辦人 }
+sources:
+  - "pro:99c45rxf5864"

@@ -1,0 +1,12 @@
+name: Broadcom
+industry: semis
+summary: "美國半導體與基礎設施軟體公司，產品涵蓋資料中心、網路、寬頻、無線、儲存與工業等市場。"
+founded: 1961
+hq: 聖荷西
+logo: { file: "Broadcom logo (2016-present).svg", license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "https://www.broadcom.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Broadcom"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/博通有限"
+sources:
+  - "pro:dwcrddrmu86k"

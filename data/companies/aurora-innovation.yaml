@@ -1,0 +1,12 @@
+name: Aurora Innovation
+industry: mobility
+summary: "自動駕駛技術公司，開發可整合至車輛的 Aurora Driver 電腦系統。"
+founded: 2016
+hq: 帕羅奧圖
+links:
+  website: "http://aurora.tech/"
+  wikipedia: "https://en.wikipedia.org/wiki/Aurora_Innovation"
+people:
+  - { name: Chris Urmson, role: 共同創辦人, photo: { file: ChrisUrmson2018.jpg, license: CC BY 2.0, author: "Photo by Kimberly White/Getty Images for TechCrunch" } }
+sources:
+  - "pro:tdzgzbsctptw"

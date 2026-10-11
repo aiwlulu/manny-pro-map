@@ -1,0 +1,13 @@
+name: Duolingo
+industry: publishing
+summary: "美國的教育科技公司，提供語言學習應用程式與語言認證，課程涵蓋語言、音樂與數學。"
+logo: { file: "Duolingo logo (2019).svg", license: Public domain, author: "Duolingo, Inc. / Johnson Banks / Fontsmith (Monotype)" }
+links:
+  website: "https://en.duolingo.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Duolingo"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/多鄰國"
+people:
+  - { name: Luis von Ahn, role: 創辦人 }
+  - { name: Severin Guey, role: 創辦人 }
+sources:
+  - "pro:zbbg828wt3aa"

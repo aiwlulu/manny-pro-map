@@ -1,0 +1,14 @@
+name: Feastables
+industry: services
+summary: "由美國影音創作者 MrBeast 創立的巧克力與零食品牌，推出自有品牌巧克力棒。"
+founded: 2021
+hq: 芝加哥
+logo: { file: Feastables Logo 06.2022.svg, license: Public domain, author: "Feastables, Inc." }
+links:
+  website: "https://feastables.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Feastables"
+people:
+  - { name: MrBeast, role: 創辦人 }
+  - { name: Jim Murray, role: 創辦人 }
+sources:
+  - "pro:mxtxvxnbnc88"

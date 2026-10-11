@@ -1,0 +1,11 @@
+name: Gecko Robotics
+industry: industrial
+summary: "以爬牆機器人與 AI 檢測工業設施狀況的機器人公司。"
+hq: 匹茲堡
+links:
+  website: "https://www.geckorobotics.com/"
+people:
+  - { name: Jake, role: 創辦人暨執行長 }
+  - { name: Troy, role: 創辦人暨技術長 }
+sources:
+  - "podcast:2025-06-24-ep104"

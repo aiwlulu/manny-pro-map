@@ -1,0 +1,12 @@
+name: Natera
+industry: health
+summary: "臨床基因檢測公司，以非侵入式游離 DNA 檢測技術服務女性健康、癌症與器官健康領域。"
+founded: 2004
+hq: 圣卡洛斯
+links:
+  website: "http://www.natera.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Natera"
+people:
+  - { name: Matt, role: 創辦人 }
+sources:
+  - "pro:qnjkum4j8g4u"

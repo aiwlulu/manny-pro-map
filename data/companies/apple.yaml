@@ -1,0 +1,30 @@
+name: Apple
+zh: 蘋果
+industry: hardware
+summary: "設計、研發與銷售 iPhone、個人電腦等消費電子產品，以及電腦軟體與線上服務。"
+founded: 1976
+hq: 庫比蒂諾
+logo: { file: Apple logo black.svg, license: Public domain, author: "Original:  Rob Janoff" }
+links:
+  website: "https://apple.com/at/"
+  wikipedia: "https://en.wikipedia.org/wiki/Apple_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/蘋果公司"
+people:
+  - { name: Steve Wozniak, role: 創辦人 }
+  - { name: Steve Jobs, role: 創辦人 }
+sources:
+  - "pro:rtqwsk3m4mxk"
+  - "pro:wvdcaes6auhw"
+  - "propod:cms7or6d0077o01ymcffj7gbb"
+  - "pro:jq8rpf6p2f59"
+  - "pro:d95qtaqsfsck"
+  - "pro:erw26rvsctcr"
+  - "pro:xyacaqc5ex9p"
+  - "podcast:2026-01-27-ep120"
+  - "podcast:2025-02-04-ep91"
+  - "podcast:2024-09-19-ep81"
+  - "podcast:2024-06-17-ep72"
+  - "podcast:2024-02-20-ep61"
+  - "podcast:2023-06-12-ep43"
+  - "podcast:2022-08-01-ep19"
+  - "podcast:2022-07-10-ep17"

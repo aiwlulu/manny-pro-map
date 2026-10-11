@@ -1,0 +1,10 @@
+name: Teamshares
+industry: finance
+summary: "提供小型企業員工持股平台，主要業務是支援員工擁有企業股權。"
+founded: 2019
+links:
+  website: "https://www.teamshares.com/"
+people:
+  - { name: Michael Brown, role: 創辦人 }
+sources:
+  - "podcast:2023-10-02-ep52"

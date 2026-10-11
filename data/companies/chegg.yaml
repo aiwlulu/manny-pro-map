@@ -1,0 +1,12 @@
+name: Chegg
+industry: publishing
+summary: "美國教育科技公司，提供作業協助、數位與實體教科書租借，以及線上課業輔導。"
+founded: 2005
+hq: 聖塔克拉拉
+logo: { file: Chegg logo.svg, license: Public domain, author: Chegg }
+links:
+  website: "http://www.chegg.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Chegg"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/切格公司"
+sources:
+  - "pro:99c45rxf5864"

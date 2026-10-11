@@ -1,0 +1,15 @@
+name: Anysphere
+industry: ai
+summary: "人工智慧軟體公司，開發 Cursor 程式開發環境與編碼代理，協助使用者產生程式碼。"
+founded: 2022
+hq: 舊金山
+logo: { file: Anysphere logo 3.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "https://anysphere.inc/"
+  wikipedia: "https://en.wikipedia.org/wiki/Cursor_(company)"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Anysphere"
+people:
+  - { name: Michael Truell, role: 創辦人 }
+  - { name: Sualeh Asif, role: 創辦人 }
+sources:
+  - "pro:3wwyhabrfgca"

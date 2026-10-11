@@ -1,0 +1,15 @@
+name: Coursera
+industry: publishing
+summary: "美國線上學習平台，與大學及其他機構合作，提供各領域的線上課程、證書與學位。"
+founded: 2012
+hq: 山景城
+logo: { file: Coursera-Logo 600x600.svg, license: Public domain, author: Lawrie Sisley Talansky }
+links:
+  website: "https://www.coursera.org"
+  wikipedia: "https://en.wikipedia.org/wiki/Coursera"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Coursera"
+people:
+  - { name: Andrew Y. Ng, role: 創辦人 }
+  - { name: Daphne Koller, role: 創辦人 }
+sources:
+  - "pro:99c45rxf5864"

@@ -1,0 +1,13 @@
+name: MongoDB
+industry: software
+summary: "文件導向資料庫 MongoDB 的開發商，並提供雲端資料庫服務 Atlas。"
+founded: 2009
+logo: { file: MongoDB Logo.svg, license: Public domain, author: "MongoDB, Inc." }
+links:
+  website: "https://www.mongodb.com/products/platform"
+  wikipedia: "https://en.wikipedia.org/wiki/MongoDB"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/MongoDB"
+people:
+  - { name: CJ Desai, role: 執行長, interviewed: true }
+sources:
+  - "pro:zppaa3v8qrtw"

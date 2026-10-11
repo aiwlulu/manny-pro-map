@@ -1,0 +1,16 @@
+name: Public Investment Fund
+zh: 沙烏地阿拉伯公共投資基金
+industry: finance
+summary: "沙烏地阿拉伯的主權財富基金，代表政府進行資金投資。"
+founded: 1971
+hq: 利雅德
+logo: { file: "Public Investment Fund (Saudi Arabia) logo.svg", license: CC BY-SA 4.0, author: Public Investment Fund }
+links:
+  website: "https://pif.gov.sa"
+  wikipedia: "https://en.wikipedia.org/wiki/Public_Investment_Fund"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/沙烏地阿拉伯公共投資基金"
+people:
+  - { name: King Faisal bin Abdulaziz Al Saud, role: 創辦人 }
+  - { name: Mohammed bin Salman, zh: "穆罕默德・本・薩勒曼", role: 董事長 }
+sources:
+  - "pro:g2abna6e4v4e"

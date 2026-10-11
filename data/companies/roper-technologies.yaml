@@ -1,0 +1,27 @@
+name: Roper Technologies
+aliases: [Roper]
+industry: software
+summary: "是一家控股公司，主要持有並經營科技領域的多家公司。"
+founded: 1808
+hq: 薩拉索塔
+logo: { file: Roper Technologies logo.svg, license: Public domain, author: Roper Technologies }
+links:
+  website: "http://www.roperind.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Roper_Technologies"
+people:
+  - { name: Brian Jellison, role: 執行長 }
+  - { name: Jellison, role: 執行長 }
+relations:
+  - { type: parent, target: neptune }
+  - { type: parent, target: transcore }
+  - { type: parent, target: deltek }
+sources:
+  - "propod:cmt8nclvm0xmv01xi8eex5ue8"
+  - "propod:cmswaraeg0bmx01zd1ymybtom"
+  - "podcast:2026-07-17-ep131"
+  - "pro:wuw9hfu5buhb"
+  - "pro:xdqzqvzyyzb8"
+  - "pro:g88uv4p93amw"
+  - "pro:33q9heffxzna"
+  - "pro:9e2jqsm9y5bj"
+  - "pro:2cukhad2j6dq"

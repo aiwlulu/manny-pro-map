@@ -1,0 +1,24 @@
+name: Reddit
+industry: platforms
+summary: "經營網路論壇平台，使用者可張貼連結、文字、圖片與影片，並依主題在自建的 subreddit 社群中投票排序內容。"
+founded: 2005
+hq: 舊金山
+logo: { file: Reddit logo.svg, license: Public domain, author: Alexandre Concon }
+links:
+  website: "https://www.reddit.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Reddit"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Reddit"
+people:
+  - { name: Steve Huffman, role: 共同創辦人, photo: { file: "Web Summit 2017 - Centre Stage Day 2 CG1 7885 (38232183112) (cropped).jpg", license: CC BY 2.0, author: "Photo by Cody Glenn/Web Summit via Sportsfile©SPORTSFILE" } }
+  - { name: Alexis Ohanian, role: 共同創辦人, photo: { file: "TechCrunch Disrupt NY 2015 - Day 3 (17205541529).jpg", license: CC BY 2.0, author: TechCrunch } }
+  - { name: Aaron Swartz, role: 創辦人 }
+  - { name: Yishan Wong, role: 執行長, photo: { file: YishanWong2019.jpg, license: CC BY-SA 3.0, author: Tasshin Fogleman } }
+sources:
+  - "pro:b2r32qpe3jna"
+  - "pro:bg89rvnhstnm"
+  - "pro:bzqqad4bwawe"
+  - "pro:8vfvgz33vcq2"
+  - "podcast:2026-01-06-sp11"
+  - "pro:4ddye6dahq6r"
+  - "pro:6tdws32g4rwp"
+  - "pro:9bqny83p92n5"

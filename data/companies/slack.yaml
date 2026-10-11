@@ -1,0 +1,14 @@
+name: Slack
+industry: software
+summary: "由 Slack Technologies 開發的雲端團隊協作與即時通訊平台，採免費增值模式，主要面向企業用戶。"
+founded: 2013
+logo: { file: Slack CMYK.svg, license: Public domain, author: Slack Technologies }
+links:
+  website: "https://slack.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Slack_(software)"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Slack"
+people:
+  - { name: Stewart Butterfield, role: 創辦人 }
+  - { name: Cal Henderson, role: 創辦人 }
+sources:
+  - "pro:za5znb6ngne6"

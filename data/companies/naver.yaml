@@ -1,0 +1,14 @@
+name: Naver
+industry: platforms
+summary: "韓國網路集團，經營搜尋引擎與線上問答平台，提供搜尋及使用者分享知識的服務。"
+founded: 1999
+hq: 城南市
+logo: { file: Naver Logotype.svg, license: Public domain, author: Naver corporation }
+links:
+  website: "https://navercorp.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Naver_Corporation"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Naver_(公司)"
+people:
+  - { name: Hae-Jin Lee, role: 創辦人 }
+sources:
+  - "podcast:2024-07-15-ep75"

@@ -1,0 +1,16 @@
+name: Deckers
+industry: consumer
+summary: "美國鞋類設計與銷售公司，旗下品牌包括 UGG、Teva 與 Hoka。"
+founded: 1993
+hq: 戈利塔
+logo: { file: Deckers Brands logo.png, license: Public domain, author: Deckers Brands }
+links:
+  website: "http://www.deckers.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Deckers_Brands"
+people:
+  - { name: Doug Otto, role: 創辦人 }
+relations:
+  - { type: parent, target: ugg }
+  - { type: parent, target: hoka }
+sources:
+  - "pro:23jwvufhmrsw"

@@ -1,0 +1,17 @@
+name: Palo Alto Networks
+industry: software
+summary: "美國網路安全公司，以次世代防火牆平台與雲端資安服務協助企業保護網路。"
+founded: 2005
+hq: 聖塔克拉拉
+logo: { file: PaloAltoNetworks 2020 Logo.svg, license: Public domain, author: "™/®Palo Alto Networks, Inc." }
+links:
+  website: "https://www.paloaltonetworks.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Palo_Alto_Networks"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/派拓网络"
+people:
+  - { name: Nir Zuk, role: 創辦人 }
+  - { name: Nikesh Arora, role: 執行長, photo: { file: "Nikesh Arora(cropped).jpg", license: CC BY 2.0, author: "Nikesh_Arora.jpg: Loic Le Meur\nderivative work: Boseritwik" } }
+  - { name: BJ Jenkins, role: 商務長 }
+sources:
+  - "pro:g6q855r8jky9"
+  - "podcast:2024-09-09-ep80"

@@ -1,0 +1,14 @@
+name: SolarCity
+industry: industrial
+summary: "太陽能系統供應商，為住宅、商業與工業客戶銷售及安裝太陽能發電系統，並提供相關服務。"
+founded: 2006
+hq: 聖馬刁
+logo: { file: SolarCity wordmark.svg, license: Public domain, author: SolarCity }
+links:
+  website: "http://www.solarcity.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/SolarCity"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/SolarCity"
+people:
+  - { name: Lyndon Rive, role: 創辦人 }
+sources:
+  - "pro:tvqqj5aqhcr3"

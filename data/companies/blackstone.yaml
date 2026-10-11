@@ -1,0 +1,20 @@
+name: Blackstone
+industry: finance
+summary: "美國另類資產管理公司，業務涵蓋私募股權、房地產、信貸與基礎設施等投資。"
+founded: 1985
+hq: 紐約
+logo: { file: "The Blackstone Group logo (2).svg", license: Public domain, author: The Blackstone Group }
+links:
+  website: "http://www.blackstone.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Blackstone_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/黑石集团"
+people:
+  - { name: Jon Gray, role: 總裁暨營運長, interviewed: true }
+  - { name: Peter George Peterson, role: 創辦人 }
+  - { name: Stephen A. Schwarzman, role: 創辦人 }
+relations:
+  - { type: parent, target: hilton }
+  - { type: acquired, target: qts, note: 2021 年 }
+sources:
+  - "pro:dwcrddrmu86k"
+  - "pro:pxkj26b9zjj5"

@@ -1,0 +1,16 @@
+name: Spotify
+industry: media
+summary: "瑞典串流媒體平台，提供音樂、Podcast、有聲書與影片的串流服務。"
+founded: 2006
+logo: { file: Spotify logo with text.svg, license: Public domain, author: Spotify }
+links:
+  website: "https://www.spotify.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Spotify"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Spotify"
+people:
+  - { name: Daniel Ek, role: 創辦人 }
+  - { name: Martin Lorentzon, role: 創辦人 }
+  - { name: Lorentzon, role: 共同創辦人 }
+sources:
+  - "podcast:2022-11-06-ep27"
+  - "podcast:2022-04-17-ep09"

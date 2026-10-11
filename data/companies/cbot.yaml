@@ -1,0 +1,12 @@
+name: CBOT
+zh: 芝加哥期貨交易所
+industry: finance
+summary: "位於美國芝加哥的期貨與選擇權交易所，提供多種商品及相關契約的交易服務。"
+founded: 1848
+hq: 芝加哥
+links:
+  website: "https://www.cbot.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Chicago_Board_of_Trade"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/芝加哥期貨交易所"
+sources:
+  - "pro:edpjc5mshdka"

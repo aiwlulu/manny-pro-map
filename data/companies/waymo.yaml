@@ -1,0 +1,16 @@
+name: Waymo
+industry: mobility
+summary: "美國自動駕駛技術公司，研發自動駕駛汽車並提供無人計程車載客服務。"
+founded: 2016
+hq: 山景城
+logo: { file: Waymo logo.svg, license: Public domain, author: "w:Waymo" }
+links:
+  website: "https://waymo.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Waymo"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Waymo"
+people:
+  - { name: Sebastian Thrun, role: 創辦人 }
+  - { name: Anthony Levandowski, role: 創辦人 }
+sources:
+  - "pro:ufwby4nxpxtv"
+  - "podcast:2025-02-10-ep92"

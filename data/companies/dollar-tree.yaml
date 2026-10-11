@@ -1,0 +1,14 @@
+name: Dollar Tree
+industry: commerce
+summary: "美國折扣雜貨連鎖店，以固定低價販售商品，旗下另有連鎖品牌。"
+founded: 1986
+hq: 切萨皮克
+logo: { file: Dollar Tree logo.svg, license: Public domain, author: Dollar Tree Inc. }
+links:
+  website: "https://www.dollartree.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Dollar_Tree"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/美元树"
+people:
+  - { name: "Macon Foscue Brock, Jr.", role: 創辦人 }
+sources:
+  - "pro:r9fgagndpvde"

@@ -1,0 +1,15 @@
+name: Hoka
+aliases: [HOKA]
+industry: consumer
+summary: "美國運動品牌，設計與銷售跑鞋，以厚底「極繁主義」跑鞋著稱。"
+founded: 2010
+hq: 法國
+links:
+  website: "https://www.hoka.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Hoka"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Hoka"
+people:
+  - { name: Jean-Luc Diard, role: 共同創辦人 }
+sources:
+  - "propod:cmtel5mvw12jk01wy4ok92ldx"
+  - "pro:23jwvufhmrsw"

@@ -1,0 +1,13 @@
+name: Ticketmaster
+zh: 特瑪捷票務
+industry: media
+summary: "美國票務銷售與分銷公司，總部設於加州比佛利山，業務遍及全球多國。"
+founded: 1976
+hq: 西好萊塢
+logo: { file: TicketMaster wordmark.svg, license: Public domain, author: Ticketmaster }
+links:
+  website: "https://www.ticketmaster.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Ticketmaster"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/票務大師"
+sources:
+  - "pro:y3ajdu6pbwwx"

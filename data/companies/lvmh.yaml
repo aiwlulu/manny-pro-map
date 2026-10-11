@@ -1,0 +1,17 @@
+name: LVMH
+industry: consumer
+summary: "法國的跨國奢侈品集團，旗下擁有路易威登等多個精品品牌，事業涵蓋時尚與酒類。"
+founded: 1987
+hq: 巴黎
+logo: { file: LVMH wordmark.svg, license: Public domain, author: LVMH }
+links:
+  website: "https://www.lvmh.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/LVMH"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/LVMH"
+people:
+  - { name: Alain Chevalier, role: 創辦人 }
+  - { name: Henry Racamier, role: 創辦人 }
+sources:
+  - "propod:cms7o9zv5001q01vxhppq11y1"
+  - "pro:rhyvggwtrxqh"
+  - "pro:pqn8u2pyqzdq"

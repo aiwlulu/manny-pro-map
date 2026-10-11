@@ -1,2 +1,1399 @@
 # Manny sources referenced by companies. Bibliographic data only: title, date, URL.
-[]
+- id: "propod:cmuti5uau06di01v1f935gjyi"
+  kind: pro-podcast
+  column: 科技曼讀
+  title: "AI 的三種速度，以及為什麼監管這麼難"
+  date: 2026-10-08
+  url: https://pro.manny-li.com/episodes/cmuti5uau06di01v1f935gjyi
+- id: "propod:cmuoqjicj0bhf01tlh9qsafqq"
+  kind: pro-podcast
+  column: 巨人之聲
+  title: "實體書店還沒死，甚至能活得更好（Barnes & Noble 執行長 James Daunt）"
+  date: 2026-10-05
+  url: https://pro.manny-li.com/episodes/cmuoqjicj0bhf01tlh9qsafqq
+- id: "propod:cmumopubf03dc01w1ggiw1vrk"
+  kind: pro-podcast
+  column: 商業解碼
+  title: "Moody's（穆迪）"
+  date: 2026-10-01
+  url: https://pro.manny-li.com/episodes/cmumopubf03dc01w1ggiw1vrk
+- id: "pro:dwcrddrmu86k"
+  kind: pro
+  column: 巨人之聲
+  title: "為什麼科技巨頭會找上 Blackstone 融資？（Blackstone 總裁暨營運長 Jon Gray）"
+  date: 2026-09-30
+  url: https://pro.manny-li.com/posts/blackstone-jon-gray-dwcrddrmu86k
+- id: "pro:kudnr9rb2r56"
+  kind: pro
+  column: 科技曼讀
+  title: "Amazon 為什麼要封鎖 Meta Muse？談 AI 代理人發起的電商整合與拆分之爭"
+  date: 2026-09-27
+  url: https://pro.manny-li.com/posts/why-amazon-blocks-muse-kudnr9rb2r56
+- id: "pro:ta8afrymmmcj"
+  kind: pro
+  column: 商業解碼
+  title: "名利雙收 III：學術聲望與出版量如何兼得？"
+  date: 2026-09-25
+  url: https://pro.manny-li.com/posts/academic-publishing-growth-strategy-ta8afrymmmcj
+- id: "pro:g25ebdxu3cu6"
+  kind: pro
+  column: 商業解碼
+  title: "名利雙收 II：學術出版業為何越來越集中化？"
+  date: 2026-09-25
+  url: https://pro.manny-li.com/posts/academic-publishing-g25ebdxu3cu6
+- id: "pro:w8n34nnkw3d4"
+  kind: pro
+  column: 商業解碼
+  title: "名利雙收 IV：再投資機會有限的「中等」生意——Springer Nature"
+  date: 2026-09-25
+  url: https://pro.manny-li.com/posts/springer-nature-financial-analysis-w8n34nnkw3d4
+- id: "pro:du9cp8u5u3vg"
+  kind: pro
+  column: 商業解碼
+  title: "名利雙收 I：別人出錢出力的高利潤生意"
+  date: 2026-09-25
+  url: https://pro.manny-li.com/posts/springer-nature-business-model-du9cp8u5u3vg
+- id: "pro:y3ajdu6pbwwx"
+  kind: pro
+  column: 巨人之聲
+  title: "售票平台這麼好賺，為什麼還要花重金蓋場館？（Live Nation 總裁 Joe Berchtold）"
+  date: 2026-09-18
+  url: https://pro.manny-li.com/posts/live-nation-joe-berchtold-y3ajdu6pbwwx
+- id: "propod:cmu2elxeu0g2k01wz36fg1kja"
+  kind: pro-podcast
+  column: 巨人之聲
+  title: "從一支藥到一個平台（Moderna 執行長 Stéphane Bancel）"
+  date: 2026-09-17
+  url: https://pro.manny-li.com/episodes/cmu2elxeu0g2k01wz36fg1kja
+- id: "pro:x29tt82u4h4q"
+  kind: pro
+  column: 科技曼讀
+  title: "AI 的三種速度，以及為什麼監管這麼難"
+  date: 2026-09-17
+  url: https://pro.manny-li.com/posts/pacing-ai-is-hard-x29tt82u4h4q
+- id: "propod:cmtun4x3w008401xv63ot6ae5"
+  kind: pro-podcast
+  column: 商業解碼
+  title: "Align Technology（隱適美）"
+  date: 2026-09-14
+  url: https://pro.manny-li.com/episodes/cmtun4x3w008401xv63ot6ae5
+- id: "pro:r9fgagndpvde"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年 8 月你問我答
+  date: 2026-09-13
+  url: https://pro.manny-li.com/posts/ama-august-2026-r9fgagndpvde
+- id: "propod:cmtxjkl5v0cdb01tp0meieabe"
+  kind: pro-podcast
+  column: 科技曼讀
+  title: "Stripe 為什麼花 80 億美元買 OpenRouter？"
+  date: 2026-09-12
+  url: https://pro.manny-li.com/episodes/cmtxjkl5v0cdb01tp0meieabe
+- id: "pro:w8sgypnhcpp9"
+  kind: pro
+  column: 巨人之聲
+  title: "實體書店還沒死，甚至能活得更好（Barnes & Noble 執行長 James Daunt）"
+  date: 2026-09-12
+  url: https://pro.manny-li.com/posts/james-daunt-barnes-and-noble-w8sgypnhcpp9
+- id: "propod:cmtum2ac1123m01w6ehj8b2tu"
+  kind: pro-podcast
+  column: 巨人之聲
+  title: AI 電力戰如何把 NVIDIA 推向算力融資
+  date: 2026-09-10
+  url: https://pro.manny-li.com/episodes/cmtum2ac1123m01w6ehj8b2tu
+- id: "propod:cmtel5mvw12jk01wy4ok92ldx"
+  kind: pro-podcast
+  column: 巨人之聲
+  title: "Hoka、On 等新運動品牌怎麼在巨頭眼皮底下崛起？"
+  date: 2026-09-07
+  url: https://pro.manny-li.com/episodes/cmtel5mvw12jk01wy4ok92ldx
+- id: "pro:b2r32qpe3jna"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年第三季實體交流活動紀錄
+  date: 2026-09-05
+  url: https://pro.manny-li.com/posts/meetup-3q-2026-b2r32qpe3jna
+- id: "propod:cmtj74mw500lp01y46usd2blj"
+  kind: pro-podcast
+  column: Podcast 原創
+  title: "Claudeforce：當頂尖 AI 遇上頂尖 CRM"
+  date: 2026-09-02
+  url: https://pro.manny-li.com/episodes/cmtj74mw500lp01y46usd2blj
+- id: "pro:grs9prj89rgd"
+  kind: pro
+  column: 商業解碼
+  title: "因貨得福 IV：快撞到天花板的「中上」生意——TJX Companies"
+  date: 2026-08-29
+  url: https://pro.manny-li.com/posts/tjx-financial-analysis-grs9prj89rgd
+- id: "pro:bpvzaq5abb4y"
+  kind: pro
+  column: 商業解碼
+  title: "因貨得福 III：TJX 為什麼能越贏越多？"
+  date: 2026-08-29
+  url: https://pro.manny-li.com/posts/tjx-ross-burlington-bpvzaq5abb4y
+- id: "pro:wzwbvczbu6tb"
+  kind: pro
+  column: 商業解碼
+  title: "因貨得福 II：TJX 領先同業的獨家配方"
+  date: 2026-08-29
+  url: https://pro.manny-li.com/posts/tjx-buying-organization-wzwbvczbu6tb
+- id: "pro:m2yjx2xzuqcu"
+  kind: pro
+  column: 商業解碼
+  title: "因貨得福 I：把別人的失算做成生意"
+  date: 2026-08-29
+  url: https://pro.manny-li.com/posts/tjx-business-model-m2yjx2xzuqcu
+- id: "pro:nkjkkq9yvgt9"
+  kind: pro
+  column: 巨人之聲
+  title: "從一支藥到一個平台（Moderna 執行長 Stéphane Bancel）"
+  date: 2026-08-28
+  url: https://pro.manny-li.com/posts/moderna-stephane-bancel-nkjkkq9yvgt9
+- id: "propod:cmtb4yr9o01pp01zcgnpahydb"
+  kind: pro-podcast
+  column: 科技曼讀
+  title: "Airtable 折價八成出售，SaaS 獨角獸如何被重新定價"
+  date: 2026-08-27
+  url: https://pro.manny-li.com/episodes/cmtb4yr9o01pp01zcgnpahydb
+- id: "propod:cmt8nclvm0xmv01xi8eex5ue8"
+  kind: pro-podcast
+  column: 科技曼讀
+  title: "買下一堆過氣品牌的義大利併購機器：Bending Spoons"
+  date: 2026-08-25
+  url: https://pro.manny-li.com/episodes/cmt8nclvm0xmv01xi8eex5ue8
+- id: "pro:jkvgret4ww4d"
+  kind: pro
+  column: 科技曼讀
+  title: "支付巨頭 Stripe 為什麼花 80 億美元買一家 AI 模型路由公司？"
+  date: 2026-08-23
+  url: https://pro.manny-li.com/posts/stripe-acquires-openrouter-jkvgret4ww4d
+- id: "pro:dzcqdpceapkv"
+  kind: pro
+  column: 巨人之聲
+  title: AI 電力戰如何把 NVIDIA 推向算力融資
+  date: 2026-08-17
+  url: https://pro.manny-li.com/posts/nvidia-ai-compute-financing-dzcqdpceapkv
+- id: "propod:cmswaraeg0bmx01zd1ymybtom"
+  kind: pro-podcast
+  column: 商業解碼
+  title: Roper Technologies
+  date: 2026-08-17
+  url: https://pro.manny-li.com/episodes/cmswaraeg0bmx01zd1ymybtom
+- id: "pro:k8w9aqudktnu"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年 7 月你問我答
+  date: 2026-08-14
+  url: https://pro.manny-li.com/posts/ama-july-2026-k8w9aqudktnu
+- id: "pro:23jwvufhmrsw"
+  kind: pro
+  column: 巨人之聲
+  title: "Hoka、On、Gymshark 怎麼在巨頭眼皮底下崛起"
+  date: 2026-08-11
+  url: https://pro.manny-li.com/posts/hoka-on-gymshark-23jwvufhmrsw
+- id: "pro:j3kbjjzwdjzd"
+  kind: pro
+  column: 科技曼讀
+  title: "Airtable 折價八成出售：SaaS 獨角獸如何被重新定價"
+  date: 2026-08-06
+  url: https://pro.manny-li.com/posts/airtable-acquisitions-j3kbjjzwdjzd
+- id: "pro:hxdkrud95vd8"
+  kind: pro
+  column: 巨人之聲
+  title: "美國科技業為何押注開放權重 AI 模型？"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/open-weights-and-american-ai-hxdkrud95vd8
+- id: "pro:hzz5fkvrxg5x"
+  kind: pro
+  column: 商業解碼
+  title: "過路財神 II：不再只是信用卡"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/visa-beyond-cards-hzz5fkvrxg5x
+- id: "pro:zvsevsgssyap"
+  kind: pro
+  column: 商業解碼
+  title: "過路財神 Ⅴ：如何正確估值一門優異的生意"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/visa-financial-analysis-zvsevsgssyap
+- id: "pro:yb9cs6kekxas"
+  kind: pro
+  column: 商業解碼
+  title: "過路財神 I：不扛風險的過路財神"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/visa-business-model-yb9cs6kekxas
+- id: "pro:wvdcaes6auhw"
+  kind: pro
+  column: 商業解碼
+  title: "過路財神 III：新業者如何分一杯羹？"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/payments-value-capture-wvdcaes6auhw
+- id: "pro:rtqwsk3m4mxk"
+  kind: pro
+  column: 商業解碼
+  title: "過路財神 IV：最具破壞力的兩個新趨勢"
+  date: 2026-07-31
+  url: https://pro.manny-li.com/posts/alternative-payment-rails-rtqwsk3m4mxk
+- id: "propod:cms7or6d0077o01ymcffj7gbb"
+  kind: pro-podcast
+  column: 科技曼讀
+  title: "IMAX：稀缺的代價"
+  date: 2026-07-30
+  url: https://pro.manny-li.com/episodes/cms7or6d0077o01ymcffj7gbb
+- id: "propod:cms7o9zv5001q01vxhppq11y1"
+  kind: pro-podcast
+  column: 巨人之聲
+  title: "新體育淘金潮：Hyrox、匹克球、Banana Ball"
+  date: 2026-07-30
+  url: https://pro.manny-li.com/episodes/cms7o9zv5001q01vxhppq11y1
+- id: "propod:cms7nzjxu000001022aj05v08"
+  kind: pro-podcast
+  column: 商業解碼
+  title: Deere & Company
+  date: 2026-07-30
+  url: https://pro.manny-li.com/episodes/cms7nzjxu000001022aj05v08
+- id: "propod:cms5foq5v0qu601sihqdm73ul"
+  kind: pro-podcast
+  column: ""
+  title: 關於本節目
+  date: 2026-07-29
+  url: https://pro.manny-li.com/episodes/cms5foq5v0qu601sihqdm73ul
+- id: "pro:tn4vjnb9dbtb"
+  kind: pro
+  column: 科技曼讀
+  title: "IMAX：稀缺的代價"
+  date: 2026-07-26
+  url: https://pro.manny-li.com/posts/imax-tn4vjnb9dbtb
+- id: "pro:68ezcucry26v"
+  kind: pro
+  column: 巨人之聲
+  title: "預測市場能從博弈走向金融創新嗎？"
+  date: 2026-07-23
+  url: https://pro.manny-li.com/posts/prediction-markets-68ezcucry26v
+- id: "pro:rhyvggwtrxqh"
+  kind: pro
+  column: 巨人之聲
+  title: "新體育淘金潮：Hyrox、匹克球、Banana Ball"
+  date: 2026-07-17
+  url: https://pro.manny-li.com/posts/hyrox-ppatour-pickleball-bananaball-rhyvggwtrxqh
+- id: "podcast:2026-07-17-ep131"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP131｜收購老公司收到 IPO：Bending Spoons"
+  date: 2026-07-17
+  url: https://open.firstory.fm/story/cmrodup5h0xxg01w2c6qj5d3s
+- id: "pro:wuw9hfu5buhb"
+  kind: pro
+  column: 科技曼讀
+  title: "買下一堆過氣品牌的義大利併購機器：Bending Spoons"
+  date: 2026-07-16
+  url: https://pro.manny-li.com/posts/bending-spoons-ipo-wuw9hfu5buhb
+- id: "pro:3ra5g3yjyez4"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年 6 月你問我答
+  date: 2026-07-15
+  url: https://pro.manny-li.com/posts/ama-jun-2026-3ra5g3yjyez4
+- id: "pro:nrjggjnrfetu"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年第二季實體交流活動紀錄
+  date: 2026-07-13
+  url: https://pro.manny-li.com/posts/meetup-2q-2026-nrjggjnrfetu
+- id: "podcast:2026-07-02-ep129"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP129｜AI 搜尋（AI Search）的時代開啟了"
+  date: 2026-07-02
+  url: https://open.firstory.fm/story/cmr1tz2n2012x01vmbr29e26w
+- id: "pro:5hk42uvhcs2t"
+  kind: pro
+  column: 巨人之聲
+  title: "AI 開放模型崛起後，誰還握有定價權？"
+  date: 2026-06-28
+  url: https://pro.manny-li.com/posts/open-source-ai-models-5hk42uvhcs2t
+- id: "pro:rm4zgfgjfpc2"
+  kind: pro
+  column: 商業解碼
+  title: "出乎義料 II：重資產的投資其實更賺錢"
+  date: 2026-06-28
+  url: https://pro.manny-li.com/posts/restaurant-chains-business-model-rm4zgfgjfpc2
+- id: "pro:dq883qwwkcv2"
+  kind: pro
+  column: 商業解碼
+  title: "出乎義料 III：薩莉亞不只是一門「中等」餐飲生意"
+  date: 2026-06-28
+  url: https://pro.manny-li.com/posts/saizeriya-financial-analysis-dq883qwwkcv2
+- id: "pro:cscagbwsrcnb"
+  kind: pro
+  column: 商業解碼
+  title: "出乎義料 I：橫跨五十年的低價秘訣"
+  date: 2026-06-28
+  url: https://pro.manny-li.com/posts/saizeriya-business-model-cscagbwsrcnb
+- id: "pro:cjww9vu45utm"
+  kind: pro
+  column: 科技曼讀
+  title: 微軟的後 OpenAI 時代
+  date: 2026-06-23
+  url: https://pro.manny-li.com/posts/msft-post-openai-cjww9vu45utm
+- id: "pro:zbbg828wt3aa"
+  kind: pro
+  column: 巨人之聲
+  title: "用爆 AI token 的企業為什麼還沒賺爆？"
+  date: 2026-06-16
+  url: https://pro.manny-li.com/posts/ai-tokenmaxxing-zbbg828wt3aa
+- id: "pro:2cw32kpzmnpy"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年 5 月你問我答
+  date: 2026-06-15
+  url: https://pro.manny-li.com/posts/ama-may-2026-2cw32kpzmnpy
+- id: "pro:3ss5znuzunbe"
+  kind: pro
+  column: 巨人之聲
+  title: "太空資料中心是畫大餅還是真未來？"
+  date: 2026-06-12
+  url: https://pro.manny-li.com/posts/space-datacenter-spacex-3ss5znuzunbe
+- id: "pro:jq8rpf6p2f59"
+  kind: pro
+  column: 科技曼讀
+  title: "從資料中心到筆電：NVIDIA RTX Spark"
+  date: 2026-06-02
+  url: https://pro.manny-li.com/posts/nvidia-rtx-spark-jq8rpf6p2f59
+- id: "pro:cuxbwar4cvth"
+  kind: pro
+  column: 商業解碼
+  title: "一字千金 IV：賺錢與成長兼具的信評巨頭——Moody's Corporation"
+  date: 2026-05-31
+  url: https://pro.manny-li.com/posts/moodys-financial-analysis-cuxbwar4cvth
+- id: "pro:ta8h85jcrrrf"
+  kind: pro
+  column: 商業解碼
+  title: "一字千金 II：從評級報告到風險決策 SaaS"
+  date: 2026-05-31
+  url: https://pro.manny-li.com/posts/moodys-analytics-business-model-ta8h85jcrrrf
+- id: "pro:9pj32ujkxanq"
+  kind: pro
+  column: 商業解碼
+  title: "一字千金 III：連 2008 年金融危機都打不倒的信用評級系統"
+  date: 2026-05-31
+  url: https://pro.manny-li.com/posts/credit-rating-business-9pj32ujkxanq
+- id: "pro:52gjqz2bbj2p"
+  kind: pro
+  column: 巨人之聲
+  title: "AI 裁員潮是真的趨勢，還是企業的遮羞布？"
+  date: 2026-05-31
+  url: https://pro.manny-li.com/posts/ai-layoff-wave-52gjqz2bbj2p
+- id: "pro:y3v4hgf4gbmf"
+  kind: pro
+  column: 商業解碼
+  title: "一字千金 I：信用評級是一門怎樣的生意？"
+  date: 2026-05-31
+  url: https://pro.manny-li.com/posts/moodys-investors-service-business-model-y3v4hgf4gbmf
+- id: "pro:tdzgzbsctptw"
+  kind: pro
+  column: 巨人之聲
+  title: "自駕卡車為什麼這麼難，以及 2026 年有什麼不一樣？"
+  date: 2026-05-26
+  url: https://pro.manny-li.com/posts/autonomous-trucks-aurora-kodiak-waabi-tdzgzbsctptw
+- id: "pro:3wwyhabrfgca"
+  kind: pro
+  column: 科技曼讀
+  title: "拆解 SpaceX 的 S-1：不只是一家太空公司在上市"
+  date: 2026-05-25
+  url: https://pro.manny-li.com/posts/spacex-ipo-s1-3wwyhabrfgca
+- id: "pro:drwymxex2ytn"
+  kind: pro
+  column: 巨人之聲
+  title: "Atlassian 能靠掌握「工作脈絡」贏下這場戰爭嗎？"
+  date: 2026-05-20
+  url: https://pro.manny-li.com/posts/atlassian-ai-context-moat-drwymxex2ytn
+- id: "pro:b8mnrda6dvcj"
+  kind: pro
+  column: 科技曼讀
+  title: "AI 巨頭贏下企業市場的關鍵：FDE"
+  date: 2026-05-18
+  url: https://pro.manny-li.com/posts/what-is-fde-b8mnrda6dvcj
+- id: "pro:88jxuzxku3eu"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年 4 月你問我答
+  date: 2026-05-15
+  url: https://pro.manny-li.com/posts/ama-apr-2026-88jxuzxku3eu
+- id: "podcast:2026-05-11-ep127"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP127｜AI Agent 將取代所有「平台」嗎？"
+  date: 2026-05-11
+  url: https://open.firstory.fm/story/cmp0pi66f082r01xmcfhkam8l
+- id: "podcast:2026-05-05-ep126"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP126｜太空資料中心"
+  date: 2026-05-05
+  url: https://open.firstory.fm/story/cmopykn9h0fl501yec5171go5
+- id: "pro:hez389wzm44g"
+  kind: pro
+  column: 巨人之聲
+  title: "DoorDash、Uber、Booking 這些「平台」的時代是否要結束了？"
+  date: 2026-04-30
+  url: https://pro.manny-li.com/posts/ai-replace-platforms-hez389wzm44g
+- id: "pro:wyym9cue2crw"
+  kind: pro
+  column: 商業解碼
+  title: "矯正回歸 III：創新者的困境"
+  date: 2026-04-28
+  url: https://pro.manny-li.com/posts/align-category-creator-dilemma-wyym9cue2crw
+- id: "pro:ngsbqxnadchn"
+  kind: pro
+  column: 商業解碼
+  title: "矯正回歸 IV：跌落神壇的估值保衛戰——Align Technology"
+  date: 2026-04-28
+  url: https://pro.manny-li.com/posts/align-financial-analysis-ngsbqxnadchn
+- id: "pro:tyy9rqctxpkh"
+  kind: pro
+  column: 商業解碼
+  title: "矯正回歸 I：革命性品牌「隱適美」"
+  date: 2026-04-28
+  url: https://pro.manny-li.com/posts/align-business-model-tyy9rqctxpkh
+- id: "pro:wt4bbtb2kex3"
+  kind: pro
+  column: 商業解碼
+  title: "矯正回歸 II：沒有對手的黃金十年"
+  date: 2026-04-28
+  url: https://pro.manny-li.com/posts/align-competitive-advantage-wt4bbtb2kex3
+- id: "pro:sfddnjkgm59b"
+  kind: pro
+  column: 科技曼讀
+  title: "從保全、房東到中間人：Cloudflare 的三次擴張和一次豪賭"
+  date: 2026-04-24
+  url: https://pro.manny-li.com/posts/cloudflare-4th-wave-sfddnjkgm59b
+- id: "pro:sg2sthu6aaak"
+  kind: pro
+  column: 巨人之聲
+  title: "資料平台：AI 時代的企業作業系統"
+  date: 2026-04-22
+  url: https://pro.manny-li.com/posts/ai-data-saas-snowflake-databricks-sg2sthu6aaak
+- id: "pro:xdqzqvzyyzb8"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年 3 月你問我答
+  date: 2026-04-14
+  url: https://pro.manny-li.com/posts/ama-mar-2026-xdqzqvzyyzb8
+- id: "pro:qj3wwurtndbm"
+  kind: pro
+  column: 巨人之聲
+  title: "AI 沒有消滅好萊塢（至少不是字面上的意思）"
+  date: 2026-04-13
+  url: https://pro.manny-li.com/posts/does-ai-kill-hollywood-qj3wwurtndbm
+- id: "pro:tvqqj5aqhcr3"
+  kind: pro
+  column: 科技曼讀
+  title: SpaceX 的上市前簡析
+  date: 2026-04-10
+  url: https://pro.manny-li.com/posts/spacex-preipo-tvqqj5aqhcr3
+- id: "pro:pxkj26b9zjj5"
+  kind: pro
+  column: 巨人之聲
+  title: 為什麼 3.5 兆美元的私募信貸贖回風暴不會是下一個 2008 金融海嘯
+  date: 2026-03-30
+  url: https://pro.manny-li.com/posts/private-credit-apollo-blackstone-ares-kkr-goldman-pxkj26b9zjj5
+- id: "pro:33q9heffxzna"
+  kind: pro
+  column: 商業解碼
+  title: "複利引擎 III：「我比巴菲特更厲害」"
+  date: 2026-03-28
+  url: https://pro.manny-li.com/posts/roper-brian-jellison-33q9heffxzna
+- id: "pro:9e2jqsm9y5bj"
+  kind: pro
+  column: 商業解碼
+  title: "複利引擎 II：連續併購者的宿命"
+  date: 2026-03-28
+  url: https://pro.manny-li.com/posts/roper-constellation-berkshire-serial-acquirer-9e2jqsm9y5bj
+- id: "pro:2cukhad2j6dq"
+  kind: pro
+  column: 商業解碼
+  title: "複利引擎 I：買到翻身的秘訣"
+  date: 2026-03-28
+  url: https://pro.manny-li.com/posts/roper-business-model-2cukhad2j6dq
+- id: "pro:g88uv4p93amw"
+  kind: pro
+  column: 商業解碼
+  title: "複利引擎 IV：精密拆解 Roper Technologies"
+  date: 2026-03-28
+  url: https://pro.manny-li.com/posts/roper-technologies-financial-analysis-g88uv4p93amw
+- id: "pro:nqtk4h6ntusm"
+  kind: pro
+  column: 巨人之聲
+  title: "Palantir 其實是一面 AI 照妖鏡？"
+  date: 2026-03-28
+  url: https://pro.manny-li.com/posts/palantir-ai-nqtk4h6ntusm
+- id: "pro:g6q855r8jky9"
+  kind: pro
+  column: 巨人之聲
+  title: "AI 吞噬軟體，資安收保護費"
+  date: 2026-03-16
+  url: https://pro.manny-li.com/posts/cybersecurity-crwd-panw-g6q855r8jky9
+- id: "pro:edpjc5mshdka"
+  kind: pro
+  column: 科技曼讀
+  title: "套利先知：預測市場到底是什麼？"
+  date: 2026-03-15
+  url: https://pro.manny-li.com/posts/what-is-prediction-market-edpjc5mshdka
+- id: "pro:bg89rvnhstnm"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年第一季實體交流活動紀錄
+  date: 2026-03-14
+  url: https://pro.manny-li.com/posts/meetup-1q-2026-bg89rvnhstnm
+- id: "pro:m5pergwrjrrp"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年 2 月你問我答
+  date: 2026-03-14
+  url: https://pro.manny-li.com/posts/ama-feb-2026-m5pergwrjrrp
+- id: "pro:cj5j4nkzkjc5"
+  kind: pro
+  column: 科技曼讀
+  title: "AI 會毀掉經濟嗎？一套好用的思考框架"
+  date: 2026-03-06
+  url: https://pro.manny-li.com/posts/ai-apocalypse-or-not-cj5j4nkzkjc5
+- id: "pro:9bazcddtrbc6"
+  kind: pro
+  column: 商業解碼
+  title: "鹿遙知馬力 Ⅱ：稱霸業界的秘訣——自營金融"
+  date: 2026-02-27
+  url: https://pro.manny-li.com/posts/john-deere-financial-9bazcddtrbc6
+- id: "pro:mcesz5fk85wy"
+  kind: pro
+  column: 商業解碼
+  title: "鹿遙知馬力 Ⅳ：中上到優秀的距離——Deere & Company"
+  date: 2026-02-27
+  url: https://pro.manny-li.com/posts/john-deere-financial-analysis-mcesz5fk85wy
+- id: "pro:wmste5rh4s2q"
+  kind: pro
+  column: 商業解碼
+  title: "鹿遙知馬力 Ⅲ：王者為何仍需轉型？"
+  date: 2026-02-27
+  url: https://pro.manny-li.com/posts/john-deere-smart-industrial-wmste5rh4s2q
+- id: "pro:d95qtaqsfsck"
+  kind: pro
+  column: 商業解碼
+  title: "鹿遙知馬力 Ⅰ：從賣產品到建生態"
+  date: 2026-02-27
+  url: https://pro.manny-li.com/posts/john-deere-business-model-d95qtaqsfsck
+- id: "pro:mxtxvxnbnc88"
+  kind: pro
+  column: 巨人之聲
+  title: 也許我們不會再有下一個 MrBeast
+  date: 2026-02-26
+  url: https://pro.manny-li.com/posts/mrbeast-beastindustries-mxtxvxnbnc88
+- id: "podcast:2026-02-24-ep122"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP122｜萬豪國際（Marriott）feat. Vincent（曼報 Pro）"
+  date: 2026-02-24
+  url: https://open.firstory.fm/story/cmlyj75so0ax301w52dn261on
+- id: "pro:erw26rvsctcr"
+  kind: pro
+  column: 科技曼讀
+  title: "社群平台為什麼開始跟你收錢？"
+  date: 2026-02-22
+  url: https://pro.manny-li.com/posts/social-media-subscription-erw26rvsctcr
+- id: "pro:rdnwj3ty26j9"
+  kind: pro
+  column: 科技曼讀
+  title: "廣告是不道德的？談 LLM 商業模式的終局"
+  date: 2026-02-19
+  url: https://pro.manny-li.com/posts/llm-ads-business-model-rdnwj3ty26j9
+- id: "pro:uh6ys6nwfnc5"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2026 年 1 月你問我答
+  date: 2026-02-15
+  url: https://pro.manny-li.com/posts/ama-jan-2026-uh6ys6nwfnc5
+- id: "pro:bzqqad4bwawe"
+  kind: pro
+  column: 巨人之聲
+  title: "Matthew Prince (Cloudflare)：內容經濟的三種未來"
+  date: 2026-02-12
+  url: https://pro.manny-li.com/posts/matthew-prince-ai-agent-bzqqad4bwawe
+- id: "pro:p8ytfvhbvbgy"
+  kind: pro
+  column: 巨人之聲
+  title: "無人機很夯，但誰能大規模量產？"
+  date: 2026-02-09
+  url: https://pro.manny-li.com/posts/null-p8ytfvhbvbgy
+- id: "pro:x4dmsg59wxpe"
+  kind: pro
+  column: 巨人之聲
+  title: "KR Sridhar (Bloom Energy）：燃料電池的歷史性時刻"
+  date: 2026-01-29
+  url: https://pro.manny-li.com/posts/null-x4dmsg59wxpe
+- id: "pro:xyacaqc5ex9p"
+  kind: pro
+  column: 科技曼讀
+  title: Meta 的世紀豪賭還沒結束
+  date: 2026-01-27
+  url: https://pro.manny-li.com/posts/null-xyacaqc5ex9p
+- id: "podcast:2026-01-27-ep120"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP120｜蘋果在中國（Apple in China）"
+  date: 2026-01-27
+  url: https://open.firstory.fm/story/cmkvc1wsr008501xmb7a24xla
+- id: "pro:vzej66cff3bh"
+  kind: pro
+  column: 商業解碼
+  title: "舉重若輕 Ⅲ：從飲料攤變飯店業龍頭的求生之路"
+  date: 2026-01-26
+  url: https://pro.manny-li.com/posts/null-vzej66cff3bh
+- id: "pro:duukfut6958f"
+  kind: pro
+  column: 商業解碼
+  title: "舉重若輕 Ⅰ：不蓋飯店的飯店集團"
+  date: 2026-01-26
+  url: https://pro.manny-li.com/posts/null-duukfut6958f
+- id: "pro:tvjpcgcpfym3"
+  kind: pro
+  column: 商業解碼
+  title: "舉重若輕 Ⅳ：卓越的商業模式典範——Marriott"
+  date: 2026-01-26
+  url: https://pro.manny-li.com/posts/null-tvjpcgcpfym3
+- id: "pro:zppaa3v8qrtw"
+  kind: pro
+  column: 巨人之聲
+  title: "CJ Desai (MongoDB)：SaaS 真的要被 AI 消滅？"
+  date: 2026-01-26
+  url: https://pro.manny-li.com/posts/null-zppaa3v8qrtw
+- id: "pro:t43v6uuxx3tp"
+  kind: pro
+  column: 商業解碼
+  title: "舉重若輕 Ⅱ：讓會員離不開的萬有引力"
+  date: 2026-01-26
+  url: https://pro.manny-li.com/posts/null-t43v6uuxx3tp
+- id: "pro:xub3t2c88p2t"
+  kind: pro
+  column: 科技曼讀
+  title: "AI 時代的影子收購：人才併購（Acqui-hire）"
+  date: 2026-01-18
+  url: https://pro.manny-li.com/posts/null-xub3t2c88p2t
+- id: "pro:8vfvgz33vcq2"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2025 年 12 月你問我答
+  date: 2026-01-16
+  url: https://pro.manny-li.com/posts/ama-dec-2025-8vfvgz33vcq2
+- id: "pro:p8nahz4ju59d"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2025 年第四季實體交流活動紀錄
+  date: 2026-01-08
+  url: https://pro.manny-li.com/posts/meetup-4q-2025-p8nahz4ju59d
+- id: "pro:j8f4gchrfeb5"
+  kind: pro
+  column: 巨人之聲
+  title: "波士頓動力 Boston Dynamics：人形機器人的商業豪賭"
+  date: 2026-01-07
+  url: https://pro.manny-li.com/posts/boston-dynamics-humanoid-j8f4gchrfeb5
+- id: "podcast:2026-01-06-sp11"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP11｜2025 年最大的學習（以及吹捧 Vincent）"
+  date: 2026-01-06
+  url: https://open.firstory.fm/story/cmk27nooi00f701s5a5yraars
+- id: "pro:d9dsbngvz4c9"
+  kind: pro
+  column: 曼報俱樂部
+  title: "2025 年致會員信（Letter to Members）"
+  date: 2026-01-05
+  url: https://pro.manny-li.com/posts/2025-letter-to-members-d9dsbngvz4c9
+- id: "pro:4ddye6dahq6r"
+  kind: pro
+  column: 商業解碼
+  title: "眾聲有價 Ⅲ：如何正確評估 Reddit 的潛力"
+  date: 2025-12-29
+  url: https://pro.manny-li.com/posts/null-4ddye6dahq6r
+- id: "pro:6tdws32g4rwp"
+  kind: pro
+  column: 商業解碼
+  title: "眾聲有價 Ⅱ：販售「真實」的挑戰與機會"
+  date: 2025-12-29
+  url: https://pro.manny-li.com/posts/null-6tdws32g4rwp
+- id: "pro:9bqny83p92n5"
+  kind: pro
+  column: 商業解碼
+  title: "眾聲有價 Ⅰ：論壇文明的倖存者"
+  date: 2025-12-29
+  url: https://pro.manny-li.com/posts/null-9bqny83p92n5
+- id: "pro:99c45rxf5864"
+  kind: pro
+  column: 科技曼讀
+  title: "Coursera 與 Udemy 宣布合併：當信任成為一種稀缺"
+  date: 2025-12-25
+  url: https://pro.manny-li.com/posts/null-99c45rxf5864
+- id: "pro:j9mt5hwzd9pn"
+  kind: pro
+  column: 巨人之聲
+  title: "Mati Staniszewski：如果 Google 或 OpenAI 決定做你的生意怎麼辦？"
+  date: 2025-12-23
+  url: https://pro.manny-li.com/posts/null-j9mt5hwzd9pn
+- id: "podcast:2025-12-22-ep117"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP117｜AMP：用 AI 顛覆垃圾回收產業"
+  date: 2025-12-22
+  url: https://open.firstory.fm/story/cmjh3fkrn000m01yw1i8d9ims
+- id: "podcast:2025-12-18-sp10"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP10｜專訪《造光者》（Focus: The ASML Way）作者 Marc Hijink（全英文）"
+  date: 2025-12-18
+  url: https://open.firstory.fm/story/cmj6oqq2c00dt0101gtg56rtr
+- id: "pro:k6x9tusww2es"
+  kind: pro
+  column: 巨人之聲
+  title: "Peter Beck：脫離地心引力後，太空產業的幻想和真實"
+  date: 2025-12-18
+  url: https://pro.manny-li.com/posts/null-k6x9tusww2es
+- id: "podcast:2025-12-15-ep116"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP116｜生成式 AI 媒體的軍火商：fal.ai"
+  date: 2025-12-15
+  url: https://open.firstory.fm/story/cmj6g8a7h000l01w7hijxfymq
+- id: "pro:ufwby4nxpxtv"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2025 年 11 月你問我答
+  date: 2025-12-15
+  url: https://pro.manny-li.com/posts/ama-nov-2025-ufwby4nxpxtv
+- id: "pro:ueyj98gmbgxn"
+  kind: pro
+  column: 科技曼讀
+  title: "串流大戰的終局與寡頭時代的序幕：Netflix 收購華納兄弟"
+  date: 2025-12-09
+  url: https://pro.manny-li.com/posts/null-ueyj98gmbgxn
+- id: "pro:t8dntpyvdeyp"
+  kind: pro
+  column: 商業解碼
+  title: "人性套利 Ⅳ：決定市場的那隻手"
+  date: 2025-11-29
+  url: https://pro.manny-li.com/posts/null-t8dntpyvdeyp
+- id: "pro:avmqs55nnqwj"
+  kind: pro
+  column: 商業解碼
+  title: "人性套利 V：深度解析網路博弈巨頭 Flutter Entertainment"
+  date: 2025-11-29
+  url: https://pro.manny-li.com/posts/null-avmqs55nnqwj
+- id: "pro:jmtvz5xwptwb"
+  kind: pro
+  column: 商業解碼
+  title: "人性套利 Ⅱ：莊家為何要對賭客慷慨？"
+  date: 2025-11-28
+  url: https://pro.manny-li.com/posts/null-jmtvz5xwptwb
+- id: "pro:jtpkdq4kt63v"
+  kind: pro
+  column: 商業解碼
+  title: "人性套利 Ⅲ：博弈市場的競爭終局"
+  date: 2025-11-28
+  url: https://pro.manny-li.com/posts/null-jtpkdq4kt63v
+- id: "pro:zma3sf389tbr"
+  kind: pro
+  column: 商業解碼
+  title: "人性套利 Ⅰ：賭盤賠率的秘密"
+  date: 2025-11-28
+  url: https://pro.manny-li.com/posts/null-zma3sf389tbr
+- id: "pro:r432czr8q5bk"
+  kind: pro
+  column: 科技曼讀
+  title: "不只是遊戲主機：Valve 如何一步步擺脫 Windows 的重力井"
+  date: 2025-11-24
+  url: https://pro.manny-li.com/posts/null-r432czr8q5bk
+- id: "pro:frbpkafhxw3p"
+  kind: pro
+  column: 巨人之聲
+  title: "Scott Strazik：歡迎 AI 來到有錢也很難插隊的物理世界"
+  date: 2025-11-23
+  url: https://pro.manny-li.com/posts/null-frbpkafhxw3p
+- id: "podcast:2025-11-20-ep115"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP115｜來自澳洲的客服 AI 新星：Lorikeet"
+  date: 2025-11-20
+  url: https://open.firstory.fm/story/cmi769uvp00m101xobvke1fwk
+- id: "pro:za5znb6ngne6"
+  kind: pro
+  column: 科技曼讀
+  title: "估值 21 億美元的 Gamma 是 PowerPoint 殺手，還是一個全新的物種？"
+  date: 2025-11-17
+  url: https://pro.manny-li.com/posts/null-za5znb6ngne6
+- id: "pro:gfz2tt5jz22e"
+  kind: pro
+  column: 巨人之聲
+  title: "Brian Chesky：Airbnb 的 AI 時代轉型戰略"
+  date: 2025-11-13
+  url: https://pro.manny-li.com/posts/null-gfz2tt5jz22e
+- id: "pro:yfj6rhppp5rt"
+  kind: pro
+  column: 曼報俱樂部
+  title: 2025 年 10 月你問我答
+  date: 2025-11-12
+  url: https://pro.manny-li.com/posts/ama-oct-2025-yfj6rhppp5rt
+- id: "podcast:2025-11-11-ep114"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP114｜原神"
+  date: 2025-11-11
+  url: https://open.firstory.fm/story/cmhta9yhv00gy01uu9sxw1qd7
+- id: "podcast:2025-11-06-sp9"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP9｜什麼叫做真正有料的電子報 ft. 陳良榕（阿榕伯）"
+  date: 2025-11-06
+  url: https://open.firstory.fm/story/cmhmrtg3n00w101rn7rhgcu1p
+- id: "pro:qnjkum4j8g4u"
+  kind: pro
+  column: 巨人之聲
+  title: "Roelof Botha：Sequoia 在 AI 與資本過剩時代的實戰心法"
+  date: 2025-10-31
+  url: https://pro.manny-li.com/posts/null-qnjkum4j8g4u
+- id: "pro:w6ujnrs69ftz"
+  kind: pro
+  column: 巨人之聲
+  title: "Aravind Srinivas：AI 將重新定義工作價值以及廣告經濟"
+  date: 2025-10-30
+  url: https://pro.manny-li.com/posts/null-w6ujnrs69ftz
+- id: "pro:zcfm4vvqzqb8"
+  kind: pro
+  column: 科技曼讀
+  title: "Base Power：顛覆性的分散式儲能網路"
+  date: 2025-10-28
+  url: https://pro.manny-li.com/posts/null-zcfm4vvqzqb8
+- id: "pro:g2abna6e4v4e"
+  kind: pro
+  column: 科技曼讀
+  title: "史上最大的槓桿收購案：遊戲巨頭 EA 的 550 億美元私有化"
+  date: 2025-10-27
+  url: https://pro.manny-li.com/posts/null-g2abna6e4v4e
+- id: "pro:g3k2wuk5aasv"
+  kind: pro
+  column: 商業解碼
+  title: "落槌之前 Ⅲ：深度解析蘇富比"
+  date: 2025-09-29
+  url: https://pro.manny-li.com/posts/null-g3k2wuk5aasv
+- id: "pro:pqn8u2pyqzdq"
+  kind: pro
+  column: 商業解碼
+  title: "落槌之前 Ⅰ：解碼拍賣行的商業模式"
+  date: 2025-09-29
+  url: https://pro.manny-li.com/posts/null-pqn8u2pyqzdq
+- id: "pro:sd5nackg984j"
+  kind: pro
+  column: 商業解碼
+  title: "落槌之前 Ⅱ：藝術投資的表與裡"
+  date: 2025-09-29
+  url: https://pro.manny-li.com/posts/null-sd5nackg984j
+- id: "podcast:2025-09-08-ep113"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP113 \\| AI 時代下你一定要避免的十大謬誤"
+  date: 2025-09-08
+  url: https://open.firstory.fm/story/cmfayj2y5038x01rsaylb5m9g
+- id: "podcast:2025-08-27-ep111"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP111｜中國的遊戲產業怎麼了？feat. 飛鳥涼不涼（Sam）"
+  date: 2025-08-27
+  url: https://open.firstory.fm/story/cmetemhtk00fi01tk7hfc0316
+- id: "podcast:2025-07-28-ep108"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP108｜致富的心魔（Manny 超大 EMO 特集）"
+  date: 2025-07-28
+  url: https://open.firstory.fm/story/cmdmmgli1002w01ygalvw35kg
+- id: "podcast:2025-07-07-ep106"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP106｜讓趕牛像打電動的紐西蘭獨角獸：Halter"
+  date: 2025-07-07
+  url: https://open.firstory.fm/story/cmcssmv0h01zg01xkflw26y6i
+- id: "podcast:2025-06-24-ep104"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP104｜從儲油槽到戰鬥機，Gecko Robotics 要成為企業的檢修大腦"
+  date: 2025-06-24
+  url: https://open.firstory.fm/story/cmc8zen40004001xeeydkcb22
+- id: "podcast:2025-06-16-ep103"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP103｜無人真的是未來：歐洲的倉儲自動化獨角獸 Exotec"
+  date: 2025-06-16
+  url: https://open.firstory.fm/story/cmbyjnosk0dpd01radd0z1rih
+- id: "podcast:2025-06-09-ep102"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP102｜空中無人機送貨是真的：估值超過 40 億美元的 Zipline"
+  date: 2025-06-09
+  url: https://open.firstory.fm/story/cmbosszkn27dq01ze6n8zfcak
+- id: "podcast:2025-05-27-ep100"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP100｜Google I/O 2025 實地造訪心得：大哥要認真了"
+  date: 2025-05-27
+  url: https://open.firstory.fm/story/cmb667tcq0y1601y33zp91chs
+- id: "podcast:2025-04-14-sp8"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP8｜一個電子報作者的自白 vol.2（不喜歡聽閒聊的可以跳過這集）"
+  date: 2025-04-14
+  url: https://open.firstory.fm/story/cm9fs19b0097r01tua907av9l
+- id: "podcast:2025-04-07-ep99"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP99｜股災劫後餘生：如何利用 AI 辨識真知，並且回去好好上班"
+  date: 2025-04-07
+  url: https://open.firstory.fm/story/cm95e2nud020b01wa937g3gg8
+- id: "podcast:2025-03-17-ep97"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP97｜還在下背痛嗎？試試數位骨骼肌肉照護平台 Hinge Health"
+  date: 2025-03-17
+  url: https://open.firstory.fm/story/cm8ctd4oa004901wz2pxsbo6a
+- id: "podcast:2025-03-10-ep96"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP96｜每個醫生都需要的 AI 問診神器：Abridge"
+  date: 2025-03-10
+  url: https://open.firstory.fm/story/cm82rp7b609yx010l1zrlcyoq
+- id: "podcast:2025-03-03-ep95"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP95｜（自）媒體的 AI 焦慮指南 ft. IEObserve & 商周副總編輯吳中傑"
+  date: 2025-03-03
+  url: https://open.firstory.fm/story/cm7sqrgqh000001ztes4a35w3
+- id: "podcast:2025-02-24-ep94"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP94｜超音速客機的第二次衝擊：Boom Technology"
+  date: 2025-02-24
+  url: https://open.firstory.fm/story/cm7iokppo01m601y961ad48zt
+- id: "podcast:2025-02-10-ep92"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP92｜Amazon 的無人計程車大業：Zoox"
+  date: 2025-02-10
+  url: https://open.firstory.fm/story/cm6xmri3w00ik01txasr61ndx
+- id: "podcast:2025-02-04-ep91"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP91｜深度導讀 225 頁產業報告，解析全球遊戲產業為何衰退"
+  date: 2025-02-04
+  url: https://open.firstory.fm/story/cm6okyh9h004301su88j3havx
+- id: "podcast:2024-12-16-ep88"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP88｜2024 年末特集：給你滿滿大閒聊"
+  date: 2024-12-16
+  url: https://open.firstory.fm/story/cm4qqw5nz11i801161d67hkot
+- id: "podcast:2024-12-06-sp7"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP7｜現場直擊科技盛會 re:Invent，深度解析 AWS 的生成式 AI 策略"
+  date: 2024-12-06
+  url: https://open.firstory.fm/story/cm4cky07104ij01xw85xdcm27
+- id: "podcast:2024-11-21-ep87"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP87｜Dexcom：（曾經的）連續血糖偵測儀（CGM）霸主"
+  date: 2024-11-21
+  url: https://open.firstory.fm/story/cm3qp6rtd019701u75krzer9g
+- id: "podcast:2024-11-04-ep86"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP86｜百億美元的墨西哥捲餅王者：Chipotle"
+  date: 2024-11-04
+  url: https://open.firstory.fm/story/cm32qzxv100jx01vccfo92mlf
+- id: "podcast:2024-10-21-sp5"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP5｜什麼是「有價值的研究」？ feat. 資深外資分析師 Vincent"
+  date: 2024-10-21
+  url: https://open.firstory.fm/story/cm2iq56oh0a2801tp9m3cfg8r
+- id: "podcast:2024-10-14-ep85"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP85｜NASA 的內幕與美國太空產業的重生"
+  date: 2024-10-14
+  url: https://open.firstory.fm/story/cm28s7nqm04zl01tw2362hykk
+- id: "podcast:2024-09-26-ep82"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP82｜次世代基因定序設備霸主 Illumina"
+  date: 2024-09-26
+  url: https://open.firstory.fm/story/cm1j1gs1x08s201xl8i5i86df
+- id: "podcast:2024-09-19-ep81"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP81｜助聽器市場概論（以及 AirPods Pro 2 可能帶來的衝擊）"
+  date: 2024-09-19
+  url: https://open.firstory.fm/story/cm18rbxhh00gq01zmg5l1eqkx
+- id: "podcast:2024-09-09-ep80"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP80｜資安巨頭 Palo Alto Networks"
+  date: 2024-09-09
+  url: https://open.firstory.fm/story/cm0upam4400ur01y824f2eir0
+- id: "podcast:2024-08-26-ep79"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP79｜波蘭國寶：CD Projekt"
+  date: 2024-08-26
+  url: https://open.firstory.fm/story/cm0ajqt9o06ei01xgg7ndbg6i
+- id: "podcast:2024-08-19-ep78"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP78｜設備維修管理系統的獨角獸：MaintainX"
+  date: 2024-08-19
+  url: https://open.firstory.fm/story/cm00ou22004si01uq6p238qh2
+- id: "podcast:2024-08-12-ep77"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP77｜FTX 帝國興衰史（與我學到的教訓）"
+  date: 2024-08-12
+  url: https://open.firstory.fm/story/clzqqsa1n0bpj01v792u5gf7d
+- id: "podcast:2024-08-05-ep76"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP76｜估值 30 億美元的法律 SaaS 龍頭：Clio"
+  date: 2024-08-05
+  url: https://open.firstory.fm/story/clzgflbyf0dm201ul3i7r5f9q
+- id: "podcast:2024-07-29-sp4"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP4｜一個電子報作者的自白（三萬訂閱特輯）"
+  date: 2024-07-29
+  url: https://open.firstory.fm/story/clz6n5tt406e701xj0s33epg4
+- id: "podcast:2024-07-15-ep75"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP75｜解讀「條漫」市場與領先者 Naver Webtoon"
+  date: 2024-07-15
+  url: https://open.firstory.fm/story/clymq083j06fb0135237tgmd2
+- id: "podcast:2024-07-01-ep73"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP73｜露營車（RV）市場的過去、現在與未來"
+  date: 2024-07-01
+  url: https://open.firstory.fm/story/cly2piv8l000d01uq3vmhecps
+- id: "podcast:2024-06-17-ep72"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP72｜Apple 的成長飛輪：連貫、智慧、隱私（WWDC 2024 會後感）"
+  date: 2024-06-17
+  url: https://open.firstory.fm/story/clxis0vha08n601vqcxnghibb
+- id: "podcast:2024-06-11-sp3"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP3｜Computex 2024 看展啟發：工廠、機器手臂、AI PC"
+  date: 2024-06-11
+  url: https://open.firstory.fm/story/clxa4l4wd084201xfgb2qfj1a
+- id: "podcast:2024-05-27-ep70"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP70｜2024 生成式 AI 年會：啟發與心得"
+  date: 2024-05-27
+  url: https://open.firstory.fm/story/clwopdkkg05d301r2emb576bo
+- id: "podcast:2024-04-29-ep67"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP67｜消費向基因檢測市場的先驅：23andMe"
+  date: 2024-04-29
+  url: https://open.firstory.fm/story/clvkq7sdv000w01yran226pj9
+- id: "podcast:2024-04-23-ep66"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP66｜Hadrian：打造地表最強的精密製造工廠"
+  date: 2024-04-23
+  url: https://open.firstory.fm/story/clvc2tcfr001801vde73p6wbd
+- id: "podcast:2024-04-08-ep64"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP64｜UnLearn: 用 AI 顛覆藥物臨床試驗"
+  date: 2024-04-08
+  url: https://open.firstory.fm/story/cluqqg95809n201z4ez4u1pp0
+- id: "podcast:2024-03-11-ep63"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP63｜專治慢性腸胃疾病的數位診所 Salvo Health"
+  date: 2024-03-11
+  url: https://open.firstory.fm/story/cltmnpu3f108a010v197gbmq4
+- id: "podcast:2024-02-26-ep62"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP62｜農業自動駕駛 Agtonomy"
+  date: 2024-02-26
+  url: https://open.firstory.fm/story/clt2lwyyz0mis01zfey775wc1
+- id: "podcast:2024-02-20-ep61"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP61｜Apple Vision Pro"
+  date: 2024-02-20
+  url: https://open.firstory.fm/story/clsu4ovr201hr011l8eqvfwe2
+- id: "podcast:2024-01-22-ep59"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP59｜澳洲的工作安全管理獨角獸：SafetyCulture"
+  date: 2024-01-22
+  url: https://open.firstory.fm/story/clronmzn100ei01v502tc8x24
+- id: "podcast:2023-12-11-ep58"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP58｜全球隱私通訊的主要推手：Signal Foundation"
+  date: 2023-12-11
+  url: https://open.firstory.fm/story/clq06m0l6000401zf203he87e
+- id: "podcast:2023-12-04-ep57"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP57｜智慧路燈新創 Ubicquia：把全球 3.6 億支路燈變聰明"
+  date: 2023-12-04
+  url: https://open.firstory.fm/story/clpqc6bbg0c1a01tsgpmaay2d
+- id: "podcast:2023-11-13-ep56"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP56｜全自動的運動賽事轉播商 Pixellot、OpenAI 的商業洞察"
+  date: 2023-11-13
+  url: https://open.firstory.fm/story/clowm4v7r033901t5btt30s2q
+- id: "podcast:2023-10-30-ep55"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP55｜人形機器人（Humanoid Robot）"
+  date: 2023-10-30
+  url: https://open.firstory.fm/story/clocd85zt033x01wbfkfwdgan
+- id: "podcast:2023-10-23-ep54"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP54｜未來的戰爭樣貌與國防科技新星 Anduril Industries"
+  date: 2023-10-23
+  url: https://open.firstory.fm/story/clo2l2qcm0dqo01y1ep5u0ur1
+- id: "podcast:2023-10-02-ep52"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP52｜Teamshares：讓員工當老闆的小企業平台"
+  date: 2023-10-02
+  url: https://open.firstory.fm/story/cln7gvxmk02gv0101dfbe9i4d
+- id: "podcast:2023-08-21-ep50"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP50｜脊椎手術導引系統 Proprio、車隊管理系統（FMS）"
+  date: 2023-08-21
+  url: https://open.firstory.fm/story/cllklr4ml02c301xtg4j9hz65
+- id: "podcast:2023-08-14-ep49"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP49｜俄羅斯方塊的版權之戰"
+  date: 2023-08-14
+  url: https://open.firstory.fm/story/cll99qifq04fe01ux44n7d9lh
+- id: "podcast:2023-08-07-ep48"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP48｜雲端影像監控平台趨勢、電動自行車新創破產啟示錄"
+  date: 2023-08-07
+  url: https://open.firstory.fm/story/cll0f3x6j01mn01w5a2qfhxp0
+- id: "podcast:2023-07-18-ep46-2"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP46-2｜2023 上半年遊戲產業五大議題"
+  date: 2023-07-18
+  url: https://open.firstory.fm/story/clk68pgf4044p01vo27vv72hr
+- id: "podcast:2023-07-10-ep45"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP45｜Threads：狙擊推特（Twitter）的聯邦宇宙巨星"
+  date: 2023-07-10
+  url: https://open.firstory.fm/story/cljwjdipj00qe01tc7min7rqx
+- id: "podcast:2023-06-19-ep44"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP44｜漫談電動自行車市場"
+  date: 2023-06-19
+  url: https://open.firstory.fm/story/clj2icadm00zd01xe5y9a1qk4
+- id: "podcast:2023-06-12-ep43"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP43｜WWDC 2023：Vision Pro、AI、Apple 的商業本質"
+  date: 2023-06-12
+  url: https://open.firstory.fm/story/clis1b90506ip01vmhxzl7stt
+- id: "podcast:2023-06-05-ep42"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP42｜AI 狂潮：Computex 2023、Nvidia、微軟"
+  date: 2023-06-05
+  url: https://open.firstory.fm/story/clii5cp7800xt01uxcs95er4w
+- id: "podcast:2023-04-17-ep40"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP40｜串流之戰：HBO、Netflix、下一步？"
+  date: 2023-04-17
+  url: https://open.firstory.fm/story/clgkc5iz2019p01x40snl9inf
+- id: "podcast:2023-03-06-ep37"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP37｜AI 界的 GitHub：Hugging Face"
+  date: 2023-03-06
+  url: https://open.firstory.fm/story/cleve76c1023u01ua0ytv5dsy
+- id: "podcast:2023-02-23-ep36"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP36｜改造金融客服體驗的獨角獸：Glia"
+  date: 2023-02-23
+  url: https://open.firstory.fm/story/clegw0qm401gd01v35tmrf2kn
+- id: "podcast:2023-02-14-ep35"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP35｜新舊世界的代理人：微軟改寫搜尋、Breef 媒合廣代"
+  date: 2023-02-14
+  url: https://open.firstory.fm/story/cle437cr80q0l01t4dtmmhgs4
+- id: "podcast:2023-02-07-ep34"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP34｜地圖創新的反抗序曲：Overture Maps Foundation"
+  date: 2023-02-07
+  url: https://open.firstory.fm/story/cldtktyyv0y3k01tj0stv8ziw
+- id: "podcast:2023-01-31-ep33"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP33｜AI 特集：OpenAI 大帝國、新技術典範、AI 新創的競爭動能"
+  date: 2023-01-31
+  url: https://open.firstory.fm/story/cldixqcnp09ac01t4b4h1e39h
+- id: "podcast:2022-12-11-ep31"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP31｜永久危機與人生搜尋引擎"
+  date: 2022-12-11
+  url: https://open.firstory.fm/story/clbj95rcc01hc01s05tcr7wgk
+- id: "podcast:2022-11-27-ep29"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP29｜筆記宗師 Evernote"
+  date: 2022-11-27
+  url: https://open.firstory.fm/story/clayz99ui03wv01xafizc2hzw
+- id: "podcast:2022-11-17-ep28"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP28｜FTX 快還我錢、Twitter 與強人神話、印度獨角獸 Amagi 與獲利先行的思維"
+  date: 2022-11-17
+  url: https://open.firstory.fm/story/clakf5pnl0a7o01t499hu7n5e
+- id: "podcast:2022-11-06-ep27"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP27｜串流王者 Spotify"
+  date: 2022-11-06
+  url: https://open.firstory.fm/story/cla4zguzm02lb01vs9e2k1wad
+- id: "podcast:2022-10-24-sp-pick-a-side"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "SP｜想紅就是要選邊站"
+  date: 2022-10-24
+  url: https://open.firstory.fm/story/cl9mlhydt014p01uzbkv07bej
+- id: "podcast:2022-10-17-ep26"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP26｜Meta 的新 VR 市場策略、微軟的彎道超車與大 AI 產品時代"
+  date: 2022-10-17
+  url: https://open.firstory.fm/story/cl9c8iag609ge01v9fzuv6ra9
+- id: "podcast:2022-09-26-ep24"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP24｜設計與雜貨消費的典範轉移：Canva、Swiftly、Instacart"
+  date: 2022-09-26
+  url: https://open.firstory.fm/story/cl8ier0cz00vs01sl0ranbydz
+- id: "podcast:2022-09-18-ep23"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP23｜先買後付（BNPL）的商業本質 ft. 仲信資融資深副總陳瑞興"
+  date: 2022-09-18
+  url: https://open.firstory.fm/story/cl86v0wpr03nn01wffvv707ed
+- id: "podcast:2022-08-28-ep22"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP22｜Celonis：從學生專題成為估值 130 億美元的超級獨角獸"
+  date: 2022-08-28
+  url: https://open.firstory.fm/story/cl7cxjui304ym01ta14wqddnj
+- id: "podcast:2022-08-21-ep21"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP21｜千萬精品課程與它的產地 ft. 知識衛星創辦人游弘宇"
+  date: 2022-08-21
+  url: https://open.firstory.fm/story/cl73k1f3907a701xoade8971k
+- id: "podcast:2022-08-14-ep20"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP20｜Axios：近年來最值錢的媒體新創"
+  date: 2022-08-14
+  url: https://open.firstory.fm/story/cl6t3lrqt054a01z68dvg3mka
+- id: "podcast:2022-08-01-ep19"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP19｜生態系競爭策略"
+  date: 2022-08-01
+  url: https://open.firstory.fm/story/cl6auxmjd01jw01w25cc0fbct
+- id: "podcast:2022-07-17-ep18"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP18｜遊戲產業特輯：Xbox 事業體的前世今生、Unity 合併 ironSource"
+  date: 2022-07-17
+  url: https://open.firstory.fm/story/cl5p25n2902jt010japnw6i7z
+- id: "podcast:2022-07-10-ep17"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP17｜App Store 商業模式末日已近？聊聊紐約傳奇創投 USV"
+  date: 2022-07-10
+  url: https://open.firstory.fm/story/cl5elvm4r006i01s0bf6hb3al
+- id: "podcast:2022-05-29-ep13"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP13｜財經M平方大師列車特輯：做最壞的打算，新創看市場"
+  date: 2022-05-29
+  url: https://open.firstory.fm/story/cl3rcgtv202t001y6bi1z7x7m
+- id: "podcast:2022-05-21-ep12"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP12｜新創公司的熊市生存指南、樂高的過去與未來"
+  date: 2022-05-21
+  url: https://open.firstory.fm/story/cl3fpsn78001l01y5342k3xko
+- id: "podcast:2022-04-24-ep10"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP10｜美國創投的泡沫要爆掉了嗎？把 Twitter 分拆真的有搞頭？"
+  date: 2022-04-24
+  url: https://open.firstory.fm/story/cl2dbsxua0cy301w67ggfgbui
+- id: "podcast:2022-04-17-ep09"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP09｜AI 協作平台 Flyte、超神扯的圖像 AI：DALL-E 2"
+  date: 2022-04-17
+  url: https://open.firstory.fm/story/cl22zri070tqj01w883hcg621
+- id: "podcast:2022-04-10-ep08"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP08｜Substack 進軍 podcast 市場、Linktree 成獨角獸"
+  date: 2022-04-10
+  url: https://open.firstory.fm/story/cl1tc8lyf09bp01to49ge7ivr
+- id: "podcast:2022-04-05-ep07"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP07｜歐盟新法衝著科技巨頭來、微移動的創新趨勢"
+  date: 2022-04-05
+  url: https://open.firstory.fm/story/cl1m4nssq02170h0h1xt5byk7
+- id: "podcast:2022-03-27-ep06"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP06｜解放吧散戶！談新興市場的投資理財 APP"
+  date: 2022-03-27
+  url: https://open.firstory.fm/story/cl194nwiq05x60hvxgi2j02rl
+- id: "podcast:2022-03-13-ep05"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP05｜電商、區塊鏈、遊戲公會 feat. Clement"
+  date: 2022-03-13
+  url: https://open.firstory.fm/story/cl0pdjb4216lf0803gp79fk92

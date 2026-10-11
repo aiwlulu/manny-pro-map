@@ -1,0 +1,17 @@
+name: ASML
+zh: 艾司摩爾
+industry: semis
+summary: "荷蘭半導體設備公司，研發與製造用於生產積體電路的微影設備，包括極紫外光微影機。"
+founded: 1984
+hq: 費爾德霍芬
+logo: { file: ASML Logo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "https://www.asml.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/ASML"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/艾司摩爾"
+people:
+  - { name: Martin van den Brink, role: 共同執行長 }
+  - { name: Peter Wennink, role: 共同執行長 }
+  - { name: Christophe Fouquet, role: 執行長 }
+sources:
+  - "podcast:2025-12-18-sp10"

@@ -1,0 +1,21 @@
+name: Netflix
+industry: media
+summary: "美國的隨選串流影音公司，提供訂閱制線上影片觀看，早期也經營郵寄 DVD 出租。"
+founded: 2007
+hq: 洛思加圖斯
+logo: { file: Netflix logo.svg, license: Public domain, author: "TM/®Netflix Inc." }
+links:
+  website: "https://www.netflix.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Netflix"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Netflix"
+people:
+  - { name: Ted Sarandos, role: 共同執行長, interviewed: true, photo: { file: Ted Sarandos 2024.jpg, license: CC BY-SA 2.0, author: UKinUSA } }
+  - { name: Reed Hastings, role: 共同創辦人, photo: { file: "Reed Hastings, Web 2.0 Conference.jpg", license: CC BY 2.0 } }
+sources:
+  - "propod:cms7or6d0077o01ymcffj7gbb"
+  - "pro:tn4vjnb9dbtb"
+  - "pro:qj3wwurtndbm"
+  - "pro:ueyj98gmbgxn"
+  - "podcast:2024-07-01-ep73"
+  - "podcast:2023-07-18-ep46-2"
+  - "podcast:2023-04-17-ep40"

@@ -1,0 +1,19 @@
+name: PayPal
+industry: payments
+summary: "美國金融科技公司，經營線上支付系統，提供收付款與轉帳服務。"
+founded: 1998
+logo: { file: Paypal.svg, license: Public domain, author: unbekanntPaypal }
+links:
+  website: "https://www.paypal.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/PayPal"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/PayPal"
+people:
+  - { name: Ken Howery, role: 創辦人 }
+  - { name: Max Levchin, role: 創辦人 }
+  - { name: Luke Nosek, role: 創辦人 }
+  - { name: Peter Thiel, role: 創辦人 }
+  - { name: Yu Pan, role: 創辦人 }
+  - { name: Elon Musk, role: 創辦人 }
+sources:
+  - "pro:wvdcaes6auhw"
+  - "pro:qnjkum4j8g4u"

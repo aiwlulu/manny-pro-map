@@ -1,0 +1,13 @@
+name: Altice
+industry: telecom
+summary: "總部位於盧森堡的跨國公司，主要從事電信與大眾媒體業務。"
+founded: 2001
+hq: 盧森堡市
+logo: { file: "Altice logo (new).png", license: Public domain, author: Altice }
+links:
+  website: "http://www.altice.net"
+  wikipedia: "https://en.wikipedia.org/wiki/Altice"
+people:
+  - { name: Patrick Drahi, role: 創辦人暨執行長, photo: { file: Patrick Drahi 2.jpg, license: CC BY-SA 4.0, author: Ecole polytechnique Université Paris-Saclay } }
+sources:
+  - "pro:g3k2wuk5aasv"

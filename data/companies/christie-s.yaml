@@ -1,0 +1,20 @@
+name: Christie's
+zh: 佳士得
+industry: other
+summary: "英國拍賣行，主要經營藝術品與奢侈品拍賣，在多個國際城市設有拍賣據點。"
+founded: 1766
+hq: 倫敦
+logo: { file: Christie's Logo.svg, license: CC BY-SA 4.0, author: Rayukk }
+links:
+  website: "https://www.christies.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Christie's"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/佳士得"
+people:
+  - { name: James Christie, role: 創辦人 }
+  - { name: Brett Gorvy, role: 前佳士得印象派與現代藝術部主席 }
+  - { name: Jussi Pylkkänen, role: 拍賣官 }
+sources:
+  - "pro:yfj6rhppp5rt"
+  - "pro:g3k2wuk5aasv"
+  - "pro:sd5nackg984j"
+  - "pro:pqn8u2pyqzdq"

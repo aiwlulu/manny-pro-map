@@ -1,0 +1,18 @@
+name: IMAX
+industry: media
+summary: "加拿大影院製作公司，設計製造 IMAX 攝影機與放映系統，並提供影片製作與發行服務。"
+founded: 1968
+hq: 密西沙加
+logo: { file: IMAX blue logo.svg, license: Public domain, author: "™/®IMAX Corporation" }
+links:
+  website: "https://www.imax.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/IMAX_Corporation"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/IMAX公司"
+people:
+  - { name: Roman Kroitor, role: 創辦人 }
+  - { name: Graeme Ferguson, role: 創辦人 }
+  - { name: Robert Kerr, role: 創辦人 }
+  - { name: Richard Gelfond, role: 執行長, photo: { file: "NYCW 2026 - Richard Gelfond 01 (cropped).jpg", license: CC BY-SA 4.0, author: Xuthoria } }
+sources:
+  - "propod:cms7or6d0077o01ymcffj7gbb"
+  - "pro:tn4vjnb9dbtb"

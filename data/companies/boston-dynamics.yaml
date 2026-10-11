@@ -1,0 +1,17 @@
+name: Boston Dynamics
+zh: 波士頓動力
+industry: hardware
+summary: "美國工程與機器人設計公司，開發四足機器人及用於人類動作模擬的軟體。"
+founded: 1992
+hq: 沃尔瑟姆
+links:
+  website: "https://www.bostondynamics.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Boston_Dynamics"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/波士頓動力"
+people:
+  - { name: Zachary Jacowski, role: 人形機器人部門總負責人, interviewed: true }
+  - { name: Alberto Rodriguez, role: 機器人行為團隊負責人, interviewed: true }
+  - { name: Aya Durban, role: 產品策略負責人, interviewed: true }
+  - { name: Marc Raibert, role: 創辦人 }
+sources:
+  - "pro:j8f4gchrfeb5"

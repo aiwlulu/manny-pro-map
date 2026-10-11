@@ -1,0 +1,10 @@
+name: Linktree
+industry: platforms
+summary: "澳洲社群連結頁面服務商，提供免費及付費方案，讓使用者透過單一頁面呈現社群連結。"
+founded: 2016
+logo: { file: Linktree.svg, license: Public domain, author: Linktree }
+links:
+  website: "https://linktr.ee"
+  wikipedia: "https://en.wikipedia.org/wiki/Linktree"
+sources:
+  - "podcast:2022-04-10-ep08"

@@ -1,0 +1,19 @@
+name: Holtzbrinck
+industry: publishing
+summary: "德國出版集團，在全球擁有出版公司，並透過 Macmillan 持有英語五大出版商之一。"
+founded: 1948
+hq: 司徒加特
+logo: { file: Verlagsgruppe Georg von Holtzbrinck logo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "https://www.holtzbrinck.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Holtzbrinck_Publishing_Group"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/霍尔茨布林克出版集团"
+people:
+  - { name: Georg von Holtzbrinck, role: 創辦人 }
+  - { name: Daniel Hook, role: 集團首席科學官 }
+relations:
+  - { type: parent, target: macmillan }
+  - { type: parent, target: springer-nature }
+  - { type: parent, target: digital-science }
+sources:
+  - "pro:w8n34nnkw3d4"

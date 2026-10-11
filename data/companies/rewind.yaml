@@ -1,0 +1,7 @@
+name: Rewind
+industry: software
+summary: "記錄使用者在電腦上看過、聽過的內容，並以 AI 協助搜尋回顧的個人工具。"
+people:
+  - { name: Dan, role: 創辦人 }
+sources:
+  - "podcast:2022-12-11-ep31"

@@ -1,0 +1,13 @@
+name: Third Point
+industry: finance
+summary: "位於紐約的避險基金，由員工持有，並以投資顧問形式經營。"
+founded: 1995
+hq: 紐約
+links:
+  website: "http://www.thirdpoint.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Third_Point"
+people:
+  - { name: Daniel S. Loeb, role: 創辦人 }
+  - { name: Daniel Loeb, role: 創辦人 }
+sources:
+  - "pro:pqn8u2pyqzdq"

@@ -1,0 +1,15 @@
+name: Bloom Energy
+industry: industrial
+summary: "美國能源設備公司，設計製造供資料中心與工廠現場發電的固態氧化物燃料電池及製氫電解設備。"
+founded: 2002
+hq: 森尼韋爾
+logo: { file: Bloom Energy logo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "http://www.bloomenergy.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Bloom_Energy"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Bloom_Energy"
+people:
+  - { name: KR Sridhar, role: 創辦人, interviewed: true }
+  - { name: K. R. Sridhar, role: 創辦人 }
+sources:
+  - "pro:x4dmsg59wxpe"

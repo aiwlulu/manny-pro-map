@@ -1,0 +1,16 @@
+name: Elsevier
+zh: 愛思唯爾
+industry: publishing
+summary: "出版《刺胳針》、《細胞》等科學、技術與醫學學術期刊，並提供 ScienceDirect、Scopus 等資料庫與研究分析工具。"
+founded: 1880
+hq: 阿姆斯特丹
+logo: { file: Elsevier.svg, license: Public domain, author: "„Isaac Elzevir entwarf um 1620 das heute noch genutzte Markenzeichen der Firma“" }
+links:
+  website: "https://www.elsevier.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Elsevier"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/愛思唯爾"
+sources:
+  - "pro:w8n34nnkw3d4"
+  - "pro:ta8afrymmmcj"
+  - "pro:g25ebdxu3cu6"
+  - "pro:du9cp8u5u3vg"

@@ -1,0 +1,15 @@
+name: Unitree
+zh: 宇樹科技
+industry: hardware
+summary: "中國機器人公司，研發與生產面向個人使用者的四足機器人及人形機器人。"
+founded: 2016
+hq: 杭州市
+logo: { file: Unitree.svg, license: Public domain, author: Unitree }
+links:
+  website: "https://www.unitree.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Unitree_Robotics"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/宇树科技"
+people:
+  - { name: Wang Xingxing, role: 創辦人 }
+sources:
+  - "pro:j8f4gchrfeb5"

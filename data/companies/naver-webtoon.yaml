@@ -1,0 +1,13 @@
+name: Naver Webtoon
+zh: 納寶網路漫畫
+industry: media
+summary: "提供網路與手機版的數位漫畫平台，免費刊載網路漫畫，內容涵蓋愛情、劇情與奇幻等類型。"
+logo: { file: Naver Line Webtoon logo.png, license: Public domain, author: "Naver Corporation/Line Corporation" }
+links:
+  website: "http://www.webtoons.com/en/"
+  wikipedia: "https://en.wikipedia.org/wiki/Webtoon_(platform)"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/LINE_WEBTOON"
+people:
+  - { name: 金俊久, role: 執行長 }
+sources:
+  - "podcast:2024-07-15-ep75"

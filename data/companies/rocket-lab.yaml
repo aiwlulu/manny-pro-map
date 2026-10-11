@@ -1,0 +1,15 @@
+name: Rocket Lab
+industry: mobility
+summary: "航太製造與發射服務公司，開發衛星運載火箭，並供應衛星零組件及製造太空船。"
+founded: 2006
+hq: 奧克蘭
+logo: { file: Rocket Lab logo.svg, license: Public domain, author: Rocket Lab }
+links:
+  website: "https://www.rocketlabusa.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Rocket_Lab"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/火箭实验室"
+people:
+  - { name: Peter Beck, role: 創辦人, interviewed: true, photo: { file: "Peter Beck 2753 (tighter crop).jpg", license: CC BY 3.0, author: Royal Society Te Apārangi } }
+sources:
+  - "pro:k6x9tusww2es"
+  - "podcast:2025-07-07-ep106"

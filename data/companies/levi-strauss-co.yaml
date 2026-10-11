@@ -1,0 +1,15 @@
+name: Levi Strauss & Co.
+zh: 李維斯公司
+industry: commerce
+summary: "美國服裝公司，以 Levi's 品牌的牛仔褲聞名，設計與銷售丹寧服飾。"
+founded: 1853
+hq: 舊金山
+logo: { file: Levi's logo.svg, license: Public domain, author: "Levi Strauss &amp; Co." }
+links:
+  website: "https://www.levi.com/SE/sv_SE/"
+  wikipedia: "https://en.wikipedia.org/wiki/Levi_Strauss_&_Co."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Levi's"
+people:
+  - { name: Levi Strauss, role: 創辦人 }
+sources:
+  - "pro:m2yjx2xzuqcu"

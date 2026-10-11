@@ -1,0 +1,7 @@
+name: Beast Industries
+industry: media
+summary: "YouTuber MrBeast 旗下的企業集團，事業涵蓋影音內容、零食與消費品牌。"
+people:
+  - { name: MrBeast, role: 創辦人, interviewed: true, photo: { file: "MrBeast in 2026 (cropped 4).png", license: CC BY 4.0, author: Tyren Redd } }
+sources:
+  - "pro:mxtxvxnbnc88"

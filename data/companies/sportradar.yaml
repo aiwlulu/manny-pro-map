@@ -1,0 +1,12 @@
+name: Sportradar
+industry: software
+summary: "瑞士運動科技公司，為體育組織、媒體與博彩公司提供運動數據、串流及賽事誠信服務。"
+founded: 2000
+hq: 聖加倫
+logo: { file: Sportradar logo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "https://sportradar.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Sportradar"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Sportradar"
+sources:
+  - "pro:zma3sf389tbr"

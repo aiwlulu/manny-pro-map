@@ -1,0 +1,16 @@
+name: YouTube
+industry: platforms
+summary: "源自美國的線上影片分享平台，提供使用者上傳、觀看及分享影片的服務。"
+founded: 2005
+hq: 圣布鲁诺
+logo: { file: "Logo of YouTube (2006-2011).svg", license: Public domain, author: YouTube }
+links:
+  website: "https://www.youtube.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/YouTube"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/YouTube"
+people:
+  - { name: Steve Chen, role: 創辦人 }
+  - { name: Jawed Karim, role: 創辦人 }
+  - { name: Chad Hurley, role: 創辦人 }
+sources:
+  - "pro:mxtxvxnbnc88"

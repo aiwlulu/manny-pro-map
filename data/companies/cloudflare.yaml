@@ -1,0 +1,18 @@
+name: Cloudflare
+industry: software
+summary: "美國網路基礎設施公司，提供內容傳遞網路、雲端資安與網域註冊等服務，並可抵禦惡意流量。"
+founded: 2009
+hq: 舊金山
+logo: { file: Cloudflare textlogo.svg, license: Public domain, author: "™/® Cloudflare" }
+links:
+  website: "https://www.cloudflare.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Cloudflare"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Cloudflare"
+people:
+  - { name: Matthew Prince, role: 執行長, interviewed: true, photo: { file: 577181505RR106 TechCrunch D.jpg, license: CC BY 2.0, author: TechCrunch } }
+  - { name: Lee Holloway, role: 創辦人 }
+  - { name: Michelle Zatlyn, role: 創辦人 }
+sources:
+  - "pro:52gjqz2bbj2p"
+  - "pro:sfddnjkgm59b"
+  - "pro:bzqqad4bwawe"

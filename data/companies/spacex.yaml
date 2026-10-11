@@ -1,0 +1,26 @@
+name: SpaceX
+zh: 太空X
+industry: mobility
+summary: "開發獵鷹系列可重複使用運載火箭、龍系列太空船與星艦，經營星鏈衛星寬頻網路，並投入人工智慧業務。"
+founded: 2002
+hq: 霍桑
+logo: { file: SpaceX logo black.svg, license: Public domain, author: SpaceX }
+links:
+  website: "https://spacex.com"
+  wikipedia: "https://en.wikipedia.org/wiki/SpaceX"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/SpaceX"
+people:
+  - { name: Elon Musk, zh: 馬斯克, role: 執行長暨董事長, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
+relations:
+  - { type: acquired, target: xai, note: 2026 年 }
+  - { type: parent, target: x }
+  - { type: parent, target: xai }
+  - { type: competitor, target: rocket-lab }
+  - { type: competitor, target: ula }
+sources:
+  - "pro:3ss5znuzunbe"
+  - "pro:3wwyhabrfgca"
+  - "podcast:2026-05-05-ep126"
+  - "pro:tvqqj5aqhcr3"
+  - "pro:k6x9tusww2es"
+  - "podcast:2024-10-14-ep85"

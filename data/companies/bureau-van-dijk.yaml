@@ -1,0 +1,11 @@
+name: Bureau van Dijk
+industry: finance
+summary: "商業資訊供應商，提供私人企業資料、Orbis 公司資料庫及企業搜尋分析軟體。"
+founded: 1991
+hq: 布魯塞爾
+logo: { file: Bureau van Dijk - A Moody's Analytics Company.png, license: CC BY-SA 4.0, author: Bureau van Dijk }
+links:
+  website: "http://www.bvdinfo.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Bureau_van_Dijk"
+sources:
+  - "pro:ta8h85jcrrrf"

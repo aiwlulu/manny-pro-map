@@ -1,0 +1,16 @@
+name: DoorDash
+industry: commerce
+summary: "美國線上訂餐與外送平台，連結商家、消費者及外送員，提供餐飲與便利商店商品配送服務。"
+founded: 2012
+hq: 舊金山
+logo: { file: DoorDash Logo.svg, license: Public domain, author: DoorDash }
+links:
+  website: "https://www.doordash.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/DoorDash"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/DoorDash"
+people:
+  - { name: Tony Xu, role: 執行長, photo: { file: "TechCrunch Disrupt NY 2016 - Day 3 (26348657713).jpg", license: CC BY 2.0, author: TechCrunch } }
+sources:
+  - "podcast:2026-05-11-ep127"
+  - "pro:hez389wzm44g"
+  - "pro:qnjkum4j8g4u"

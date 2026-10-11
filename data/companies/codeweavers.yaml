@@ -1,0 +1,11 @@
+name: CodeWeavers
+industry: software
+summary: "軟體公司，開發跨平台相容工具，讓使用者在其他作業系統執行 Windows 應用程式。"
+founded: 1996
+hq: 聖保羅
+logo: { file: CodeWeavers-logo-2020.png, license: CC BY-SA 4.0, author: Laxdragon }
+links:
+  website: "https://www.codeweavers.com"
+  wikipedia: "https://en.wikipedia.org/wiki/CodeWeavers"
+sources:
+  - "pro:r432czr8q5bk"

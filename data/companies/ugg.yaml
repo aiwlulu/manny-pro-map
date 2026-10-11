@@ -1,0 +1,12 @@
+name: UGG
+industry: consumer
+summary: "美國鞋類與時尚品牌，以羊皮靴聞名，也銷售服飾、配件與家居織品。"
+founded: 1978
+hq: 戈利塔
+logo: { file: UGG Australia logo.svg, license: Public domain, author: UGG Australia }
+links:
+  website: "http://www.uggaustralia.com"
+  wikipedia: "https://en.wikipedia.org/wiki/UGG_(brand)"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/UGG"
+sources:
+  - "pro:23jwvufhmrsw"

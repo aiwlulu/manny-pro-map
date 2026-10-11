@@ -1,0 +1,15 @@
+name: Ross Stores
+zh: 羅斯商店
+industry: commerce
+summary: "美國的折扣百貨連鎖，主要品牌為 Ross Dress for Less，另有 DD's Discounts 平價商店。"
+founded: 1954
+hq: 都伯林
+logo: { file: Ross Stores logo.svg, license: Public domain, author: Ross Stores }
+links:
+  website: "https://www.rossstores.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Ross_Stores"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/羅斯百貨"
+sources:
+  - "pro:grs9prj89rgd"
+  - "pro:bpvzaq5abb4y"
+  - "pro:wzwbvczbu6tb"

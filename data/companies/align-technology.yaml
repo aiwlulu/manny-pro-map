@@ -1,0 +1,27 @@
+name: Align Technology
+zh: 隱適美
+industry: health
+summary: "製造 3D 數位掃描儀與隱適美（Invisalign）透明牙套等齒顎矯正及修復流程用醫療設備。"
+founded: 1997
+hq: 聖荷西
+logo: { file: Align Technology logo.svg, license: Public domain, author: Align Technology }
+links:
+  website: "http://www.aligntech.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Align_Technology"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/艾利科技"
+people:
+  - { name: John Morici, role: 財務長 }
+  - { name: Muhammad Zia Chishti, role: 創辦人 }
+  - { name: Kelsey Wirth, role: 共同創辦人 }
+relations:
+  - { type: competitor, target: angelalign }
+  - { type: competitor, target: smiledirectclub }
+  - { type: competitor, target: straumann }
+sources:
+  - "propod:cmtun4x3w008401xv63ot6ae5"
+  - "pro:b2r32qpe3jna"
+  - "pro:88jxuzxku3eu"
+  - "pro:ngsbqxnadchn"
+  - "pro:wyym9cue2crw"
+  - "pro:wt4bbtb2kex3"
+  - "pro:tyy9rqctxpkh"

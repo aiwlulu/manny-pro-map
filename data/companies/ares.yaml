@@ -1,0 +1,14 @@
+name: Ares
+industry: finance
+summary: "全球另類投資管理公司，主要在信貸、私募股權及不動產市場提供資產管理服務。"
+founded: 1997
+hq: 洛杉磯
+links:
+  website: "http://www.aresmgmt.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Ares_Management"
+people:
+  - { name: Antony Ressler, role: 創辦人 }
+  - { name: Bennett Rosenthal, role: 創辦人 }
+  - { name: David Kaplan, role: 創辦人 }
+sources:
+  - "pro:pxkj26b9zjj5"

@@ -1,0 +1,19 @@
+name: Fitch Group
+zh: 惠譽國際
+aliases: [Fitch]
+industry: finance
+summary: "美國與英國的信用評等機構，為美國證券交易委員會認可的主要信評機構之一。"
+founded: 1913
+hq: 倫敦
+logo: { file: Fitch Ratings logo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "http://www.fitchratings.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Fitch_Ratings"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/惠誉国际"
+people:
+  - { name: John Knowles Fitch, role: 創辦人 }
+sources:
+  - "propod:cmumopubf03dc01w1ggiw1vrk"
+  - "pro:9pj32ujkxanq"
+  - "pro:ta8h85jcrrrf"
+  - "pro:y3v4hgf4gbmf"

@@ -1,0 +1,16 @@
+name: Shopify
+industry: commerce
+summary: "加拿大電商公司，提供線上商店平台及支付、行銷、運送與零售收銀管理工具。"
+founded: 2006
+hq: 渥太華
+logo: { file: Shopify logo 2018.svg, license: Public domain, author: "[[:w:|]]" }
+links:
+  website: "https://www.shopify.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Shopify"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Shopify"
+people:
+  - { name: Tobias Lütke, role: 創辦人 }
+sources:
+  - "podcast:2025-12-15-ep116"
+  - "podcast:2022-04-10-ep08"
+  - "podcast:2022-03-13-ep05"

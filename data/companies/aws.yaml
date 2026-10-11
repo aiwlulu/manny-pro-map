@@ -1,0 +1,19 @@
+name: AWS
+zh: 亞馬遜雲端運算服務
+industry: software
+summary: "亞馬遜旗下的雲端運算子公司，以按用量計費方式，向個人、企業與政府提供隨選雲端平台與 API。"
+founded: 2006
+hq: 西雅圖
+logo: { file: Amazon Web Services Logo.svg, license: Apache License 2.0, author: Amazon.com Inc. }
+links:
+  website: "https://aws.amazon.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/亚马逊云计算服务"
+people:
+  - { name: Jason, role: Architect, interviewed: true }
+sources:
+  - "pro:sfddnjkgm59b"
+  - "pro:sg2sthu6aaak"
+  - "podcast:2024-12-16-ep88"
+  - "podcast:2024-12-06-sp7"
+  - "podcast:2023-03-06-ep37"

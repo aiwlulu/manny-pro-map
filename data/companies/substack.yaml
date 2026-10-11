@@ -1,0 +1,11 @@
+name: Substack
+industry: media
+summary: "訂閱內容發布平台，提供電子報、Podcast與影片的發布、收款及分析工具。"
+founded: 2017
+logo: { file: Substack logo.png, license: Public domain, author: Substack Inc. }
+links:
+  website: "https://substack.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Substack"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Substack"
+sources:
+  - "podcast:2022-04-10-ep08"

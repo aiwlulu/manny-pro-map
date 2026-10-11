@@ -1,0 +1,13 @@
+name: Abbott
+zh: 亞培
+industry: health
+summary: "美國跨國醫療保健公司，生產藥品、診斷產品、營養產品與醫療器材。"
+founded: 1888
+hq: "北芝加哥 (伊利諾伊州)"
+logo: { file: Abbott Laboratories 2025 logo.svg, license: Public domain, author: Abbott Laboratories }
+links:
+  website: "https://abbott.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Abbott_Laboratories"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/美國雅培"
+sources:
+  - "podcast:2024-11-21-ep87"

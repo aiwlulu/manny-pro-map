@@ -1,0 +1,13 @@
+name: Shopee
+zh: 蝦皮
+industry: commerce
+summary: "總部位於新加坡的電商公司，主要在東南亞經營線上購物平台，並涉足實體店與物流。"
+founded: 2015
+hq: 新加坡
+logo: { file: Shopee logo.svg, license: Public domain, author: Begoon }
+links:
+  website: "https://shopee.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Shopee"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/蝦皮購物"
+sources:
+  - "pro:m5pergwrjrrp"

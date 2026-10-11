@@ -1,0 +1,13 @@
+name: Siemens Energy
+zh: 西門子能源
+industry: industrial
+summary: "德國能源技術公司，業務涵蓋天然氣、電力與再生能源，並擁有風力能源子公司。"
+founded: 2020
+hq: 慕尼黑
+logo: { file: Siemens Energy logo.svg, license: Public domain, author: "Siemens Energy  (vector graphics image by Detmar Owen)" }
+links:
+  website: "https://www.siemens-energy.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Siemens_Energy"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/西门子能源股份公司"
+sources:
+  - "pro:frbpkafhxw3p"

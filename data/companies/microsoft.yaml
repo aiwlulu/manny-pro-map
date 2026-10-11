@@ -1,0 +1,39 @@
+name: Microsoft
+zh: 微軟
+industry: software
+summary: "開發 Windows 作業系統與 Office 辦公軟體，業務涵蓋個人電腦、網際網路服務、雲端運算、人工智慧與遊戲等領域。"
+founded: 1975
+hq: 雷德蒙德
+logo: { file: "Microsoft logo (1980).svg", license: Public domain, author: Microsoft - Simon Daniels }
+links:
+  website: "https://www.microsoft.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Microsoft"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/微软"
+people:
+  - { name: Bill Gates, role: 創辦人, photo: { file: "Bill Gates at the European Commission - 2025 - P067383-987995 (cropped).jpg", license: CC BY 4.0, author: "Bogdan Hoyaux / European Union" } }
+  - { name: Paul Allen, role: 創辦人 }
+  - { name: Satya Nadella, role: 執行長, photo: { file: "MS-Exec-Nadella-Satya-2017-08-31-22 (cropped).jpg", license: CC BY-SA 4.0, author: Brian Smale and Microsoft } }
+  - { name: Phil Spencer, photo: { file: Phil Spencer Xbox.jpg, license: CC0, author: eVRydayVR } }
+  - { name: Mustafa Suleyman, role: Inflection AI 共同創辦人, photo: { file: "Mustafa Suleyman (29099346447).jpg", license: CC BY 2.0, author: "Joi Ito from Cambridge, MA, USA" } }
+  - { name: Steve Ballmer, role: 執行長, photo: { file: Steve Ballmer 2014.jpg, license: CC BY 2.0, author: Eric Garcetti } }
+sources:
+  - "pro:x29tt82u4h4q"
+  - "propod:cmtj74mw500lp01y46usd2blj"
+  - "pro:cjww9vu45utm"
+  - "pro:jq8rpf6p2f59"
+  - "pro:drwymxex2ytn"
+  - "pro:sg2sthu6aaak"
+  - "pro:xub3t2c88p2t"
+  - "pro:99c45rxf5864"
+  - "pro:r432czr8q5bk"
+  - "pro:frbpkafhxw3p"
+  - "pro:za5znb6ngne6"
+  - "podcast:2024-05-27-ep70"
+  - "podcast:2023-07-18-ep46-2"
+  - "podcast:2023-06-05-ep42"
+  - "podcast:2023-02-14-ep35"
+  - "podcast:2023-02-07-ep34"
+  - "podcast:2023-01-31-ep33"
+  - "podcast:2022-10-17-ep26"
+  - "podcast:2022-08-01-ep19"
+  - "podcast:2022-07-17-ep18"

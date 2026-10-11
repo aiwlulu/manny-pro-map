@@ -1,0 +1,24 @@
+name: Stripe
+industry: payments
+summary: "提供線上收款所需的支付處理軟體與應用程式介面，協助電商網站與行動應用接受付款，並具備防詐與銀行基礎設施技術。"
+founded: 2010
+hq: 舊金山
+logo: { file: "Stripe Logo, revised 2016.svg", license: Public domain, author: "Stripe, Inc." }
+links:
+  website: "https://stripe.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Stripe,_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Stripe"
+people:
+  - { name: John Collison, role: 共同創辦人, photo: { file: "Sportsfile (Web Summit) (15088695584).jpg", license: CC BY 2.0, author: Web Summit } }
+  - { name: Patrick Collison, role: 創辦人 }
+relations:
+  - { type: competitor, target: paypal }
+  - { type: competitor, target: block }
+sources:
+  - "pro:r9fgagndpvde"
+  - "propod:cmtxjkl5v0cdb01tp0meieabe"
+  - "pro:jkvgret4ww4d"
+  - "pro:k8w9aqudktnu"
+  - "pro:rtqwsk3m4mxk"
+  - "pro:wvdcaes6auhw"
+  - "pro:sfddnjkgm59b"

@@ -1,0 +1,15 @@
+name: Superpedestrian
+aliases: [Super Pedestrian]
+industry: mobility
+summary: "美國交通機器人公司，開發微型交通工具的電動化與人工智慧技術，並曾營運共享電動滑板車。"
+founded: 2012
+hq: 劍橋
+logo: { file: "Superpedestrian logomark, October 2017.svg", license: Public domain, author: Superpedestrian Inc. }
+links:
+  website: "https://content.superpedestrian.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Superpedestrian"
+people:
+  - { name: Assaf Biderman, role: 創辦人 }
+  - { name: Paul White, role: 副總裁 }
+sources:
+  - "podcast:2022-04-05-ep07"

@@ -1,0 +1,15 @@
+name: Lululemon
+industry: consumer
+summary: "加拿大運動休閒服飾品牌與零售商，以瑜伽服起家，並銷售服飾、鞋類與配件。"
+founded: 1998
+hq: 溫哥華
+logo: { file: Lululemon Athletica logo.svg, license: Public domain, author: "Lululemon Athletica.\nThe original uploader was Esrever at English Wikipedia..\n\nL" }
+links:
+  website: "https://www.lululemon.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Lululemon"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/露露柠檬"
+people:
+  - { name: Chip Wilson, role: 創辦人 }
+sources:
+  - "propod:cmtel5mvw12jk01wy4ok92ldx"
+  - "pro:23jwvufhmrsw"

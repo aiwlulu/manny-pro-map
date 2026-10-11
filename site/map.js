@@ -108,6 +108,7 @@ export function createMap(root, { industries, weight, onPick, onHover, safeArea,
   }
   function drawLines() {
     links.forEach(([a, o], i) => {
+      if (a.sx == null || o.sx == null) return schedule(); // not drawn yet
       const mx = (a.sx + o.sx) / 2, my = (a.sy + o.sy) / 2, dx = o.sx - a.sx, dy = o.sy - a.sy, bend = 0.22 * (i % 2 ? -1 : 1);
       lines.children[i]?.setAttribute('d', `M${a.sx},${a.sy} Q${mx - dy * bend},${my + dx * bend} ${o.sx},${o.sy}`);
     });

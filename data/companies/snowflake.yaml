@@ -1,0 +1,15 @@
+name: Snowflake
+industry: software
+summary: "美國雲端人工智慧資料平台公司，提供資料分析與低延遲資料存取，支援多種雲端平台。"
+founded: 2012
+hq: 聖馬刁
+logo: { file: Snowflake Logo.svg, license: Public domain, author: Snowflake }
+links:
+  website: "http://www.snowflake.net/"
+  wikipedia: "https://en.wikipedia.org/wiki/Snowflake_Inc."
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Snowflake_(公司)"
+people:
+  - { name: Sridhar Ramaswamy, role: 執行長, interviewed: true, photo: { file: 2020588 Sridhar Ramaswamy 38.jpg, license: CC BY-SA 4.0, author: Ramaswamy11703 } }
+  - { name: Benoît Dageville, role: 創辦人 }
+sources:
+  - "pro:sg2sthu6aaak"

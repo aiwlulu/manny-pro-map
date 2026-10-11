@@ -1,0 +1,13 @@
+name: Discord
+industry: platforms
+summary: "美國即時通訊與社群平台，提供私人及社群聊天室中的文字訊息、語音和視訊通話。"
+founded: 2012
+hq: 舊金山
+links:
+  website: "https://discordapp.com/company"
+  wikipedia: "https://en.wikipedia.org/wiki/Discord_Inc."
+people:
+  - { name: Jason Citron, role: 創辦人 }
+  - { name: Stanislav Vishnevskiy, role: 創辦人 }
+sources:
+  - "pro:erw26rvsctcr"

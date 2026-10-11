@@ -1,0 +1,18 @@
+name: Flutter Entertainment
+industry: gaming
+summary: "愛爾蘭與美國的運動博弈集團，旗下擁有 FanDuel、Paddy Power、PokerStars 等品牌。"
+founded: 2016
+hq: 都柏林
+logo: { file: Flutter Entertainment logo.jpeg, license: Public domain, author: Flutter Entertainment plc }
+links:
+  website: "https://www.flutter.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Flutter_Entertainment"
+relations:
+  - { type: parent, target: fanduel }
+sources:
+  - "pro:bg89rvnhstnm"
+  - "pro:ufwby4nxpxtv"
+  - "pro:avmqs55nnqwj"
+  - "pro:t8dntpyvdeyp"
+  - "pro:jtpkdq4kt63v"
+  - "pro:jmtvz5xwptwb"

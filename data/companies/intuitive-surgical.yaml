@@ -1,0 +1,12 @@
+name: Intuitive Surgical
+industry: health
+summary: "美國醫療設備公司，研發、製造與銷售微創手術機器人，主要產品為達文西手術系統。"
+founded: 1995
+hq: 森尼韋爾
+logo: { file: Intuitive Surgical logo.svg, license: Public domain, author: Intuitive Surgical }
+links:
+  website: "https://www.intuitive.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Intuitive_Surgical"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/直覺手術"
+sources:
+  - "propod:cmtun4x3w008401xv63ot6ae5"

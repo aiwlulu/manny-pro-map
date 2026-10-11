@@ -1,0 +1,16 @@
+name: Macmillan
+zh: 麥美倫出版社
+industry: publishing
+summary: "英國出版公司，出版各類書籍，是英語五大出版商之一。"
+founded: 1843
+hq: 倫敦
+logo: { file: Macmillan Publishers logo.svg, license: Public domain, author: Holtzbrinck Publishing Group }
+links:
+  website: "https://us.macmillan.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Macmillan_Publishers"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/麥米倫出版公司"
+people:
+  - { name: Daniel Macmillan, role: 創辦人 }
+  - { name: Alexander Macmillan, role: 創辦人 }
+sources:
+  - "pro:g25ebdxu3cu6"

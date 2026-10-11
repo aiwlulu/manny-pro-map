@@ -1,0 +1,38 @@
+name: Meta
+industry: platforms
+summary: "經營 Facebook、Instagram、Messenger、WhatsApp 與 Threads 等社群與通訊應用，並投入虛擬實境裝置、智慧眼鏡及人工智慧研發。"
+founded: 2004
+hq: 门洛帕克
+logo: { file: "Facebook, Inc. Logo 2019.svg", license: Public domain, author: Inc. }
+links:
+  website: "https://www.meta.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Meta_Platforms"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Meta_Platforms"
+people:
+  - { name: Mark Zuckerberg, zh: 祖克柏, role: 執行長, photo: { file: "Mark Zuckerberg F8 2019 Keynote (32830578717) (cropped).jpg", license: CC BY 2.0, author: "Anthony Quintano from Westminster, United States" } }
+  - { name: Eduardo Saverin, role: 創辦人 }
+  - { name: Dustin Moskovitz, role: 創辦人 }
+  - { name: Chris Hughes, role: 創辦人 }
+  - { name: Andrew McCollum, role: 創辦人 }
+  - { name: Sheryl Sandberg, role: 創辦人 }
+  - { name: Michael Abrash, role: 首席科學家 }
+sources:
+  - "pro:kudnr9rb2r56"
+  - "pro:x29tt82u4h4q"
+  - "pro:52gjqz2bbj2p"
+  - "pro:erw26rvsctcr"
+  - "pro:xyacaqc5ex9p"
+  - "pro:xub3t2c88p2t"
+  - "pro:8vfvgz33vcq2"
+  - "pro:4ddye6dahq6r"
+  - "pro:6tdws32g4rwp"
+  - "pro:9bqny83p92n5"
+  - "pro:frbpkafhxw3p"
+  - "podcast:2025-09-08-ep113"
+  - "podcast:2024-02-20-ep61"
+  - "podcast:2023-12-11-ep58"
+  - "podcast:2023-07-10-ep45"
+  - "podcast:2023-02-07-ep34"
+  - "podcast:2023-01-31-ep33"
+  - "podcast:2022-10-17-ep26"
+  - "podcast:2022-03-13-ep05"

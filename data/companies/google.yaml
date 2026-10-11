@@ -1,0 +1,41 @@
+name: Google
+industry: platforms
+summary: "開發網路搜尋引擎，並經營線上廣告、雲端運算、電子郵件與人工智慧等網際網路產品與服務，主要收入來自廣告。"
+founded: 1998
+hq: 山景城
+logo: { file: Google 2026 logo.svg, license: Public domain, author: Google LLC }
+links:
+  website: "https://about.google/"
+  wikipedia: "https://en.wikipedia.org/wiki/Google"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Google"
+people:
+  - { name: Sergey Brin, role: 創辦人 }
+  - { name: Larry Page, role: 創辦人 }
+  - { name: Sundar Pichai, photo: { file: "Sundar Pichai - 2023 (cropped).jpg", license: CC BY 4.0, author: "Photographer: Lukasz Kobus (European Commission)" } }
+relations:
+  - { type: parent, target: boston-dynamics }
+  - { type: parent, target: waymo }
+  - { type: parent, target: youtube }
+sources:
+  - "pro:dwcrddrmu86k"
+  - "pro:kudnr9rb2r56"
+  - "pro:hez389wzm44g"
+  - "pro:sfddnjkgm59b"
+  - "pro:sg2sthu6aaak"
+  - "pro:rdnwj3ty26j9"
+  - "pro:bzqqad4bwawe"
+  - "pro:xyacaqc5ex9p"
+  - "pro:xub3t2c88p2t"
+  - "pro:8vfvgz33vcq2"
+  - "pro:4ddye6dahq6r"
+  - "pro:6tdws32g4rwp"
+  - "pro:j9mt5hwzd9pn"
+  - "pro:frbpkafhxw3p"
+  - "pro:za5znb6ngne6"
+  - "pro:w6ujnrs69ftz"
+  - "podcast:2025-06-09-ep102"
+  - "podcast:2025-05-27-ep100"
+  - "podcast:2025-04-07-ep99"
+  - "podcast:2023-02-07-ep34"
+  - "podcast:2023-01-31-ep33"
+  - "podcast:2022-07-10-ep17"

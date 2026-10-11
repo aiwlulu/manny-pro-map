@@ -1,0 +1,13 @@
+name: R&F Properties
+zh: 富力地產
+industry: other
+summary: "中國房地產開發公司，業務涵蓋建案設計、開發、工程監督、銷售、物業管理與仲介。"
+founded: 1994
+hq: 廣州市
+logo: { file: R&F Properties logo.svg, license: Public domain, author: "R&amp;F Properties" }
+links:
+  website: "http://www.rfchina.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/R&F_Properties"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/富力地產"
+sources:
+  - "pro:duukfut6958f"

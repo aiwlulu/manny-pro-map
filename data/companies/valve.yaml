@@ -1,0 +1,17 @@
+name: Valve
+zh: 維爾福
+industry: gaming
+summary: "美國遊戲開發與發行公司，經營 Steam 數位發行平台，並開發遊戲及遊戲硬體。"
+founded: 1996
+hq: 柏衛
+logo: { file: Valve logo.svg, license: Public domain, author: Valve Corporation }
+links:
+  website: "https://www.valvesoftware.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Valve_Corporation"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Valve"
+people:
+  - { name: Gabe Newell, role: 創辦人, photo: { file: "Gabe Newell GDC 2010 (cropped 2).jpg", license: CC BY 2.0, author: Official GDC } }
+  - { name: Mike Harrington, role: 創辦人 }
+sources:
+  - "pro:r432czr8q5bk"
+  - "podcast:2025-02-04-ep91"

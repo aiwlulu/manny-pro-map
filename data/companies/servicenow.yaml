@@ -1,0 +1,14 @@
+name: ServiceNow
+industry: software
+summary: "美國軟體公司，提供建立與管理自動化業務流程的雲端運算平台。"
+founded: 2004
+hq: 聖塔克拉拉
+logo: { file: ServiceNow logo.svg, license: Public domain, author: "™/®ServiceNow" }
+links:
+  website: "https://www.servicenow.com"
+  wikipedia: "https://en.wikipedia.org/wiki/ServiceNow"
+people:
+  - { name: Frank Slootman, role: "Desai 的前老闆（帶領 ServiceNow 於 2012 年上市）", photo: { file: Frank Slootman Snowflake.jpg, license: CC BY-SA 4.0, author: Alivecoverage } }
+sources:
+  - "pro:drwymxex2ytn"
+  - "pro:zppaa3v8qrtw"

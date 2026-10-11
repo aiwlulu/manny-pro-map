@@ -1,0 +1,12 @@
+name: Figma
+industry: software
+summary: "一家從事軟體業務的公司，以軟體產品作為主要業務內容。"
+founded: 2012
+hq: 舊金山
+logo: { file: Figma-logo.svg, license: Public domain, author: Figma }
+links:
+  website: "https://figma.com"
+people:
+  - { name: Dylan Field, role: 創辦人 }
+sources:
+  - "propod:cmtb4yr9o01pp01zcgnpahydb"

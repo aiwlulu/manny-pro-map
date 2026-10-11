@@ -1,0 +1,16 @@
+name: Anduril Industries
+industry: mobility
+summary: "美國國防科技公司，研發自主系統，提供無人機、反無人機設備、自主監視與指揮控制軟體。"
+founded: 2017
+hq: 加利福尼亞州
+logo: { file: Anduril Industries Logo.svg, license: Public domain, author: "Anduril Industries, Inc." }
+links:
+  website: "https://www.anduril.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Anduril_Industries"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/安杜里尔工业公司"
+people:
+  - { name: Palmer Luckey, role: 創辦人 }
+  - { name: Trae Stephens, role: 創辦人 }
+  - { name: Brian Schimpf, role: 創辦人 }
+sources:
+  - "podcast:2023-10-23-ep54"

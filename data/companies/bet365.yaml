@@ -1,0 +1,13 @@
+name: Bet365
+aliases: [bet365]
+industry: gaming
+summary: "英國線上博弈公司，提供運動投注、線上賭場、撲克與賓果遊戲等服務。"
+founded: 2000
+hq: 特倫特河畔斯托克
+logo: { file: Bet365 Logo.svg, license: Public domain, author: ".\n\nThe original uploader was Patrick O'Canada at English Wikipedia." }
+links:
+  wikipedia: "https://en.wikipedia.org/wiki/Bet365"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Bet365"
+sources:
+  - "pro:t8dntpyvdeyp"
+  - "pro:jtpkdq4kt63v"

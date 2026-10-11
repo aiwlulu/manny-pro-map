@@ -1,0 +1,14 @@
+name: Boyd Gaming
+zh: 博伊德賭場
+industry: gaming
+summary: "總部位於美國內華達州的公司，主要經營博弈與旅宿服務業務。"
+founded: 1941
+hq: 天堂市
+logo: { file: Boyd Gaming.svg, license: Public domain, author: Boyd Gaming }
+links:
+  website: "http://www.boydgaming.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Boyd_Gaming"
+people:
+  - { name: Sam Boyd, role: 創辦人 }
+sources:
+  - "pro:avmqs55nnqwj"

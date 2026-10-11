@@ -1,0 +1,23 @@
+name: TJX Companies
+industry: commerce
+summary: "經營折扣百貨零售的跨國企業，以低價販售品牌服飾與居家用品，原為 Zayre 公司的子公司。"
+founded: 1956
+hq: 馬薩諸塞州
+logo: { file: TJXLogo.svg, license: Public domain, author: Unknown authorUnknown author }
+links:
+  website: "http://www.tjx.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/TJX"
+people:
+  - { name: Carol Meyrowitz, role: 執行長 }
+  - { name: Bernard Cammarata, role: 創辦人 }
+  - { name: Edmond English, role: 執行長 }
+  - { name: Ernie Herrman, role: 執行長 }
+relations:
+  - { type: competitor, target: ross-stores }
+  - { type: competitor, target: burlington-stores }
+sources:
+  - "pro:r9fgagndpvde"
+  - "pro:grs9prj89rgd"
+  - "pro:bpvzaq5abb4y"
+  - "pro:wzwbvczbu6tb"
+  - "pro:m2yjx2xzuqcu"

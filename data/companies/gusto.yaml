@@ -1,0 +1,8 @@
+name: Gusto
+industry: services
+summary: "日本的家庭餐廳連鎖品牌，隸屬 Skylark 集團。"
+logo: { file: Gusto Logo.svg, license: Public domain, author: "© SKYLARK GROUP" }
+links:
+  website: "https://www.skylark.co.jp/gusto/"
+sources:
+  - "pro:rm4zgfgjfpc2"

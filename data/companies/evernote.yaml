@@ -1,0 +1,19 @@
+name: Evernote
+industry: software
+summary: "記事與任務管理應用程式，可跨裝置同步筆記，讓使用者整理文字、圖片與網頁內容。"
+founded: 2008
+logo: { file: Evernote.svg, license: Public domain, author: "User:ZyMOS" }
+links:
+  website: "https://evernote.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Evernote"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Evernote"
+people:
+  - { name: Stepan Pachikov, role: 創辦人, photo: { file: Stepan Svetlana Pachikov.jpg, license: Public domain, author: The original uploader was Alexpach at English Wikipedia. } }
+  - { name: Phil Libin, role: 創辦人, photo: { file: Phil Libin at LeWeb in 2011.jpg, license: CC BY 2.0, author: OFFICIAL LeWEB PHOTOS } }
+  - { name: Chris O'Neill, photo: { file: "Christopher O’Neill-5.jpg", license: CC BY-SA 3.0, author: Frankie Fouganthin } }
+  - { name: Ian Small, role: 執行長 }
+sources:
+  - "propod:cmt8nclvm0xmv01xi8eex5ue8"
+  - "podcast:2026-07-17-ep131"
+  - "pro:wuw9hfu5buhb"
+  - "podcast:2022-11-27-ep29"

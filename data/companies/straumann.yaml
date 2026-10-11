@@ -1,0 +1,14 @@
+name: Straumann
+industry: health
+summary: "瑞士的牙科公司，生產植牙植體與相關器材，並供應數位設備、軟體及隱形矯正器。"
+founded: 1954
+hq: 巴塞爾
+logo: { file: Straumann Logo.svg, license: Public domain, author: Straumann }
+links:
+  website: "http://www.straumann.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Straumann"
+sources:
+  - "propod:cmtun4x3w008401xv63ot6ae5"
+  - "pro:ngsbqxnadchn"
+  - "pro:wyym9cue2crw"
+  - "pro:wt4bbtb2kex3"

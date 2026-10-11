@@ -1,0 +1,23 @@
+name: Palantir
+industry: software
+summary: "美國軟體與服務公司，開發資料整合與分析平台，主要服務政府機構與金融機構。"
+founded: 2003
+hq: 帕羅奧圖
+logo: { file: Palantir Technologies logo.svg, license: Public domain, author: "Palantir Technologies.\n\nThe original uploader was KarimKoueider at English Wikip" }
+links:
+  website: "https://www.palantir.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Palantir"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/帕蘭泰爾"
+people:
+  - { name: Peter Thiel, role: 創辦人 }
+  - { name: Joe Lonsdale, role: 創辦人 }
+  - { name: Stephen Cohen, role: 創辦人 }
+  - { name: Alexander C. Karp, role: 創辦人 }
+  - { name: Nathan Gettings, role: 創辦人 }
+  - { name: Bob McGrew, role: 前研究長 }
+sources:
+  - "pro:b8mnrda6dvcj"
+  - "pro:xdqzqvzyyzb8"
+  - "pro:nqtk4h6ntusm"
+  - "podcast:2025-06-24-ep104"
+  - "podcast:2022-05-29-ep13"

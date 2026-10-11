@@ -1,0 +1,21 @@
+name: DraftKings
+industry: gaming
+summary: "經營數位運動娛樂博弈業務，提供運動投注與每日夢幻體育（DFS）服務。"
+founded: 2012
+hq: 波士頓
+links:
+  website: "https://www.draftkings.com"
+  wikipedia: "https://en.wikipedia.org/wiki/DraftKings"
+people:
+  - { name: Jason Robins, role: 執行長 }
+  - { name: Paul Liberman, role: 創辦人 }
+relations:
+  - { type: competitor, target: fanduel }
+sources:
+  - "pro:68ezcucry26v"
+  - "pro:edpjc5mshdka"
+  - "pro:ufwby4nxpxtv"
+  - "pro:t8dntpyvdeyp"
+  - "pro:jtpkdq4kt63v"
+  - "pro:jmtvz5xwptwb"
+  - "pro:zma3sf389tbr"

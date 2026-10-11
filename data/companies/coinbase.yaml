@@ -1,0 +1,17 @@
+name: Coinbase
+industry: payments
+summary: "美國加密貨幣交易所，提供加密資產交易服務，並託管大量比特幣等數位資產。"
+founded: 2012
+hq: 舊金山
+logo: { file: Coinbase.svg, license: Public domain, author: Coinbase }
+links:
+  website: "https://www.coinbase.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Coinbase"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Coinbase"
+people:
+  - { name: Brian Armstrong, role: 執行長, photo: { file: Brian Armstrong - TechCrunch Disrupt 2018 01.jpg, license: CC BY 2.0, author: TechCrunch } }
+  - { name: Fred Ehrsam, role: 創辦人 }
+sources:
+  - "pro:68ezcucry26v"
+  - "pro:52gjqz2bbj2p"
+  - "podcast:2022-07-10-ep17"

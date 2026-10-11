@@ -1,0 +1,18 @@
+name: Skylark
+zh: 雲雀
+industry: services
+summary: "日本的餐飲連鎖集團，在日本、台灣、馬來西亞與美國經營家庭式餐廳。"
+founded: 1969
+hq: Nishi-Kubo
+logo: { file: すかいらーくロゴsvg.svg, license: Public domain, author: すかいらーく }
+links:
+  website: "https://corp.skylark.co.jp/"
+  wikipedia: "https://en.wikipedia.org/wiki/Skylark_Holdings"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/雲雀餐飲集團"
+relations:
+  - { type: parent, target: gusto }
+  - { type: parent, target: shabu-yo }
+  - { type: acquired, target: sukesan }
+sources:
+  - "pro:3ra5g3yjyez4"
+  - "pro:rm4zgfgjfpc2"

@@ -1,0 +1,15 @@
+name: Hilton
+zh: 希爾頓
+industry: services
+summary: "美國跨國旅宿公司，管理飯店、度假村與分時度假住宿設施，並提供加盟經營。"
+founded: 1919
+hq: 麥克利恩
+logo: { file: Hilton Worldwide logo.svg, license: Public domain, author: Hilton Worldwide }
+links:
+  website: "https://www.hilton.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Hilton_Worldwide"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/希爾頓全球酒店集團"
+people:
+  - { name: Conrad Hilton, role: 創辦人 }
+sources:
+  - "pro:duukfut6958f"

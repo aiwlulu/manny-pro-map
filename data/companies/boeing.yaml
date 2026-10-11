@@ -1,0 +1,18 @@
+name: Boeing
+zh: 波音
+industry: mobility
+summary: "美國航太與國防公司，設計製造飛機、火箭、衛星與飛彈，並提供租賃及產品支援服務。"
+founded: 1916
+hq: 西雅圖
+logo: { file: Boeing full logo.svg, license: Public domain, author: "Boeing, Richard Burch Eiber" }
+links:
+  website: "https://boeing.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Boeing"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/波音"
+people:
+  - { name: William Boeing, role: 創辦人 }
+relations:
+  - { type: parent, target: ula }
+sources:
+  - "podcast:2025-02-24-ep94"
+  - "podcast:2024-10-14-ep85"

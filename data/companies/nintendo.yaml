@@ -1,0 +1,17 @@
+name: Nintendo
+zh: 任天堂
+industry: gaming
+summary: "日本電子遊戲公司，開發與發行遊戲並製造遊戲主機，旗下作品包括瑪利歐與薩爾達傳說。"
+founded: 1889
+hq: 京都市
+logo: { file: Nintendo.svg, license: Public domain, author: Nintendo }
+links:
+  website: "https://www.nintendo.com/countryselector/"
+  wikipedia: "https://en.wikipedia.org/wiki/Nintendo"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/任天堂"
+people:
+  - { name: Fusajirō Yamauchi, role: 創辦人 }
+sources:
+  - "podcast:2024-10-21-sp5"
+  - "podcast:2024-07-01-ep73"
+  - "podcast:2023-08-14-ep49"

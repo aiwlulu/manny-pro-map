@@ -1,0 +1,13 @@
+name: "On"
+industry: consumer
+summary: "瑞士運動品牌，以 CloudTec 緩震技術的跑鞋聞名，也銷售運動服飾。"
+founded: 2012
+hq: 蘇黎世
+logo: { file: On Holding AG Logo.png, license: CC0, author: GettractionWikiInfo }
+links:
+  website: "https://investors.on-running.com/home/default.aspx"
+people:
+  - { name: Olivier Bernhard, role: 共同創辦人 }
+sources:
+  - "propod:cmtel5mvw12jk01wy4ok92ldx"
+  - "pro:23jwvufhmrsw"

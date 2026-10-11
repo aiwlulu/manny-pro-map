@@ -1,0 +1,15 @@
+name: Electronic Arts
+zh: 藝電
+industry: gaming
+summary: "美國遊戲公司，開發、發行及銷售電腦、遊戲主機、網路與手機遊戲。"
+founded: 1982
+hq: 紅木海岸
+logo: { file: Electronic Arts historical logo 80s.svg, license: Public domain, author: Electronic Arts }
+links:
+  website: "https://www.ea.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Electronic_Arts"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/艺电"
+people:
+  - { name: Trip Hawkins, role: 創辦人 }
+sources:
+  - "pro:g2abna6e4v4e"

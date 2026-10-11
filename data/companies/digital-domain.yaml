@@ -1,0 +1,17 @@
+name: Digital Domain
+zh: 數字領域公司
+industry: media
+summary: "美國數位製作公司，主要提供視覺特效、電腦動畫及電影相關的數位製作服務。"
+founded: 1993
+hq: "普拉亞-維斯塔 (洛杉磯)"
+logo: { file: Dd3 stacked logo onBlack.jpg, license: Public domain, author: Digital Domain }
+links:
+  website: "http://www.digitaldomain.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Digital_Domain"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/數字王國3.0"
+people:
+  - { name: Scott Ross, role: 創辦人, interviewed: true }
+  - { name: James Cameron, role: 創辦人 }
+  - { name: Stan Winston, role: 創辦人 }
+sources:
+  - "pro:qj3wwurtndbm"

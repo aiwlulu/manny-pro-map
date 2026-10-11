@@ -1,0 +1,14 @@
+name: Burlington Stores
+industry: commerce
+summary: "美國全國性的折扣零售商，原名 Burlington Coat Factory，以平價服飾等商品為主。"
+founded: 1972
+hq: 佛羅倫斯
+logo: { file: Burlington Coat Factory Logo.svg, license: Public domain, author: Burlington Coat Factory }
+links:
+  website: "https://www.burlington.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Burlington_Stores_(off-price_retailer)"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/伯靈頓商店股份"
+sources:
+  - "pro:grs9prj89rgd"
+  - "pro:bpvzaq5abb4y"
+  - "pro:wzwbvczbu6tb"

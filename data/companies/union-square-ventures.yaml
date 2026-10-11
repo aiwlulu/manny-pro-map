@@ -1,0 +1,19 @@
+name: Union Square Ventures
+zh: 合廣投資
+industry: finance
+summary: "位於美國紐約的創業投資公司，主要透過投資支持新創企業，涵蓋網路平台與科技公司。"
+founded: 2003
+hq: 紐約
+logo: { file: Union Square Ventures logo.png, license: Public domain, author: Union Square Ventures }
+links:
+  website: "http://usv.com"
+  wikipedia: "https://en.wikipedia.org/wiki/Union_Square_Ventures"
+people:
+  - { name: Fred Wilson, role: 創辦人 }
+relations:
+  - { type: invested, target: stripe }
+  - { type: invested, target: coinbase }
+  - { type: invested, target: cloudflare }
+  - { type: invested, target: duolingo }
+sources:
+  - "podcast:2022-07-10-ep17"
