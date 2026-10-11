@@ -12,7 +12,7 @@ export function createMap(root, { industries, weight, onPick, onHover, safeArea,
   root.innerHTML = `<div class="bm-world"><div class="bm-ind"></div><svg class="bm-labels" aria-hidden="true"></svg><svg class="bm-lines" aria-hidden="true"><defs>
       <linearGradient id="bm-lg" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="var(--red-a)"/><stop offset="1" stop-color="var(--blue-b)"/></linearGradient></defs><g></g></svg>
     <div class="bm-nodes" role="list"></div></div><div class="bm-tip" hidden></div>
-    <div class="bm-ctl"><button data-z="in" aria-label="放大"></button><button data-z="out" aria-label="縮小"></button><button data-z="fit" aria-label="顯示全部"></button></div>`;
+    <div class="bm-ctl"><button data-z="in" aria-label="放大" title="放大"></button><button data-z="out" aria-label="縮小" title="縮小"></button><button data-z="fit" aria-label="重設視角，顯示全部" title="顯示全部"></button></div>`;
   const indEl = root.querySelector('.bm-ind');
   const nodesEl = root.querySelector('.bm-nodes');
   const lines = root.querySelector('.bm-lines g');

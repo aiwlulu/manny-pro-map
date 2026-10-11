@@ -66,6 +66,10 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
   url: https://pro.manny-li.com/posts/...
 ```
 
+## 版本
+
+發佈新版時更新 `package.json` 的 `version` 與 `CHANGELOG.md`，並打上 `vX.Y.Z` tag。版本號規則見 CHANGELOG 開頭。
+
 ## 本機預覽
 
 ```bash

@@ -145,6 +145,7 @@ function renderStats() {
   $('#kpis').innerHTML = `<div><dt>Pro 文章與節目</dt><dd>${pro.length}</dd></div><div><dt>人物</dt><dd>${people.size}</dd></div>
     <div class="prog"><dt>你已讀 Pro</dt><dd>${done}<small>/${pro.length}</small></dd><span class="bar"><i style="width:${pro.length ? (done / pro.length) * 100 : 0}%"></i></span></div>`;
   $('#built').textContent = data.builtAt;
+  if (data.version) $('#ver').textContent = `v${data.version} 更新紀錄`;
 }
 const PRESENT = KIND_ORDER.filter((k) => data.sources.some((s) => s.kind === k));
 function renderFilters() {
@@ -396,7 +397,7 @@ applyTheme();
 if (!wide()) q.placeholder = '搜尋公司、人物';
 const hdr = $('.top');
 new ResizeObserver(() => document.documentElement.style.setProperty('--hdr', `${hdr.offsetHeight}px`)).observe(hdr);
-for (const [sel2, ic] of [['[data-z="in"]', 'plus'], ['[data-z="out"]', 'minus'], ['[data-z="fit"]', 'fit']]) $(sel2).innerHTML = icon(ic);
+for (const [sel2, ic] of [['[data-z="in"]', 'plus'], ['[data-z="out"]', 'minus'], ['[data-z="fit"]', 'reset']]) $(sel2).innerHTML = icon(ic);
 renderStats(); renderFilters(); renderViews();
 countUp($('#n-co'), cos.size);
 route();

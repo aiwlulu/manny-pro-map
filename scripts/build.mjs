@@ -52,6 +52,7 @@ if (errors.length) {
 const used = new Set(companies.flatMap((c) => c.sources));
 writeFileSync('site/data.json', JSON.stringify({
   builtAt: new Date().toISOString().slice(0, 10),
+  version: JSON.parse(readFileSync('package.json', 'utf8')).version,
   industries,
   sources: sources.filter((s) => used.has(s.id)),
   companies,
