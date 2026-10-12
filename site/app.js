@@ -54,6 +54,14 @@ const colTest = () => COLS.find((x) => x.id === col)?.test;
 
 // Images fade in once decoded; broken ones disappear instead of showing an icon
 document.addEventListener('load', (e) => { if (e.target.tagName === 'IMG') e.target.classList.add('ok'); }, true);
+// Re-rendered views recreate the same images; show cached ones at once instead of fading them in again
+const markCached = (img) => { if (img.complete && img.naturalWidth) img.classList.add('ok', 'instant'); };
+new MutationObserver((ms) => {
+  for (const m of ms) for (const n of m.addedNodes) {
+    if (n.nodeType !== 1) continue;
+    if (n.tagName === 'IMG') markCached(n); else n.querySelectorAll('img').forEach(markCached);
+  }
+}).observe(document.body, { childList: true, subtree: true });
 document.addEventListener('error', (e) => {
   const img = e.target;
   if (img.tagName !== 'IMG') return;

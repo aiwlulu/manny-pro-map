@@ -673,8 +673,10 @@ body.cx-open { overflow: hidden; }
 img { transition: opacity .35s var(--ease); }
 .tile .tl img, .av img, .ph, .bm-n img, .cx-node img { opacity: 0; }
 img.ok { opacity: 1 !important; }
+img.instant { transition: none !important; }
 img.bad { display: none !important; }
-.tile .tl:has(img:not(.ok):not(.bad)), .av:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg, #f3f2ee 0 40%, #fff 50%, #f3f2ee 60% 100%) 0 0 / 300% 100%; animation: shimmer 1.4s linear infinite; }
+/* Image placeholders stay still (no pulsing or sweeping) until the image fades in once */
+.tile .tl:has(img:not(.ok):not(.bad)) { background: var(--pale); }
 span.ph { opacity: 1; }
 
 /* Search clear */
@@ -802,11 +804,11 @@ body[data-view="people"] .coach, body[data-view="about"] .coach { display: none;
   .pq input { height: 34px; }
   .az a { width: 28px; height: 26px; }
 }
-/* Photo placeholder: initials + shimmer until the image decodes */
+/* Photo placeholder: initials on a still background until the image decodes */
 span.ph { position: relative; overflow: hidden; }
 span.ph > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .35s var(--ease); }
 span.ph > img.ok { opacity: 1; }
-span.ph.has-img:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg, var(--pale) 0 40%, color-mix(in srgb, var(--pale) 40%, var(--surface)) 50%, var(--pale) 60% 100%) 0 0 / 300% 100%; animation: shimmer 1.4s linear infinite; }
+span.ph.has-img:has(img:not(.ok):not(.bad)) { background: var(--pale); }
 .av { position: relative; }
 .av > img { position: absolute; inset: 0; }
 .av.img { background: var(--g); box-shadow: none; }
@@ -819,8 +821,7 @@ span.ph.has-img:has(img:not(.ok):not(.bad)) { background: linear-gradient(90deg,
 .co-ok { background: transparent; color: var(--paper); border: 1px solid color-mix(in srgb, var(--paper) 30%, transparent); }
 .co-ok:hover { border-color: var(--paper); }
 @media (max-width: 520px) { .co-act { width: 100%; } .co-act > * { flex: 1; text-align: center; } }
-.av:has(img:not(.ok):not(.bad)) { background: var(--g); animation: avpulse 1.2s ease-in-out infinite alternate; }
-@keyframes avpulse { from { opacity: .55; } to { opacity: 1; } }
+.av:has(img:not(.ok):not(.bad)) { background: var(--g); }
 .tile .tl:has(img:not(.ok):not(.bad)) { background: var(--pale); }
 .feat h3 small { font-size: 12px; letter-spacing: 0; font-weight: 400; margin-left: 4px; }
 @media (min-width: 900px) {

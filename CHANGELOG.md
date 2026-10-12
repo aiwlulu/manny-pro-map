@@ -6,6 +6,11 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.14.2] - 2026-10-12
+
+### 修正
+- 手機上圖片一閃一閃：重新繪製畫面時，已載入過的 logo 與人物照片直接顯示，不再重新淡入；圖片載入前的佔位改成靜止的縮寫底色，不再不停閃爍或掃光，載入完成後只淡入一次
+
 ## [1.14.1] - 2026-10-12
 
 ### 修正
@@ -231,6 +236,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.14.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.14.1...v1.14.2
 [1.14.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.14.0...v1.14.1
 [1.14.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.13.1...v1.14.0
 [1.13.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.13.0...v1.13.1
