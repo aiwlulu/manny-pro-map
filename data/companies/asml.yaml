@@ -15,6 +15,6 @@ people:
   - { name: Peter Wennink, role: 共同執行長 }
   - { name: Christophe Fouquet, role: 執行長, photo: { file: Ursula von der Leyen & Christophe Fouquet - 2025.jpg, license: CC BY 4.0, author: "Dati Bendo / European Union, 2025 / EC - Audiovisual Service" } }
 relations:
-  - { type: supplier, target: tsmc, note: 曝光機 }
+  - { type: supplier, target: tsmc, note: 曝光機, detail: 官方確認交付極紫外光曝光機, year: 2010, source: "https://www.asml.com/en/news/press-releases/2010/tsmc-to-take-delivery-of-an-asml-euv-lithography-system" }
 sources:
   - "podcast:2025-12-18-sp10"

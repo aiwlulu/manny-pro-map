@@ -16,10 +16,7 @@ people:
   - { name: Yu Pan, role: 創辦人 }
   - { name: Elon Musk, role: 創辦人, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
 relations:
-  - { type: supplier, target: ebay, note: 支付服務 }
-  - { type: supplier, target: shopify, note: 支付服務 }
-  - { type: supplier, target: uber, note: 支付服務 }
-  - { type: supplier, target: airbnb, note: 支付服務 }
+  - { type: supplier, target: shopify, note: 支付處理, detail: 2024年擴大美國支付處理合作, year: 2024, source: "https://newsroom.paypal-corp.com/2024-09-09-PayPal-partners-with-Shopify-to-power-a-portion-of-Shopify-Payments-in-the-U-S" }
 sources:
   - "pro:wvdcaes6auhw"
   - "pro:qnjkum4j8g4u"

@@ -14,9 +14,6 @@ people:
   - { name: Charles Wiley, role: 創辦人 }
 relations:
   - { type: acquired, target: hindawi, note: 2021 年 }
-  - { type: supplier, target: amazon, note: 出版書籍 }
-  - { type: supplier, target: barnes-noble, note: 出版書籍 }
-  - { type: supplier, target: waterstones, note: 出版書籍 }
 sources:
   - "pro:w8n34nnkw3d4"
   - "pro:ta8afrymmmcj"

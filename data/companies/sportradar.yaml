@@ -10,10 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Sportradar"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Sportradar"
 relations:
-  - { type: supplier, target: draftkings, note: 運動數據 }
-  - { type: supplier, target: fanduel, note: 運動數據 }
-  - { type: supplier, target: betmgm, note: 運動數據 }
-  - { type: supplier, target: bet365, note: 運動數據 }
-  - { type: supplier, target: entain, note: 運動數據 }
+  - { type: supplier, target: draftkings, note: 運動數據, detail: 2025年報列為主要博彩客戶, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm" }
+  - { type: supplier, target: fanduel, note: 運動數據, detail: 數據合約延長至2031年, year: 2022, source: "https://sportradar.com/content-hub/news/industry-leaders-sportradar-and-fanduel-sign-long-term-agreement-for-official-nba-data-through-2030-31-season/" }
+  - { type: supplier, target: bet365, note: 運動數據, detail: 2025年報列為主要博彩客戶, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm" }
 sources:
   - "pro:zma3sf389tbr"

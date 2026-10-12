@@ -18,11 +18,9 @@ people:
   - { name: Mustafa Suleyman, role: Inflection AI 共同創辦人, photo: { file: "Mustafa Suleyman (29099346447).jpg", license: CC BY 2.0, author: "Joi Ito from Cambridge, MA, USA" } }
   - { name: Steve Ballmer, role: 執行長, photo: { file: Steve Ballmer 2014.jpg, license: CC BY 2.0, author: Eric Garcetti } }
 relations:
-  - { type: supplier, target: openai, note: 雲端算力 }
-  - { type: supplier, target: databricks, note: 雲端算力 }
-  - { type: supplier, target: snowflake, note: 雲端算力 }
-  - { type: supplier, target: valve, note: 遊戲內容 }
-  - { type: supplier, target: coursera, note: 課程內容 }
+  - { type: supplier, target: openai, note: 雲端算力, detail: 新協議維持主要雲端夥伴地位, year: 2026, source: "https://openai.com/index/next-phase-of-microsoft-partnership/" }
+  - { type: supplier, target: databricks, note: 雲端算力, detail: 擴大合作與自身雲端使用, year: 2026, source: "https://news.microsoft.com/source/2026/07/23/databricks-and-microsoft-expand-partnership-to-help-enterprises-bring-business-context-to-enterprise-ai/" }
+  - { type: supplier, target: snowflake, note: 雲端算力, detail: 官方列為支援的託管雲平台, source: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms" }
 sources:
   - "pro:x29tt82u4h4q"
   - "propod:cmtj74mw500lp01y46usd2blj"

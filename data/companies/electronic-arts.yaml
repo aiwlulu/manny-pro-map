@@ -12,7 +12,5 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/艺电"
 people:
   - { name: Trip Hawkins, role: 創辦人, photo: { file: "Trip Hawkins 2013 (10627605786).jpg", license: CC BY-SA 2.0, author: Intel Free Press } }
-relations:
-  - { type: supplier, target: valve, note: 遊戲內容 }
 sources:
   - "pro:g2abna6e4v4e"

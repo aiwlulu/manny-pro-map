@@ -11,12 +11,12 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Amazon_Web_Services"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/亚马逊云计算服务"
 relations:
-  - { type: supplier, target: netflix, note: 雲端算力 }
-  - { type: supplier, target: anthropic, note: 雲端算力 }
-  - { type: supplier, target: airbnb, note: 雲端算力 }
-  - { type: supplier, target: stripe, note: 雲端算力 }
-  - { type: supplier, target: snowflake, note: 雲端算力 }
-  - { type: supplier, target: coinbase, note: 雲端算力 }
+  - { type: supplier, target: netflix, note: 雲端算力, detail: Netflix核心營運使用EC2, source: "https://aws.amazon.com/ec2/customers/" }
+  - { type: supplier, target: anthropic, note: 雲端算力, detail: 擴大至五吉瓦訓練與部署容量, year: 2026, source: "https://www.anthropic.com/news/anthropic-amazon-compute" }
+  - { type: supplier, target: airbnb, note: 雲端算力, detail: 大部分雲端運算遷移至AWS, source: "https://aws.amazon.com/solutions/case-studies/airbnb-case-study/" }
+  - { type: supplier, target: stripe, note: 雲端算力, detail: 支付平台自2011年建於AWS, year: 2011, source: "https://aws.amazon.com/cn/solutions/case-studies/stripe/" }
+  - { type: supplier, target: snowflake, note: 雲端算力, detail: 承諾五年投入六十億美元算力, year: 2026, source: "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/" }
+  - { type: supplier, target: coinbase, note: 雲端算力, detail: 官方案例確認雲端遷移與擴容, year: 2022, source: "https://aws.amazon.com/solutions/case-studies/coinbase-migration-case-study/" }
 sources:
   - "pro:sfddnjkgm59b"
   - "pro:sg2sthu6aaak"

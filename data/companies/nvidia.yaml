@@ -15,12 +15,12 @@ people:
   - { name: Chris Malachowsky, role: 創辦人, photo: { file: "Chris Malachowsky (54986972670).jpg", license: CC BY 4.0, author: Maryland GovPics } }
   - { name: Curtis Priem, role: 創辦人 }
 relations:
-  - { type: supplier, target: openai, note: GPU }
-  - { type: supplier, target: microsoft, note: GPU }
-  - { type: supplier, target: coreweave, note: GPU }
-  - { type: supplier, target: aws, note: GPU }
-  - { type: supplier, target: meta, note: GPU }
-  - { type: supplier, target: nintendo, note: 遊戲機晶片 }
+  - { type: supplier, target: openai, note: GPU, detail: 宣布十吉瓦系統部署意向, year: 2025, source: "https://openai.com/index/openai-nvidia-systems-partnership/" }
+  - { type: supplier, target: microsoft, note: GPU, detail: Azure採用輝達新舊世代GPU, year: 2024, source: "https://nvidianews.nvidia.com/news/microsoft-nvidia-generative-ai-enterprises" }
+  - { type: supplier, target: coreweave, note: GPU, detail: 率先部署輝達GB300系統, year: 2025, source: "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Becomes-First-Hyperscaler-to-Deploy-NVIDIA-GB300-NVL72-Platform/default.aspx" }
+  - { type: supplier, target: aws, note: GPU, detail: AWS採用輝達Blackwell平台, year: 2024, source: "https://nvidianews.nvidia.com/news/aws-nvidia-generative-ai-innovation" }
+  - { type: supplier, target: meta, note: GPU, detail: 2026年擴大多年期算力合作, year: 2026, source: "https://about.fb.com/news/2026/02/meta-nvidia-announce-long-term-infrastructure-partnership/" }
+  - { type: supplier, target: nintendo, note: 遊戲機晶片, detail: Switch2採輝達客製處理器, year: 2025, source: "https://www.nintendo.com/gaming-systems/switch-2/tech-specs/" }
   - { type: competitor, target: amd }
 sources:
   - "pro:dwcrddrmu86k"

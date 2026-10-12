@@ -15,7 +15,7 @@ people:
   - { name: Marc Tarpenning, role: 創辦人 }
   - { name: Elon Musk, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
 relations:
-  - { type: supplier, target: sunrun, note: 儲能電池 }
+  - { type: supplier, target: sunrun, note: 儲能電池, detail: 官網持續供應Powerwall電池, source: "https://www.sunrun.com/solar-battery-storage/tesla-powerwall" }
   - { type: parent, target: solarcity }
 sources:
   - "pro:tvqqj5aqhcr3"

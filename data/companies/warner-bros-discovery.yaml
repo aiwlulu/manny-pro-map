@@ -11,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Warner_Bros._Discovery"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/华纳兄弟探索"
 relations:
-  - { type: supplier, target: netflix, note: 影視內容 }
+  - { type: supplier, target: netflix, note: 影視內容, detail: 官方列為Netflix主要製片商, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1437107/000143710725000189/wbd2q25shareholderletter.htm" }
   - { type: parent, target: hbo }
 sources:
   - "pro:ueyj98gmbgxn"

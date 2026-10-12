@@ -14,12 +14,11 @@ people:
   - { name: Larry Page, role: 創辦人, photo: { file: "Larry Page in the European Parliament, 17.06.2009.jpg", license: CC BY-SA 4.0, author: "Marcin Mycielski, European Parliament (Stansfield)" } }
   - { name: Sundar Pichai, photo: { file: "Sundar Pichai - 2023 (cropped).jpg", license: CC BY 4.0, author: "Photographer: Lukasz Kobus (European Commission)" } }
 relations:
-  - { type: supplier, target: spotify, note: 雲端算力 }
-  - { type: supplier, target: snap, note: 雲端算力 }
-  - { type: supplier, target: apple, note: 雲端算力 }
-  - { type: supplier, target: shopify, note: 雲端算力 }
-  - { type: supplier, target: anthropic, note: 雲端算力 }
-  - { type: supplier, target: coursera, note: 課程內容 }
+  - { type: supplier, target: spotify, note: 雲端算力, detail: 2023年擴大基礎設施合作, year: 2023, source: "https://www.googlecloudpresscorner.com/2023-11-16-Google-Cloud-and-Spotify-Expand-Partnership-to-Help-Unlock-Creator-Potential-and-Reach-Fans" }
+  - { type: supplier, target: snap, note: 雲端AI服務, detail: 聊天助理採用谷歌雲模型, year: 2024, source: "https://newsroom.snap.com/snap-google-gemini-my-ai" }
+  - { type: supplier, target: apple, note: 雲端算力, detail: 私有雲運算擴展採用谷歌雲, year: 2026, source: "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models" }
+  - { type: supplier, target: shopify, note: 雲端算力, detail: 2016年起遷移至谷歌雲, year: 2016, source: "https://cloud.google.com/customers/shopify-compute" }
+  - { type: supplier, target: anthropic, note: 雲端算力, detail: 擴大採用至百萬顆運算晶片, year: 2025, source: "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services" }
   - { type: parent, target: boston-dynamics }
   - { type: parent, target: waymo }
   - { type: parent, target: youtube }

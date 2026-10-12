@@ -14,8 +14,8 @@ people:
   - { name: Francis deSouza, role: 執行長, photo: { file: Francis deSouza.jpg, license: CC BY-SA 4.0, author: CDBeckwith } }
   - { name: Jacob Thaysen, role: 執行長 }
 relations:
-  - { type: supplier, target: natera, note: 基因定序設備 }
-  - { type: supplier, target: 23andme, note: 基因分型晶片 }
+  - { type: supplier, target: natera, note: 定序設備試劑, detail: 獨家定序供應合約至2033年, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1604821/000110465926020881/ntra-20251231x10k.htm" }
+  - { type: supplier, target: 23andme, note: 基因分型晶片, detail: 官方檢測說明使用Illumina晶片, source: "https://permalinks.23andme.com/pdf/package_insert_v5.pdf" }
 sources:
   - "podcast:2024-09-26-ep82"
   - "podcast:2024-04-29-ep67"

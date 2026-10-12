@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Broadcom"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/博通有限"
 relations:
-  - { type: supplier, target: apple, note: 無線通訊晶片 }
-  - { type: supplier, target: google, note: 客製AI晶片 }
+  - { type: supplier, target: apple, note: 無線通訊元件, detail: 2026年新增多年期元件合約, year: 2026, source: "https://images.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/" }
+  - { type: supplier, target: google, note: 客製AI晶片, detail: 長期合約涵蓋TPU與網路元件, year: 2026, source: "https://investors.broadcom.com/static-files/c906d370-921b-4bc2-bb7b-57877dfcf1ae" }
 sources:
   - "pro:dwcrddrmu86k"

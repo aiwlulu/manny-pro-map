@@ -11,6 +11,6 @@ links:
 people:
   - { name: Mark Donegan, role: 執行長 }
 relations:
-  - { type: supplier, target: boeing, note: 航太零組件 }
+  - { type: supplier, target: boeing, note: 航太零組件, detail: 官方列波音為依賴其產品客戶, source: "https://careers.precast.com/documents/4dp.pdf" }
 sources:
   - "pro:9e2jqsm9y5bj"

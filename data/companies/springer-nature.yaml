@@ -11,7 +11,6 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/施普林格·自然"
 relations:
   - { type: parent, target: springer-science-business-media, note: 2015 年 }
-  - { type: supplier, target: amazon, note: 出版書籍 }
   - { type: competitor, target: elsevier }
   - { type: competitor, target: wiley }
 sources:

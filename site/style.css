@@ -936,3 +936,16 @@ body.open .legend-n { display: none; }
   .tile .tb { font-size: 12px; }
   .lane-name i, .eyebrow, .jump a span, .radio span { font-size: 12px; }
 }
+
+/* Supply-chain evidence */
+.mc-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 2px 6px; padding: 2px 0; }
+.mc-row .mc-d { grid-column: 1 / -1; padding-left: 32px; font-size: 11.5px; color: var(--muted); line-height: 1.4; }
+.mc-row .mc-w { margin-left: 0; }
+.ev { display: inline-flex; align-items: center; gap: 2px; font-size: 11px; color: var(--link); text-decoration: none; white-space: nowrap; padding: 1px 6px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--link) 30%, transparent); }
+.ev:hover { background: color-mix(in srgb, var(--link) 10%, transparent); }
+.ev svg { width: 10px; height: 10px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.cx-wrap { position: relative; display: flex; flex-direction: column; gap: 3px; }
+.cx-wrap .ev { align-self: flex-end; margin-right: 4px; }
+.cx-col[data-col="mid"] .cx-wrap .ev { display: none; }
+.cx-tgl { font-size: 13px; margin-right: 6px; }
+@media (max-width: 899px) { .cx-tgl { font-size: 12.5px; } }

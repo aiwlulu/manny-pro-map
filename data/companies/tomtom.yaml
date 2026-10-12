@@ -15,8 +15,8 @@ people:
   - { name: Peter-Frans Pauwels, role: 創辦人 }
   - { name: Pieter Geelen, role: 創辦人 }
 relations:
-  - { type: supplier, target: apple, note: 地圖數據 }
-  - { type: supplier, target: microsoft, note: 地圖數據 }
-  - { type: supplier, target: uber, note: 地圖數據 }
+  - { type: supplier, target: apple, note: 地圖數據, detail: TomTom 為主要地圖資料供應商, source: "https://en.wikipedia.org/wiki/Apple_Maps" }
+  - { type: supplier, target: microsoft, note: 地圖數據, detail: 地圖與交通合約延續至本年代末, year: 2024, source: "https://www.tomtom.com/newsroom/press-releases/general/522285435/tomtom-signs-long-term-agreement-with-microsoft-to-deliver-location-technology-and-collaborate-on-product-innovation/" }
+  - { type: supplier, target: uber, note: 地圖數據, detail: 2026年續約全球地圖服務, year: 2026, source: "https://www.tomtom.com/newsroom/press-releases/general/130897198110702/tomtom-and-uber-strengthen-ties-to-enhance-on-demand-travel-experiences-globally/" }
 sources:
   - "podcast:2023-02-07-ep34"

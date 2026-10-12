@@ -13,7 +13,7 @@ links:
 people:
   - { name: Jeong Ju-yung, role: 創辦人, photo: { file: Chung Ju-yung.jpg, license: Public domain, author: "Technical Sergeant Renee` Sitler" } }
 relations:
-  - { type: supplier, target: waymo, note: 電動車 }
+  - { type: supplier, target: waymo, note: 電動車, detail: 多年合作供應IONIQ5車輛, year: 2024, source: "https://www.hyundaimotorgroup.com/en/amp/CONT0000000000161922" }
   - { type: parent, target: boston-dynamics }
 sources:
   - "pro:j8f4gchrfeb5"

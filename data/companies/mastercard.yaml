@@ -11,10 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Mastercard"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/万事达卡"
 relations:
-  - { type: supplier, target: stripe, note: 卡組織網路 }
-  - { type: supplier, target: paypal, note: 卡組織網路 }
-  - { type: supplier, target: block, note: 卡組織網路 }
-  - { type: supplier, target: klarna, note: 卡組織網路 }
+  - { type: supplier, target: paypal, note: 卡組織網路, detail: 合作涵蓋簽帳卡及新支付功能, year: 2025, source: "https://newsroom.mastercard.com/news/press/2025/june/mastercard-and-paypal-to-partner-on-mastercard-one-credential-to-supercharge-choice-at-checkout/" }
 sources:
   - "pro:k8w9aqudktnu"
   - "pro:yb9cs6kekxas"

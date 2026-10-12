@@ -14,10 +14,6 @@ people:
   - { name: William Fargo, role: 創辦人, photo: { file: 1862fargos.jpg, license: Public domain, author: "Chuck LaChiusa, lach@roadrunner.com" } }
   - { name: Henry Wells, role: 創辦人, photo: { file: "Lithograph portrait of Henry Wells of Wells, Fargo & Co.'s Express (c. 1878) (cropped).jpg", license: Public domain, author: "Henry Steinegger / Britton &amp; Rey" } }
   - { name: John Warren Butterfield, role: 創辦人, photo: { file: JohnButterfield.jpg, license: Public domain, author: See below } }
-relations:
-  - { type: supplier, target: stripe, note: 卡組織網路 }
-  - { type: supplier, target: paypal, note: 卡組織網路 }
-  - { type: supplier, target: block, note: 卡組織網路 }
 sources:
   - "pro:k8w9aqudktnu"
   - "pro:yb9cs6kekxas"

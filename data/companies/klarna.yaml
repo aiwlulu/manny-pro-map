@@ -12,9 +12,7 @@ people:
   - { name: Sebastian Siemiatkowski, role: 創辦人, photo: { file: Sebastian Siemiatkowski.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Niklas Adalberth, role: 創辦人, photo: { file: "TNW Conference 2013 - Day 2 (8679712475) (cropped).jpg", license: CC BY-SA 2.0, author: "Julia de Boer / The Next Web" } }
 relations:
-  - { type: supplier, target: shopify, note: 先買後付 }
-  - { type: supplier, target: walmart, note: 先買後付 }
-  - { type: supplier, target: nike, note: 先買後付 }
-  - { type: supplier, target: airbnb, note: 先買後付 }
+  - { type: supplier, target: walmart, note: 先買後付, detail: 透過OnePay獨家提供分期, year: 2025, source: "https://investors.klarna.com/News--Events/news/news-details/2025/Klarna-Announces-Partnership-with-OnePay-to-Exclusively-Power-Installment-Loans-at-Walmart-in-the-U-S--2025-C2mmyrNcu1/default.aspx" }
+  - { type: supplier, target: airbnb, note: 先買後付, detail: 2025年官方確認分期仍提供, year: 2025, source: "https://news.airbnb.com/reserve-now-pay-later" }
 sources:
   - "pro:52gjqz2bbj2p"

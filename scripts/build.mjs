@@ -57,6 +57,12 @@ const ids = new Set(companies.map((c) => c.id));
 for (const c of companies)
   for (const r of c.relations ?? []) {
     if (!RELATION_TYPES.includes(r.type)) err(`companies/${c.id}.yaml`, `unknown relation type ${r.type}`);
+    // Supply-chain links must cite a public source
+    if (['supplier', 'customer'].includes(r.type)) {
+      let ok = false;
+      try { ok = new URL(r.source).protocol === 'https:'; } catch {}
+      if (!ok) err(`companies/${c.id}.yaml`, `${r.type} ${r.target} needs an https source`);
+    }
     if (!ids.has(r.target)) err(`companies/${c.id}.yaml`, `relation target ${r.target} not found`);
   }
 

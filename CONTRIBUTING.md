@@ -49,6 +49,14 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
 
 只寫公開可查證的關係，同一組關係只要寫在其中一家就好。
 
+`supplier`（供應給）與 `customer` 是產業鏈圖的上下游，**必須附上來源**，CI 會檢查：
+
+```yaml
+  - { type: supplier, target: nvidia, note: 晶圓代工, detail: 為 NVIDIA 代工 GPU 晶片, year: 2020, source: "https://…" }
+```
+
+來源請用公司新聞稿、財報或主流媒體，不要用部落格或論壇；只收主要、具代表性的供應關係，品牌在通路上架、平台上架這類不算。
+
 ## Logo
 
 優先用 Wikimedia Commons 的自由授權圖片（`logo: { file, license, author }`）。沒有的話，維護者會把官網圖示放在 `site/logos/<id>.png`，只用於識別。

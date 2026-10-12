@@ -11,6 +11,6 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Unity_Technologies"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Unity_Technologies"
 relations:
-  - { type: supplier, target: mihoyo, note: 遊戲引擎 }
+  - { type: supplier, target: mihoyo, note: 遊戲引擎, detail: 官方仍將原神列為引擎作品, source: "https://unity.com/es/games" }
 sources:
   - "podcast:2022-07-17-ep18"

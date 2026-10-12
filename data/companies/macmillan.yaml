@@ -13,9 +13,5 @@ links:
 people:
   - { name: Daniel Macmillan, role: 創辦人, photo: { file: Daniel Macmillan 1813 1857.png, license: Public domain, author: "Macmillan &amp; Co." } }
   - { name: Alexander Macmillan, role: 創辦人, photo: { file: Alexander Macmillan 1818 1896.png, license: Public domain, author: "Macmillan &amp; Co." } }
-relations:
-  - { type: supplier, target: amazon, note: 出版書籍 }
-  - { type: supplier, target: barnes-noble, note: 出版書籍 }
-  - { type: supplier, target: waterstones, note: 出版書籍 }
 sources:
   - "pro:g25ebdxu3cu6"

@@ -12,8 +12,5 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/樂高集團"
 people:
   - { name: Ole Kirk Christiansen, role: 創辦人, photo: { file: "Ole Kirk Christiansen, 1957 (cropped).jpg", license: Public domain, author: Unknown authorUnknown author } }
-relations:
-  - { type: supplier, target: amazon, note: 玩具 }
-  - { type: supplier, target: walmart, note: 玩具 }
 sources:
   - "podcast:2022-05-21-ep12"

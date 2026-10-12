@@ -10,8 +10,6 @@ links:
   website: "https://www.elsevier.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Elsevier"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/愛思唯爾"
-relations:
-  - { type: supplier, target: amazon, note: 出版書籍 }
 sources:
   - "pro:w8n34nnkw3d4"
   - "pro:ta8afrymmmcj"

@@ -9,9 +9,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/CoreWeave"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/CoreWeave"
 relations:
-  - { type: supplier, target: openai, note: 雲端算力 }
-  - { type: supplier, target: microsoft, note: 雲端算力 }
-  - { type: supplier, target: nvidia, note: 雲端算力 }
+  - { type: supplier, target: openai, note: 雲端算力, detail: 算力合約再增六十五億美元, year: 2025, source: "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Expands-Agreement-with-OpenAI-by-up-to-6-5B/default.aspx" }
+  - { type: supplier, target: microsoft, note: 雲端算力, detail: 年報確認微軟為最大客戶, year: 2025, source: "https://s205.q4cdn.com/133937190/files/doc_financials/2025/q4/CoreWeave-Inc-FY25-10-K-7.pdf" }
 sources:
   - "propod:cmtum2ac1123m01w6ehj8b2tu"
   - "pro:dzcqdpceapkv"

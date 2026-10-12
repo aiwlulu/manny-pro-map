@@ -14,10 +14,9 @@ people:
   - { name: Masaru Ibuka, role: 創辦人, photo: { file: Ibuka Masaru.jpg, license: Public domain, author: "財界研究社、撮影者不明" } }
   - { name: Akio Morita, role: 創辦人, photo: { file: Morita Akio.jpg, license: Public domain, author: "プレジデント社　撮影者不明" } }
 relations:
-  - { type: supplier, target: apple, note: 影像感測器 }
-  - { type: supplier, target: netflix, note: 影視內容 }
-  - { type: supplier, target: spotify, note: 音樂授權 }
-  - { type: supplier, target: valve, note: 遊戲內容 }
+  - { type: supplier, target: apple, note: 影像感測器, detail: 庫克確認逾十年相機感測器合作, year: 2022, source: "https://www.theverge.com/2022/12/13/23506978/apple-iphone-sony-camera-sensor-confirmation" }
+  - { type: supplier, target: netflix, note: 影視授權, detail: 2026年簽署全球多年授權, year: 2026, source: "https://www.sonypictures.com/corp/press_releases/2026/0115" }
+  - { type: supplier, target: spotify, note: 音樂授權, detail: 2025年擴大全球多年期授權, year: 2025, source: "https://newsroom.spotify.com/2025-09-18/sony-music-group-spotify-partnership-expansion/" }
 sources:
   - "pro:r432czr8q5bk"
   - "podcast:2024-10-21-sp5"
