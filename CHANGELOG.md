@@ -6,6 +6,11 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [1.14.1] - 2026-10-12
+
+### 修正
+- 手機瀏覽器的分頁圖示改抓 Pro Map 自己的圖示：補上 `favicon.ico`、PNG、`apple-touch-icon` 與 `site.webmanifest`，不再退回 `aiwlulu.github.io` 根目錄的 favicon
+
 ## [1.14.0] - 2026-10-12
 
 ### 改善
@@ -226,6 +231,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[1.14.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.14.0...v1.14.1
 [1.14.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.13.1...v1.14.0
 [1.13.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.13.0...v1.13.1
 [1.13.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.12.0...v1.13.0
