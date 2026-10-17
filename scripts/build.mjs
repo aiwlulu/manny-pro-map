@@ -95,6 +95,7 @@ for (const c of companies)
       // segment: which of the supplier's revenue lines this sale belongs to
       const sup = r.type === 'supplier' ? c : byId.get(r.target);
       if (r.segment && !sup.revenue?.segments?.some((g) => g.id === r.segment)) err(at, `${r.target}: segment "${r.segment}" is not in ${sup.id}'s revenue`);
+      if (r.value && (!(r.value.usd_bn > 0) || !r.value.basis || !https(r.value.source))) err(at, `${r.target}: value needs usd_bn, basis and an https source`);
       if (r.share) {
         if (!(r.share.pct > 0 && r.share.pct <= 100)) err(at, `${r.target}: share.pct must be 0–100`);
         if (!r.share.fy || !https(r.share.source)) err(at, `${r.target}: share needs fy and an https source`);

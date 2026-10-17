@@ -34,8 +34,8 @@ relations:
   - { type: invested, target: hugging-face, year: 2023, detail: D輪參投, source: "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/" }
   - { type: invested, target: aurora-innovation, year: 2019, detail: 參與B輪募資, source: "https://aurora.tech/newsroom/investing-in-the-future-of-transportation-aurora-raises" }
   - { type: invested, target: agility-robotics, year: 2022, detail: 產業創新基金參投, source: "https://www.businesswire.com/news/home/20220421006147/en/Agility-Robotics-Raises-%24150M-Series-B-Led-by-DCVC-and-Playground-Global-to-Accelerate-Blended-Human-Robot-Workplaces" }
-  - { type: invested, target: openai, amount: 500 億美元, year: 2026, detail: 領投 2026 年融資，先投 150 億、其餘分階段, source: "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html" }
-  - { type: invested, target: anthropic, amount: 80 億美元, year: 2023, detail: 2023–24 年累計 80 億；2026 年再承諾至多 250 億美元, source: "https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html" }
+  - { type: invested, target: openai, amount: 500 億美元, usd_bn: 50, year: 2026, detail: 領投 2026 年融資，先投 150 億、其餘分階段, source: "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html" }
+  - { type: invested, target: anthropic, amount: 至多 330 億美元, usd_bn: 33, year: 2023, detail: 已撥 180 億美元，其餘為條件式承諾, source: "https://www.anthropic.com/news/anthropic-amazon-compute" }
 sources:
   - "propod:cmuoqjicj0bhf01tlh9qsafqq"
   - "pro:kudnr9rb2r56"

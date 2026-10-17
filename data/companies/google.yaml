@@ -39,7 +39,7 @@ relations:
   - { type: invested, target: harvey, year: 2025, detail: GV參與法律融資（該輪共 3 億美元）, source: "https://www.harvey.ai/blog/harvey-raises-series-d" }
   - { type: invested, target: kalshi, year: 2025, detail: CapitalG參投D輪（該輪共 3 億美元）, source: "https://news.kalshi.com/p/kalshi-hits-5-billion-valuation-amid-international-expansion" }
   - { type: invested, target: spacex, year: 2015, detail: 參與股權募資, source: "https://techcrunch.com/2015/01/20/spacex-raises-1-billion-in-new-funding-from-google-and-fidelity/" }
-  - { type: invested, target: anthropic, amount: 逾 30 億美元, stake: 約 14%, year: 2023, detail: 2023 年起多輪投資，持股上限 15%、無投票權, source: "https://www.anthropic.com/news/anthropic-series-c" }
+  - { type: invested, target: anthropic, amount: 逾 30 億＋至多 400 億美元, usd_bn: 43, stake: 約 14%, year: 2023, detail: 2023 年起多輪投資逾 30 億；2026 年再承諾 100 億，另 300 億視里程碑, source: "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" }
 sources:
   - "pro:dwcrddrmu86k"
   - "pro:kudnr9rb2r56"

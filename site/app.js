@@ -376,7 +376,7 @@ $('#cx').addEventListener('click', (e) => { if (e.target.closest('.cx-close')) g
 
 /* ---------- Search ---------- */
 const index = [];
-for (const c of cos.values()) index.push({ t: 'c', key: norm(`${c.name} ${c.zh ?? ''} ${(c.aliases ?? []).join(' ')}`), label: c.name, sub: [c.zh, c.extended && '延伸'].filter(Boolean).join(' · '), go: `#/c/${c.id}`, ids: [c.id] });
+for (const c of cos.values()) index.push({ t: 'c', key: norm(`${c.name} ${c.zh ?? ''} ${(c.aliases ?? []).join(' ')}`), label: c.name, sub: c.zh ?? '', ext: c.extended, go: `#/c/${c.id}`, ids: [c.id] });
 for (const p of people.values()) index.push({ t: 'p', key: norm(`${p.name} ${p.zh}`), label: `${p.name}${p.zh ? ` ${p.zh}` : ''}`, sub: p.roles.map((r) => r.c.name).join('、'), go: `#/p/${p.id}`, ids: p.roles.map((r) => r.c.id) });
 for (const s of data.sources) index.push({ t: 's', key: norm(s.title), label: s.title, sub: `${KIND[s.kind].short} · ${s.date}`, go: `#/s/${encodeURIComponent(s.id)}`, ids: (bySrc.get(s.id) ?? []).map((c) => c.id) });
 const T = { c: '公司', p: '人物', s: '文章' };
@@ -388,7 +388,7 @@ function search(v) {
   if (!k) { $('#results').hidden = true; if (!location.hash.match(/^#\/[csp]\//)) views.setFocus(null); return; }
   hits = index.filter((x) => x.key.includes(k)).sort((a, b) => (a.key.startsWith(k) ? 0 : 1) - (b.key.startsWith(k) ? 0 : 1) || 'cps'.indexOf(a.t) - 'cps'.indexOf(b.t)).slice(0, 30);
   sel = 0;
-  $('#results').innerHTML = hits.length ? hits.map((h, n) => `<button role="option" data-n="${n}" class="${n === sel ? 'sel' : ''}"><span class="kind">${icon(TI[h.t])}${T[h.t]}</span><span class="lb">${esc(h.label)}</span><span class="sub">${esc(h.sub)}</span></button>`).join('') : '<p class="none">沒有符合的結果</p>';
+  $('#results').innerHTML = hits.length ? hits.map((h, n) => `<button role="option" data-n="${n}" class="${n === sel ? 'sel' : ''}"><span class="kind" data-t="${h.t}">${icon(TI[h.t])}${T[h.t]}</span><span class="lb">${esc(h.label)}${h.ext ? '<span class="xt">延伸</span>' : ''}</span><span class="sub">${esc(h.sub)}</span></button>`).join('') : '<p class="none">沒有符合的結果</p>';
   $('#results').hidden = false;
   views.setFocus({ match: new Set(hits.flatMap((h) => h.ids)) });
 }

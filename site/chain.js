@@ -30,7 +30,7 @@ export function buildChain(companies) {
   const push = (m, id, x) => (m.get(id) ?? m.set(id, []).get(id)).push(x);
   const add = (from, to, r) => {
     if (!from || !to || from === to) return;
-    const ev = { what: r.note, kind: r.kind, segment: r.segment, share: r.share, source: r.source, detail: r.detail, year: r.year };
+    const ev = { what: r.note, kind: r.kind, segment: r.segment, share: r.share, value: r.value, source: r.source, detail: r.detail, year: r.year };
     const dup = down.get(from.id)?.find((x) => x.c === to);
     if (dup) {
       // Same link listed twice: keep the better-documented one
@@ -47,7 +47,7 @@ export function buildChain(companies) {
       if (r.type === 'supplier') add(c, t, r);
       if (r.type === 'customer') add(t, c, r);
       if (r.type === 'invested' || r.type === 'parent') {
-        const ev = { rel: r.type, amount: r.amount, stake: r.stake, year: r.year, detail: r.detail ?? r.note, source: r.source };
+        const ev = { rel: r.type, amount: r.amount, usd: r.usd_bn, stake: r.stake, year: r.year, detail: r.detail ?? r.note, source: r.source };
         if (holds.get(c.id)?.some((x) => x.c === t)) continue;
         push(holds, c.id, { c: t, ...ev });
         push(owners, t.id, { c, ...ev });
@@ -110,6 +110,34 @@ function flowNote(x, sup, { seg = true } = {}) {
 }
 const capNote = (x) => [x.rel === 'parent' ? '旗下事業' : '', x.amount, x.stake && `持股 ${x.stake}`, x.year && `${x.year}`].filter(Boolean).map(esc).join(' · ');
 
+
+// Investor → investee as money in, purchases back, with bars on a shared scale
+const usd = (bn) => (bn >= 1000 ? `${(bn / 1000).toLocaleString('zh-TW', { maximumFractionDigits: 2 })} 兆美元` : `${(bn * 10).toLocaleString('zh-TW', { maximumFractionDigits: 1 })} 億美元`);
+function loopCard(inv, tgt, x, avatar) {
+  const backs = x.loop, vals = backs.map((b) => b.value?.usd_bn).filter((v) => v > 0);
+  const back = vals.length ? vals.reduce((s, v) => s + v, 0) : null, max = Math.max(x.usd ?? 0, back ?? 0) || 1;
+  const backText = back && `${backs.some((b) => b.value?.prefix) ? '逾 ' : ''}${usd(back)}`;
+  // Show the wording as published (至多 / 逾) next to the bar
+  const bar = (cls, v, label, text) => `<div class="lp-row ${cls}"><span class="lp-k">${label}</span><span class="lp-bar">${v ? `<i style="--w:${Math.max(2, (v / max) * 100)}%"></i>` : '<i class="na"></i>'}</span><b>${v ? esc(text || usd(v)) : '金額未公開'}</b></div>`;
+  const mult = x.usd && back ? back / x.usd : null;
+  const what = backs.map((b) => (b.what && b.what !== KINDS[b.kind]?.label ? `${kindTag(b.kind)}${esc(b.what)}` : kindTag(b.kind))).join('、');
+  const basis = [...new Set(backs.map((b) => b.value && [b.value.basis, b.value.period].filter(Boolean).join(' ')).filter(Boolean))].join('、');
+  const shares = backs.filter((b) => b.share).map((b) => `佔 ${esc(b.seller.name)} 營收 <b>${pct(b.share.pct)}</b>（${esc(b.share.fy)}）`);
+  return `<figure class="loop">
+    <div class="lp-flow">
+      <a class="lp-n" href="#/chain/${inv.id}">${AV(inv)}<b>${esc(inv.name)}</b><i>投資方</i></a>
+      <div class="lp-arrows">
+        <span class="lp-a in"><em>投資${x.stake ? ` · 持股 ${esc(x.stake)}` : ''}${x.year ? ` · ${esc(x.year)} 起` : ''}</em></span>
+        <span class="lp-a out" style="--k:var(--k-${backs[0].kind})"><em>採購 ${what}</em></span>
+      </div>
+      <a class="lp-n" href="#/chain/${tgt.id}">${AV(tgt)}<b>${esc(tgt.name)}</b><i>被投資方</i></a>
+    </div>
+    <div class="lp-bars" style="--k:var(--k-${backs[0].kind})">${bar('in', x.usd, '投資', x.amount)}${bar('out', back, `回流${basis ? `<small>${esc(basis)}</small>` : ''}`, backText)}</div>
+    <figcaption>${mult ? `回流約為投資的 <b>${mult >= 10 ? Math.round(mult) : mult.toFixed(1)} 倍</b>` : '回流金額未公開，只確認有採購'}${shares.length ? ` · ${shares.join(' · ')}` : ''}
+      <span class="evs">${evidence(x, '投資來源')}${backs.map((b) => evidence(b.value?.source ? { ...b, source: b.value.source } : b, '採購來源')).join('')}</span></figcaption>
+  </figure>`;
+}
+
 export function miniChain(c, chain, { avatar }) {
   const ups = chain.up(c.id), downs = chain.down(c.id), own = chain.owners(c.id), hold = chain.holds(c.id);
   if (!ups.length && !downs.length && !own.length && !hold.length) return '';
@@ -121,7 +149,9 @@ export function miniChain(c, chain, { avatar }) {
   return `<div class="mini-chain">${col('資金 · 投資它的', own, capRow, 'cap')}${col('上游 · 供應給它', ups, (x) => row(x, x.c))}<div class="mc-self">${avatar(c, 'xs')}<b>${esc(c.name)}</b></div>${col('下游 · 它供應給', downs, (x) => row(x, c))}${col('資金 · 它投資的', hold, capRow, 'cap')}</div>`;
 }
 
+let AV = () => '';
 export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon, indirect = false, onToggle, hidden = new Set(), onFilter }) {
+  AV = (x) => avatar(x, 'md');
   const L1u = chain.up(c.id), L1d = chain.down(c.id), own = chain.owners(c.id), hold = chain.holds(c.id);
   const seen = new Set([c.id, ...L1u.map((x) => x.c.id), ...L1d.map((x) => x.c.id)]);
   const hop = (list, dir) => {
@@ -152,7 +182,7 @@ export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon
   const supCard = (x, col, sup) => card(x.c, col, { what: x.what, kind: x.kind, flow: flowNote(x, sup, { seg: col !== 'd1' || !c.revenue?.segments?.length }) + cross(x.c), ev: x });
   const hopCard = (x, col, word) => card(x.c, col, { kind: x.via[0].kind, what: x.via.length > 1 ? `${word} ${x.via.length} 家` : x.via[0].what });
   const capCard = (x, col) => `<div class="cx-wrap" data-col="${col}" data-kind="capital"><a class="cx-node${x.extended || x.c.extended ? ' ext' : ''}${x.loop ? ' loop' : ''}" href="#/chain/${x.c.id}" data-id="${x.c.id}" data-col="${col}" style="--c1:${industryOf(x.c).c1}">
-      ${avatar(x.c, 'md')}<span class="cx-t"><b>${esc(x.c.name)}${x.loop ? '<span class="lb" title="投資的錢以採購形式流回投資方">⟲ 資金回流</span>' : ''}</b><i>${esc(industryOf(x.c).name)}${extTag(x.c)}</i><em><span class="kd" style="--k:var(--k-capital)">${x.rel === 'parent' ? '股權' : '投資'}</span>${capNote(x)}</em>${x.detail ? `<span class="fl">${esc(x.detail)}</span>` : ''}${x.loop ? x.loop.map((b) => `<span class="fl back">↩ ${esc(b.buyer.name)} 向 ${esc(b.seller.name)} 採購${kindTag(b.kind)}${esc(b.what ?? '')}${b.detail ? `：${esc(b.detail)}` : ''}</span>`).join('') : ''}</span></a><span class="evs">${evidence(x, '投資來源')}${x.loop ? x.loop.map((b) => evidence(b, '採購來源')).join('') : ''}</span></div>`;
+      ${avatar(x.c, 'md')}<span class="cx-t"><b>${esc(x.c.name)}${x.loop ? '<span class="loop-tag" title="投資的錢以採購形式流回投資方">⟲ 資金回流</span>' : ''}</b><i>${esc(industryOf(x.c).name)}${extTag(x.c)}</i><em><span class="kd" style="--k:var(--k-capital)">${x.rel === 'parent' ? '股權' : '投資'}</span>${capNote(x)}</em>${x.detail ? `<span class="fl">${esc(x.detail)}</span>` : ''}${x.loop ? x.loop.map((b) => `<span class="fl back">↩ ${esc(b.buyer.name)} 向 ${esc(b.seller.name)} 採購${kindTag(b.kind)}${esc(b.what ?? '')}${b.detail ? `：${esc(b.detail)}` : ''}</span>`).join('') : ''}</span></a><span class="evs">${evidence(x, '投資來源')}${x.loop ? x.loop.map((b) => evidence(b, '採購來源')).join('') : ''}</span></div>`;
 
   // Group a column: upstream by what flows in, downstream by which revenue line it feeds
   const byKind = (list, fn) => KIND_KEYS.map((k) => [k, list.filter((x) => x.kind === k)]).filter(([, l]) => l.length)
@@ -175,9 +205,9 @@ export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon
       ${avatar(c, 'lg')}<span class="cx-t"><b>${esc(c.name)}</b><i>${esc(i.name)}</i></span></a>${revenueBar(c, { full: true })}</div></section>`;
   const supplyN = L1u.length + L1d.length;
   const capRow = (key, title, list) => (list.length ? `<div class="cx-crow" data-col="${key}"><h4>${title}<span>${list.length}</span></h4><div class="cx-cards">${list.map((x) => capCard(x, key)).join('')}</div></div>` : '');
-  const loops = [...own, ...hold].filter((x) => x.loop);
+  const loops = [...own.map((x) => [x.c, c, x]), ...hold.map((x) => [c, x.c, x])].filter(([, , x]) => x.loop);
   const capital = capN ? `<section class="cx-cap"><h3>${icon('building')}資金與股權<span>誰持有 ${esc(c.name)}、${esc(c.name)} 又投資了誰</span></h3>
-      ${loops.length ? `<p class="cx-loops" title="一方投資另一方，被投資方又向投資方採購：資金以營收形式回流"><b>⟲ 資金回流 ${loops.length} 組</b>${loops.map((x) => `<a href="#/chain/${x.c.id}">${esc(x.c.name)}</a>`).join('')}<span>投資的錢以採購形式流回投資方</span></p>` : ''}
+      ${loops.length ? `<div class="loops"><h4>⟲ 資金回流<span>${loops.length} 組</span><em>投資方把錢投進去，被投資方再向投資方採購，錢以營收形式流回</em></h4><div class="loop-grid">${loops.map(([a, b, x]) => loopCard(a, b, x)).join('')}</div></div>` : ''}
       ${capRow('ci', `投資 ${esc(c.name)} 的 · 母公司`, own)}${capRow('co', `${esc(c.name)} 投資的 · 旗下事業`, hold)}</section>` : '';
 
   const ps = peers(c);

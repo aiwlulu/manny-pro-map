@@ -18,12 +18,13 @@ revenue:
   note: AWS 為亞馬遜的營運分部，約佔亞馬遜營收 18%，未再拆分。
 relations:
   - { type: supplier, target: netflix, kind: cloud, note: 雲端算力, detail: Netflix核心營運使用EC2, source: "https://aws.amazon.com/ec2/customers/" }
-  - { type: supplier, target: anthropic, kind: cloud, note: 雲端算力, detail: 擴大至五吉瓦訓練與部署容量, year: 2026, source: "https://www.anthropic.com/news/anthropic-amazon-compute" }
+  - { type: supplier, target: anthropic, kind: cloud, value: { usd_bn: 100, prefix: 逾, basis: 承諾採購, period: 10 年, source: "https://www.anthropic.com/news/anthropic-amazon-compute" }, note: 雲端算力, detail: 擴大至五吉瓦訓練與部署容量, year: 2026, source: "https://www.anthropic.com/news/anthropic-amazon-compute" }
   - { type: supplier, target: airbnb, kind: cloud, note: 雲端算力, detail: 大部分雲端運算遷移至AWS, source: "https://aws.amazon.com/solutions/case-studies/airbnb-case-study/" }
   - { type: supplier, target: stripe, kind: cloud, note: 雲端算力, detail: 支付平台自2011年建於AWS, year: 2011, source: "https://aws.amazon.com/cn/solutions/case-studies/stripe/" }
   - { type: supplier, target: snowflake, kind: cloud, note: 雲端算力, detail: 承諾五年投入六十億美元算力, year: 2026, source: "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/" }
   - { type: supplier, target: coinbase, kind: cloud, note: 雲端算力, detail: 官方案例確認雲端遷移與擴容, year: 2022, source: "https://aws.amazon.com/solutions/case-studies/coinbase-migration-case-study/" }
   - { type: invested, target: databricks, year: 2021, detail: 參與H輪股權融資, source: "https://www.databricks.com/company/newsroom/press-releases/databricks-closes-series-h-with-additional-participation-from-strategic-partners" }
+  - { type: supplier, target: openai, kind: cloud, note: 雲端算力, detail: 7 年 380 億美元，2026 年再擴約 1,000 億美元, year: 2025, value: { usd_bn: 138, basis: 承諾採購, period: 7–8 年, source: "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html" }, source: "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure" }
 sources:
   - "pro:sfddnjkgm59b"
   - "pro:sg2sthu6aaak"
