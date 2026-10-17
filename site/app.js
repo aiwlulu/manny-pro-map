@@ -1,7 +1,7 @@
 import { icon } from './icons.js';
 import { createMap } from './map.js';
 import { createLandscape } from './landscape.js';
-import { buildChain, miniChain, renderExplorer, revenueBar, segmentTrail } from './chain.js';
+import { buildChain, miniChain, renderExplorer, renderLoops, revenueBar, segmentTrail } from './chain.js';
 
 const KIND = {
   pro: { label: '曼報 Pro', short: 'Pro', ic: 'file' },
@@ -333,10 +333,10 @@ function showPerson(p) {
 }
 function showSource(s) {
   const list = bySrc.get(s.id) ?? [];
-  openPanel(`<header class="ph-head" style="--g:linear-gradient(120deg,var(--red-a),var(--blue-b))"><span class="av lg">${icon(KIND[s.kind].ic)}</span>
-      <div><span class="ind">${KIND[s.kind].label}${s.column ? ` · ${esc(s.column)}` : ''}</span><h2 class="t">${esc(s.title)}</h2></div></header>
-    <p class="meta">${s.date}</p>
-    <div class="links"><a class="primary" href="${esc(s.url)}" target="_blank" rel="noopener">到曼報閱讀${icon('external')}</a></div>
+  // Articles: small icon beside the kind line, title gets the full width, one clear call to action
+  openPanel(`<header class="ph-head art" style="--g:linear-gradient(120deg,var(--red-a),var(--blue-b))">
+      <span class="ind"><span class="sk">${icon(KIND[s.kind].ic)}</span>${KIND[s.kind].label}${s.column ? ` · ${esc(s.column)}` : ''} · <time>${s.date}</time></span><h2 class="t">${esc(s.title)}</h2></header>
+    <a class="read-cta" href="${esc(s.url)}" target="_blank" rel="noopener">到曼報閱讀${icon('external')}</a>
     <h3>${icon('building')}這篇談到的公司<span class="c">${list.length}</span></h3><div class="rels">${list.map((c) => `<a href="#/c/${c.id}">${avatar(c, 'xs')}${esc(c.name)}</a>`).join('')}</div>`);
   if (!['chain', 'map'].includes(curView)) setView(mapView);
   views.setFocus({ match: new Set(list.map((c) => c.id)) });
@@ -366,13 +366,24 @@ function openExplorer(c) {
   if (!['chain', 'map'].includes(curView)) setView(mapView);
   views.setFocus({ cur: c.id, rel: new Set([...chain.up(c.id), ...chain.down(c.id), ...chain.owners(c.id), ...chain.holds(c.id)].map((x) => x.c.id)) });
 }
+function openLoops() {
+  dismissCoach();
+  cxCleanup?.(); cxCleanup = null;
+  const el = $('#cx');
+  el.hidden = false;
+  document.body.classList.add('cx-open');
+  renderLoops(el, chain, { avatar, icon, industryOf: (x) => ind.get(x.industry) ?? industries.at(-1) });
+  el.scrollTop = 0;
+  if (!['chain', 'map'].includes(curView)) setView(mapView);
+  views.setFocus({ match: new Set(chain.cycles().flatMap((cy) => cy.ids)) });
+}
 function closeExplorer() {
   if ($('#cx').hidden) return;
   cxCleanup?.(); cxCleanup = null;
   $('#cx').hidden = true;
   document.body.classList.remove('cx-open');
 }
-$('#cx').addEventListener('click', (e) => { if (e.target.closest('.cx-close')) go(`#/c/${location.hash.split('/')[2]}`); });
+$('#cx').addEventListener('click', (e) => { if (e.target.closest('.cx-close')) go(location.hash.startsWith('#/loops') ? '' : `#/c/${location.hash.split('/')[2]}`); });
 
 /* ---------- Search ---------- */
 const index = [];
@@ -410,7 +421,7 @@ $('#results').addEventListener('click', (e) => { const n = e.target.closest('but
 function pick(h) { $('#results').hidden = true; q.blur(); go(h.go); }
 document.addEventListener('keydown', (e) => {
   if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); q.focus(); }
-  if (e.key === 'Escape' && !$('#cx').hidden) return go(`#/c/${location.hash.split('/')[2]}`);
+  if (e.key === 'Escape' && !$('#cx').hidden) return go(location.hash.startsWith('#/loops') ? '' : `#/c/${location.hash.split('/')[2]}`);
   if (e.key === 'Escape' && !$('#panel').hidden && document.activeElement !== q) $('#scrim').onclick();
 });
 document.addEventListener('click', (e) => { if (!e.target.closest('.search')) $('#results').hidden = true; });
@@ -445,11 +456,12 @@ $('.wordmark').addEventListener('click', (e) => { e.preventDefault(); mapView = 
 if (location.hash === '#/' || location.hash === '#') history.replaceState(null, '', location.pathname + location.search);
 function route() {
   const [, a, b] = location.hash.split('/');
-  if (a !== 'chain') closeExplorer();
+  if (a !== 'chain' && a !== 'loops') closeExplorer();
   if (a === 'c' && cos.has(b)) return showCompany(cos.get(b));
   if (a === 'p' && people.has(b)) return showPerson(people.get(b));
   if (a === 's' && src.has(decodeURIComponent(b ?? ''))) return showSource(src.get(decodeURIComponent(b)));
   if (a === 'chain' && cos.has(b)) return openExplorer(cos.get(b));
+  if (a === 'loops') return openLoops();
   const hadPanel = !$('#panel').hidden;
   closePanel();
   views.setFocus(null);

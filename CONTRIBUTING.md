@@ -62,6 +62,7 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
 | `kind` | ✓ | 流動的是什麼：`hardware` 硬體（晶片、設備、零組件、整機）、`software` 軟體與 AI（授權、模型、引擎）、`cloud` 雲端算力、`service` 服務與數據（支付、數據、網路、物流、發射）、`content` 內容授權 |
 | `segment` | | 這筆生意屬於**供應方**哪個營收區塊，填供應方 `revenue.segments` 的 id |
 | `share` | | 供應方財報**具名揭露**的客戶營收佔比：`{ pct: 62, fy: FY2024, source: "https://…" }`，沒具名揭露就不要填 |
+| `value` | | 公開的採購金額：`{ usd_bn: 250, basis: 承諾採購, period: 8 年, prefix: 逾, source: "https://…" }`；`basis` 寫明是承諾採購、合約總額或已認列營收，只填官方或主流媒體公開的數字 |
 
 ### 營收結構 `revenue`
 
@@ -87,7 +88,9 @@ revenue:
 
 `amount`、`stake` 只填公開報導過的數字。投資、母公司（`parent`）會畫在產業鏈的「資金與股權」區。
 
-「A 投資 B，B 又向 A（或 A 旗下公司）採購」會自動標成**資金回流**，不需要另外填。
+投資可加 `usd_bn`（數字，單位十億美元）讓資金循環圖畫出比例。
+
+**資金循環**會自動偵測：2–3 家公司之間，錢經過投資與採購（只算硬體與雲端算力）繞一圈回到原點，例如 NVIDIA 投資 OpenAI、OpenAI 向 Oracle 租算力、Oracle 向 NVIDIA 買 GPU。不需要另外填，總覽在 `#/loops`。
 
 ### 延伸公司 `extended`
 
