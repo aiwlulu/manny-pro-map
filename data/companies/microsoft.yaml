@@ -35,6 +35,7 @@ relations:
   - { type: invested, target: adept, year: 2023, detail: 參與B輪募資, source: "https://techcrunch.com/2023/03/15/adept-a-startup-training-ai-to-use-existing-software-and-apis-raises-350m/" }
   - { type: invested, target: openai, amount: 130 億美元, stake: 約 27%, year: 2019, detail: 2025 年重組後持股約 27%；累計承諾 130 億、已撥 119 億美元, source: "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm" }
   - { type: invested, target: anthropic, amount: 至多 50 億美元, year: 2025, detail: 三方合作，Anthropic 承諾採購 300 億美元 Azure 算力, source: "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/" }
+  - { type: supplier, target: anthropic, kind: cloud, segment: intelligent-cloud, note: 雲端算力, detail: 承諾採購 300 億美元 Azure 算力, year: 2025, source: "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships" }
 sources:
   - "pro:x29tt82u4h4q"
   - "propod:cmtj74mw500lp01y46usd2blj"

@@ -27,5 +27,7 @@ revenue:
     - { id: other, name: 其他, share: 2 }
 relations:
   - { type: supplier, target: tsmc, kind: hardware, segment: euv, note: 曝光機, detail: 官方確認交付極紫外光曝光機, year: 2010, source: "https://www.asml.com/en/news/press-releases/2010/tsmc-to-take-delivery-of-an-asml-euv-lithography-system" }
+  - { type: supplier, target: sk-hynix, kind: hardware, segment: euv, note: 曝光機, detail: "已導入 EXE:5200B 設備", year: 2025, source: "https://news.skhynix.com/en/sk-hynix-introduces-industrys-first-commercial-high-na-euv/" }
+  - { type: supplier, target: samsung-electronics, kind: hardware, segment: euv, note: 曝光機, detail: EUV 設備及高數值孔徑合作, year: 2026, source: "https://investor.asml.com/news-releases/news-release-details/samsung-electronics-and-asml-expand-strategic-collaboration-next-generation-semiconductor-manufacturing" }
 sources:
   - "podcast:2025-12-18-sp10"

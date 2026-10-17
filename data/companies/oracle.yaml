@@ -1,0 +1,29 @@
+name: Oracle
+zh: 甲骨文
+extended: true
+industry: software
+segment: infra
+summary: 企業資料庫與應用軟體公司，近年以甲骨文雲端基礎設施（OCI）為 AI 公司提供大規模算力。
+founded: 1977
+hq: 奧斯汀
+logo: { file: Oracle logo.svg, license: Public domain, author: Oracle Corporation }
+links:
+  website: "https://www.oracle.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Oracle_Corporation"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/甲骨文公司"
+revenue:
+  fy: FY2026
+  total: 67
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+  segments:
+    - { id: cloud, name: 雲端服務, share: 50 }
+    - { id: software, name: 軟體授權與支援, share: 36 }
+    - { id: hardware, name: 硬體, share: 5 }
+    - { id: services, name: 顧問與服務, share: 9 }
+relations:
+  - { type: supplier, target: openai, kind: cloud, segment: cloud, note: 雲端算力, detail: Stargate 新增 4.5GW 容量, year: 2025, source: "https://openai.com/index/stargate-advances-with-partnership-with-oracle/" }
+  - { type: supplier, target: amd, kind: cloud, segment: cloud, note: 雲端算力, detail: 官方列為已簽約 OCI 大客戶, year: 2026, source: "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx" }
+  - { type: supplier, target: meta, kind: cloud, segment: cloud, note: 雲端算力, detail: 官方列為已簽約 OCI 大客戶, year: 2026, source: "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx" }
+  - { type: supplier, target: nvidia, kind: cloud, segment: cloud, note: 雲端算力, detail: 官方列為已簽約 OCI 大客戶, year: 2026, source: "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx" }
+  - { type: supplier, target: xai, kind: cloud, segment: cloud, note: 雲端算力, detail: 官方列為已簽約 OCI 大客戶, year: 2026, source: "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx" }

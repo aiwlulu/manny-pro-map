@@ -32,5 +32,7 @@ relations:
   - { type: supplier, target: tesla, kind: hardware, segment: embedded, note: 車載運算晶片, detail: 官方列特斯拉為車載技術客戶, source: "https://www.amd.com/en/solutions/automotive/in-vehicle-experience.html" }
   - { type: invested, target: xai, year: 2024, detail: 參與C輪股權融資, source: "https://x.ai/news/series-c" }
   - { type: invested, target: hugging-face, year: 2023, detail: D輪參投, source: "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/" }
+  - { type: supplier, target: oracle, kind: hardware, segment: data-center, note: AI 晶片, detail: MI355X 已供 OCI 使用, year: 2025, source: "https://www.oracle.com/news/announcement/ai-world-oracle-and-amd-expand-partnership-to-help-customers-achieve-next-generation-ai-scale-2025-10-14/" }
+  - { type: supplier, target: openai, kind: hardware, segment: data-center, note: AI 晶片, detail: 6GW 多代 GPU 供應協議, year: 2025, source: "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus" }
 sources:
   - "pro:hxdkrud95vd8"

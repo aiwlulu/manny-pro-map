@@ -1,0 +1,29 @@
+name: Samsung Electronics
+zh: 三星電子
+extended: true
+industry: semis
+segment: chips
+summary: 南韓電子集團，生產手機、家電、記憶體與晶圓代工，旗下三星顯示供應 OLED 面板。
+founded: 1969
+hq: 水原
+logo: { file: Samsung wordmark.svg, license: Public domain, author: Samsung }
+links:
+  website: "https://www.samsung.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Samsung_Electronics"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/三星電子"
+revenue:
+  fy: FY2025
+  total: 330000
+  currency: KRW
+  source: "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_all.pdf"
+  note: 以部門營收合計計算佔比，未扣部門間交易。
+  segments:
+    - { id: dx, name: 手機與家電, share: 52 }
+    - { id: ds, name: 半導體（記憶體與代工）, share: 36 }
+    - { id: display, name: 顯示面板, share: 8 }
+    - { id: harman, name: 車用電子與音響, share: 4 }
+relations:
+  - { type: supplier, target: nvidia, kind: hardware, segment: ds, note: HBM 記憶體, detail: 量產供應 Rubin 所用 HBM4, year: 2026, source: "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_conference_eng.pdf" }
+  - { type: supplier, target: apple, kind: hardware, segment: display, note: OLED面板, detail: 旗下三星顯示供應 iPhone 面板, year: 2018, source: "https://www.theverge.com/2018/6/28/17515208/apple-oled-displays-iphone-samsung-lg" }
+  - { type: supplier, target: amd, kind: hardware, segment: ds, note: HBM 記憶體, detail: MI350 系列主要 HBM3E 供應商, year: 2026, source: "https://news.samsung.com/global/samsung-and-amd-expand-strategic-collaboration-on-next-generation-ai-memory-solutions" }
+  - { type: supplier, target: tesla, kind: hardware, segment: ds, note: 晶圓代工, detail: 簽約製造次世代 AI6 晶片, year: 2025, source: "https://www.cnbc.com/2025/07/28/samsung-electronics-new-chip-supply-contract.html" }

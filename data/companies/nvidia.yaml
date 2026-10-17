@@ -44,6 +44,7 @@ relations:
   - { type: invested, target: openai, amount: 300 億美元, year: 2026, detail: "參與 2026 年 1,100 億美元融資", source: "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html" }
   - { type: invested, target: anthropic, amount: 至多 100 億美元, year: 2025, detail: 三方合作，共同優化模型與輝達架構, source: "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/" }
   - { type: invested, target: coreweave, stake: 約 7%, year: 2023, detail: 上市前即入股；2026 年再以每股 87.2 美元加碼 20 億美元, source: "https://investors.coreweave.com/news/news-details/2026/NVIDIA-and-CoreWeave-Strengthen-Collaboration-to-Accelerate-Buildout-of-AI-Factories/default.aspx" }
+  - { type: supplier, target: oracle, kind: hardware, segment: data-center, note: GPU, detail: 供應 OCI 的 Blackwell 系統, year: 2025, source: "https://www.oracle.com/news/announcement/oracle-and-nvidia-collaborate-to-help-enterprises-accelerate-agentic-ai-inference-2025-03-18/" }
 sources:
   - "pro:dwcrddrmu86k"
   - "pro:x29tt82u4h4q"

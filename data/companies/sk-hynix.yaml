@@ -1,0 +1,24 @@
+name: SK hynix
+zh: SK 海力士
+extended: true
+industry: semis
+segment: chips
+summary: 南韓記憶體大廠，生產 DRAM、NAND 快閃記憶體，是 AI 晶片所用高頻寬記憶體（HBM）的主要供應商。
+founded: 1983
+hq: 利川
+logo: { file: SK Hynix.svg, license: Public domain, author: SK Hynix Inc. }
+links:
+  website: "https://www.skhynix.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/SK_Hynix"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/SK海力士"
+revenue:
+  fy: FY2025
+  total: 97000
+  currency: KRW
+  source: "https://www.sec.gov/Archives/edgar/data/2120882/000119312526280172/d32785df1.htm"
+  segments:
+    - { id: dram, name: DRAM（含 HBM）, share: 77 }
+    - { id: nand, name: NAND 快閃記憶體, share: 21 }
+    - { id: other, name: 其他, share: 2 }
+relations:
+  - { type: supplier, target: nvidia, kind: hardware, segment: dram, note: HBM 記憶體, detail: 供應 H100 所用 HBM3, year: 2022, source: "https://news.skhynix.com/en/sk-hynix-to-supply-industrys-first-hbm3-dram-to-nvidia/" }

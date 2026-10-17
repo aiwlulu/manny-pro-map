@@ -1,0 +1,25 @@
+name: SoftBank Group
+zh: 軟銀集團
+extended: true
+industry: finance
+segment: capital
+summary: 日本科技投資控股集團，經營願景基金與電信事業，持有 Arm 等半導體公司，並大舉投資 OpenAI。
+founded: 1981
+hq: 東京
+logo: { file: SoftBank Group logo.svg, license: Public domain, author: SoftBank Group }
+links:
+  website: "https://group.softbank/en/"
+  wikipedia: "https://en.wikipedia.org/wiki/SoftBank_Group"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/軟銀集團"
+revenue:
+  fy: FY2025
+  total: 7800
+  currency: JPY
+  source: "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/annual_reports/financial-report_fy2026_en.pdf"
+  note: 投資收益不計入營收；財年為 2025 年 4 月至 2026 年 3 月。
+  segments:
+    - { id: telecom, name: 電信與網路服務, share: 90 }
+    - { id: ai-computing, name: AI 運算（Arm 等）, share: 8 }
+    - { id: other, name: 其他, share: 2 }
+relations:
+  - { type: invested, target: openai, amount: 累計 646 億美元, stake: 約 13%, year: 2026, detail: 2026 年增資已全數完成, source: "https://group.softbank/en/news/press/20261001" }

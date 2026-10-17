@@ -29,7 +29,7 @@ people:                         # 選填，創辦人、執行長等關鍵人物�
   - { name: John Collison, role: 共同創辦人暨總裁 }
 relations:                      # 選填，target 是另一家公司的檔名
   - { type: acquired, target: openrouter, note: 2026 年 }
-sources:                        # 必填，至少一筆，id 見 data/sources.yaml
+sources:                        # 必填，至少一筆，id 見 data/sources.yaml（延伸公司除外，見下方）
   - pro:jkvgret4ww4d
 ```
 
@@ -86,6 +86,22 @@ revenue:
 ```
 
 `amount`、`stake` 只填公開報導過的數字。投資、母公司（`parent`）會畫在產業鏈的「資金與股權」區。
+
+「A 投資 B，B 又向 A（或 A 旗下公司）採購」會自動標成**資金回流**，不需要另外填。
+
+### 延伸公司 `extended`
+
+曼報沒談過、但對上下游或投資關係很重要的公司（例如 Oracle、SoftBank），可以加 `extended: true`。延伸公司不填 `sources`，但至少要有一條附來源的上下游或投資關係；它只出現在產業鏈、搜尋與公司卡，以虛線樣式標示，不會放進產業地圖與氣泡圖，也不算在公司數裡。
+
+```yaml
+name: Oracle
+extended: true
+industry: software
+segment: infra
+summary: …
+relations:
+  - { type: supplier, target: openai, kind: cloud, note: 雲端算力, detail: …, year: 2025, source: "https://…" }
+```
 
 ## Logo
 

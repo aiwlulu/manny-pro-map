@@ -120,7 +120,8 @@ for (const c of cos.values())
 for (const p of people.values()) p.roles.sort((a, b) => b.c.proN - a.c.proN);
 for (const p of people.values()) p.mentions = (data.peopleSources?.[p.name] ?? []).map((id) => src.get(id)).filter(Boolean);
 
-const inCol = (c, id = col) => { const t = COLS.find((x) => x.id === id)?.test; return !t || c.src.some(t); };
+// Extended companies stay off the maps
+const inCol = (c, id = col) => { if (c.extended) return false; const t = COLS.find((x) => x.id === id)?.test; return !t || c.src.some(t); };
 const visible = (c) => inCol(c);
 const weight = (c) => 1 + c.proN * 2.2 + (c.src.length - c.proN) * 0.6;
 const countBy = (c) => KIND_ORDER.map((k) => [k, c.src.filter((s) => s.kind === k).length]).filter(([, n]) => n);
@@ -306,6 +307,7 @@ function showCompany(c) {
       <div><span class="ind">${esc(i.name)}${seg ? ` · ${esc(seg.name)}` : ''}</span><h2>${esc(c.name)}</h2>${c.zh && c.zh !== c.name ? `<p class="zhn">${esc(c.zh)}</p>` : ''}</div></header>
     ${meta ? `<p class="meta">${esc(meta)}</p>` : ''}
     <p class="sum">${esc(c.summary)}</p>
+    ${c.extended ? `<p class="ext-note">延伸公司：曼報尚未專文談過，為補足上下游與投資關係而列出，不在產業地圖中。</p>` : ''}
     ${links ? `<div class="links">${links}</div>` : ''}
     ${chain.has(c.id) ? chainCta(c) : ''}
     <dl class="pstats">${stats}</dl>
@@ -374,7 +376,7 @@ $('#cx').addEventListener('click', (e) => { if (e.target.closest('.cx-close')) g
 
 /* ---------- Search ---------- */
 const index = [];
-for (const c of cos.values()) index.push({ t: 'c', key: norm(`${c.name} ${c.zh ?? ''} ${(c.aliases ?? []).join(' ')}`), label: c.name, sub: c.zh ?? '', go: `#/c/${c.id}`, ids: [c.id] });
+for (const c of cos.values()) index.push({ t: 'c', key: norm(`${c.name} ${c.zh ?? ''} ${(c.aliases ?? []).join(' ')}`), label: c.name, sub: [c.zh, c.extended && '延伸'].filter(Boolean).join(' · '), go: `#/c/${c.id}`, ids: [c.id] });
 for (const p of people.values()) index.push({ t: 'p', key: norm(`${p.name} ${p.zh}`), label: `${p.name}${p.zh ? ` ${p.zh}` : ''}`, sub: p.roles.map((r) => r.c.name).join('、'), go: `#/p/${p.id}`, ids: p.roles.map((r) => r.c.id) });
 for (const s of data.sources) index.push({ t: 's', key: norm(s.title), label: s.title, sub: `${KIND[s.kind].short} · ${s.date}`, go: `#/s/${encodeURIComponent(s.id)}`, ids: (bySrc.get(s.id) ?? []).map((c) => c.id) });
 const T = { c: '公司', p: '人物', s: '文章' };
@@ -501,5 +503,5 @@ if (!store.get('pm-coach', false)) {
 function dismissCoach() { const el = $('#coach'); if (!el.hidden) { el.hidden = true; store.set('pm-coach', true); } }
 {
 }
-$('#n-co').textContent = cos.size;
+$('#n-co').textContent = [...cos.values()].filter((c) => !c.extended).length;
 route();

@@ -1,0 +1,24 @@
+name: Micron Technology
+zh: 美光
+extended: true
+industry: semis
+segment: chips
+summary: 美國記憶體大廠，生產 DRAM、NAND 快閃記憶體與固態硬碟，並供應 AI 加速器所用的 HBM。
+founded: 1978
+hq: 博伊西
+logo: { file: Micron Technology logo.svg, license: Public domain, author: Micron Technology }
+links:
+  website: "https://www.micron.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Micron_Technology"
+  wikipedia_zh: "https://zh.wikipedia.org/zh-tw/美光科技"
+revenue:
+  fy: FY2026
+  total: 130
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm"
+  segments:
+    - { id: dram, name: DRAM（含 HBM）, share: 76 }
+    - { id: nand, name: NAND 快閃記憶體, share: 24 }
+    - { id: other, name: 其他, share: 0 }
+relations:
+  - { type: supplier, target: nvidia, kind: hardware, segment: dram, note: HBM 記憶體, detail: 供應 H200 所用 HBM3E, year: 2024, source: "https://micron.gcs-web.com/news-releases/news-release-details/micron-commences-volume-production-industry-leading-hbm3e" }
