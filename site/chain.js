@@ -233,8 +233,6 @@ export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon
   };
   const supCard = (x, col, sup) => card(x.c, col, { what: x.what, kind: x.kind, flow: flowNote(x, sup, { seg: col !== 'd1' || !c.revenue?.segments?.length }) + cross(x.c), ev: x });
   const hopCard = (x, col, word) => card(x.c, col, { kind: x.via[0].kind, what: x.via.length > 1 ? `${word} ${x.via.length} 家` : x.via[0].what });
-  const capCard = (x, col) => `<div class="cx-wrap" data-col="${col}" data-kind="capital"><a class="cx-node${x.extended || x.c.extended ? ' ext' : ''}${x.loop ? ' loop' : ''}" href="#/chain/${x.c.id}" data-id="${x.c.id}" data-col="${col}" style="--c1:${industryOf(x.c).c1}">
-      ${avatar(x.c, 'md')}<span class="cx-t"><b>${esc(x.c.name)}${x.loop ? '<span class="loop-tag" title="投資的錢經採購流回投資方，見上方資金循環圖">⟲ 資金循環</span>' : ''}</b><i>${esc(industryOf(x.c).name)}${extTag(x.c)}</i><em><span class="kd" style="--k:var(--k-capital)">${x.rel === 'parent' ? '股權' : '投資'}</span>${capNote(x)}</em>${x.detail ? `<span class="fl">${esc(x.detail)}</span>` : ''}</span></a>${evidence(x)}</div>`;
 
   // Group a column: upstream by what flows in, downstream by which revenue line it feeds
   const byKind = (list, fn) => KIND_KEYS.map((k) => [k, list.filter((x) => x.kind === k)]).filter(([, l]) => l.length)
@@ -256,11 +254,30 @@ export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon
   const center = `<section class="cx-col" data-col="mid"><h3>本公司</h3><div class="cx-wrap" data-col="mid"><a class="cx-node center" href="#/c/${c.id}" data-id="${c.id}" data-col="mid" style="--c1:${i.c1}">
       ${avatar(c, 'lg')}<span class="cx-t"><b>${esc(c.name)}</b><i>${esc(i.name)}</i></span></a>${revenueBar(c, { full: true })}</div></section>`;
   const supplyN = L1u.length + L1d.length;
-  const capRow = (key, title, list) => (list.length ? `<div class="cx-crow" data-col="${key}"><h4>${title}<span>${list.length}</span></h4><div class="cx-cards">${list.map((x) => capCard(x, key)).join('')}</div></div>` : '');
+  // Capital cards: ownership (parent / subsidiary) vs minority investment, each with its own icon and colour
   const cys = chain.cycles(c.id).sort((a, b) => a.ids.length - b.ids.length);
+  const cyPairs = new Set(cys.flatMap((cy) => cy.edges.filter((e) => e.t === 'inv').map((e) => `${chain.top(e.from.id)}>${e.to}`)));
+  const ring = (x) => {
+    const v = x.rel === 'parent' ? 100 : parseFloat(String(x.stake ?? '').replace(/[^\d.]/g, ''));
+    return v > 0 && v <= 100 ? `<span class="stake" style="--p:${v}" title="持股 ${v}%"><span>${v === 100 ? '100' : Math.round(v)}<small>%</small></span></span>` : '';
+  };
+  const REL = { parent: ['own', 'network', '母公司'], sub: ['own', 'network', '旗下'], inv: ['inv', 'coins', '投資'] };
+  const capCard = (x, col, kind) => {
+    const [cls, ic, word] = REL[kind], loop = cyPairs.has(col === 'ci' ? `${chain.top(x.c.id)}>${chain.top(c.id)}` : `${chain.top(c.id)}>${chain.top(x.c.id)}`);
+    return `<div class="cx-wrap" data-col="${col}" data-kind="capital"><a class="cx-node cap ${cls}${x.c.extended ? ' ext' : ''}${loop ? ' loop' : ''}" href="#/chain/${x.c.id}" data-id="${x.c.id}" data-col="${col}" style="--c1:${industryOf(x.c).c1}">
+      ${avatar(x.c, 'md')}<span class="cx-t"><b>${esc(x.c.name)}</b><i>${esc(industryOf(x.c).name)}${extTag(x.c)}</i>
+      <span class="cap-tags"><span class="rt ${cls}">${icon(ic)}${word}</span>${loop ? `<span class="rt loop" title="這筆投資在資金循環裡，見上方循環圖">${icon('repeat')}資金循環</span>` : ''}</span>
+      ${[x.amount, x.year && `${x.year}`].filter(Boolean).length ? `<em>${[x.amount, x.year].filter(Boolean).map(esc).join(' · ')}</em>` : ''}${x.detail && x.rel !== 'parent' ? `<span class="fl">${esc(x.detail)}</span>` : ''}</span>${ring(x)}</a>${evidence(x)}</div>`;
+  };
+  const capRow = (key, kind, ic, title, hint, list) => (list.length ? `<div class="cx-crow ${REL[kind][0]}" data-col="${key}"><h4>${icon(ic)}${title}<span>${list.length}</span><em>${hint}</em></h4><div class="cx-cards">${list.map((x) => capCard(x, key, kind)).join('')}</div></div>` : '');
+  const capLegend = `<div class="cap-key"><span class="rt own">${icon('network')}母公司／旗下</span>控股、合併報表<span class="rt inv">${icon('coins')}投資</span>少數股權<span class="rt loop">${icon('repeat')}資金循環</span>錢經採購流回投資方<span class="stake sm" style="--p:30"></span>持股比例</div>`;
   const capital = capN ? `<section class="cx-cap"><h3>${icon('building')}資金與股權<span>誰持有 ${esc(c.name)}、${esc(c.name)} 又投資了誰</span></h3>
-      ${cys.length ? `<div class="loops"><h4>⟲ 資金循環<span>${cys.length} 組</span><em>箭頭是錢的流向：投資進去的錢，經過採購晶片或算力又流回投資方</em><a class="cy-all" href="#/loops">看全部資金循環 →</a></h4><div class="loop-grid">${cys.map((cy) => cycleFigure(cy, { focus: chain.top(c.id) })).join('')}</div></div>` : ''}
-      ${capRow('ci', `投資 ${esc(c.name)} 的 · 母公司`, own)}${capRow('co', `${esc(c.name)} 投資的 · 旗下事業`, hold)}</section>` : '';
+      ${capLegend}
+      ${cys.length ? `<div class="loops"><h4>${icon('repeat')}資金循環<span>${cys.length} 組</span><em>箭頭是錢的流向：投資進去的錢，經過採購晶片或算力又流回投資方</em><a class="cy-all" href="#/loops">看全部資金循環 →</a></h4><div class="loop-grid">${cys.map((cy) => cycleFigure(cy, { focus: chain.top(c.id) })).join('')}</div></div>` : ''}
+      ${capRow('ci', 'parent', 'network', '母公司', `${esc(c.name)} 是它的旗下事業`, own.filter((x) => x.rel === 'parent'))}
+      ${capRow('ci', 'inv', 'coins', `投資 ${esc(c.name)} 的公司`, '少數股權投資', own.filter((x) => x.rel !== 'parent'))}
+      ${capRow('co', 'inv', 'coins', `${esc(c.name)} 投資的公司`, '少數股權投資', hold.filter((x) => x.rel !== 'parent'))}
+      ${capRow('co', 'sub', 'network', '旗下事業', `由 ${esc(c.name)} 控股`, hold.filter((x) => x.rel === 'parent'))}</section>` : '';
 
   const ps = peers(c);
   root.innerHTML = `
@@ -280,7 +297,7 @@ export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon
       </div>` : c.revenue ? `<div class="cx-solo">${center}</div>` : ''}
       ${capital}
       ${ps.length ? `<div class="cx-peers"><h3>同區段的同業</h3><div>${ps.map((p) => `<a href="#/chain/${p.id}">${avatar(p, 'xs')}${esc(p.name)}</a>`).join('')}</div></div>` : ''}
-      <p class="cx-note">上下游為讀者依公開資料（公司新聞稿、財報、主流媒體）整理的主要供應關係，只列地圖內的公司，每條直接關係附來源。連線顏色代表流動的是硬體、軟體、雲端算力、服務或內容；下游依本公司的營收區塊分組；營收佔比取自最近一個完整財年的年報，四捨五入成約略比例，用來看結構而非精確數字。「佔○○營收」只在供應方財報具名揭露時顯示。「⟲ 資金回流」代表一方投資另一方、被投資方又向投資方採購；虛線框的「延伸」公司為補足關係而列出，曼報尚未專文談過。打開「顯示間接關係」可看第二層，僅供探索。</p>
+      <p class="cx-note">上下游為讀者依公開資料（公司新聞稿、財報、主流媒體）整理的主要供應關係，只列地圖內的公司，每條直接關係附來源。連線顏色代表流動的是硬體、軟體、雲端算力、服務或內容；下游依本公司的營收區塊分組；營收佔比取自最近一個完整財年的年報，四捨五入成約略比例，用來看結構而非精確數字。「佔○○營收」只在供應方財報具名揭露時顯示。資金區以圖示區分控股（母公司／旗下）、少數股權投資與資金循環，圓環為持股比例；虛線框的「延伸」公司為補足關係而列出，曼報尚未專文談過。打開「顯示間接關係」可看第二層，僅供探索。</p>
     </div>`;
 
   // Edges: [fromId, fromCol, toId, toCol, kind]

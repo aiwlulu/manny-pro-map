@@ -1156,3 +1156,37 @@ body.open .legend-n { display: none; }
   background: var(--ink); color: var(--paper); transition: transform .2s var(--spring), box-shadow .2s; }
 .read-cta:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
 .read-cta:active { transform: scale(.98); }
+
+/* Capital: ownership vs investment vs money cycle */
+:root { --own: #4a4a52; }
+:root[data-theme="dark"] { --own: #c9c7d1; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --own: #c9c7d1; } }
+.rt { display: inline-flex; align-items: center; gap: 4px; padding: 1px 8px 1px 6px; border-radius: 999px; font-size: 11px; font-weight: 700; line-height: 1.6; white-space: nowrap; }
+.rt .i { width: 12px; height: 12px; }
+.rt.own { color: var(--own); background: color-mix(in srgb, var(--own) 14%, transparent); }
+.rt.inv { color: color-mix(in srgb, var(--k-capital) 80%, var(--ink)); background: color-mix(in srgb, var(--k-capital) 16%, transparent); }
+.rt.loop { color: var(--paper); background: var(--k-capital); }
+.cap-tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 3px 0 2px; }
+.cx-node.cap { align-items: flex-start; }
+.cx-node.cap .cx-t { flex: 1; }
+.cx-node.cap em { margin-top: 2px; font-weight: 600; }
+.cx-node.cap.own { border-color: color-mix(in srgb, var(--own) 45%, var(--line)); }
+.cx-wrap[data-kind="capital"] .cx-node.own::before { background: var(--own); }
+.cx-node.cap.loop { border-color: var(--k-capital); box-shadow: 0 0 0 3px color-mix(in srgb, var(--k-capital) 18%, transparent), var(--shadow-sm); }
+/* Stake ring: a donut filled to the ownership percentage */
+.stake { --k: var(--k-capital); flex: none; position: relative; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+  background: conic-gradient(var(--k) calc(var(--p) * 1%), color-mix(in srgb, var(--k) 14%, var(--pale)) 0); }
+.stake::before { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: var(--surface); }
+.stake > span { position: relative; font: 800 11.5px var(--latin); color: var(--ink); }
+.stake small { font-size: 8px; font-weight: 700; }
+.cx-node.own .stake { --k: var(--own); }
+.stake.sm { width: 16px; height: 16px; }
+.stake.sm::before { inset: 3px; }
+.cap-key { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: -6px 0 22px; font-size: 12px; color: var(--muted); }
+.cap-key .rt { margin-left: 8px; }
+.cap-key .rt:first-child { margin-left: 0; }
+.cap-key .stake { margin-left: 10px; }
+.cx-crow h4 .i { width: 15px; height: 15px; }
+.cx-crow h4 em { font-style: normal; font-weight: 400; letter-spacing: 0; color: var(--muted); margin-left: 4px; }
+.cx-crow.own h4 { color: var(--own); }
+.loops > h4 .i { width: 16px; height: 16px; align-self: center; }
