@@ -12,6 +12,6 @@ people:
   - { name: Keenan Wyrobek, role: 創辦人 }
   - { name: William Hetzler, role: 創辦人 }
 relations:
-  - { type: supplier, target: walmart, note: 無人機配送, detail: 2026年官方確認持續配送合作, year: 2026, source: "https://corporate.walmart.com/news/2026/05/29/walmart-celebrates-1-million-drone-deliveries-marking-a-major-milestone-in-customer-convenience" }
+  - { type: supplier, target: walmart, kind: service, note: 無人機配送, detail: 2026年官方確認持續配送合作, year: 2026, source: "https://corporate.walmart.com/news/2026/05/29/walmart-celebrates-1-million-drone-deliveries-marking-a-major-milestone-in-customer-convenience" }
 sources:
   - "podcast:2025-06-09-ep102"

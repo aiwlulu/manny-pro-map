@@ -14,14 +14,36 @@ people:
   - { name: Jensen Huang, zh: 黃仁勳, role: 執行長, photo: { file: Jen-Hsun Huang 2025.jpg, license: Public domain, author: The White House } }
   - { name: Chris Malachowsky, role: 創辦人, photo: { file: "Chris Malachowsky (54986972670).jpg", license: CC BY 4.0, author: Maryland GovPics } }
   - { name: Curtis Priem, role: 創辦人 }
+revenue:
+  fy: FY2026
+  total: 220
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+  note: 依終端市場揭露；報告分部為運算與網通、繪圖兩大類。
+  segments:
+    - { id: data-center, name: 資料中心, share: 90 }
+    - { id: gaming, name: 遊戲, share: 7 }
+    - { id: other, name: 其他, share: 3 }
 relations:
-  - { type: supplier, target: openai, note: GPU, detail: 宣布十吉瓦系統部署意向, year: 2025, source: "https://openai.com/index/openai-nvidia-systems-partnership/" }
-  - { type: supplier, target: microsoft, note: GPU, detail: Azure採用輝達新舊世代GPU, year: 2024, source: "https://nvidianews.nvidia.com/news/microsoft-nvidia-generative-ai-enterprises" }
-  - { type: supplier, target: coreweave, note: GPU, detail: 率先部署輝達GB300系統, year: 2025, source: "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Becomes-First-Hyperscaler-to-Deploy-NVIDIA-GB300-NVL72-Platform/default.aspx" }
-  - { type: supplier, target: aws, note: GPU, detail: AWS採用輝達Blackwell平台, year: 2024, source: "https://nvidianews.nvidia.com/news/aws-nvidia-generative-ai-innovation" }
-  - { type: supplier, target: meta, note: GPU, detail: 2026年擴大多年期算力合作, year: 2026, source: "https://about.fb.com/news/2026/02/meta-nvidia-announce-long-term-infrastructure-partnership/" }
-  - { type: supplier, target: nintendo, note: 遊戲機晶片, detail: Switch2採輝達客製處理器, year: 2025, source: "https://www.nintendo.com/gaming-systems/switch-2/tech-specs/" }
+  - { type: supplier, target: openai, kind: hardware, segment: data-center, note: GPU, detail: 宣布十吉瓦系統部署意向, year: 2025, source: "https://openai.com/index/openai-nvidia-systems-partnership/" }
+  - { type: supplier, target: microsoft, kind: hardware, segment: data-center, note: GPU, detail: Azure採用輝達新舊世代GPU, year: 2024, source: "https://nvidianews.nvidia.com/news/microsoft-nvidia-generative-ai-enterprises" }
+  - { type: supplier, target: coreweave, kind: hardware, segment: data-center, note: GPU, detail: 率先部署輝達GB300系統, year: 2025, source: "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Becomes-First-Hyperscaler-to-Deploy-NVIDIA-GB300-NVL72-Platform/default.aspx" }
+  - { type: supplier, target: aws, kind: hardware, segment: data-center, note: GPU, detail: AWS採用輝達Blackwell平台, year: 2024, source: "https://nvidianews.nvidia.com/news/aws-nvidia-generative-ai-innovation" }
+  - { type: supplier, target: meta, kind: hardware, segment: data-center, note: GPU, detail: 2026年擴大多年期算力合作, year: 2026, source: "https://about.fb.com/news/2026/02/meta-nvidia-announce-long-term-infrastructure-partnership/" }
+  - { type: supplier, target: nintendo, kind: hardware, segment: gaming, note: 遊戲機晶片, detail: Switch2採輝達客製處理器, year: 2025, source: "https://www.nintendo.com/gaming-systems/switch-2/tech-specs/" }
   - { type: competitor, target: amd }
+  - { type: invested, target: xai, year: 2024, detail: 參與C輪股權融資, source: "https://x.ai/news/series-c" }
+  - { type: invested, target: hugging-face, year: 2023, detail: D輪參投, source: "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/" }
+  - { type: invested, target: inflection-ai, year: 2023, detail: 共同領投, source: "https://techcrunch.com/2023/06/29/inflection-ai-lands-1-3b-investment-to-build-more-personal-ai/" }
+  - { type: invested, target: databricks, year: 2023, detail: 參與I輪股權融資, source: "https://www.prnewswire.com/news-releases/databricks-raises-series-i-investment-at-43b-valuation-301927440.html" }
+  - { type: invested, target: anysphere, year: 2025, detail: 參投程式編輯器D輪（該輪共 23 億美元）, source: "https://cursor.com/blog/series-d" }
+  - { type: invested, target: nebius, year: 2024, detail: 參與私募增資, source: "https://www.sec.gov/Archives/edgar/data/1513845/000110465925015480/tm257185d1_ex99-1.htm" }
+  - { type: invested, target: crusoe, year: 2024, detail: 參與D輪募資, source: "https://www.crusoe.ai/resources/newsroom/crusoe-closes-series-d-funding" }
+  - { type: invested, target: waabi, year: 2024, detail: 參與B輪募資, source: "https://waabi.ai/insights/waabi-series-b-announcement" }
+  - { type: invested, target: adept, year: 2023, detail: 參與B輪募資, source: "https://techcrunch.com/2023/03/15/adept-a-startup-training-ai-to-use-existing-software-and-apis-raises-350m/" }
+  - { type: invested, target: openai, amount: 300 億美元, year: 2026, detail: "參與 2026 年 1,100 億美元融資", source: "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html" }
+  - { type: invested, target: anthropic, amount: 至多 100 億美元, year: 2025, detail: 三方合作，共同優化模型與輝達架構, source: "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/" }
+  - { type: invested, target: coreweave, stake: 約 7%, year: 2023, detail: 上市前即入股；2026 年再以每股 87.2 美元加碼 20 億美元, source: "https://investors.coreweave.com/news/news-details/2026/NVIDIA-and-CoreWeave-Strengthen-Collaboration-to-Accelerate-Buildout-of-AI-Factories/default.aspx" }
 sources:
   - "pro:dwcrddrmu86k"
   - "pro:x29tt82u4h4q"

@@ -14,11 +14,23 @@ people:
   - { name: Jack Gifford, role: 創辦人, photo: { file: JackGifford.jpg, license: CC0, author: Wiki4me99 } }
   - { name: Jerry Sanders, role: 創辦人 }
   - { name: Edwin Turney, role: 創辦人 }
+revenue:
+  fy: FY2025
+  total: 35
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+  segments:
+    - { id: data-center, name: 資料中心, share: 48 }
+    - { id: client, name: 客戶端, share: 31 }
+    - { id: gaming, name: 遊戲, share: 11 }
+    - { id: embedded, name: 嵌入式, share: 10 }
 relations:
-  - { type: supplier, target: microsoft, note: CPU與GPU, detail: 2026年擴大Azure晶片部署, year: 2026, source: "https://ir.amd.com/news-events/press-releases/detail/1291/microsoft-to-deploy-next-gen-amd-instinct-and-amd-epyc-processors-as-the-companies-expand-their-long-term-strategic-partnership" }
-  - { type: supplier, target: aws, note: 伺服器CPU, detail: EC2執行個體採EPYC處理器, source: "https://www.amd.com/en/ecosystem/csp/aws.html" }
-  - { type: supplier, target: sony, note: 遊戲機晶片, detail: PS5Pro採AMD半客製晶片, year: 2024, source: "https://ir.amd.com/sec-filings/content/0000002488-24-000161/0000002488-24-000161.pdf" }
-  - { type: supplier, target: valve, note: 遊戲機晶片, detail: SteamDeck採AMD客製晶片, source: "https://www.steamdeck.com/en/hardware" }
-  - { type: supplier, target: tesla, note: 車載運算晶片, detail: 官方列特斯拉為車載技術客戶, source: "https://www.amd.com/en/solutions/automotive/in-vehicle-experience.html" }
+  - { type: supplier, target: microsoft, kind: hardware, segment: data-center, note: CPU與GPU, detail: 2026年擴大Azure晶片部署, year: 2026, source: "https://ir.amd.com/news-events/press-releases/detail/1291/microsoft-to-deploy-next-gen-amd-instinct-and-amd-epyc-processors-as-the-companies-expand-their-long-term-strategic-partnership" }
+  - { type: supplier, target: aws, kind: hardware, segment: data-center, note: 伺服器CPU, detail: EC2執行個體採EPYC處理器, source: "https://www.amd.com/en/ecosystem/csp/aws.html" }
+  - { type: supplier, target: sony, kind: hardware, segment: gaming, note: 遊戲機晶片, detail: PS5Pro採AMD半客製晶片, year: 2024, source: "https://ir.amd.com/sec-filings/content/0000002488-24-000161/0000002488-24-000161.pdf" }
+  - { type: supplier, target: valve, kind: hardware, segment: gaming, note: 遊戲機晶片, detail: SteamDeck採AMD客製晶片, source: "https://www.steamdeck.com/en/hardware" }
+  - { type: supplier, target: tesla, kind: hardware, segment: embedded, note: 車載運算晶片, detail: 官方列特斯拉為車載技術客戶, source: "https://www.amd.com/en/solutions/automotive/in-vehicle-experience.html" }
+  - { type: invested, target: xai, year: 2024, detail: 參與C輪股權融資, source: "https://x.ai/news/series-c" }
+  - { type: invested, target: hugging-face, year: 2023, detail: D輪參投, source: "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/" }
 sources:
   - "pro:hxdkrud95vd8"

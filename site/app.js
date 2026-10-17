@@ -1,7 +1,7 @@
 import { icon } from './icons.js';
 import { createMap } from './map.js';
 import { createLandscape } from './landscape.js';
-import { buildChain, miniChain, renderExplorer, segmentTrail } from './chain.js';
+import { buildChain, miniChain, renderExplorer, revenueBar, segmentTrail } from './chain.js';
 
 const KIND = {
   pro: { label: '曼報 Pro', short: 'Pro', ic: 'file' },
@@ -150,7 +150,7 @@ const land = createLandscape($('#lanes'), {
   // First lane is above the fold: load its logos right away
   logo: (c) => (c.logo?.url ? `<img crossorigin="anonymous" src="${esc(c.logo.url)}" alt=""${c.industry === industries[0].id ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">` : `<span class="mono" style="--g:${gOf(c)}">${esc(initials(c.name))}</span>`),
   onHover: (id) => new Set(cos.get(id)?.rels.map((r) => r.id)),
-  chainBtn: (c) => (chain.up(c.id).length || chain.down(c.id).length ? `<span class="tchain" role="button" tabindex="0" data-chain="${c.id}" title="看 ${esc(c.name)} 的產業鏈" aria-label="看 ${esc(c.name)} 的產業鏈">${icon('link')}</span>` : ''),
+  chainBtn: (c) => (chain.has(c.id) ? `<span class="tchain" role="button" tabindex="0" data-chain="${c.id}" title="看 ${esc(c.name)} 的產業鏈" aria-label="看 ${esc(c.name)} 的產業鏈">${icon('link')}</span>` : ''),
 });
 const views = { setFocus: (f) => { map.setFocus(f); land.setFocus(f); } };
 function renderViews() {
@@ -281,8 +281,8 @@ function focusCompany(c) {
   else land.reveal(c.id);
 }
 function chainCta(c) {
-  const u = chain.up(c.id).length, d = chain.down(c.id).length;
-  const sub = [u && `上游 ${u} 家`, d && `下游 ${d} 家`].filter(Boolean).join(' · ');
+  const u = chain.up(c.id).length, d = chain.down(c.id).length, k = chain.owners(c.id).length + chain.holds(c.id).length;
+  const sub = [u && `上游 ${u} 家`, d && `下游 ${d} 家`, k && `資金 ${k} 家`].filter(Boolean).join(' · ');
   return `<a class="chain-cta" href="#/chain/${c.id}"><span class="cc-ic">${icon('link')}</span><span class="cc-t"><b>查看產業鏈</b><em>${sub}，可跨產業往上下游探索</em></span>${icon('arrow', 'cc-go')}</a>`;
 }
 function showCompany(c) {
@@ -298,7 +298,8 @@ function showCompany(c) {
     return `<li>${face(p)}<span><a class="pn" href="#/p/${pe?.id}">${esc(p.name)}</a>${p.zh ? ` <span class="muted">${esc(p.zh)}</span>` : ''}<span class="role">${esc(p.role ?? '')}${p.interviewed ? '<em class="iv" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</span>
       ${also.length ? `<span class="also">也在 ${also.map((r) => `<a href="#/c/${r.c.id}">${esc(r.c.name)}</a>`).join('、')}</span>` : ''}</span></li>`;
   }).join('');
-  const rels = c.rels.filter((r) => !(['供應', '客戶'].includes(r.label) && chain.has(c.id))).map((r) => `<a href="#/c/${r.id}" title="${esc(r.note ?? '')}">${avatar(cos.get(r.id), 'xs')}<span class="rt">${r.label}</span>${esc(cos.get(r.id).name)}</a>`).join('');
+  // Links the value-chain block already shows are left out here
+  const rels = c.rels.filter((r) => !(['供應', '客戶', '投資', '獲投資', '旗下', '母公司'].includes(r.label) && chain.has(c.id))).map((r) => `<a href="#/c/${r.id}" title="${esc(r.note ?? '')}">${avatar(cos.get(r.id), 'xs')}<span class="rt">${r.label}</span>${esc(cos.get(r.id).name)}</a>`).join('');
   const stats = countBy(c).map(([k, n]) => `<div><dd>${n}</dd><dt>${k.includes('podcast') ? '集' : '篇'}${KIND[k].label}</dt></div>`).join('');
   const sections = KIND_ORDER.map((k) => { const l = c.src.filter((s) => s.kind === k); return l.length ? `<h3>${icon(KIND[k].ic)}${KIND[k].label}<span class="c">${l.length}</span></h3>${srcList(l)}` : ''; }).join('');
   openPanel(`<header class="ph-head" style="--g:${grad(i)}">${avatar(c, 'lg')}
@@ -308,7 +309,8 @@ function showCompany(c) {
     ${links ? `<div class="links">${links}</div>` : ''}
     ${chain.has(c.id) ? chainCta(c) : ''}
     <dl class="pstats">${stats}</dl>
-    ${chain.has(c.id) ? `<h3>${icon('link')}上下游<a class="h3-btn" href="#/chain/${c.id}">展開${icon('fit')}</a></h3>${segmentTrail(c, i)}${miniChain(c, chain, { avatar })}` : ''}
+    ${revenueBar(c, { full: true })}
+    ${chain.has(c.id) ? `<h3>${icon('link')}上下游與資金<a class="h3-btn" href="#/chain/${c.id}">展開${icon('fit')}</a></h3>${segmentTrail(c, i)}${miniChain(c, chain, { avatar })}` : ''}
     ${ppl ? `<h3>${icon('user')}創辦人與關鍵人物</h3><ul class="ppl">${ppl}</ul>` : ''}
     ${rels ? `<h3>${icon('building')}關係</h3><div class="rels">${rels}</div>` : ''}
     ${sections}`, c.logo?.site ? '<p class="note">Logo 取自該公司官網圖示，僅用於識別。</p>' : '');
@@ -355,11 +357,12 @@ function openExplorer(c) {
   el.hidden = false;
   document.body.classList.add('cx-open');
   cxCleanup = renderExplorer(el, c, chain, { avatar, icon, peers, industryOf: (x) => ind.get(x.industry) ?? industries.at(-1),
-    indirect: store.get('pm-hop', false), onToggle: (v) => { store.set('pm-hop', v); openExplorer(c); } });
+    indirect: store.get('pm-hop', false), onToggle: (v) => { store.set('pm-hop', v); openExplorer(c); },
+    hidden: new Set(store.get('pm-kinds', [])), onFilter: (v) => store.set('pm-kinds', v) });
   el.scrollTop = 0;
-  if (!reduced()) el.querySelector('.cx-grid').animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: was ? 360 : 260, easing: 'cubic-bezier(.2,.8,.2,1)' });
+  if (!reduced()) el.querySelector('.cx-grid, .cx-solo, .cx-cap')?.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: was ? 360 : 260, easing: 'cubic-bezier(.2,.8,.2,1)' });
   if (!['chain', 'map'].includes(curView)) setView(mapView);
-  views.setFocus({ cur: c.id, rel: new Set([...chain.up(c.id), ...chain.down(c.id)].map((x) => x.c.id)) });
+  views.setFocus({ cur: c.id, rel: new Set([...chain.up(c.id), ...chain.down(c.id), ...chain.owners(c.id), ...chain.holds(c.id)].map((x) => x.c.id)) });
 }
 function closeExplorer() {
   if ($('#cx').hidden) return;

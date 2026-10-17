@@ -6,8 +6,17 @@ hq: 倫敦
 links:
   website: "https://geniussports.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Genius_Sports"
+revenue:
+  fy: FY2025
+  total: 0.67
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1834489/000119312526110749/geni-20251231.htm"
+  segments:
+    - { id: betting, name: 博彩科技與內容, share: 71 }
+    - { id: media, name: 媒體科技與內容, share: 21 }
+    - { id: sports-tech, name: 運動科技與服務, share: 8 }
 relations:
-  - { type: supplier, target: draftkings, note: 運動數據, detail: 2025年報確認數據與串流客戶, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1834489/000119312526110749/geni-20251231.htm" }
-  - { type: supplier, target: fanduel, note: 運動數據, detail: 2025年報確認數據與串流客戶, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1834489/000119312526110749/geni-20251231.htm" }
+  - { type: supplier, target: draftkings, kind: service, segment: betting, note: 運動數據, detail: 2025年報確認數據與串流客戶, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1834489/000119312526110749/geni-20251231.htm" }
+  - { type: supplier, target: fanduel, kind: service, segment: betting, note: 運動數據, detail: 2025年報確認數據與串流客戶, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1834489/000119312526110749/geni-20251231.htm" }
 sources:
   - "pro:zma3sf389tbr"

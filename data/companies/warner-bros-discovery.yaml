@@ -10,8 +10,18 @@ links:
   website: "https://www.wbd.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Warner_Bros._Discovery"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/华纳兄弟探索"
+revenue:
+  fy: FY2025
+  total: 37
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1437107/000143710726000020/wbd-20251231.htm"
+  note: 以部門營收合計計算佔比，未扣部門間沖銷。
+  segments:
+    - { id: streaming, name: 串流, share: 26 }
+    - { id: studios, name: 影視製作, share: 31 }
+    - { id: global-linear-networks, name: 全球有線電視網, share: 43 }
 relations:
-  - { type: supplier, target: netflix, note: 影視內容, detail: 官方列為Netflix主要製片商, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1437107/000143710725000189/wbd2q25shareholderletter.htm" }
+  - { type: supplier, target: netflix, kind: content, segment: studios, note: 影視內容, detail: 官方列為Netflix主要製片商, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1437107/000143710725000189/wbd2q25shareholderletter.htm" }
   - { type: parent, target: hbo }
 sources:
   - "pro:ueyj98gmbgxn"

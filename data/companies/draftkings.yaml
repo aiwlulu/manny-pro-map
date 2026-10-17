@@ -10,6 +10,15 @@ links:
 people:
   - { name: Jason Robins, role: 執行長 }
   - { name: Paul Liberman, role: 創辦人 }
+revenue:
+  fy: FY2025
+  total: 6.1
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1883685/000188368526000013/dkng-20251231.htm"
+  segments:
+    - { id: sportsbook, name: 運動博彩, share: 63 }
+    - { id: igaming, name: 線上博弈, share: 30 }
+    - { id: other, name: 其他, share: 7 }
 relations:
   - { type: competitor, target: fanduel }
 sources:

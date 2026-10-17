@@ -13,6 +13,18 @@ people:
   - { name: Garrett Camp, role: 創辦人, photo: { file: Garrett Camp 2018 Headshot Cameron Harris Flickr.jpg, license: CC BY-SA 2.0, author: Cameron Harris } }
   - { name: Travis Kalanick, role: 創辦人, photo: { file: "Travis Kalanick at DLD Munich 2015 (cropped).jpg", license: CC BY-SA 4.0, author: Dan Taylor } }
   - { name: Dara Khosrowshahi, role: 執行長, photo: { file: "CEO of Uber Technologies Dara Khosrowshahi in New York - 2019 (cropped).jpg", license: CC BY 4.0, author: The Presidential Office of Ukraine. } }
+revenue:
+  fy: FY2025
+  total: 52
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm"
+  segments:
+    - { id: mobility, name: 乘車, share: 57 }
+    - { id: delivery, name: 外送, share: 33 }
+    - { id: freight, name: 貨運, share: 10 }
+relations:
+  - { type: invested, target: waabi, year: 2024, detail: 共同領投B輪, source: "https://waabi.ai/insights/waabi-series-b-announcement" }
+  - { type: invested, target: aurora-innovation, amount: 4 億美元, year: 2021, detail: 現金入股自駕公司, source: "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000038/uber-20210630.htm" }
 sources:
   - "pro:zbbg828wt3aa"
   - "podcast:2026-05-11-ep127"

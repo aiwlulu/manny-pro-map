@@ -11,8 +11,19 @@ links:
 people:
   - { name: Sebastian Siemiatkowski, role: 創辦人, photo: { file: Sebastian Siemiatkowski.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Niklas Adalberth, role: 創辦人, photo: { file: "TNW Conference 2013 - Day 2 (8679712475) (cropped).jpg", license: CC BY-SA 2.0, author: "Julia de Boer / The Next Web" } }
+revenue:
+  fy: FY2025
+  total: 3.5
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/2003292/000200329226000007/klar-20251231.htm"
+  note: 依收入類型揭露，單一營運分部。
+  segments:
+    - { id: transactions, name: 交易收入, share: 60 }
+    - { id: consumer-service-revenue, name: 消費者服務收入, share: 11 }
+    - { id: interest-income, name: 利息收入, share: 27 }
+    - { id: other, name: 其他, share: 2 }
 relations:
-  - { type: supplier, target: walmart, note: 先買後付, detail: 透過OnePay獨家提供分期, year: 2025, source: "https://investors.klarna.com/News--Events/news/news-details/2025/Klarna-Announces-Partnership-with-OnePay-to-Exclusively-Power-Installment-Loans-at-Walmart-in-the-U-S--2025-C2mmyrNcu1/default.aspx" }
-  - { type: supplier, target: airbnb, note: 先買後付, detail: 2025年官方確認分期仍提供, year: 2025, source: "https://news.airbnb.com/reserve-now-pay-later" }
+  - { type: supplier, target: walmart, kind: service, segment: transactions, note: 先買後付, detail: 透過OnePay獨家提供分期, year: 2025, source: "https://investors.klarna.com/News--Events/news/news-details/2025/Klarna-Announces-Partnership-with-OnePay-to-Exclusively-Power-Installment-Loans-at-Walmart-in-the-U-S--2025-C2mmyrNcu1/default.aspx" }
+  - { type: supplier, target: airbnb, kind: service, segment: transactions, note: 先買後付, detail: 2025年官方確認分期仍提供, year: 2025, source: "https://news.airbnb.com/reserve-now-pay-later" }
 sources:
   - "pro:52gjqz2bbj2p"

@@ -17,10 +17,24 @@ people:
   - { name: Phil Spencer, photo: { file: Phil Spencer Xbox.jpg, license: CC0, author: eVRydayVR } }
   - { name: Mustafa Suleyman, role: Inflection AI 共同創辦人, photo: { file: "Mustafa Suleyman (29099346447).jpg", license: CC BY 2.0, author: "Joi Ito from Cambridge, MA, USA" } }
   - { name: Steve Ballmer, role: 執行長, photo: { file: Steve Ballmer 2014.jpg, license: CC BY 2.0, author: Eric Garcetti } }
+revenue:
+  fy: FY2026
+  total: 330
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+  segments:
+    - { id: productivity, name: 生產力與業務流程, share: 42 }
+    - { id: intelligent-cloud, name: 智慧雲端, share: 42 }
+    - { id: personal-computing, name: 更多個人運算, share: 16 }
 relations:
-  - { type: supplier, target: openai, note: 雲端算力, detail: 新協議維持主要雲端夥伴地位, year: 2026, source: "https://openai.com/index/next-phase-of-microsoft-partnership/" }
-  - { type: supplier, target: databricks, note: 雲端算力, detail: 擴大合作與自身雲端使用, year: 2026, source: "https://news.microsoft.com/source/2026/07/23/databricks-and-microsoft-expand-partnership-to-help-enterprises-bring-business-context-to-enterprise-ai/" }
-  - { type: supplier, target: snowflake, note: 雲端算力, detail: 官方列為支援的託管雲平台, source: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms" }
+  - { type: supplier, target: openai, kind: cloud, segment: intelligent-cloud, share: { pct: 7.3, fy: FY2026, source: "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm" }, note: 雲端算力, detail: 新協議維持主要雲端夥伴地位, year: 2026, source: "https://openai.com/index/next-phase-of-microsoft-partnership/" }
+  - { type: supplier, target: databricks, kind: cloud, segment: intelligent-cloud, note: 雲端算力, detail: 擴大合作與自身雲端使用, year: 2026, source: "https://news.microsoft.com/source/2026/07/23/databricks-and-microsoft-expand-partnership-to-help-enterprises-bring-business-context-to-enterprise-ai/" }
+  - { type: supplier, target: snowflake, kind: cloud, segment: intelligent-cloud, note: 雲端算力, detail: 官方列為支援的託管雲平台, source: "https://docs.snowflake.com/en/user-guide/intro-cloud-platforms" }
+  - { type: invested, target: inflection-ai, year: 2023, detail: 共同領投, source: "https://techcrunch.com/2023/06/29/inflection-ai-lands-1-3b-investment-to-build-more-personal-ai/" }
+  - { type: invested, target: databricks, year: 2021, detail: 參與H輪股權融資, source: "https://www.databricks.com/company/newsroom/press-releases/databricks-closes-series-h-with-additional-participation-from-strategic-partners" }
+  - { type: invested, target: adept, year: 2023, detail: 參與B輪募資, source: "https://techcrunch.com/2023/03/15/adept-a-startup-training-ai-to-use-existing-software-and-apis-raises-350m/" }
+  - { type: invested, target: openai, amount: 130 億美元, stake: 約 27%, year: 2019, detail: 2025 年重組後持股約 27%；累計承諾 130 億、已撥 119 億美元, source: "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm" }
+  - { type: invested, target: anthropic, amount: 至多 50 億美元, year: 2025, detail: 三方合作，Anthropic 承諾採購 300 億美元 Azure 算力, source: "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/" }
 sources:
   - "pro:x29tt82u4h4q"
   - "propod:cmtj74mw500lp01y46usd2blj"

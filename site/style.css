@@ -950,3 +950,88 @@ body.open .legend-n { display: none; }
 .cx-col[data-col="mid"] .cx-wrap .ev { display: none; }
 .cx-tgl { font-size: 13px; margin-right: 6px; }
 @media (max-width: 899px) { .cx-tgl { font-size: 12.5px; } }
+
+/* ---------- Value chain: link kinds, revenue mix, capital ---------- */
+:root {
+  --k-hardware: #d47a2a; --k-software: #7a68d4; --k-cloud: #2f8fd6; --k-service: #1f9a7e; --k-content: #cf4f86; --k-capital: #a8862a;
+}
+:root[data-theme="dark"] {
+  --k-hardware: #f0a05c; --k-software: #a99bf2; --k-cloud: #6db8f2; --k-service: #5ccbaf; --k-content: #ef86b4; --k-capital: #d9b85a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --k-hardware: #f0a05c; --k-software: #a99bf2; --k-cloud: #6db8f2; --k-service: #5ccbaf; --k-content: #ef86b4; --k-capital: #d9b85a; }
+}
+.kd { display: inline-flex; align-items: center; gap: 4px; margin-right: 6px; padding: 0 6px; border-radius: 999px; font-size: 10.5px; font-weight: 700; line-height: 1.6; white-space: nowrap;
+  color: color-mix(in srgb, var(--k) 75%, var(--ink)); background: color-mix(in srgb, var(--k) 14%, transparent); }
+.fl { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+.fl b { font: 700 11px var(--latin); color: var(--ink); }
+
+/* Legend + filter */
+.cx-legend { position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: -8px 0 24px; }
+.cx-lg-t { font-size: 12px; letter-spacing: .1em; color: var(--muted); margin-right: 4px; }
+.kchip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px 4px 9px; border-radius: 999px; font-size: 12.5px; border: 1px solid color-mix(in srgb, var(--k) 45%, var(--line)); background: color-mix(in srgb, var(--k) 8%, var(--surface)); transition: opacity .2s, background .2s; }
+.kchip i { width: 14px; height: 3px; border-radius: 2px; background: var(--k); }
+.kchip span { font: 600 11px var(--latin); color: var(--muted); }
+.kchip.off { opacity: .45; background: var(--surface); border-color: var(--line); }
+.kchip.off i { background: var(--line); }
+.kchip:hover { border-color: var(--k); }
+
+/* Edges take the link kind's colour; capital is dashed */
+.cx-edges path { stroke: var(--k, var(--blue-b)); opacity: .55; }
+.cx-edges path.k-capital { stroke-dasharray: 5 4; }
+.cx-edges.hovering path.hot { stroke: var(--k); opacity: 1; }
+.cx-body.hide-hardware [data-kind="hardware"], .cx-body.hide-software [data-kind="software"], .cx-body.hide-cloud [data-kind="cloud"],
+.cx-body.hide-service [data-kind="service"], .cx-body.hide-content [data-kind="content"], .cx-body.hide-capital .cx-cap { display: none; }
+
+/* Column groups */
+.cx-grp { display: flex; flex-direction: column; gap: 8px; }
+.cx-grp + .cx-grp { margin-top: 10px; }
+.cx-grp h4 { margin: 0; display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--body); }
+.cx-grp h4 i { width: 10px; height: 10px; border-radius: 3px; background: var(--k); }
+.cx-grp.seg h4 i { background: color-mix(in srgb, var(--ink) calc(78% - var(--n, 6) * 11%), transparent); }
+.cx-grp h4 b { font: 700 12px var(--latin); color: var(--ink); }
+.cx-grp h4 span { margin-left: auto; font: 600 11px var(--latin); color: var(--muted); }
+
+/* Revenue mix */
+.rv { display: flex; flex-direction: column; gap: 5px; padding: 0 2px; }
+.rv-h { display: flex; align-items: baseline; gap: 6px; font-size: 11px; color: var(--muted); }
+.rv-h b { font-weight: 700; color: var(--body); }
+.rv-h .ev { margin-left: auto; }
+.cx-t .rv { margin-top: 6px; padding: 0; }
+.cx-t .rv .rv-h { display: none; }
+.rv-bar { display: flex; gap: 1px; height: 4px; border-radius: 3px; overflow: hidden; background: var(--pale); }
+.rv-bar i { flex: var(--w) 0 0; min-width: 2px; background: color-mix(in srgb, var(--ink) calc(78% - var(--n) * 11%), transparent); transition: background .2s; }
+.rv-bar i.hot, .rv-bar i.lit, .rv-l li.lit i { background: var(--red-a); }
+.rv.full { gap: 8px; padding: 12px; border-radius: 12px; background: var(--pale); }
+.rv.full .rv-bar { height: 10px; }
+.rv-l { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; font-size: 12.5px; }
+.rv-l li { display: flex; align-items: center; gap: 7px; border-radius: 6px; padding: 1px 4px; margin: 0 -4px; transition: background .2s; }
+.rv-l li i { width: 9px; height: 9px; border-radius: 2px; flex: none; background: color-mix(in srgb, var(--ink) calc(78% - var(--n) * 11%), transparent); }
+.rv-l li b { margin-left: auto; font: 700 12.5px var(--latin); }
+.rv-l li.lit { background: color-mix(in srgb, var(--red-a) 12%, transparent); }
+.rv-n { margin: 0; font-size: 11px; color: var(--muted); line-height: 1.5; }
+.panel .rv.full { margin: 4px 0 18px; }
+.cx-col[data-col="mid"] .rv.full { margin-top: 8px; background: var(--surface); border: 1px solid var(--line); }
+.cx-col[data-col="mid"] .cx-wrap .rv .ev { display: inline-flex; }
+
+/* Capital band */
+.cx-solo { max-width: 360px; margin: 0 auto; }
+.cx-cap { position: relative; margin-top: 40px; padding-top: 24px; border-top: 1px dashed var(--line); }
+.cx-cap > h3 { margin: 0 0 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; font-size: 13px; font-weight: 700; color: color-mix(in srgb, var(--k-capital) 70%, var(--ink)); }
+.cx-cap > h3 span { font-size: 12px; font-weight: 400; color: var(--muted); }
+.cx-crow + .cx-crow { margin-top: 20px; }
+.cx-crow h4 { margin: 0 0 10px; display: flex; gap: 6px; font-size: 12px; letter-spacing: .08em; font-weight: 600; color: color-mix(in srgb, var(--k-capital) 70%, var(--ink)); }
+.cx-crow h4 span { font: 600 11px var(--latin); color: var(--muted); }
+.cx-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.cx-wrap[data-kind="capital"] .cx-node::before { background: var(--k-capital); }
+
+/* Panel mini chain */
+.mc-w { border-color: color-mix(in srgb, var(--k, var(--line)) 50%, var(--line)); color: color-mix(in srgb, var(--k, var(--muted)) 70%, var(--ink)); }
+.mc-w.cap { --k: var(--k-capital); }
+.mc-col.cap { background: color-mix(in srgb, var(--k-capital) 8%, var(--pale)); }
+.mc-row .mc-d .fl { display: inline; margin: 0 6px 0 0; }
+.mc-row .mc-d > span:not(.fl) { display: inline; }
+
+@media (max-width: 899px) {
+  .cx-legend { margin: -4px 0 16px; }
+}

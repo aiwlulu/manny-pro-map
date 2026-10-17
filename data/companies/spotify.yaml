@@ -11,6 +11,14 @@ links:
 people:
   - { name: Daniel Ek, role: 創辦人, photo: { file: "Daniel Ek EC 2025 (cropped).jpg", license: CC BY 4.0, author: "Lukasz Kobus/European Commission" } }
   - { name: Martin Lorentzon, role: 共同創辦人, photo: { file: Martin Lorentzon.jpg, license: CC BY 4.0, author: Ah-kwong } }
+revenue:
+  fy: FY2025
+  total: 17
+  currency: EUR
+  source: "https://www.sec.gov/Archives/edgar/data/1639920/000162828026006874/ck0001639920-20251231.htm"
+  segments:
+    - { id: premium, name: 付費訂閱, share: 90 }
+    - { id: ad-supported, name: 廣告, share: 10 }
 sources:
   - "podcast:2022-11-06-ep27"
   - "podcast:2022-04-17-ep09"

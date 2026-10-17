@@ -12,6 +12,14 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/任天堂"
 people:
   - { name: Fusajirō Yamauchi, role: 創辦人 }
+revenue:
+  fy: FY2026
+  total: 2300
+  currency: JPY
+  source: "https://www.nintendo.co.jp/ir/pdf/2026/260508_4e.pdf"
+  segments:
+    - { id: dedicated-video-game-platform, name: 專用遊戲平台, share: 97 }
+    - { id: ip-related-income-etc, name: 智財相關收入, share: 3 }
 sources:
   - "podcast:2024-10-21-sp5"
   - "podcast:2024-07-01-ep73"

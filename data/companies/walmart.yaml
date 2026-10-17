@@ -12,6 +12,15 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/沃尔玛"
 people:
   - { name: Sam Walton, role: 創辦人, photo: { file: SamWalton-1936.jpg, license: Public domain, author: Unknown author. } }
+revenue:
+  fy: FY2026
+  total: 710
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm"
+  segments:
+    - { id: walmart-u-s, name: 沃爾瑪美國, share: 68 }
+    - { id: walmart-international, name: 沃爾瑪國際, share: 19 }
+    - { id: sam-s-club-u-s, name: 山姆會員店, share: 13 }
 sources:
   - "pro:kudnr9rb2r56"
   - "podcast:2025-06-09-ep102"

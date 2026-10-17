@@ -7,5 +7,11 @@ hq: 圣卡洛斯
 links:
   website: "http://www.natera.com"
   wikipedia: "https://en.wikipedia.org/wiki/Natera"
+revenue:
+  fy: FY2025
+  total: 2.3
+  currency: USD
+  source: "https://investor.natera.com/news/news-details/2026/Natera-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx"
+  note: 幾乎全部為檢測產品收入（99.6%）。
 sources:
   - "pro:qnjkum4j8g4u"

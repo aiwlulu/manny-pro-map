@@ -13,5 +13,7 @@ links:
 people:
   - { name: Assar Gabrielsson, role: 創辦人, photo: { file: Assar Gabrielsson Volvo 1960.jpg, license: Public domain, author: Lidingo } }
   - { name: Gustaf Larson, role: 創辦人, photo: { file: Gustav Larson Volvo 1962.jpg, license: Public domain, author: Lidingo } }
+relations:
+  - { type: invested, target: waabi, year: 2024, detail: 集團創投參投B輪, source: "https://waabi.ai/insights/waabi-series-b-announcement" }
 sources:
   - "pro:tdzgzbsctptw"

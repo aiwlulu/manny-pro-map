@@ -14,7 +14,18 @@ people:
   - { name: Martin van den Brink, role: 共同執行長 }
   - { name: Peter Wennink, role: 共同執行長 }
   - { name: Christophe Fouquet, role: 執行長, photo: { file: Ursula von der Leyen & Christophe Fouquet - 2025.jpg, license: CC BY 4.0, author: "Dati Bendo / European Union, 2025 / EC - Audiovisual Service" } }
+revenue:
+  fy: FY2025
+  total: 33
+  currency: EUR
+  source: "https://www.sec.gov/Archives/edgar/data/937966/000162828026011378/asml-20251231.htm"
+  segments:
+    - { id: euv, name: EUV 系統, share: 36 }
+    - { id: arfi, name: 浸潤式微影, share: 32 }
+    - { id: duv, name: 其他 DUV 系統, share: 5 }
+    - { id: service, name: 服務與選項, share: 25 }
+    - { id: other, name: 其他, share: 2 }
 relations:
-  - { type: supplier, target: tsmc, note: 曝光機, detail: 官方確認交付極紫外光曝光機, year: 2010, source: "https://www.asml.com/en/news/press-releases/2010/tsmc-to-take-delivery-of-an-asml-euv-lithography-system" }
+  - { type: supplier, target: tsmc, kind: hardware, segment: euv, note: 曝光機, detail: 官方確認交付極紫外光曝光機, year: 2010, source: "https://www.asml.com/en/news/press-releases/2010/tsmc-to-take-delivery-of-an-asml-euv-lithography-system" }
 sources:
   - "podcast:2025-12-18-sp10"

@@ -13,10 +13,29 @@ links:
 people:
   - { name: Jeff Bezos, role: 創辦人, photo: { file: "Jeff Bezos at Amazon Spheres Grand Opening in Seattle - 2018 (39074799225) (cropped).jpg", license: CC BY 2.0, author: Seattle City Council from Seattle } }
   - { name: Andy Jassy, role: 執行長, photo: { file: Andy Jassy.jpg, license: CC BY-SA 4.0, author: Lisi Mezistrano Wolf } }
+revenue:
+  fy: FY2025
+  total: 720
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+  note: 依產品與服務類別揭露；報告分部為北美、國際與 AWS。
+  segments:
+    - { id: online-stores, name: 線上商店, share: 37 }
+    - { id: third-party-seller-services, name: 第三方賣家服務, share: 24 }
+    - { id: aws, name: AWS, share: 18 }
+    - { id: advertising-services, name: 廣告服務, share: 10 }
+    - { id: subscription-services, name: 訂閱服務, share: 7 }
+    - { id: physical-stores, name: 實體商店, share: 3 }
+    - { id: other, name: 其他, share: 1 }
 relations:
   - { type: parent, target: aws }
   - { type: parent, target: zoox }
   - { type: competitor, target: walmart }
+  - { type: invested, target: hugging-face, year: 2023, detail: D輪參投, source: "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/" }
+  - { type: invested, target: aurora-innovation, year: 2019, detail: 參與B輪募資, source: "https://aurora.tech/newsroom/investing-in-the-future-of-transportation-aurora-raises" }
+  - { type: invested, target: agility-robotics, year: 2022, detail: 產業創新基金參投, source: "https://www.businesswire.com/news/home/20220421006147/en/Agility-Robotics-Raises-%24150M-Series-B-Led-by-DCVC-and-Playground-Global-to-Accelerate-Blended-Human-Robot-Workplaces" }
+  - { type: invested, target: openai, amount: 500 億美元, year: 2026, detail: 領投 2026 年融資，先投 150 億、其餘分階段, source: "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html" }
+  - { type: invested, target: anthropic, amount: 80 億美元, year: 2023, detail: 2023–24 年累計 80 億；2026 年再承諾至多 250 億美元, source: "https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html" }
 sources:
   - "propod:cmuoqjicj0bhf01tlh9qsafqq"
   - "pro:kudnr9rb2r56"

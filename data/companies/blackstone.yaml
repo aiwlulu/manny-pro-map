@@ -16,6 +16,7 @@ people:
 relations:
   - { type: acquired, target: qts, note: 2021 年 }
   - { type: parent, target: hilton }
+  - { type: invested, target: anthropic, year: 2026, detail: 參與G輪股權融資, source: "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation" }
 sources:
   - "pro:dwcrddrmu86k"
   - "pro:pxkj26b9zjj5"

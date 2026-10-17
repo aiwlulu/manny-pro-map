@@ -12,12 +12,24 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/台積電"
 people:
   - { name: Morris Chang, role: 創辦人, photo: { file: Morris Chang 2021APEC.jpg, license: CC BY 2.0, author: 總統府 } }
+revenue:
+  fy: FY2025
+  total: 3800
+  currency: TWD
+  source: "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm"
+  note: 依應用平台揭露，台積電為單一營運分部。
+  segments:
+    - { id: hpc, name: 高效能運算, share: 58 }
+    - { id: smartphone, name: 智慧型手機, share: 29 }
+    - { id: internet-of-things, name: 物聯網, share: 5 }
+    - { id: automotive, name: 車用電子, share: 5 }
+    - { id: other, name: 其他, share: 3 }
 relations:
-  - { type: supplier, target: nvidia, note: 晶圓代工, detail: 2025年官方列為主要客戶, year: 2025, source: "https://pr.tsmc.com/static/campaign/2025March/tsmc_na/quarter.html" }
-  - { type: supplier, target: apple, note: 晶圓代工, detail: 美國廠製造蘋果裝置晶片, year: 2025, source: "https://www.apple.com/newsroom/2025/08/apple-increases-us-commitment-to-600-billion-usd-announces-ambitious-program/" }
-  - { type: supplier, target: amd, note: 晶圓代工, detail: 伺服器晶片採台積電兩奈米, year: 2025, source: "https://newsroom.amd.com/news/amd-achieves-first-tsmc-n2-product-silicon-milesto/" }
-  - { type: supplier, target: qualcomm, note: 晶圓代工, detail: 2025年官方列為主要客戶, year: 2025, source: "https://pr.tsmc.com/static/campaign/2025March/tsmc_na/quarter.html" }
-  - { type: supplier, target: broadcom, note: 晶圓代工, detail: 2025年官方列為主要客戶, year: 2025, source: "https://pr.tsmc.com/static/campaign/2025March/tsmc_na/quarter.html" }
+  - { type: supplier, target: nvidia, kind: hardware, segment: hpc, note: 晶圓代工, detail: 2025年官方列為主要客戶, year: 2025, source: "https://pr.tsmc.com/static/campaign/2025March/tsmc_na/quarter.html" }
+  - { type: supplier, target: apple, kind: hardware, segment: smartphone, note: 晶圓代工, detail: 美國廠製造蘋果裝置晶片, year: 2025, source: "https://www.apple.com/newsroom/2025/08/apple-increases-us-commitment-to-600-billion-usd-announces-ambitious-program/" }
+  - { type: supplier, target: amd, kind: hardware, segment: hpc, note: 晶圓代工, detail: 伺服器晶片採台積電兩奈米, year: 2025, source: "https://newsroom.amd.com/news/amd-achieves-first-tsmc-n2-product-silicon-milesto/" }
+  - { type: supplier, target: qualcomm, kind: hardware, segment: smartphone, note: 晶圓代工, detail: 2025年官方列為主要客戶, year: 2025, source: "https://pr.tsmc.com/static/campaign/2025March/tsmc_na/quarter.html" }
+  - { type: supplier, target: broadcom, kind: hardware, segment: hpc, note: 晶圓代工, detail: 2025年官方列為主要客戶, year: 2025, source: "https://pr.tsmc.com/static/campaign/2025March/tsmc_na/quarter.html" }
 sources:
   - "pro:3ss5znuzunbe"
   - "podcast:2025-11-06-sp9"

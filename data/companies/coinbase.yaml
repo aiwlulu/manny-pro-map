@@ -12,6 +12,17 @@ links:
 people:
   - { name: Brian Armstrong, role: 執行長, photo: { file: Brian Armstrong - TechCrunch Disrupt 2018 01.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Fred Ehrsam, role: 創辦人, photo: { file: F Ehrsam.jpg, license: CC BY-SA 4.0, author: Robyn Selman } }
+revenue:
+  fy: FY2025
+  total: 7.2
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm"
+  segments:
+    - { id: transactions, name: 交易收入, share: 57 }
+    - { id: subscription-and-services-revenue, name: 訂閱與服務收入, share: 39 }
+    - { id: other-revenue, name: 其他收入, share: 4 }
+relations:
+  - { type: invested, target: kalshi, year: 2025, detail: 創投部門參投D輪（該輪共 3 億美元）, source: "https://news.kalshi.com/p/kalshi-hits-5-billion-valuation-amid-international-expansion" }
 sources:
   - "pro:68ezcucry26v"
   - "pro:52gjqz2bbj2p"

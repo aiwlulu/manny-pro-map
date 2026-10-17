@@ -7,5 +7,13 @@ hq: 舊金山
 links:
   website: "https://www.sunrun.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Sunrun"
+revenue:
+  fy: FY2025
+  total: 3
+  currency: USD
+  source: "https://investors.sunrun.com/news-events/press-releases/detail/364/sunrun-reports-fourth-quarter-and-full-year-2025-financial"
+  segments:
+    - { id: customer-agreements-and-incentives, name: 租賃合約與補助, share: 62 }
+    - { id: energy-systems-and-product-sales, name: 系統與產品銷售, share: 38 }
 sources:
   - "pro:zcfm4vvqzqb8"

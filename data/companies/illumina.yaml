@@ -13,9 +13,18 @@ people:
   - { name: Jay Flatley }
   - { name: Francis deSouza, role: 執行長, photo: { file: Francis deSouza.jpg, license: CC BY-SA 4.0, author: CDBeckwith } }
   - { name: Jacob Thaysen, role: 執行長 }
+revenue:
+  fy: FY2025
+  total: 4.3
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1110803/000111080326000024/ilmn-20251228.htm"
+  segments:
+    - { id: consumables, name: 耗材, share: 74 }
+    - { id: instruments, name: 儀器, share: 11 }
+    - { id: service-and-other-revenue, name: 服務及其他, share: 15 }
 relations:
-  - { type: supplier, target: natera, note: 定序設備試劑, detail: 獨家定序供應合約至2033年, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1604821/000110465926020881/ntra-20251231x10k.htm" }
-  - { type: supplier, target: 23andme, note: 基因分型晶片, detail: 官方檢測說明使用Illumina晶片, source: "https://permalinks.23andme.com/pdf/package_insert_v5.pdf" }
+  - { type: supplier, target: natera, kind: hardware, segment: consumables, note: 定序設備試劑, detail: 獨家定序供應合約至2033年, year: 2025, source: "https://www.sec.gov/Archives/edgar/data/1604821/000110465926020881/ntra-20251231x10k.htm" }
+  - { type: supplier, target: 23andme, kind: hardware, segment: consumables, note: 基因分型晶片, detail: 官方檢測說明使用Illumina晶片, source: "https://permalinks.23andme.com/pdf/package_insert_v5.pdf" }
 sources:
   - "podcast:2024-09-26-ep82"
   - "podcast:2024-04-29-ep67"

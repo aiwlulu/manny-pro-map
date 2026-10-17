@@ -12,8 +12,17 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/現代汽車"
 people:
   - { name: Jeong Ju-yung, role: 創辦人, photo: { file: Chung Ju-yung.jpg, license: Public domain, author: "Technical Sergeant Renee` Sitler" } }
+revenue:
+  fy: FY2025
+  total: 190000
+  currency: KRW
+  source: "https://www.hyundai.com/content/dam/hyundai/ww/en/images/company/investor-relations/financial-Information/report-en/2025/2025-q4-consolidated-audit-report-en.pdf"
+  segments:
+    - { id: vehicle, name: 汽車, share: 78 }
+    - { id: finance, name: 金融, share: 16 }
+    - { id: other, name: 其他, share: 6 }
 relations:
-  - { type: supplier, target: waymo, note: 電動車, detail: 多年合作供應IONIQ5車輛, year: 2024, source: "https://www.hyundaimotorgroup.com/en/amp/CONT0000000000161922" }
+  - { type: supplier, target: waymo, kind: hardware, segment: vehicle, note: 電動車, detail: 多年合作供應IONIQ5車輛, year: 2024, source: "https://www.hyundaimotorgroup.com/en/amp/CONT0000000000161922" }
   - { type: parent, target: boston-dynamics }
 sources:
   - "pro:j8f4gchrfeb5"

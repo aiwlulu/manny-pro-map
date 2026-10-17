@@ -19,14 +19,15 @@ people:
   - { name: Fidji Simo, role: 應用程式執行長, photo: { file: "Facebook F8 Developer's Conference 2017 Fidji Simo (33324521813).jpg", license: CC BY 2.0, author: "Anthony Quintano from Westminster, United States" } }
   - { name: Sarah Friar, role: 財務長, photo: { file: Sarah Friar MoneyConf 2018.jpg, license: CC BY 2.0, author: MoneyConf } }
 relations:
-  - { type: supplier, target: microsoft, note: AI模型, detail: 模型與產品授權延續至2032年, year: 2026, source: "https://openai.com/index/next-phase-of-microsoft-partnership/" }
-  - { type: supplier, target: apple, note: AI模型, detail: 最新手機指南保留聊天模型整合, source: "https://support.apple.com/guide/iphone/use-siri-to-get-answers-from-chatgpt-iph0193a9d54/27/ios/27" }
-  - { type: supplier, target: harvey, note: AI模型, detail: 官方案例確認客製法律模型, source: "https://openai.com/index/harvey/" }
-  - { type: supplier, target: duolingo, note: AI模型, detail: 官方案例確認語言學習模型, year: 2023, source: "https://openai.com/index/duolingo/" }
-  - { type: supplier, target: anysphere, note: AI模型, detail: "仍供應，擬十一月停供", year: 2026, source: "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" }
+  - { type: supplier, target: microsoft, kind: software, note: AI模型, detail: 模型與產品授權延續至2032年, year: 2026, source: "https://openai.com/index/next-phase-of-microsoft-partnership/" }
+  - { type: supplier, target: apple, kind: software, note: AI模型, detail: 最新手機指南保留聊天模型整合, source: "https://support.apple.com/guide/iphone/use-siri-to-get-answers-from-chatgpt-iph0193a9d54/27/ios/27" }
+  - { type: supplier, target: harvey, kind: software, note: AI模型, detail: 官方案例確認客製法律模型, source: "https://openai.com/index/harvey/" }
+  - { type: supplier, target: duolingo, kind: software, note: AI模型, detail: 官方案例確認語言學習模型, year: 2023, source: "https://openai.com/index/duolingo/" }
+  - { type: supplier, target: anysphere, kind: software, note: AI模型, detail: "仍供應，擬十一月停供", year: 2026, source: "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" }
   - { type: competitor, target: anthropic }
   - { type: competitor, target: xai }
   - { type: partner, target: microsoft }
+  - { type: invested, target: coreweave, amount: 3.5 億美元, year: 2025, detail: 算力合約配股, source: "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm" }
 sources:
   - "propod:cmuti5uau06di01v1f935gjyi"
   - "pro:kudnr9rb2r56"

@@ -16,5 +16,8 @@ people:
   - { name: Chen Yidan, role: 創辦人 }
   - { name: Daniel Xu, role: 創辦人 }
   - { name: Zeng Liqing, role: 創辦人 }
+relations:
+  - { type: invested, target: reddit, amount: 1.5 億美元, year: 2019, detail: 投資社群平台, source: "https://techcrunch.com/2019/02/11/reddit-300-million/" }
+  - { type: invested, target: discord, year: 2018, detail: 參投遊戲聊天融資（該輪共 1.5 億美元）, source: "https://techcrunch.com/2018/12/21/gaming-chat-startup-discord-raises-150m-surpassing-2b-valuation/" }
 sources:
   - "podcast:2025-08-27-ep111"

@@ -14,8 +14,18 @@ people:
   - { name: Martin Eberhard, role: 創辦人, photo: { file: "Martin Eberhard (cropped).jpg", license: CC BY-SA 2.0, author: Nicki Dugan } }
   - { name: Marc Tarpenning, role: 創辦人 }
   - { name: Elon Musk, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
+revenue:
+  fy: FY2025
+  total: 95
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+  segments:
+    - { id: automotive-sales, name: 汽車銷售, share: 69 }
+    - { id: energy, name: 能源與儲能, share: 14 }
+    - { id: services-and-other, name: 服務及其他, share: 13 }
+    - { id: other, name: 其他, share: 4 }
 relations:
-  - { type: supplier, target: sunrun, note: 儲能電池, detail: 官網持續供應Powerwall電池, source: "https://www.sunrun.com/solar-battery-storage/tesla-powerwall" }
+  - { type: supplier, target: sunrun, kind: hardware, segment: energy, note: 儲能電池, detail: 官網持續供應Powerwall電池, source: "https://www.sunrun.com/solar-battery-storage/tesla-powerwall" }
   - { type: parent, target: solarcity }
 sources:
   - "pro:tvqqj5aqhcr3"

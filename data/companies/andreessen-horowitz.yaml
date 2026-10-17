@@ -13,6 +13,20 @@ links:
 people:
   - { name: Marc Andreessen, role: 創辦人, photo: { file: "Marc Andreessen-9 (cropped).jpg", license: CC BY 2.0, author: JD Lasica } }
   - { name: Ben Horowitz, role: 創辦人, photo: { file: "TechCrunch Disrupt San Francisco 2018 - day 2 (42713740520) (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
+relations:
+  - { type: invested, target: xai, year: 2024, detail: 參與C輪股權融資, source: "https://x.ai/news/series-c" }
+  - { type: invested, target: databricks, year: 2023, detail: 參與I輪股權融資, source: "https://www.prnewswire.com/news-releases/databricks-raises-series-i-investment-at-43b-valuation-301927440.html" }
+  - { type: invested, target: anysphere, year: 2025, detail: 參投程式編輯器D輪（該輪共 23 億美元）, source: "https://cursor.com/blog/series-d" }
+  - { type: invested, target: harvey, year: 2025, detail: 領投法律人工智慧融資（該輪共 1.6 億美元）, source: "https://www.harvey.ai/blog/andreessen-horowitz-leads-dollar160m-investment-in-harvey" }
+  - { type: invested, target: elevenlabs, year: 2026, detail: 加碼語音人工智慧D輪（該輪共 5 億美元）, source: "https://elevenlabs.io/blog/series-d" }
+  - { type: invested, target: figma, year: 2020, detail: 領投設計D輪（該輪共 0.5 億美元）, source: "https://techcrunch.com/2020/04/30/figma-raises-50-million-series-d-led-by-andreessen-horowitz/" }
+  - { type: invested, target: stripe, year: 2023, detail: 參投支付平台I輪（該輪共 65 億美元）, source: "https://stripe.com/ae/newsroom/news/stripe-series-i-employee-liquidity" }
+  - { type: invested, target: substack, year: 2025, detail: 參投訂閱平台融資（該輪共 1 億美元）, source: "https://techcrunch.com/2025/07/17/substack-raises-100m-from-chernin-group-andreessen-horowitz-skims-ceo-and-more/" }
+  - { type: invested, target: kalshi, year: 2025, detail: 共同領投預測市場D輪（該輪共 3 億美元）, source: "https://news.kalshi.com/p/kalshi-hits-5-billion-valuation-amid-international-expansion" }
+  - { type: invested, target: clickup, year: 2021, detail: 共同領投協作平台C輪（該輪共 4 億美元）, source: "https://clickup.com/blog/clickup-raises-400m-in-series-c-funding/" }
+  - { type: invested, target: reddit, year: 2014, detail: 參投社群平台B輪（該輪共 0.5 億美元）, source: "https://techcrunch.com/2014/09/30/reddit-scoops-up-50m-series-b-from-sam-altman-a16z-sequoia-at-500m-valuation/" }
+  - { type: invested, target: waymo, year: 2024, detail: 參與C輪募資, source: "https://careers.withwaymo.com/blogs/89e712be-5d4a-48b3-a945-b60090823408/investing-to-bring-the-waymo-driver-to-more-riders" }
+  - { type: invested, target: anduril-industries, year: 2021, detail: 參與D輪募資, source: "https://techcrunch.com/2021/06/17/anduril-funding-series-d-valuation/" }
 sources:
   - "pro:edpjc5mshdka"
   - "pro:za5znb6ngne6"

@@ -10,8 +10,16 @@ links:
   website: "https://www.mastercard.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Mastercard"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/万事达卡"
+revenue:
+  fy: FY2025
+  total: 33
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000013/ma-20251231.htm"
+  segments:
+    - { id: network, name: 支付網路, share: 59 }
+    - { id: services, name: 加值服務與解決方案, share: 41 }
 relations:
-  - { type: supplier, target: paypal, note: 卡組織網路, detail: 合作涵蓋簽帳卡及新支付功能, year: 2025, source: "https://newsroom.mastercard.com/news/press/2025/june/mastercard-and-paypal-to-partner-on-mastercard-one-credential-to-supercharge-choice-at-checkout/" }
+  - { type: supplier, target: paypal, kind: service, segment: network, note: 卡組織網路, detail: 合作涵蓋簽帳卡及新支付功能, year: 2025, source: "https://newsroom.mastercard.com/news/press/2025/june/mastercard-and-paypal-to-partner-on-mastercard-one-credential-to-supercharge-choice-at-checkout/" }
 sources:
   - "pro:k8w9aqudktnu"
   - "pro:yb9cs6kekxas"

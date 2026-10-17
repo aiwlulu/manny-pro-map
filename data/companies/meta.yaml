@@ -17,6 +17,15 @@ people:
   - { name: Andrew McCollum, role: 創辦人 }
   - { name: Sheryl Sandberg, role: 創辦人, photo: { file: Sheryl Sandberg Moet Hennessy Financial Times Club Dinner 2011.jpg, license: CC BY 2.0, author: Financial Times } }
   - { name: Michael Abrash, role: 首席科學家, photo: { file: Michael Abrash at Facebook's F8 2015.jpg, license: CC BY 2.0, author: Maurizio Pesce } }
+revenue:
+  fy: FY2025
+  total: 200
+  currency: USD
+  source: "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx"
+  note: 依收入類型揭露，含 Reality Labs 部門。
+  segments:
+    - { id: advertising, name: 廣告, share: 98 }
+    - { id: other, name: 其他, share: 2 }
 sources:
   - "pro:kudnr9rb2r56"
   - "pro:x29tt82u4h4q"

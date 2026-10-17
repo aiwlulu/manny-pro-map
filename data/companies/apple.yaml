@@ -13,6 +13,18 @@ links:
 people:
   - { name: Steve Wozniak, role: 創辦人, photo: { file: Steve Wozniak by Gage Skidmore.jpg, license: CC BY-SA 3.0, author: Gage Skidmore } }
   - { name: Steve Jobs, role: 創辦人, photo: { file: Steve Jobs Headshot 2010-CROP2.jpg, license: CC BY-SA 3.0, author: "MetalGearLiquid, based on File:Steve_Jobs_Headshot_2010-CROP.jpg made by Matt Yo" } }
+revenue:
+  fy: FY2025
+  total: 420
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+  note: 依產品類別揭露；報告分部為地區別。
+  segments:
+    - { id: iphone, name: iPhone, share: 50 }
+    - { id: services, name: 服務, share: 26 }
+    - { id: wearables-home-and-accessories, name: 穿戴與配件, share: 9 }
+    - { id: mac, name: Mac, share: 8 }
+    - { id: ipad, name: iPad, share: 7 }
 sources:
   - "pro:rtqwsk3m4mxk"
   - "pro:wvdcaes6auhw"

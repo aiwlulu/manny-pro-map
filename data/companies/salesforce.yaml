@@ -13,6 +13,11 @@ people:
   - { name: Marc Benioff, role: 創辦人, photo: { file: Marc Benioff.jpg, license: CC BY-SA 2.0, author: Salesforce. } }
 relations:
   - { type: parent, target: slack }
+  - { type: invested, target: anthropic, year: 2023, detail: 創投部門參投C輪, source: "https://www.anthropic.com/news/anthropic-series-c" }
+  - { type: invested, target: hugging-face, year: 2023, detail: 參投D輪股權融資, source: "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/" }
+  - { type: invested, target: databricks, year: 2021, detail: 創投部門參投G輪, source: "https://www.databricks.com/company/newsroom/press-releases/databricks-raises-1-billion-series-g-investment-at-28-billion-valuation" }
+  - { type: invested, target: elevenlabs, year: 2025, detail: 創投部門參投C輪（該輪共 1.8 億美元）, source: "https://elevenlabs.io/blog/series-c" }
+  - { type: invested, target: crusoe, year: 2025, detail: 創投部門參投E輪, source: "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-e-funding" }
 sources:
   - "propod:cmtj74mw500lp01y46usd2blj"
   - "pro:drwymxex2ytn"

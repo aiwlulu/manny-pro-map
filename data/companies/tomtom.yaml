@@ -14,9 +14,18 @@ people:
   - { name: Corinne Vigreux, role: 創辦人, photo: { file: "TNW Conference 2015 - Day 3 (17251820732) (cropped).jpg", license: CC BY-SA 2.0, author: "Julia de Boer / The Next Web" } }
   - { name: Peter-Frans Pauwels, role: 創辦人 }
   - { name: Pieter Geelen, role: 創辦人 }
+revenue:
+  fy: FY2025
+  total: 0.55
+  currency: EUR
+  source: "https://corporate.tomtom.com/static-files/8b15e71b-24eb-462a-9b6d-7408f3c64753"
+  segments:
+    - { id: automotive, name: 車用業務, share: 58 }
+    - { id: enterprise, name: 企業業務, share: 29 }
+    - { id: consumer, name: 消費業務, share: 13 }
 relations:
-  - { type: supplier, target: apple, note: 地圖數據, detail: TomTom 為主要地圖資料供應商, source: "https://en.wikipedia.org/wiki/Apple_Maps" }
-  - { type: supplier, target: microsoft, note: 地圖數據, detail: 地圖與交通合約延續至本年代末, year: 2024, source: "https://www.tomtom.com/newsroom/press-releases/general/522285435/tomtom-signs-long-term-agreement-with-microsoft-to-deliver-location-technology-and-collaborate-on-product-innovation/" }
-  - { type: supplier, target: uber, note: 地圖數據, detail: 2026年續約全球地圖服務, year: 2026, source: "https://www.tomtom.com/newsroom/press-releases/general/130897198110702/tomtom-and-uber-strengthen-ties-to-enhance-on-demand-travel-experiences-globally/" }
+  - { type: supplier, target: apple, kind: service, segment: enterprise, note: 地圖數據, detail: TomTom 為主要地圖資料供應商, source: "https://en.wikipedia.org/wiki/Apple_Maps" }
+  - { type: supplier, target: microsoft, kind: service, segment: enterprise, note: 地圖數據, detail: 地圖與交通合約延續至本年代末, year: 2024, source: "https://www.tomtom.com/newsroom/press-releases/general/522285435/tomtom-signs-long-term-agreement-with-microsoft-to-deliver-location-technology-and-collaborate-on-product-innovation/" }
+  - { type: supplier, target: uber, kind: service, segment: enterprise, note: 地圖數據, detail: 2026年續約全球地圖服務, year: 2026, source: "https://www.tomtom.com/newsroom/press-releases/general/130897198110702/tomtom-and-uber-strengthen-ties-to-enhance-on-demand-travel-experiences-globally/" }
 sources:
   - "podcast:2023-02-07-ep34"

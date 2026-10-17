@@ -10,6 +10,6 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/United_Launch_Alliance"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/聯合發射聯盟"
 relations:
-  - { type: supplier, target: amazon, note: 發射服務, detail: 大量採購Atlas與Vulcan發射, year: 2022, source: "https://www.aboutamazon.com/news/innovation-at-amazon/amazon-makes-historic-launch-investment-to-advance-project-kuiper" }
+  - { type: supplier, target: amazon, kind: service, note: 發射服務, detail: 大量採購Atlas與Vulcan發射, year: 2022, source: "https://www.aboutamazon.com/news/innovation-at-amazon/amazon-makes-historic-launch-investment-to-advance-project-kuiper" }
 sources:
   - "pro:tvqqj5aqhcr3"

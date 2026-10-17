@@ -13,10 +13,16 @@ people:
   - { name: Matthew Prince, role: 執行長, interviewed: true, photo: { file: 577181505RR106 TechCrunch D.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Lee Holloway, role: 創辦人 }
   - { name: Michelle Zatlyn, role: 創辦人, photo: { file: "Collision 2019 - Toronto - ENX 9646 (47894937341).jpg", license: CC BY 2.0, author: "Collision Conf from New Orleans, Louisiana, USA" } }
+revenue:
+  fy: FY2025
+  total: 2.2
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000016/cloud-20251231.htm"
+  note: 單一營運分部，未依產品線拆分營收。
 relations:
-  - { type: supplier, target: discord, note: 網路資安, detail: 官方案例確認流量與抗攻擊服務, year: 2015, source: "https://www.cloudflare.com/pt-br/case-studies/discord/" }
-  - { type: supplier, target: openai, note: 流量負載平衡, detail: 官方事故報告確認全域負載平衡, year: 2024, source: "https://status.openai.com/incidents/01JMYB4A62XNXSAHAY8ZGQAAKD/write-up" }
-  - { type: supplier, target: shopify, note: 內容傳遞網路, detail: 官方案例確認全球網路服務, source: "https://www.cloudflare.com/case-studies/shopify/" }
+  - { type: supplier, target: discord, kind: service, note: 網路資安, detail: 官方案例確認流量與抗攻擊服務, year: 2015, source: "https://www.cloudflare.com/pt-br/case-studies/discord/" }
+  - { type: supplier, target: openai, kind: service, note: 流量負載平衡, detail: 官方事故報告確認全域負載平衡, year: 2024, source: "https://status.openai.com/incidents/01JMYB4A62XNXSAHAY8ZGQAAKD/write-up" }
+  - { type: supplier, target: shopify, kind: service, note: 內容傳遞網路, detail: 官方案例確認全球網路服務, source: "https://www.cloudflare.com/case-studies/shopify/" }
 sources:
   - "pro:52gjqz2bbj2p"
   - "pro:sfddnjkgm59b"

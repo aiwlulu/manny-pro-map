@@ -8,6 +8,16 @@ logo: { file: Flutter Entertainment logo.jpeg, license: Public domain, author: F
 links:
   website: "https://www.flutter.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Flutter_Entertainment"
+revenue:
+  fy: FY2025
+  total: 16
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1635327/000163532726000005/flut-20251231.htm"
+  note: 依產品別加總美國與國際兩大地區分部。
+  segments:
+    - { id: sportsbook, name: 運動博彩, share: 53 }
+    - { id: igaming, name: 線上博弈, share: 44 }
+    - { id: other, name: 其他, share: 3 }
 relations:
   - { type: parent, target: fanduel }
 sources:

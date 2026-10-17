@@ -6,5 +6,8 @@ links:
   website: "https://www.valorep.com"
 people:
   - { name: Antonio Gracias, role: "創辦人暨執行長（亦為 SpaceX 董事）" }
+relations:
+  - { type: invested, target: xai, year: 2024, detail: 參與C輪股權融資, source: "https://x.ai/news/series-c" }
+  - { type: invested, target: crusoe, year: 2024, detail: 參與D輪募資, source: "https://www.crusoe.ai/resources/newsroom/crusoe-closes-series-d-funding" }
 sources:
   - "pro:3wwyhabrfgca"

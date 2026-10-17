@@ -13,5 +13,16 @@ links:
 people:
   - { name: Roelof Botha, role: 管理合夥人, interviewed: true, photo: { file: Roelof Botha.jpg, license: CC BY 2.0, author: TechCrunch. Photo by Dave Getzschman. } }
   - { name: Don Valentine, role: 創辦人, photo: { file: Don Valentine in 2009.jpg, license: CC BY 2.0, author: "Steve Jurvetson from Menlo Park, USA" } }
+relations:
+  - { type: invested, target: anthropic, year: 2026, detail: 參與G輪股權融資, source: "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation" }
+  - { type: invested, target: xai, year: 2024, detail: 參與C輪股權融資, source: "https://x.ai/news/series-c" }
+  - { type: invested, target: harvey, year: 2025, detail: 領投法律人工智慧D輪（該輪共 3 億美元）, source: "https://www.harvey.ai/blog/harvey-raises-series-d" }
+  - { type: invested, target: elevenlabs, year: 2026, detail: 領投語音人工智慧D輪（該輪共 5 億美元）, source: "https://elevenlabs.io/blog/series-d" }
+  - { type: invested, target: figma, year: 2019, detail: 領投協作設計C輪（該輪共 0.4 億美元）, source: "https://www.figma.com/blog/figma-series-c/" }
+  - { type: invested, target: stripe, year: 2019, detail: 參投支付平台融資（該輪共 2.5 億美元）, source: "https://stripe.com/en-dk/newsroom/news/stripe-expands-global-infrastructure-with-new-funding-round" }
+  - { type: invested, target: kalshi, year: 2025, detail: 共同領投預測市場D輪（該輪共 3 億美元）, source: "https://news.kalshi.com/p/kalshi-hits-5-billion-valuation-amid-international-expansion" }
+  - { type: invested, target: reddit, year: 2014, detail: 參投社群平台B輪（該輪共 0.5 億美元）, source: "https://techcrunch.com/2014/09/30/reddit-scoops-up-50m-series-b-from-sam-altman-a16z-sequoia-at-500m-valuation/" }
+  - { type: invested, target: aurora-innovation, year: 2019, detail: 領投B輪募資, source: "https://aurora.tech/newsroom/investing-in-the-future-of-transportation-aurora-raises" }
+  - { type: invested, target: zipline, year: 2016, detail: 參與B輪募資, source: "https://techcrunch.com/2016/11/09/zipline-raises-25-million-to-deliver-medical-supplies-by-drone/" }
 sources:
   - "pro:qnjkum4j8g4u"

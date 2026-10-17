@@ -15,8 +15,16 @@ people:
   - { name: Peter Thiel, role: 創辦人, photo: { file: Peter Thiel by Gage Skidmore.jpg, license: CC BY-SA 3.0, author: Gage Skidmore } }
   - { name: Yu Pan, role: 創辦人 }
   - { name: Elon Musk, role: 創辦人, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
+revenue:
+  fy: FY2025
+  total: 33
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000024/pypl-20251231.htm"
+  segments:
+    - { id: transactions, name: 交易收入, share: 90 }
+    - { id: revenues-from-other-value-added-services, name: 其他加值服務, share: 10 }
 relations:
-  - { type: supplier, target: shopify, note: 支付處理, detail: 2024年擴大美國支付處理合作, year: 2024, source: "https://newsroom.paypal-corp.com/2024-09-09-PayPal-partners-with-Shopify-to-power-a-portion-of-Shopify-Payments-in-the-U-S" }
+  - { type: supplier, target: shopify, kind: service, segment: transactions, note: 支付處理, detail: 2024年擴大美國支付處理合作, year: 2024, source: "https://newsroom.paypal-corp.com/2024-09-09-PayPal-partners-with-Shopify-to-power-a-portion-of-Shopify-Payments-in-the-U-S" }
 sources:
   - "pro:wvdcaes6auhw"
   - "pro:qnjkum4j8g4u"

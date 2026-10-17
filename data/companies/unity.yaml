@@ -10,7 +10,15 @@ links:
   website: "https://unity.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Unity_Technologies"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Unity_Technologies"
+revenue:
+  fy: FY2025
+  total: 1.8
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1810806/000181080626000011/unity-20251231.htm"
+  segments:
+    - { id: create-solutions, name: 創作解決方案, share: 34 }
+    - { id: grow-solutions, name: 成長解決方案, share: 66 }
 relations:
-  - { type: supplier, target: mihoyo, note: 遊戲引擎, detail: 官方仍將原神列為引擎作品, source: "https://unity.com/es/games" }
+  - { type: supplier, target: mihoyo, kind: software, segment: create-solutions, note: 遊戲引擎, detail: 官方仍將原神列為引擎作品, source: "https://unity.com/es/games" }
 sources:
   - "podcast:2022-07-17-ep18"

@@ -13,5 +13,13 @@ links:
 people:
   - { name: Evan Spiegel, role: 創辦人, photo: { file: "Evan Spiegel, founder of Snapchat.jpg", license: CC BY-SA 2.0, author: cellanr } }
   - { name: Bobby Murphy, role: 創辦人, photo: { file: "Robert (Bobby) Murphy.jpg", license: CC BY-SA 4.0, author: Leandroapbatista } }
+revenue:
+  fy: FY2025
+  total: 5.9
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000013/snap-20251231.htm"
+  segments:
+    - { id: advertising-revenue, name: 廣告, share: 87 }
+    - { id: other-revenue, name: 其他, share: 13 }
 sources:
   - "pro:erw26rvsctcr"

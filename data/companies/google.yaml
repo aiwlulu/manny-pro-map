@@ -13,15 +13,33 @@ people:
   - { name: Sergey Brin, role: 創辦人, photo: { file: "Sergey Brin Ted 2010 (cropped).jpg", license: CC BY 2.0, author: Steve Jurvetson } }
   - { name: Larry Page, role: 創辦人, photo: { file: "Larry Page in the European Parliament, 17.06.2009.jpg", license: CC BY-SA 4.0, author: "Marcin Mycielski, European Parliament (Stansfield)" } }
   - { name: Sundar Pichai, photo: { file: "Sundar Pichai - 2023 (cropped).jpg", license: CC BY 4.0, author: "Photographer: Lukasz Kobus (European Commission)" } }
+revenue:
+  fy: FY2025
+  total: 400
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+  segments:
+    - { id: search, name: 搜尋與其他, share: 56 }
+    - { id: cloud, name: Google 雲端, share: 15 }
+    - { id: subscriptions, name: 訂閱、平台與裝置, share: 12 }
+    - { id: youtube-ads, name: YouTube 廣告, share: 10 }
+    - { id: network, name: 聯播網廣告, share: 7 }
+    - { id: other, name: 其他, share: 0 }
 relations:
-  - { type: supplier, target: spotify, note: 雲端算力, detail: 2023年擴大基礎設施合作, year: 2023, source: "https://www.googlecloudpresscorner.com/2023-11-16-Google-Cloud-and-Spotify-Expand-Partnership-to-Help-Unlock-Creator-Potential-and-Reach-Fans" }
-  - { type: supplier, target: snap, note: 雲端AI服務, detail: 聊天助理採用谷歌雲模型, year: 2024, source: "https://newsroom.snap.com/snap-google-gemini-my-ai" }
-  - { type: supplier, target: apple, note: 雲端算力, detail: 私有雲運算擴展採用谷歌雲, year: 2026, source: "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models" }
-  - { type: supplier, target: shopify, note: 雲端算力, detail: 2016年起遷移至谷歌雲, year: 2016, source: "https://cloud.google.com/customers/shopify-compute" }
-  - { type: supplier, target: anthropic, note: 雲端算力, detail: 擴大採用至百萬顆運算晶片, year: 2025, source: "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services" }
+  - { type: supplier, target: spotify, kind: cloud, segment: cloud, note: 雲端算力, detail: 2023年擴大基礎設施合作, year: 2023, source: "https://www.googlecloudpresscorner.com/2023-11-16-Google-Cloud-and-Spotify-Expand-Partnership-to-Help-Unlock-Creator-Potential-and-Reach-Fans" }
+  - { type: supplier, target: snap, kind: cloud, segment: cloud, note: 雲端AI服務, detail: 聊天助理採用谷歌雲模型, year: 2024, source: "https://newsroom.snap.com/snap-google-gemini-my-ai" }
+  - { type: supplier, target: apple, kind: cloud, segment: cloud, note: 雲端算力, detail: 私有雲運算擴展採用谷歌雲, year: 2026, source: "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models" }
+  - { type: supplier, target: shopify, kind: cloud, segment: cloud, note: 雲端算力, detail: 2016年起遷移至谷歌雲, year: 2016, source: "https://cloud.google.com/customers/shopify-compute" }
+  - { type: supplier, target: anthropic, kind: cloud, segment: cloud, note: 雲端算力, detail: 擴大採用至百萬顆運算晶片, year: 2025, source: "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services" }
   - { type: parent, target: boston-dynamics }
   - { type: parent, target: waymo }
   - { type: parent, target: youtube }
+  - { type: invested, target: hugging-face, year: 2023, detail: D輪參投, source: "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/" }
+  - { type: invested, target: anysphere, year: 2025, detail: 參投程式編輯器D輪（該輪共 23 億美元）, source: "https://cursor.com/blog/series-d" }
+  - { type: invested, target: harvey, year: 2025, detail: GV參與法律融資（該輪共 3 億美元）, source: "https://www.harvey.ai/blog/harvey-raises-series-d" }
+  - { type: invested, target: kalshi, year: 2025, detail: CapitalG參投D輪（該輪共 3 億美元）, source: "https://news.kalshi.com/p/kalshi-hits-5-billion-valuation-amid-international-expansion" }
+  - { type: invested, target: spacex, year: 2015, detail: 參與股權募資, source: "https://techcrunch.com/2015/01/20/spacex-raises-1-billion-in-new-funding-from-google-and-fidelity/" }
+  - { type: invested, target: anthropic, amount: 逾 30 億美元, stake: 約 14%, year: 2023, detail: 2023 年起多輪投資，持股上限 15%、無投票權, source: "https://www.anthropic.com/news/anthropic-series-c" }
 sources:
   - "pro:dwcrddrmu86k"
   - "pro:kudnr9rb2r56"

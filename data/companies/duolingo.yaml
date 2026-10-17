@@ -10,5 +10,13 @@ links:
 people:
   - { name: Luis von Ahn, role: 創辦人, photo: { file: "Wikimania 2015 - Day 2 (18) (cropped).jpg", license: CC BY-SA 4.0, author: EneasMx } }
   - { name: Severin Guey, role: 創辦人 }
+revenue:
+  fy: FY2025
+  total: 1
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm"
+  segments:
+    - { id: subscription, name: 訂閱, share: 84 }
+    - { id: other, name: 其他, share: 16 }
 sources:
   - "pro:zbbg828wt3aa"

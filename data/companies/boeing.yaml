@@ -12,6 +12,16 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/波音"
 people:
   - { name: William Boeing, role: 創辦人, photo: { file: William Boeing.jpg, license: CC BY 4.0, author: Los Angeles Times } }
+revenue:
+  fy: FY2025
+  total: 90
+  currency: USD
+  source: "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Fourth-Quarter-Results/default.aspx"
+  note: 另有約 -2 億美元未分配與沖銷，未列入。
+  segments:
+    - { id: commercial-airplanes, name: 商用飛機, share: 46 }
+    - { id: defense-space-security, name: 國防太空安全, share: 31 }
+    - { id: global-services, name: 全球服務, share: 23 }
 relations:
   - { type: parent, target: ula }
 sources:

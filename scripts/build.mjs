@@ -8,10 +8,14 @@ const industries = load('data/industries.yaml');
 const sources = load('data/sources.yaml') ?? [];
 const errors = [];
 const err = (f, m) => errors.push(`${f}: ${m}`);
+const warn = [];
 
 const MANNY_HOSTS = ['pro.manny-li.com', 'manny-li.com', 'www.manny-li.com', 'eepurl.com', 'open.firstory.fm', 'podcasts.apple.com'];
 const RELATION_TYPES = ['acquired', 'invested', 'competitor', 'partner', 'supplier', 'customer', 'spinoff', 'parent'];
-const indIds = new Set(industries.map((i) => i.id));
+// What flows along a supply link; mirrored in site/chain.js
+const SUPPLY_KINDS = ['hardware', 'software', 'cloud', 'service', 'content'];
+const CURRENCIES = ['USD', 'TWD', 'JPY', 'EUR', 'KRW', 'GBP', 'SEK', 'CNY', 'HKD', 'CAD'];
+const indIds =new Set(industries.map((i) => i.id));
 const segIds = new Map(industries.map((i) => [i.id, new Set((i.segments ?? []).map((g) => g.id))]));
 const srcIds = new Set();
 for (const s of sources) {
@@ -53,17 +57,51 @@ for (const f of readdirSync('data/companies').filter((f) => f.endsWith('.yaml'))
   if (!c.logo && existsSync(`site/logos/${c.id}.png`)) c.icon = `logos/${c.id}.png`;
   companies.push(c);
 }
+const https = (u) => { try { return new URL(u).protocol === 'https:'; } catch { return false; } };
+// Revenue mix from the latest annual report; shares are % of total revenue
+for (const c of companies) {
+  const v = c.revenue, at = `companies/${c.id}.yaml`;
+  if (!v) continue;
+  if (!v.fy) err(at, 'revenue.fy is required');
+  if (!https(v.source)) err(at, 'revenue needs an https source');
+  if (v.total != null && !CURRENCIES.includes(v.currency)) err(at, `revenue.currency must be one of ${CURRENCIES.join(', ')}`);
+  const segs = v.segments ?? [];
+  // Single-segment filers: total plus a note explaining why there is no split
+  if (!segs.length && !v.note) err(at, 'revenue needs segments, or a note saying why there are none');
+  const seen = new Set();
+  for (const g of segs) {
+    if (!/^[a-z0-9-]+$/.test(g.id ?? '')) err(at, `revenue segment id "${g.id}" must be kebab-case`);
+    if (seen.has(g.id)) err(at, `duplicate revenue segment ${g.id}`);
+    seen.add(g.id);
+    if (!g.name) err(at, `revenue segment ${g.id} needs a name`);
+    if (g.share != null && !(g.share >= 0 && g.share <= 100)) err(at, `revenue segment ${g.id} share must be 0–100`);
+  }
+  // Rough mix is enough; flag data old enough that the mix may have shifted
+  const fy = +String(v.fy).match(/\d{4}/)?.[0];
+  if (fy && fy < new Date().getFullYear() - 2) warn.push(`${at}: revenue is ${v.fy}, consider updating`);
+  const sum = segs.reduce((s, g) => s + (g.share ?? 0), 0);
+  if (segs.length && segs.every((g) => g.share != null) && Math.abs(sum - 100) > 2) err(at, `revenue shares sum to ${sum.toFixed(1)}, not 100`);
+}
 const ids = new Set(companies.map((c) => c.id));
+const byId = new Map(companies.map((c) => [c.id, c]));
 for (const c of companies)
   for (const r of c.relations ?? []) {
-    if (!RELATION_TYPES.includes(r.type)) err(`companies/${c.id}.yaml`, `unknown relation type ${r.type}`);
-    // Supply-chain links must cite a public source
+    const at = `companies/${c.id}.yaml`;
+    if (!RELATION_TYPES.includes(r.type)) err(at, `unknown relation type ${r.type}`);
+    if (!ids.has(r.target)) { err(at, `relation target ${r.target} not found`); continue; }
+    // Supply-chain links must cite a public source and say what flows
     if (['supplier', 'customer'].includes(r.type)) {
-      let ok = false;
-      try { ok = new URL(r.source).protocol === 'https:'; } catch {}
-      if (!ok) err(`companies/${c.id}.yaml`, `${r.type} ${r.target} needs an https source`);
+      if (!https(r.source)) err(at, `${r.type} ${r.target} needs an https source`);
+      if (!SUPPLY_KINDS.includes(r.kind)) err(at, `${r.type} ${r.target} needs kind: ${SUPPLY_KINDS.join(' | ')}`);
+      // segment: which of the supplier's revenue lines this sale belongs to
+      const sup = r.type === 'supplier' ? c : byId.get(r.target);
+      if (r.segment && !sup.revenue?.segments?.some((g) => g.id === r.segment)) err(at, `${r.target}: segment "${r.segment}" is not in ${sup.id}'s revenue`);
+      if (r.share) {
+        if (!(r.share.pct > 0 && r.share.pct <= 100)) err(at, `${r.target}: share.pct must be 0–100`);
+        if (!r.share.fy || !https(r.share.source)) err(at, `${r.target}: share needs fy and an https source`);
+      }
     }
-    if (!ids.has(r.target)) err(`companies/${c.id}.yaml`, `relation target ${r.target} not found`);
+    if (r.type === 'invested' && r.source && !https(r.source)) err(at, `invested ${r.target} source must be https`);
   }
 
 if (errors.length) {
@@ -92,4 +130,5 @@ if (existsSync('site/fonts/chars.txt')) {
   const missing = new Set([...JSON.stringify(companies) + JSON.stringify(sources)].filter((ch) => ch.codePointAt(0) > 0x2e7f && !have.has(ch)));
   if (missing.size) console.warn(`note: ${missing.size} characters not in the font subset; run scripts/subset-fonts.py`);
 }
+if (warn.length) console.warn(`note: ${warn.length} stale revenue entries\n  ${warn.join('\n  ')}`);
 console.log(`ok: ${companies.length} companies, ${used.size} sources`);

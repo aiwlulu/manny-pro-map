@@ -12,6 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/励讯集团"
 relations:
   - { type: parent, target: elsevier, note: 1993 年 }
+  - { type: invested, target: harvey, year: 2025, detail: REV創投部門參投（該輪共 3 億美元）, source: "https://www.harvey.ai/blog/harvey-raises-series-d" }
 sources:
   - "pro:w8n34nnkw3d4"
   - "pro:ta8afrymmmcj"

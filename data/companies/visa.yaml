@@ -11,10 +11,21 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Visa公司"
 people:
   - { name: Dee Hock, role: 創辦人 }
+revenue:
+  fy: FY2025
+  total: 40
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm"
+  note: 以扣除客戶獎勵金前的總收入計算佔比（總收入 557.5 億、獎勵金 157.5 億美元）。
+  segments:
+    - { id: service-revenue, name: 服務收入, share: 31 }
+    - { id: data-processing-revenue, name: 資料處理收入, share: 36 }
+    - { id: international-transaction-revenue, name: 跨境交易收入, share: 26 }
+    - { id: other-revenue, name: 其他收入, share: 7 }
 relations:
   - { type: acquired, target: tink, note: 2022 年 }
-  - { type: supplier, target: stripe, note: 卡組織網路, detail: 策略合作開放支付網路能力, year: 2015, source: "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.10226.html" }
-  - { type: supplier, target: paypal, note: 卡組織網路, detail: 全球合作提供即時提款與付款, year: 2020, source: "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.17336.html" }
+  - { type: supplier, target: stripe, kind: service, note: 卡組織網路, detail: 策略合作開放支付網路能力, year: 2015, source: "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.10226.html" }
+  - { type: supplier, target: paypal, kind: service, note: 卡組織網路, detail: 全球合作提供即時提款與付款, year: 2020, source: "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.17336.html" }
   - { type: competitor, target: mastercard }
 sources:
   - "pro:b2r32qpe3jna"

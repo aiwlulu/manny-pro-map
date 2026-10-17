@@ -52,10 +52,40 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
 `supplier`（供應給）與 `customer` 是產業鏈圖的上下游，**必須附上來源**，CI 會檢查：
 
 ```yaml
-  - { type: supplier, target: nvidia, note: 晶圓代工, detail: 為 NVIDIA 代工 GPU 晶片, year: 2020, source: "https://…" }
+  - { type: supplier, target: nvidia, kind: hardware, segment: wafer, note: 晶圓代工, detail: 為 NVIDIA 代工 GPU 晶片, year: 2020, source: "https://…" }
 ```
 
 來源請用公司新聞稿、財報或主流媒體，不要用部落格或論壇；只收主要、具代表性的供應關係，品牌在通路上架、平台上架這類不算。
+
+| 欄位 | 必填 | 說明 |
+|---|---|---|
+| `kind` | ✓ | 流動的是什麼：`hardware` 硬體（晶片、設備、零組件、整機）、`software` 軟體與 AI（授權、模型、引擎）、`cloud` 雲端算力、`service` 服務與數據（支付、數據、網路、物流、發射）、`content` 內容授權 |
+| `segment` | | 這筆生意屬於**供應方**哪個營收區塊，填供應方 `revenue.segments` 的 id |
+| `share` | | 供應方財報**具名揭露**的客戶營收佔比：`{ pct: 62, fy: FY2024, source: "https://…" }`，沒具名揭露就不要填 |
+
+### 營收結構 `revenue`
+
+依最近一個完整財年的年報（10-K、20-F、年報或全年財報新聞稿）填寫，用公司自己揭露的事業部或產品線，**不要用地區別**；2–7 項。目的是看出結構，不必精確：`share` 取整數百分比、加總 100，低於 3% 的併入「其他」（有上下游指向的區塊除外）。財報更新時不必追著改，build 會提醒超過兩個財年的資料。
+
+```yaml
+revenue:
+  fy: FY2026                  # 財年標示
+  total: 220                  # 總營收約略規模，單位：十億（billion），取兩位有效數字
+  currency: USD               # USD | TWD | JPY | EUR | KRW | GBP | SEK | CNY | HKD | CAD
+  source: "https://…"         # 年報或官方財報頁
+  segments:
+    - { id: data-center, name: 資料中心, share: 90 }
+    - { id: gaming, name: 遊戲, share: 7 }
+    - { id: other, name: 其他, share: 3 }
+```
+
+### 投資 `invested`
+
+```yaml
+  - { type: invested, target: openai, amount: 130 億美元, stake: 約 27%, year: 2019, detail: 多輪投資並取得營利部門股權, source: "https://…" }
+```
+
+`amount`、`stake` 只填公開報導過的數字。投資、母公司（`parent`）會畫在產業鏈的「資金與股權」區。
 
 ## Logo
 
