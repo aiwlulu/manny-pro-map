@@ -130,7 +130,7 @@ relations:
 
 ## 版本
 
-發佈新版時更新 `package.json` 的 `version` 與 `CHANGELOG.md`，並打上 `vX.Y.Z` tag。版本號規則見 CHANGELOG 開頭。
+發佈新版時更新 `package.json` 的 `version` 與 `CHANGELOG.md`，並打上 `vX.Y.Z` tag；push tag 後 GitHub Actions 會用 CHANGELOG 該版段落自動建立 Release。版本號規則見 CHANGELOG 開頭。
 
 ## 重新錄製導覽短片
 
