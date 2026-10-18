@@ -134,7 +134,7 @@ const capNote = (x) => [x.rel === 'parent' ? '旗下事業' : '', x.amount, x.st
 const usd = (bn) => (bn >= 1000 ? `${(bn / 1000).toLocaleString('zh-TW', { maximumFractionDigits: 2 })} 兆美元` : `${(bn * 10).toLocaleString('zh-TW', { maximumFractionDigits: 1 })} 億美元`);
 const flowText = (e) => (e.t === 'inv'
   ? { label: '投資', amount: e.ev.amount || (e.ev.usd ? usd(e.ev.usd) : ''), sub: e.ev.stake ? `持股 ${e.ev.stake}` : '' }
-  : { label: `採購${e.ev.what ? ` ${e.ev.what}` : ''}`, amount: e.ev.value ? `${e.ev.value.prefix ?? ''}${usd(e.ev.value.usd_bn)}` : '', sub: e.ev.value?.basis ?? '' });
+  : { label: `採購${/^\w/.test(e.ev.what ?? '') ? ' ' : ''}${e.ev.what ?? ''}`, amount: e.ev.value ? `${e.ev.value.prefix ? `${e.ev.value.prefix} ` : ''}${usd(e.ev.value.usd_bn)}` : '', sub: e.ev.value?.basis ?? '' });
 // Ring diagram: companies on a circle, arrows show where the money goes, numbered steps below carry the sources
 let figN = 0;
 function cycleFigure(cy, { focus = null } = {}) {
@@ -168,7 +168,7 @@ function cycleFigure(cy, { focus = null } = {}) {
   const node = (c, i) => `<a class="cy-n${c.extended ? ' ext' : ''}${focus && c.id === focus ? ' on' : ''}" href="#/chain/${c.id}" style="left:${pc(pos[i][0], W)};top:${pc(pos[i][1], H)};--c1:${IND(c).c1}">${AV(c)}<b>${esc(c.name)}</b></a>`;
   const step = (p, i) => { const t = flowText(p.e), a = nodes[i], b = nodes[(i + 1) % n];
     const via = p.e.t === 'buy' && p.e.seller.id !== b.id ? `（${esc(p.e.seller.name)}）` : '';
-    return `<li style="--k:var(--k-${p.k})"><span class="cy-i">${i + 1}</span><span><b>${esc(a.name)}</b> → <b>${esc(b.name)}</b>${via}　${esc(t.label)}${t.amount ? ` <em>${esc(t.amount)}</em>` : ''}${t.sub ? `<small>${esc(t.sub)}</small>` : ''}</span>${evidence(p.e.ev.value?.source ? { ...p.e.ev, source: p.e.ev.value.source } : p.e.ev)}</li>`; };
+    return `<li style="--k:var(--k-${p.k})"><span class="cy-i">${i + 1}</span><span><b>${esc(a.name)}</b> → <b>${esc(b.name)}</b>${via || '　'}${esc(t.label)}${t.amount ? ` <em>${esc(t.amount)}</em>` : ''}${t.sub ? `<small>${esc(t.sub)}</small>` : ''}</span>${evidence(p.e.ev.value?.source ? { ...p.e.ev, source: p.e.ev.value.source } : p.e.ev)}</li>`; };
   // Two-party loops also compare what went in with what came back
   let bars = '';
   if (n === 2 && (edges[0].ev.usd || edges[1].ev.value?.usd_bn)) {
