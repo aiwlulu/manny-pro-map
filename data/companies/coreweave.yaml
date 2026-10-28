@@ -8,6 +8,8 @@ links:
   website: "https://www.coreweave.com/"
   wikipedia: "https://en.wikipedia.org/wiki/CoreWeave"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/CoreWeave"
+people:
+  - { name: Mike Intrator, role: 共同創辦人暨執行長, interviewed: true }
 revenue:
   fy: FY2025
   total: 5.1
@@ -15,9 +17,11 @@ revenue:
   source: "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm"
   note: 單一營運分部；2025 年約 67% 營收來自微軟。
 relations:
+  - { type: supplier, target: meta, kind: cloud, note: 雲端算力, detail: 提供 AI 雲端運算容量, year: 2025, value: { usd_bn: 14.2, basis: 承諾採購, period: 至 2031 年 12 月 14 日, prefix: 至多約, source: "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000050/crwv-20250925.htm" }, source: "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000050/crwv-20250925.htm" }
   - { type: supplier, target: openai, kind: cloud, note: 雲端算力, detail: 算力合約再增六十五億美元, year: 2025, source: "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Expands-Agreement-with-OpenAI-by-up-to-6-5B/default.aspx" }
   - { type: supplier, target: microsoft, kind: cloud, share: { pct: 67, fy: FY2025, source: "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm" }, note: 雲端算力, detail: 年報確認微軟為最大客戶, year: 2025, source: "https://s205.q4cdn.com/133937190/files/doc_financials/2025/q4/CoreWeave-Inc-FY25-10-K-7.pdf" }
   - { type: supplier, target: nvidia, kind: cloud, note: 雲端算力, detail: NVIDIA 承購未售出的算力容量, year: 2025, value: { usd_bn: 6.3, basis: 合約總額, period: 至 2032 年, source: "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm" }, source: "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm" }
 sources:
+  - "pro:34rtf4jjhsj4"
   - "propod:cmtum2ac1123m01w6ehj8b2tu"
   - "pro:dzcqdpceapkv"

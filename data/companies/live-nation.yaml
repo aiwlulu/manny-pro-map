@@ -13,4 +13,5 @@ people:
 relations:
   - { type: parent, target: ticketmaster, note: 2010 年 }
 sources:
+  - "propod:cmv2fsid806k501wx0785csgz"
   - "pro:y3ajdu6pbwwx"

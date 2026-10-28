@@ -19,6 +19,7 @@ relations:
   - { type: competitor, target: s-p-global }
   - { type: competitor, target: fitch-group }
 sources:
+  - "pro:4vjp653zfvt8"
   - "propod:cmumopubf03dc01w1ggiw1vrk"
   - "pro:du9cp8u5u3vg"
   - "pro:2cw32kpzmnpy"

@@ -46,6 +46,8 @@ relations:
   - { type: invested, target: coreweave, amount: 2026 年加碼 20 億美元, usd_bn: 2, stake: 約 7%, year: 2023, detail: 上市前即入股；2026 年以每股 87.2 美元加碼, source: "https://investors.coreweave.com/news/news-details/2026/NVIDIA-and-CoreWeave-Strengthen-Collaboration-to-Accelerate-Buildout-of-AI-Factories/default.aspx" }
   - { type: supplier, target: oracle, kind: hardware, segment: data-center, note: GPU, detail: 供應 OCI 的 Blackwell 系統, year: 2025, source: "https://www.oracle.com/news/announcement/oracle-and-nvidia-collaborate-to-help-enterprises-accelerate-agentic-ai-inference-2025-03-18/" }
 sources:
+  - "pro:34rtf4jjhsj4"
+  - "propod:cmv2fsid806k501wx0785csgz"
   - "pro:dwcrddrmu86k"
   - "pro:x29tt82u4h4q"
   - "propod:cmtum2ac1123m01w6ehj8b2tu"

@@ -1,5 +1,6 @@
 name: Paramount Skydance
 zh: 派拉蒙天舞
+aliases: [Skydance, Skydance Corporation]
 industry: media
 segment: production
 summary: "美國跨國媒體與娛樂集團，經營大眾傳媒及娛樂業務，旗下資產包括 CBS。"
@@ -11,6 +12,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Paramount_Skydance"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/派拉蒙天空之舞"
 people:
-  - { name: David Ellison, role: 創辦人 }
+  - { name: David Ellison, role: 董事長暨執行長 }
+relations:
+  - { type: acquired, target: warner-bros-discovery, note: 2026 年 }
 sources:
+  - "pro:9qw2au2rusba"
   - "pro:ueyj98gmbgxn"

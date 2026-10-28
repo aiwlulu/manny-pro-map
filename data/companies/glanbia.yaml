@@ -1,0 +1,23 @@
+name: Glanbia
+aliases: [Glanbia plc, Optimum Nutrition]
+industry: consumer
+segment: brands
+summary: "愛爾蘭營養集團，經營運動營養品牌與營養原料業務，旗下品牌包括 Optimum Nutrition。"
+founded: 1997
+hq: 基爾肯尼
+links:
+  website: "https://www.glanbia.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Glanbia"
+people:
+  - { name: Hugh McGuire, role: 執行長, interviewed: true }
+revenue:
+  fy: FY2025
+  total: 3.9
+  currency: USD
+  source: "https://www.glanbia.com/sites/glanbia-plc/files/glanbia/investors/results-presentations/2026/Glanbia-Full-Year-25-Results.pdf"
+  segments:
+    - { id: performance-nutrition, name: 運動營養, share: 46 }
+    - { id: dairy-nutrition, name: 乳品營養, share: 38 }
+    - { id: health-nutrition, name: 健康與營養, share: 16 }
+sources:
+  - "pro:tkyv36jxmfnk"

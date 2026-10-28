@@ -28,6 +28,7 @@ relations:
   - { type: supplier, target: paypal, kind: service, note: 卡組織網路, detail: 全球合作提供即時提款與付款, year: 2020, source: "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.17336.html" }
   - { type: competitor, target: mastercard }
 sources:
+  - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:b2r32qpe3jna"
   - "pro:k8w9aqudktnu"
   - "pro:zvsevsgssyap"

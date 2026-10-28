@@ -17,4 +17,5 @@ relations:
   - { type: parent, target: springer-nature }
   - { type: parent, target: digital-science }
 sources:
+  - "pro:4vjp653zfvt8"
   - "pro:w8n34nnkw3d4"

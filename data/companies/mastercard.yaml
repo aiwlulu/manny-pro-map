@@ -21,5 +21,6 @@ revenue:
 relations:
   - { type: supplier, target: paypal, kind: service, segment: network, note: 卡組織網路, detail: 合作涵蓋簽帳卡及新支付功能, year: 2025, source: "https://newsroom.mastercard.com/news/press/2025/june/mastercard-and-paypal-to-partner-on-mastercard-one-credential-to-supercharge-choice-at-checkout/" }
 sources:
+  - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:k8w9aqudktnu"
   - "pro:yb9cs6kekxas"

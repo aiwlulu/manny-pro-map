@@ -26,6 +26,7 @@ relations:
   - { type: invested, target: waabi, year: 2024, detail: 共同領投B輪, source: "https://waabi.ai/insights/waabi-series-b-announcement" }
   - { type: invested, target: aurora-innovation, amount: 4 億美元, year: 2021, detail: 現金入股自駕公司, source: "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000038/uber-20210630.htm" }
 sources:
+  - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:zbbg828wt3aa"
   - "podcast:2026-05-11-ep127"
   - "pro:hez389wzm44g"

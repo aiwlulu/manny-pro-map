@@ -22,5 +22,6 @@ revenue:
     - { id: walmart-international, name: 沃爾瑪國際, share: 19 }
     - { id: sam-s-club-u-s, name: 山姆會員店, share: 13 }
 sources:
+  - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:kudnr9rb2r56"
   - "podcast:2025-06-09-ep102"

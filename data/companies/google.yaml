@@ -26,6 +26,7 @@ revenue:
     - { id: network, name: 聯播網廣告, share: 7 }
     - { id: other, name: 其他, share: 0 }
 relations:
+  - { type: acquired, target: wiz, note: 2026 年 }
   - { type: supplier, target: spotify, kind: cloud, segment: cloud, note: 雲端算力, detail: 2023年擴大基礎設施合作, year: 2023, source: "https://www.googlecloudpresscorner.com/2023-11-16-Google-Cloud-and-Spotify-Expand-Partnership-to-Help-Unlock-Creator-Potential-and-Reach-Fans" }
   - { type: supplier, target: snap, kind: cloud, segment: cloud, note: 雲端AI服務, detail: 聊天助理採用谷歌雲模型, year: 2024, source: "https://newsroom.snap.com/snap-google-gemini-my-ai" }
   - { type: supplier, target: apple, kind: cloud, segment: cloud, note: 雲端算力, detail: 私有雲運算擴展採用谷歌雲, year: 2026, source: "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models" }
@@ -41,6 +42,8 @@ relations:
   - { type: invested, target: spacex, year: 2015, detail: 參與股權募資, source: "https://techcrunch.com/2015/01/20/spacex-raises-1-billion-in-new-funding-from-google-and-fidelity/" }
   - { type: invested, target: anthropic, amount: 逾 30 億＋至多 400 億美元, usd_bn: 43, stake: 約 14%, year: 2023, detail: 2023 年起多輪投資逾 30 億；2026 年再承諾 100 億，另 300 億視里程碑, source: "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" }
 sources:
+  - "pro:nhnfkuswxjsf"
+  - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:dwcrddrmu86k"
   - "pro:kudnr9rb2r56"
   - "pro:hez389wzm44g"

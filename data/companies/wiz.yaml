@@ -1,0 +1,16 @@
+name: Wiz
+industry: software
+segment: devtools
+summary: "雲端資安公司，提供跨雲端環境的風險偵測與防護平台，協助企業辨識漏洞、錯誤設定與威脅。"
+founded: 2020
+hq: 紐約
+logo: { file: Wiz logo.svg, license: Public domain, author: "Wiz, Inc." }
+links:
+  website: "https://www.wiz.io/"
+people:
+  - { name: Assaf Rappaport, role: 共同創辦人暨執行長 }
+  - { name: Ami Luttwak, role: 共同創辦人 }
+  - { name: Yinon Costica, role: 共同創辦人 }
+  - { name: Roy Reznik, role: 共同創辦人 }
+sources:
+  - "pro:nhnfkuswxjsf"

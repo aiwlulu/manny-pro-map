@@ -19,6 +19,7 @@ revenue:
   source: "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm"
   note: 單一營運分部，未依產品線拆分營收。
 sources:
+  - "pro:9qw2au2rusba"
   - "propod:cms7or6d0077o01ymcffj7gbb"
   - "pro:tn4vjnb9dbtb"
   - "pro:qj3wwurtndbm"

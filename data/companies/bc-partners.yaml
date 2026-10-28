@@ -8,5 +8,8 @@ logo: { file: BC Partners logo.svg, license: Public domain, author: BC Partners 
 links:
   website: "http://www.bcpartners.com"
   wikipedia: "https://en.wikipedia.org/wiki/BC_Partners"
+relations:
+  - { type: acquired, target: springer-science-business-media, note: 2013 年 }
 sources:
+  - "pro:4vjp653zfvt8"
   - "pro:w8n34nnkw3d4"

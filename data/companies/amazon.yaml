@@ -37,6 +37,8 @@ relations:
   - { type: invested, target: openai, amount: 500 億美元, usd_bn: 50, year: 2026, detail: 領投 2026 年融資，先投 150 億、其餘分階段, source: "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html" }
   - { type: invested, target: anthropic, amount: 至多 330 億美元, usd_bn: 33, year: 2023, detail: 已撥 180 億美元，其餘為條件式承諾, source: "https://www.anthropic.com/news/anthropic-amazon-compute" }
 sources:
+  - "propod:cmvgkjml003ry01w48ffxh1bp"
+  - "pro:9qw2au2rusba"
   - "propod:cmuoqjicj0bhf01tlh9qsafqq"
   - "pro:kudnr9rb2r56"
   - "pro:w8sgypnhcpp9"

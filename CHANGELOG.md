@@ -6,6 +6,14 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [2.4.0] - 2026-10-28
+
+### 資料
+- 收錄 2026 年 10 月的 5 篇文章與 2 集 Podcast：PHP2Shell 事件、CoreWeave（Mike Intrator）、Skydance 併購、Glanbia（Hugh McGuire）、9 月你問我答，以及 Live Nation、AI 代理人電商兩集 Podcast
+- 新增 Glanbia（含營收結構）、Wiz、Snyk、Calif 四家公司
+- 新增關係：CoreWeave 供應 Meta 算力（至多約 142 億美元）、Paramount Skydance 收購 Warner Bros. Discovery、Google 收購 Wiz、BC Partners 收購 Springer Science+Business Media
+- 補上 CoreWeave 執行長 Mike Intrator、Glanbia 執行長 Hugh McGuire，更新 David Ellison 職稱與 Skydance 別名
+
 ## [2.3.0] - 2026-10-18
 
 ### 新功能

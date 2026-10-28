@@ -21,6 +21,7 @@ relations:
   - { type: supplier, target: anysphere, kind: software, note: AI模型, detail: 官方模型清單持續提供克勞德, source: "https://cursor.com/docs" }
   - { type: supplier, target: perplexity, kind: software, note: AI模型, detail: 付費搜尋方案提供克勞德模型, year: 2026, source: "https://www.perplexity.ai/help-center/en/articles/10352901-what-is-perplexity-pro" }
 sources:
+  - "pro:nhnfkuswxjsf"
   - "propod:cmuti5uau06di01v1f935gjyi"
   - "pro:dwcrddrmu86k"
   - "pro:x29tt82u4h4q"

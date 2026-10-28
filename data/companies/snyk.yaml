@@ -1,0 +1,11 @@
+name: Snyk
+industry: software
+segment: devtools
+summary: "開發者資安公司，提供程式碼、開源相依套件、容器與基礎設施設定的漏洞偵測及修補工具。"
+founded: 2015
+hq: 波士頓
+logo: { file: Snyk Logo.svg, license: Public domain, author: Snyk Limited }
+links:
+  website: "https://snyk.io/"
+sources:
+  - "pro:nhnfkuswxjsf"

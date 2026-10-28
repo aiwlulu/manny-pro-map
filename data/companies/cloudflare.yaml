@@ -24,6 +24,8 @@ relations:
   - { type: supplier, target: openai, kind: service, note: 流量負載平衡, detail: 官方事故報告確認全域負載平衡, year: 2024, source: "https://status.openai.com/incidents/01JMYB4A62XNXSAHAY8ZGQAAKD/write-up" }
   - { type: supplier, target: shopify, kind: service, note: 內容傳遞網路, detail: 官方案例確認全球網路服務, source: "https://www.cloudflare.com/case-studies/shopify/" }
 sources:
+  - "pro:nhnfkuswxjsf"
+  - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:52gjqz2bbj2p"
   - "pro:sfddnjkgm59b"
   - "pro:bzqqad4bwawe"

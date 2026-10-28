@@ -30,6 +30,8 @@ relations:
   - { type: invested, target: coreweave, amount: 3.5 億美元, year: 2025, detail: 算力合約配股, source: "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm" }
   - { type: supplier, target: softbank, kind: software, note: 企業 AI 方案, detail: 集團每年採購 30 億美元方案, year: 2025, source: "https://group.softbank/en/news/press/20250203_0" }
 sources:
+  - "pro:nhnfkuswxjsf"
+  - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "propod:cmuti5uau06di01v1f935gjyi"
   - "pro:kudnr9rb2r56"
   - "pro:x29tt82u4h4q"

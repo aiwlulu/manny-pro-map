@@ -1,4 +1,46 @@
 # Manny sources referenced by companies. Bibliographic data only: title, date, URL.
+- id: "pro:nhnfkuswxjsf"
+  kind: pro
+  column: 科技曼讀
+  title: "PHP2Shell 事件的啟發：AI 加速了什麼，以及誰從中得利"
+  date: 2026-10-28
+  url: https://pro.manny-li.com/posts/php2shell-ai-takeaways-nhnfkuswxjsf
+- id: "pro:34rtf4jjhsj4"
+  kind: pro
+  column: 巨人之聲
+  title: "靠借錢打造的 AI 算力新巨頭，可能會怎麼倒下？（CoreWeave 執行長 Mike Intrator）"
+  date: 2026-10-20
+  url: https://pro.manny-li.com/posts/mike-intrator-coreweave-34rtf4jjhsj4
+- id: "propod:cmvgkjml003ry01w48ffxh1bp"
+  kind: pro-podcast
+  column: 科技曼讀
+  title: "AI 代理人發起的電商整合與拆分之爭"
+  date: 2026-10-20
+  url: https://pro.manny-li.com/episodes/cmvgkjml003ry01w48ffxh1bp
+- id: "pro:9qw2au2rusba"
+  kind: pro
+  column: 科技曼讀
+  title: "千億美元的世紀併購，Skydance 能靠規模贏得觀眾嗎？"
+  date: 2026-10-18
+  url: https://pro.manny-li.com/posts/skydance-9qw2au2rusba
+- id: "pro:4vjp653zfvt8"
+  kind: pro
+  column: 曼報俱樂部
+  title: "2026 年 9 月你問我答"
+  date: 2026-10-13
+  url: https://pro.manny-li.com/posts/ama-sep-2026-4vjp653zfvt8
+- id: "propod:cmv2fsid806k501wx0785csgz"
+  kind: pro-podcast
+  column: 巨人之聲
+  title: "售票平台這麼好賺，為什麼還要花重金蓋場館？（Live Nation 總裁 Joe Berchtold）"
+  date: 2026-10-13
+  url: https://pro.manny-li.com/episodes/cmv2fsid806k501wx0785csgz
+- id: "pro:tkyv36jxmfnk"
+  kind: pro
+  column: 巨人之聲
+  title: "乳清價格瘋漲還是不夠賣，蛋白質市場出現根本性轉變了嗎？（Glanbia 執行長 Hugh McGuire）"
+  date: 2026-10-12
+  url: https://pro.manny-li.com/posts/glanbia-hugh-mcguire-tkyv36jxmfnk
 - id: "propod:cmuti5uau06di01v1f935gjyi"
   kind: pro-podcast
   column: 科技曼讀
