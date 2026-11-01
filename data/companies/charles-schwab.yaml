@@ -1,0 +1,18 @@
+name: Charles Schwab
+zh: 嘉信理財
+aliases: [Schwab, The Charles Schwab Corporation]
+industry: finance
+segment: markets
+summary: "美國大型證券經紀與財富管理公司，提供券商帳戶、投資顧問、銀行與資產管理服務。"
+founded: 1971
+hq: 德州韋斯特萊克
+links:
+  website: "https://www.schwab.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Charles_Schwab_Corporation"
+people:
+  - { name: Charles Schwab, role: 創辦人 }
+  - { name: Rick Wurster, role: 執行長 }
+relations:
+  - { type: acquired, target: td-ameritrade, note: 2020 年 }
+sources:
+  - "pro:a9tkh8kg42a2"

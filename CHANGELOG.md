@@ -6,6 +6,14 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [2.5.0] - 2026-11-01
+
+### 資料
+- 收錄 4 篇商業解碼《零機一動》（Robinhood Markets）、巨人之聲 Figma（Dylan Field），以及曼報 Podcast EP132
+- 新增 Charles Schwab、Interactive Brokers、TD Ameritrade、Bitstamp 四家公司
+- 新增關係：Robinhood 收購 Bitstamp、Charles Schwab 收購 TD Ameritrade，Robinhood 與 Charles Schwab、Interactive Brokers 競爭
+- 改寫 Figma 簡介，更新 Dylan Field、Vlad Tenev 職稱
+
 ## [2.4.0] - 2026-10-28
 
 ### 資料
@@ -291,6 +299,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[2.5.0]: https://github.com/aiwlulu/manny-pro-map/compare/v2.4.0...v2.5.0
 [1.14.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.14.1...v1.14.2
 [1.14.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.14.0...v1.14.1
 [1.14.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.13.1...v1.14.0

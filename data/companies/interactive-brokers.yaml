@@ -1,0 +1,17 @@
+name: Interactive Brokers
+zh: 盈透證券
+aliases: [IBKR, Interactive Brokers Group]
+industry: finance
+segment: markets
+summary: "美國電子券商，提供全球多個市場的股票、選擇權、期貨與外匯交易，以低成本與高度自動化著稱。"
+founded: 1978
+hq: 康乃狄克州格林威治
+links:
+  website: "https://www.interactivebrokers.com/"
+  wikipedia: "https://en.wikipedia.org/wiki/Interactive_Brokers"
+people:
+  - { name: Thomas Peterffy, role: 創辦人暨董事長 }
+  - { name: Milan Galik, role: 執行長 }
+sources:
+  - "pro:a9tkh8kg42a2"
+  - "pro:pdx4rqxhddef"

@@ -10,8 +10,16 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Robinhood_Markets"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/羅賓漢_(公司)"
 people:
-  - { name: Vlad Tenev, role: 創辦人, photo: { file: "TechCrunch Disrupt NY 2016 - Day 2 (26902081436) (2).jpg", license: CC BY 2.0, author: TechCrunch } }
-  - { name: Baiju Bhatt, role: 創辦人, photo: { file: "TechCrunch Disrupt San Francisco 2018 - day 2 (43802635144).jpg", license: CC BY 2.0, author: TechCrunch } }
+  - { name: Vlad Tenev, role: 共同創辦人暨執行長, photo: { file: "TechCrunch Disrupt NY 2016 - Day 2 (26902081436) (2).jpg", license: CC BY 2.0, author: TechCrunch } }
+  - { name: Baiju Bhatt, role: 共同創辦人, photo: { file: "TechCrunch Disrupt San Francisco 2018 - day 2 (43802635144).jpg", license: CC BY 2.0, author: TechCrunch } }
+relations:
+  - { type: acquired, target: bitstamp, note: 2025 年 }
+  - { type: competitor, target: charles-schwab }
+  - { type: competitor, target: interactive-brokers }
 sources:
   - "pro:68ezcucry26v"
   - "podcast:2022-03-27-ep06"
+  - "pro:68r3h6gn45gh"
+  - "pro:yswrnm3f3sey"
+  - "pro:a9tkh8kg42a2"
+  - "pro:pdx4rqxhddef"

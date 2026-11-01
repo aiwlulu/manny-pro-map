@@ -1,4 +1,34 @@
 # Manny sources referenced by companies. Bibliographic data only: title, date, URL.
+- id: "pro:68r3h6gn45gh"
+  kind: pro
+  column: 商業解碼
+  title: "零機一動 I：不跟客戶收錢的券商"
+  date: 2026-10-31
+  url: https://pro.manny-li.com/posts/robinhood-markets-business-model-68r3h6gn45gh
+- id: "pro:a9tkh8kg42a2"
+  kind: pro
+  column: 商業解碼
+  title: "零機一動 III：傳統券商看走眼了嗎？"
+  date: 2026-10-31
+  url: https://pro.manny-li.com/posts/robinhood-vs-traditional-brokers-a9tkh8kg42a2
+- id: "pro:mev2uukfcpkw"
+  kind: pro
+  column: 巨人之聲
+  title: "當 AI 能一鍵生成 App，留設計軟體何用？（Figma 共同創辦人 Dylan Field）"
+  date: 2026-10-31
+  url: https://pro.manny-li.com/posts/dylan-field-why-figma-mev2uukfcpkw
+- id: "pro:pdx4rqxhddef"
+  kind: pro
+  column: 商業解碼
+  title: "零機一動 IV：有待驗證的「中等」生意——Robinhood Markets"
+  date: 2026-10-31
+  url: https://pro.manny-li.com/posts/robinhood-financial-analysis-pdx4rqxhddef
+- id: "pro:yswrnm3f3sey"
+  kind: pro
+  column: 商業解碼
+  title: "零機一動 II：Robinhood 如何「轉大人」？"
+  date: 2026-10-31
+  url: https://pro.manny-li.com/posts/robinhood-financial-super-app-yswrnm3f3sey
 - id: "pro:nhnfkuswxjsf"
   kind: pro
   column: 科技曼讀
@@ -47,6 +77,12 @@
   title: "AI 的三種速度，以及為什麼監管這麼難"
   date: 2026-10-08
   url: https://pro.manny-li.com/episodes/cmuti5uau06di01v1f935gjyi
+- id: "podcast:2026-10-05-ep132"
+  kind: podcast
+  column: 曼報 Podcast
+  title: "EP132｜第一年就有了一萬名付費會員，然後呢？（ft. Vincent 余鎮文）"
+  date: 2026-10-05
+  url: https://open.firstory.fm/story/cmutygm1x07dt01ss7v74bzw5
 - id: "propod:cmuoqjicj0bhf01tlh9qsafqq"
   kind: pro-podcast
   column: 巨人之聲

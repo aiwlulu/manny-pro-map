@@ -1,0 +1,13 @@
+name: Bitstamp
+industry: finance
+segment: markets
+summary: "歐洲歷史最久的加密貨幣交易所之一，服務散戶與機構客戶，2025 年被 Robinhood 收購。"
+founded: 2011
+hq: 盧森堡
+links:
+  website: "https://www.bitstamp.net/"
+  wikipedia: "https://en.wikipedia.org/wiki/Bitstamp"
+people:
+  - { name: Nejc Kodrič, role: 共同創辦人 }
+sources:
+  - "pro:68r3h6gn45gh"

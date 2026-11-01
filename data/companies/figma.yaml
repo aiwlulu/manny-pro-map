@@ -1,13 +1,14 @@
 name: Figma
 industry: software
 segment: apps
-summary: "一家從事軟體業務的公司，以軟體產品作為主要業務內容。"
+summary: "協作式介面設計平台，提供在瀏覽器中進行介面設計、原型製作與開發交付的工具，2025 年在紐約證交所上市。"
 founded: 2012
 hq: 舊金山
 logo: { file: Figma-logo.svg, license: Public domain, author: Figma }
 links:
   website: "https://figma.com"
 people:
-  - { name: Dylan Field, role: 創辦人, photo: { file: "Dylan Field 2008 (cropped).jpg", license: CC BY 2.0, author: Joi Ito } }
+  - { name: Dylan Field, role: 共同創辦人暨執行長, interviewed: true, photo: { file: "Dylan Field 2008 (cropped).jpg", license: CC BY 2.0, author: Joi Ito } }
 sources:
   - "propod:cmtb4yr9o01pp01zcgnpahydb"
+  - "pro:mev2uukfcpkw"
