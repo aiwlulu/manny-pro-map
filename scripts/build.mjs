@@ -121,6 +121,11 @@ for (const [n, ids] of Object.entries(peopleSources)) for (const id of ids) {
   used.add(id);
 }
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
+// Keep the no-JS fallback of the homepage company count in sync (extended companies are not counted)
+const nCo = companies.filter((c) => !c.extended).length;
+const indexHtml = readFileSync('site/index.html', 'utf8');
+const syncedHtml = indexHtml.replace(/(id="n-co">)\d+(<)/, `$1${nCo}$2`);
+if (syncedHtml !== indexHtml) { writeFileSync('site/index.html', syncedHtml); console.log(`note: homepage count updated to ${nCo}`); }
 writeFileSync('site/data.json', JSON.stringify({
   builtAt: new Date().toISOString().slice(0, 10),
   version: JSON.parse(readFileSync('package.json', 'utf8')).version,
