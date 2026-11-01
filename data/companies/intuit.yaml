@@ -12,6 +12,6 @@ links:
 people:
   - { name: Scott Cook, role: 創辦人, photo: { file: "Scott Cook (Intuit) @ SXSW 2017 (cropped).jpg", license: CC BY-SA 2.0, author: nrkbeta } }
   - { name: Thomas Proulx, role: 創辦人 }
-  - { name: Sasan Goodarzi, role: 董事長暨執行長 }
+  - { name: Sasan Goodarzi, role: 董事長暨執行長, photo: { file: "Sasan Goodarzi.jpg", license: CC BY 4.0, author: Intuit Corp. } }
 sources:
   - "pro:52gjqz2bbj2p"

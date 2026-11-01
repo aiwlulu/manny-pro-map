@@ -4,9 +4,12 @@ segment: energy
 summary: "美國再生能源公司，主要提供太陽能光電系統與電池儲能產品。"
 founded: 2007
 hq: 舊金山
+logo: { file: "Sunrun logo (2026).svg", license: Public domain, author: Sunrun }
 links:
   website: "https://www.sunrun.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Sunrun"
+people:
+  - { name: Mary Powell, role: 執行長 }
 revenue:
   fy: FY2025
   total: 3

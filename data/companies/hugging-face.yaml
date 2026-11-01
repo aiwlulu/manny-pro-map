@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Hugging_Face"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Hugging_Face"
 people:
-  - { name: Clement Delangue, role: 創辦人, photo: { file: Clément Delangue on SiliconANGLE theCUBE.jpg, license: CC BY 3.0, author: SiliconANGLE theCUBE } }
+  - { name: Clement Delangue, role: 共同創辦人暨執行長, photo: { file: Clément Delangue on SiliconANGLE theCUBE.jpg, license: CC BY 3.0, author: SiliconANGLE theCUBE } }
   - { name: Thomas Wolf, role: 創辦人, photo: { file: Thomas Wolf at Slush 2024.jpg, license: CC BY 3.0, author: Slush } }
 sources:
   - "podcast:2023-03-06-ep37"

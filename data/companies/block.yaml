@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Block,_Inc."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Block公司"
 people:
-  - { name: Jack Dorsey, role: 創辦人, photo: { file: Jack Dorsey 2014.jpg, license: CC BY-SA 2.0, author: cellanr } }
+  - { name: Jack Dorsey, role: 共同創辦人暨董事長、執行長, photo: { file: Jack Dorsey 2014.jpg, license: CC BY-SA 2.0, author: cellanr } }
   - { name: Jim McKelvey, role: 創辦人, photo: { file: Jim Studio Headshow.jpeg, license: CC BY-SA 3.0, author: Jessica Kopitske } }
 sources:
   - "pro:k8w9aqudktnu"

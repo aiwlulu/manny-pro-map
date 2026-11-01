@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Perplexity_AI"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Perplexity"
 people:
-  - { name: Aravind Srinivas, role: 老闆, interviewed: true, photo: { file: Aravind Srinivas 2024.jpg, license: CC BY 2.0, author: TechCrunch } }
+  - { name: Aravind Srinivas, role: 共同創辦人暨執行長, interviewed: true, photo: { file: Aravind Srinivas 2024.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Denis Yarats, role: 創辦人 }
   - { name: Andrew Konwinski, role: 創辦人 }
 sources:

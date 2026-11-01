@@ -12,7 +12,7 @@ links:
 people:
   - { name: Sergey Brin, role: 創辦人, photo: { file: "Sergey Brin Ted 2010 (cropped).jpg", license: CC BY 2.0, author: Steve Jurvetson } }
   - { name: Larry Page, role: 創辦人, photo: { file: "Larry Page in the European Parliament, 17.06.2009.jpg", license: CC BY-SA 4.0, author: "Marcin Mycielski, European Parliament (Stansfield)" } }
-  - { name: Sundar Pichai, photo: { file: "Sundar Pichai - 2023 (cropped).jpg", license: CC BY 4.0, author: "Photographer: Lukasz Kobus (European Commission)" } }
+  - { name: Sundar Pichai, role: Google 暨 Alphabet 執行長, photo: { file: "Sundar Pichai - 2023 (cropped).jpg", license: CC BY 4.0, author: "Photographer: Lukasz Kobus (European Commission)" } }
 revenue:
   fy: FY2025
   total: 400

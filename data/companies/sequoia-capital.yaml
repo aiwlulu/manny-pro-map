@@ -11,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Sequoia_Capital"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/紅杉資本"
 people:
-  - { name: Roelof Botha, role: 管理合夥人, interviewed: true, photo: { file: Roelof Botha.jpg, license: CC BY 2.0, author: TechCrunch. Photo by Dave Getzschman. } }
+  - { name: Roelof Botha, role: 前管理合夥人, interviewed: true, photo: { file: Roelof Botha.jpg, license: CC BY 2.0, author: TechCrunch. Photo by Dave Getzschman. } }
   - { name: Don Valentine, role: 創辦人, photo: { file: Don Valentine in 2009.jpg, license: CC BY 2.0, author: "Steve Jurvetson from Menlo Park, USA" } }
 relations:
   - { type: invested, target: anthropic, year: 2026, detail: 參與G輪股權融資, source: "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation" }

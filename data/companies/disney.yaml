@@ -11,8 +11,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/The_Walt_Disney_Company"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/华特迪士尼公司"
 people:
-  - { name: Walt Disney, role: 創辦人, photo: { file: Walt Disney 1946.JPG, license: Public domain, author: Boy Scouts of America } }
-  - { name: Roy O. Disney, role: 創辦人, photo: { file: Roy O. Disney with Company at Press Conference.jpg, license: Public domain, author: Florida Development Commission } }
+  - { name: Walt Disney, role: 已故共同創辦人, photo: { file: Walt Disney 1946.JPG, license: Public domain, author: Boy Scouts of America } }
+  - { name: Roy O. Disney, role: 已故共同創辦人, photo: { file: Roy O. Disney with Company at Press Conference.jpg, license: Public domain, author: Florida Development Commission } }
+  - { name: Josh D’Amaro, role: 執行長 }
 sources:
   - "pro:9qw2au2rusba"
   - "propod:cms7or6d0077o01ymcffj7gbb"

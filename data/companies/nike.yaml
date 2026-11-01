@@ -13,6 +13,7 @@ links:
 people:
   - { name: Phil Knight, role: 創辦人, photo: { file: Philknightfootball.jpg, license: CC BY-SA 2.0, author: Neon Tommy } }
   - { name: Bill Bowerman, role: 創辦人, photo: { file: Bill Bowerman.jpg, license: Public domain, author: University of Oregon } }
+  - { name: Elliott Hill, role: 總裁暨執行長 }
 relations:
   - { type: competitor, target: hoka }
   - { type: competitor, target: on }

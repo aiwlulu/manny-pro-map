@@ -12,6 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/约翰迪尔"
 people:
   - { name: John Deere, role: 創辦人, photo: { file: John Deere portrait.jpg, license: Public domain, author: "Wilson, James Grant, 1832-1914; Fiske, John, 1842-1901; Dick, Charles, 1858-; Ho" } }
+  - { name: John C. May, role: 董事長暨執行長 }
 relations:
   - { type: parent, target: john-deere-financial }
   - { type: competitor, target: agco }

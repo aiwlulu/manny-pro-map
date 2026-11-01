@@ -12,9 +12,10 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/波克夏·哈薩威"
 people:
   - { name: Oliver Chace, role: 創辦人, photo: { file: Oliver Chace.jpg, license: Public domain, author: Henry H. Earl } }
-  - { name: Warren Buffett, zh: 巴菲特, photo: { file: Warren Buffett KU Visit.jpg, license: CC BY-SA 2.0, author: Mark Hirschey } }
-  - { name: Todd Combs }
-  - { name: Ted Weschler }
+  - { name: Warren Buffett, role: 榮譽董事長暨董事、前執行長, zh: 巴菲特, photo: { file: Warren Buffett KU Visit.jpg, license: CC BY-SA 2.0, author: Mark Hirschey } }
+  - { name: Todd Combs, role: 前投資經理暨前 GEICO 執行長 }
+  - { name: Ted Weschler, role: 投資經理 }
+  - { name: Greg Abel, role: 總裁暨執行長 }
 sources:
   - "propod:cmswaraeg0bmx01zd1ymybtom"
   - "pro:k8w9aqudktnu"

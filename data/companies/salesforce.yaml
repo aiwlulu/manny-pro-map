@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Salesforce"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/赛富时"
 people:
-  - { name: Marc Benioff, role: 創辦人, photo: { file: Marc Benioff.jpg, license: CC BY-SA 2.0, author: Salesforce. } }
+  - { name: Marc Benioff, role: 共同創辦人、董事長暨執行長, photo: { file: Marc Benioff.jpg, license: CC BY-SA 2.0, author: Salesforce. } }
 relations:
   - { type: parent, target: slack }
   - { type: invested, target: anthropic, year: 2023, detail: 創投部門參投C輪, source: "https://www.anthropic.com/news/anthropic-series-c" }

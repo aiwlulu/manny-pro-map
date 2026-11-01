@@ -13,6 +13,7 @@ links:
 people:
   - { name: Masaru Ibuka, role: 創辦人, photo: { file: Ibuka Masaru.jpg, license: Public domain, author: "財界研究社、撮影者不明" } }
   - { name: Akio Morita, role: 創辦人, photo: { file: Morita Akio.jpg, license: Public domain, author: "プレジデント社　撮影者不明" } }
+  - { name: Hiroki Totoki, role: 社長暨執行長 }
 revenue:
   fy: FY2025
   total: 12000

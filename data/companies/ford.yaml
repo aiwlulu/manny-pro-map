@@ -12,5 +12,6 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/福特汽车"
 people:
   - { name: Henry Ford, role: 創辦人, photo: { file: Henry ford 1919.jpg, license: Public domain, author: Fred Hartsook } }
+  - { name: Jim Farley, role: 總裁暨執行長 }
 sources:
   - "pro:wmste5rh4s2q"

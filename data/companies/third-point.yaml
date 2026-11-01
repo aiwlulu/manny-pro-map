@@ -9,6 +9,6 @@ links:
   website: "http://www.thirdpoint.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Third_Point"
 people:
-  - { name: Daniel Loeb, role: 創辦人 }
+  - { name: Daniel Loeb, role: 創辦人暨執行長, photo: { file: "Daniel Loeb, Third Point.jpg", license: CC BY 3.0, author: Hedge Funds } }
 sources:
   - "pro:pqn8u2pyqzdq"

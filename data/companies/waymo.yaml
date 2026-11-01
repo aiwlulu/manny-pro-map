@@ -12,6 +12,8 @@ links:
 people:
   - { name: Sebastian Thrun, role: 創辦人, photo: { file: Sebastian Thrun at IAA 2019 IMG 0893.jpg, license: CC BY-SA 4.0, author: Alexander Migl } }
   - { name: Anthony Levandowski, role: 創辦人, photo: { file: Anthony Levandowski Headshot.jpg, license: CC BY-SA 4.0, author: Kaxelrod } }
+  - { name: Tekedra Mawakana, role: 共同執行長 }
+  - { name: Dmitri Dolgov, role: 共同創辦人暨共同執行長 }
 relations:
   - { type: supplier, target: uber, kind: service, note: 自駕載客服務, detail: 奧斯汀與亞特蘭大持續營運, source: "https://waymo.com/waymo-on-uber/" }
 sources:

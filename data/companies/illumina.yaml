@@ -10,9 +10,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Illumina,_Inc."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/因美纳"
 people:
-  - { name: Jay Flatley }
-  - { name: Francis deSouza, role: 執行長, photo: { file: Francis deSouza.jpg, license: CC BY-SA 4.0, author: CDBeckwith } }
-  - { name: Jacob Thaysen, role: 執行長 }
+  - { name: Jay Flatley, role: 前執行長暨前董事長 }
+  - { name: Francis deSouza, role: 前執行長, photo: { file: Francis deSouza.jpg, license: CC BY-SA 4.0, author: CDBeckwith } }
+  - { name: Jacob Thaysen, role: 執行長, photo: { file: "Jacob Thaysen in Beijing, 2026.jpg", license: Public domain, author: Daniel Torok } }
 revenue:
   fy: FY2025
   total: 4.3

@@ -11,7 +11,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Sotheby's"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/蘇富比"
 people:
-  - { name: Nathan Drahi }
+  - { name: Nathan Drahi, role: 執行副總裁暨全球業務發展主管 }
+  - { name: Charles F. Stewart, role: 執行長 }
 sources:
   - "pro:yfj6rhppp5rt"
   - "pro:g3k2wuk5aasv"

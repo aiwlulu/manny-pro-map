@@ -9,9 +9,9 @@ links:
   website: "http://www.tjx.com/"
   wikipedia: "https://en.wikipedia.org/wiki/TJX"
 people:
-  - { name: Carol Meyrowitz, role: 執行長 }
+  - { name: Carol Meyrowitz, role: 執行董事長 }
   - { name: Bernard Cammarata, role: 創辦人 }
-  - { name: Edmond English, role: 執行長 }
+  - { name: Edmond English, role: 前執行長 }
   - { name: Ernie Herrman, role: 執行長 }
 relations:
   - { type: competitor, target: ross-stores }

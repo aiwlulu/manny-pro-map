@@ -11,6 +11,9 @@ links:
   website: "https://www.oracle.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Oracle_Corporation"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/甲骨文公司"
+people:
+  - { name: Clay Magouyrk, role: 共同執行長 }
+  - { name: Mike Sicilia, role: 共同執行長 }
 revenue:
   fy: FY2026
   total: 67

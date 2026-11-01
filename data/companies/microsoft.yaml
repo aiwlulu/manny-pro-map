@@ -12,11 +12,11 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/微软"
 people:
   - { name: Bill Gates, role: 創辦人, photo: { file: "Bill Gates at the European Commission - 2025 - P067383-987995 (cropped).jpg", license: CC BY 4.0, author: "Bogdan Hoyaux / European Union" } }
-  - { name: Paul Allen, role: 創辦人, photo: { file: "Paul G. Allen (cropped).jpg", license: CC BY-SA 3.0, author: Miles Harris } }
+  - { name: Paul Allen, role: 共同創辦人, photo: { file: "Paul G. Allen (cropped).jpg", license: CC BY-SA 3.0, author: Miles Harris } }
   - { name: Satya Nadella, role: 執行長, photo: { file: "MS-Exec-Nadella-Satya-2017-08-31-22 (cropped).jpg", license: CC BY-SA 4.0, author: Brian Smale and Microsoft } }
-  - { name: Phil Spencer, photo: { file: Phil Spencer Xbox.jpg, license: CC0, author: eVRydayVR } }
-  - { name: Mustafa Suleyman, role: Inflection AI 共同創辦人, photo: { file: "Mustafa Suleyman (29099346447).jpg", license: CC BY 2.0, author: "Joi Ito from Cambridge, MA, USA" } }
-  - { name: Steve Ballmer, role: 執行長, photo: { file: Steve Ballmer 2014.jpg, license: CC BY 2.0, author: Eric Garcetti } }
+  - { name: Phil Spencer, role: 前微軟遊戲事業執行長, photo: { file: Phil Spencer Xbox.jpg, license: CC0, author: eVRydayVR } }
+  - { name: Mustafa Suleyman, role: Microsoft AI 執行長, photo: { file: "Mustafa Suleyman (29099346447).jpg", license: CC BY 2.0, author: "Joi Ito from Cambridge, MA, USA" } }
+  - { name: Steve Ballmer, role: 前執行長, photo: { file: Steve Ballmer 2014.jpg, license: CC BY 2.0, author: Eric Garcetti } }
 revenue:
   fy: FY2026
   total: 330

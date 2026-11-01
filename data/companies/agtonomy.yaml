@@ -5,6 +5,6 @@ summary: "農業自動化新創，讓既有拖拉機能遠端或自動運作。"
 links:
   website: "https://www.agtonomy.com"
 people:
-  - { name: Tim Bucher, role: 創辦人 }
+  - { name: Tim Bucher, role: 創辦人, photo: { file: "Tim Bucher, CEO, Lyve (in May, 2015).jpg", license: CC BY 2.0, author: Gary He } }
 sources:
   - "podcast:2024-02-26-ep62"

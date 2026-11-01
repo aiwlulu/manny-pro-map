@@ -10,6 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Deckers_Brands"
 people:
   - { name: Doug Otto, role: 創辦人 }
+  - { name: Stefano Caroti, role: 總裁暨執行長 }
 relations:
   - { type: parent, target: ugg }
   - { type: parent, target: hoka }

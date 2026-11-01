@@ -10,6 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Paccar"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/帕卡"
 people:
-  - { name: William Pigott, role: 創辦人 }
+  - { name: William Pigott, role: 創辦人, photo: { file: "William Pigott, Seattle, 1928 (MOHAI 349).jpg", license: Public domain, author: MOHAI } }
+  - { name: Preston Feight, role: 執行長 }
 sources:
   - "pro:tdzgzbsctptw"

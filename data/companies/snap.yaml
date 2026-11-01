@@ -11,7 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Snap_Inc."
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/色拉布"
 people:
-  - { name: Evan Spiegel, role: 創辦人, photo: { file: "Evan Spiegel, founder of Snapchat.jpg", license: CC BY-SA 2.0, author: cellanr } }
+  - { name: Evan Spiegel, role: 共同創辦人暨執行長, photo: { file: "Evan Spiegel, founder of Snapchat.jpg", license: CC BY-SA 2.0, author: cellanr } }
   - { name: Bobby Murphy, role: 創辦人, photo: { file: "Robert (Bobby) Murphy.jpg", license: CC BY-SA 4.0, author: Leandroapbatista } }
 revenue:
   fy: FY2025

@@ -10,6 +10,8 @@ links:
   website: "https://www.mastercard.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Mastercard"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/万事达卡"
+people:
+  - { name: Michael Miebach, role: 執行長 }
 revenue:
   fy: FY2025
   total: 33

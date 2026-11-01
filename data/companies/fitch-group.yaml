@@ -12,7 +12,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Fitch_Ratings"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/惠誉国际"
 people:
-  - { name: John Knowles Fitch, role: 創辦人 }
+  - { name: John Knowles Fitch, role: 共同創辦人 }
+  - { name: Paul Taylor, role: 總裁暨執行長 }
 sources:
   - "propod:cmumopubf03dc01w1ggiw1vrk"
   - "pro:9pj32ujkxanq"

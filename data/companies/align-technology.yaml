@@ -14,6 +14,7 @@ people:
   - { name: John Morici, role: 財務長 }
   - { name: Muhammad Zia Chishti, role: 創辦人 }
   - { name: Kelsey Wirth, role: 共同創辦人 }
+  - { name: Joseph M. Hogan, role: 總裁暨執行長 }
 relations:
   - { type: competitor, target: angelalign }
   - { type: competitor, target: smiledirectclub }

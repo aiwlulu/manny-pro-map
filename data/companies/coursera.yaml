@@ -12,5 +12,6 @@ links:
 people:
   - { name: Andrew Y. Ng, role: 創辦人, photo: { file: Andrew Ng at TechCrunch Disrupt SF 2017.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Daphne Koller, role: 創辦人, photo: { file: "The Future of Higher Education Daphne Koller (8411917358).jpg", license: CC BY-SA 2.0, author: "World Economic Forum from Cologny, Switzerland" } }
+  - { name: Greg Hart, role: 執行長 }
 sources:
   - "pro:99c45rxf5864"

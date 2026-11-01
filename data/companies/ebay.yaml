@@ -11,6 +11,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/EBay"
 people:
   - { name: Pierre Omidyar, role: 創辦人, photo: { file: "Pomidyarji (cropped).jpg", license: CC BY 2.0, author: "Joi 15:42, 2 August 2007 (UTC)" } }
+  - { name: Jamie Iannone, role: 總裁暨執行長 }
 relations:
   - { type: parent, target: paypal }
 sources:

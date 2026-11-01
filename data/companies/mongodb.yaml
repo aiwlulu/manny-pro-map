@@ -9,6 +9,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/MongoDB"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/MongoDB"
 people:
-  - { name: CJ Desai, role: 執行長, interviewed: true }
+  - { name: CJ Desai, role: 前總裁暨執行長, interviewed: true }
+  - { name: Dev Ittycheria, role: 暫代總裁暨執行長 }
 sources:
   - "pro:zppaa3v8qrtw"

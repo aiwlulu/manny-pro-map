@@ -12,6 +12,7 @@ links:
 people:
   - { name: Georg von Holtzbrinck, role: 創辦人 }
   - { name: Daniel Hook, role: 集團首席科學官 }
+  - { name: Stefan von Holtzbrinck, role: 執行長 }
 relations:
   - { type: parent, target: macmillan }
   - { type: parent, target: springer-nature }

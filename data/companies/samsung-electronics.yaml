@@ -11,6 +11,9 @@ links:
   website: "https://www.samsung.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Samsung_Electronics"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/三星電子"
+people:
+  - { name: Young-Hyun Jun, role: 副董事長暨共同執行長（半導體事業） }
+  - { name: Tae-Moon Roh, role: 總裁暨共同執行長（裝置體驗事業） }
 revenue:
   fy: FY2025
   total: 330000

@@ -13,6 +13,7 @@ links:
 people:
   - { name: Steve Wozniak, role: 創辦人, photo: { file: Steve Wozniak by Gage Skidmore.jpg, license: CC BY-SA 3.0, author: Gage Skidmore } }
   - { name: Steve Jobs, role: 創辦人, photo: { file: Steve Jobs Headshot 2010-CROP2.jpg, license: CC BY-SA 3.0, author: "MetalGearLiquid, based on File:Steve_Jobs_Headshot_2010-CROP.jpg made by Matt Yo" } }
+  - { name: John Ternus, role: 執行長 }
 revenue:
   fy: FY2025
   total: 420

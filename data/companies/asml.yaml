@@ -11,8 +11,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/ASML"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/艾司摩爾"
 people:
-  - { name: Martin van den Brink, role: 共同執行長 }
-  - { name: Peter Wennink, role: 共同執行長 }
+  - { name: Martin van den Brink, role: 前總裁暨技術長、董事會顧問 }
+  - { name: Peter Wennink, role: 前總裁暨執行長 }
   - { name: Christophe Fouquet, role: 執行長, photo: { file: Ursula von der Leyen & Christophe Fouquet - 2025.jpg, license: CC BY 4.0, author: "Dati Bendo / European Union, 2025 / EC - Audiovisual Service" } }
 revenue:
   fy: FY2025

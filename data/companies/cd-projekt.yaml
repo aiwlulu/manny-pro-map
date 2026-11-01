@@ -11,5 +11,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/CD_Projekt"
 people:
   - { name: Marcin Iwiński, role: 創辦人, photo: { file: Marcin Iwiński.jpg, license: CC BY 2.0, author: AdamLiwinski } }
+  - { name: Michał Nowakowski, role: 共同執行長 }
+  - { name: Adam Badowski, role: 共同執行長 }
 sources:
   - "podcast:2024-08-26-ep79"

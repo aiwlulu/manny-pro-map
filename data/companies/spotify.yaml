@@ -9,8 +9,10 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Spotify"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Spotify"
 people:
-  - { name: Daniel Ek, role: 創辦人, photo: { file: "Daniel Ek EC 2025 (cropped).jpg", license: CC BY 4.0, author: "Lukasz Kobus/European Commission" } }
+  - { name: Daniel Ek, role: 共同創辦人暨執行董事長, photo: { file: "Daniel Ek EC 2025 (cropped).jpg", license: CC BY 4.0, author: "Lukasz Kobus/European Commission" } }
   - { name: Martin Lorentzon, role: 共同創辦人, photo: { file: Martin Lorentzon.jpg, license: CC BY 4.0, author: Ah-kwong } }
+  - { name: Alex Norström, role: 共同執行長 }
+  - { name: Gustav Söderström, role: 共同執行長 }
 revenue:
   fy: FY2025
   total: 17

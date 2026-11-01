@@ -10,6 +10,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/理想國演藝"
 people:
   - { name: Joe Berchtold, role: 總裁兼財務長, interviewed: true }
+  - { name: Michael Rapino, role: 總裁暨執行長 }
 relations:
   - { type: parent, target: ticketmaster, note: 2010 年 }
 sources:

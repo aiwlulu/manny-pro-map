@@ -11,8 +11,8 @@ links:
 people:
   - { name: Stepan Pachikov, role: 創辦人, photo: { file: Stepan Svetlana Pachikov.jpg, license: Public domain, author: The original uploader was Alexpach at English Wikipedia. } }
   - { name: Phil Libin, role: 創辦人, photo: { file: Phil Libin at LeWeb in 2011.jpg, license: CC BY 2.0, author: OFFICIAL LeWEB PHOTOS } }
-  - { name: Chris O'Neill, photo: { file: "Christopher O’Neill-5.jpg", license: CC BY-SA 3.0, author: Frankie Fouganthin } }
-  - { name: Ian Small, role: 執行長 }
+  - { name: Chris O'Neill, role: 前執行長, photo: { file: "Christopher O’Neill-5.jpg", license: CC BY-SA 3.0, author: Frankie Fouganthin } }
+  - { name: Ian Small, role: 前執行長 }
 sources:
   - "propod:cmt8nclvm0xmv01xi8eex5ue8"
   - "podcast:2026-07-17-ep131"

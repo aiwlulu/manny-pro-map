@@ -12,6 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/沃尔玛"
 people:
   - { name: Sam Walton, role: 創辦人, photo: { file: SamWalton-1936.jpg, license: Public domain, author: Unknown author. } }
+  - { name: John Furner, role: 總裁暨執行長 }
 revenue:
   fy: FY2026
   total: 710

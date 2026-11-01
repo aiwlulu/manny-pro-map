@@ -13,6 +13,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/派拉蒙天空之舞"
 people:
   - { name: David Ellison, role: 董事長暨執行長 }
+  - { name: Ynon Kreiz, role: 共同執行長 }
 relations:
   - { type: acquired, target: warner-bros-discovery, note: 2026 年 }
 sources:

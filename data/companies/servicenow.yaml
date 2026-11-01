@@ -9,7 +9,8 @@ links:
   website: "https://www.servicenow.com"
   wikipedia: "https://en.wikipedia.org/wiki/ServiceNow"
 people:
-  - { name: Frank Slootman, role: "Desai 的前老闆（帶領 ServiceNow 於 2012 年上市）", photo: { file: Frank Slootman Snowflake.jpg, license: CC BY-SA 4.0, author: Alivecoverage } }
+  - { name: Frank Slootman, role: 前總裁暨執行長, photo: { file: Frank Slootman Snowflake.jpg, license: CC BY-SA 4.0, author: Alivecoverage } }
+  - { name: Bill McDermott, role: 董事長暨執行長 }
 sources:
   - "pro:drwymxex2ytn"
   - "pro:zppaa3v8qrtw"

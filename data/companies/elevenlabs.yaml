@@ -7,7 +7,7 @@ links:
   website: "https://elevenlabs.io/"
   wikipedia: "https://en.wikipedia.org/wiki/ElevenLabs"
 people:
-  - { name: Mati Staniszewski, role: 共同創辦人, interviewed: true, photo: { file: "Mati Staniszewski (2022).jpg", license: CC BY-SA 4.0, author: Rafał Masłow } }
+  - { name: Mati Staniszewski, role: 共同創辦人暨執行長, interviewed: true, photo: { file: "Mati Staniszewski (2022).jpg", license: CC BY-SA 4.0, author: Rafał Masłow } }
   - { name: Piotr Dąbkowski, role: 創辦人 }
 sources:
   - "pro:j9mt5hwzd9pn"

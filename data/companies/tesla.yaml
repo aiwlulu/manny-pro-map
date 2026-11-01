@@ -13,7 +13,7 @@ links:
 people:
   - { name: Martin Eberhard, role: 創辦人, photo: { file: "Martin Eberhard (cropped).jpg", license: CC BY-SA 2.0, author: Nicki Dugan } }
   - { name: Marc Tarpenning, role: 創辦人 }
-  - { name: Elon Musk, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
+  - { name: Elon Musk, role: 共同創辦人暨執行長, photo: { file: "Elon Musk (54816836217) (cropped 2) (b).jpg", license: CC BY-SA 4.0, author: Gage Skidmore } }
 revenue:
   fy: FY2025
   total: 95

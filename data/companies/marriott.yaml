@@ -12,8 +12,9 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/萬豪國際"
 people:
   - { name: J. Willard Marriott, role: 創辦人, photo: { file: J Willard Marriott.jpg, license: Public domain, author: USGov-DOL } }
-  - { name: J. Willard Marriott Jr., role: 第二代接班人 }
-  - { name: Stephen Bollenbach, role: "財務長（CFO）" }
+  - { name: J. Willard Marriott Jr., role: 榮譽董事長暨前執行長 }
+  - { name: Stephen Bollenbach, role: 前財務長 }
+  - { name: Anthony G. Capuano, role: 總裁暨執行長 }
 relations:
   - { type: acquired, target: starwood, note: 2016 年 }
   - { type: competitor, target: hilton }

@@ -10,8 +10,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/LVMH"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/LVMH"
 people:
-  - { name: Alain Chevalier, role: 創辦人 }
-  - { name: Henry Racamier, role: 創辦人 }
+  - { name: Alain Chevalier, role: 已故共同創辦人 }
+  - { name: Henry Racamier, role: 已故共同創辦人 }
+  - { name: Bernard Arnault, role: 董事長暨執行長 }
 sources:
   - "propod:cms7o9zv5001q01vxhppq11y1"
   - "pro:rhyvggwtrxqh"

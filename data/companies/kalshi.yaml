@@ -9,8 +9,8 @@ links:
   website: "https://kalshi.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Kalshi"
 people:
-  - { name: Tarek Mansour, role: 創辦人, photo: { file: "Tarek Mansour, Web Summit 2021 - 4.jpg", license: CC BY 2.0, author: "Web Summit, Diarmuid Greene" } }
-  - { name: Luana Lara Lopes, role: 創辦人 }
+  - { name: Tarek Mansour, role: 共同創辦人暨執行長, photo: { file: "Tarek Mansour, Web Summit 2021 - 4.jpg", license: CC BY 2.0, author: "Web Summit, Diarmuid Greene" } }
+  - { name: Luana Lopes Lara, role: 共同創辦人暨營運長 }
 relations:
   - { type: competitor, target: polymarket }
 sources:

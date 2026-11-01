@@ -11,7 +11,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Macmillan_Publishers"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/麥米倫出版公司"
 people:
-  - { name: Daniel Macmillan, role: 創辦人, photo: { file: Daniel Macmillan 1813 1857.png, license: Public domain, author: "Macmillan &amp; Co." } }
-  - { name: Alexander Macmillan, role: 創辦人, photo: { file: Alexander Macmillan 1818 1896.png, license: Public domain, author: "Macmillan &amp; Co." } }
+  - { name: Daniel Macmillan, role: 已故共同創辦人, photo: { file: Daniel Macmillan 1813 1857.png, license: Public domain, author: "Macmillan &amp; Co." } }
+  - { name: Alexander Macmillan, role: 已故共同創辦人, photo: { file: Alexander Macmillan 1818 1896.png, license: Public domain, author: "Macmillan &amp; Co." } }
+  - { name: Jon Yaged, role: 美國 Macmillan Publishers 執行長 }
+  - { name: Joanna Prior, role: 英國 Pan Macmillan 執行長 }
 sources:
   - "pro:g25ebdxu3cu6"

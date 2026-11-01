@@ -12,6 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/波音"
 people:
   - { name: William Boeing, role: 創辦人, photo: { file: William Boeing.jpg, license: CC BY 4.0, author: Los Angeles Times } }
+  - { name: Kelly Ortberg, role: 總裁暨執行長 }
 revenue:
   fy: FY2025
   total: 90

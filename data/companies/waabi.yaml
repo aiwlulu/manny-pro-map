@@ -2,10 +2,11 @@ name: Waabi
 industry: mobility
 segment: autonomy
 summary: "以人工智慧開發自動駕駛技術的公司，主要研發自駕車軟體，總部位於多倫多。"
+logo: { file: "Waabi logo.svg", license: Public domain, author: Waabi }
 links:
   wikipedia: "https://en.wikipedia.org/wiki/Waabi"
   website: "https://waabi.ai"
 people:
-  - { name: Raquel Urtasun, role: 創辦人, photo: { file: Raquel Urtasun.jpg, license: CC BY-SA 4.0, author: Raquel Urtasun } }
+  - { name: Raquel Urtasun, role: 創辦人暨執行長, photo: { file: Raquel Urtasun.jpg, license: CC BY-SA 4.0, author: Raquel Urtasun } }
 sources:
   - "pro:tdzgzbsctptw"

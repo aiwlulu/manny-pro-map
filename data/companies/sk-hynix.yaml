@@ -11,6 +11,8 @@ links:
   website: "https://www.skhynix.com/"
   wikipedia: "https://en.wikipedia.org/wiki/SK_Hynix"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/SK海力士"
+people:
+  - { name: Kwak Noh-Jung, role: 執行長 }
 revenue:
   fy: FY2025
   total: 97000

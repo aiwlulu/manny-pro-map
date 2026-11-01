@@ -15,8 +15,8 @@ people:
   - { name: Dustin Moskovitz, role: 創辦人, photo: { file: "Web Summit 2017 - Centre Stage Day 2 DF2 5495 (24396886968).jpg", license: CC BY 2.0, author: Web Summit } }
   - { name: Chris Hughes, role: 創辦人, photo: { file: "Chris Hughes (cropped).jpg", license: CC BY 2.0, author: USV } }
   - { name: Andrew McCollum, role: 創辦人 }
-  - { name: Sheryl Sandberg, role: 創辦人, photo: { file: Sheryl Sandberg Moet Hennessy Financial Times Club Dinner 2011.jpg, license: CC BY 2.0, author: Financial Times } }
-  - { name: Michael Abrash, role: 首席科學家, photo: { file: Michael Abrash at Facebook's F8 2015.jpg, license: CC BY 2.0, author: Maurizio Pesce } }
+  - { name: Sheryl Sandberg, role: 前營運長, photo: { file: Sheryl Sandberg Moet Hennessy Financial Times Club Dinner 2011.jpg, license: CC BY 2.0, author: Financial Times } }
+  - { name: Michael Abrash, role: Reality Labs 首席科學家, photo: { file: Michael Abrash at Facebook's F8 2015.jpg, license: CC BY 2.0, author: Maurizio Pesce } }
 revenue:
   fy: FY2025
   total: 200

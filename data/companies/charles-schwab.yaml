@@ -11,7 +11,7 @@ links:
   website: "https://www.schwab.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Charles_Schwab_Corporation"
 people:
-  - { name: Charles Schwab, role: 創辦人 }
+  - { name: Charles Schwab, role: 創辦人, photo: { file: "Charles schwab 2007.jpg", license: CC BY 4.0, author: Larry D. Moore } }
   - { name: Rick Wurster, role: 執行長 }
 relations:
   - { type: acquired, target: td-ameritrade, note: 2020 年 }

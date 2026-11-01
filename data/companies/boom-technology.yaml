@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Boom_Technology"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Boom_Technology"
 people:
-  - { name: Blake Scholl, role: 創辦人, photo: { file: Scholl 2024.jpg, license: CC BY-SA 4.0, author: Lolopizza } }
+  - { name: Blake Scholl, role: 創辦人暨執行長, photo: { file: Scholl 2024.jpg, license: CC BY-SA 4.0, author: Lolopizza } }
   - { name: Josh Krall, role: 創辦人 }
   - { name: Joe Wilding, role: 創辦人 }
 sources:

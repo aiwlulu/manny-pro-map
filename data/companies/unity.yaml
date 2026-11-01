@@ -10,6 +10,8 @@ links:
   website: "https://unity.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Unity_Technologies"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Unity_Technologies"
+people:
+  - { name: Matthew Bromberg, role: 總裁暨執行長 }
 revenue:
   fy: FY2025
   total: 1.8

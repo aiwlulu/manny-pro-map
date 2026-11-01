@@ -12,6 +12,7 @@ links:
 people:
   - { name: Ted Sarandos, role: 共同執行長, photo: { file: Ted Sarandos 2024.jpg, license: CC BY-SA 2.0, author: UKinUSA } }
   - { name: Reed Hastings, role: 共同創辦人, photo: { file: "Reed Hastings, Web 2.0 Conference.jpg", license: CC BY 2.0 } }
+  - { name: Greg Peters, role: 共同執行長 }
 revenue:
   fy: FY2025
   total: 45

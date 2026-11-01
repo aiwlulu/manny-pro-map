@@ -4,9 +4,12 @@ segment: research
 summary: "臨床基因檢測公司，以非侵入式游離 DNA 檢測技術服務女性健康、癌症與器官健康領域。"
 founded: 2004
 hq: 圣卡洛斯
+logo: { file: "Natera logo.png", license: Public domain, author: Natera }
 links:
   website: "http://www.natera.com"
   wikipedia: "https://en.wikipedia.org/wiki/Natera"
+people:
+  - { name: Steve Chapman, role: 執行長 }
 revenue:
   fy: FY2025
   total: 2.3

@@ -10,9 +10,9 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/IMAX_Corporation"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/IMAX公司"
 people:
-  - { name: Roman Kroitor, role: 創辦人 }
-  - { name: Graeme Ferguson, role: 創辦人 }
-  - { name: Robert Kerr, role: 創辦人 }
+  - { name: Roman Kroitor, role: 已故共同創辦人 }
+  - { name: Graeme Ferguson, role: 已故共同創辦人 }
+  - { name: Robert Kerr, role: 已故共同創辦人 }
   - { name: Richard Gelfond, role: 執行長, photo: { file: "NYCW 2026 - Richard Gelfond 01 (cropped).jpg", license: CC BY-SA 4.0, author: Xuthoria } }
 sources:
   - "propod:cms7or6d0077o01ymcffj7gbb"

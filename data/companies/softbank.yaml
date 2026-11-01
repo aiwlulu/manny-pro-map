@@ -11,6 +11,8 @@ links:
   website: "https://group.softbank/en/"
   wikipedia: "https://en.wikipedia.org/wiki/SoftBank_Group"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/軟銀集團"
+people:
+  - { name: Masayoshi Son, role: 創辦人暨董事長兼執行長 }
 revenue:
   fy: FY2025
   total: 7800

@@ -9,6 +9,8 @@ links:
   website: "https://sportradar.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Sportradar"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Sportradar"
+people:
+  - { name: Carsten Koerl, role: 創辦人暨執行長 }
 revenue:
   fy: FY2025
   total: 1.3

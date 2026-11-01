@@ -8,8 +8,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Duolingo"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/多鄰國"
 people:
-  - { name: Luis von Ahn, role: 創辦人, photo: { file: "Wikimania 2015 - Day 2 (18) (cropped).jpg", license: CC BY-SA 4.0, author: EneasMx } }
-  - { name: Severin Guey, role: 創辦人 }
+  - { name: Luis von Ahn, role: 共同創辦人、董事長暨執行長, photo: { file: "Wikimania 2015 - Day 2 (18) (cropped).jpg", license: CC BY-SA 4.0, author: EneasMx } }
+  - { name: Severin Hacker, role: 共同創辦人暨董事 }
 revenue:
   fy: FY2025
   total: 1

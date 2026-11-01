@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Under_Armour"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/安德玛"
 people:
-  - { name: Kevin Plank, role: 創辦人, photo: { file: Kevin Plank headshot 2018.png, license: CC BY 4.0, author: Under Armour } }
+  - { name: Kevin Plank, role: 創辦人、總裁暨執行長, photo: { file: Kevin Plank headshot 2018.png, license: CC BY 4.0, author: Under Armour } }
 sources:
   - "propod:cmtel5mvw12jk01wy4ok92ldx"
   - "pro:23jwvufhmrsw"

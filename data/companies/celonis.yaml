@@ -8,6 +8,7 @@ links:
   website: "https://www.celonis.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Celonis"
 people:
-  - { name: Alexander Rinke }
+  - { name: Alexander Rinke, role: 共同創辦人暨共同執行長 }
+  - { name: Bastian Nominacher, role: 共同創辦人暨共同執行長 }
 sources:
   - "podcast:2022-08-28-ep22"

@@ -11,6 +11,8 @@ links:
   website: "https://www.micron.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Micron_Technology"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/美光科技"
+people:
+  - { name: Sanjay Mehrotra, role: 董事長暨執行長 }
 revenue:
   fy: FY2026
   total: 130

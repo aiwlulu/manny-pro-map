@@ -8,6 +8,8 @@ logo: { file: Flutter Entertainment logo.jpeg, license: Public domain, author: F
 links:
   website: "https://www.flutter.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Flutter_Entertainment"
+people:
+  - { name: Dan Taylor, role: 集團執行長 }
 revenue:
   fy: FY2025
   total: 16

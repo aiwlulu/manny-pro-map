@@ -6,6 +6,16 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [2.5.2] - 2026-11-01
+
+### 資料
+- 全面查核人物職稱：更新 115 位人物的現任職稱（例如 Apple、Berkshire Hathaway、ASML、MongoDB、Chipotle 的領導人交接），補上 102 位缺少的現任執行長等關鍵人物，並修正 7 個拼錯的人名（例如 Duolingo 的 Severin Hacker、Lorikeet 的 Steve Hind 與 Jamie Hall）
+- Visa 營收結構更新為 FY2026 年報
+- 補上 8 家公司的 logo、9 位人物的照片（皆為 Wikimedia Commons 自由授權）
+
+### 修正
+- 首頁公司數的預設值改為 330（不含延伸公司）
+
 ## [2.5.1] - 2026-11-01
 
 ### 資料
@@ -305,6 +315,7 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[2.5.2]: https://github.com/aiwlulu/manny-pro-map/compare/v2.5.1...v2.5.2
 [2.5.1]: https://github.com/aiwlulu/manny-pro-map/compare/v2.5.0...v2.5.1
 [2.5.0]: https://github.com/aiwlulu/manny-pro-map/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/aiwlulu/manny-pro-map/compare/v2.3.0...v2.4.0

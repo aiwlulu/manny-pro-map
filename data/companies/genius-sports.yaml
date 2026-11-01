@@ -6,6 +6,8 @@ hq: 倫敦
 links:
   website: "https://geniussports.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Genius_Sports"
+people:
+  - { name: Mark Locke, role: 共同創辦人暨執行長 }
 revenue:
   fy: FY2025
   total: 0.67

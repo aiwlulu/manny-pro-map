@@ -13,5 +13,6 @@ people:
   - { name: Ben Silbermann, role: 創辦人, photo: { file: Silbermann face.jpg, license: CC BY 2.0, author: Anya } }
   - { name: Evan Sharp, role: 創辦人, photo: { file: Evan Sharp 2025.jpg, license: CC BY 4.0, author: Web Summit } }
   - { name: Paul Sciarra, role: 創辦人 }
+  - { name: Bill Ready, role: 執行長 }
 sources:
   - "pro:6tdws32g4rwp"

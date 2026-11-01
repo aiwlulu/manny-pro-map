@@ -10,7 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Rocket_Lab"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/火箭实验室"
 people:
-  - { name: Peter Beck, role: 創辦人, interviewed: true, photo: { file: "Peter Beck 2753 (tighter crop).jpg", license: CC BY 3.0, author: Royal Society Te Apārangi } }
+  - { name: Peter Beck, role: 創辦人、董事長暨執行長, interviewed: true, photo: { file: "Peter Beck 2753 (tighter crop).jpg", license: CC BY 3.0, author: Royal Society Te Apārangi } }
 sources:
   - "pro:k6x9tusww2es"
   - "podcast:2025-07-07-ep106"

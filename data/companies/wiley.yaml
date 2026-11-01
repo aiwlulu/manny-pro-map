@@ -12,6 +12,7 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/約翰威立"
 people:
   - { name: Charles Wiley, role: 創辦人 }
+  - { name: Matthew Kissner, role: 總裁暨執行長 }
 relations:
   - { type: acquired, target: hindawi, note: 2021 年 }
 sources:

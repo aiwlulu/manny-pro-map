@@ -11,6 +11,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Hilton_Worldwide"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/希爾頓全球酒店集團"
 people:
-  - { name: Conrad Hilton, role: 創辦人, photo: { file: Conrad Hilton.png, license: CC BY-SA 3.0, author: "Randal Schwartz from Portland, OR, USA" } }
+  - { name: Conrad Hilton, role: 已故創辦人, photo: { file: Conrad Hilton.png, license: CC BY-SA 3.0, author: "Randal Schwartz from Portland, OR, USA" } }
+  - { name: Christopher J. Nassetta, role: 總裁暨執行長 }
 sources:
   - "pro:duukfut6958f"

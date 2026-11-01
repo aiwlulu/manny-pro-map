@@ -9,6 +9,8 @@ links:
   website: "https://www.broadcom.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Broadcom"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/博通有限"
+people:
+  - { name: Hock Tan, role: 總裁暨執行長 }
 revenue:
   fy: FY2025
   total: 64

@@ -16,7 +16,7 @@ people:
   - { name: Wojciech Zaremba, role: 創辦人 }
   - { name: Andrej Karpathy, role: 創辦人, photo: { file: "Andrej Karpathy, OpenAI.png", license: CC BY 3.0, author: Gladwin Analytics } }
   - { name: John Schulman, role: 創辦人 }
-  - { name: Fidji Simo, role: 應用程式執行長, photo: { file: "Facebook F8 Developer's Conference 2017 Fidji Simo (33324521813).jpg", license: CC BY 2.0, author: "Anthony Quintano from Westminster, United States" } }
+  - { name: Fidji Simo, role: 兼職顧問（前 AGI 部署執行長）, photo: { file: "Facebook F8 Developer's Conference 2017 Fidji Simo (33324521813).jpg", license: CC BY 2.0, author: "Anthony Quintano from Westminster, United States" } }
   - { name: Sarah Friar, role: 財務長, photo: { file: Sarah Friar MoneyConf 2018.jpg, license: CC BY 2.0, author: MoneyConf } }
 relations:
   - { type: supplier, target: microsoft, kind: software, note: AI模型, detail: 模型與產品授權延續至2032年, year: 2026, source: "https://openai.com/index/next-phase-of-microsoft-partnership/" }

@@ -13,9 +13,9 @@ people:
   - { name: Peter Thiel, role: 創辦人, photo: { file: Peter Thiel by Gage Skidmore.jpg, license: CC BY-SA 3.0, author: Gage Skidmore } }
   - { name: Joe Lonsdale, role: 創辦人, photo: { file: Joe Lonsdale.jpg, license: CC BY 2.0, author: TechCrunch } }
   - { name: Stephen Cohen, role: 創辦人 }
-  - { name: Alexander C. Karp, role: 創辦人, photo: { file: "Alex Karp attends AI Summit (53302457013) 4-5 ratio.jpg", license: CC BY 2.0, author: UK Government } }
+  - { name: Alexander C. Karp, role: 共同創辦人暨執行長, photo: { file: "Alex Karp attends AI Summit (53302457013) 4-5 ratio.jpg", license: CC BY 2.0, author: UK Government } }
   - { name: Nathan Gettings, role: 創辦人 }
-  - { name: Bob McGrew, role: 前研究長 }
+  - { name: Bob McGrew, role: 前 OpenAI 研究長 }
 sources:
   - "pro:b8mnrda6dvcj"
   - "pro:xdqzqvzyyzb8"

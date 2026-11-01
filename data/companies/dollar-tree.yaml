@@ -10,6 +10,7 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Dollar_Tree"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/美元树"
 people:
-  - { name: "Macon Foscue Brock, Jr.", role: 創辦人 }
+  - { name: "Macon Foscue Brock, Jr.", role: 共同創辦人 }
+  - { name: Mike Creedon, role: 執行長 }
 sources:
   - "pro:r9fgagndpvde"

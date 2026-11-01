@@ -10,7 +10,8 @@ links:
   website: "http://www.roperind.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Roper_Technologies"
 people:
-  - { name: Brian Jellison, role: 執行長 }
+  - { name: Brian Jellison, role: 前執行長 }
+  - { name: Neil Hunn, role: 總裁暨執行長 }
 relations:
   - { type: parent, target: neptune }
   - { type: parent, target: transcore }

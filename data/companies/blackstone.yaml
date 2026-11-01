@@ -12,7 +12,7 @@ links:
 people:
   - { name: Jon Gray, role: 總裁暨營運長, interviewed: true }
   - { name: Peter George Peterson, role: 創辦人, photo: { file: PeterGeorgePeterson.jpg, license: Public domain } }
-  - { name: Stephen A. Schwarzman, role: 創辦人, photo: { file: "Stephen Schwarzman, 19 March 2024.jpg", license: CC BY-SA 2.0, author: UKinUSA } }
+  - { name: Stephen A. Schwarzman, role: 共同創辦人、董事長暨執行長, photo: { file: "Stephen Schwarzman, 19 March 2024.jpg", license: CC BY-SA 2.0, author: UKinUSA } }
 relations:
   - { type: acquired, target: qts, note: 2021 年 }
   - { type: parent, target: hilton }
