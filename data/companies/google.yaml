@@ -17,6 +17,7 @@ revenue:
   fy: FY2025
   total: 400
   currency: USD
+  growth: 15
   source: "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
   segments:
     - { id: search, name: 搜尋與其他, share: 56 }

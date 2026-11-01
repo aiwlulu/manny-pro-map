@@ -15,6 +15,7 @@ revenue:
   fy: FY2025
   total: 3.5
   currency: USD
+  growth: 25
   source: "https://www.sec.gov/Archives/edgar/data/2003292/000200329226000007/klar-20251231.htm"
   note: 依收入類型揭露，單一營運分部。
   segments:

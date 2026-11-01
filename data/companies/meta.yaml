@@ -21,6 +21,7 @@ revenue:
   fy: FY2025
   total: 200
   currency: USD
+  growth: 22
   source: "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx"
   note: 依收入類型揭露，含 Reality Labs 部門。
   segments:

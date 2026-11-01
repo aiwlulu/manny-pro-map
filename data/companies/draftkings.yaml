@@ -14,6 +14,7 @@ revenue:
   fy: FY2025
   total: 6.1
   currency: USD
+  growth: 27
   source: "https://www.sec.gov/Archives/edgar/data/1883685/000188368526000013/dkng-20251231.htm"
   segments:
     - { id: sportsbook, name: 運動博彩, share: 63 }

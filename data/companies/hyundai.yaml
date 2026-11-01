@@ -17,6 +17,7 @@ revenue:
   fy: FY2025
   total: 190000
   currency: KRW
+  growth: 6
   source: "https://www.hyundai.com/content/dam/hyundai/ww/en/images/company/investor-relations/financial-Information/report-en/2025/2025-q4-consolidated-audit-report-en.pdf"
   segments:
     - { id: vehicle, name: 汽車, share: 78 }

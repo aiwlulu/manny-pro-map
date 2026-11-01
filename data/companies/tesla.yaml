@@ -18,6 +18,7 @@ revenue:
   fy: FY2025
   total: 95
   currency: USD
+  growth: -3
   source: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
   segments:
     - { id: automotive-sales, name: 汽車銷售, share: 69 }

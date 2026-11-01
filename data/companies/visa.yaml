@@ -16,6 +16,7 @@ revenue:
   fy: FY2026
   total: 46
   currency: USD
+  growth: 15
   source: "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000126/q42026earningsrelease.htm"
   note: 以扣除客戶獎勵金前的總收入計算佔比（總收入 642.2 億、獎勵金 183.2 億美元）。
   segments:

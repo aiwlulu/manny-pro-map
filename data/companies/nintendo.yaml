@@ -17,6 +17,7 @@ revenue:
   fy: FY2026
   total: 2300
   currency: JPY
+  growth: 99
   source: "https://www.nintendo.co.jp/ir/pdf/2026/260508_4e.pdf"
   segments:
     - { id: dedicated-video-game-platform, name: 專用遊戲平台, share: 97 }

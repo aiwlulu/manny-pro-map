@@ -17,6 +17,7 @@ revenue:
   fy: FY2025
   total: 90
   currency: USD
+  growth: 34
   source: "https://investors.boeing.com/investors/news/press-release-details/2026/Boeing-Reports-Fourth-Quarter-Results/default.aspx"
   note: 另有約 -2 億美元未分配與沖銷，未列入。
   segments:

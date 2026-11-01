@@ -20,6 +20,7 @@ revenue:
   fy: FY2025
   total: 33
   currency: USD
+  growth: 4
   source: "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000024/pypl-20251231.htm"
   segments:
     - { id: transactions, name: 交易收入, share: 90 }

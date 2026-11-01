@@ -15,6 +15,7 @@ revenue:
   fy: FY2025
   total: 12
   currency: USD
+  growth: 30
   source: "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/shop-20251231.htm"
   segments:
     - { id: subscription-solutions, name: 訂閱解決方案, share: 24 }

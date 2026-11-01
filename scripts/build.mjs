@@ -66,6 +66,8 @@ for (const c of companies) {
   if (!v.fy) err(at, 'revenue.fy is required');
   if (!https(v.source)) err(at, 'revenue needs an https source');
   if (v.total != null && !CURRENCIES.includes(v.currency)) err(at, `revenue.currency must be one of ${CURRENCIES.join(', ')}`);
+  if (v.growth != null && !(Number.isInteger(v.growth) && v.growth > -100)) err(at, 'revenue.growth must be a whole-number percent above -100');
+  if (v.growth != null && v.total == null) err(at, 'revenue.growth needs revenue.total');
   const segs = v.segments ?? [];
   if (!segs.length && !v.note) err(at, 'revenue needs segments, or a note saying why there are none');
   const seen = new Set();

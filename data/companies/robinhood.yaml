@@ -16,6 +16,7 @@ revenue:
   fy: FY2025
   total: 4.5
   currency: USD
+  growth: 52
   source: "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000023/hood-20251231.htm"
   segments:
     - { id: transaction-based, name: 交易收入, share: 59 }

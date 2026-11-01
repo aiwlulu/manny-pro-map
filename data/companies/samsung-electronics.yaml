@@ -18,6 +18,7 @@ revenue:
   fy: FY2025
   total: 330000
   currency: KRW
+  growth: 11
   source: "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_con_quarter04_all.pdf"
   note: 以部門營收合計計算佔比，未扣部門間交易。
   segments:

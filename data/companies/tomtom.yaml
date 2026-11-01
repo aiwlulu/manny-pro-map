@@ -19,6 +19,7 @@ revenue:
   fy: FY2025
   total: 0.55
   currency: EUR
+  growth: -3
   source: "https://corporate.tomtom.com/static-files/8b15e71b-24eb-462a-9b6d-7408f3c64753"
   segments:
     - { id: automotive, name: 車用業務, share: 58 }

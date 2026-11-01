@@ -15,6 +15,7 @@ revenue:
   fy: FY2025
   total: 64
   currency: USD
+  growth: 24
   source: "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm"
   segments:
     - { id: semiconductor, name: 半導體, share: 58 }

@@ -18,6 +18,7 @@ revenue:
   fy: FY2026
   total: 67
   currency: USD
+  growth: 17
   source: "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
   segments:
     - { id: cloud, name: 雲端服務, share: 50 }

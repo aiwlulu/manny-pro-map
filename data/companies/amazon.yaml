@@ -17,6 +17,7 @@ revenue:
   fy: FY2025
   total: 720
   currency: USD
+  growth: 12
   source: "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
   note: 依產品與服務類別揭露；報告分部為北美、國際與 AWS。
   segments:

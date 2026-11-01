@@ -14,6 +14,7 @@ revenue:
   fy: FY2025
   total: 3.9
   currency: USD
+  growth: 3
   source: "https://www.glanbia.com/sites/glanbia-plc/files/glanbia/investors/results-presentations/2026/Glanbia-Full-Year-25-Results.pdf"
   segments:
     - { id: performance-nutrition, name: 運動營養, share: 46 }

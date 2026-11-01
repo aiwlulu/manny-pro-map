@@ -16,6 +16,7 @@ revenue:
   fy: FY2025
   total: 7.2
   currency: USD
+  growth: 9
   source: "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm"
   segments:
     - { id: transactions, name: 交易收入, share: 57 }

@@ -17,6 +17,7 @@ revenue:
   fy: FY2025
   total: 4.3
   currency: USD
+  growth: -1
   source: "https://www.sec.gov/Archives/edgar/data/1110803/000111080326000024/ilmn-20251228.htm"
   segments:
     - { id: consumables, name: 耗材, share: 74 }

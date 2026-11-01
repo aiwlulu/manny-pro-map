@@ -12,6 +12,7 @@ revenue:
   fy: FY2025
   total: 0.67
   currency: USD
+  growth: 31
   source: "https://www.sec.gov/Archives/edgar/data/1834489/000119312526110749/geni-20251231.htm"
   segments:
     - { id: betting, name: 博彩科技與內容, share: 71 }

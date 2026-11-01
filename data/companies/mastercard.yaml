@@ -16,6 +16,7 @@ revenue:
   fy: FY2025
   total: 33
   currency: USD
+  growth: 16
   source: "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000013/ma-20251231.htm"
   segments:
     - { id: network, name: 支付網路, share: 59 }

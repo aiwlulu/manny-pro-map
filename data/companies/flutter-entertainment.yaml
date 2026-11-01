@@ -14,6 +14,7 @@ revenue:
   fy: FY2025
   total: 16
   currency: USD
+  growth: 17
   source: "https://www.sec.gov/Archives/edgar/data/1635327/000163532726000005/flut-20251231.htm"
   note: 依產品別加總美國與國際兩大地區分部。
   segments:

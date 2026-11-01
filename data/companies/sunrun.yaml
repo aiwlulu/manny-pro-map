@@ -14,6 +14,7 @@ revenue:
   fy: FY2025
   total: 3
   currency: USD
+  growth: 45
   source: "https://investors.sunrun.com/news-events/press-releases/detail/364/sunrun-reports-fourth-quarter-and-full-year-2025-financial"
   segments:
     - { id: customer-agreements-and-incentives, name: 租賃合約與補助, share: 62 }

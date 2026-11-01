@@ -16,6 +16,7 @@ revenue:
   fy: FY2025
   total: 1.8
   currency: USD
+  growth: 2
   source: "https://www.sec.gov/Archives/edgar/data/1810806/000181080626000011/unity-20251231.htm"
   segments:
     - { id: create-solutions, name: 創作解決方案, share: 34 }

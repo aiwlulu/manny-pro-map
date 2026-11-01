@@ -16,6 +16,7 @@ revenue:
   fy: FY2025
   total: 130
   currency: USD
+  growth: 20
   source: "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
   note: AWS 為亞馬遜的營運分部，約佔亞馬遜營收 18%，未再拆分。
 relations:

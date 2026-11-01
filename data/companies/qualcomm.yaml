@@ -18,6 +18,7 @@ revenue:
   fy: FY2025
   total: 44
   currency: USD
+  growth: 14
   source: "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm"
   segments:
     - { id: handsets, name: 手機, share: 63 }

@@ -21,6 +21,8 @@ export function money(bn, cur) {
   return `約 ${n}${CUR[cur] ?? cur}`;
 }
 const pct = (x) => (x < 1 ? '<1%' : `${Math.round(x)}%`);
+// Year-over-year change of total revenue, e.g. "年增 52%"
+const yoy = (g) => (Math.round(g) === 0 ? '與前一年持平' : `${g > 0 ? '年增' : '年減'} ${Math.abs(Math.round(g)).toLocaleString('zh-TW')}%`);
 export const segOf = (c, id) => c?.revenue?.segments?.find((g) => g.id === id);
 
 // up/down: Map<id, [{ c, what, kind, segment, share, source, detail, year }]>
@@ -115,7 +117,7 @@ export function revenueBar(c, { hot = null, full = false } = {}) {
   if (!v || (!v.segments?.length && !full)) return '';
   const segs = v.segments ?? [];
   const shares = segs.length > 0 && segs.every((g) => g.share != null);
-  const head = `<span class="rv-h" title="取自最近一個完整財年的年報，四捨五入的約略比例"><b>營收結構</b><em>${esc(v.fy)}${v.total != null ? ` · ${money(v.total, v.currency)}` : ''}</em>${full ? evidence(v, v.private ? '來源' : '財報') : ''}</span>`;
+  const head = `<span class="rv-h" title="取自最近一個完整財年的年報，四捨五入的約略比例"><b>營收結構</b><em>${esc(v.fy)}${v.total != null ? ` · ${money(v.total, v.currency)}` : ''}${full && v.growth != null ? ` · <span class="rv-g${v.growth < 0 ? ' dn' : ''}" title="總營收與前一個財年相比，依財報原始數字計算">${yoy(v.growth)}</span>` : ''}</em>${full ? evidence(v, v.private ? '來源' : '財報') : ''}</span>`;
   const bar = shares ? `<span class="rv-bar">${segs.map((g, n) => `<i data-seg="${esc(g.id)}" class="${g.id === hot ? 'hot' : ''}" style="--w:${g.share};--n:${n}" title="${esc(`${g.name} ${pct(g.share)}`)}"></i>`).join('')}</span>` : '';
   const list = full && segs.length ? `<ul class="rv-l">${segs.map((g, n) => `<li data-seg="${esc(g.id)}" class="${g.id === hot ? 'hot' : ''}" style="--n:${n}"><i></i><span>${esc(g.name)}</span>${g.share != null ? `<b>${pct(g.share)}</b>` : ''}</li>`).join('')}</ul>` : '';
   return `<div class="rv${full ? ' full' : ''}">${head}${bar}${list}${full && v.note ? `<p class="rv-n">${esc(v.note)}</p>` : ''}</div>`;
