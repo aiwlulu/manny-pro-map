@@ -6,6 +6,12 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [2.5.1] - 2026-11-01
+
+### 資料
+- 補上 Robinhood 的營收結構（FY2025 年報）
+- 補上 Charles Schwab、Interactive Brokers、TD Ameritrade、Bitstamp 的 logo
+
 ## [2.5.0] - 2026-11-01
 
 ### 資料
@@ -299,7 +305,13 @@
 ### 新增
 - 網站骨架、YAML 資料格式與 CI 驗證、GitHub Pages 部署
 
+[2.5.1]: https://github.com/aiwlulu/manny-pro-map/compare/v2.5.0...v2.5.1
 [2.5.0]: https://github.com/aiwlulu/manny-pro-map/compare/v2.4.0...v2.5.0
+[2.4.0]: https://github.com/aiwlulu/manny-pro-map/compare/v2.3.0...v2.4.0
+[2.3.0]: https://github.com/aiwlulu/manny-pro-map/compare/v2.2.0...v2.3.0
+[2.2.0]: https://github.com/aiwlulu/manny-pro-map/compare/v2.1.0...v2.2.0
+[2.1.0]: https://github.com/aiwlulu/manny-pro-map/compare/v2.0.0...v2.1.0
+[2.0.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.14.2...v2.0.0
 [1.14.2]: https://github.com/aiwlulu/manny-pro-map/compare/v1.14.1...v1.14.2
 [1.14.1]: https://github.com/aiwlulu/manny-pro-map/compare/v1.14.0...v1.14.1
 [1.14.0]: https://github.com/aiwlulu/manny-pro-map/compare/v1.13.1...v1.14.0

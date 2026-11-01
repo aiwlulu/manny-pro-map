@@ -6,6 +6,7 @@ segment: markets
 summary: "美國線上券商，2006 年由 Ameritrade 與 TD Waterhouse 美國業務合併而成，2020 年被 Charles Schwab 收購。"
 founded: 1975
 hq: 奧馬哈
+logo: { file: TD Ameritrade.svg, license: Public domain, author: TD Ameritrade }
 links:
   wikipedia: "https://en.wikipedia.org/wiki/TD_Ameritrade"
 sources:

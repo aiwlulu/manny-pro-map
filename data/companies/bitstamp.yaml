@@ -4,6 +4,7 @@ segment: markets
 summary: "歐洲歷史最久的加密貨幣交易所之一，服務散戶與機構客戶，2025 年被 Robinhood 收購。"
 founded: 2011
 hq: 盧森堡
+logo: { file: Bitstamp logo (2024) (cropped).png, license: Public domain, author: Bitstamp }
 links:
   website: "https://www.bitstamp.net/"
   wikipedia: "https://en.wikipedia.org/wiki/Bitstamp"

@@ -12,6 +12,15 @@ links:
 people:
   - { name: Vlad Tenev, role: 共同創辦人暨執行長, photo: { file: "TechCrunch Disrupt NY 2016 - Day 2 (26902081436) (2).jpg", license: CC BY 2.0, author: TechCrunch } }
   - { name: Baiju Bhatt, role: 共同創辦人, photo: { file: "TechCrunch Disrupt San Francisco 2018 - day 2 (43802635144).jpg", license: CC BY 2.0, author: TechCrunch } }
+revenue:
+  fy: FY2025
+  total: 4.5
+  currency: USD
+  source: "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000023/hood-20251231.htm"
+  segments:
+    - { id: transaction-based, name: 交易收入, share: 59 }
+    - { id: net-interest, name: 淨利息收入, share: 34 }
+    - { id: other, name: 其他, share: 7 }
 relations:
   - { type: acquired, target: bitstamp, note: 2025 年 }
   - { type: competitor, target: charles-schwab }

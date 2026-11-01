@@ -6,6 +6,7 @@ segment: markets
 summary: "美國大型證券經紀與財富管理公司，提供券商帳戶、投資顧問、銀行與資產管理服務。"
 founded: 1971
 hq: 德州韋斯特萊克
+logo: { file: Charles Schwab Corporation logo.svg, license: Public domain, author: "Charles Schwab & Co., Inc." }
 links:
   website: "https://www.schwab.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Charles_Schwab_Corporation"

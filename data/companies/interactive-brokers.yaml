@@ -6,6 +6,7 @@ segment: markets
 summary: "美國電子券商，提供全球多個市場的股票、選擇權、期貨與外匯交易，以低成本與高度自動化著稱。"
 founded: 1978
 hq: 康乃狄克州格林威治
+logo: { file: Interactive Brokers Logo (2014).svg, license: Public domain, author: Interactive Brokers LLC }
 links:
   website: "https://www.interactivebrokers.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Interactive_Brokers"
