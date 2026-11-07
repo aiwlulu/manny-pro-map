@@ -14,6 +14,19 @@ people:
   - { name: Alexis Ohanian, role: 共同創辦人, photo: { file: "TechCrunch Disrupt NY 2015 - Day 3 (17205541529).jpg", license: CC BY 2.0, author: TechCrunch } }
   - { name: Aaron Swartz, role: 共同創辦人, photo: { file: "Aaron Swartz 2 at Boston Wikipedia Meetup, 2009-08-18.jpg", license: CC BY-SA 2.0, author: Sage Ross } }
   - { name: Yishan Wong, role: 前執行長, photo: { file: YishanWong2019.jpg, license: CC BY-SA 3.0, author: Tasshin Fogleman } }
+revenue:
+  fy: FY2025
+  total: 2.2
+  currency: USD
+  growth: 69
+  source: https://www.sec.gov/Archives/edgar/data/1713445/000171344526000022/rddt-20251231.htm
+  segments:
+    - id: advertising
+      name: 廣告
+      share: 94
+    - id: other
+      name: 其他（含內容授權）
+      share: 6
 sources:
   - "pro:b2r32qpe3jna"
   - "pro:bg89rvnhstnm"

@@ -12,9 +12,24 @@ links:
 people:
   - { name: Brian Jellison, role: 前執行長 }
   - { name: Neil Hunn, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 7.9
+  currency: USD
+  growth: 12
+  source: https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm
+  segments:
+    - id: application-software
+      name: 應用軟體
+      share: 57
+    - id: network-software
+      name: 網路軟體
+      share: 20
+    - id: technology-products
+      name: 科技產品
+      share: 23
 relations:
   - { type: parent, target: neptune }
-  - { type: parent, target: transcore }
   - { type: parent, target: deltek }
 sources:
   - "propod:cmt8nclvm0xmv01xi8eex5ue8"

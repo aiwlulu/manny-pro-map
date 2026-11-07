@@ -15,6 +15,23 @@ people:
   - { name: J. Willard Marriott Jr., role: 榮譽董事長暨前執行長 }
   - { name: Stephen Bollenbach, role: 前財務長 }
   - { name: Anthony G. Capuano, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 26
+  currency: USD
+  growth: 4
+  source: https://marriott.gcs-web.com/node/36796
+  note: 以合併總營收計算；成本補償收入為向飯店業主收回的代墊費用，不等於品牌管理費。
+  segments:
+    - id: net-fees
+      name: 淨加盟與管理費
+      share: 20
+    - id: owned-leased-other
+      name: 自有、承租與其他收入
+      share: 7
+    - id: cost-reimbursement
+      name: 成本補償收入
+      share: 73
 relations:
   - { type: acquired, target: starwood, note: 2016 年 }
   - { type: competitor, target: hilton }

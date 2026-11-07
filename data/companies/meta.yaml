@@ -28,6 +28,8 @@ revenue:
     - { id: advertising, name: 廣告, share: 98 }
     - { id: other, name: 其他, share: 2 }
 sources:
+  - "propod:cmvxgkfi401ff01z72ntc4iqm"
+  - "pro:34rtf4jjhsj4"
   - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:kudnr9rb2r56"
   - "pro:x29tt82u4h4q"

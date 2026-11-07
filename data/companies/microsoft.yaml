@@ -38,6 +38,8 @@ relations:
   - { type: invested, target: anthropic, amount: 至多 50 億美元, usd_bn: 5, year: 2025, detail: 三方合作，Anthropic 承諾採購 300 億美元 Azure 算力, source: "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/" }
   - { type: supplier, target: anthropic, kind: cloud, segment: intelligent-cloud, value: { usd_bn: 30, basis: 承諾採購, source: "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships" }, note: 雲端算力, detail: 承諾採購 300 億美元 Azure 算力, year: 2025, source: "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships" }
 sources:
+  - "propod:cmvxgkfi401ff01z72ntc4iqm"
+  - "pro:34rtf4jjhsj4"
   - "pro:x29tt82u4h4q"
   - "propod:cmtj74mw500lp01y46usd2blj"
   - "pro:cjww9vu45utm"

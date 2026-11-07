@@ -17,5 +17,6 @@ people:
 relations:
   - { type: supplier, target: uber, kind: service, note: 自駕載客服務, detail: 奧斯汀與亞特蘭大持續營運, source: "https://waymo.com/waymo-on-uber/" }
 sources:
+  - "pro:hez389wzm44g"
   - "pro:ufwby4nxpxtv"
   - "podcast:2025-02-10-ep92"

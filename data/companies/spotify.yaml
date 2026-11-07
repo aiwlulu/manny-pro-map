@@ -23,5 +23,6 @@ revenue:
     - { id: premium, name: 付費訂閱, share: 90 }
     - { id: ad-supported, name: 廣告, share: 10 }
 sources:
+  - "pro:bzqqad4bwawe"
   - "podcast:2022-11-06-ep27"
   - "podcast:2022-04-17-ep09"

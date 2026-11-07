@@ -14,6 +14,19 @@ people:
   - { name: John Moody, role: 已故創辦人, photo: { file: "John Moody (financial analyst) 1903.jpg", license: Public domain, author: "Scherer, New York" } }
   - { name: Vladimir Ronin, role: 醫藥產業資深評級分析師暨副總 }
   - { name: Robert Fauber, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 7.7
+  currency: USD
+  growth: 9
+  source: https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm
+  segments:
+    - id: ratings
+      name: 信用評等
+      share: 53
+    - id: analytics
+      name: 金融分析與軟體
+      share: 47
 relations:
   - { type: acquired, target: regulatory-datacorp, note: 2020 年 }
   - { type: acquired, target: bureau-van-dijk, note: 2017 年 }

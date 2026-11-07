@@ -43,6 +43,7 @@ relations:
   - { type: invested, target: spacex, year: 2015, detail: 參與股權募資, source: "https://techcrunch.com/2015/01/20/spacex-raises-1-billion-in-new-funding-from-google-and-fidelity/" }
   - { type: invested, target: anthropic, amount: 逾 30 億＋至多 400 億美元, usd_bn: 43, stake: 約 14%, year: 2023, detail: 2023 年起多輪投資逾 30 億；2026 年再承諾 100 億，另 300 億視里程碑, source: "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/" }
 sources:
+  - "propod:cmvx6osvd01d401z1hvwuf0jr"
   - "pro:nhnfkuswxjsf"
   - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:dwcrddrmu86k"

@@ -1,0 +1,10 @@
+name: ST Engineering
+aliases: [Singapore Technologies Engineering]
+extended: true
+industry: industrial
+segment: machinery
+summary: 新加坡科技與工程集團，業務涵蓋航太、國防及城市解決方案，旗下 TransCore 提供電子收費與交通管理系統。
+links:
+  website: https://www.stengg.com/
+relations:
+  - { type: parent, target: transcore, year: 2022, detail: 全資收購 TransCore, source: "https://www.stengg.com/en/newsroom/news-releases/st-engineering-completes-acquisition-of-transcore/" }

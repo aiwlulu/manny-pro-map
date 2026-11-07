@@ -13,6 +13,26 @@ links:
 people:
   - { name: John Deere, role: 創辦人, photo: { file: John Deere portrait.jpg, license: Public domain, author: "Wilson, James Grant, 1832-1914; Fiske, John, 1842-1901; Dick, Charles, 1858-; Ho" } }
   - { name: John C. May, role: 董事長暨執行長 }
+revenue:
+  fy: FY2025
+  total: 46
+  currency: USD
+  growth: -12
+  source: https://www.sec.gov/Archives/edgar/data/315189/000110465925122321/de-20251102x10k.htm
+  note: 依年報對外營收分部計算，包含各設備分部的金融與其他收入。
+  segments:
+    - id: production-agriculture
+      name: 大型與精準農業
+      share: 39
+    - id: small-agriculture-turf
+      name: 小型農業與草坪設備
+      share: 23
+    - id: construction-forestry
+      name: 建築與林業設備
+      share: 25
+    - id: financial-services
+      name: 金融服務
+      share: 13
 relations:
   - { type: parent, target: john-deere-financial }
   - { type: competitor, target: agco }

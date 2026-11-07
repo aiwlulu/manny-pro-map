@@ -29,6 +29,8 @@ relations:
   - { type: invested, target: databricks, year: 2021, detail: 參與H輪股權融資, source: "https://www.databricks.com/company/newsroom/press-releases/databricks-closes-series-h-with-additional-participation-from-strategic-partners" }
   - { type: supplier, target: openai, kind: cloud, note: 雲端算力, detail: 7 年 380 億美元，2026 年再擴約 1,000 億美元, year: 2025, value: { usd_bn: 138, basis: 承諾採購, period: 7–8 年, source: "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html" }, source: "https://www.aboutamazon.com/news/aws/aws-open-ai-workloads-compute-infrastructure" }
 sources:
+  - "pro:kudnr9rb2r56"
+  - "pro:zppaa3v8qrtw"
   - "pro:sfddnjkgm59b"
   - "pro:sg2sthu6aaak"
   - "podcast:2024-12-16-ep88"

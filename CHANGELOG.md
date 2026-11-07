@@ -6,6 +6,16 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [2.7.0] - 2026-11-07
+
+### 資料
+- 補上 Moody’s、Roper Technologies、Deere & Company、Marriott、S&P Global、Reddit、Align Technology、Berkshire Hathaway 八家公司的 FY2025 營收結構、規模與年增率，皆附官方財報來源；有營收資料的公司由 51 家增至 59 家
+- 收錄 11 月 1 日的 CoreWeave、Blackstone 兩集 Pro Podcast，連結對應文章涉及的公司與人物
+- 補齊 20 筆經原文核對的公司與文章索引，包括 AWS、TD Ameritrade、Perplexity、OpenAI 等；排除影片嵌入、同名與關鍵字誤判
+- 將 29 篇舊格式文章網址更新為原站索引的正式網址
+- 新增延伸公司 ST Engineering，修正 TransCore 現任母公司與公司簡介，移除 Roper Technologies 的過期持股關係
+- 更新字型子集，補齊新增財報文字所需的字元
+
 ## [2.6.2] - 2026-11-07
 
 ### 資料

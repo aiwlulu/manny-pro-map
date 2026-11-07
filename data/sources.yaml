@@ -1,4 +1,16 @@
 # Manny sources referenced by companies. Bibliographic data only: title, date, URL.
+- id: propod:cmvxgkfi401ff01z72ntc4iqm
+  kind: pro-podcast
+  column: 巨人之聲
+  title: 靠借錢打造的 CoreWeave 可能會怎麼倒下？
+  date: 2026-11-01
+  url: https://pro.manny-li.com/episodes/cmvxgkfi401ff01z72ntc4iqm
+- id: propod:cmvx6osvd01d401z1hvwuf0jr
+  kind: pro-podcast
+  column: 巨人之聲
+  title: 為什麼科技巨頭會找上 Blackstone 融資？
+  date: 2026-11-01
+  url: https://pro.manny-li.com/episodes/cmvx6osvd01d401z1hvwuf0jr
 - id: "pro:68r3h6gn45gh"
   kind: pro
   column: 商業解碼
@@ -706,7 +718,7 @@
   column: 巨人之聲
   title: "無人機很夯，但誰能大規模量產？"
   date: 2026-02-09
-  url: https://pro.manny-li.com/posts/null-p8ytfvhbvbgy
+  url: https://pro.manny-li.com/posts/drone-warfare-manufacturing-p8ytfvhbvbgy
 - id: "pro:x4dmsg59wxpe"
   kind: pro
   column: 巨人之聲
@@ -724,31 +736,31 @@
   column: 科技曼讀
   title: Meta 的世紀豪賭還沒結束
   date: 2026-01-27
-  url: https://pro.manny-li.com/posts/null-xyacaqc5ex9p
+  url: https://pro.manny-li.com/posts/meta-vr-ai-xyacaqc5ex9p
 - id: "pro:duukfut6958f"
   kind: pro
   column: 商業解碼
   title: "舉重若輕 Ⅰ：不蓋飯店的飯店集團"
   date: 2026-01-26
-  url: https://pro.manny-li.com/posts/null-duukfut6958f
+  url: https://pro.manny-li.com/posts/marriott-business-model-duukfut6958f
 - id: "pro:t43v6uuxx3tp"
   kind: pro
   column: 商業解碼
   title: "舉重若輕 Ⅱ：讓會員離不開的萬有引力"
   date: 2026-01-26
-  url: https://pro.manny-li.com/posts/null-t43v6uuxx3tp
+  url: https://pro.manny-li.com/posts/marriott-bonvoy-t43v6uuxx3tp
 - id: "pro:tvjpcgcpfym3"
   kind: pro
   column: 商業解碼
   title: "舉重若輕 Ⅳ：卓越的商業模式典範——Marriott"
   date: 2026-01-26
-  url: https://pro.manny-li.com/posts/null-tvjpcgcpfym3
+  url: https://pro.manny-li.com/posts/marriott-financial-analysis-tvjpcgcpfym3
 - id: "pro:vzej66cff3bh"
   kind: pro
   column: 商業解碼
   title: "舉重若輕 Ⅲ：從飲料攤變飯店業龍頭的求生之路"
   date: 2026-01-26
-  url: https://pro.manny-li.com/posts/null-vzej66cff3bh
+  url: https://pro.manny-li.com/posts/marriott-asset-light-history-vzej66cff3bh
 - id: "pro:zppaa3v8qrtw"
   kind: pro
   column: 巨人之聲
@@ -760,7 +772,7 @@
   column: 科技曼讀
   title: "AI 時代的影子收購：人才併購（Acqui-hire）"
   date: 2026-01-18
-  url: https://pro.manny-li.com/posts/null-xub3t2c88p2t
+  url: https://pro.manny-li.com/posts/acqui-hire-xub3t2c88p2t
 - id: "pro:8vfvgz33vcq2"
   kind: pro
   column: 曼報俱樂部
@@ -796,31 +808,31 @@
   column: 商業解碼
   title: "眾聲有價 Ⅲ：如何正確評估 Reddit 的潛力"
   date: 2025-12-29
-  url: https://pro.manny-li.com/posts/null-4ddye6dahq6r
+  url: https://pro.manny-li.com/posts/reddit-financial-analysis-4ddye6dahq6r
 - id: "pro:6tdws32g4rwp"
   kind: pro
   column: 商業解碼
   title: "眾聲有價 Ⅱ：販售「真實」的挑戰與機會"
   date: 2025-12-29
-  url: https://pro.manny-li.com/posts/null-6tdws32g4rwp
+  url: https://pro.manny-li.com/posts/reddit-advertising-data-licensing-6tdws32g4rwp
 - id: "pro:9bqny83p92n5"
   kind: pro
   column: 商業解碼
   title: "眾聲有價 Ⅰ：論壇文明的倖存者"
   date: 2025-12-29
-  url: https://pro.manny-li.com/posts/null-9bqny83p92n5
+  url: https://pro.manny-li.com/posts/reddit-business-model-9bqny83p92n5
 - id: "pro:99c45rxf5864"
   kind: pro
   column: 科技曼讀
   title: "Coursera 與 Udemy 宣布合併：當信任成為一種稀缺"
   date: 2025-12-25
-  url: https://pro.manny-li.com/posts/null-99c45rxf5864
+  url: https://pro.manny-li.com/posts/coursera-udemy-99c45rxf5864
 - id: "pro:j9mt5hwzd9pn"
   kind: pro
   column: 巨人之聲
   title: "Mati Staniszewski：如果 Google 或 OpenAI 決定做你的生意怎麼辦？"
   date: 2025-12-23
-  url: https://pro.manny-li.com/posts/null-j9mt5hwzd9pn
+  url: https://pro.manny-li.com/posts/mati-staniszewski-elevenlabs-j9mt5hwzd9pn
 - id: "podcast:2025-12-22-ep117"
   kind: podcast
   column: 曼報 Podcast
@@ -838,7 +850,7 @@
   column: 巨人之聲
   title: "Peter Beck：脫離地心引力後，太空產業的幻想和真實"
   date: 2025-12-18
-  url: https://pro.manny-li.com/posts/null-k6x9tusww2es
+  url: https://pro.manny-li.com/posts/rocket-lab-peter-beck-space-industry-k6x9tusww2es
 - id: "podcast:2025-12-15-ep116"
   kind: podcast
   column: 曼報 Podcast
@@ -862,43 +874,43 @@
   column: 商業解碼
   title: "人性套利 V：深度解析網路博弈巨頭 Flutter Entertainment"
   date: 2025-11-29
-  url: https://pro.manny-li.com/posts/null-avmqs55nnqwj
+  url: https://pro.manny-li.com/posts/flutter-financial-analysis-avmqs55nnqwj
 - id: "pro:t8dntpyvdeyp"
   kind: pro
   column: 商業解碼
   title: "人性套利 Ⅳ：決定市場的那隻手"
   date: 2025-11-29
-  url: https://pro.manny-li.com/posts/null-t8dntpyvdeyp
+  url: https://pro.manny-li.com/posts/online-gambling-regulation-t8dntpyvdeyp
 - id: "pro:jmtvz5xwptwb"
   kind: pro
   column: 商業解碼
   title: "人性套利 Ⅱ：莊家為何要對賭客慷慨？"
   date: 2025-11-28
-  url: https://pro.manny-li.com/posts/null-jmtvz5xwptwb
+  url: https://pro.manny-li.com/posts/online-gambling-generosity-model-jmtvz5xwptwb
 - id: "pro:jtpkdq4kt63v"
   kind: pro
   column: 商業解碼
   title: "人性套利 Ⅲ：博弈市場的競爭終局"
   date: 2025-11-28
-  url: https://pro.manny-li.com/posts/null-jtpkdq4kt63v
+  url: https://pro.manny-li.com/posts/online-gambling-business-model-competition-jtpkdq4kt63v
 - id: "pro:zma3sf389tbr"
   kind: pro
   column: 商業解碼
   title: "人性套利 Ⅰ：賭盤賠率的秘密"
   date: 2025-11-28
-  url: https://pro.manny-li.com/posts/null-zma3sf389tbr
+  url: https://pro.manny-li.com/posts/online-gambling-odds-zma3sf389tbr
 - id: "pro:r432czr8q5bk"
   kind: pro
   column: 科技曼讀
   title: "不只是遊戲主機：Valve 如何一步步擺脫 Windows 的重力井"
   date: 2025-11-24
-  url: https://pro.manny-li.com/posts/null-r432czr8q5bk
+  url: https://pro.manny-li.com/posts/valve-steam-r432czr8q5bk
 - id: "pro:frbpkafhxw3p"
   kind: pro
   column: 巨人之聲
   title: "Scott Strazik：歡迎 AI 來到有錢也很難插隊的物理世界"
   date: 2025-11-23
-  url: https://pro.manny-li.com/posts/null-frbpkafhxw3p
+  url: https://pro.manny-li.com/posts/ge-vernova-scott-strazik-frbpkafhxw3p
 - id: "podcast:2025-11-20-ep115"
   kind: podcast
   column: 曼報 Podcast
@@ -910,13 +922,13 @@
   column: 科技曼讀
   title: "估值 21 億美元的 Gamma 是 PowerPoint 殺手，還是一個全新的物種？"
   date: 2025-11-17
-  url: https://pro.manny-li.com/posts/null-za5znb6ngne6
+  url: https://pro.manny-li.com/posts/gamma-za5znb6ngne6
 - id: "pro:gfz2tt5jz22e"
   kind: pro
   column: 巨人之聲
   title: "Brian Chesky：Airbnb 的 AI 時代轉型戰略"
   date: 2025-11-13
-  url: https://pro.manny-li.com/posts/null-gfz2tt5jz22e
+  url: https://pro.manny-li.com/posts/brian-chesky-airbnb-ai-gfz2tt5jz22e
 - id: "pro:yfj6rhppp5rt"
   kind: pro
   column: 曼報俱樂部
@@ -940,43 +952,43 @@
   column: 巨人之聲
   title: "Roelof Botha：Sequoia 在 AI 與資本過剩時代的實戰心法"
   date: 2025-10-31
-  url: https://pro.manny-li.com/posts/null-qnjkum4j8g4u
+  url: https://pro.manny-li.com/posts/roelof-botha-sequoia-qnjkum4j8g4u
 - id: "pro:w6ujnrs69ftz"
   kind: pro
   column: 巨人之聲
   title: "Aravind Srinivas：AI 將重新定義工作價值以及廣告經濟"
   date: 2025-10-30
-  url: https://pro.manny-li.com/posts/null-w6ujnrs69ftz
+  url: https://pro.manny-li.com/posts/aravind-srinivas-perplexity-w6ujnrs69ftz
 - id: "pro:zcfm4vvqzqb8"
   kind: pro
   column: 科技曼讀
   title: "Base Power：顛覆性的分散式儲能網路"
   date: 2025-10-28
-  url: https://pro.manny-li.com/posts/null-zcfm4vvqzqb8
+  url: https://pro.manny-li.com/posts/base-power-zcfm4vvqzqb8
 - id: "pro:g2abna6e4v4e"
   kind: pro
   column: 科技曼讀
   title: "史上最大的槓桿收購案：遊戲巨頭 EA 的 550 億美元私有化"
   date: 2025-10-27
-  url: https://pro.manny-li.com/posts/null-g2abna6e4v4e
+  url: https://pro.manny-li.com/posts/electronic-arts-g2abna6e4v4e
 - id: "pro:g3k2wuk5aasv"
   kind: pro
   column: 商業解碼
   title: "落槌之前 Ⅲ：深度解析蘇富比"
   date: 2025-09-29
-  url: https://pro.manny-li.com/posts/null-g3k2wuk5aasv
+  url: https://pro.manny-li.com/posts/sothebys-financial-analysis-g3k2wuk5aasv
 - id: "pro:pqn8u2pyqzdq"
   kind: pro
   column: 商業解碼
   title: "落槌之前 Ⅰ：解碼拍賣行的商業模式"
   date: 2025-09-29
-  url: https://pro.manny-li.com/posts/null-pqn8u2pyqzdq
+  url: https://pro.manny-li.com/posts/auction-house-business-model-competition-pqn8u2pyqzdq
 - id: "pro:sd5nackg984j"
   kind: pro
   column: 商業解碼
   title: "落槌之前 Ⅱ：藝術投資的表與裡"
   date: 2025-09-29
-  url: https://pro.manny-li.com/posts/null-sd5nackg984j
+  url: https://pro.manny-li.com/posts/art-investment-market-sd5nackg984j
 - id: "podcast:2025-09-08-ep113"
   kind: podcast
   column: 曼報 Podcast

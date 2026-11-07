@@ -15,6 +15,19 @@ people:
   - { name: Muhammad Zia Chishti, role: 創辦人 }
   - { name: Kelsey Wirth, role: 共同創辦人 }
   - { name: Joseph M. Hogan, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 4
+  currency: USD
+  growth: 1
+  source: https://www.sec.gov/Archives/edgar/data/1097149/000109714926000014/algn-20251231.htm
+  segments:
+    - id: clear-aligner
+      name: 透明牙套
+      share: 80
+    - id: systems-services
+      name: 掃描系統與服務
+      share: 20
 relations:
   - { type: competitor, target: angelalign }
   - { type: competitor, target: smiledirectclub }

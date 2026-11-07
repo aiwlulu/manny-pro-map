@@ -9,6 +9,29 @@ links:
   website: "https://www.spglobal.com/en"
   wikipedia: "https://en.wikipedia.org/wiki/S&P_Global"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/标普全球"
+revenue:
+  fy: FY2025
+  total: 15
+  currency: USD
+  growth: 8
+  source: https://www.sec.gov/Archives/edgar/data/64040/000006404026000013/spgi-20251231.htm
+  note: 依 FY2025 年報對外客戶營收計算，已排除分部間交易；保留當年 Mobility 業務。
+  segments:
+    - id: market-intelligence
+      name: 市場情報
+      share: 32
+    - id: ratings
+      name: 信用評等
+      share: 30
+    - id: energy
+      name: 能源資訊
+      share: 15
+    - id: mobility
+      name: 汽車與交通資訊
+      share: 11
+    - id: indices
+      name: 指數
+      share: 12
 sources:
   - "propod:cmumopubf03dc01w1ggiw1vrk"
   - "pro:cuxbwar4cvth"

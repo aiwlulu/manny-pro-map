@@ -16,6 +16,32 @@ people:
   - { name: Todd Combs, role: 前投資經理暨前 GEICO 執行長 }
   - { name: Ted Weschler, role: 投資經理 }
   - { name: Greg Abel, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 370
+  currency: USD
+  growth: 0
+  source: https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-20251231.htm
+  note: 依合併損益表收入類別計算；包含利息與股息收入，不含投資資產評價及處分損益。租賃與其他收入合併列示。
+  segments:
+    - id: sales-services
+      name: 商品與服務
+      share: 54
+    - id: insurance-premiums
+      name: 保險保費
+      share: 24
+    - id: investment-income
+      name: 利息與股息等投資收入
+      share: 6
+    - id: railroad
+      name: 鐵路運輸
+      share: 6
+    - id: utilities-energy
+      name: 公用事業與能源
+      share: 6
+    - id: leasing-other
+      name: 租賃與其他收入
+      share: 4
 sources:
   - "propod:cmswaraeg0bmx01zd1ymybtom"
   - "pro:k8w9aqudktnu"

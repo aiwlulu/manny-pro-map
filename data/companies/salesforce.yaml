@@ -19,5 +19,6 @@ relations:
   - { type: invested, target: elevenlabs, year: 2025, detail: 創投部門參投C輪（該輪共 1.8 億美元）, source: "https://elevenlabs.io/blog/series-c" }
   - { type: invested, target: crusoe, year: 2025, detail: 創投部門參投E輪, source: "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-e-funding" }
 sources:
+  - "pro:uh6ys6nwfnc5"
   - "propod:cmtj74mw500lp01y46usd2blj"
   - "pro:drwymxex2ytn"

@@ -29,6 +29,7 @@ relations:
   - { type: supplier, target: sunrun, kind: hardware, segment: energy, note: 儲能電池, detail: 官網持續供應Powerwall電池, source: "https://www.sunrun.com/solar-battery-storage/tesla-powerwall" }
   - { type: parent, target: solarcity }
 sources:
+  - "pro:3wwyhabrfgca"
   - "pro:tvqqj5aqhcr3"
   - "pro:j8f4gchrfeb5"
   - "pro:ufwby4nxpxtv"
