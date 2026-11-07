@@ -249,15 +249,17 @@ export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon
 
   const kinds = KIND_KEYS.map((k) => [k, [...L1u, ...L1d].filter((x) => x.kind === k).length]).filter(([, n]) => n);
   const capN = own.length + hold.length;
-  const chip = (k, label, n) => `<button class="kchip${hidden.has(k) ? ' off' : ''}" data-k="${k}" style="--k:var(--k-${k})" aria-pressed="${!hidden.has(k)}" title="${esc(KINDS[k]?.hint ?? '股權投資與母子公司')}"><i></i>${label}<span>${n}</span></button>`;
-  const legend = kinds.length + (capN ? 1 : 0) > 1 ? `<div class="cx-legend"><span class="cx-lg-t">關係類型</span>${kinds.map(([k, n]) => chip(k, KINDS[k].label, n)).join('')}${capN ? chip('capital', '資金與股權', capN) : ''}</div>` : '';
+  // A company can participate through purchases alone, without holding any equity.
+  const cys = chain.cycles(c.id).sort((a, b) => a.ids.length - b.ids.length);
+  const hasCapital = capN > 0 || cys.length > 0;
+  const chip = (k, label, n) => `<button class="kchip${hidden.has(k) ? ' off' : ''}" data-k="${k}" style="--k:var(--k-${k})" aria-pressed="${!hidden.has(k)}" title="${esc(KINDS[k]?.hint ?? '股權投資、母子公司與資金循環')}"><i></i>${label}<span>${n}</span></button>`;
+  const legend = kinds.length + (hasCapital ? 1 : 0) > 1 ? `<div class="cx-legend"><span class="cx-lg-t">關係類型</span>${kinds.map(([k, n]) => chip(k, KINDS[k].label, n)).join('')}${hasCapital ? chip('capital', capN ? '資金與股權' : '資金循環', capN || cys.length) : ''}</div>` : '';
 
   const i = industryOf(c);
   const center = `<section class="cx-col" data-col="mid"><h3>本公司</h3><div class="cx-wrap" data-col="mid"><a class="cx-node center" href="#/c/${c.id}" data-id="${c.id}" data-col="mid" style="--c1:${i.c1}">
       ${avatar(c, 'lg')}<span class="cx-t"><b>${esc(c.name)}</b><i>${esc(i.name)}</i></span></a>${revenueBar(c, { full: true })}</div></section>`;
   const supplyN = L1u.length + L1d.length;
   // Capital cards: ownership (parent / subsidiary) vs minority investment, each with its own icon and colour
-  const cys = chain.cycles(c.id).sort((a, b) => a.ids.length - b.ids.length);
   const cyPairs = new Set(cys.flatMap((cy) => cy.edges.filter((e) => e.t === 'inv').map((e) => `${chain.top(e.from.id)}>${e.to}`)));
   const ring = (x) => {
     const v = x.rel === 'parent' ? 100 : parseFloat(String(x.stake ?? '').replace(/[^\d.]/g, ''));
@@ -273,8 +275,8 @@ export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon
   };
   const capRow = (key, kind, ic, title, hint, list) => (list.length ? `<div class="cx-crow ${REL[kind][0]}" data-col="${key}"><h4>${icon(ic)}${title}<span>${list.length}</span><em>${hint}</em></h4><div class="cx-cards">${list.map((x) => capCard(x, key, kind)).join('')}</div></div>` : '');
   const capLegend = `<div class="cap-key"><span class="rt own">${icon('network')}母公司／旗下</span>控股、合併報表<span class="rt inv">${icon('coins')}投資</span>少數股權<span class="rt loop">${icon('repeat')}資金循環</span>錢經採購流回投資方<span class="stake sm" style="--p:30"></span>持股比例</div>`;
-  const capital = capN ? `<section class="cx-cap"><h3>${icon('building')}資金與股權<span>誰持有 ${esc(c.name)}、${esc(c.name)} 又投資了誰</span></h3>
-      ${capLegend}
+  const capital = hasCapital ? `<section class="cx-cap"><h3>${icon('building')}資金與股權<span>${capN ? `誰持有 ${esc(c.name)}、${esc(c.name)} 又投資了誰` : `${esc(c.name)} 參與的資金循環`}</span></h3>
+      ${capN ? capLegend : ''}
       ${cys.length ? `<div class="loops"><h4>${icon('repeat')}資金循環<span>${cys.length} 組</span><em>箭頭是錢的流向：投資進去的錢，經過採購晶片或算力又流回投資方</em><a class="cy-all" href="#/loops">看全部資金循環 →</a></h4><div class="loop-grid">${cys.map((cy) => cycleFigure(cy, { focus: chain.top(c.id) })).join('')}</div></div>` : ''}
       ${capRow('ci', 'parent', 'network', '母公司', `${esc(c.name)} 是它的旗下事業`, own.filter((x) => x.rel === 'parent'))}
       ${capRow('ci', 'inv', 'coins', `投資 ${esc(c.name)} 的公司`, '少數股權投資', own.filter((x) => x.rel !== 'parent'))}
@@ -284,7 +286,7 @@ export function renderExplorer(root, c, chain, { avatar, industryOf, peers, icon
   const ps = peers(c);
   root.innerHTML = `
     <header class="cx-head">
-      <div><span class="eyebrow">產業鏈 Value Chain</span><h2>${esc(c.name)} 的上下游${capN ? '與資金' : ''}</h2></div>
+      <div><span class="eyebrow">產業鏈 Value Chain</span><h2>${esc(c.name)} 的上下游${hasCapital ? '與資金' : ''}</h2></div>
       <div class="cx-actions">${canHop ? `<label class="tgl cx-tgl"><input type="checkbox" data-hop ${indirect ? 'checked' : ''}><span class="sw"></span>顯示間接關係</label>` : ''}<a class="cx-btn" href="#/c/${c.id}">${icon('building')}公司資料</a><button class="iconbtn cx-close" aria-label="關閉">${icon('x')}</button></div>
     </header>
     <div class="cx-body${[...hidden].map((k) => ` hide-${k}`).join('')}">

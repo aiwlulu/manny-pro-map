@@ -15,16 +15,16 @@ people:
   - { name: Andrew Viterbi, role: 創辦人, photo: { file: 10-08ViterbiBIG.jpg, license: CC BY-SA 4.0, author: Canyigitozen } }
   - { name: Cristiano Amon, role: 總裁暨執行長 }
 revenue:
-  fy: FY2025
-  total: 44
+  fy: FY2026
+  total: 43
   currency: USD
-  growth: 14
-  source: "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm"
+  growth: -3
+  source: "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm"
   segments:
-    - { id: handsets, name: 手機, share: 63 }
-    - { id: iot, name: 物聯網, share: 15 }
-    - { id: licensing, name: 專利授權, share: 12 }
-    - { id: automotive, name: 車用, share: 9 }
+    - { id: handsets, name: 手機, share: 56 }
+    - { id: iot, name: 物聯網, share: 16 }
+    - { id: licensing, name: 專利授權, share: 13 }
+    - { id: automotive, name: 車用, share: 14 }
     - { id: other, name: 其他, share: 1 }
 relations:
   - { type: supplier, target: apple, kind: hardware, segment: handsets, note: 5G數據機, detail: 合約涵蓋2024至2026年手機, year: 2023, source: "https://www.qualcomm.com/news/releases/2023/09/qualcomm-announces-agreement-with-apple-for-chip-supply" }
