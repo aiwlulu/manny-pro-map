@@ -1,6 +1,5 @@
 name: Oracle
 zh: 甲骨文
-extended: true
 industry: software
 segment: infra
 summary: 企業資料庫與應用軟體公司，近年以甲骨文雲端基礎設施（OCI）為 AI 公司提供大規模算力。
@@ -31,3 +30,8 @@ relations:
   - { type: supplier, target: meta, kind: cloud, segment: cloud, note: 雲端算力, detail: 官方列為已簽約 OCI 大客戶, year: 2026, source: "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx" }
   - { type: supplier, target: nvidia, kind: cloud, segment: cloud, note: 雲端算力, detail: 官方列為已簽約 OCI 大客戶, year: 2026, source: "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx" }
   - { type: supplier, target: xai, kind: cloud, segment: cloud, note: 雲端算力, detail: 官方列為已簽約 OCI 大客戶, year: 2026, source: "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx" }
+sources:
+  - "pro:9qw2au2rusba"
+  - "pro:x4dmsg59wxpe"
+  - "pro:zppaa3v8qrtw"
+  - "pro:ueyj98gmbgxn"
