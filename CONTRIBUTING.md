@@ -40,6 +40,7 @@ sources:                        # 必填，至少一筆，id 見 data/sources.ya
 | type | 意思 | 對方頁面顯示 |
 |---|---|---|
 | `acquired` | 收購了 target | 被收購 |
+| `proposed-acquisition` | 已公布擬收購 target，交易尚未交割 | 擬被收購 |
 | `invested` | 投資了 target | 獲投資 |
 | `competitor` | 與 target 競爭 | 競爭 |
 | `partner` | 與 target 合作 | 合作 |
@@ -126,7 +127,7 @@ relations:
 
 ## 字型
 
-字型只包含網站用到的字。build 提示缺字時，從 [google/fonts](https://github.com/google/fonts) 取得 `NotoSansTC[wght].ttf`、`Figtree[wght].ttf`、`Figtree-Italic[wght].ttf`，執行 `python3 scripts/subset-fonts.py <字型資料夾>`（需要 `pip install fonttools brotli`）。
+首頁預載常用的 Noto Sans TC 字型。遇到常用字型未收錄的字，瀏覽器會按 Unicode 範圍從本站載入所需的 Fontsource 字型分片。建置時會從 npm 套件複製 CSS、字型與授權檔至 `site/fonts/noto/`，新增資料時無需更新字型或字元清單。
 
 ## 頁面裡的 inline script
 

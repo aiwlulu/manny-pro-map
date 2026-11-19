@@ -4,6 +4,7 @@ aliases: [Ultimate Fighting Championship]
 industry: media
 segment: live
 summary: "TKO 集團旗下的綜合格鬥賽事主辦方，舉辦冠軍賽、編號賽事與 Fight Night，並授權轉播。"
+logo: { file: UFC Logo.svg, license: Public domain, author: UFC }
 links:
   website: "https://www.ufc.com/"
 relations:

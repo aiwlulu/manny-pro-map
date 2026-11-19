@@ -2,7 +2,19 @@ name: eToro
 industry: finance
 segment: markets
 summary: "線上券商與社群投資平台，讓使用者交流投資策略，並透過 CopyTrader 跟單複製其他投資人的交易。"
+logo: { file: EToro Logo 2026.svg, license: Public domain, author: eToro (Europe) Ltd. }
 links:
   website: "https://www.etoro.com/"
+revenue:
+  fy: FY2025
+  total: 14
+  currency: USD
+  growth: 9
+  source: "https://www.sec.gov/Archives/edgar/data/1493318/000121390026022034/ea0278371-20f_etoro.htm"
+  note: 依 IFRS 營收與收益總額。加密資產銷售以總額入帳，包含購入成本對應的交易額。同年度公司揭露的淨貢獻為 8.68 億美元。
+  segments:
+    - { id: cryptoassets, name: 加密資產營收, share: 94 }
+    - { id: traditional-assets, name: 股票、商品及外匯交易淨收益, share: 3 }
+    - { id: other, name: 其他（含加密衍生品與利息）, share: 3 }
 sources:
   - "pro:wuj9tc6day5p"

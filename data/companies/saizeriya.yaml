@@ -10,9 +10,15 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Saizeriya"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/萨莉亚"
 people:
-  - { name: Yasuhiko Shōgaki, role: 創辦人 }
-  - { name: Yasuhiko Shogaki, zh: 正垣泰彥, role: 創辦人 }
+  - { name: Yasuhiko Shogaki, aliases: [Yasuhiko Shōgaki, Yasuhiko Shougaki], zh: 正垣泰彥, role: 創辦人兼代表董事會長 }
   - { name: Hideharu Matsutani, role: 代表董事暨社長 }
+revenue:
+  fy: FY2026
+  total: 300
+  currency: JPY
+  growth: 17
+  source: "https://www2.jpx.co.jp/disc/75810/081220261012549130_tse-acedjpsm-75810-20261014375810-ixbrl.htm"
+  note: 財報依日本、澳洲與亞洲揭露地區別分部，這裡只列合併營收。
 sources:
   - "propod:cmwlif8is0beh01s2duap0aey"
   - "pro:b2r32qpe3jna"

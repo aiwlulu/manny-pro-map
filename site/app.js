@@ -13,6 +13,7 @@ const KIND_ORDER = Object.keys(KIND);
 const PRO_KINDS = new Set(['pro', 'pro-podcast']);
 const REL = {
   acquired: ['收購', '被收購'],
+  'proposed-acquisition': ['擬收購', '擬被收購'],
   invested: ['投資', '獲投資'],
   competitor: ['競爭', '競爭'],
   partner: ['合作', '合作'],
@@ -21,7 +22,7 @@ const REL = {
   spinoff: ['分拆出', '分拆自'],
   parent: ['旗下', '母公司'],
 };
-const LINK_LABEL = { website: '官網', wikipedia: 'Wikipedia', wikipedia_zh: '維基百科', investor: '投資人關係' };
+const LINK_LABEL = { website: '官網', wikipedia: 'Wikipedia', wikipedia_zh: '維基百科', investor: '投資人關係', leadership: '人事公告', quarterly: '季度財報', acquisition: '擬收購公告', ipo: 'IPO 公告' };
 const COMMONS = (file, w = 160) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=${w}`;
 const safeUrl = (u) => { try { return ['http:', 'https:'].includes(new URL(u, location.href).protocol) ? u : '#'; } catch { return '#'; } };
 
@@ -112,11 +113,13 @@ const people = new Map();
 for (const c of cos.values())
   for (const p of c.people ?? []) {
     const id = slugify(p.name);
-    const e = people.get(id) ?? people.set(id, { id, name: p.name, zh: '', photo: null, roles: [] }).get(id);
+    const e = people.get(id) ?? people.set(id, { id, name: p.name, zh: '', photo: null, roles: [], aliases: [] }).get(id);
     e.zh ||= p.zh ?? '';
     e.photo ||= p.photo ?? null;
+    e.aliases.push(...(p.aliases ?? []));
     e.roles.push({ c, role: p.role ?? '', interviewed: !!p.interviewed });
   }
+const personAliases = new Map([...people.values()].flatMap((p) => p.aliases.map((alias) => [slugify(alias), p])));
 for (const p of people.values()) p.roles.sort((a, b) => b.c.proN - a.c.proN);
 for (const p of people.values()) p.mentions = (data.peopleSources?.[p.name] ?? []).map((id) => src.get(id)).filter(Boolean);
 
@@ -210,7 +213,7 @@ function personCard(p) {
 function renderPeople() {
   const all = [...people.values()].sort((a, b) => a.name.localeCompare(b.name, 'en'));
   const nq = norm(pplQuery);
-  const list = all.filter((p) => pplMatch(p) && (!pplMulti || p.roles.length > 1) && (!nq || norm(`${p.name} ${p.zh} ${p.roles.map((r) => r.c.name).join(' ')}`).includes(nq)));
+  const list = all.filter((p) => pplMatch(p) && (!pplMulti || p.roles.length > 1) && (!nq || norm(`${p.name} ${p.zh} ${p.aliases.join(' ')} ${p.roles.map((r) => r.c.name).join(' ')}`).includes(nq)));
   const groups = new Map();
   for (const p of list) { const L = /[a-z]/i.test(p.name[0]) ? p.name[0].toUpperCase() : '#'; (groups.get(L) ?? groups.set(L, []).get(L)).push(p); }
   const bar = $('#people-bar');
@@ -388,7 +391,7 @@ $('#cx').addEventListener('click', (e) => { if (e.target.closest('.cx-close')) g
 /* ---------- Search ---------- */
 const index = [];
 for (const c of cos.values()) index.push({ t: 'c', key: norm(`${c.name} ${c.zh ?? ''} ${(c.aliases ?? []).join(' ')}`), label: c.name, sub: c.zh ?? '', ext: c.extended, go: `#/c/${c.id}`, ids: [c.id] });
-for (const p of people.values()) index.push({ t: 'p', key: norm(`${p.name} ${p.zh}`), label: `${p.name}${p.zh ? ` ${p.zh}` : ''}`, sub: p.roles.map((r) => r.c.name).join('、'), go: `#/p/${p.id}`, ids: p.roles.map((r) => r.c.id) });
+for (const p of people.values()) index.push({ t: 'p', key: norm(`${p.name} ${p.zh} ${p.aliases.join(' ')}`), label: `${p.name}${p.zh ? ` ${p.zh}` : ''}`, sub: p.roles.map((r) => r.c.name).join('、'), go: `#/p/${p.id}`, ids: p.roles.map((r) => r.c.id) });
 for (const s of data.sources) index.push({ t: 's', key: norm(s.title), label: s.title, sub: `${KIND[s.kind].short} · ${s.date}`, go: `#/s/${encodeURIComponent(s.id)}`, ids: (bySrc.get(s.id) ?? []).map((c) => c.id) });
 const T = { c: '公司', p: '人物', s: '文章' };
 const TI = { c: 'building', p: 'user', s: 'file' };
@@ -458,7 +461,10 @@ function route() {
   const [, a, b] = location.hash.split('/');
   if (a !== 'chain' && a !== 'loops') closeExplorer();
   if (a === 'c' && cos.has(b)) return showCompany(cos.get(b));
-  if (a === 'p' && people.has(b)) return showPerson(people.get(b));
+  if (a === 'p') {
+    const person = people.get(b) ?? personAliases.get(b);
+    if (person) return showPerson(person);
+  }
   if (a === 's' && src.has(decodeURIComponent(b ?? ''))) return showSource(src.get(decodeURIComponent(b)));
   if (a === 'chain' && cos.has(b)) return openExplorer(cos.get(b));
   if (a === 'loops') return openLoops();

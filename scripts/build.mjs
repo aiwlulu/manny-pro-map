@@ -1,5 +1,5 @@
 // Validate data/*.yaml and compile to site/data.json. Exit 1 on any error.
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdirSync, existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { parse } from 'yaml';
 
@@ -11,7 +11,7 @@ const err = (f, m) => errors.push(`${f}: ${m}`);
 const warn = [];
 
 const MANNY_HOSTS = ['pro.manny-li.com', 'manny-li.com', 'www.manny-li.com', 'eepurl.com', 'open.firstory.fm', 'podcasts.apple.com'];
-const RELATION_TYPES = ['acquired', 'invested', 'competitor', 'partner', 'supplier', 'customer', 'spinoff', 'parent'];
+const RELATION_TYPES = ['acquired', 'proposed-acquisition', 'invested', 'competitor', 'partner', 'supplier', 'customer', 'spinoff', 'parent'];
 // What flows along a supply link; mirrored in site/chain.js
 const SUPPLY_KINDS = ['hardware', 'software', 'cloud', 'service', 'content'];
 const CURRENCIES = ['USD', 'TWD', 'JPY', 'EUR', 'KRW', 'GBP', 'SEK', 'CNY', 'HKD', 'CAD'];
@@ -136,11 +136,12 @@ writeFileSync('site/data.json', JSON.stringify({
   companies,
   peopleSources,
 }));
-// Characters outside the font subset render in the system font; remind to rerun the subsetter
-if (existsSync('site/fonts/chars.txt')) {
-  const have = new Set(readFileSync('site/fonts/chars.txt', 'utf8'));
-  const missing = new Set([...JSON.stringify(companies) + JSON.stringify(sources)].filter((ch) => ch.codePointAt(0) > 0x2e7f && !have.has(ch)));
-  if (missing.size) console.warn(`note: ${missing.size} characters not in the font subset; run scripts/subset-fonts.py`);
+// Keep the common glyphs in the preloaded font and publish the Unicode-range fallback.
+const noto = 'node_modules/@fontsource-variable/noto-sans-tc';
+const fontDir = 'site/fonts/noto';
+mkdirSync(fontDir, { recursive: true });
+for (const asset of ['index.css', 'LICENSE', 'files']) {
+  cpSync(`${noto}/${asset}`, `${fontDir}/${asset}`, { recursive: true });
 }
 if (warn.length) console.warn(`note: ${warn.length} stale revenue entries\n  ${warn.join('\n  ')}`);
 console.log(`ok: ${companies.length} companies, ${used.size} sources`);

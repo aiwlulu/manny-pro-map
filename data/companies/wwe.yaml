@@ -4,6 +4,7 @@ aliases: [World Wrestling Entertainment]
 industry: media
 segment: live
 summary: "TKO 集團旗下的職業摔角娛樂品牌，製作 Raw 等每週節目，並舉辦 WrestleMania 等大型現場賽事。"
+logo: { file: WWE Logo.svg, license: Public domain, author: WWE }
 links:
   website: "https://www.wwe.com/"
 relations:

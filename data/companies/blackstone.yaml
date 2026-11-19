@@ -13,9 +13,21 @@ people:
   - { name: Jon Gray, role: 總裁暨營運長, interviewed: true }
   - { name: Peter George Peterson, role: 創辦人, photo: { file: PeterGeorgePeterson.jpg, license: Public domain } }
   - { name: Stephen A. Schwarzman, role: 共同創辦人、董事長暨執行長, photo: { file: "Stephen Schwarzman, 19 March 2024.jpg", license: CC BY-SA 2.0, author: UKinUSA } }
+revenue:
+  fy: FY2025
+  total: 14
+  currency: USD
+  growth: 9
+  source: "https://www.sec.gov/Archives/edgar/data/1393818/000119312526082531/d48618d10k.htm"
+  note: 依合併損益表的收入類別，利息與股利併入其他淨額。
+  segments:
+    - { id: management-and-advisory, name: 管理與顧問費淨額, share: 56 }
+    - { id: investment-income, name: 投資收益, share: 36 }
+    - { id: incentive-fees, name: 績效獎勵費, share: 7 }
+    - { id: other, name: 其他（淨額）, share: 1 }
 relations:
   - { type: acquired, target: qts, note: 2021 年 }
-  - { type: parent, target: hilton }
+  - { type: acquired, target: hilton, note: 2007 年收購，2018 年全數退出, source: "https://www.blackstone.com/our-partnerships-with-americas-unions/" }
   - { type: invested, target: anthropic, year: 2026, detail: 參與G輪股權融資, source: "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation" }
 sources:
   - "propod:cmvx6osvd01d401z1hvwuf0jr"

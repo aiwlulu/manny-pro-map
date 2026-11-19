@@ -6,6 +6,17 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [2.9.0] - 2026-11-19
+
+### 資料
+- 更新 NVIDIA 人事資料。黃仁勳標為共同創辦人、前執行長，補上代理執行長兼財務長 Colette Kress、董事長 Harvey C. Jones，以及官方人事與季度財報連結
+- 標示 NVIDIA 擬收購 Hugging Face，並保留歷史投資關係。修正 Blackstone 與 Hilton 為歷史收購關係，註明黑石已於 2018 年全數退出
+- 補上 Anthropic、TKO、eToro、Blackstone 和薩莉亞的全年營收資料。Anthropic 另附 IPO 公告，薩莉亞合併重複的創辦人檔案
+- 補上 TKO、UFC、WWE、eToro 的標誌和 Ari Emanuel、Harley Finkelstein、Colette Kress 的照片
+
+### 字型
+- 建置自動發布 Noto Sans TC 的 Unicode 字型分片。保留首頁預載的常用字型，新增資料時不再手動維護字元清單
+
 ## [2.8.0] - 2026-11-19
 
 ### 資料

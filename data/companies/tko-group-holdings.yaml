@@ -5,10 +5,23 @@ industry: media
 segment: live
 summary: "美國體育娛樂集團，由 UFC 與 WWE 合組，經營現場賽事、媒體轉播權、體育行銷和賽事款待服務。"
 founded: 2023
+logo: { file: TKO Group Holdings Logo 2025.svg, license: Public domain, author: TKO Group Holdings }
 links:
   website: "https://tkogrp.com/"
 people:
-  - { name: Ari Emanuel, role: 執行董事長兼執行長, interviewed: true }
+  - { name: Ari Emanuel, role: 執行董事長兼執行長, interviewed: true, photo: { file: "Ari Emanuel (27449561892) (2).jpg", license: CC BY 2.0, author: Financial Times } }
+revenue:
+  fy: FY2025
+  total: 4.7
+  currency: USD
+  growth: -3
+  source: "https://investor.tkogrp.com/news/news-details/2026/TKO-Reports-Fourth-Quarter-and-Full-Year-2025-Results/"
+  note: 其他為公司及其他項目扣除內部交易後的淨額。去年同期採同一控制下收購的重編數字。
+  segments:
+    - { id: wwe, name: WWE, share: 36 }
+    - { id: ufc, name: UFC, share: 32 }
+    - { id: img, name: IMG, share: 29 }
+    - { id: other, name: 其他（淨額）, share: 3 }
 relations:
   - { type: parent, target: ufc, year: 2023, source: "https://tkogrp.com/our-businesses/" }
   - { type: parent, target: wwe, year: 2023, source: "https://tkogrp.com/our-businesses/" }

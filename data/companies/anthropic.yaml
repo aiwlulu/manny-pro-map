@@ -9,11 +9,22 @@ links:
   website: "https://www.anthropic.com/"
   wikipedia: "https://en.wikipedia.org/wiki/Anthropic"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Anthropic"
+  ipo: "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
 people:
-  - { name: Dario Amodei, role: 執行長, photo: { file: "Dario Amodei at TechCrunch Disrupt 2023 02 (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
-  - { name: Daniela Amodei, role: 創辦人 }
+  - { name: Dario Amodei, role: 共同創辦人兼執行長, photo: { file: "Dario Amodei at TechCrunch Disrupt 2023 02 (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
+  - { name: Daniela Amodei, role: 共同創辦人兼總裁 }
   - { name: Chris Olah, role: 創辦人 }
   - { name: Jared Kaplan, role: 創辦人, photo: { file: "Jared Kaplan (cropped).jpg", license: CC BY 2.0, author: TechCrunch } }
+revenue:
+  fy: FY2025
+  total: 4.6
+  currency: USD
+  growth: 1088
+  source: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm"
+  note: 依招股書的計價方式分類。
+  segments:
+    - { id: consumption, name: 用量計費, share: 83 }
+    - { id: subscriptions, name: 訂閱, share: 17 }
 relations:
   - { type: supplier, target: amazon, kind: software, note: AI模型, detail: 新版語音助理透過雲平台採用模型, year: 2025, source: "https://www.anthropic.com/news/claude-and-alexa-plus" }
   - { type: supplier, target: google, kind: software, note: AI模型, detail: 策略合作透過谷歌雲供應模型, source: "https://www.anthropic.com/google-cloud-vertex-ai" }

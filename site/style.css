@@ -18,8 +18,8 @@
   --shadow: 0 1px 2px rgb(20 20 10 / .04), 0 12px 32px -8px rgb(20 20 10 / .12);
   --bubble-a: 20%;
   --bubble-b: 10%;
-  --sans: "Noto Sans TC", "PingFang TC", "Helvetica Neue", sans-serif;
-  --latin: "Figtree", "Noto Sans TC", "Helvetica Neue", sans-serif;
+  --sans: "Noto Sans TC", "Noto Sans TC Variable", "PingFang TC", "Helvetica Neue", sans-serif;
+  --latin: "Figtree", "Noto Sans TC", "Noto Sans TC Variable", "Helvetica Neue", sans-serif;
   --ease: cubic-bezier(.2, .8, .2, 1);
   --spring: cubic-bezier(.2, 1.35, .4, 1);
   color-scheme: light;
