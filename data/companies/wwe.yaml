@@ -1,0 +1,12 @@
+name: WWE
+zh: 世界摔角娛樂
+aliases: [World Wrestling Entertainment]
+industry: media
+segment: live
+summary: "TKO 集團旗下的職業摔角娛樂品牌，製作 Raw 等每週節目，並舉辦 WrestleMania 等大型現場賽事。"
+links:
+  website: "https://www.wwe.com/"
+relations:
+  - { type: supplier, target: netflix, kind: content, note: WWE Raw 播映權, detail: 自 2025 年起 Netflix 在美國等市場獨家播出每週節目 Raw, year: 2025, source: "https://about.netflix.com/en/news/netflix-to-become-new-home-of-wwe-raw-beginning-2025" }
+sources:
+  - "pro:9jdwcm4qntvx"

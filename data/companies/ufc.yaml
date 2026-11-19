@@ -1,0 +1,12 @@
+name: UFC
+zh: 終極格鬥冠軍賽
+aliases: [Ultimate Fighting Championship]
+industry: media
+segment: live
+summary: "TKO 集團旗下的綜合格鬥賽事主辦方，舉辦冠軍賽、編號賽事與 Fight Night，並授權轉播。"
+links:
+  website: "https://www.ufc.com/"
+relations:
+  - { type: supplier, target: paramount-skydance, kind: content, note: UFC 美國轉播權, detail: 自 2026 年起由 Paramount+ 獨家串流美國賽事，部分場次同步於 CBS 播出, year: 2026, source: "https://investor.tkogrp.com/news/news-details/2025/PARAMOUNT-AND-TKO-ANNOUNCE-HISTORIC-UFC-MEDIA-RIGHTS-AGREEMENT/default.aspx" }
+sources:
+  - "pro:9jdwcm4qntvx"

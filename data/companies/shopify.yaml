@@ -10,7 +10,8 @@ links:
   wikipedia: "https://en.wikipedia.org/wiki/Shopify"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/Shopify"
 people:
-  - { name: Tobias Lütke, role: 共同創辦人暨董事長兼執行長, photo: { file: "Tobias Lütke, Shopify.jpg", license: CC BY-SA 3.0, author: Union Eleven } }
+  - { name: Tobias Lütke, role: 共同創辦人暨董事長兼執行長, photo: { file: "Tobias Lütke, Shopify.jpg", license: CC BY-SA 3.0, author: Union Eleven }, interviewed: true }
+  - { name: Harley Finkelstein, role: 總裁, interviewed: true }
 revenue:
   fy: FY2025
   total: 12
@@ -21,6 +22,7 @@ revenue:
     - { id: subscription-solutions, name: 訂閱解決方案, share: 24 }
     - { id: merchant-solutions, name: 商家解決方案, share: 76 }
 sources:
+  - "pro:3ugurmxm2sce"
   - "podcast:2025-12-15-ep116"
   - "podcast:2022-04-10-ep08"
   - "podcast:2022-03-13-ep05"

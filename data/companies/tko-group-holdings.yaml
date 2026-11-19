@@ -1,0 +1,16 @@
+name: TKO Group Holdings
+zh: TKO 集團
+aliases: [TKO]
+industry: media
+segment: live
+summary: "美國體育娛樂集團，由 UFC 與 WWE 合組，經營現場賽事、媒體轉播權、體育行銷和賽事款待服務。"
+founded: 2023
+links:
+  website: "https://tkogrp.com/"
+people:
+  - { name: Ari Emanuel, role: 執行董事長兼執行長, interviewed: true }
+relations:
+  - { type: parent, target: ufc, year: 2023, source: "https://tkogrp.com/our-businesses/" }
+  - { type: parent, target: wwe, year: 2023, source: "https://tkogrp.com/our-businesses/" }
+sources:
+  - "pro:9jdwcm4qntvx"

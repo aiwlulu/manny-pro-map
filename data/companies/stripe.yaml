@@ -21,6 +21,7 @@ relations:
   - { type: competitor, target: paypal }
   - { type: competitor, target: block }
 sources:
+  - "pro:3ugurmxm2sce"
   - "pro:r9fgagndpvde"
   - "propod:cmtxjkl5v0cdb01tp0meieabe"
   - "pro:jkvgret4ww4d"

@@ -6,6 +6,14 @@
 - **中版本**：新功能，或新增一批公司資料
 - **小版本**：修正錯誤、調整資料
 
+## [2.8.0] - 2026-11-19
+
+### 資料
+- 收錄 11 月 8 日至 18 日的 4 篇曼報 Pro 文章，涵蓋 Shopify、Anthropic、Robinhood 與 eToro、TKO，並連結相關公司
+- 新增 TKO Group Holdings、UFC、WWE 與 eToro 公司卡，標示 TKO 的集團關係以及 UFC、WWE 的轉播授權
+- 補上 Ari Emanuel、Tobias Lütke 和 Harley Finkelstein 的「巨人之聲」索引
+- 收錄薩莉亞 Pro Podcast，並依台灣時間修正 CoreWeave 和 Blackstone 兩集的發佈日期
+
 ## [2.7.0] - 2026-11-07
 
 ### 資料

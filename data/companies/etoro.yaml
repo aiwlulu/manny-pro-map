@@ -1,0 +1,8 @@
+name: eToro
+industry: finance
+segment: markets
+summary: "線上券商與社群投資平台，讓使用者交流投資策略，並透過 CopyTrader 跟單複製其他投資人的交易。"
+links:
+  website: "https://www.etoro.com/"
+sources:
+  - "pro:wuj9tc6day5p"

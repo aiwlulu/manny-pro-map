@@ -1,15 +1,45 @@
 # Manny sources referenced by companies. Bibliographic data only: title, date, URL.
+- id: "propod:cmwlif8is0beh01s2duap0aey"
+  kind: pro-podcast
+  column: 商業解碼
+  title: "薩莉亞（Saizeriya）"
+  date: 2026-11-18
+  url: https://pro.manny-li.com/episodes/cmwlif8is0beh01s2duap0aey
+- id: "pro:9jdwcm4qntvx"
+  kind: pro
+  column: 巨人之聲
+  title: "TKO 如何用更少的錢，建立更有價值的體育資產 （TKO 集團總裁 Ari Emanuel）"
+  date: 2026-11-18
+  url: https://pro.manny-li.com/posts/tko-ari-emanuel-9jdwcm4qntvx
+- id: "pro:wuj9tc6day5p"
+  kind: pro
+  column: 曼報俱樂部
+  title: "2026 年 10 月你問我答"
+  date: 2026-11-15
+  url: https://pro.manny-li.com/posts/ama-oct-2026-wuj9tc6day5p
+- id: "pro:ksumcmewnqrh"
+  kind: pro
+  column: 科技曼讀
+  title: "Anthropic 上市前短評：走鋼索的時間魔法師"
+  date: 2026-11-14
+  url: https://pro.manny-li.com/posts/anthropic-ipo-ksumcmewnqrh
+- id: "pro:3ugurmxm2sce"
+  kind: pro
+  column: 巨人之聲
+  title: "AI 購物崛起後，Shopify 還能留住商家嗎？（Shopify 創辦人暨執行長 Tobias Lütke × 總裁 Harley Finkelstein）"
+  date: 2026-11-08
+  url: https://pro.manny-li.com/posts/shopify-tobi-lutke-harley-finkelstein-3ugurmxm2sce
 - id: propod:cmvxgkfi401ff01z72ntc4iqm
   kind: pro-podcast
   column: 巨人之聲
   title: 靠借錢打造的 CoreWeave 可能會怎麼倒下？
-  date: 2026-11-01
+  date: 2026-11-02
   url: https://pro.manny-li.com/episodes/cmvxgkfi401ff01z72ntc4iqm
 - id: propod:cmvx6osvd01d401z1hvwuf0jr
   kind: pro-podcast
   column: 巨人之聲
   title: 為什麼科技巨頭會找上 Blackstone 融資？
-  date: 2026-11-01
+  date: 2026-11-02
   url: https://pro.manny-li.com/episodes/cmvx6osvd01d401z1hvwuf0jr
 - id: "pro:68r3h6gn45gh"
   kind: pro

@@ -17,5 +17,6 @@ people:
 relations:
   - { type: acquired, target: warner-bros-discovery, note: 2026 年 }
 sources:
+  - "pro:9jdwcm4qntvx"
   - "pro:9qw2au2rusba"
   - "pro:ueyj98gmbgxn"

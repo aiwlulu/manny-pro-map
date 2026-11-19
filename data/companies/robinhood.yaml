@@ -27,6 +27,7 @@ relations:
   - { type: competitor, target: charles-schwab }
   - { type: competitor, target: interactive-brokers }
 sources:
+  - "pro:wuj9tc6day5p"
   - "pro:68ezcucry26v"
   - "podcast:2022-03-27-ep06"
   - "pro:68r3h6gn45gh"
