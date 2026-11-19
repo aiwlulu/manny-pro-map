@@ -2,14 +2,14 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-vRG5Z2s2xoAxIY5jFfBg2wEMbd3eWqfTBqnuTBzd9Gw=' 'sha256-lbBRkS96KASAI8SkYHfITGUZwgR6xIJSNd/qKQND4/0='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-vRG5Z2s2xoAxIY5jFfBg2wEMbd3eWqfTBqnuTBzd9Gw=' 'sha256-gowdxvw68AxJQsewVmZaZ8WF77Ag4INhKFuNekf2nUE='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Pro Map 使用導覽</title>
   <meta name="description" content="三分鐘看懂 Pro Map：用產業地圖、產業鏈與人物索引，找到曼報 Pro 談過的公司與文章。">
   <meta property="og:title" content="Pro Map 使用導覽：曼報談過的公司，一張圖找齊">
   <meta property="og:description" content="產業地圖、產業鏈、氣泡圖、人物與搜尋，三分鐘看懂怎麼用。非官方讀者索引。">
-  <meta property="og:image" content="guide/landscape.jpg">
+  <meta property="og:image" content="guide/landscape.jpg?v=2.9.1">
   <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#161615" media="(prefers-color-scheme: dark)">
   <link rel="preload" href="fonts/NotoSansTC-subset.woff2" as="font" type="font/woff2" crossorigin>
@@ -97,16 +97,12 @@
     .step li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(120deg, var(--blue-b), var(--red-a)); }
     kbd { font: 600 12px var(--latin); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 1px 6px; background: var(--surface); }
     .tip { font-size: 14px; color: var(--muted); }
-    .tip a, .foot a, .promo a.txt { color: var(--link); text-underline-offset: 3px; }
+    .tip a, .foot a { color: var(--link); text-underline-offset: 3px; }
 
     .promo { margin: 40px 0 0; padding: 32px; border-radius: 22px; text-align: center; border: 1px solid color-mix(in srgb, var(--red-a) 35%, var(--line));
       background: linear-gradient(120deg, color-mix(in srgb, var(--blue-a) 14%, var(--surface)), color-mix(in srgb, var(--red-a) 14%, var(--surface))); }
     .promo h2 { margin: 0 0 6px; font-size: 26px; font-weight: 900; }
     .promo p { margin: 0 0 18px; color: var(--body); }
-    .code { display: inline-flex; align-items: center; gap: 10px; padding: 8px 10px 8px 18px; border-radius: 999px; border: 1.5px dashed var(--red-a); background: var(--surface); color: var(--ink); cursor: pointer; font: inherit; }
-    .code b { font: 700 18px var(--latin); letter-spacing: .08em; }
-    .code em { font-style: normal; font-size: 13px; padding: 3px 10px; border-radius: 999px; background: var(--pale); color: var(--muted); }
-    .code.done em { background: color-mix(in srgb, #3aa76d 18%, var(--surface)); color: #2f8f5b; }
 
     .foot { padding: 48px 0 64px; text-align: center; color: var(--muted); font-size: 13px; line-height: 1.9; }
     .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
@@ -153,7 +149,7 @@
       </div>
       <div class="hero-media">
         <div class="frame"><div class="bar"><i></i><i></i><i></i><span>aiwlulu.github.io/manny-pro-map</span></div>
-          <video src="guide/landscape.mp4" poster="guide/landscape.jpg" autoplay muted loop playsinline preload="metadata" aria-label="產業地圖操作示範"></video></div>
+          <video src="guide/landscape.mp4" poster="guide/landscape.jpg?v=2.9.1" autoplay muted loop playsinline preload="metadata" aria-label="產業地圖操作示範"></video></div>
       </div>
     </section>
 
@@ -178,7 +174,7 @@
           </ul>
         </div>
         <div class="frame"><div class="bar"><i></i><i></i><i></i><span>產業地圖</span></div>
-          <video data-src="guide/landscape.mp4" poster="guide/landscape.jpg" muted loop playsinline preload="none"></video></div>
+          <video data-src="guide/landscape.mp4" poster="guide/landscape.jpg?v=2.9.1" muted loop playsinline preload="none"></video></div>
       </section>
 
       <section class="step flip reveal" id="company">
@@ -253,7 +249,7 @@
           </ul>
         </div>
         <div class="frame"><div class="bar"><i></i><i></i><i></i><span>人物</span></div>
-          <video data-src="guide/people.mp4" poster="guide/people.jpg" muted loop playsinline preload="none"></video></div>
+          <video data-src="guide/people.mp4?v=2.9.1" poster="guide/people.jpg?v=2.9.1" muted loop playsinline preload="none"></video></div>
       </section>
 
       <section class="step reveal" id="mobile">
@@ -263,17 +259,16 @@
           <p>手機版的分頁在底部，公司資料從下方彈出，搜尋是全寬面板。支援亮色與暗色模式，右上角可以切換。</p>
           <p class="tip">想放到主畫面？用瀏覽器的「加入主畫面」，就能像 App 一樣打開。</p>
         </div>
-        <div class="phone"><video data-src="guide/mobile.mp4" poster="guide/mobile.jpg" muted loop playsinline preload="none"></video></div>
+        <div class="phone"><video data-src="guide/mobile.mp4?v=2.9.1" poster="guide/mobile.jpg?v=2.9.1" muted loop playsinline preload="none"></video></div>
       </section>
 
       <section class="promo reveal">
         <h2>內容在曼報 Pro</h2>
-        <p>Pro Map 只是索引，文章與節目請到曼報 Pro 閱讀。訂閱時輸入折扣碼，首年即可折抵 250 元。</p>
+        <p>到曼報 Pro 閱讀完整文章與收聽節目。</p>
         <div class="cta">
-          <button class="code" id="code" type="button" aria-label="複製折扣碼 love250"><b>love250</b><em>點我複製</em></button>
           <a class="btn primary" href="https://pro.manny-li.com/join" target="_blank" rel="noopener">前往訂閱</a>
+          <a class="btn" href="https://tour.manny-li.com/index.html" target="_blank" rel="noopener">免費導覽版</a>
         </div>
-        <p style="margin:16px 0 0;font-size:14px">還在猶豫？先逛逛 Manny 做的 <a class="txt" href="https://tour.manny-li.com/index.html" target="_blank" rel="noopener">免費導覽版</a>。</p>
       </section>
 
       <div class="cta" style="margin-top:40px"><a class="btn primary" href="./">開啟 Pro Map<svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
@@ -308,12 +303,6 @@
       const b = document.querySelectorAll('#stats b');
       [d.companies.length, ppl, pro, rels].forEach((n, i) => (b[i].textContent = n));
     }).catch(() => {});
-
-    document.getElementById('code').addEventListener('click', async (e) => {
-      const btn = e.currentTarget, em = btn.querySelector('em');
-      try { await navigator.clipboard.writeText('love250'); em.textContent = '已複製'; btn.classList.add('done'); } catch { em.textContent = '請手動複製'; }
-      setTimeout(() => { em.textContent = '點我複製'; btn.classList.remove('done'); }, 1800);
-    });
   </script>
 </body>
 </html>

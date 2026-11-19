@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-28aSBS5DpF0TGrD0TiDhH2wF7/a11FhQl43uHGHfiXg=' 'sha256-iILzadzpz/frbzLFYAcF29wn2lVry7kLIOnPVCA1+oA='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-28aSBS5DpF0TGrD0TiDhH2wF7/a11FhQl43uHGHfiXg=' 'sha256-TyPmmgTHWI87ZVlE5WaPB74j2UHLVk4B9yRkaiCJPFA='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>找不到頁面 · Pro Map</title>
@@ -60,20 +60,13 @@
     .promo p { margin: 2px 0 0; font-size: 14px; color: var(--body); }
     .promo .tour { margin-top: 12px; padding-top: 10px; border-top: 1px dashed color-mix(in srgb, var(--red-a) 30%, var(--line)); font-size: 13px; color: var(--muted); }
     .promo .tour a { color: var(--link); text-underline-offset: 3px; }
-    .pr-act { display: flex; gap: 8px; align-items: center; }
-    .copy { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 6px 0 14px; border-radius: 999px; border: 1.5px dashed var(--red-a); background: var(--surface); color: var(--ink); cursor: pointer; font: inherit; }
-    .copy b { font: 700 15px var(--latin); letter-spacing: .08em; }
-    .copy span { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--pale); color: var(--muted); }
-    .copy span svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-    .copy.done span { background: color-mix(in srgb, #3aa76d 18%, var(--surface)); color: #2f8f5b; }
-    .pr-act .btn { height: 38px; padding: 0 16px; font-size: 14px; }
+    .promo-row .btn { height: 38px; padding: 0 16px; font-size: 14px; }
     .bubbles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
     .bubbles i { position: absolute; border-radius: 50%; opacity: .5; animation: drift 14s ease-in-out infinite alternate; }
     @keyframes drift { to { transform: translate(var(--dx), var(--dy)); } }
     @media (prefers-reduced-motion: reduce) { .bubbles i { animation: none; } }
     footer { padding: 0 20px 28px; text-align: center; font-size: 12px; color: var(--muted); }
-    .copy em { font-style: normal; }
-    @media (max-width: 520px) { form { flex-direction: column; } input { flex: none; } .bubbles i { opacity: .22; } .bubbles i:nth-child(1), .bubbles i:nth-child(2) { display: none; } .promo-row { flex-direction: column; align-items: stretch; } .pr-act { justify-content: space-between; } }
+    @media (max-width: 520px) { form { flex-direction: column; } input { flex: none; } .bubbles i { opacity: .22; } .bubbles i:nth-child(1), .bubbles i:nth-child(2) { display: none; } .promo-row { flex-direction: column; align-items: stretch; } }
   </style>
 </head>
 <body>
@@ -104,13 +97,10 @@
 
       <section class="promo">
         <div class="promo-row">
-          <div><h2>想讀完整分析？</h2><p>訂閱曼報 Pro 時輸入折扣碼，首年即可折抵 250 元。</p></div>
-          <div class="pr-act">
-            <button class="copy" id="copy" type="button" aria-label="複製折扣碼 love250"><b>love250</b><span><svg viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><em>複製</em></span></button>
-            <a class="btn primary" href="https://pro.manny-li.com/join" target="_blank" rel="noopener">前往訂閱</a>
-          </div>
+          <div><h2>想讀完整分析？</h2><p>到曼報 Pro 閱讀文章與收聽節目。</p></div>
+          <a class="btn primary" href="https://pro.manny-li.com/join" target="_blank" rel="noopener">前往訂閱</a>
         </div>
-        <p class="tour">還在猶豫？先逛逛 Manny 做的 <a href="https://tour.manny-li.com/index.html" target="_blank" rel="noopener">免費導覽版</a>。</p>
+        <p class="tour">想先看看內容？可瀏覽曼報的 <a href="https://tour.manny-li.com/index.html" target="_blank" rel="noopener">免費導覽版</a>。</p>
       </section>
     </div>
   </main>
@@ -127,11 +117,6 @@
       if (!v) return go('');
       const hit = best(v);
       go(hit ? hit.href : '');
-    });
-    document.getElementById('copy').addEventListener('click', async (e) => {
-      const b = e.currentTarget, em = b.querySelector('em');
-      try { await navigator.clipboard.writeText('love250'); em.textContent = '已複製'; b.classList.add('done'); } catch { em.textContent = '請手動複製'; }
-      setTimeout(() => { em.textContent = '複製'; b.classList.remove('done'); }, 1800);
     });
 
     // Suggest companies or people that look like the missing path
