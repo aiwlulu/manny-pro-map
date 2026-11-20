@@ -14,6 +14,17 @@ people:
   - { name: Phil Knight, role: 創辦人, photo: { file: Philknightfootball.jpg, license: CC BY-SA 2.0, author: Neon Tommy } }
   - { name: Bill Bowerman, role: 創辦人, photo: { file: Bill Bowerman.jpg, license: Public domain, author: University of Oregon } }
   - { name: Elliott Hill, role: 總裁暨執行長 }
+revenue:
+  fy: FY2026
+  total: 46
+  currency: USD
+  growth: 0
+  source: "https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm"
+  note: 依全公司（含 Converse）產品線劃分；器材與其他（Global Brand Divisions、Converse 授權等）合併為一項。
+  segments:
+    - { id: footwear, name: 鞋類, share: 66 }
+    - { id: apparel, name: 服飾, share: 29 }
+    - { id: equipment-other, name: 器材與其他, share: 5 }
 relations:
   - { type: competitor, target: hoka }
   - { type: competitor, target: on }

@@ -11,6 +11,20 @@ links:
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/赛富时"
 people:
   - { name: Marc Benioff, role: 共同創辦人、董事長暨執行長, photo: { file: Marc Benioff.jpg, license: CC BY-SA 2.0, author: Salesforce. } }
+revenue:
+  fy: FY2026
+  total: 42
+  currency: USD
+  growth: 10
+  source: "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+  note: 訂閱與支援營收依服務項目（Agentforce Sales、Service 等）拆分，另加專業服務及其他。
+  segments:
+    - { id: sales, name: 銷售, share: 22 }
+    - { id: service, name: 服務, share: 24 }
+    - { id: platform-slack-other, name: 平台、Slack 與其他, share: 21 }
+    - { id: marketing-commerce, name: 行銷與商務, share: 13 }
+    - { id: integration-analytics, name: 整合與分析, share: 15 }
+    - { id: professional-services, name: 專業服務及其他, share: 5 }
 relations:
   - { type: parent, target: slack }
   - { type: invested, target: anthropic, year: 2023, detail: 創投部門參投C輪, source: "https://www.anthropic.com/news/anthropic-series-c" }

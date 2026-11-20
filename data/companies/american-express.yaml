@@ -15,6 +15,18 @@ people:
   - { name: Henry Wells, role: 創辦人, photo: { file: "Lithograph portrait of Henry Wells of Wells, Fargo & Co.'s Express (c. 1878) (cropped).jpg", license: Public domain, author: "Henry Steinegger / Britton &amp; Rey" } }
   - { name: John Warren Butterfield, role: 創辦人, photo: { file: JohnButterfield.jpg, license: Public domain, author: See below } }
   - { name: Stephen J. Squeri, role: 董事長暨執行長 }
+revenue:
+  fy: FY2025
+  total: 72
+  currency: USD
+  growth: 10
+  source: "https://www.sec.gov/Archives/edgar/data/4962/000000496226000080/axp-20251231.htm"
+  note: 營收為扣除利息支出後的總營收，依合併損益表的營收項目區分。
+  segments:
+    - { id: discount-revenue, name: 商店手續費收入, share: 52 }
+    - { id: net-interest-income, name: 淨利息收入, share: 24 }
+    - { id: net-card-fees, name: 卡片年費淨額, share: 14 }
+    - { id: service-fees-other, name: 服務費與其他收入, share: 10 }
 sources:
   - "pro:k8w9aqudktnu"
   - "pro:yb9cs6kekxas"

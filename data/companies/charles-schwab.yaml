@@ -13,6 +13,19 @@ links:
 people:
   - { name: Charles Schwab, role: 創辦人, photo: { file: "Charles schwab 2007.jpg", license: CC BY 4.0, author: Larry D. Moore } }
   - { name: Rick Wurster, role: 執行長 }
+revenue:
+  fy: FY2025
+  total: 24
+  currency: USD
+  growth: 22
+  source: "https://www.sec.gov/Archives/edgar/data/316709/000031670926000009/schw-20251231.htm"
+  note: 依淨營收來源區分。
+  segments:
+    - { id: net-interest-revenue, name: 淨利息收入, share: 49 }
+    - { id: asset-management-fees, name: 資產管理與行政費, share: 27 }
+    - { id: trading, name: 交易收入, share: 17 }
+    - { id: bank-deposit-fees, name: 銀行存款帳戶費, share: 4 }
+    - { id: other, name: 其他, share: 3 }
 relations:
   - { type: acquired, target: td-ameritrade, note: 2020 年 }
 sources:

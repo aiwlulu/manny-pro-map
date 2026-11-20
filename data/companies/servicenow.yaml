@@ -11,6 +11,16 @@ links:
 people:
   - { name: Frank Slootman, role: 前總裁暨執行長, photo: { file: Frank Slootman Snowflake.jpg, license: CC BY-SA 4.0, author: Alivecoverage } }
   - { name: Bill McDermott, role: 董事長暨執行長 }
+revenue:
+  fy: FY2025
+  total: 13
+  currency: USD
+  growth: 21
+  source: "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/now-20251231.htm"
+  note: 專業服務及其他佔比不到 3%（2.97%），列為其他。
+  segments:
+    - { id: subscription, name: 訂閱, share: 97 }
+    - { id: other, name: 專業服務及其他, share: 3 }
 sources:
   - "pro:uh6ys6nwfnc5"
   - "pro:drwymxex2ytn"

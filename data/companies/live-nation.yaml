@@ -11,6 +11,17 @@ links:
 people:
   - { name: Joe Berchtold, role: 總裁兼財務長, interviewed: true }
   - { name: Michael Rapino, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 25
+  currency: USD
+  growth: 9
+  source: "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000009/lyv-20251231.htm"
+  note: 佔比以三個部門營收合計為基準（含部門間營收，未扣除其他與沖銷 -0.07 十億）。
+  segments:
+    - { id: concerts, name: 演唱會, share: 83 }
+    - { id: ticketing, name: 票務, share: 12 }
+    - { id: sponsorship-advertising, name: 贊助與廣告, share: 5 }
 relations:
   - { type: parent, target: ticketmaster, note: 2010 年 }
 sources:

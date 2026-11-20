@@ -15,5 +15,18 @@ people:
   - { name: Leon Black, role: 創辦人 }
   - { name: Josh Harris, role: 創辦人, photo: { file: "Josh Harris WAS-NYG NOV2023 (cropped).jpg", license: CC BY 2.0, author: Josh Harris } }
   - { name: Antony Ressler, role: 創辦人 }
+revenue:
+  fy: FY2025
+  total: 32
+  currency: USD
+  growth: 23
+  source: "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000013/apo-20251231.htm"
+  note: GAAP 合併營收；資產管理以外皆屬退休服務（Athene）。「退休服務其他」為產品費用、投資相關損益及其他營收合計。
+  segments:
+    - { id: net-investment-income, name: 退休服務淨投資收益, share: 60 }
+    - { id: asset-management, name: 資產管理, share: 16 }
+    - { id: premiums, name: 保費, share: 8 }
+    - { id: consolidated-vie, name: 合併變動權益個體營收, share: 8 }
+    - { id: retirement-other, name: 退休服務其他, share: 8 }
 sources:
   - "pro:pxkj26b9zjj5"

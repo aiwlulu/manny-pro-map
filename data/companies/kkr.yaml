@@ -16,6 +16,17 @@ people:
   - { name: George R. Roberts, role: 創辦人 }
   - { name: Scott Nuttall, role: 共同執行長 }
   - { name: Joseph Bae, role: 共同執行長 }
+revenue:
+  fy: FY2025
+  total: 19
+  currency: USD
+  growth: -11
+  source: "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000007/kkr-20251231.htm"
+  note: GAAP 合併營收；保險營收含淨投資相關損失。營收下滑主因保險淨保費減少。
+  segments:
+    - { id: insurance, name: 保險, share: 60 }
+    - { id: fees-other, name: 管理費與其他費用, share: 21 }
+    - { id: capital-allocation-income, name: 資本配置收益, share: 19 }
 sources:
   - "pro:pxkj26b9zjj5"
   - "podcast:2023-10-02-ep52"

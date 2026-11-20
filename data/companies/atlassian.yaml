@@ -12,6 +12,17 @@ links:
 people:
   - { name: Mike Cannon-Brookes, role: 執行長, photo: { file: Mike Cannon-Brookes Australian businessman.jpg, license: CC0, author: Atlassian } }
   - { name: Scott Farquhar, role: 創辦人, photo: { file: Scott Farquhar.png, license: CC0, author: Atlassian } }
+revenue:
+  fy: FY2026
+  total: 6.6
+  currency: USD
+  growth: 26
+  source: "https://www.sec.gov/Archives/edgar/data/1650372/000165037226000036/team-20260630.htm"
+  note: 依部署方式劃分。
+  segments:
+    - { id: cloud, name: 雲端, share: 67 }
+    - { id: data-center, name: Data Center, share: 28 }
+    - { id: marketplace-other, name: Marketplace 與其他, share: 5 }
 sources:
   - "propod:cmtj74mw500lp01y46usd2blj"
   - "pro:drwymxex2ytn"

@@ -12,6 +12,17 @@ links:
 people:
   - { name: Chip Wilson, role: 創辦人 }
   - { name: "Heidi O'Neill", role: 執行長 }
+revenue:
+  fy: FY2025
+  total: 11
+  currency: USD
+  growth: 5
+  source: "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm"
+  note: 公司稱此年度為 2025（截至 2026-02-01，會計年度結束於最接近 1 月 31 日的週日）；依產品類別劃分。
+  segments:
+    - { id: womens, name: 女裝, share: 63 }
+    - { id: mens, name: 男裝, share: 24 }
+    - { id: accessories-other, name: 配件與其他, share: 13 }
 sources:
   - "propod:cmtel5mvw12jk01wy4ok92ldx"
   - "pro:23jwvufhmrsw"

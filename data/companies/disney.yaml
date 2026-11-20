@@ -14,6 +14,17 @@ people:
   - { name: Walt Disney, role: 已故共同創辦人, photo: { file: Walt Disney 1946.JPG, license: Public domain, author: Boy Scouts of America } }
   - { name: Roy O. Disney, role: 已故共同創辦人, photo: { file: Roy O. Disney with Company at Press Conference.jpg, license: Public domain, author: Florida Development Commission } }
   - { name: Josh D’Amaro, role: 執行長 }
+revenue:
+  fy: FY2026
+  total: 100
+  currency: USD
+  growth: 8
+  source: "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000066/dis-20261003.htm"
+  note: 三個部門營收合計 104,760 百萬美元，含部門間沖銷 2,416 百萬美元，佔比以部門合計為基礎；合併營收 102,344 百萬美元。FY2026 為 53 週（結束於 2026-10-03）。
+  segments:
+    - { id: entertainment, name: 娛樂, share: 44 }
+    - { id: sports, name: 體育, share: 18 }
+    - { id: experiences, name: 體驗, share: 38 }
 sources:
   - "pro:9qw2au2rusba"
   - "propod:cms7or6d0077o01ymcffj7gbb"

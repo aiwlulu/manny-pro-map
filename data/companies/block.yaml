@@ -12,6 +12,17 @@ links:
 people:
   - { name: Jack Dorsey, role: 共同創辦人暨董事長、執行長, photo: { file: Jack Dorsey 2014.jpg, license: CC BY-SA 2.0, author: cellanr } }
   - { name: Jim McKelvey, role: 創辦人, photo: { file: Jim Studio Headshow.jpeg, license: CC BY-SA 3.0, author: Jessica Kopitske } }
+revenue:
+  fy: FY2025
+  total: 24
+  currency: USD
+  growth: 0
+  source: "https://www.sec.gov/Archives/edgar/data/1512673/000162828026012254/xyz-20251231.htm"
+  note: 依應報導部門營收；「其他」為 Corporate and Other（含未歸屬部門的產品與部門間沖銷）。Cash App 營收含比特幣營收 8,347,278 千美元。
+  segments:
+    - { id: cash-app, name: Cash App, share: 64 }
+    - { id: square, name: Square, share: 35 }
+    - { id: other, name: 其他, share: 1 }
 sources:
   - "pro:k8w9aqudktnu"
   - "pro:52gjqz2bbj2p"

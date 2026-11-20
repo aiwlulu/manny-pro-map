@@ -11,5 +11,15 @@ links:
 people:
   - { name: CJ Desai, role: 前總裁暨執行長, interviewed: true }
   - { name: Dev Ittycheria, role: 暫代總裁暨執行長 }
+revenue:
+  fy: FY2026
+  total: 2.5
+  currency: USD
+  growth: 23
+  source: "https://www.sec.gov/Archives/edgar/data/1441816/000162828026016799/mdb-20260131.htm"
+  segments:
+    - { id: atlas, name: Atlas 相關, share: 73 }
+    - { id: other-subscription, name: 其他訂閱, share: 24 }
+    - { id: services, name: 服務, share: 3 }
 sources:
   - "pro:zppaa3v8qrtw"

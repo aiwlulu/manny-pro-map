@@ -13,5 +13,16 @@ links:
 people:
   - { name: Trip Hawkins, role: 創辦人, photo: { file: "Trip Hawkins 2013 (10627605786).jpg", license: CC BY-SA 2.0, author: Intel Free Press } }
   - { name: Andrew Wilson, role: 董事長暨執行長 }
+revenue:
+  fy: FY2026
+  total: 7.5
+  currency: USD
+  growth: 1
+  source: "https://www.sec.gov/Archives/edgar/data/712515/000162828026033617/ea-20260331.htm"
+  note: 依年報「淨營收組成」表；完整遊戲下載與實體版合計為完整遊戲 2,148 百萬美元。
+  segments:
+    - { id: live-services, name: 線上服務與其他, share: 71 }
+    - { id: full-game-downloads, name: 完整遊戲下載, share: 23 }
+    - { id: packaged-goods, name: 實體版遊戲, share: 6 }
 sources:
   - "pro:g2abna6e4v4e"

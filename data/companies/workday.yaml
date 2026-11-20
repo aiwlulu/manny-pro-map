@@ -12,5 +12,14 @@ links:
 people:
   - { name: David Duffield, role: 創辦人, photo: { file: "Dave Duffield addressing Peoplesoft, 2005.jpg", license: Public domain, author: Him121 at English Wikipedia } }
   - { name: Aneel Bhusri, role: 共同創辦人、執行長暨董事長, photo: { file: "Aneel Bhusri (8518025145) (cropped).jpg", license: CC BY 2.0, author: Loic Le Meur from France } }
+revenue:
+  fy: FY2026
+  total: 9.6
+  currency: USD
+  growth: 13
+  source: "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000014/wday-20260131.htm"
+  segments:
+    - { id: subscription-services, name: 訂閱服務, share: 92 }
+    - { id: professional-services, name: 專業服務, share: 8 }
 sources:
   - "pro:drwymxex2ytn"

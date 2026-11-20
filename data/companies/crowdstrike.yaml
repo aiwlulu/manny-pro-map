@@ -12,5 +12,14 @@ links:
 people:
   - { name: George Kurtz, role: 執行長, photo: { file: "Web Summit 2018 - SaaS Monster - Day 2, November 7 SD5 7630 (44852025415).jpg", license: CC BY 2.0, author: Web Summit } }
   - { name: Dmitri Alperovitch, role: 創辦人, photo: { file: Dmitri Alperovitch.jpg, license: CC BY-SA 4.0, author: Dmitri Alperovitch } }
+revenue:
+  fy: FY2026
+  total: 4.8
+  currency: USD
+  growth: 22
+  source: "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000010/crwd-20260131.htm"
+  segments:
+    - { id: subscription, name: 訂閱, share: 95 }
+    - { id: professional-services, name: 專業服務, share: 5 }
 sources:
   - "pro:g6q855r8jky9"

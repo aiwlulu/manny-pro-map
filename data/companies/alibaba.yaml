@@ -14,5 +14,17 @@ people:
   - { name: Jack Ma, role: 創辦人, photo: { file: "Enabling eCommerce- Small Enterprises, Global Players (39008130265) (cropped).jpg", license: CC BY 2.0, author: Foundations World Economic Forum } }
   - { name: Joseph Tsai, role: 共同創辦人暨董事長, photo: { file: "Joseph Tsai at the 2024 New York Liberty Ticker Tape Parade (cropped).jpg", license: CC BY-SA 4.0, author: WOWyerrr } }
   - { name: Eddie Wu, role: 共同創辦人暨執行長 }
+revenue:
+  fy: FY2026
+  total: 1000
+  currency: CNY
+  growth: 3
+  source: "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/baba-20260331.htm"
+  note: 各事業群營收含集團內部交易，加總（1,110,886）高於合併營收；佔比以四個事業群加總為基礎，未計未分攤項目與分部間抵銷。
+  segments:
+    - { id: china-ecommerce, name: 中國電商事業群, share: 50 }
+    - { id: international-commerce, name: 國際數位商業事業群, share: 13 }
+    - { id: cloud-intelligence, name: 雲端智慧事業群, share: 14 }
+    - { id: all-others, name: 所有其他, share: 23 }
 sources:
   - "pro:5hk42uvhcs2t"

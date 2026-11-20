@@ -13,6 +13,16 @@ people:
   - { name: Nir Zuk, role: 創辦人 }
   - { name: Nikesh Arora, role: 執行長, photo: { file: "Nikesh Arora(cropped).jpg", license: CC BY 2.0, author: "Nikesh_Arora.jpg: Loic Le Meur\nderivative work: Boseritwik" } }
   - { name: BJ Jenkins, role: 總裁 }
+revenue:
+  fy: FY2026
+  total: 11
+  currency: USD
+  growth: 24
+  source: "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000023/panw-20260731.htm"
+  segments:
+    - { id: product, name: 產品, share: 20 }
+    - { id: subscription, name: 訂閱, share: 54 }
+    - { id: support, name: 支援, share: 26 }
 sources:
   - "pro:g6q855r8jky9"
   - "podcast:2024-09-09-ep80"

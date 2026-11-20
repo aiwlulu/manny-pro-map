@@ -12,6 +12,17 @@ links:
 people:
   - { name: Jay S. Walker, role: 創辦人, photo: { file: Jay Walker.jpg, license: CC BY 2.0, author: "Steve Jurvetson from Menlo Park, USA" } }
   - { name: Glenn Fogel, role: 執行長 }
+revenue:
+  fy: FY2025
+  total: 27
+  currency: USD
+  growth: 13
+  source: "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000009/bkng-20251231.htm"
+  note: 依合併損益表的營收類型拆分。
+  segments:
+    - { id: merchant, name: 代收代付, share: 66 }
+    - { id: agency, name: 代理, share: 30 }
+    - { id: advertising-other, name: 廣告與其他, share: 4 }
 sources:
   - "propod:cmvgkjml003ry01w48ffxh1bp"
   - "pro:kudnr9rb2r56"

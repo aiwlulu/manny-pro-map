@@ -13,6 +13,19 @@ people:
   - { name: Alain Chevalier, role: 已故共同創辦人 }
   - { name: Henry Racamier, role: 已故共同創辦人 }
   - { name: Bernard Arnault, role: 董事長暨執行長 }
+revenue:
+  fy: FY2025
+  total: 81
+  currency: EUR
+  growth: -5
+  source: "https://lvmh-com.cdn.prismic.io/lvmh-com/aXjoJAIvOtkhB_6z_PressRelease-LVMH2025annualresults.pdf"
+  note: 佔比以五大事業群加總（80,136）為基礎，未計「其他業務與沖銷」671。
+  segments:
+    - { id: fashion-leather-goods, name: 時裝與皮件, share: 47 }
+    - { id: selective-retailing, name: 精品零售, share: 23 }
+    - { id: watches-jewelry, name: 鐘錶與珠寶, share: 13 }
+    - { id: perfumes-cosmetics, name: 香水與化妝品, share: 10 }
+    - { id: wines-spirits, name: 葡萄酒與烈酒, share: 7 }
 sources:
   - "propod:cms7o9zv5001q01vxhppq11y1"
   - "pro:rhyvggwtrxqh"

@@ -13,5 +13,17 @@ links:
 people:
   - { name: Henry Ford, role: 創辦人, photo: { file: Henry ford 1919.jpg, license: Public domain, author: Fred Hartsook } }
   - { name: Jim Farley, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 190
+  currency: USD
+  growth: 1
+  source: "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm"
+  note: 採各部門對外營收；佔比以四個部門加總為基礎，未計未分攤與沖銷 21。
+  segments:
+    - { id: ford-blue, name: Ford Blue（燃油與油電車）, share: 54 }
+    - { id: ford-pro, name: Ford Pro（商用車）, share: 35 }
+    - { id: ford-credit, name: Ford Credit（金融服務）, share: 7 }
+    - { id: ford-model-e, name: Ford Model e（電動車）, share: 4 }
 sources:
   - "pro:wmste5rh4s2q"

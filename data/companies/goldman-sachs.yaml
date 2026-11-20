@@ -15,6 +15,19 @@ people:
   - { name: Samuel Sachs, role: 創辦人, photo: { file: Samuel Sachs of Goldman Sachs.png, license: Public domain, author: Times Wide World Photos } }
   - { name: Vivek Bantwal, role: 全球私募信貸業務共同主管 }
   - { name: David Solomon, role: 董事長暨執行長 }
+revenue:
+  fy: FY2025
+  total: 58
+  currency: USD
+  growth: 9
+  source: "https://www.sec.gov/Archives/edgar/data/886982/000088698226000091/gs-20251231.htm"
+  note: 營收為扣除利息支出後的淨營收；「其他」含全球銀行與市場的其他項目及平台解決方案部門（151）。
+  segments:
+    - { id: equities, name: 股票業務, share: 28 }
+    - { id: asset-wealth-management, name: 資產與財富管理, share: 29 }
+    - { id: ficc, name: 固定收益、外匯及大宗商品, share: 25 }
+    - { id: investment-banking, name: 投資銀行費用, share: 16 }
+    - { id: other, name: 其他, share: 2 }
 relations:
   - { type: invested, target: anthropic, year: 2026, detail: 另類投資部門參投G輪, source: "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation" }
   - { type: invested, target: stripe, year: 2023, detail: 資產財富管理部門參投（該輪共 65 億美元）, source: "https://stripe.com/ae/newsroom/news/stripe-series-i-employee-liquidity" }

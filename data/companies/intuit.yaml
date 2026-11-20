@@ -13,5 +13,18 @@ people:
   - { name: Scott Cook, role: 創辦人, photo: { file: "Scott Cook (Intuit) @ SXSW 2017 (cropped).jpg", license: CC BY-SA 2.0, author: nrkbeta } }
   - { name: Thomas Proulx, role: 創辦人 }
   - { name: Sasan Goodarzi, role: 董事長暨執行長, photo: { file: "Sasan Goodarzi.jpg", license: CC BY 4.0, author: Intuit Corp. } }
+revenue:
+  fy: FY2026
+  total: 21
+  currency: USD
+  growth: 14
+  source: "https://www.sec.gov/Archives/edgar/data/896878/000089687826000037/intu-20260731.htm"
+  note: 依年報「主要服務與產品別營收」表；QuickBooks 線上與桌面生態系合計為 Global Business Solutions 部門，其餘三項合計為 Consumer 部門。
+  segments:
+    - { id: online-ecosystem, name: QuickBooks 線上生態系, share: 46 }
+    - { id: desktop-ecosystem, name: QuickBooks 桌面生態系, share: 14 }
+    - { id: turbotax, name: TurboTax 報稅, share: 25 }
+    - { id: credit-karma, name: Credit Karma, share: 12 }
+    - { id: protax, name: 專業報稅 ProTax, share: 3 }
 sources:
   - "pro:52gjqz2bbj2p"

@@ -12,6 +12,16 @@ links:
 people:
   - { name: Pierre Omidyar, role: 創辦人, photo: { file: "Pomidyarji (cropped).jpg", license: CC BY 2.0, author: "Joi 15:42, 2 August 2007 (UTC)" } }
   - { name: Jamie Iannone, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 11
+  currency: USD
+  growth: 8
+  source: "https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm"
+  note: 單一應報導部門，依年報「活動別淨營收」拆分；2025 年起部分營收由市集改列廣告。
+  segments:
+    - { id: marketplace, name: 市集, share: 82 }
+    - { id: advertising, name: 廣告, share: 18 }
 relations:
   - { type: parent, target: paypal }
 sources:

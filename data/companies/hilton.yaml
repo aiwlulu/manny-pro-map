@@ -13,5 +13,18 @@ links:
 people:
   - { name: Conrad Hilton, role: 已故創辦人, photo: { file: Conrad Hilton.png, license: CC BY-SA 3.0, author: "Randal Schwartz from Portland, OR, USA" } }
   - { name: Christopher J. Nassetta, role: 總裁暨執行長 }
+revenue:
+  fy: FY2025
+  total: 12
+  currency: USD
+  growth: 8
+  source: "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000007/hlt-20251231.htm"
+  note: 依合併損益表營收項目；管理費為基本與獎勵管理費合計。成本代墊收入為向業主收回的費用，不含利潤。
+  segments:
+    - { id: cost-reimbursement, name: 成本代墊收入, share: 59 }
+    - { id: franchise-licensing, name: 加盟與授權費, share: 23 }
+    - { id: ownership, name: 自有與租賃飯店, share: 10 }
+    - { id: management-fees, name: 管理費, share: 6 }
+    - { id: other, name: 其他, share: 2 }
 sources:
   - "pro:duukfut6958f"

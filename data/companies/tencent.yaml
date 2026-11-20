@@ -16,6 +16,17 @@ people:
   - { name: Chen Yidan, role: 創辦人 }
   - { name: Daniel Xu, role: 創辦人 }
   - { name: Zeng Liqing, role: 創辦人 }
+revenue:
+  fy: FY2025
+  total: 750
+  currency: CNY
+  growth: 14
+  source: "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf"
+  segments:
+    - { id: vas, name: 增值服務, share: 49 }
+    - { id: marketing-services, name: 行銷服務, share: 19 }
+    - { id: fintech-business-services, name: 金融科技與企業服務, share: 31 }
+    - { id: other, name: 其他, share: 1 }
 relations:
   - { type: invested, target: reddit, amount: 1.5 億美元, year: 2019, detail: 投資社群平台, source: "https://techcrunch.com/2019/02/11/reddit-300-million/" }
   - { type: invested, target: discord, year: 2018, detail: 參投遊戲聊天融資（該輪共 1.5 億美元）, source: "https://techcrunch.com/2018/12/21/gaming-chat-startup-discord-raises-150m-surpassing-2b-valuation/" }

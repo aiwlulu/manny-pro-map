@@ -9,5 +9,15 @@ links:
   website: "https://www.intuitive.com"
   wikipedia: "https://en.wikipedia.org/wiki/Intuitive_Surgical"
   wikipedia_zh: "https://zh.wikipedia.org/zh-tw/直覺手術"
+revenue:
+  fy: FY2025
+  total: 10
+  currency: USD
+  growth: 21
+  source: "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000010/isrg-20251231.htm"
+  segments:
+    - { id: instruments-accessories, name: 器械與配件, share: 60 }
+    - { id: systems, name: 系統, share: 24 }
+    - { id: services, name: 服務, share: 16 }
 sources:
   - "propod:cmtun4x3w008401xv63ot6ae5"
