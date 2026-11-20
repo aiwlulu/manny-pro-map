@@ -58,7 +58,7 @@ export function createLandscape(root, { industries, logo, onHover, chainBtn = ()
     if (!a) return;
     e.preventDefault();
     const lane = root.querySelector(`#lane-${CSS.escape(a.dataset.lane)}`);
-    const off = (document.querySelector('.top')?.offsetHeight ?? 60) + (root.querySelector('.jump')?.offsetHeight ?? 0) + 12;
+    const off = (document.querySelector('.top')?.offsetHeight ?? 60) + (root.querySelector('.jump')?.offsetHeight ?? 0) + (root.querySelector('.chain-cols')?.offsetHeight ?? 0) + 12;
     scrollTo({ top: lane.getBoundingClientRect().top + scrollY - off, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   });
   let io = null;

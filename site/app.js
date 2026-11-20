@@ -278,8 +278,12 @@ function openPanel(html, extra = '') {
 function closePanel() { $('#panel').hidden = true; $('#scrim').hidden = true; document.body.classList.remove('open'); }
 // Keep the current map view (landscape or bubbles) when a panel opens
 let mapView = store.get('pm-view', 'chain') === 'map' ? 'map' : 'chain';
+let lastCo = null;
+// A panel opened from the people index stays over it; only 關於 falls back to the map
+const underPanel = () => { if (curView === 'about' || curView === null) setView(mapView); return curView !== 'people'; };
 function focusCompany(c) {
-  if (!['chain', 'map'].includes(curView)) setView(mapView);
+  lastCo = c.id;
+  if (!underPanel()) return;
   views.setFocus({ cur: c.id, rel: new Set(c.rels.map((r) => r.id)) });
   if (curView === 'map') requestAnimationFrame(() => map.zoomTo(c.id));
   else land.reveal(c.id);
@@ -304,7 +308,7 @@ function showCompany(c) {
   }).join('');
   // Links the value-chain block already shows are left out here
   const rels = c.rels.filter((r) => !(['供應', '客戶', '投資', '獲投資', '旗下', '母公司'].includes(r.label) && chain.has(c.id))).map((r) => `<a href="#/c/${r.id}" title="${esc(r.note ?? '')}">${avatar(cos.get(r.id), 'xs')}<span class="rt">${r.label}</span>${esc(cos.get(r.id).name)}</a>`).join('');
-  const stats = countBy(c).map(([k, n]) => `<div><dd>${n}</dd><dt>${k.includes('podcast') ? '集' : '篇'}${KIND[k].label}</dt></div>`).join('');
+  const stats = countBy(c).map(([k, n]) => `<div><dd>${n}</dd><dt>${k.includes('podcast') ? '集' : '篇'} ${KIND[k].label}</dt></div>`).join('');
   const sections = KIND_ORDER.map((k) => { const l = c.src.filter((s) => s.kind === k); return l.length ? `<h3>${icon(KIND[k].ic)}${KIND[k].label}<span class="c">${l.length}</span></h3>${srcList(l)}` : ''; }).join('');
   openPanel(`<header class="ph-head" style="--g:${grad(i)}">${avatar(c, 'lg')}
       <div><span class="ind">${esc(i.name)}${seg ? ` · ${esc(seg.name)}` : ''}</span><h2>${esc(c.name)}</h2>${c.zh && c.zh !== c.name ? `<p class="zhn">${esc(c.zh)}</p>` : ''}</div></header>
@@ -327,9 +331,10 @@ function showPerson(p) {
   openPanel(`<header class="ph-head" style="--g:linear-gradient(120deg,var(--blue-a),var(--red-b))">${face(p, 'xl', 250)}
       <div><span class="ind">人物${ivs ? ' · 巨人之聲專欄' : ''}</span><h2>${esc(p.name)}</h2>${p.zh ? `<p class="zhn">${esc(p.zh)}</p>` : ''}</div></header>
     <h3>${icon('building')}公司與身分<span class="c">${p.roles.length}</span></h3>
-    <ul class="roles">${p.roles.map((r) => `<li><a href="#/c/${r.c.id}">${avatar(r.c, 'sm')}<span><b>${esc(r.c.name)}</b><span class="role">${esc(r.role || '—')}${r.interviewed ? '<em class="iv" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</span></span>${icon('external', 'go')}</a></li>`).join('')}</ul>
+    <ul class="roles">${p.roles.map((r) => `<li><a href="#/c/${r.c.id}">${avatar(r.c, 'sm')}<span><b>${esc(r.c.name)}</b><span class="role">${esc(r.role || '—')}${r.interviewed ? '<em class="iv" title="曼報 Pro「巨人之聲」專欄整理過他的訪談或演講">巨人之聲</em>' : ''}</span></span>${icon('arrow', 'go')}</a></li>`).join('')}</ul>
     ${p.mentions.length ? `<h3>${icon('file')}提到他的文章與節目<span class="c">${p.mentions.length}</span></h3>${srcList(p.mentions, true)}` : ''}`);
-  if (!['chain', 'map'].includes(curView)) setView(mapView);
+  lastCo = p.roles[0]?.c.id ?? null;
+  if (!underPanel()) return;
   views.setFocus({ match: new Set(p.roles.map((r) => r.c.id)) });
   if (curView === 'map') requestAnimationFrame(() => map.zoomToSet(p.roles.map((r) => r.c.id)));
   else land.reveal(p.roles[0].c.id);
@@ -341,13 +346,22 @@ function showSource(s) {
       <span class="ind"><span class="sk">${icon(KIND[s.kind].ic)}</span>${KIND[s.kind].label}${s.column ? ` · ${esc(s.column)}` : ''} · <time>${s.date}</time></span><h2 class="t">${esc(s.title)}</h2></header>
     <a class="read-cta" href="${esc(s.url)}" target="_blank" rel="noopener">到曼報閱讀${icon('external')}</a>
     <h3>${icon('building')}這篇談到的公司<span class="c">${list.length}</span></h3><div class="rels">${list.map((c) => `<a href="#/c/${c.id}">${avatar(c, 'xs')}${esc(c.name)}</a>`).join('')}</div>`);
-  if (!['chain', 'map'].includes(curView)) setView(mapView);
+  lastCo = list[0]?.id ?? null;
+  if (!underPanel()) return;
   views.setFocus({ match: new Set(list.map((c) => c.id)) });
   if (curView === 'map') requestAnimationFrame(() => map.zoomToSet(list.map((c) => c.id)));
   else if (list[0]) land.reveal(list[0].id);
 }
-$('#panel').addEventListener('click', (e) => { if (e.target.closest('.close')) go(mapView === 'map' ? '#/bubbles' : ''); });
-$('#scrim').onclick = () => go(mapView === 'map' ? '#/bubbles' : '');
+// Closing goes back to the view the first panel was opened from (the people index keeps its scroll position;
+// on the landscape the tile is brought back into view, since the page reflows when the panel's column is released)
+function closeOverlay() {
+  const b = base ?? { hash: mapView === 'map' ? '#/bubbles' : '', y: null }, id = lastCo;
+  go(b.hash);
+  if (curView === 'chain' && id) land.reveal(id);
+  else if (curView === 'people' && b.y != null) requestAnimationFrame(() => scrollTo(0, b.y));
+}
+$('#panel').addEventListener('click', (e) => { if (e.target.closest('.close')) closeOverlay(); });
+$('#scrim').onclick = closeOverlay;
 
 /* ---------- Supply-chain explorer ---------- */
 let cxCleanup = null;
@@ -386,7 +400,9 @@ function closeExplorer() {
   $('#cx').hidden = true;
   document.body.classList.remove('cx-open');
 }
-$('#cx').addEventListener('click', (e) => { if (e.target.closest('.cx-close')) go(location.hash.startsWith('#/loops') ? '' : `#/c/${location.hash.split('/')[2]}`); });
+// The explorer closes to the panel it was opened from; opened straight from a tile or a link, it closes to the map
+const closeCx = () => (/^#\/[cps]\//.test(cxFrom) ? go(cxFrom) : closeOverlay());
+$('#cx').addEventListener('click', (e) => { if (e.target.closest('.cx-close')) closeCx(); });
 
 /* ---------- Search ---------- */
 const index = [];
@@ -402,9 +418,10 @@ function search(v) {
   if (!k) { $('#results').hidden = true; if (!location.hash.match(/^#\/[csp]\//)) views.setFocus(null); return; }
   hits = index.filter((x) => x.key.includes(k)).sort((a, b) => (a.key.startsWith(k) ? 0 : 1) - (b.key.startsWith(k) ? 0 : 1) || 'cps'.indexOf(a.t) - 'cps'.indexOf(b.t)).slice(0, 30);
   sel = 0;
-  $('#results').innerHTML = hits.length ? hits.map((h, n) => `<button role="option" data-n="${n}" class="${n === sel ? 'sel' : ''}"><span class="kind" data-t="${h.t}">${icon(TI[h.t])}${T[h.t]}</span><span class="lb">${esc(h.label)}${h.ext ? '<span class="xt">延伸</span>' : ''}</span><span class="sub">${esc(h.sub)}</span></button>`).join('') : '<p class="none">沒有符合的結果</p>';
+  $('#results').innerHTML = hits.length ? hits.map((h, n) => `<button role="option" tabindex="-1" data-n="${n}" class="${n === sel ? 'sel' : ''}"><span class="kind" data-t="${h.t}">${icon(TI[h.t])}${T[h.t]}</span><span class="lb">${esc(h.label)}${h.ext ? '<span class="xt">延伸</span>' : ''}</span><span class="sub">${esc(h.sub)}</span></button>`).join('') : '<p class="none">沒有符合的結果</p>';
   $('#results').hidden = false;
-  views.setFocus({ match: new Set(hits.flatMap((h) => h.ids)) });
+  // nothing found: leave the map as it is instead of dimming every tile
+  views.setFocus(hits.length ? { match: new Set(hits.flatMap((h) => h.ids)) } : null);
 }
 const qClear = $('#q-clear');
 let qTimer = 0;
@@ -424,10 +441,13 @@ $('#results').addEventListener('click', (e) => { const n = e.target.closest('but
 function pick(h) { $('#results').hidden = true; q.blur(); go(h.go); }
 document.addEventListener('keydown', (e) => {
   if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); q.focus(); }
-  if (e.key === 'Escape' && !$('#cx').hidden) return go(location.hash.startsWith('#/loops') ? '' : `#/c/${location.hash.split('/')[2]}`);
+  if (e.key === 'Escape' && !$('#results').hidden) { $('#results').hidden = true; return; }
+  if (e.key === 'Escape' && !$('#cx').hidden) return closeCx();
   if (e.key === 'Escape' && !$('#panel').hidden && document.activeElement !== q) $('#scrim').onclick();
 });
 document.addEventListener('click', (e) => { if (!e.target.closest('.search')) $('#results').hidden = true; });
+// keyboard: leaving the search box closes the list (it used to stay open over the page)
+document.querySelector('.search').addEventListener('focusout', (e) => { if (!e.relatedTarget?.closest?.('.search')) setTimeout(() => { if (!document.activeElement.closest('.search')) $('#results').hidden = true; }, 120); });
 
 /* ---------- Views & routing ---------- */
 let curView = null;
@@ -457,8 +477,27 @@ function go(h) {
 addEventListener('popstate', () => { if (!location.hash) route(); });
 $('.wordmark').addEventListener('click', (e) => { e.preventDefault(); mapView = 'chain'; go(''); scrollTo({ top: 0 }); });
 if (location.hash === '#/' || location.hash === '#') history.replaceState(null, '', location.pathname + location.search);
+let base = null, cxFrom = '', prevHash = location.hash;
+function notice(msg) {
+  const el = Object.assign(document.createElement('div'), { className: 'toast', textContent: msg });
+  el.setAttribute('role', 'status');
+  document.body.append(el);
+  setTimeout(() => el.remove(), 4200);
+}
 function route() {
   const [, a, b] = location.hash.split('/');
+  const from = prevHash; prevHash = location.hash;
+  const overlay = ['c', 'p', 's', 'chain', 'loops'].includes(a);
+  if (overlay && !base) base = { hash: /^#\/(people|bubbles|about)/.test(from) ? from : (mapView === 'map' ? '#/bubbles' : ''), y: scrollY };
+  if (!overlay) base = null;
+  if ((a === 'chain' || a === 'loops') && !/^#\/(chain|loops)/.test(from)) cxFrom = from;
+  // a link to something that is not in the data: say so instead of silently showing the map
+  const known = { c: cos.has(b), chain: cos.has(b), p: !!(people.get(b) ?? personAliases.get(b)), s: src.has(decodeURIComponent(b ?? '')) };
+  if (a in known && !known[a]) {
+    history.replaceState(null, '', location.pathname + location.search); prevHash = ''; base = null;
+    notice({ c: '找不到這家公司', chain: '找不到這家公司', p: '找不到這位人物', s: '找不到這篇文章' }[a]);
+    return route();
+  }
   if (a !== 'chain' && a !== 'loops') closeExplorer();
   if (a === 'c' && cos.has(b)) return showCompany(cos.get(b));
   if (a === 'p') {

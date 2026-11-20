@@ -126,7 +126,7 @@ export function revenueBar(c, { hot = null, full = false } = {}) {
 // "影像與感測 · 佔 Sony 營收 11%" or a disclosed customer concentration
 function flowNote(x, sup, { seg = true } = {}) {
   const g = seg ? segOf(sup, x.segment) : null, bits = [];
-  if (g) bits.push(`${esc(g.name)}${g.share != null ? `，佔 ${esc(sup.name)} 營收 <b>${pct(g.share)}</b>` : ''}`);
+  if (g) bits.push(`${esc(g.name)}${g.share != null ? ` · 此區塊佔 ${esc(sup.name)} 營收 <b>${pct(g.share)}</b>` : ''}`);
   if (x.share) bits.push(`佔 ${esc(sup.name)} 營收 <b>${pct(x.share.pct)}</b>`);
   return bits.length ? `<span class="fl" title="${x.share ? esc(`${x.share.fy} 年報揭露`) : '供應方的營收區塊與佔比'}">${bits.join(' · ')}</span>` : '';
 }

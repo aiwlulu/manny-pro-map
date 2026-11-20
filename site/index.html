@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-57WKcOYYfySh6dqnc17mnhbnDYeew8vBwk+OtWVyFMg=' 'sha256-ghG/IUKppdm+LTBfPtFdM5JZDTrbgiL9h/pKsc1ZEGI='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-28aSBS5DpF0TGrD0TiDhH2wF7/a11FhQl43uHGHfiXg=' 'sha256-ghG/IUKppdm+LTBfPtFdM5JZDTrbgiL9h/pKsc1ZEGI='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://thumb.wikimedia.org; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Pro Map 公司地圖</title>
@@ -22,7 +22,7 @@
   <link rel="modulepreload" href="chain.js">
   <link rel="modulepreload" href="icons.js">
   <link rel="modulepreload" href="vendor/d3.js">
-  <script>try { const t = localStorage.getItem('pm-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}</script>
+  <script>try { const t = JSON.parse(localStorage.getItem('pm-theme')); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}</script>
   <link rel="icon" href="/manny-pro-map/favicon.ico" sizes="32x32">
   <link rel="icon" href="/manny-pro-map/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/manny-pro-map/apple-touch-icon.png">
